@@ -110,12 +110,12 @@ If you don't have Office, follow these steps:
     $ cd ~/Downloads
     $ mkdir consolas
     $ cd consolas
-    $curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe
+    $ curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe
     $ cabextract PowerPointViewer.exe
     $ cabextract ppviewer.cab
     $ open CONSOLA*.TTF
 
-And click **Install font**. Thanks to Alexander Zhuravlev for his [post](http://blog.ikato.com/post/15675823000/how-to-install-consolas-font-on-mac-os-x).
+And click **Install Font**. Thanks to Alexander Zhuravlev for his [post](http://blog.ikato.com/post/15675823000/how-to-install-consolas-font-on-mac-os-x).
 
 ## Beautiful terminal
 
@@ -139,7 +139,7 @@ We'll come back to the details of that later, but for now, just download the fil
     $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.bash_prompt
     $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.aliases
     
-With that, open a new terminal tab (**Cmd+T**) and see the change! Try the list commands: `ls`, `ls -a` (aliased to `la`), `ls -lh` (aliased to `ll`).
+With that, open a new terminal tab (**Cmd+T**) and see the change! Try the list commands: `ls`, `ls -lh` (aliased to `ll`), `ls -lha` (aliased to `la`).
 
 Now we have a terminal we can work with!
 
