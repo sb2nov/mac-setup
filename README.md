@@ -16,6 +16,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [Python](#python)
 - [Virtualenv](#virtualenv)
 - [IPython](#ipython)
+- [Numpy and Scipy](#numpy-and-scipy)
 - [Projects folder](#projects-folder)
 
 ## System update
@@ -293,6 +294,10 @@ To upgrade a package:
 To see what's installed:
 
     $ pip freeze
+    
+To uninstall a package:
+
+    $ pip uninstall <package>
 
 ## Virtualenv
 
@@ -367,15 +372,32 @@ Open a fresh terminal. Now when you run `$ ipy`, it will launch the QT Console w
 
 To use the in-line Matplotlib functionality (nice for scientific computing), run `$ ipy --pylab=inline`.
 
+## Numpy and Scipy
+
+The [Numpy](http://numpy.scipy.org/) and [Scipy](http://www.scipy.org/SciPy) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly. Luckily for us, [Samuel John](http://www.samueljohn.de/) has put together some [Homebrew formulae](https://github.com/samueljohn/homebrew-python) to make it easier to install these Python libraries.
+
+First, grab the special formulae (which are not part of Homebrew core):
+
+    $ brew update # Always good to do
+    $ brew tap samueljohn/python
+    
+Then, install the `gfortran` dependency which we will need to build the libraries:
+
+    $ brew install gfortran
+    
+Finally, you can install Numpy and Scipy with:
+
+    $ brew install numpy
+    $ brew install scipy
+    
+(It make take a few minutes to build.)
+
 ## Projects folder
 
 This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
 
-
-
 ## Todo
 
-- Numpy
 - MySQL
 - Node
 - Ruby
