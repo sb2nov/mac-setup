@@ -17,6 +17,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [Virtualenv](#virtualenv)
 - [IPython](#ipython)
 - [Numpy and Scipy](#numpy-and-scipy)
+- [MySQL](#mysql)
 - [Projects folder](#projects-folder)
 
 ## System update
@@ -378,7 +379,6 @@ The [Numpy](http://numpy.scipy.org/) and [Scipy](http://www.scipy.org/SciPy) sci
 
 First, grab the special formulae (which are not part of Homebrew core):
 
-    $ brew update # Always good to do
     $ brew tap samueljohn/python
     
 Then, install the `gfortran` dependency which we will need to build the libraries:
@@ -390,7 +390,51 @@ Finally, you can install Numpy and Scipy with:
     $ brew install numpy
     $ brew install scipy
     
-(It make take a few minutes to build.)
+(It may take a few minutes to build.)
+
+## MySQL
+
+### Install
+
+We will install [MySQL](http://www.mysql.com/) using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).
+
+To install, run:
+
+    $ brew update # Always good to do
+    $ brew install mysql
+
+As you can see in the ouput from Homebrew, before we can use MySQL we first need to set it up with:
+
+    $ unset TMPDIR
+    $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+
+### Usage
+
+To start the MySQL server, use the `mysql.server` tool:
+
+    $ mysql.server start
+    
+To stop it when you are done, run:
+
+    $ mysql.server stop
+    
+You can see the different commands available for `mysql.server` with:
+
+    $ mysql.server --help
+    
+To connect with the command-line client, run:
+
+    $ mysql -uroot
+    
+(Use `exit` to quit the MySQL shell.)
+
+**Note**: By default, the MySQL user `root` has no password. It doesn't really matter for a local development database. If you wish to change it though, you can use `$ mysqladmin -u root password 'new-password'`.
+
+### MySQL Workbench
+
+In terms of a GUI client for MySQL, I'm used to the official and free [MySQL Workbench](http://www.mysql.com/products/workbench/). But feel free to use whichever you prefer.
+
+You can find the MySQL Workbench download [here](http://www.mysql.com/downloads/workbench/). (**Note**: It will ask you to sign in, you don't need to, just click on "No thanks, just start my download!" at the bottom.)
 
 ## Projects folder
 
@@ -398,7 +442,6 @@ This really depends on how you want to organize your files, but I like to put al
 
 ## Todo
 
-- MySQL
 - Node
 - Ruby
 - Apps
