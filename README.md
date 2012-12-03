@@ -229,10 +229,8 @@ A popular Theme is the [Soda Theme](https://github.com/buymeasoda/soda-theme). T
     
 Then go to **Sublime Text 2 > Preferences > Settings - User** and add the following two lines:
 
-```json
-"theme": "Soda Dark.sublime-theme",
-"soda_classic_tabs": true
-```
+    "theme": "Soda Dark.sublime-theme",
+    "soda_classic_tabs": true
 
 Restart Sublime Text for all changes to take affect (**Note**: on the Mac, closing all windows doesn't close the application, you need to hit **Cmd+Q**).
 
@@ -278,8 +276,10 @@ Executable scripts from Python packages you install will be put in `/usr/local/s
     
 And add these lines to `.path`:
 
-    PATH=/usr/local/share/python:$PATH
-    export PATH
+```bash
+PATH=/usr/local/share/python:$PATH
+export PATH
+```
     
 Save the file and open a new terminal to take the new `$PATH` into account (everytime you open a terminal, `.bash_profile` gets loaded).
 
@@ -368,7 +368,9 @@ You can also customize the font it uses:
     
 And since I'm lazy and I don't want to type or copy & paste that all the time, I'm going to create an alias for it. Create a `.extra` text file in your home directory with `$ subl ~/.extra` (I've set up `.bash_profile` to load `.extra`), and add the following line:
 
-    alias ipy='ipython qtconsole --ConsoleWidget.font_family="Consolas" --ConsoleWidget.font_size=13'
+```bash
+alias ipy='ipython qtconsole --ConsoleWidget.font_family="Consolas" --ConsoleWidget.font_size=13'
+```
     
 Open a fresh terminal. Now when you run `$ ipy`, it will launch the QT Console with your configured options.
 
@@ -437,10 +439,6 @@ In terms of a GUI client for MySQL, I'm used to the official and free [MySQL Wor
 
 You can find the MySQL Workbench download [here](http://www.mysql.com/downloads/workbench/). (**Note**: It will ask you to sign in, you don't need to, just click on "No thanks, just start my download!" at the bottom.)
 
-## Projects folder
-
-This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
-
 ## Node.js
 
 Install [Node.js](http://nodejs.org/) with Homebrew:
@@ -452,8 +450,10 @@ The formula also installs the [npm](https://npmjs.org/) package manager. However
 
 To do so, add this line to your `~/.path` file, before the `export PATH` line:
 
-    PATH=/usr/local/share/npm/bin:$PATH
-    
+```bash
+PATH=/usr/local/share/npm/bin:$PATH
+```
+        
 Open a new terminal for the `$PATH` changes to take effect.
 
 Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
@@ -484,6 +484,10 @@ To upgrade all or a particular package:
 To uninstall a package:
 
     $ npm uninstall <package>
+
+## Projects folder
+
+This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
 
 ## Todo
 
