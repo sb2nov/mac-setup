@@ -18,6 +18,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [IPython](#ipython)
 - [Numpy and Scipy](#numpy-and-scipy)
 - [MySQL](#mysql)
+- [Node.js](#nodejs)
 - [Projects folder](#projects-folder)
 
 ## System update
@@ -440,18 +441,54 @@ You can find the MySQL Workbench download [here](http://www.mysql.com/downloads/
 
 This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
 
+## Node.js
+
+Install [Node.js](http://nodejs.org/) with Homebrew:
+
+    $ brew update
+    $ brew install node
+    
+The formula also installs the [npm](https://npmjs.org/) package manager. However, as suggested by the Homebrew output, we need to add `/usr/local/share/npm/bin` to our path so that npm-installed modules with executables will have them picked up.
+
+To do so, add this line to your `~/.path` file, before the `export PATH` line:
+
+    PATH=/usr/local/share/npm/bin:$PATH
+    
+Open a new terminal for the `$PATH` changes to take effect.
+
+Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+
+    $ npm install -g coffee-script
+    $ npm install -g grunt
+
+### Npm usage
+
+To install a package:
+
+    $ npm install <package> # Install locally
+    $ npm install -g <package> # Install globally
+
+To see what's installed:
+
+    $ npm list # Local
+    $ npm list -g # Global
+
+To find outdated packages (locally or globally):
+
+    $ npm outdated [-g]
+
+To upgrade all or a particular package:
+
+    $ npm upgrade [<package>]
+
+To uninstall a package:
+
+    $ npm uninstall <package>
+
 ## Todo
 
-- Node
 - Ruby
 - Apps
-
-
-
-
-
-
-
 
 
 
