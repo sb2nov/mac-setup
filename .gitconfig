@@ -4,7 +4,7 @@
   branches = branch -a
   remotes = remote -v
   # Pretty log output
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
 
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
