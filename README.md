@@ -19,6 +19,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [Numpy and Scipy](#numpy-and-scipy)
 - [MySQL](#mysql)
 - [Node.js](#nodejs)
+- [RVM and Ruby](#rvm-and-ruby)
 - [Projects folder](#projects-folder)
 
 ## System update
@@ -485,13 +486,94 @@ To uninstall a package:
 
     $ npm uninstall <package>
 
+## RVM and Ruby
+
+Like Python, [Ruby](http://www.ruby-lang.org/) is already installed on Unix systems. But we don't want to mess around with that installation. More importantly, we want to be able to use the latest version of Ruby.
+
+### Install
+
+When installing Ruby, best practice is to use [RVM](https://rvm.io/) (Ruby Version Manager) which allows you to manage multiple versions of Ruby on the same machine. Installing RVM, as well as the latest version of Ruby, is very easy. Just run:
+
+    $ curl -L https://get.rvm.io | bash -s stable --ruby
+    
+When it is done, both RVM and a fresh version of Ruby 1.9 are installed. The following line was also automatically added to your `.bash_profile`:
+
+```bash
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+```
+
+I prefer to move that line to the `.extra` file, keeping my `.bash_profile` clean. I suggest you do the same.
+
+After that, start a new terminal and run:
+
+    $ type rvm | head -1
+    
+You should get the output `rvm is a function`.
+
+### Usage
+
+The following command will show you which versions of Ruby you have installed:
+
+    $ rvm list
+
+The one that was just installed, Ruby 1.9, should be set as default. When managing multiple versions, you switch between them with:
+
+    $ rvm use system # Switch back to system install (1.8)
+    $ rvm use 1.9.3 --default # Switch to 1.9.3 and sets it as default
+
+Run the following to make sure the version you want is being used (in our case, the just-installed Ruby 1.9.3):
+
+    $ which ruby
+    $ ruby --version
+
+You can install another version with:
+
+    $ rvm install 2.0.0
+    
+[RubyGems](http://rubygems.org/), the Ruby package manager, was also installed:
+
+    $ which gem
+    
+Update to its latest version with:
+
+    $ gem update --system
+    
+To install a "gem" (Ruby package), run:
+
+    $ gem install <gemname>
+        
+To install without generating the documentation for each gem (faster):
+
+    $ gem install <gemname> --no-rdoc --no-ri
+        
+To see what gems you have installed:
+
+    $ gem list
+    
+To check if any installed gems are outdated:
+
+    $ gem outdated
+    
+To update all gems or a particular gem:
+
+    $ gem update [<gemname>]
+    
+RubyGems keeps old versions of gems, so feel free to do come cleaning after updating:
+
+    $ gem cleanup
+    
+I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/), which is built on top of [Sass](http://sass-lang.com/):
+
+    $ gem install compass --no-rdoc --no-ri
+
 ## Projects folder
 
 This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
 
 ## Todo
 
-- Ruby
+- MongoDB
+- Heroku
 - Apps
 
 
