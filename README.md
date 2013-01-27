@@ -162,7 +162,7 @@ When done, to test that it installed fine you can run:
     
 And `$ which git` should output `/usr/local/bin/git`.
 
-Let's set up some basic configuration. Download the [.gitconfig](/nicolahery/mac-dev-setup/blob/master/.aliases) file to your home directory:
+Let's set up some basic configuration. Download the [.gitconfig](/nicolahery/mac-dev-setup/blob/master/.gitconfig) file to your home directory:
 
     $ cd ~
     $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.gitconfig
