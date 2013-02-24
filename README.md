@@ -5,6 +5,7 @@ This document describes how I set up my developer environment on a new MacBook o
 The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
 
 - [System update](#system-update)
+- [System preferences](#system-preferences)
 - [Google Chrome](#google-chrome)
 - [iTerm2](#iterm2)
 - [Homebrew](#homebrew)
@@ -26,6 +27,17 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 ## System update
 
 First thing you need to do, on any OS acutally, is update the system! For that: **Apple Icon > Software Update...**
+
+## System preferences
+
+If this is a new computer, there are a couple tweaks I like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
+
+In **Apple Icon > System Preferences**:
+
+- Trackpad > Tap to click
+- Keyboard > Key Repeat > Fast (all the way to the right)
+- Keyboard > Delay Until Repeat > Short (all the way to the right)
+- Dock > Automatically hide and show the Dock
 
 ## Google Chrome
 
