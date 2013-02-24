@@ -158,7 +158,9 @@ We'll come back to the details of that later, but for now, just download the fil
     $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.bash_prompt
     $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.aliases
     
-With that, open a new terminal tab (**Cmd+T**) and see the change! Try the list commands: `ls`, `ls -lh` (aliased to `ll`), `ls -lha` (aliased to `la`).
+With that, open a new terminal tab (Cmd+T) and see the change! Try the list commands: `ls`, `ls -lh` (aliased to `ll`), `ls -lha` (aliased to `la`).
+
+At this point you can also change your computer's name, which shows up in this terminal prompt. If you want to do so, go to **System Preferences** > **Sharing**. For example, I changed mine from "Nicolas's MacBook Air" to just "MacBook Air", so it shows up as `MacBook-Air` in the terminal.
 
 Now we have a terminal we can work with!
 
