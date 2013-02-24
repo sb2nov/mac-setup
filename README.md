@@ -481,7 +481,7 @@ To find outdated packages (locally or globally):
 
 To upgrade all or a particular package:
 
-    $ npm upgrade [<package>]
+    $ npm update [<package>]
 
 To uninstall a package:
 
