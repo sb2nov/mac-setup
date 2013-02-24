@@ -147,6 +147,8 @@ Scroll down the page and download the latest version. Unzip the archive. In it y
 - In **iTerm2 Preferences**, under **Profiles** and **Colors**, go to **Load Presets... > Import...**, find and open the two **.itermcolors** files we downloaded.
 - Go back to **Load Presets...** and select **Solarized Dark** to activate it. Voila!
 
+(**Note**: You don't have to do this, but there is one color in the **Solarized Dark** preset I don't agree with, which is *Bright Black*. You'll notice it's too close to *Black*. So I change it to be the same as *Bright Yellow*, i.e. **R 83 G 104 B 112**.)
+
 Not a lot of colors yet. We need to tweak a little bit our Unix user's profile for that. This is done (on OS X and Linux), in the `~/.bash_profile` text file (`~` stands for the user's home directory).
 
 We'll come back to the details of that later, but for now, just download the files [.bash_profile](/nicolahery/mac-dev-setup/blob/master/.bash_profile), [.bash_prompt](/nicolahery/mac-dev-setup/blob/master/.bash_prompt), [.aliases](/nicolahery/mac-dev-setup/blob/master/.aliases) attached to this document into your home directory (`.bash_profile` is the one that gets loaded, I've set it up to call the others):
