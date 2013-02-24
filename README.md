@@ -241,10 +241,11 @@ The Soda Theme page also offers some [extra color schemes](https://github.com/bu
 Sublime Text 2 already supports syntax highlighting for a lot of languages. I'm going to install a couple that are missing:
 
     $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-    $ git clone git://github.com/jashkenas/coffee-script-tmbundle CoffeeScript
-    $ git clone git://github.com/miksago/jade-tmbundle Jade
-    $ git clone git://github.com/danro/LESS-sublime.git LESS
-    $ git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
+    $ git clone https://github.com/jashkenas/coffee-script-tmbundle CoffeeScript
+    $ git clone https://github.com/miksago/jade-tmbundle Jade
+    $ git clone https://github.com/danro/LESS-sublime.git LESS
+    $ git clone -b SublimeText2 https://github.com/kuroir/SCSS.tmbundle.git SCSS
+    $ git clone https://github.com/nrw/sublime-text-handlebars Handlebars
 
 Let's create a shortcut so we can launch Sublime Text from the command-line:
 
