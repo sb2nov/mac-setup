@@ -213,7 +213,7 @@ Just like the terminal, let's configure our editor a little. Go to **Sublime Tex
 ```json
 {
     "font_face": "Consolas",
-    "font_size": 16,
+    "font_size": 13,
     "rulers":
     [
         79
