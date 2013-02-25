@@ -479,7 +479,7 @@ Open a new terminal for the `$PATH` changes to take effect.
 Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
 
     $ npm install -g coffee-script
-    $ npm install -g grunt
+    $ npm install -g grunt-cli
 
 ### Npm usage
 
