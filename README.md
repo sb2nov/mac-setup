@@ -22,6 +22,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [Node.js](#nodejs)
 - [RVM and Ruby](#rvm-and-ruby)
 - [Heroku](#heroku)
+- [MongoDB](#mongodb)
 - [Projects folder](#projects-folder)
 
 ## System update
@@ -515,7 +516,7 @@ When installing Ruby, best practice is to use [RVM](https://rvm.io/) (Ruby Versi
 
     $ curl -L https://get.rvm.io | bash -s stable --ruby
     
-When it is done, both RVM and a fresh version of Ruby 1.9 are installed. The following line was also automatically added to your `.bash_profile`:
+When it is done, both RVM and a fresh version of Ruby 2.0 are installed. The following line was also automatically added to your `.bash_profile`:
 
 ```bash
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -547,7 +548,7 @@ Run the following to make sure the version you want is being used (in our case, 
 
 You can install another version with:
 
-    $ rvm install 2.0.0
+    $ rvm install 1.9.3
     
 [RubyGems](http://rubygems.org/), the Ruby package manager, was also installed:
 
@@ -628,13 +629,33 @@ Once the key business is done, you're ready to deploy apps! Heroku has a great [
     
 The [Heroku Dev Center](https://devcenter.heroku.com/) is full of great resources, so be sure to check it out!
 
+## MongoDB
+
+[MongoDB](http://www.mongodb.org/) is a popular [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database.
+
+Installing it is very easy through Homebrew:
+
+    $ brew update
+    $ brew install mongo
+
+### Usage
+
+In a terminal, start the MongoDB server:
+
+    $ mongod
+
+In another terminal, connect to the database with the Mongo shell using:
+
+    $ mongo
+
+I'll let you refer to MongoDB's [Getting Started](http://docs.mongodb.org/manual/tutorial/getting-started/) guide for more!
+
 ## Projects folder
 
 This really depends on how you want to organize your files, but I like to put all my version-controlled projects in `~/Projects`. Other documents I may have, or things not yet under version control, I like to put in `~/Dropbox` (if you have Dropbox installed), or `~/Documents`.
 
 ## Todo
 
-- MongoDB
 - Apps
 
 
