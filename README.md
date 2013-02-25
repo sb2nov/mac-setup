@@ -612,7 +612,7 @@ If this is a new account, and since you don't already have a public **SSH key** 
 If it didn't offer create the SSH key for you (i.e. your Heroku account already has SSH keys associated with it), you can do so manually by running:
 
      $ mkdir ~/.ssh
-     $ ssh-keygen -t rsa -C "your@email.com"
+     $ ssh-keygen -t rsa
      
 Keep the default file name and skip the passphrase by just hitting Enter both times. Then, add the key to your Heroku account:
 
