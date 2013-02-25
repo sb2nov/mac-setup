@@ -250,7 +250,7 @@ Then go to **Sublime Text 2 > Preferences > Settings - User** and add the follow
     "theme": "Soda Dark.sublime-theme",
     "soda_classic_tabs": true
 
-Restart Sublime Text for all changes to take affect (**Note**: on the Mac, closing all windows doesn't close the application, you need to hit **Cmd+Q**).
+Restart Sublime Text for all changes to take affect (Note: on the Mac, closing all windows doesn't close the application, you need to hit **Cmd+Q**).
 
 The Soda Theme page also offers some [extra color schemes](https://github.com/buymeasoda/soda-theme#syntax-highlighting-colour-schemes) you can download and try. But to be consistent with my terminal, I like to use the **Solarized** Color Scheme, which already ships with Sublime Text. To use it, just go to **Sublime Text 2 > Preferences > Color Scheme > Solarized (Dark)**. Again, this is really according to personal flavors, so pick what you want.
 
@@ -428,6 +428,7 @@ To install, run:
 As you can see in the ouput from Homebrew, before we can use MySQL we first need to set it up with:
 
     $ unset TMPDIR
+    $ mkdir /usr/local/var
     $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 
 ### Usage
