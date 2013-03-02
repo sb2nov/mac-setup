@@ -490,6 +490,10 @@ To install a package:
     $ npm install <package> # Install locally
     $ npm install -g <package> # Install globally
 
+To install a package and save it in your project's `package.json` file:
+
+    $ npm install <package> --save
+
 To see what's installed:
 
     $ npm list # Local
