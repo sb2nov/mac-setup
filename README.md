@@ -25,6 +25,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [RVM and Ruby](#rvm-and-ruby)
 - [Heroku](#heroku)
 - [MongoDB](#mongodb)
+- [Redis](#redis)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
 
@@ -640,6 +641,8 @@ The [Heroku Dev Center](https://devcenter.heroku.com/) is full of great resource
 
 [MongoDB](http://www.mongodb.org/) is a popular [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database.
 
+### Install
+
 Installing it is very easy through Homebrew:
 
     $ brew update
@@ -656,6 +659,33 @@ In another terminal, connect to the database with the Mongo shell using:
     $ mongo
 
 I'll let you refer to MongoDB's [Getting Started](http://docs.mongodb.org/manual/tutorial/getting-started/) guide for more!
+
+## Redis
+
+[Redis](http://redis.io/) is a blazing fast, in-memory, key-value store, that uses the disk for persistence. It's kind of like a NoSQL database, but there are a lot of [cool things](http://oldblog.antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html) that you can do with it that would be hard or inefficient with other database solutions. For example, it's often used as session management or caching by web apps, but it has many other uses.
+
+### Install
+
+To install Redis, use Homebrew:
+
+    $ brew update
+    $ brew install redis
+
+### Usage
+
+Start a local Redis server using the default configuration settings with:
+
+    $ redis-server
+
+For advanced usage, you can tweak the configuration file at `/usr/local/etc/redis.conf` (I suggest making a backup first), and use those settings with:
+
+    $ redis-server /usr/local/etc/redis.conf
+
+In another terminal, connect to the server with the Redis command-line interface using:
+
+    $ redis-cli
+
+I'll let you refer to Redis' [documentation](http://redis.io/documentation) or other tutorials for more information.
 
 ## Projects folder
 
