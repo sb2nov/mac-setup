@@ -407,6 +407,7 @@ The [Numpy](http://numpy.scipy.org/) and [Scipy](http://www.scipy.org/SciPy) sci
 First, grab the special formulae (which are not part of Homebrew core):
 
     $ brew tap samueljohn/python
+    $ brew tap homebrew/science
     
 Then, install the `gfortran` dependency which we will need to build the libraries:
 
