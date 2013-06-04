@@ -1,6 +1,6 @@
 # Mac OS X Dev Setup
 
-This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Python](http://www.python.org/), [Node](http://nodejs.org/) (JavaScript), and [Ruby](http://www.ruby-lang.org/) environments, mainly for Python and JavaScript development. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. As you read  and follow these steps, feel free to send me any feedback or comments you may have.
+This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Node](http://nodejs.org/) (JavaScript), [Python](http://www.python.org/), and [Ruby](http://www.ruby-lang.org/) environments, mainly for JavaScript and Python development. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. As you read  and follow these steps, feel free to send me any feedback or comments you may have.
 
 The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
 
@@ -22,7 +22,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Numpy and Scipy](#numpy-and-scipy)
 - [MySQL](#mysql)
 - [Node.js](#nodejs)
-- [RVM and Ruby](#rvm-and-ruby)
+- [Ruby and RVM](#ruby-and-rvm)
 - [Heroku](#heroku)
 - [MongoDB](#mongodb)
 - [Redis](#redis)
@@ -515,7 +515,7 @@ To uninstall a package:
 
     $ npm uninstall <package>
 
-## RVM and Ruby
+## Ruby and RVM
 
 Like Python, [Ruby](http://www.ruby-lang.org/) is already installed on Unix systems. But we don't want to mess around with that installation. More importantly, we want to be able to use the latest version of Ruby.
 
@@ -545,10 +545,10 @@ The following command will show you which versions of Ruby you have installed:
 
     $ rvm list
 
-The one that was just installed, Ruby 1.9, should be set as default. When managing multiple versions, you switch between them with:
+The one that was just installed, Ruby 2.0, should be set as default. When managing multiple versions, you switch between them with:
 
     $ rvm use system # Switch back to system install (1.8)
-    $ rvm use 1.9.3 --default # Switch to 1.9.3 and sets it as default
+    $ rvm use 2.0.0 --default # Switch to 2.0.0 and sets it as default
 
 Run the following to make sure the version you want is being used (in our case, the just-installed Ruby 1.9.3):
 
@@ -558,6 +558,10 @@ Run the following to make sure the version you want is being used (in our case, 
 You can install another version with:
 
     $ rvm install 1.9.3
+
+To update RVM itself, use:
+
+    $ rvm get stable
     
 [RubyGems](http://rubygems.org/), the Ruby package manager, was also installed:
 
@@ -573,7 +577,7 @@ To install a "gem" (Ruby package), run:
         
 To install without generating the documentation for each gem (faster):
 
-    $ gem install <gemname> --no-rdoc --no-ri
+    $ gem install <gemname> --no-document
         
 To see what gems you have installed:
 
@@ -593,7 +597,7 @@ RubyGems keeps old versions of gems, so feel free to do come cleaning after upda
     
 I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/), which is built on top of [Sass](http://sass-lang.com/):
 
-    $ gem install compass --no-rdoc --no-ri
+    $ gem install compass --no-document
 
 ## Heroku
 
