@@ -16,6 +16,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [iTerm2](#iterm2)
 - [Git](#git)
 - [Sublime Text](#sublime-text)
+- [Vim](#vim)
 - [Python](#python)
 - [Virtualenv](#virtualenv)
 - [IPython](#ipython)
@@ -277,6 +278,35 @@ Let's create a shortcut so we can launch Sublime Text from the command-line:
 Now I can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool.
 
 Sublime Text is very extensible. For now we'll leave it like that, we already have a solid installation. To add more in the future, a good place to start would be to install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation).
+
+## Vim
+
+Although Sublime Text will be our main editor, it is a good idea to learn some very basic usage of [Vim](http://www.vim.org/). It is a very popular text editor inside the terminal, and is usually pre-installed on any Unix system.
+
+For example, when you run a Git commit, it will open Vim to allow you to type the commit message.
+
+I suggest you read a tutorial on Vim. Grasping the concept of the two "modes" of the editor, **Insert** (by pressing `i`) and **Normal** (by pressing `Esc` to exit Insert mode), will be the part that feels most unatural. After that it's just remembering a few important keys.
+
+Vim's default settings aren't great, and you could spend a lot of time tweaking your configuration (the `.vimrc` file). But if you're like me and just use Vim occasionally, you'll be happy to know that [Tim Pope](https://github.com/tpope) has put together some sensible defaults to quickly get started.
+
+First, install [pathogen.vim](https://github.com/tpope/vim-pathogen) by running:
+
+    $ mkdir -p ~/.vim/autoload ~/.vim/bundle
+    $ curl -Sso ~/.vim/autoload/pathogen.vim \
+        https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+Then create a file `~/.vimrc` (you can use `$ subl ~/.vimrc`), and paste in the following:
+
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
+
+And finally, install the Vim "sensible defaults" by running:
+
+    $ cd ~/.vim/bundle
+    $ git clone git://github.com/tpope/vim-sensible.git
+
+With that, Vim will look a lot better next time you open it!
 
 ## Python
 
