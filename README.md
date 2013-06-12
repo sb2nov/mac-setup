@@ -512,6 +512,10 @@ PATH=/usr/local/share/npm/bin:$PATH
         
 Open a new terminal for the `$PATH` changes to take effect.
 
+We also need to tell npm where to find the Xcode Command Line Tools, by running:
+
+    $ sudo xcode-select -switch /usr/bin
+
 Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
 
     $ npm install -g coffee-script
