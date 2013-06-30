@@ -1,6 +1,6 @@
 # Mac OS X Dev Setup
 
-This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Node](http://nodejs.org/) (JavaScript), [Python](http://www.python.org/), and [Ruby](http://www.ruby-lang.org/) environments, mainly for JavaScript and Python development. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. As you read  and follow these steps, feel free to send me any feedback or comments you may have.
+This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Node](http://nodejs.org/) (JavaScript), [Python](http://www.python.org/), [CPlusPlus](http://www.cplusplus.com/), and [Ruby](http://www.ruby-lang.org/) environments, mainly for JavaScript and Python development. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. We also install a few daily use application and Latex. As you read  and follow these steps, feel free to send me any feedback or comments you may have.
 
 The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
 
@@ -57,6 +57,8 @@ Also install [XQuartz](http://xquartz.macosforge.org/landing/) for X11 server an
 Install your favorite browser, mine happens to be Chrome.
 
 Download from [www.google.com/chrome](https://www.google.com/intl/en/chrome/browser/). Open the **.dmg** file once it's done downloading (this will mount the disk image), and drag and drop the **Google Chrome** app into the Applications folder (on the Mac, most applications are installed this way). When done, you can unmount the disk in Finder (the small "eject" icon next to the disk under **Devices**).
+
+All chrome browsers and extensions are saved by Google, so you don't need to worry about those. 
 
 ## iTerm2
 
@@ -833,6 +835,39 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, Powerpoint and Outlook. I got the student edition from my university so price may vary. **($140)**. 
 
 - [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system. **(Free)**
+
+- [Matlab](http://www.mathworks.com/products/matlab/): Install matlab if your university or company allows a license. Alternative is [Octave]() which I have been using for a while. **($99) and (Free)** 
+
+- [SourceTree](): Equivalent of github for mac but for bitbucket. I generally prefer Github much more than BitBucket but Bitbucket provides free private repos so incase you need one. **(Free)**
+
+### Octave
+Import the scientific computing packages, including Octave:
+
+    brew tap homebrew/science
+
+To install Octave, update to the latest package definitions, install ,
+and then Octave:
+
+    brew update && brew upgrade
+    brew install gfortran
+    brew install octave
+
+Note: If brew complains about not having a formula for octave, the
+following command should fix it:
+
+    brew tap --repair
+
+The command below upgrades Octave and its dependencies to the latest
+Homebrew-supported versions: 
+
+    brew update && brew upgrade
+
+Octave has many dependencies which will be downloaded and installed prior to Octave. The entire installation process can take a few hours. Note: On Snow Leopard, Octave requires a X server. If you install without, Homebrew will guide you to the [XQuartz project](https://xquartz.macosforge.org) where you can download this.
+You might find that you need to add:
+
+    setenv ("GNUTERM", "X11")
+
+to your octaverc file, normally located at `/usr/local/share/octave/site/m/startup`.
 
 ## Extra-Apps
 
