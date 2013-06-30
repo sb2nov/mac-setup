@@ -6,7 +6,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 
 - [System update](#system-update)
 - [System preferences](#system-preferences)
-- [XCode](#XCode)
+- [XCode](#xcode)
 - [Google Chrome](#google-chrome)
 - [iTerm2](#iterm2)
 - [Homebrew](#homebrew)
@@ -21,15 +21,16 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [IPython](#ipython)
 - [Numpy and Scipy](#numpy-and-scipy)
 - [MySQL](#mysql)
-- [CPlusPlus](#CPlusPlus)
+- [CPlusPlus](#cplusplus)
 - [Node.js](#nodejs)
 - [Ruby and RVM](#ruby-and-rvm)
 - [Heroku](#heroku)
 - [MongoDB](#mongodb)
 - [Redis](#redis)
+- [Latex](#latex)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
-- [Extra Apps](#Extra-Apps)
+- [Extra Apps](#extra-apps)
 
 ## System update
 
@@ -46,9 +47,10 @@ In **Apple Icon > System Preferences**:
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
 - Dock > Automatically hide and show the Dock. Show on the left.
 
-##XCode
+## XCode
 
 Install Xcode and XCode developer tools from the Apple store. 
+Also install [XQuartz](http://xquartz.macosforge.org/landing/) for X11 server and client libraries for OS X Mountain Lion.
 
 ## Google Chrome
 
@@ -284,6 +286,16 @@ Now I can open a file with `$ subl myfile.py` or start a new project in the curr
 
 Sublime Text is very extensible. For now we'll leave it like that, we already have a solid installation. To add more in the future, a good place to start would be to install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation).
 
+### Sublime Packages Installed
+- Pylinter
+- SublimeCodeIntel
+- BracketHighlighter
+- SublimeRepl
+- All Autocomplete
+- Dictionaries
+
+There are others as well but you can keep adding based on use case.
+
 ## Vim
 
 Although Sublime Text will be our main editor, it is a good idea to learn some very basic usage of [Vim](http://www.vim.org/). It is a very popular text editor inside the terminal, and is usually pre-installed on any Unix system.
@@ -359,6 +371,18 @@ To see what's installed:
 To uninstall a package:
 
     $ pip uninstall <package>
+
+### Packages used most often
+- Dateutil
+- Pandas
+- sparsesvd
+- MySQL
+- zmq
+- cvxopt
+- beautiful soup
+- Pyqt
+- Sphinx
+- Matplotlib
 
 ## Virtualenv
 
@@ -745,6 +769,16 @@ In another terminal, connect to the server with the Redis command-line interface
     $ redis-cli
 
 I'll let you refer to Redis' [documentation](http://redis.io/documentation) or other tutorials for more information.
+
+## Latex
+
+Installing Latex on mac. Downlaod from [MacTex](http://www.tug.org/mactex/) it is around 2GB in size and comes with TexLive installed. Then use an editor like [Latexian](http://tacosw.com/latexian/) or [TexMaker](http://www.xm1math.net/texmaker/download.html).
+
+Add cls file from major conferences such as IEEE to the source directory. 
+
+    cd ~/Library/texmf/tex/generic/
+
+Add IEEEtran.cls to this directory. 
 
 ## Projects folder
 
