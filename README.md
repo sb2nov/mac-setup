@@ -21,6 +21,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [IPython](#ipython)
 - [Numpy and Scipy](#numpy-and-scipy)
 - [MySQL](#mysql)
+- [CPlusPlus](#CPlusPlus)
 - [Node.js](#nodejs)
 - [Ruby and RVM](#ruby-and-rvm)
 - [Heroku](#heroku)
@@ -40,10 +41,10 @@ If this is a new computer, there are a couple tweaks I like to make to the Syste
 
 In **Apple Icon > System Preferences**:
 
-- Trackpad > Tap to click
+- Trackpad > Tap to click and Right click is the corner.
 - Keyboard > Key Repeat > Fast (all the way to the right)
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
-- Dock > Automatically hide and show the Dock
+- Dock > Automatically hide and show the Dock. Show on the left.
 
 ##XCode
 
@@ -498,6 +499,21 @@ To connect with the command-line client, run:
 In terms of a GUI client for MySQL, I'm used to the official and free [MySQL Workbench](http://www.mysql.com/products/workbench/). But feel free to use whichever you prefer.
 
 You can find the MySQL Workbench download [here](http://www.mysql.com/downloads/workbench/). (**Note**: It will ask you to sign in, you don't need to, just click on "No thanks, just start my download!" at the bottom.)
+
+## CPlusPlus
+
+Make sure you have installed Xcode command line tools. Check the c++ version to make sure it is Clang 4.0+
+
+    MacbookPro:~ sb2nov$ c++ --version
+    Apple clang version 4.0 (tags/Apple/clang-421.0.60) (based on LLVM 3.1svn)
+    Target: x86_64-apple-darwin12.4.0
+    Thread model: posix
+
+Then create an alias for c++11 installation in your `.profile` file. 
+
+    alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
+Then you can run all cpp file directly using `cppcompile main.cpp` and it will use c++11 so no errors in the case of using vectors, auto, sets etc.
 
 ## Node.js
 
