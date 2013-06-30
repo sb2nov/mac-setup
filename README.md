@@ -4,8 +4,6 @@ This document describes how I set up my developer environment on a new MacBook o
 
 The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
 
-If you have any comments or suggestions, feel free to give me a shout [on Twitter](https://twitter.com/nicolahery)!
-
 - [System update](#system-update)
 - [System preferences](#system-preferences)
 - [Google Chrome](#google-chrome)
@@ -29,6 +27,7 @@ If you have any comments or suggestions, feel free to give me a shout [on Twitte
 - [Redis](#redis)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
+- [Extra Apps](#Extra-Apps)
 
 ## System update
 
@@ -157,12 +156,12 @@ Scroll down the page and download the latest version. Unzip the archive. In it y
 
 Not a lot of colors yet. We need to tweak a little bit our Unix user's profile for that. This is done (on OS X and Linux), in the `~/.bash_profile` text file (`~` stands for the user's home directory).
 
-We'll come back to the details of that later, but for now, just download the files [.bash_profile](/nicolahery/mac-dev-setup/blob/master/.bash_profile), [.bash_prompt](/nicolahery/mac-dev-setup/blob/master/.bash_prompt), [.aliases](/nicolahery/mac-dev-setup/blob/master/.aliases) attached to this document into your home directory (`.bash_profile` is the one that gets loaded, I've set it up to call the others):
+We'll come back to the details of that later, but for now, just download the files [.bash_profile](/sb2nov/mac-dev-setup/blob/master/.bash_profile), [.bash_prompt](/sb2nov/mac-dev-setup/blob/master/.bash_prompt), [.aliases](/sb2nov/mac-dev-setup/blob/master/.aliases) attached to this document into your home directory (`.bash_profile` is the one that gets loaded, I've set it up to call the others):
 
     $ cd ~
-    $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.bash_profile
-    $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.bash_prompt
-    $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.aliases
+    $ curl -O https://raw.github.com/sb2nov/mac-dev-setup/master/.bash_profile
+    $ curl -O https://raw.github.com/sb2nov/mac-dev-setup/master/.bash_prompt
+    $ curl -O https://raw.github.com/sb2nov/mac-dev-setup/master/.aliases
     
 With that, open a new terminal tab (Cmd+T) and see the change! Try the list commands: `ls`, `ls -lh` (aliased to `ll`), `ls -lha` (aliased to `la`).
 
@@ -184,10 +183,10 @@ When done, to test that it installed fine you can run:
     
 And `$ which git` should output `/usr/local/bin/git`.
 
-Let's set up some basic configuration. Download the [.gitconfig](/nicolahery/mac-dev-setup/blob/master/.gitconfig) file to your home directory:
+Let's set up some basic configuration. Download the [.gitconfig](/sb2nov/mac-dev-setup/blob/master/.gitconfig) file to your home directory:
 
     $ cd ~
-    $ curl -O https://raw.github.com/nicolahery/mac-dev-setup/master/.gitconfig
+    $ curl -O https://raw.github.com/sb2nov/mac-dev-setup/master/.gitconfig
 
 It will add some color to the `status`, `branch`, and `diff` Git commands, as well as a couple aliases. Feel free to take a look at the contents of the file, and add to it to your liking.
 
@@ -202,7 +201,7 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
 
     $ git config --global credential.helper osxkeychain
     
-**Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](/nicolahery/mac-dev-setup/blob/master/.gitignore) file for inspiration.
+**Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](/sb2nov/mac-dev-setup/blob/master/.gitignore) file for inspiration.
     
 ## Sublime Text
 
@@ -742,12 +741,11 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - Total Finder:
 - [Evernote](https://evernote.com/): If I don't write something down, I'll forget it. As a developer, you learn so many new things every day, and technology keeps changing, it would be insane to want to keep it all in your head. So take notes, sync them to the cloud, and have them on all your devices. To be honest, I switched to [Simplenote](http://simplenote.com/) because I only take text notes, and I got tired of Evernote putting extra spaces between paragraphs when I copy & pasted into other applications. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
 - [Moom](http://manytricks.com/moom/): Don't waste time resizing and moving your windows. Moom makes this very easy. **($10)**
-- [Alfred](http://www.alfredapp.com/): Replacement for spotlight.
-- AppCleaner: Uninstall Apps 
-- Caffeine: Stops the machine from locking
-- Chrome: Google Chrome browser
-- Firefox: Firefox browser
-- Github: Github GUI for Mac
+- [Alfred](http://www.alfredapp.com/): Replacement for spotlight.**(Free)**
+- [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall Apps.
+- [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from locking.**(Free)**
+- [Firefox](http://www.mozilla.org/en-US/firefox/new/): Firefox browser
+- [Github](http://mac.github.com/): Github GUI for Mac
 - Latexian: App for writing Latex documents. View the code and output on split screen. Supports all major packages and code completion etc.
 - PDF Toolkit+: App to cut/ split/ merge pdfs easily.
 - Voila: Record your screen with audio, mouse highlight and other features. 
@@ -758,15 +756,14 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - Microsoft Office:
 - Asepsis: 
 
-## Extra Apps
+## Extra-Apps
 
 Might be useful in somecases, not for daily use.
 
--Weka
--Rstudio
--Processing
--Chmox
--FX Photo Studio
--iBooks
--MotionFX
-
+- Weka
+- Rstudio
+- Processing
+- Chmox
+- FX Photo Studio
+- iBooks
+- MotionFX
