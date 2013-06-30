@@ -34,7 +34,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 
 ## System update
 
-First thing you need to do, on any OS acutally, is update the system! For that: **Apple Icon > Software Update...**
+First thing you need to do, on any OS acutally, is update the system! For that: **Apple Icon > Software Update.**
 
 ## System preferences
 
