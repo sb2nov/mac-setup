@@ -6,6 +6,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 
 - [System update](#system-update)
 - [System preferences](#system-preferences)
+- [XCode](#XCode)
 - [Google Chrome](#google-chrome)
 - [iTerm2](#iterm2)
 - [Homebrew](#homebrew)
@@ -43,6 +44,10 @@ In **Apple Icon > System Preferences**:
 - Keyboard > Key Repeat > Fast (all the way to the right)
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
 - Dock > Automatically hide and show the Dock
+
+##XCode
+
+Install Xcode and XCode developer tools from the Apple store. 
 
 ## Google Chrome
 
@@ -734,36 +739,58 @@ This really depends on how you want to organize your files, but I like to put al
 Here is a quick list of some apps I use, and that you might find useful as well:
 
 - [Dropbox](https://www.dropbox.com/): File syncing to the cloud. I put all my documents in Dropbox. It syncs them to all my devices (laptop, mobile, tablet), and serves as a backup as well! **(Free for 2GB)**
-- [Google Drive](https://drive.google.com/): File syncing to the cloud too! I use Google Docs a lot to collaborate with others (edit a document with multiple people in real-time!), and sometimes upload other non-Google documents (pictures, etc.), so the app comes in handy for that. **(Free for 5GB)**
+
+- [Google Drive](https://drive.google.com/): File syncing to the cloud too! I use Google Docs a lot to collaborate with others. **(Free for 5GB)**
+
 - [1Password](https://agilebits.com/onepassword): Allows you to securely store your login and passwords. Even if you only use a few different passwords (they say you shouldn't!), this is really handy to keep track of all the accounts you sign up for! Also, they have a mobile app so you always have all your passwords with you (syncs with Dropbox). A little pricey though. There are free alternatives. **($50 for Mac app, $18 for iOS app)**
-- [Marked](http://markedapp.com/): As a developer, most of the stuff you write ends up being in [Markdown](http://daringfireball.net/projects/markdown/). In fact, this `README.md` file (possibly the most important file of a GitHub repo) is indeed in Markdown, written in Sublime Text, and I use Marked to preview the results everytime I save. **($4)**
-- [Path Finder](http://cocoatech.com/pathfinder/): I love OSX, it's Unix so great for developers, and all of it just works and looks pretty! Only thing I "miss" from Windows (OMG what did he say?), is a decent file explorer. I think Finder is a pain to use. So I gladly paid for this alternative, but I understand others might find it expensive just to not have to use Finder. **($40)**
-- Total Finder:
-- [Evernote](https://evernote.com/): If I don't write something down, I'll forget it. As a developer, you learn so many new things every day, and technology keeps changing, it would be insane to want to keep it all in your head. So take notes, sync them to the cloud, and have them on all your devices. To be honest, I switched to [Simplenote](http://simplenote.com/) because I only take text notes, and I got tired of Evernote putting extra spaces between paragraphs when I copy & pasted into other applications. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
+
+- [Marked](http://markedapp.com/): As a developer, most of the stuff you write ends up being in [Markdown](http://daringfireball.net/projects/markdown/). **($4)**
+
+- [Path Finder](http://cocoatech.com/pathfinder/): Adds tabs and improves the Finder to a great deal. **($40)**
+
+- [Total Finder](http://totalfinder.binaryage.com/): Similar to Path Finder with slightly different features. But this one is cheaper than path finder. **($18)**
+
+- [Evernote](https://evernote.com/): Notes taking application. I switched to [Simplenote](http://simplenote.com/) because I only take text notes. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
+
 - [Moom](http://manytricks.com/moom/): Don't waste time resizing and moving your windows. Moom makes this very easy. **($10)**
+
 - [Alfred](http://www.alfredapp.com/): Replacement for spotlight.**(Free)**
+
 - [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall Apps.
+
 - [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from locking.**(Free)**
+
 - [Firefox](http://www.mozilla.org/en-US/firefox/new/): Firefox browser
+
 - [Github](http://mac.github.com/): Github GUI for Mac
-- Latexian: App for writing Latex documents. View the code and output on split screen. Supports all major packages and code completion etc.
-- PDF Toolkit+: App to cut/ split/ merge pdfs easily.
-- Voila: Record your screen with audio, mouse highlight and other features. 
-- Compress: Compress/Uncompress app.
-- VLC: Media Player
-- Google Voice and Video:
-- Skype:
-- Microsoft Office:
-- Asepsis: 
+
+- [Latexian](http://tacosw.com/latexian/): App for writing Latex documents. View the code and output on split screen. Supports all major packages and code completion etc. **($10)**
+
+- [Rstudio](): RStudio is a free and open source integrated development environment for R **(Free)**
+
+- [PDF Toolkit+](https://itunes.apple.com/us/app/pdf-toolkit-+/id545164971?mt=12): App to cut/ split/ merge pdfs easily. One of the best apps I have ever seen. Really simple gui but extremely efficient. A must have. **($2)**
+
+- [Voila](http://www.globaldelight.com/voila/): Record your screen with audio, mouse highlight and other features. **($30)**
+
+- [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.  **(Free)**
+
+- [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. A must application no matter what platform you are using. **(Free)**
+
+- [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts. **(Free)**
+
+- [Skype](http://www.skype.com/en/): Skype voice and video chat application. **(Free)**
+
+- [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, Powerpoint and Outlook. I got the student edition from my university so price may vary. **($140)**. 
+
+- [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system. **(Free)**
 
 ## Extra-Apps
 
 Might be useful in somecases, not for daily use.
 
-- Weka
-- Rstudio
-- Processing
-- Chmox
-- FX Photo Studio
-- iBooks
-- MotionFX
+- [Weka](): Machine Learning tool written in Java. **(Free)**
+- [Processing](): Animation and creative design. **(Free)**
+- [Chmox](): Read windows chm files. **(Free)**
+- [FX Photo Studio](): Apply basic filters to photographs. Application for photography noobs only. **($13)**
+- [iBooks](): Create and write stunning ibooks.**(Free)**
+- [MotionFX](): Real time video effects using the webcam. **(Free)**
