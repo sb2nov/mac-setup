@@ -49,7 +49,7 @@ In **Apple Icon > System Preferences**:
 
 ## XCode
 
-Install Xcode and XCode developer tools from the Apple store. 
+Install [Xcode](https://developer.apple.com/xcode/) and [XCode command line tools](http://docwiki.embarcadero.com/RADStudio/XE4/en/Installing_the_Xcode_Command_Line_Tools_on_a_Mac) from the App store or the Apple developer website. 
 Also install [XQuartz](http://xquartz.macosforge.org/landing/) for X11 server and client libraries for OS X Mountain Lion.
 
 ## Google Chrome
