@@ -876,3 +876,7 @@ Might be useful in somecases, not for daily use.
 - [FX Photo Studio](): Apply basic filters to photographs. Application for photography noobs only. **($13)**
 - [iBooks](): Create and write stunning ibooks.**(Free)**
 - [MotionFX](): Real time video effects using the webcam. **(Free)**
+
+## Credits
+
+This repository was built on work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). I had cloned the mac-dev-setup repository and added content on top of that. 
