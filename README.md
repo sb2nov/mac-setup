@@ -795,8 +795,6 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 
 - [1Password](https://agilebits.com/onepassword): Allows you to securely store your login and passwords. Even if you only use a few different passwords (they say you shouldn't!), this is really handy to keep track of all the accounts you sign up for! Also, they have a mobile app so you always have all your passwords with you (syncs with Dropbox). A little pricey though. There are free alternatives. **($50 for Mac app, $18 for iOS app)**
 
-- [Marked](http://markedapp.com/): As a developer, most of the stuff you write ends up being in [Markdown](http://daringfireball.net/projects/markdown/). **($4)**
-
 - [Path Finder](http://cocoatech.com/pathfinder/): Adds tabs and improves the Finder to a great deal. **($40)**
 
 - [Total Finder](http://totalfinder.binaryage.com/): Similar to Path Finder with slightly different features. But this one is cheaper than path finder. **($18)**
