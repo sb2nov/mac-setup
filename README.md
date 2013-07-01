@@ -879,4 +879,4 @@ Might be useful in somecases, not for daily use.
 
 ## Credits
 
-This repository was built on work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). I had cloned the mac-dev-setup repository and added content on top of that. 
+This repository was built on work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). I cloned the mac-dev-setup repository and added content on top of that. 
