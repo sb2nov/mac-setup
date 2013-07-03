@@ -34,6 +34,7 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 ## System update
 
 First thing you need to do, on any OS acutally, is update the system! For that: **Apple Icon > Software Update.**
+Also upgrade your OS incase you got a machine with **Lion** installed on it. I got a free upgrade as I had purchased my machine after the Mountain Lion launch. 
 
 ## System preferences
 
@@ -874,7 +875,7 @@ Might be useful in somecases, not for daily use.
 - [Processing](): Animation and creative design. **(Free)**
 - [Chmox](): Read windows chm files. **(Free)**
 - [FX Photo Studio](): Apply basic filters to photographs. Application for photography noobs only. **($13)**
-- [iBooks](): Create and write stunning ibooks.**(Free)**
+- [iBooks](): Create and write stunning ibooks. **(Free)**
 - [MotionFX](): Real time video effects using the webcam. **(Free)**
 
 ## Credits
