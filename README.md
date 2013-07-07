@@ -419,6 +419,10 @@ You should see a `(venv)` appear at the beginning of your terminal prompt indica
 
 It will get installed in the `venv` folder, and not conflict with other projects.
 
+To leave the virtual environment use.
+
+    $ deactivate
+
 **Important**: Remember to add `venv` to your project's `.gitignore` file so you don't include all of that in your source code!
 
 As mentioned earlier, I like to install big packages (like Numpy), or packages I always use (like IPython) globally. All the rest I install in a virtualenv.
