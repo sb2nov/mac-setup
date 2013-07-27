@@ -4,6 +4,8 @@ This document describes how I set up my developer environment on a new MacBook o
 
 The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
 
+## Table of Contents
+
 - [System update](#system-update)
 - [System preferences](#system-preferences)
 - [XCode](#xcode)
@@ -30,6 +32,8 @@ The document assumes you are new to Mac. The steps below were tested on **OS X M
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
 - [Extra Apps](#extra-apps)
+- [Menubar and Setting](#menubar-and-settings)
+- [Credits](#credits)
 
 ## System update
 
