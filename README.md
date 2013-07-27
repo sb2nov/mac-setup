@@ -337,9 +337,9 @@ The following command will install Python 2.7 and any dependencies required (it 
     
 When finished, you should get a summary in the terminal. Running `$ which python` should output `/usr/local/bin/python`.
 
-It also installed [Pip]() (and its dependency [Distribute]()), which is the package manager for Python. Let's upgrade them both:
+It also installed [Pip](https://pypi.python.org/pypi/pip) (and its dependency [Setuptools](https://pypi.python.org/pypi/setuptools)), which is the package manager for Python. Let's upgrade them both:
 
-    $ pip install --upgrade distribute
+    $ pip install --upgrade setuptools
     $ pip install --upgrade pip
     
 Executable scripts from Python packages you install will be put in `/usr/local/share/python`, so let's add it to the `$PATH`. To do so, we'll create a `.path` text file in the home directory (I've already set up `.bash_profile` to call this file):
@@ -375,6 +375,7 @@ To uninstall a package:
     $ pip uninstall <package>
 
 ### Packages used most often
+- QSTK
 - Dateutil
 - Pandas
 - sparsesvd
@@ -477,11 +478,15 @@ First, grab the special formulae (which are not part of Homebrew core):
 
     $ brew tap samueljohn/python
     $ brew tap homebrew/science
-    
+
 Then, install the `gfortran` dependency which we will need to build the libraries:
 
     $ brew install gfortran
-    
+
+Then, install `Nose` dependency which we will need to build the libraries:
+
+    $ pip install nose
+
 Finally, you can install Numpy and Scipy with:
 
     $ brew install numpy
@@ -816,6 +821,8 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 
 - [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall Apps.
 
+- [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine incase of failure. SuperDuper is much better than time machine in my opinion.**($28 / Free)**
+
 - [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from locking.**(Free)**
 
 - [Firefox](http://www.mozilla.org/en-US/firefox/new/): Firefox browser
@@ -833,6 +840,8 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.  **(Free)**
 
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. A must application no matter what platform you are using. **(Free)**
+
+- [Gmail Notifier](http://toolbar.google.com/gmail-helper/notifier_mac.html): Notify about incoming emails with a icon in the menubar. Improves my focus while working as I don't keep opening my browser. I have my work email configured with Mail.app though.
 
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts. **(Free)**
 
@@ -885,6 +894,16 @@ Might be useful in somecases, not for daily use.
 - [FX Photo Studio](): Apply basic filters to photographs. Application for photography noobs only. **($13)**
 - [iBooks](): Create and write stunning ibooks. **(Free)**
 - [MotionFX](): Real time video effects using the webcam. **(Free)**
+
+## Menubar and Settings
+
+This is just the final tuning step for customizing the menubar and system settings. 
+
+- Hotkeys:  iterm, spectacle etc.
+- Menubar: battery percentage, user icon instead of full name.
+- Notification center: skype, messages, mail, chrome, calendar, reminders. 
+- Startup: Chrome, Spectacle, caffeine. 
+- Trackpad: Right click, gestures, and sensativity.
 
 ## Credits
 
