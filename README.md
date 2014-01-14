@@ -821,7 +821,7 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 
 - [Moom](http://manytricks.com/moom/) or [Spectacle](http://spectacleapp.com/): Don't waste time resizing and moving your windows. Moom makes this very easy. I recently tried out Spectacle, though it might have some less features then Moom but it provides everything I need. Plus Spectacle is open source. **($10) and Free**
 
-- [Alfred](http://www.alfredapp.com/): Replacement for spotlight.**(Free)**
+- [Alfred](http://www.alfredapp.com/): Replacement for spotlight. But I think I'm going to upgrade to use powerpack so it'll cost about $17.**(Free)**
 
 - [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall Apps.
 
