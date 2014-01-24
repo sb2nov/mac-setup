@@ -912,3 +912,7 @@ This is just the final tuning step for customizing the menubar and system settin
 ## Credits
 
 This repository was built on work by [Nicolashery](https://github.com/nicolashery/mac-dev-setup). I cloned the mac-dev-setup repository and added content on top of that. 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sb2nov/mac-setup/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
