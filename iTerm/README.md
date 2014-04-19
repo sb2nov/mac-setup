@@ -16,5 +16,5 @@ Let's just quickly change some preferences.
 - Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [here](https://github.com/adobe/source-code-pro/downloads).
 
 
-[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/iterm.png)
+[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
 

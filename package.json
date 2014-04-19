@@ -1,7 +1,7 @@
 {
   "name": "mac-setup",
   "version": "0.0.1",
-  "description": "Installing Developer environment on Mac OSx",
+  "description": "Installing Development environment on Mac OS X",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
