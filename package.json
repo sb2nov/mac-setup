@@ -1,21 +1,35 @@
 {
-    "name": "Mac OS X Setup Guide",
-    "version": "0.0.1",
-    "description": "",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sb2nov/mac-setup.git"
-    },
-    "author": "Sourabh Bajaj <sourabh@sourabhbajaj.com>",
-    "license": "MIT",
-    "dependencies": {},
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-gitbook": "0.1.1",
-        "grunt-gh-pages": "0.9.1",
-        "grunt-contrib-clean": "~0.5.0"
-    },
-    "peerDependencies": {
-        "grunt": "~0.4.1"
-    }
+  "name": "mac-setup",
+  "version": "0.0.1",
+  "description": "Installing Developer environment on Mac OSx",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sb2nov/mac-setup.git"
+  },
+  "keywords": [
+    "OSx",
+    "Install",
+    "Mac",
+    "Git",
+    "Gitbook"
+  ],
+  "author": "Sourabh Bajaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sb2nov/mac-setup/issues"
+  },
+  "homepage": "http://sourabhbajaj/mac-setup",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-gh-pages": "0.9.1",
+    "grunt-gitbook": "0.1.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  }
 }
