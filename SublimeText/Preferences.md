@@ -1,6 +1,6 @@
 # Preferences
 
-I prefer these User Settings for my development but please feel free to modify or update as per your choice.
+This is an example of User Settings for a basic development but please feel free to modify or update as per your choice.
 
 ~~~
 {

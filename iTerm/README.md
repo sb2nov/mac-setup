@@ -14,3 +14,7 @@ Let's just quickly change some preferences.
 - Download the [Solarized dark iterm colors](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized) from here. And then set these to your default profile colors.
 - Change the cursor text and cursor color to yellow make it more visible
 - Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [here](https://github.com/adobe/source-code-pro/downloads).
+
+
+[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/iterm.png)
+

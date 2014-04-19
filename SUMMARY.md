@@ -23,3 +23,4 @@
 * [Latex](Latex/README.md)
 * [Apps](Apps/README.md)
     * [Settings](Apps/Settings.md)
+* [References](References/README.md)

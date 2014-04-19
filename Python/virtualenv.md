@@ -37,7 +37,7 @@ To leave the virtual environment use.
 
 **Important**: Remember to add `venv` to your project's `.gitignore` file so you don't include all of that in your source code!
 
-I like to install big packages (like Numpy), or packages I always use (like IPython) globally. All the rest I install in a virtualenv.
+It is preferable to install big packages (like Numpy), or packages you always use (like IPython) globally. All the rest can be installed in a virtualenv.
 
 ### Virtualenvwrapper
 For easier management of different virtual environments for multiple packages. Installing Virtualenv Wrapper is possible. For installation instructions read the [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/index.html) documents here.

@@ -1,9 +1,9 @@
 # System Preferences
 
 First thing you need to do, on any OS acutally, is update the system! For that: **Apple Icon > Software Update.**
-Also upgrade your OS incase you got a machine with **Lion** installed on it. I got a free upgrade as I had purchased my machine after the Mountain Lion launch. 
+Also upgrade your OS incase you want to work on the latest OS. Mavericks is a free upgrade so please check that.
 
-If this is a new computer, there are a couple tweaks I like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
+If this is a new computer, there are a couple tweaks you would like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
 
 ### Users and Groups
 - Login Options-> Change fast switching user menu to Icon
@@ -23,7 +23,7 @@ If this is a new computer, there are a couple tweaks I like to make to the Syste
 ### Finder
 - Toolbar
     - Update to add path, new folder and delete
-- Sidebar    
+- Sidebar
     - Add home and code directory
     - Remove shared and tags
     - New finder window to open in the home directory
