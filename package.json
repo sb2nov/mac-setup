@@ -23,13 +23,14 @@
     "url": "https://github.com/sb2nov/mac-setup/issues"
   },
   "homepage": "http://sourabhbajaj/mac-setup",
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "^0.4.4",
+    "grunt": "0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-gh-pages": "0.9.1",
-    "grunt-gitbook": "0.1.1"
+    "grunt-gitbook": "0.2.3"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "0.4.1"
   }
 }
