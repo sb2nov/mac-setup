@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Latex | Mac OS X Setup Guide</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="sb2nov">
+        <meta name="description" content="Guide to setting up developer environment on OS X">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../Apps/README.html" />
+        
+        
+        <link rel="prev" href="../Cpp/README.html" />
+        
+
+        <meta property="og:title" content="Latex | Mac OS X Setup Guide">
+        <meta property="og:site_name" content="Mac OS X Setup Guide">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/sb2nov">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="sb2nov/mac-setup" data-level="10">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/sb2nov/mac-setup" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/sb2nov/mac-setup/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/sb2nov/mac-setup/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../README.html" >Mac OS X Setup Guide</a></h1>
+</div>
+
+    <div class="book-summary">
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/sb2nov" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/sb2nov/mac-setup/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/sb2nov/mac-setup/edit/master/Latex/README.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0">
+            <a href="../README.html"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1">
+                
+                <a href="../SystemPreferences/README.html">
+                    <i class="fa fa-check"></i> <b>1)</b> System Preferences
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2">
+                
+                <a href="../XCode/README.html">
+                    <i class="fa fa-check"></i> <b>2)</b> XCode
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3">
+                
+                <a href="../Homebrew/README.html">
+                    <i class="fa fa-check"></i> <b>3)</b> Homebrew
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="3.1">
+                            
+                            <a href="../Homebrew/Usage.html">
+                                <i class="fa fa-check"></i> <b>3.1)</b> Usage
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="4">
+                
+                <a href="../iTerm/README.html">
+                    <i class="fa fa-check"></i> <b>4)</b> iTerm2
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="4.1">
+                            
+                            <a href="../iTerm/zsh.html">
+                                <i class="fa fa-check"></i> <b>4.1)</b> ZSH
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="5">
+                
+                <a href="../Git/README.html">
+                    <i class="fa fa-check"></i> <b>5)</b> Git
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="5.1">
+                            
+                            <a href="../Git/gitignore.html">
+                                <i class="fa fa-check"></i> <b>5.1)</b> Git ignore
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="6">
+                
+                <a href="../SublimeText/README.html">
+                    <i class="fa fa-check"></i> <b>6)</b> Sublime Text
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="6.1">
+                            
+                            <a href="../SublimeText/Preferences.html">
+                                <i class="fa fa-check"></i> <b>6.1)</b> Perferences
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.2">
+                            
+                            <a href="../SublimeText/Packages.html">
+                                <i class="fa fa-check"></i> <b>6.2)</b> Packages 1/2
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.3">
+                            
+                            <a href="../SublimeText/Plugins.html">
+                                <i class="fa fa-check"></i> <b>6.3)</b> Packages 2/2
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="6.4">
+                            
+                            <a href="../SublimeText/SublimeLinter.html">
+                                <i class="fa fa-check"></i> <b>6.4)</b> Sublime Linter
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="7">
+                
+                <a href="../Python/README.html">
+                    <i class="fa fa-check"></i> <b>7)</b> Python
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="7.1">
+                            
+                            <a href="../Python/pip.html">
+                                <i class="fa fa-check"></i> <b>7.1)</b> Pip
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.2">
+                            
+                            <a href="../Python/virtualenv.html">
+                                <i class="fa fa-check"></i> <b>7.2)</b> Virtualenv
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.3">
+                            
+                            <a href="../Python/numpy.html">
+                                <i class="fa fa-check"></i> <b>7.3)</b> Numpy-Scipy
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="7.4">
+                            
+                            <a href="../Python/ipython.html">
+                                <i class="fa fa-check"></i> <b>7.4)</b> Ipython
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="8">
+                
+                <a href="../MySql/README.html">
+                    <i class="fa fa-check"></i> <b>8)</b> MySql
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="9">
+                
+                <a href="../Cpp/README.html">
+                    <i class="fa fa-check"></i> <b>9)</b> CPlusPlus
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="10">
+                
+                <a href="../Latex/README.html">
+                    <i class="fa fa-check"></i> <b>10)</b> Latex
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11">
+                
+                <a href="../Apps/README.html">
+                    <i class="fa fa-check"></i> <b>11)</b> Apps
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="11.1">
+                            
+                            <a href="../Apps/Settings.html">
+                                <i class="fa fa-check"></i> <b>11.1)</b> Settings
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="page-wrapper">
+            <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 8.695652173913043%;min-width: 4.3478260869565215%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../README.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../SystemPreferences/README.html" title="System Preferences" class="chapter done new-chapter" data-progress="1" style="left: 4.3478260869565215%;"></a>
+    
+        <a href="../Latex/README.html" title="Latex" class="chapter done " data-progress="10" style="left: 8.695652173913043%;"></a>
+    
+        <a href="../Apps/README.html" title="Apps" class="chapter  " data-progress="11" style="left: 13.043478260869565%;"></a>
+    
+        <a href="../Apps/Settings.html" title="Settings" class="chapter  " data-progress="11.1" style="left: 17.391304347826086%;"></a>
+    
+        <a href="../XCode/README.html" title="XCode" class="chapter  new-chapter" data-progress="2" style="left: 21.73913043478261%;"></a>
+    
+        <a href="../Homebrew/README.html" title="Homebrew" class="chapter  new-chapter" data-progress="3" style="left: 26.08695652173913%;"></a>
+    
+        <a href="../Homebrew/Usage.html" title="Usage" class="chapter  " data-progress="3.1" style="left: 30.434782608695652%;"></a>
+    
+        <a href="../iTerm/README.html" title="iTerm2" class="chapter  new-chapter" data-progress="4" style="left: 34.78260869565217%;"></a>
+    
+        <a href="../iTerm/zsh.html" title="ZSH" class="chapter  " data-progress="4.1" style="left: 39.130434782608695%;"></a>
+    
+        <a href="../Git/README.html" title="Git" class="chapter  new-chapter" data-progress="5" style="left: 43.47826086956522%;"></a>
+    
+        <a href="../Git/gitignore.html" title="Git ignore" class="chapter  " data-progress="5.1" style="left: 47.82608695652174%;"></a>
+    
+        <a href="../SublimeText/README.html" title="Sublime Text" class="chapter  new-chapter" data-progress="6" style="left: 52.17391304347826%;"></a>
+    
+        <a href="../SublimeText/Preferences.html" title="Perferences" class="chapter  " data-progress="6.1" style="left: 56.52173913043478%;"></a>
+    
+        <a href="../SublimeText/Packages.html" title="Packages 1/2" class="chapter  " data-progress="6.2" style="left: 60.869565217391305%;"></a>
+    
+        <a href="../SublimeText/Plugins.html" title="Packages 2/2" class="chapter  " data-progress="6.3" style="left: 65.21739130434783%;"></a>
+    
+        <a href="../SublimeText/SublimeLinter.html" title="Sublime Linter" class="chapter  " data-progress="6.4" style="left: 69.56521739130434%;"></a>
+    
+        <a href="../Python/README.html" title="Python" class="chapter  new-chapter" data-progress="7" style="left: 73.91304347826087%;"></a>
+    
+        <a href="../Python/pip.html" title="Pip" class="chapter  " data-progress="7.1" style="left: 78.26086956521739%;"></a>
+    
+        <a href="../Python/virtualenv.html" title="Virtualenv" class="chapter  " data-progress="7.2" style="left: 82.6086956521739%;"></a>
+    
+        <a href="../Python/numpy.html" title="Numpy-Scipy" class="chapter  " data-progress="7.3" style="left: 86.95652173913044%;"></a>
+    
+        <a href="../Python/ipython.html" title="Ipython" class="chapter  " data-progress="7.4" style="left: 91.30434782608695%;"></a>
+    
+        <a href="../MySql/README.html" title="MySql" class="chapter  new-chapter" data-progress="8" style="left: 95.65217391304348%;"></a>
+    
+        <a href="../Cpp/README.html" title="CPlusPlus" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+            <div class="page-inner">
+            
+                <section class="normal" id="section-gitbook_13">
+                
+                    <h1 id="latex">Latex</h1>
+<p>Installing Latex on mac. Downlaod from <a href="http://www.tug.org/mactex/" target="_blank">MacTex</a> it is around 2GB in size and comes with TexLive installed. For more details about what is installed <a href="https://www.tug.org/mactex/What_Is_Installed.pdf" target="_blank">check here</a>. Then use an editor like <a href="http://tacosw.com/latexian/" target="_blank">Latexian</a> or <a href="http://www.xm1math.net/texmaker/download.html" target="_blank">TexMaker</a>.</p>
+<p>Add cls file from major conferences such as IEEE to the source directory. </p>
+<pre><code>cd ~<span class="hljs-regexp">/Library/texmf</span><span class="hljs-regexp">/tex/generic</span><span class="hljs-regexp">/</span>
+</code></pre><p>Add IEEEtran.cls to this directory.</p>
+
+                
+                </section>
+            
+            </div>
+
+            <div class="page-footer">
+    
+        
+            
+            <a href="../Apps/README.html" class="navigation-link next">Next</a>
+            
+        
+    
+</div>
+        </div>
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+    </body>
+</html>
