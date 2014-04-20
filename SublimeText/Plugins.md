@@ -13,7 +13,7 @@
 - [GitGutter](http://www.jisaacks.com/gitgutter): A Sublime Text 2/3 plugin to see git diff in gutter
 - [IndentXML](https://github.com/alek-sys/sublimetext_indentxml): Plugin for Sublime Text editor for reindenting XML and JSON files
 - [Jade](https://github.com/davidrios/jade-tmbundle): A comprehensive sublime text bundle for the Jade template language
-- [Jedi - Python autocompletion](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0CD0QFjAC&url=https%3A%2F%2Fgithub.com%2Fsrusskih%2FSublimeJEDI&ei=OmQpU8jnGtDZoATL_YCACA&usg=AFQjCNH9VcKDU09VibnW2RNLyCjrt9SyDA&sig2=LOg29BW0rRy5BHkoObgdeQ&bvm=bv.62922401,d.cGU): Jedi is an autocompletion tool for Python that can be used in IDEs/editors. 
+- [Jedi - Python autocompletion](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0CD0QFjAC&url=https%3A%2F%2Fgithub.com%2Fsrusskih%2FSublimeJEDI&ei=OmQpU8jnGtDZoATL_YCACA&usg=AFQjCNH9VcKDU09VibnW2RNLyCjrt9SyDA&sig2=LOg29BW0rRy5BHkoObgdeQ&bvm=bv.62922401,d.cGU): Jedi is an autocompletion tool for Python that can be used in IDEs/editors.
 - [Jekyll](https://github.com/23maverick23/sublime-jekyll): A Sublime Text package for Jekyll static sites.
 - [Python Auto-Complete](https://github.com/eliquious/Python-Auto-Complete): A Sublime Text 2 plugin which adds additional auto-completion capability to Python scripts
 - [Python Imports Sorter](https://github.com/vi4m/sublime_python_imports): Sublime Text 2 plugin to organize your imports easily.
