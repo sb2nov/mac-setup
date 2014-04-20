@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="../gitbook/style.css">
         
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="5" data-basepath=".." data-revision="1397929894505">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="5" data-basepath=".." data-revision="1398022211856">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -392,7 +392,9 @@ $ git config --global user.email &quot;your_email@youremail.com&quot;
 </code></pre><p>They will get added to your <code>.gitconfig</code> file.</p>
 <p>To push code to your GitHub repositories, we&#39;re going to use the recommended HTTPS method (versus SSH). So you don&#39;t have to type your username and password everytime, let&#39;s enable Git password caching as described <a href="https://help.github.com/articles/set-up-git" target="_blank">here</a>:</p>
 <pre><code>$ git config --global credential.helper osxkeychain
-</code></pre><p><strong>Note</strong>: This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.</p>
+</code></pre><hr>
+<h3 id="ssh-config-for-github">SSH Config for Github</h3>
+<p>This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.</p>
 <p>Setting up SSH is really simple as well. Most of the instructions below are referenced from <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">here</a>.</p>
 <p>First, we need to check for existing SSH keys on your computer. Open up your Terminal and type:</p>
 <pre><code>$ cd ~/.ssh
@@ -406,8 +408,16 @@ $ ls -al
 # Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 </code></pre><p>Please use a strong passphrase for your keys.</p>
 <p>Third, Add your keys to Github by going into account settings.</p>
-<p><strong>Note</strong>: On a Mac, it is important to remember to add <code>.DS_Store</code> (a hidden OS X system file that&#39;s put in folders) to your <code>.gitignore</code> files.</p>
-
+<hr>
+<h3 id="ds_store">DS_Store</h3>
+<p>On a Mac, it is important to remember to add <code>.DS_Store</code> (a hidden OS X system file that&#39;s put in folders) to your <code>.gitignore</code> files.</p>
+<hr>
+<h3 id="setting-up-sublime-text-as-the-git-mergetool">Setting up Sublime Text as the Git Mergetool</h3>
+<pre><code>$ git config --global mergetool.sublime.cmd &quot;subl -w \$MERGED&quot;
+$ git config --global mergetool.sublime.trustExitCode false 
+$ git config --global merge.tool sublime
+$ git mergetool -y
+</code></pre>
                     
                     </section>
                 
