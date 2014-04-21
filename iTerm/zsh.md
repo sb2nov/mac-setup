@@ -35,12 +35,15 @@ edit the `.zshrc` by opening the file in a text editor
     source /usr/local/bin/virtualenvwrapper.sh
 
     # Owner
-    export USER_NAME="Sourabh"
+    export USER_NAME="YOUR NAME"
     eval "$(rbenv init -)"
 
     # FileSearch
     function f() { find . -iname "*$1*" ${@:2} }
     function r() { grep "$1" ${@:2} -R . }
+
+    #mkdir and cd
+    function mkcd() { mkdir -p "$@" && cd "$_"; }
 
     # Aliases
     alias cppcompile='c++ -std=c++11 -stdlib=libc++'
