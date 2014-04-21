@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>iTerm2 | Mac OS X Setup Guide</title>
+        <title>Node.js | Mac OS X Setup Guide</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../iTerm/zsh.html" />
+        <link rel="next" href="../Latex/README.html" />
         
         
-        <link rel="prev" href="../Homebrew/Usage.html" />
+        <link rel="prev" href="../Ruby/RubyGems.html" />
         
 
-        <meta property="og:title" content="iTerm2 | Mac OS X Setup Guide">
+        <meta property="og:title" content="Node.js | Mac OS X Setup Guide">
         <meta property="og:site_name" content="Mac OS X Setup Guide">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="../gitbook/style.css">
         
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4" data-basepath=".." data-revision="1398067196046">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="11" data-basepath=".." data-revision="1398067196046">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -75,7 +75,7 @@
             <a href="https://github.com/sb2nov/mac-setup/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/sb2nov/mac-setup/edit/master/iTerm/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/sb2nov/mac-setup/edit/master/Node.js/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -357,7 +357,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 46.42857142857143%;min-width: 42.857142857142854%;"></div>
+        <div class="inner" style="width: 14.285714285714286%;min-width: 10.714285714285714%;"></div>
     </div>
     <div class="chapters">
     
@@ -371,23 +371,23 @@
     
         <a href="../Node.js/README.html" title="Node.js" class="chapter done " data-progress="11" style="left: 14.285714285714286%;"></a>
     
-        <a href="../Latex/README.html" title="Latex" class="chapter done " data-progress="12" style="left: 17.857142857142858%;"></a>
+        <a href="../Latex/README.html" title="Latex" class="chapter  " data-progress="12" style="left: 17.857142857142858%;"></a>
     
-        <a href="../Apps/README.html" title="Apps" class="chapter done " data-progress="13" style="left: 21.428571428571427%;"></a>
+        <a href="../Apps/README.html" title="Apps" class="chapter  " data-progress="13" style="left: 21.428571428571427%;"></a>
     
-        <a href="../Apps/Octave.html" title="Octave" class="chapter done " data-progress="13.1" style="left: 25%;"></a>
+        <a href="../Apps/Octave.html" title="Octave" class="chapter  " data-progress="13.1" style="left: 25%;"></a>
     
-        <a href="../Apps/Settings.html" title="Settings" class="chapter done " data-progress="13.2" style="left: 28.571428571428573%;"></a>
+        <a href="../Apps/Settings.html" title="Settings" class="chapter  " data-progress="13.2" style="left: 28.571428571428573%;"></a>
     
-        <a href="../References/README.html" title="References" class="chapter done " data-progress="14" style="left: 32.142857142857146%;"></a>
+        <a href="../References/README.html" title="References" class="chapter  " data-progress="14" style="left: 32.142857142857146%;"></a>
     
-        <a href="../XCode/README.html" title="XCode" class="chapter done new-chapter" data-progress="2" style="left: 35.714285714285715%;"></a>
+        <a href="../XCode/README.html" title="XCode" class="chapter  new-chapter" data-progress="2" style="left: 35.714285714285715%;"></a>
     
-        <a href="../Homebrew/README.html" title="Homebrew" class="chapter done new-chapter" data-progress="3" style="left: 39.285714285714285%;"></a>
+        <a href="../Homebrew/README.html" title="Homebrew" class="chapter  new-chapter" data-progress="3" style="left: 39.285714285714285%;"></a>
     
-        <a href="../Homebrew/Usage.html" title="Usage" class="chapter done " data-progress="3.1" style="left: 42.857142857142854%;"></a>
+        <a href="../Homebrew/Usage.html" title="Usage" class="chapter  " data-progress="3.1" style="left: 42.857142857142854%;"></a>
     
-        <a href="../iTerm/README.html" title="iTerm2" class="chapter done new-chapter" data-progress="4" style="left: 46.42857142857143%;"></a>
+        <a href="../iTerm/README.html" title="iTerm2" class="chapter  new-chapter" data-progress="4" style="left: 46.42857142857143%;"></a>
     
         <a href="../iTerm/zsh.html" title="ZSH" class="chapter  " data-progress="4.1" style="left: 50%;"></a>
     
@@ -424,23 +424,31 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_31">
+                    <section class="normal" id="section-gitbook_19">
                     
-                        <h2 id="iterm2">iTerm2</h2>
-<p>Since we&#39;re going to be spending a lot of time in the command-line, let&#39;s install a better terminal than the default one. Download and install <a href="http://www.iterm2.com/" target="_blank">iTerm2</a>.</p>
-<p>In <strong>Finder</strong>, drag and drop the <strong>iTerm</strong> Application file into the <strong>Applications</strong> folder.</p>
-<p>You can now launch iTerm, through the <strong>Launchpad</strong> for instance.</p>
-<p>Let&#39;s just quickly change some preferences.</p>
-<h3 id="colors-and-font-settings">Colors and Font Settings</h3>
-<ul>
-<li>Set hotkey to open and close the terminal to <code>command + option + i</code></li>
-<li>Go to profiles -&gt; Default -&gt; Check silence bell</li>
-<li>Download the <a href="https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized" target="_blank">Solarized dark iterm colors</a> from here. And then set these to your default profile colors.</li>
-<li>Change the cursor text and cursor color to yellow make it more visible</li>
-<li>Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from <a href="https://github.com/adobe/source-code-pro/downloads" target="_blank">here</a>.</li>
-</ul>
-<p><a href="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" target="_blank"><img src="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" alt="Screen"></a></p>
-
+                        <h1 id="node-js">Node.js</h1>
+<p>Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with Homebrew:</p>
+<pre><code>$ brew update
+$ brew install node
+</code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
+<pre><code>$ npm install -g coffee-script
+$ npm install -g grunt-cli
+</code></pre><h3 id="npm-usage">Npm usage</h3>
+<p>To install a package:</p>
+<pre><code>$ npm install &lt;package&gt; # Install locally
+$ npm install -g &lt;package&gt; # Install globally
+</code></pre><p>To install a package and save it in your project&#39;s <code>package.json</code> file:</p>
+<pre><code>$ npm install &lt;package&gt; --save
+</code></pre><p>To see what&#39;s installed:</p>
+<pre><code>$ npm list # Local
+$ npm list -g # Global
+</code></pre><p>To find outdated packages (locally or globally):</p>
+<pre><code>$ npm outdated [-g]
+</code></pre><p>To upgrade all or a particular package:</p>
+<pre><code>$ npm update [&lt;package&gt;]
+</code></pre><p>To uninstall a package:</p>
+<pre><code>$ npm uninstall &lt;package&gt;
+</code></pre>
                     
                     </section>
                 
@@ -449,10 +457,10 @@
         </div>
 
         
-        <a href="../Homebrew/Usage.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Ruby/RubyGems.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../iTerm/zsh.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../Latex/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
