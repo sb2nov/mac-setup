@@ -23,6 +23,7 @@
 * [Ruby](Ruby/README.md)
     * [RubyGems](Ruby/RubyGems.md)
 * [Node.js](Node.js/README.md)
+* [Heroku](Heroku/README.md)
 * [Latex](Latex/README.md)
 * [Apps](Apps/README.md)
     * [Octave](Apps/Octave.md)
