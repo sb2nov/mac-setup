@@ -18,4 +18,4 @@ It may take a few minutes to build these.
 
 Once it's done, we can install IPython with all the available options:
 
-    $ pip install ipython[zmq,qtconsole,notebook,test]
+    $ pip install ipython
