@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en-US" manifest="../manifest.appcache">
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
@@ -36,10 +36,13 @@
     </head>
     <body>
         
+
         <link rel="stylesheet" href="../gitbook/style.css">
         
+
+
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="13" data-basepath=".." data-revision="1398315577944">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="15" data-basepath=".." data-revision="1398650613414">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -47,6 +50,33 @@
     
     <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
     <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
 
     <!-- Actions Right -->
     <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
@@ -59,7 +89,10 @@
     
 
     <!-- Title -->
-    <h1><a href="../" >Mac OS X Setup Guide</a></h1>
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Mac OS X Setup Guide</a>
+    </h1>
 </div>
 
     <div class="book-summary">
@@ -272,19 +305,37 @@
                 
             </li>
         
-            <li  data-level="10" data-path="Ruby/README.html">
+            <li  data-level="10" data-path="Java/README.html">
+                
+                <a href="../Java/README.html">
+                    <i class="fa fa-check"></i> <b>10.</b> Java
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="11" data-path="Scala/README.html">
+                
+                <a href="../Scala/README.html">
+                    <i class="fa fa-check"></i> <b>11.</b> Scala
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="12" data-path="Ruby/README.html">
                 
                 <a href="../Ruby/README.html">
-                    <i class="fa fa-check"></i> <b>10.</b> Ruby
+                    <i class="fa fa-check"></i> <b>12.</b> Ruby
                 </a>
                 
                 
                 <ul class="articles">
                     
-                        <li  data-level="10.1" data-path="Ruby/RubyGems.html">
+                        <li  data-level="12.1" data-path="Ruby/RubyGems.html">
                             
                             <a href="../Ruby/RubyGems.html">
-                                <i class="fa fa-check"></i> <b>10.1.</b> RubyGems
+                                <i class="fa fa-check"></i> <b>12.1.</b> RubyGems
                             </a>
                             
                         </li>
@@ -293,54 +344,54 @@
                 
             </li>
         
-            <li  data-level="11" data-path="Node.js/README.html">
+            <li  data-level="13" data-path="Node.js/README.html">
                 
                 <a href="../Node.js/README.html">
-                    <i class="fa fa-check"></i> <b>11.</b> Node.js
+                    <i class="fa fa-check"></i> <b>13.</b> Node.js
                 </a>
                 
                 
             </li>
         
-            <li  data-level="12" data-path="Heroku/README.html">
+            <li  data-level="14" data-path="Heroku/README.html">
                 
                 <a href="../Heroku/README.html">
-                    <i class="fa fa-check"></i> <b>12.</b> Heroku
+                    <i class="fa fa-check"></i> <b>14.</b> Heroku
                 </a>
                 
                 
             </li>
         
-            <li  data-level="13" data-path="Latex/README.html">
+            <li  data-level="15" data-path="Latex/README.html">
                 
                 <a href="../Latex/README.html">
-                    <i class="fa fa-check"></i> <b>13.</b> Latex
+                    <i class="fa fa-check"></i> <b>15.</b> Latex
                 </a>
                 
                 
             </li>
         
-            <li  data-level="14" data-path="Apps/README.html">
+            <li  data-level="16" data-path="Apps/README.html">
                 
                 <a href="../Apps/README.html">
-                    <i class="fa fa-check"></i> <b>14.</b> Apps
+                    <i class="fa fa-check"></i> <b>16.</b> Apps
                 </a>
                 
                 
                 <ul class="articles">
                     
-                        <li  data-level="14.1" data-path="Apps/Octave.html">
+                        <li  data-level="16.1" data-path="Apps/Octave.html">
                             
                             <a href="../Apps/Octave.html">
-                                <i class="fa fa-check"></i> <b>14.1.</b> Octave
+                                <i class="fa fa-check"></i> <b>16.1.</b> Octave
                             </a>
                             
                         </li>
                     
-                        <li  data-level="14.2" data-path="Apps/Settings.html">
+                        <li  data-level="16.2" data-path="Apps/Settings.html">
                             
                             <a href="../Apps/Settings.html">
-                                <i class="fa fa-check"></i> <b>14.2.</b> Settings
+                                <i class="fa fa-check"></i> <b>16.2.</b> Settings
                             </a>
                             
                         </li>
@@ -349,10 +400,10 @@
                 
             </li>
         
-            <li  data-level="15" data-path="References/README.html">
+            <li  data-level="17" data-path="References/README.html">
                 
                 <a href="../References/README.html">
-                    <i class="fa fa-check"></i> <b>15.</b> References
+                    <i class="fa fa-check"></i> <b>17.</b> References
                 </a>
                 
                 
@@ -366,67 +417,71 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 20.689655172413794%;min-width: 17.24137931034483%;"></div>
+        <div class="inner" style="width: 25.806451612903224%;min-width: 22.580645161290324%;"></div>
     </div>
     <div class="chapters">
     
         <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="../SystemPreferences/README.html" title="System Preferences" class="chapter done new-chapter" data-progress="1" style="left: 3.4482758620689653%;"></a>
+        <a href="../SystemPreferences/README.html" title="System Preferences" class="chapter done new-chapter" data-progress="1" style="left: 3.225806451612903%;"></a>
     
-        <a href="../Ruby/README.html" title="Ruby" class="chapter done " data-progress="10" style="left: 6.896551724137931%;"></a>
+        <a href="../Java/README.html" title="Java" class="chapter done " data-progress="10" style="left: 6.451612903225806%;"></a>
     
-        <a href="../Ruby/RubyGems.html" title="RubyGems" class="chapter done " data-progress="10.1" style="left: 10.344827586206897%;"></a>
+        <a href="../Scala/README.html" title="Scala" class="chapter done " data-progress="11" style="left: 9.67741935483871%;"></a>
     
-        <a href="../Node.js/README.html" title="Node.js" class="chapter done " data-progress="11" style="left: 13.793103448275861%;"></a>
+        <a href="../Ruby/README.html" title="Ruby" class="chapter done " data-progress="12" style="left: 12.903225806451612%;"></a>
     
-        <a href="../Heroku/README.html" title="Heroku" class="chapter done " data-progress="12" style="left: 17.24137931034483%;"></a>
+        <a href="../Ruby/RubyGems.html" title="RubyGems" class="chapter done " data-progress="12.1" style="left: 16.129032258064516%;"></a>
     
-        <a href="../Latex/README.html" title="Latex" class="chapter done " data-progress="13" style="left: 20.689655172413794%;"></a>
+        <a href="../Node.js/README.html" title="Node.js" class="chapter done " data-progress="13" style="left: 19.35483870967742%;"></a>
     
-        <a href="../Apps/README.html" title="Apps" class="chapter  " data-progress="14" style="left: 24.137931034482758%;"></a>
+        <a href="../Heroku/README.html" title="Heroku" class="chapter done " data-progress="14" style="left: 22.580645161290324%;"></a>
     
-        <a href="../Apps/Octave.html" title="Octave" class="chapter  " data-progress="14.1" style="left: 27.586206896551722%;"></a>
+        <a href="../Latex/README.html" title="Latex" class="chapter done " data-progress="15" style="left: 25.806451612903224%;"></a>
     
-        <a href="../Apps/Settings.html" title="Settings" class="chapter  " data-progress="14.2" style="left: 31.03448275862069%;"></a>
+        <a href="../Apps/README.html" title="Apps" class="chapter  " data-progress="16" style="left: 29.032258064516128%;"></a>
     
-        <a href="../References/README.html" title="References" class="chapter  " data-progress="15" style="left: 34.48275862068966%;"></a>
+        <a href="../Apps/Octave.html" title="Octave" class="chapter  " data-progress="16.1" style="left: 32.25806451612903%;"></a>
     
-        <a href="../XCode/README.html" title="XCode" class="chapter  new-chapter" data-progress="2" style="left: 37.93103448275862%;"></a>
+        <a href="../Apps/Settings.html" title="Settings" class="chapter  " data-progress="16.2" style="left: 35.483870967741936%;"></a>
     
-        <a href="../Homebrew/README.html" title="Homebrew" class="chapter  new-chapter" data-progress="3" style="left: 41.37931034482759%;"></a>
+        <a href="../References/README.html" title="References" class="chapter  " data-progress="17" style="left: 38.70967741935484%;"></a>
     
-        <a href="../Homebrew/Usage.html" title="Usage" class="chapter  " data-progress="3.1" style="left: 44.827586206896555%;"></a>
+        <a href="../XCode/README.html" title="XCode" class="chapter  new-chapter" data-progress="2" style="left: 41.935483870967744%;"></a>
     
-        <a href="../iTerm/README.html" title="iTerm2" class="chapter  new-chapter" data-progress="4" style="left: 48.275862068965516%;"></a>
+        <a href="../Homebrew/README.html" title="Homebrew" class="chapter  new-chapter" data-progress="3" style="left: 45.16129032258065%;"></a>
     
-        <a href="../iTerm/zsh.html" title="ZSH" class="chapter  " data-progress="4.1" style="left: 51.724137931034484%;"></a>
+        <a href="../Homebrew/Usage.html" title="Usage" class="chapter  " data-progress="3.1" style="left: 48.38709677419355%;"></a>
     
-        <a href="../Git/README.html" title="Git" class="chapter  new-chapter" data-progress="5" style="left: 55.172413793103445%;"></a>
+        <a href="../iTerm/README.html" title="iTerm2" class="chapter  new-chapter" data-progress="4" style="left: 51.61290322580645%;"></a>
     
-        <a href="../Git/gitignore.html" title="Git ignore" class="chapter  " data-progress="5.1" style="left: 58.62068965517241%;"></a>
+        <a href="../iTerm/zsh.html" title="ZSH" class="chapter  " data-progress="4.1" style="left: 54.83870967741935%;"></a>
     
-        <a href="../SublimeText/README.html" title="Sublime Text" class="chapter  new-chapter" data-progress="6" style="left: 62.06896551724138%;"></a>
+        <a href="../Git/README.html" title="Git" class="chapter  new-chapter" data-progress="5" style="left: 58.064516129032256%;"></a>
     
-        <a href="../SublimeText/Preferences.html" title="Perferences" class="chapter  " data-progress="6.1" style="left: 65.51724137931035%;"></a>
+        <a href="../Git/gitignore.html" title="Git ignore" class="chapter  " data-progress="5.1" style="left: 61.29032258064516%;"></a>
     
-        <a href="../SublimeText/Packages.html" title="Packages 1/2" class="chapter  " data-progress="6.2" style="left: 68.96551724137932%;"></a>
+        <a href="../SublimeText/README.html" title="Sublime Text" class="chapter  new-chapter" data-progress="6" style="left: 64.51612903225806%;"></a>
     
-        <a href="../SublimeText/Plugins.html" title="Packages 2/2" class="chapter  " data-progress="6.3" style="left: 72.41379310344827%;"></a>
+        <a href="../SublimeText/Preferences.html" title="Perferences" class="chapter  " data-progress="6.1" style="left: 67.74193548387096%;"></a>
     
-        <a href="../SublimeText/SublimeLinter.html" title="Sublime Linter" class="chapter  " data-progress="6.4" style="left: 75.86206896551724%;"></a>
+        <a href="../SublimeText/Packages.html" title="Packages 1/2" class="chapter  " data-progress="6.2" style="left: 70.96774193548387%;"></a>
     
-        <a href="../Python/README.html" title="Python" class="chapter  new-chapter" data-progress="7" style="left: 79.3103448275862%;"></a>
+        <a href="../SublimeText/Plugins.html" title="Packages 2/2" class="chapter  " data-progress="6.3" style="left: 74.19354838709677%;"></a>
     
-        <a href="../Python/pip.html" title="Pip" class="chapter  " data-progress="7.1" style="left: 82.75862068965517%;"></a>
+        <a href="../SublimeText/SublimeLinter.html" title="Sublime Linter" class="chapter  " data-progress="6.4" style="left: 77.41935483870968%;"></a>
     
-        <a href="../Python/virtualenv.html" title="Virtualenv" class="chapter  " data-progress="7.2" style="left: 86.20689655172414%;"></a>
+        <a href="../Python/README.html" title="Python" class="chapter  new-chapter" data-progress="7" style="left: 80.64516129032258%;"></a>
     
-        <a href="../Python/numpy.html" title="Numpy-Scipy" class="chapter  " data-progress="7.3" style="left: 89.65517241379311%;"></a>
+        <a href="../Python/pip.html" title="Pip" class="chapter  " data-progress="7.1" style="left: 83.87096774193549%;"></a>
     
-        <a href="../Python/ipython.html" title="Ipython" class="chapter  " data-progress="7.4" style="left: 93.10344827586206%;"></a>
+        <a href="../Python/virtualenv.html" title="Virtualenv" class="chapter  " data-progress="7.2" style="left: 87.09677419354838%;"></a>
     
-        <a href="../MySql/README.html" title="MySql" class="chapter  new-chapter" data-progress="8" style="left: 96.55172413793103%;"></a>
+        <a href="../Python/numpy.html" title="Numpy-Scipy" class="chapter  " data-progress="7.3" style="left: 90.3225806451613%;"></a>
+    
+        <a href="../Python/ipython.html" title="Ipython" class="chapter  " data-progress="7.4" style="left: 93.54838709677419%;"></a>
+    
+        <a href="../MySql/README.html" title="MySql" class="chapter  new-chapter" data-progress="8" style="left: 96.7741935483871%;"></a>
     
         <a href="../Cpp/README.html" title="CPlusPlus" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
     
@@ -435,7 +490,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_18">
+                    <section class="normal" id="section-gitbook_16">
                     
                         <h1 id="latex">Latex</h1>
 <p>Installing Latex on mac. Downlaod from <a href="http://www.tug.org/mactex/" target="_blank">MacTex</a> it is around 2GB in size and comes with TexLive installed. For more details about what is installed <a href="https://www.tug.org/mactex/What_Is_Installed.pdf" target="_blank">check here</a>. Then use an editor like <a href="http://tacosw.com/latexian/" target="_blank">Latexian</a> or <a href="http://www.xm1math.net/texmaker/download.html" target="_blank">TexMaker</a>.</p>
@@ -460,13 +515,31 @@
 </div>
 
         
-        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-        </script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
         <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
         <script src="../gitbook/app.js"></script>
         
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
     </body>
 </html>
