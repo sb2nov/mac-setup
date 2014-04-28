@@ -20,6 +20,8 @@
     * [Ipython](Python/ipython.md)
 * [MySql](MySql/README.md)
 * [CPlusPlus](Cpp/README.md)
+* [Java](Java/README.md)
+* [Scala](Scala/README.md)
 * [Ruby](Ruby/README.md)
     * [RubyGems](Ruby/RubyGems.md)
 * [Node.js](Node.js/README.md)

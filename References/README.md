@@ -6,6 +6,7 @@ Thank you for all the awesome pages and documentation below that helped set this
 - [Github](https://help.github.com/articles)
 - [Gitbook](https://github.com/GitbookIO/gitbook)
 - [Sublime Plugins](https://sublime.wbond.net/)
+- [Scala IDE Documentation](http://scala-ide.org/docs/user/gettingstarted.html)
 
 
 # Contributing

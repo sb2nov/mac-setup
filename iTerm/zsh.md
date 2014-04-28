@@ -47,5 +47,4 @@ edit the `.zshrc` by opening the file in a text editor
 
     # Aliases
     alias cppcompile='c++ -std=c++11 -stdlib=libc++'
-    alias portfolio='cd ~/Projects/portfolio'
 ~~~

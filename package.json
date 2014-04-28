@@ -1,6 +1,6 @@
 {
   "name": "mac-setup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Installing Development environment on Mac OS X",
   "main": "Gruntfile.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "grunt": "0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-gh-pages": "0.9.1",
-    "grunt-gitbook": "0.2.3",
+    "grunt-gitbook": "0.3.2",
     "grunt-http-server": "0.0.5"
   },
   "peerDependencies": {
