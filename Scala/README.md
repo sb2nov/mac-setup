@@ -3,6 +3,7 @@
 Make sure you have Java installed, the instructions are provided [here](/mac-setup/Java/README.html).
 
     $ brew update
+    $ brew install scala
     $ brew install sbt
 
 Update the `~/.sbtconfig` by running the command below. This step is optional.
