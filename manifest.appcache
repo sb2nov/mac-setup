@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# Revision 1398650613414
+# Revision 1398672198675
 
 CACHE:
-Python/ipython.html
 Python/README.html
+Python/ipython.html
 Python/numpy.html
 Python/pip.html
 Python/virtualenv.html
