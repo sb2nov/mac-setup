@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>iTerm2 | Mac OS X Setup Guide</title>
+        <title>Cask | Mac OS X Setup Guide</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../iTerm/zsh.html" />
+        <link rel="next" href="../iTerm/README.html" />
         
         
-        <link rel="prev" href="../Homebrew/Cask.html" />
+        <link rel="prev" href="../Homebrew/Usage.html" />
         
 
-        <meta property="og:title" content="iTerm2 | Mac OS X Setup Guide">
+        <meta property="og:title" content="Cask | Mac OS X Setup Guide">
         <meta property="og:site_name" content="Mac OS X Setup Guide">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4" data-basepath=".." data-revision="1399761132582">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="3.2" data-basepath=".." data-revision="1399761132582">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +108,7 @@
             <a href="https://github.com/sb2nov/mac-setup/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/sb2nov/mac-setup/edit/master/iTerm/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/sb2nov/mac-setup/edit/master/Homebrew/Cask.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -425,7 +425,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 53.125%;min-width: 50%;"></div>
+        <div class="inner" style="width: 50%;min-width: 46.875%;"></div>
     </div>
     <div class="chapters">
     
@@ -463,7 +463,7 @@
     
         <a href="../Homebrew/Cask.html" title="Cask" class="chapter done " data-progress="3.2" style="left: 50%;"></a>
     
-        <a href="../iTerm/README.html" title="iTerm2" class="chapter done new-chapter" data-progress="4" style="left: 53.125%;"></a>
+        <a href="../iTerm/README.html" title="iTerm2" class="chapter  new-chapter" data-progress="4" style="left: 53.125%;"></a>
     
         <a href="../iTerm/zsh.html" title="ZSH" class="chapter  " data-progress="4.1" style="left: 56.25%;"></a>
     
@@ -500,23 +500,44 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_35">
+                    <section class="normal" id="section-gitbook_13">
                     
-                        <h2 id="iterm2">iTerm2</h2>
-<p>Since we&#39;re going to be spending a lot of time in the command-line, let&#39;s install a better terminal than the default one. Download and install <a href="http://www.iterm2.com/" target="_blank">iTerm2</a>.</p>
-<p>In <strong>Finder</strong>, drag and drop the <strong>iTerm</strong> Application file into the <strong>Applications</strong> folder.</p>
-<p>You can now launch iTerm, through the <strong>Launchpad</strong> for instance.</p>
-<p>Let&#39;s just quickly change some preferences.</p>
-<h3 id="colors-and-font-settings">Colors and Font Settings</h3>
-<ul>
-<li>Set hotkey to open and close the terminal to <code>command + option + i</code></li>
-<li>Go to profiles -&gt; Default -&gt; Check silence bell</li>
-<li>Download the <a href="https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized" target="_blank">Solarized dark iterm colors</a> from here. And then set these to your default profile colors.</li>
-<li>Change the cursor text and cursor color to yellow make it more visible</li>
-<li>Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from <a href="https://github.com/adobe/source-code-pro/downloads" target="_blank">here</a>.</li>
-</ul>
-<p><a href="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" target="_blank"><img src="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" alt="Screen"></a></p>
-
+                        <h1 id="homebrew-cask">Homebrew Cask</h1>
+<p>Let&#39;s see if we can get the elegance, simplicity, and speed of Homebrew for the installation and management of GUI Mac applications such as Google Chrome and Adium.</p>
+<h3 id="install">Install</h3>
+<p>Install Homebrew-cask is really straight forward. We just need to add the cask tap and then install brew cask.</p>
+<pre><code>$ brew tap caskroom/cask
+$ brew install brew-cask
+$ brew cask install google-chrome
+$ brew update &amp;&amp; brew upgrade brew-cask &amp;&amp; brew cleanup
+</code></pre><h3 id="search">Search</h3>
+<p>It is really simple to check if the app is supported by cask by going to the search page on <a href="http://caskroom.io/" target="_blank">caskroom.io</a></p>
+<h3 id="app-installation">App Installation</h3>
+<p>I&#39;ll now cover installation of the apps that I have mentioned in the apps section using cask.</p>
+<pre><code>$ brew cask install airmail
+$ brew cask install alfred
+$ brew cask install android-file-transfer
+$ brew cask install asepsis
+$ brew cask install appcleaner
+$ brew cask install caffeine
+$ brew cask install cheatsheet
+$ brew cask install doubletwist
+$ brew cask install dropbox
+$ brew cask install google-chrome
+$ brew cask install google-drive
+$ brew cask install google-hangouts
+$ brew cask install flux
+$ brew cask install latexian
+$ brew cask install onepassword
+$ brew cask install pdftk
+$ brew cask install spectacle
+$ brew cask install sublime-text
+$ brew cask install superduper
+$ brew cask install totalfinder
+$ brew cask install transmission
+$ brew cask install valentina-studio
+$ brew cask install vlc
+</code></pre>
                     
                     </section>
                 
@@ -525,10 +546,10 @@
         </div>
 
         
-        <a href="../Homebrew/Cask.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Homebrew/Usage.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../iTerm/zsh.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../iTerm/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
