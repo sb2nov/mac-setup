@@ -1,430 +1,724 @@
 <!DOCTYPE HTML>
 <html lang="en-US" manifest="../manifest.appcache">
-    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+    
+    <head>
         
         <meta charset="UTF-8">
-        <title>Pip | Mac OS X Setup Guide</title>
-
+        <title>Pip | Mac OS X Setup Guide </title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="sb2nov">
-        <meta name="description" content="Guide to setting up developer environment on OS X">
-        <meta name="keywords" content="gitbook,github" >
-        <meta name="generator" content="www.gitbook.io">
-
-        
-        <link rel="next" href="../Python/virtualenv.html" />
-        
-        
-        <link rel="prev" href="../Python/README.html" />
-        
-
-        <meta property="og:title" content="Pip | Mac OS X Setup Guide">
-        <meta property="og:site_name" content="Mac OS X Setup Guide">
-        <meta property="og:type" content="book">
-        <meta property="og:locale" content="en_US">
-
-        <meta property="book:author" content="https://github.com/sb2nov">
-        <meta property="book:tag" content="GitBook">
-
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="sb2nov">
+    
+    
+    <link rel="next" href="../Python/virtualenv.html" />
+    
+    
+    <link rel="prev" href="../Python/README.html" />
+    
+
         
     </head>
     <body>
         
-
-        <link rel="stylesheet" href="../gitbook/style.css">
         
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="7.1" data-basepath=".." data-revision="1399877681239">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="7.1" data-basepath=".." data-revision="1406222318030">
     <div class="book-header">
     <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
-    <a href="https://github.com/sb2nov/mac-setup" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="http://sourabhbajaj.com/mac-setup/" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
-    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
-        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
         </a>
         <div class="dropdown-menu font-settings">
-	<div class="dropdown-caret">
-  <span class="caret-outer"></span>
-  <span class="caret-inner"></span>
-</div>
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
 
-	<div class="btn-group btn-block">
-		<button id="reduce-font-size" class="btn btn-default">A</button>
-		<button id="enlarge-font-size" class="btn btn-default">A</button>
-	</div>
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
 
-	<ul class="list-group font-family-list">
-		<li class="list-group-item" data-font="0">Serif</li>
-		<li class="list-group-item" data-font="1">Sans</li>
-	</ul>
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
 
-	<div class="btn-group btn-group-xs btn-block color-theme-list">
-	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
-	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
-	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
-	</div>
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
 </div>
 
     </span>
 
     <!-- Actions Right -->
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
 
     
-    <a href="https://github.com/sb2nov/mac-setup/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
-    <a href="https://github.com/sb2nov/mac-setup/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    <a href="https://github.com/sb2nov/mac-setup/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/sb2nov/mac-setup/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="../" >Mac OS X Setup Guide</a>
+        <a href="../" >Mac OS X Setup Guide </a>
     </h1>
 </div>
 
-    <div class="book-summary">
+    
+
+<div class="book-summary">
     <div class="book-search">
         <input type="text" placeholder="Search" class="form-control" />
     </div>
     <ul class="summary">
         
+        
+        
         <li>
-            <a href="https://github.com/sb2nov" target="blank">About the author</a>
+            <a href="http://sourabhbajaj.com" target="blank" class="author-link">About the author</a>
         </li>
+        
+
+        
+        
         <li>
-            <a href="https://github.com/sb2nov/mac-setup/issues" target="blank">Questions and Issues</a>
+            <a href="https://github.com/sb2nov/mac-setup/issues" target="blank"class="issues-link">Questions and Issues</a>
         </li>
+        
+
+        
+        
         <li>
-            <a href="https://github.com/sb2nov/mac-setup/edit/master/Python/pip.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/sb2nov/mac-setup/edit/master/Python/pip.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
+        
+
+        
         <li class="divider"></li>
         
-        <li data-level="0" data-path="index.html">
-            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
         </li>
+    
         
-            <li  data-level="1" data-path="SystemPreferences/README.html">
+        <li class="chapter " data-level="1" data-path="SystemPreferences/README.html">
+            
                 
-                <a href="../SystemPreferences/README.html">
-                    <i class="fa fa-check"></i> <b>1.</b> System Preferences
-                </a>
+                    <a href="../SystemPreferences/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         System Preferences
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="2" data-path="XCode/README.html">
+        <li class="chapter " data-level="2" data-path="XCode/README.html">
+            
                 
-                <a href="../XCode/README.html">
-                    <i class="fa fa-check"></i> <b>2.</b> XCode
-                </a>
+                    <a href="../XCode/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         XCode
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="3" data-path="Homebrew/README.html">
+        <li class="chapter " data-level="3" data-path="Homebrew/README.html">
+            
                 
-                <a href="../Homebrew/README.html">
-                    <i class="fa fa-check"></i> <b>3.</b> Homebrew
-                </a>
+                    <a href="../Homebrew/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Homebrew
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-                <ul class="articles">
-                    
-                        <li  data-level="3.1" data-path="Homebrew/Usage.html">
-                            
-                            <a href="../Homebrew/Usage.html">
-                                <i class="fa fa-check"></i> <b>3.1.</b> Usage
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="3.2" data-path="Homebrew/Cask.html">
-                            
-                            <a href="../Homebrew/Cask.html">
-                                <i class="fa fa-check"></i> <b>3.2.</b> Cask
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+    
         
-            <li  data-level="4" data-path="iTerm/README.html">
+        <li class="chapter " data-level="3.1" data-path="Homebrew/Usage.html">
+            
                 
-                <a href="../iTerm/README.html">
-                    <i class="fa fa-check"></i> <b>4.</b> iTerm2
-                </a>
+                    <a href="../Homebrew/Usage.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Usage
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="4.1" data-path="iTerm/zsh.html">
-                            
-                            <a href="../iTerm/zsh.html">
-                                <i class="fa fa-check"></i> <b>4.1.</b> ZSH
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="5" data-path="Git/README.html">
+        <li class="chapter " data-level="3.2" data-path="Homebrew/Cask.html">
+            
                 
-                <a href="../Git/README.html">
-                    <i class="fa fa-check"></i> <b>5.</b> Git
-                </a>
+                    <a href="../Homebrew/Cask.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Cask
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="5.1" data-path="Git/gitignore.html">
-                            
-                            <a href="../Git/gitignore.html">
-                                <i class="fa fa-check"></i> <b>5.1.</b> Git ignore
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
         
-            <li  data-level="6" data-path="SublimeText/README.html">
+        <li class="chapter " data-level="4" data-path="iTerm/README.html">
+            
                 
-                <a href="../SublimeText/README.html">
-                    <i class="fa fa-check"></i> <b>6.</b> Sublime Text
-                </a>
+                    <a href="../iTerm/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         iTerm2
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-                <ul class="articles">
-                    
-                        <li  data-level="6.1" data-path="SublimeText/Preferences.html">
-                            
-                            <a href="../SublimeText/Preferences.html">
-                                <i class="fa fa-check"></i> <b>6.1.</b> Perferences
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.2" data-path="SublimeText/Packages.html">
-                            
-                            <a href="../SublimeText/Packages.html">
-                                <i class="fa fa-check"></i> <b>6.2.</b> Packages 1/2
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.3" data-path="SublimeText/Plugins.html">
-                            
-                            <a href="../SublimeText/Plugins.html">
-                                <i class="fa fa-check"></i> <b>6.3.</b> Packages 2/2
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="6.4" data-path="SublimeText/SublimeLinter.html">
-                            
-                            <a href="../SublimeText/SublimeLinter.html">
-                                <i class="fa fa-check"></i> <b>6.4.</b> Sublime Linter
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+    
         
-            <li  data-level="7" data-path="Python/README.html">
+        <li class="chapter " data-level="4.1" data-path="iTerm/zsh.html">
+            
                 
-                <a href="../Python/README.html">
-                    <i class="fa fa-check"></i> <b>7.</b> Python
-                </a>
+                    <a href="../iTerm/zsh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         ZSH
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="7.1" data-path="Python/pip.html">
-                            
-                            <a href="../Python/pip.html">
-                                <i class="fa fa-check"></i> <b>7.1.</b> Pip
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.2" data-path="Python/virtualenv.html">
-                            
-                            <a href="../Python/virtualenv.html">
-                                <i class="fa fa-check"></i> <b>7.2.</b> Virtualenv
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.3" data-path="Python/numpy.html">
-                            
-                            <a href="../Python/numpy.html">
-                                <i class="fa fa-check"></i> <b>7.3.</b> Numpy-Scipy
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="7.4" data-path="Python/ipython.html">
-                            
-                            <a href="../Python/ipython.html">
-                                <i class="fa fa-check"></i> <b>7.4.</b> Ipython
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
         
-            <li  data-level="8" data-path="MySql/README.html">
+        <li class="chapter " data-level="5" data-path="Git/README.html">
+            
                 
-                <a href="../MySql/README.html">
-                    <i class="fa fa-check"></i> <b>8.</b> MySql
-                </a>
+                    <a href="../Git/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Git
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-            </li>
+    
         
-            <li  data-level="9" data-path="Cpp/README.html">
+        <li class="chapter " data-level="5.1" data-path="Git/gitignore.html">
+            
                 
-                <a href="../Cpp/README.html">
-                    <i class="fa fa-check"></i> <b>9.</b> CPlusPlus
-                </a>
+                    <a href="../Git/gitignore.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Git ignore
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
         
-            <li  data-level="10" data-path="Java/README.html">
+        <li class="chapter " data-level="6" data-path="SublimeText/README.html">
+            
                 
-                <a href="../Java/README.html">
-                    <i class="fa fa-check"></i> <b>10.</b> Java
-                </a>
+                    <a href="../SublimeText/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Sublime Text
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-            </li>
+    
         
-            <li  data-level="11" data-path="Scala/README.html">
+        <li class="chapter " data-level="6.1" data-path="SublimeText/Preferences.html">
+            
                 
-                <a href="../Scala/README.html">
-                    <i class="fa fa-check"></i> <b>11.</b> Scala
-                </a>
+                    <a href="../SublimeText/Preferences.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Perferences
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="12" data-path="Ruby/README.html">
+        <li class="chapter " data-level="6.2" data-path="SublimeText/Packages.html">
+            
                 
-                <a href="../Ruby/README.html">
-                    <i class="fa fa-check"></i> <b>12.</b> Ruby
-                </a>
+                    <a href="../SublimeText/Packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Packages 1/2
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="12.1" data-path="Ruby/RubyGems.html">
-                            
-                            <a href="../Ruby/RubyGems.html">
-                                <i class="fa fa-check"></i> <b>12.1.</b> RubyGems
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="13" data-path="Node.js/README.html">
+        <li class="chapter " data-level="6.3" data-path="SublimeText/Plugins.html">
+            
                 
-                <a href="../Node.js/README.html">
-                    <i class="fa fa-check"></i> <b>13.</b> Node.js
-                </a>
+                    <a href="../SublimeText/Plugins.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Packages 2/2
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="14" data-path="Heroku/README.html">
+        <li class="chapter " data-level="6.4" data-path="SublimeText/SublimeLinter.html">
+            
                 
-                <a href="../Heroku/README.html">
-                    <i class="fa fa-check"></i> <b>14.</b> Heroku
-                </a>
+                    <a href="../SublimeText/SublimeLinter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Sublime Linter
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
         
-            <li  data-level="15" data-path="Vagrant/README.html">
+        <li class="chapter " data-level="7" data-path="Python/README.html">
+            
                 
-                <a href="../Vagrant/README.html">
-                    <i class="fa fa-check"></i> <b>15.</b> Vagrant
-                </a>
+                    <a href="../Python/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Python
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-            </li>
+    
         
-            <li  data-level="16" data-path="Latex/README.html">
+        <li class="chapter " data-level="7.1" data-path="Python/pip.html">
+            
                 
-                <a href="../Latex/README.html">
-                    <i class="fa fa-check"></i> <b>16.</b> Latex
-                </a>
+                    <a href="../Python/pip.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         Pip
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="17" data-path="Apps/README.html">
+        <li class="chapter " data-level="7.2" data-path="Python/virtualenv.html">
+            
                 
-                <a href="../Apps/README.html">
-                    <i class="fa fa-check"></i> <b>17.</b> Apps
-                </a>
+                    <a href="../Python/virtualenv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         Virtualenv
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="17.1" data-path="Apps/Octave.html">
-                            
-                            <a href="../Apps/Octave.html">
-                                <i class="fa fa-check"></i> <b>17.1.</b> Octave
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="17.2" data-path="Apps/Settings.html">
-                            
-                            <a href="../Apps/Settings.html">
-                                <i class="fa fa-check"></i> <b>17.2.</b> Settings
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li  data-level="18" data-path="References/README.html">
+        <li class="chapter " data-level="7.3" data-path="Python/numpy.html">
+            
                 
-                <a href="../References/README.html">
-                    <i class="fa fa-check"></i> <b>18.</b> References
-                </a>
+                    <a href="../Python/numpy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         Numpy-Scipy
+                    </a>
                 
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="Python/ipython.html">
+            
                 
-            </li>
+                    <a href="../Python/ipython.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         Ipython
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="MySql/README.html">
+            
+                
+                    <a href="../MySql/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         MySql
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="Cpp/README.html">
+            
+                
+                    <a href="../Cpp/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         CPlusPlus
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="Java/README.html">
+            
+                
+                    <a href="../Java/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Java
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="Scala/README.html">
+            
+                
+                    <a href="../Scala/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         Scala
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="Ruby/README.html">
+            
+                
+                    <a href="../Ruby/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Ruby
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="Ruby/RubyGems.html">
+            
+                
+                    <a href="../Ruby/RubyGems.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         RubyGems
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="Node.js/README.html">
+            
+                
+                    <a href="../Node.js/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Node.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="Heroku/README.html">
+            
+                
+                    <a href="../Heroku/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Heroku
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="Vagrant/README.html">
+            
+                
+                    <a href="../Vagrant/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Vagrant
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="Latex/README.html">
+            
+                
+                    <a href="../Latex/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         Latex
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="Apps/README.html">
+            
+                
+                    <a href="../Apps/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         Apps
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="17.1" data-path="Apps/Octave.html">
+            
+                
+                    <a href="../Apps/Octave.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.1.</b>
+                        
+                         Octave
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17.2" data-path="Apps/Settings.html">
+            
+                
+                    <a href="../Apps/Settings.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.2.</b>
+                        
+                         Settings
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="References/README.html">
+            
+                
+                    <a href="../References/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         References
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
         
     </ul>
 </div>
@@ -434,7 +728,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 84.84848484848484%;min-width: 81.81818181818181%;"></div>
+        <div class="inner" style="width: 48.484848484848484%;min-width: 45.45454545454545%;"></div>
     </div>
     <div class="chapters">
     
@@ -442,69 +736,69 @@
     
         <a href="../SystemPreferences/README.html" title="System Preferences" class="chapter done new-chapter" data-progress="1" style="left: 3.0303030303030303%;"></a>
     
-        <a href="../Java/README.html" title="Java" class="chapter done " data-progress="10" style="left: 6.0606060606060606%;"></a>
+        <a href="../XCode/README.html" title="XCode" class="chapter done new-chapter" data-progress="2" style="left: 6.0606060606060606%;"></a>
     
-        <a href="../Scala/README.html" title="Scala" class="chapter done " data-progress="11" style="left: 9.090909090909092%;"></a>
+        <a href="../Homebrew/README.html" title="Homebrew" class="chapter done new-chapter" data-progress="3" style="left: 9.090909090909092%;"></a>
     
-        <a href="../Ruby/README.html" title="Ruby" class="chapter done " data-progress="12" style="left: 12.121212121212121%;"></a>
+        <a href="../Homebrew/Usage.html" title="Usage" class="chapter done " data-progress="3.1" style="left: 12.121212121212121%;"></a>
     
-        <a href="../Ruby/RubyGems.html" title="RubyGems" class="chapter done " data-progress="12.1" style="left: 15.151515151515152%;"></a>
+        <a href="../Homebrew/Cask.html" title="Cask" class="chapter done " data-progress="3.2" style="left: 15.151515151515152%;"></a>
     
-        <a href="../Node.js/README.html" title="Node.js" class="chapter done " data-progress="13" style="left: 18.181818181818183%;"></a>
+        <a href="../iTerm/README.html" title="iTerm2" class="chapter done new-chapter" data-progress="4" style="left: 18.181818181818183%;"></a>
     
-        <a href="../Heroku/README.html" title="Heroku" class="chapter done " data-progress="14" style="left: 21.21212121212121%;"></a>
+        <a href="../iTerm/zsh.html" title="ZSH" class="chapter done " data-progress="4.1" style="left: 21.21212121212121%;"></a>
     
-        <a href="../Vagrant/README.html" title="Vagrant" class="chapter done " data-progress="15" style="left: 24.242424242424242%;"></a>
+        <a href="../Git/README.html" title="Git" class="chapter done new-chapter" data-progress="5" style="left: 24.242424242424242%;"></a>
     
-        <a href="../Latex/README.html" title="Latex" class="chapter done " data-progress="16" style="left: 27.272727272727273%;"></a>
+        <a href="../Git/gitignore.html" title="Git ignore" class="chapter done " data-progress="5.1" style="left: 27.272727272727273%;"></a>
     
-        <a href="../Apps/README.html" title="Apps" class="chapter done " data-progress="17" style="left: 30.303030303030305%;"></a>
+        <a href="../SublimeText/README.html" title="Sublime Text" class="chapter done new-chapter" data-progress="6" style="left: 30.303030303030305%;"></a>
     
-        <a href="../Apps/Octave.html" title="Octave" class="chapter done " data-progress="17.1" style="left: 33.333333333333336%;"></a>
+        <a href="../SublimeText/Preferences.html" title="Perferences" class="chapter done " data-progress="6.1" style="left: 33.333333333333336%;"></a>
     
-        <a href="../Apps/Settings.html" title="Settings" class="chapter done " data-progress="17.2" style="left: 36.36363636363637%;"></a>
+        <a href="../SublimeText/Packages.html" title="Packages 1/2" class="chapter done " data-progress="6.2" style="left: 36.36363636363637%;"></a>
     
-        <a href="../References/README.html" title="References" class="chapter done " data-progress="18" style="left: 39.39393939393939%;"></a>
+        <a href="../SublimeText/Plugins.html" title="Packages 2/2" class="chapter done " data-progress="6.3" style="left: 39.39393939393939%;"></a>
     
-        <a href="../XCode/README.html" title="XCode" class="chapter done new-chapter" data-progress="2" style="left: 42.42424242424242%;"></a>
+        <a href="../SublimeText/SublimeLinter.html" title="Sublime Linter" class="chapter done " data-progress="6.4" style="left: 42.42424242424242%;"></a>
     
-        <a href="../Homebrew/README.html" title="Homebrew" class="chapter done new-chapter" data-progress="3" style="left: 45.45454545454545%;"></a>
+        <a href="../Python/README.html" title="Python" class="chapter done new-chapter" data-progress="7" style="left: 45.45454545454545%;"></a>
     
-        <a href="../Homebrew/Usage.html" title="Usage" class="chapter done " data-progress="3.1" style="left: 48.484848484848484%;"></a>
+        <a href="../Python/pip.html" title="Pip" class="chapter done " data-progress="7.1" style="left: 48.484848484848484%;"></a>
     
-        <a href="../Homebrew/Cask.html" title="Cask" class="chapter done " data-progress="3.2" style="left: 51.515151515151516%;"></a>
+        <a href="../Python/virtualenv.html" title="Virtualenv" class="chapter  " data-progress="7.2" style="left: 51.515151515151516%;"></a>
     
-        <a href="../iTerm/README.html" title="iTerm2" class="chapter done new-chapter" data-progress="4" style="left: 54.54545454545455%;"></a>
+        <a href="../Python/numpy.html" title="Numpy-Scipy" class="chapter  " data-progress="7.3" style="left: 54.54545454545455%;"></a>
     
-        <a href="../iTerm/zsh.html" title="ZSH" class="chapter done " data-progress="4.1" style="left: 57.57575757575758%;"></a>
+        <a href="../Python/ipython.html" title="Ipython" class="chapter  " data-progress="7.4" style="left: 57.57575757575758%;"></a>
     
-        <a href="../Git/README.html" title="Git" class="chapter done new-chapter" data-progress="5" style="left: 60.60606060606061%;"></a>
+        <a href="../MySql/README.html" title="MySql" class="chapter  new-chapter" data-progress="8" style="left: 60.60606060606061%;"></a>
     
-        <a href="../Git/gitignore.html" title="Git ignore" class="chapter done " data-progress="5.1" style="left: 63.63636363636363%;"></a>
+        <a href="../Cpp/README.html" title="CPlusPlus" class="chapter  new-chapter" data-progress="9" style="left: 63.63636363636363%;"></a>
     
-        <a href="../SublimeText/README.html" title="Sublime Text" class="chapter done new-chapter" data-progress="6" style="left: 66.66666666666667%;"></a>
+        <a href="../Java/README.html" title="Java" class="chapter  " data-progress="10" style="left: 66.66666666666667%;"></a>
     
-        <a href="../SublimeText/Preferences.html" title="Perferences" class="chapter done " data-progress="6.1" style="left: 69.6969696969697%;"></a>
+        <a href="../Scala/README.html" title="Scala" class="chapter  " data-progress="11" style="left: 69.6969696969697%;"></a>
     
-        <a href="../SublimeText/Packages.html" title="Packages 1/2" class="chapter done " data-progress="6.2" style="left: 72.72727272727273%;"></a>
+        <a href="../Ruby/README.html" title="Ruby" class="chapter  " data-progress="12" style="left: 72.72727272727273%;"></a>
     
-        <a href="../SublimeText/Plugins.html" title="Packages 2/2" class="chapter done " data-progress="6.3" style="left: 75.75757575757575%;"></a>
+        <a href="../Ruby/RubyGems.html" title="RubyGems" class="chapter  " data-progress="12.1" style="left: 75.75757575757575%;"></a>
     
-        <a href="../SublimeText/SublimeLinter.html" title="Sublime Linter" class="chapter done " data-progress="6.4" style="left: 78.78787878787878%;"></a>
+        <a href="../Node.js/README.html" title="Node.js" class="chapter  " data-progress="13" style="left: 78.78787878787878%;"></a>
     
-        <a href="../Python/README.html" title="Python" class="chapter done new-chapter" data-progress="7" style="left: 81.81818181818181%;"></a>
+        <a href="../Heroku/README.html" title="Heroku" class="chapter  " data-progress="14" style="left: 81.81818181818181%;"></a>
     
-        <a href="../Python/pip.html" title="Pip" class="chapter done " data-progress="7.1" style="left: 84.84848484848484%;"></a>
+        <a href="../Vagrant/README.html" title="Vagrant" class="chapter  " data-progress="15" style="left: 84.84848484848484%;"></a>
     
-        <a href="../Python/virtualenv.html" title="Virtualenv" class="chapter  " data-progress="7.2" style="left: 87.87878787878788%;"></a>
+        <a href="../Latex/README.html" title="Latex" class="chapter  " data-progress="16" style="left: 87.87878787878788%;"></a>
     
-        <a href="../Python/numpy.html" title="Numpy-Scipy" class="chapter  " data-progress="7.3" style="left: 90.9090909090909%;"></a>
+        <a href="../Apps/README.html" title="Apps" class="chapter  " data-progress="17" style="left: 90.9090909090909%;"></a>
     
-        <a href="../Python/ipython.html" title="Ipython" class="chapter  " data-progress="7.4" style="left: 93.93939393939394%;"></a>
+        <a href="../Apps/Octave.html" title="Octave" class="chapter  " data-progress="17.1" style="left: 93.93939393939394%;"></a>
     
-        <a href="../MySql/README.html" title="MySql" class="chapter  new-chapter" data-progress="8" style="left: 96.96969696969697%;"></a>
+        <a href="../Apps/Settings.html" title="Settings" class="chapter  " data-progress="17.2" style="left: 96.96969696969697%;"></a>
     
-        <a href="../Cpp/README.html" title="CPlusPlus" class="chapter  new-chapter" data-progress="9" style="left: 100%;"></a>
+        <a href="../References/README.html" title="References" class="chapter  " data-progress="18" style="left: 100%;"></a>
     
     </div>
 </div>
@@ -531,25 +825,17 @@
         </div>
 
         
-        <a href="../Python/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Python/README.html" class="navigation navigation-prev " aria-label="Previous page: Python"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Python/virtualenv.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../Python/virtualenv.html" class="navigation navigation-next " aria-label="Next page: Virtualenv"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="../gitbook/app.js"></script>
-        
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
-    
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
 
     
     <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -566,5 +852,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
+        
     </body>
+    
 </html>
