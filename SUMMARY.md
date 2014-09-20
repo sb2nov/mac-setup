@@ -10,7 +10,7 @@
 * [Git](Git/README.md)
     * [Git ignore](Git/gitignore.md)
 * [Sublime Text](SublimeText/README.md)
-    * [Perferences](SublimeText/Preferences.md)
+    * [Preferences](SublimeText/Preferences.md)
     * [Packages 1/2](SublimeText/Packages.md)
     * [Packages 2/2](SublimeText/Plugins.md)
     * [Sublime Linter](SublimeText/SublimeLinter.md)
