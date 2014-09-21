@@ -15,6 +15,20 @@ Install Homebrew-cask is really straight forward. We just need to add the cask t
 
 It is really simple to check if the app is supported by cask by going to the search page on [caskroom.io](http://caskroom.io/)
 
+### Quick look plugins
+
+Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to unable different files to work with Mac Quicklook. Includes features like syntax highlighting, markdown rendering, preview of jsons, patch files, csv, zip files etc.
+
+    $ brew cask install qlcolorcode
+    $ brew cask install qlstephen
+    $ brew cask install qlmarkdown
+    $ brew cask install quicklook-json
+    $ brew cask install qlprettypatch
+    $ brew cask install quicklook-csv
+    $ brew cask install betterzipql
+    $ brew cask install webp-quicklook
+    $ brew cask install suspicious-package
+
 ### App Installation
 
 I'll now cover installation of the apps that I have mentioned in the apps section using cask.
