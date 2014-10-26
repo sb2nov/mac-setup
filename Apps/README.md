@@ -40,3 +40,5 @@ Here is a quick list of apps that are generally good to use and can come in hand
 - [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine incase of failure.
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. Enough said.
 - [Voila](http://www.globaldelight.com/voila/): Record your screen with audio, mouse highlight and other features.
+- [TimeOut](http://www.dejal.com/timeout/): Scheduled work breaks to prevent stress injuries.
+
