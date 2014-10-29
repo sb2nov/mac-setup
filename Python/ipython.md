@@ -19,3 +19,9 @@ It may take a few minutes to build these.
 Once it's done, we can install IPython with all the available options:
 
     $ pip install ipython
+
+If you want a more fine grained command you can try the following:
+
+For zsh -> `$ pip install 'ipython[zmq,qtconsole,notebook,test]'`
+
+For bash -> `$ pip install ipython[zmq,qtconsole,notebook,test]`
