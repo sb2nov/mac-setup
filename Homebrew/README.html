@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="3" data-basepath=".." data-revision="1415117546658">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="3" data-basepath=".." data-revision="1416295796743">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -812,7 +812,7 @@
 <h3 id="install">Install</h3>
 <p>An important dependency before Homebrew can work is the <strong>Command Line Tools</strong> for <strong>Xcode</strong>. These include compilers that will allow you to build things from source.</p>
 <p>We can install Hombrew! In the terminal paste the following line (without the <code>$</code>), hit <strong>Enter</strong>, and follow the steps on the screen:</p>
-<pre><code>$ ruby -e &quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;
+<pre><code>$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre><p>One thing we need to do is tell the system to use programs installed by Hombrew (in <code>/usr/local/bin</code>) rather than the OS default if it exists. We do this by adding <code>/usr/local/bin</code> to your <code>$PATH</code> environment variable:</p>
 <pre><code>$ echo &#39;export PATH=&quot;/usr/local/bin:$PATH&quot;&#39; &gt;&gt; ~/.bash_profile
 </code></pre><p>Open an new terminal tab with <strong>Cmd+T</strong> (you should also close the old one), then run the following command to make sure everything works:</p>
