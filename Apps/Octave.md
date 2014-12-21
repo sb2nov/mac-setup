@@ -1,4 +1,7 @@
 # Octave
+
+Octave can be installed with `brew cask install octave` or using the method below.
+
 Import the scientific computing packages, including Octave:
 
     brew tap homebrew/science
@@ -16,7 +19,7 @@ following command should fix it:
     brew tap --repair
 
 The command below upgrades Octave and its dependencies to the latest
-Homebrew-supported versions: 
+Homebrew-supported versions:
 
     brew update && brew upgrade
 
