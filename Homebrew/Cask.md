@@ -26,7 +26,7 @@ Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to enable dif
     $ brew cask install qlprettypatch
     $ brew cask install quicklook-csv
     $ brew cask install betterzipql
-    $ brew cask install webp-quicklook
+    $ brew cask install webpquicklook
     $ brew cask install suspicious-package
 
 ### App Installation
