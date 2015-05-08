@@ -15,6 +15,8 @@ Let's just quickly change some preferences.
 - Change the cursor text and cursor color to yellow make it more visible
 - Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [here](https://github.com/adobe/source-code-pro/downloads).
 
+Add `export CLICOLOR=1` line to your `~/.bash_profile` file for nice coloring of listings.
+
 
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
 
