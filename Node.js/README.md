@@ -1,12 +1,23 @@
 # Node.js
 
-Install [Node.js](http://nodejs.org/) with [nvm](https://github.com/creationix/nvm) (Node Version Manager):
+## Install [Node.js](http://nodejs.org/) with Homebrew:
 
-### Install nvm
+    $ brew update
+    $ brew install node
+
+Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+
+    $ npm install -g coffee-script
+    $ npm install -g grunt-cli
+
+
+## Install [Node.js](http://nodejs.org/) with [nvm](https://github.com/creationix/nvm) (Node Version Manager):
+
+#### Install nvm
     
     $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
-### Install nodejs
+#### Install nodejs
 
     $ nvm  # check the nvm use message
     $ nvm install 0.12  # install nodejs 0.12
@@ -20,7 +31,7 @@ Node modules are installed locally in the `node_modules` folder of each project 
     $ npm install -g coffee-script
     $ npm install -g grunt-cli
 
-### Npm usage
+## Npm usage
 
 To install a package:
 
