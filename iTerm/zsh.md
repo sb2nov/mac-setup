@@ -12,6 +12,10 @@ Install oh-my-zsh on top of zsh to getting additional functionality
 
         curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+if still in the default shell, change default shell to zsh manually
+
+    chsh -s /bin/zsh
+
 edit the `.zshrc` by opening the file in a text editor
 
         ZSH_THEME=pygmalion
