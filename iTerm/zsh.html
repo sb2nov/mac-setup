@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1421816404220">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1436939988171">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -814,6 +814,8 @@
 <pre><code>    brew install zsh zsh-completions
 </code></pre><p>Install oh-my-zsh on top of zsh to getting additional functionality</p>
 <pre><code>    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code></pre><p>if still in the default shell, change default shell to zsh manually</p>
+<pre><code>chsh -s /bin/zsh
 </code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor</p>
 <pre><code>    ZSH_THEME=pygmalion
     alias zshconfig=&quot;subl ~/.zshrc&quot;
