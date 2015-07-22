@@ -2,6 +2,10 @@
 
 Create and configure lightweight, reproducible, and portable development environments. [Vagrant](http://www.vagrantup.com/) is an amazing tool for managing virtual machines via a simple to use command line interface.
 
+### Before you start
+
+In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to [this](../Homebrew/Cask.md) article in order to install homebrew-cask.
+
 ### Install
 
 Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can directly download virtualbox and install or use homebrew for it.
