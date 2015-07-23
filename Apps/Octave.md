@@ -1,5 +1,11 @@
 # Octave
 
+### Before you start
+
+In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to [this](../Homebrew/Cask.md) article in order to install homebrew-cask.
+
+### Install
+
 Octave can be installed with `brew cask install octave` or using the method below.
 
 Import the scientific computing packages, including Octave:
