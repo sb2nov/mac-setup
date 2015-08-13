@@ -13,5 +13,5 @@ All contributions to the book are welcome. Please help add support for other lib
 
 [Node]: http://nodejs.org
 [Python]: http://www.python.org
-[CPlusPlus]:(http://www.cplusplus.com
+[CPlusPlus]: http://www.cplusplus.com
 [Ruby]: http://www.ruby-lang.org
