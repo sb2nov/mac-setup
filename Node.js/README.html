@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="13" data-basepath=".." data-revision="1438456776217">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="13" data-basepath=".." data-revision="1439604265557">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -808,13 +808,26 @@
                     <section class="normal" id="section-gitbook_15">
                     
                         <h1 id="node-js">Node.js</h1>
-<p>Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with Homebrew:</p>
+<h2 id="install-node-js-http-nodejs-org-with-homebrew-">Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with Homebrew:</h2>
 <pre><code>$ brew update
 $ brew install node
 </code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
 <pre><code>$ npm install -g coffee-script
 $ npm install -g grunt-cli
-</code></pre><h3 id="npm-usage">Npm usage</h3>
+</code></pre><h2 id="install-node-js-http-nodejs-org-with-nvm-https-github-com-creationix-nvm-node-version-manager-">Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> (Node Version Manager):</h2>
+<h4 id="install-nvm">Install nvm</h4>
+<pre><code>$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+</code></pre><h4 id="install-nodejs">Install nodejs</h4>
+<pre><code>$ nvm  # check the nvm use message
+$ nvm install 0.12  # install nodejs 0.12
+$ nvm ls  # list installed node version
+$ nvm use 0.12  # use 0.12 as current version
+$ nvm ls-remote  # list all the node versions you can install
+$ nvm alias default 0.12  # set 0.12 as the default node 
+</code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
+<pre><code>$ npm install -g coffee-script
+$ npm install -g grunt-cli
+</code></pre><h2 id="npm-usage">Npm usage</h2>
 <p>To install a package:</p>
 <pre><code>$ npm install &lt;package&gt; # Install locally
 $ npm install -g &lt;package&gt; # Install globally
