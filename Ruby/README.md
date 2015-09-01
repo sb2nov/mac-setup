@@ -19,7 +19,7 @@ Install bundler. Bundler manages an application's dependencies, kind of like a s
 
 Skip r-doc generation. If you use Google for finding your Gem documentation like I do you might consider saving a bit of time when installing gems by skipping the documentation.
 
-    $ echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
+    $ echo 'gem: --no-document' >> ~/.gemrc
 
 Install Jekyll and Kramdown.
 
