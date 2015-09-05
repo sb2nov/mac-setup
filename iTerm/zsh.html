@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1441078392979">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1441494848577">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -808,7 +808,7 @@
                     <section class="normal" id="section-gitbook_37">
                     
                         <h1 id="zsh">Zsh</h1>
-<p>We&#39;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intutive. The <code>Env.sh</code> is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>Env.sh</code> holds aliases, exports, path changes etc.</p>
+<p>We&#39;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intutive. The <code>env.sh</code> is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc.</p>
 <h3 id="zsh">Zsh</h3>
 <p>Install zsh and zsh completions using homebrew</p>
 <pre><code>    brew install zsh zsh-completions
@@ -818,10 +818,13 @@
 <pre><code>chsh -s /bin/zsh
 </code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor</p>
 <pre><code>    ZSH_THEME=pygmalion
+    # Use sublimetext for editing config files
     alias zshconfig=&quot;subl ~/.zshrc&quot;
     alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
     plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-</code></pre><h3 id="env-sh">Env.sh</h3>
+    # Add env.sh
+    . ~/Projects/config/env.sh
+</code></pre><h3 id="env-sh">env.sh</h3>
 <pre><code>    #!/bin/zsh
 
     # PATH
