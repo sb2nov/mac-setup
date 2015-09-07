@@ -8,11 +8,11 @@ In order to simplify the installation process you should install homebrew-cask w
 
 ### Install
 
-Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can directly download virtualbox and install or use homebrew for it.
+Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can [directly download virtualbox](https://www.virtualbox.org/wiki/Downloads) and install or use homebrew for it.
 
     $ brew cask install virtualbox
 
-Now install Vagrant either from the website or use homebrew for installing it.
+Now install Vagrant either [from the website](http://www.vagrantup.com/downloads.html) or use homebrew for installing it.
 
     $ brew cask install vagrant
 
