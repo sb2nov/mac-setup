@@ -16,7 +16,7 @@ To install Octave, update to the latest package definitions, install ,
 and then Octave:
 
     brew update && brew upgrade
-    brew install gfortran
+    brew install gcc
     brew install octave
 
 Note: If brew complains about not having a formula for octave, the
