@@ -28,6 +28,7 @@
 * [Node.js](Node.js/README.md)
 * [Heroku](Heroku/README.md)
 * [Vagrant](Vagrant/README.md)
+* [Docker](Docker/README.md)
 * [Latex](Latex/README.md)
 * [Apps](Apps/README.md)
     * [Octave](Apps/Octave.md)
