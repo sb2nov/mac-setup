@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="13" data-basepath=".." data-revision="1442727197992">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="13" data-basepath=".." data-revision="1442766351025">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -837,11 +837,11 @@ $ npm install -g grunt-cli
 <pre><code>$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 </code></pre><h4 id="install-nodejs">Install nodejs</h4>
 <pre><code>$ nvm  # check the nvm use message
-$ nvm install 0.12  # install nodejs 0.12
+$ nvm install stable  # install most recent nodejs stable version
 $ nvm ls  # list installed node version
-$ nvm use 0.12  # use 0.12 as current version
+$ nvm use stable  # use stable as current version
 $ nvm ls-remote  # list all the node versions you can install
-$ nvm alias default 0.12  # set 0.12 as the default node 
+$ nvm alias default stable  # set the installed stable version as the default node 
 </code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
 <pre><code>$ npm install -g coffee-script
 $ npm install -g grunt-cli
