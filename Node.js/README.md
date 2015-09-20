@@ -20,11 +20,11 @@ Node modules are installed locally in the `node_modules` folder of each project 
 #### Install nodejs
 
     $ nvm  # check the nvm use message
-    $ nvm install 0.12  # install nodejs 0.12
+    $ nvm install stable  # install most recent nodejs stable version
     $ nvm ls  # list installed node version
-    $ nvm use 0.12  # use 0.12 as current version
+    $ nvm use stable  # use stable as current version
     $ nvm ls-remote  # list all the node versions you can install
-    $ nvm alias default 0.12  # set 0.12 as the default node 
+    $ nvm alias default stable  # set the installed stable version as the default node 
 
 Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
 
