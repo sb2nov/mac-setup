@@ -4,7 +4,6 @@ Here is a quick list of apps that are generally good to use and can come in hand
 
 ### Developer Tools
 - [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Installs Chrome which is one of the best browsers currently. All chrome browsers and extensions are saved by Google so can be synced easily.
-- [Latexian](http://tacosw.com/latexian/): App for writing Latex documents. View the code and output on split screen. Supports all major packages and code completion , etc.
 - [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview):  Valentina Studio is a gui to create, administer and query MySQL, Postgres and SQLite databases.
 
 ### Productivity
