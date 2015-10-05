@@ -29,7 +29,7 @@
 * [Heroku](Heroku/README.md)
 * [Vagrant](Vagrant/README.md)
 * [Docker](Docker/README.md)
-* [Latex](Latex/README.md)
+* [LaTeX](LaTeX/README.md)
 * [Apps](Apps/README.md)
     * [Octave](Apps/Octave.md)
     * [Settings](Apps/Settings.md)
