@@ -45,7 +45,7 @@ I'll now cover installation of the apps that I have mentioned in the apps sectio
     $ brew cask install google-hangouts
     $ brew cask install flux
     $ brew cask install latexian
-    $ brew cask install onepassword
+    $ brew cask install 1password
     $ brew cask install pdftk
     $ brew cask install spectacle
     $ brew cask install sublime-text
