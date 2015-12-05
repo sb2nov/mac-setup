@@ -36,3 +36,6 @@ To connect with the command-line client, run:
 (Use `exit` to quit the MySQL shell.)
 
 **Note**: By default, the MySQL user `root` has no password. It doesn't really matter for a local development database. If you wish to change it though, you can use `$ mysqladmin -u root password 'new-password'`.
+
+### GUI Tool
+It is always nice to have a GUI tool for managing databases. For mac, you can use [SequelPro](http://www.sequelpro.com/) to manage local and remote mysql databases. It is a free tool, you can donate to support the development. 
