@@ -8,7 +8,7 @@ In order to simplify the installation process you should install homebrew-cask w
 
 ### Install
 
-Use can use cask to install Docker Tooolbox which is a collection of useful docker tools such as compose, machine and Kitematic.
+Use can use cask to install Docker Toolbox which is a collection of useful docker tools such as compose, machine and Kitematic.
 
     $ brew cask install dockertoolbox
 
