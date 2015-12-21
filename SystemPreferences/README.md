@@ -42,7 +42,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 ### Write to NTFS on OSX Yosemite and El Capitan
 
 #### Install Homebrew and Homebrew Cask
-- Instructions here!
+- Instructions [here](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)!
 
 #### Update Homebrew formulae:
 
