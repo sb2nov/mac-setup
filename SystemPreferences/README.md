@@ -39,4 +39,45 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 ### Accounts
 - Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
 
-###Write to NTFS on OSX Yosemite and El Capitan
+### Write to NTFS on OSX Yosemite and El Capitan
+
+#### Install Homebrew and Homebrew Cask
+- Instructions here!
+
+#### Update Homebrew formulae:
+
+    $ brew update
+
+#### Install osxfuse
+- If you are on OSX 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
+
+
+    $ brew cask install osxfuse
+    
+#### Install ntfs-3g
+
+    $ brew install homebrew/fuse/ntfs-3g
+
+#### If you are on OSX 10.11 (El Capitan), temporary disable System Integrity Protection.
+
+ - **reboot** and hold CMD+R to get in recovery mode
+ - Open the terminal and type
+
+
+    $ csrutil disable
+    
+ - **reboot** normally
+
+#### Create a symlink for mount_ntfs
+
+    $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+    $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+
+#### If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection.
+ - **reboot** and hold CMD+R to get in recovery mode
+ - Open the terminal and type
+
+
+    $ csrutil enable
+    
+ - **reboot** normally
