@@ -38,3 +38,5 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Accounts
 - Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
+
+###Write to NTFS on OSX Yosemite and El Capitan
