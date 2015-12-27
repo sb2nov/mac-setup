@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="1" data-basepath=".." data-revision="1449991981718">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="1" data-basepath=".." data-revision="1451208901572">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -877,6 +877,41 @@ Also upgrade your OS incase you want to work on the latest OS. Yosemite is a fre
 <h3 id="accounts">Accounts</h3>
 <ul>
 <li>Add an iCloud account and sync Calendar, Find my mac, Contacts etc.</li>
+</ul>
+<h3 id="write-to-ntfs-on-osx-yosemite-and-el-capitan">Write to NTFS on OSX Yosemite and El Capitan</h3>
+<h4 id="install-homebrew-and-homebrew-cask">Install Homebrew and Homebrew Cask</h4>
+<ul>
+<li>Instructions <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">here</a>!</li>
+</ul>
+<h4 id="update-homebrew-formulae-">Update Homebrew formulae:</h4>
+<pre><code>$ brew update
+</code></pre><h4 id="install-osxfuse">Install osxfuse</h4>
+<ul>
+<li>If you are on OSX 10.11 (El Capitan), install the (3.x.x) from <a href="https://github.com/osxfuse/osxfuse/releases" target="_blank">https://github.com/osxfuse/osxfuse/releases</a>.</li>
+</ul>
+<pre><code>$ brew cask install osxfuse
+</code></pre><h4 id="install-ntfs-3g">Install ntfs-3g</h4>
+<pre><code>$ brew install homebrew/fuse/ntfs-3g
+</code></pre><h4 id="if-you-are-on-osx-10-11-el-capitan-temporary-disable-system-integrity-protection-">If you are on OSX 10.11 (El Capitan), temporary disable System Integrity Protection.</h4>
+<ul>
+<li><strong>reboot</strong> and hold CMD+R to get in recovery mode</li>
+<li>Open the terminal and type</li>
+</ul>
+<pre><code>$ csrutil disable
+</code></pre><ul>
+<li><strong>reboot</strong> normally</li>
+</ul>
+<h4 id="create-a-symlink-for-mount_ntfs">Create a symlink for mount_ntfs</h4>
+<pre><code>$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+$ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+</code></pre><h4 id="if-you-are-on-osx-10-11-el-capitan-re-enable-system-integrity-protection-">If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection.</h4>
+<ul>
+<li><strong>reboot</strong> and hold CMD+R to get in recovery mode</li>
+<li>Open the terminal and type</li>
+</ul>
+<pre><code>$ csrutil enable
+</code></pre><ul>
+<li><strong>reboot</strong> normally</li>
 </ul>
 
                     
