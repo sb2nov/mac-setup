@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# Revision 1452989733611
+# Revision 1452989955618
 
 CACHE:
-Python/README.html
 Python/ipython.html
+Python/README.html
 Python/numpy.html
 Python/pip.html
 Python/virtualenv.html
@@ -11,8 +11,8 @@ Cpp/README.html
 Docker/README.html
 Git/README.html
 Git/gitignore.html
-Homebrew/Cask.html
 Heroku/README.html
+Homebrew/Cask.html
 Homebrew/README.html
 Homebrew/Usage.html
 Java/README.html

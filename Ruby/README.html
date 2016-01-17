@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="12" data-basepath=".." data-revision="1452989733610">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="12" data-basepath=".." data-revision="1452989955617">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -827,12 +827,11 @@
                     
                         <h1 id="ruby">Ruby</h1>
 <p>OS X comes with Ruby installed (Mavericks even gets version 2.0.0, previously it was only 1.8.7), as we don&#39;t want to be messing with core files we&#39;re going to use the brilliant rbenv and ruby-build to manage and install our Ruby versions for our development environment.</p>
-<pre><code>$ brew install rbenv ruby-build rbenv-gem-rehash rbenv-default-gems
+<pre><code>$ brew install rbenv ruby-build rbenv-default-gems
 $ echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/Projects/config/env.sh
 $ sourcezsh
 </code></pre><p>The package we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.</p>
 <pre><code>$ rbenv install 2.1.1
-$ rbenv rehash
 $ rbenv global 2.1.1
 </code></pre><p>Install bundler. Bundler manages an application&#39;s dependencies, kind of like a shopping list of other libraries the application needs to work.</p>
 <pre><code>$ gem install bundler
