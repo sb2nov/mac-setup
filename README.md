@@ -9,4 +9,6 @@ We will set up [Node](http://nodejs.org) (JavaScript), [Python](http://www.pytho
 
 All contributions to the book are welcome. Please help add support for other libraries and languages.
 
+**Looking for contributors to maintain and extend the documentation more**
+
 **Note:** This book has been generated using [GitBook](http://www.gitbook.io) and is open source, feel free to contribute or signal issues on [GitHub](https://github.com/sb2nov/mac-setup).
