@@ -6,9 +6,9 @@ Make sure you have Java installed, the instructions are provided [here](/mac-set
     $ brew install scala
     $ brew install sbt
 
-Update the `~/.sbtconfig` by running the command below. This step is optional.
+Update the `/usr/local/etc/sbtopts` by running the command below. This step is optional.
 
-    $echo 'SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M -Xmx2G"' >> ~/.sbtconfig
+    $echo '-J-XX:+CMSClassUnloadingEnabled\n-J-Xmx2G\n' >> /usr/local/etc/sbtopts
 
 ### Scala Plugin for Eclipse
 
@@ -32,10 +32,10 @@ The version of Scala used inside Scala IDE cannot be chosen per project. So, if 
 
 Copy the URL as location and hit OK to validate.
 
-Select Scala IDE for Eclipse from the list of available features.
+Select Scala IDE for Eclipse/IntelliJ from the list of available features.
 
 If you want to install any additional plug-ins (this step is optional), expand the Scala IDE plugins category and select the plug-ins that fits you best.
 
 Go through the next screens to validate the list of plug-ins to install, the License and start the installation.
 
-After having restarted Eclipse, Scala IDE is installed.
+After having restarted Eclipse/IntelliJ, Scala IDE is installed.
