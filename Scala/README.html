@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="11" data-basepath=".." data-revision="1452989955617">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="11" data-basepath=".." data-revision="1452990903399">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -830,8 +830,8 @@
 <pre><code>$ brew update
 $ brew install scala
 $ brew install sbt
-</code></pre><p>Update the <code>~/.sbtconfig</code> by running the command below. This step is optional.</p>
-<pre><code>$echo &#39;SBT_OPTS=&quot;-XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M -Xmx2G&quot;&#39; &gt;&gt; ~/.sbtconfig
+</code></pre><p>Update the <code>/usr/local/etc/sbtopts</code> by running the command below. This step is optional.</p>
+<pre><code>$echo &#39;-J-XX:+CMSClassUnloadingEnabled\n-J-Xmx2G\n&#39; &gt;&gt; /usr/local/etc/sbtopts
 </code></pre><h3 id="scala-plugin-for-eclipse">Scala Plugin for Eclipse</h3>
 <p>Scala IDE for Eclipse is best installed (and updated) directly from within Eclipse.</p>
 <p>This is done by using <code>Help → Install New Software...</code>, add the <code>Add...</code> button in the dialog.</p>
@@ -843,10 +843,10 @@ $ brew install sbt
 <p>The version of Scala used inside Scala IDE cannot be chosen per project. So, if you want to work with a project using different version of Scala (like 2.9.3 and 2.10.1), you need different installation of Scala IDE.</p>
 <p><strong>Finishing installation</strong></p>
 <p>Copy the URL as location and hit OK to validate.</p>
-<p>Select Scala IDE for Eclipse from the list of available features.</p>
+<p>Select Scala IDE for Eclipse/IntelliJ from the list of available features.</p>
 <p>If you want to install any additional plug-ins (this step is optional), expand the Scala IDE plugins category and select the plug-ins that fits you best.</p>
 <p>Go through the next screens to validate the list of plug-ins to install, the License and start the installation.</p>
-<p>After having restarted Eclipse, Scala IDE is installed.</p>
+<p>After having restarted Eclipse/IntelliJ, Scala IDE is installed.</p>
 
                     
                     </section>
