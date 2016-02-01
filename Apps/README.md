@@ -5,6 +5,7 @@ Here is a quick list of apps that are generally good to use and can come in hand
 ### Developer Tools
 - [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Installs Chrome which is one of the best browsers currently. All chrome browsers and extensions are saved by Google so can be synced easily.
 - [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview):  Valentina Studio is a gui to create, administer and query MySQL, Postgres and SQLite databases.
+- [Atom](https://atom.io/): Open source editor by Github and is very similar to Sublime Text in most aspects.
 
 ### Productivity
 - [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
@@ -22,6 +23,7 @@ Here is a quick list of apps that are generally good to use and can come in hand
 - [SleepPillow](https://itunes.apple.com/us/app/sleep-pillow/id597419160?mt=12): Sleep Pillow plays sounds that create an ambient atmosphere for sleep enhancement at home, or for drowning out noise at work.
 - [Spectacle](http://spectacleapp.com/): Don't waste time resizing and moving your windows. Spectacle makes this very easy and is open source.
 - [Timing](http://timingapp.com/): Keep track of the time you spend with your Mac.
+- [Tomighty](http://www.tomighty.org/): A free desktop timer for the Pomodoro Technique.
 - [Total Finder](http://totalfinder.binaryage.com/): Adds tabs and improves the Finder to a great deal.
 - [Transmission](http://www.transmissionbt.com/): A fast, easy and free BitTorrent client.
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.
@@ -40,4 +42,3 @@ Here is a quick list of apps that are generally good to use and can come in hand
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. Enough said.
 - [Voila](http://www.globaldelight.com/voila/): Record your screen with audio, mouse highlight and other features.
 - [TimeOut](http://www.dejal.com/timeout/): Scheduled work breaks to prevent stress injuries.
-
