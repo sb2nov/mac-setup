@@ -4,9 +4,8 @@ Let's see if we can get the elegance, simplicity, and speed of Homebrew for the 
 
 ### Install
 
-Install Homebrew-cask is really straight forward. We just need to add the cask tap and then install brew cask.
+As of December 2015, cask comes installed with Homebrew directly.
 
-    $ brew install caskroom/cask/brew-cask
     $ brew cask install google-chrome
 
 ### Search
