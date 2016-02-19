@@ -2,10 +2,31 @@
 
 ## Installing LaTeX on Mac
 
-Download [MacTex](http://www.tug.org/mactex/): it is around 2GB in size and comes with TexLive installed. For more details about what is installed [check here](https://www.tug.org/mactex/What_Is_Installed.pdf). Then use an editor like [TexMaker](http://www.xm1math.net/texmaker/download.html).
+When installing LaTex, two following options are given to users.
+  1. Install MacTeX with builtin editor(TexLive) - (2GB)
+  2. Install BasicTeX only (100MB) + your personal LaTeX editor
 
-Add cls file from major conferences such as IEEE to the source directory.
+### Option 1 (Full LaTeX installation with LaTeX editor):
 
-    cd ~/Library/texmf/tex/generic/
+Download [MacTex](http://www.tug.org/mactex/).
+For more details about MaxTex: [Click Here](https://www.tug.org/mactex/What_Is_Installed.pdf).
 
-Add `IEEEtran.cls` to this directory.
+Since MaxTex installs an LaTex editor ([TexMaker](http://www.xm1math.net/texmaker/download.html)) already, installing another LaTeX editor is unnecessary.
+
+### Option 2 (BasicTeX + Custom LaTeX editor):
+
+Download [BasicTeX](http://tug.org/mactex/morepackages.html).
+For more details about BasicTex: [Click Here](http://pages.uoregon.edu/koch/BasicTeX.pdf).
+
+Pick one of the following LaTeX editors:
+LaTex Editor's:
+  1. [TexMaker](http://www.xm1math.net/texmaker/)
+  2. [TeXstudio](http://texstudio.sourceforge.net/)
+  3. [TeXworks](https://github.com/TeXworks/texworks/releases)
+  4. [TeXShop](http://pages.uoregon.edu/koch/texshop/)
+  5. [LyX](http://www.lyx.org/)
+  6. [TeXlipse](http://texlipse.sourceforge.net/)
+
+### MacTeX vs BasicTeX
+
+MacTeX includes additional programs such as an editor and a BibTeX reference manager that help users to work with TeX outside of the command line. BasicTeX does not include these GUI programs. The trade-off that comes with using BasicTeX is that you will have to download and install additional packages and programs as the need arises- and BasicTeX is so basic that the need will arise. So, after installing BasicTeX you will be faced with the tasks of installing additional programs and installing missing packages.
