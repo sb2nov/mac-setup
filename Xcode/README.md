@@ -1,4 +1,4 @@
-# XCode
+# Xcode
 
 Install [Xcode](https://developer.apple.com/xcode/) from the App store or the Apple developer website. 
 

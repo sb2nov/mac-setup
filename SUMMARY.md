@@ -1,7 +1,7 @@
 # Summary
 
 * [System Preferences](SystemPreferences/README.md)
-* [XCode](XCode/README.md)
+* [Xcode](Xcode/README.md)
 * [Homebrew](Homebrew/README.md)
     * [Usage](Homebrew/Usage.md)
     * [Cask](Homebrew/Cask.md)
