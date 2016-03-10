@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1455604706657
+# Revision 1457600036980
 
 CACHE:
 Python/README.html
@@ -34,7 +34,7 @@ SublimeText/README.html
 SublimeText/SublimeLinter.html
 SystemPreferences/README.html
 Vagrant/README.html
-XCode/README.html
+Xcode/README.html
 iTerm/README.html
 iTerm/zsh.html
 gitbook/app.js
