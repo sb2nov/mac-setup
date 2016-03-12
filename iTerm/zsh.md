@@ -14,7 +14,7 @@ Install oh-my-zsh on top of zsh to getting additional functionality
 
 if still in the default shell, change default shell to zsh manually
 
-    chsh -s /bin/zsh
+    chsh -s /usr/local/bin/zsh
 
 edit the `.zshrc` by opening the file in a text editor
 
