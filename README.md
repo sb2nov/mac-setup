@@ -1,14 +1,19 @@
-[Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup)
+# [Symph Development Environment](http://sym.ph)
+
 ====================
 
-This book covers the basics of setting up a development environment on a new MacBook for most major languages. All instructions covered have been tested on Mountain Lion and Mavericks, but they might be more inclined towards Mavericks. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some languages/libraries.
+This book is actually a fork from the original guide by [Sourabh Bajaj](http://sourabhbajaj.com/) (_A million thanks to him!_) and is modifed heavily to fit the needs of a modern day Symph developer.
 
-[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)
+Got a new mac? New to the team Symph? No worries! This guide covers the basics of setting up a development environment on Mac OSX (El Capitan). 
 
-We will set up [Node](http://nodejs.org) (JavaScript), [Python](http://www.python.org), [CPlusPlus](http://www.cplusplus.com), and [Ruby](http://www.ruby-lang.org) environments. Even if you don't program in all four, it is good to have them, as many command-line tools use one of them. We also install a few daily use applications and Latex. As you read and follow these steps, feel free to send me any feedback or comments you may have.
+Most of our developers here speak parseltongue, So we're gonna set up [Python](http://www.python.org), & [GoogleApp Engine](https://cloud.google.com/appengine/).
 
-All contributions to the book are welcome. Please help add support for other libraries and languages.
+[![Screen](http://i.giphy.com/XreQmk7ETCak0.gif)](http://i.giphy.com/XreQmk7ETCak0.gif)
 
-**Looking for contributors to maintain and extend the documentation more**
+We will also set up some basic stuff like [Node](http://nodejs.org) (JavaScript), [Git](https://git-scm.com) and your tips to making your terminal look badass. We also install a few daily use applications. 
 
-**Note:** This book has been generated using [GitBook](http://www.gitbook.io) and is open source, feel free to contribute or signal issues on [GitHub](https://github.com/sb2nov/mac-setup).
+All contributions to the book are welcome. 
+
+\*Note: We're looking for contributors to maintain and extend the documentation even more!
+
+\*\*Note:This book has been generated using [GitBook](http://www.gitbook.io) and is open source, feel free to contribute or signal issues on [GitHub](https://github.com/sb2nov/mac-setup).
