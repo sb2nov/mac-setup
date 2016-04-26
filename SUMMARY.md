@@ -2,9 +2,6 @@
 
 * [System Preferences](SystemPreferences/README.md)
 * [Xcode](Xcode/README.md)
-* [Homebrew](Homebrew/README.md)
-    * [Usage](Homebrew/Usage.md)
-    * [Cask](Homebrew/Cask.md)
 * [iTerm2](iTerm/README.md)
     * [ZSH](iTerm/zsh.md)
 * [Git](Git/README.md)
