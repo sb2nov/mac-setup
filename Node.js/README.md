@@ -15,16 +15,16 @@ Node modules are installed locally in the `node_modules` folder of each project 
 
 #### Install nvm
     
-    $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 
 #### Install nodejs
 
-    $ nvm  # check the nvm use message
-    $ nvm install stable  # install most recent nodejs stable version
+    $ command -v nvm  # check the nvm use message
+    $ nvm install node  # install most recent nodejs stable version
     $ nvm ls  # list installed node version
-    $ nvm use stable  # use stable as current version
+    $ nvm use node  # use stable as current version
     $ nvm ls-remote  # list all the node versions you can install
-    $ nvm alias default stable  # set the installed stable version as the default node 
+    $ nvm alias default node  # set the installed stable version as the default node 
 
 Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
 
