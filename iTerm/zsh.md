@@ -8,23 +8,61 @@ Install zsh and zsh completions using homebrew
 
         brew install zsh zsh-completions
 
-Install oh-my-zsh on top of zsh to getting additional functionality
+Now you can customize your shell using two frameworks Prezto or Oh My Zsh. So follow one of the two sections below.
+
+#### Prezto
+Install prezto on top of zsh to get additional functionality
+
+        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+Next create the `~/.zshrc` file by running
+
+        setopt EXTENDED_GLOB
+        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+        done
+
+edit the `~/.zpreztorc` file and add
+
+        zstyle ':prezto:load' pmodule \
+          'environment' \
+          'terminal' \
+          'editor' \
+          'history' \
+          'directory' \
+          'spectrum' \
+          'utility' \
+          'completion' \
+          'git' \
+          'syntax-highlighting' \
+          'history-substring-search' \
+          'prompt'
+
+        zstyle ':prezto:module:prompt' theme 'paradox'
+
+edit the `.zshrc` by opening the file in a text editor and adding the following below
+
+        # Add env.sh
+        source ~/Projects/config/env.sh
+
+
+#### Oh My Zsh
+Install oh-my-zsh on top of zsh to get additional functionality
 
         curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
-if still in the default shell, change default shell to zsh manually
+if you're still in the default shell, change default shell to zsh manually
 
     chsh -s /usr/local/bin/zsh
 
 edit the `.zshrc` by opening the file in a text editor
 
         ZSH_THEME=pygmalion
-        # Use sublimetext for editing config files
-        alias zshconfig="subl ~/.zshrc"
-        alias envconfig="subl ~/Projects/config/env.sh"
+
         plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
         # Add env.sh
-        . ~/Projects/config/env.sh
+        source ~/Projects/config/env.sh
 
 ### env.sh
 ~~~
@@ -54,4 +92,8 @@ edit the `.zshrc` by opening the file in a text editor
 
     # Aliases
     alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
+    # Use sublimetext for editing config files
+    alias zshconfig="subl ~/.zshrc"
+    alias envconfig="subl ~/Projects/config/env.sh"
 ~~~
