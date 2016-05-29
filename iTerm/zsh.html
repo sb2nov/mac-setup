@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1457765265441">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1464554638516">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -830,18 +830,46 @@
 <h3 id="zsh">Zsh</h3>
 <p>Install zsh and zsh completions using homebrew</p>
 <pre><code>    brew install zsh zsh-completions
-</code></pre><p>Install oh-my-zsh on top of zsh to getting additional functionality</p>
+</code></pre><p>Now you can customize your shell using two frameworks Prezto or Oh My Zsh. So follow one of the two sections below.</p>
+<h4 id="prezto">Prezto</h4>
+<p>Install prezto on top of zsh to get additional functionality</p>
+<pre><code>    git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
+</code></pre><p>Next create the <code>~/.zshrc</code> file by running</p>
+<pre><code>    setopt EXTENDED_GLOB
+    for rcfile in &quot;${ZDOTDIR:-$HOME}&quot;/.zprezto/runcoms/^README.md(.N); do
+      ln -s &quot;$rcfile&quot; &quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&quot;
+    done
+</code></pre><p>edit the <code>~/.zpreztorc</code> file and add</p>
+<pre><code>    zstyle &#39;:prezto:load&#39; pmodule \
+      &#39;environment&#39; \
+      &#39;terminal&#39; \
+      &#39;editor&#39; \
+      &#39;history&#39; \
+      &#39;directory&#39; \
+      &#39;spectrum&#39; \
+      &#39;utility&#39; \
+      &#39;completion&#39; \
+      &#39;git&#39; \
+      &#39;syntax-highlighting&#39; \
+      &#39;history-substring-search&#39; \
+      &#39;prompt&#39;
+
+    zstyle &#39;:prezto:module:prompt&#39; theme &#39;paradox&#39;
+</code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor and adding the following below</p>
+<pre><code>    # Add env.sh
+    source ~/Projects/config/env.sh
+</code></pre><h4 id="oh-my-zsh">Oh My Zsh</h4>
+<p>Install oh-my-zsh on top of zsh to get additional functionality</p>
 <pre><code>    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-</code></pre><p>if still in the default shell, change default shell to zsh manually</p>
+</code></pre><p>if you&#39;re still in the default shell, change default shell to zsh manually</p>
 <pre><code>chsh -s /usr/local/bin/zsh
 </code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor</p>
 <pre><code>    ZSH_THEME=pygmalion
-    # Use sublimetext for editing config files
-    alias zshconfig=&quot;subl ~/.zshrc&quot;
-    alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
+
     plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
     # Add env.sh
-    . ~/Projects/config/env.sh
+    source ~/Projects/config/env.sh
 </code></pre><h3 id="env-sh">env.sh</h3>
 <pre><code>    #!/bin/zsh
 
@@ -869,6 +897,10 @@
 
     # Aliases
     alias cppcompile=&#39;c++ -std=c++11 -stdlib=libc++&#39;
+
+    # Use sublimetext for editing config files
+    alias zshconfig=&quot;subl ~/.zshrc&quot;
+    alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
 </code></pre>
                     
                     </section>

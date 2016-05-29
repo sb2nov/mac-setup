@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1457765265443
+# Revision 1464554638517
 
 CACHE:
 Python/README.html
@@ -16,8 +16,8 @@ Homebrew/Cask.html
 Homebrew/README.html
 Homebrew/Usage.html
 Java/README.html
-LaTeX/README.html
 MySql/README.html
+LaTeX/README.html
 Node.js/README.html
 Apps/Octave.html
 Apps/README.html
