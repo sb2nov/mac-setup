@@ -9,15 +9,13 @@ To install, run:
     $ brew update # Always good to do
     $ brew install mysql
 
-As you can see in the ouput from Homebrew, before we can use MySQL we first need to set it up with:
-
-    $ unset TMPDIR
-    $ mkdir /usr/local/var
-    $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
-
 ### Usage
 
-To start the MySQL server, use the `mysql.server` tool:
+To have launchd start MySQL now and restart at login:
+
+    $ brew services start mysql
+
+Or, if you don't want/need a background service you can just use the `mysql.server` tool:
 
     $ mysql.server start
 
