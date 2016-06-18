@@ -4,20 +4,6 @@
 
 ### Install
 
-Before we install IPython, we'll need to get some dependencies. Run the following:
-
-    $ brew update # Always good to do
-    $ brew install zeromq # Necessary for pyzmq
-    $ brew install pyqt # Necessary for the qtconsole
-    $ pip install pyzmq
-    $ pip install pygments
-    $ pip install jinja2
-    $ pip install tornado
-
-It may take a few minutes to build these.
-
-Once it's done, we can install IPython with all the available options:
-
     $ pip install ipython
 
 If you want a more fine grained command you can try the following:
