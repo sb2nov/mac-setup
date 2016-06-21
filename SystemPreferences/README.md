@@ -9,6 +9,10 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 - Login Options-> Change fast switching user menu to Icon
 - Set up Password, Apple id, Picture , etc.
 
+### Keyboard 
+- Keyboard
+    - Use all F1, F2, etc...
+
 ### Trackpad
 - Point & Click
     - Unable Tap to Click with one finger
