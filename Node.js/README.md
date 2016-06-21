@@ -19,6 +19,7 @@ Node modules are installed locally in the `node_modules` folder of each project 
 
 #### Install nodejs
 
+    $ source ~/.bashrc # sources your bashrc to add nvm to path
     $ command -v nvm  # check the nvm use message
     $ nvm install node  # install most recent nodejs stable version
     $ nvm ls  # list installed node version
