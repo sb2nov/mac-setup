@@ -29,7 +29,6 @@ This is an example of User Settings for a basic development but please feel free
         "*.suo",
         "*.pdb",
         "*.idb",
-        ".DS_Store",
         "*.psd"
     ],
     "font_face": "Source Code Pro",
