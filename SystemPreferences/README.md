@@ -11,7 +11,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Trackpad
 - Point & Click
-    - Unable Tap to Click with one finger
+    - Enable Tap to Click with one finger
     - Change secondary click to right corner
     - Uncheck three finger drag
 - Scroll and Zoom
