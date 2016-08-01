@@ -36,4 +36,3 @@ The following steps were taken from the [official apple support page](https://su
 3. Click the Lock button, then enter an administrator name and password.
 4. Click Turn On FileVault.
 5. Follow the instructions. In my opinion you should create a local and offline possibility to disable encryption, when you are asked how to regain access in case of anything.
-
