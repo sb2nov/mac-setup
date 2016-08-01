@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
 * [System Preferences](SystemPreferences/README.md)
 * [Xcode](Xcode/README.md)
 * [Homebrew](Homebrew/README.md)
@@ -12,8 +11,8 @@
     * [Git ignore](Git/gitignore.md)
 * [Sublime Text](SublimeText/README.md)
     * [Preferences](SublimeText/Preferences.md)
-    * [Packages 1\/2](SublimeText/Packages.md)
-    * [Packages 2\/2](SublimeText/Plugins.md)
+    * [Packages 1/2](SublimeText/Packages.md)
+    * [Packages 2/2](SublimeText/Plugins.md)
     * [Sublime Linter](SublimeText/SublimeLinter.md)
 * [Python](Python/README.md)
     * [Pip](Python/pip.md)
