@@ -33,4 +33,5 @@
 * [Apps](Apps/README.md)
     * [Octave](Apps/Octave.md)
     * [Settings](Apps/Settings.md)
+* [Security](Security/README.md)
 * [References](References/README.md)
