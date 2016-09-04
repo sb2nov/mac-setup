@@ -2,3 +2,5 @@ node_modules
 .grunt
 /_book/
 *.log
+
+*.DS_Store

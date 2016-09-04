@@ -8,7 +8,8 @@ Make sure you have Java installed, the instructions are provided [here](/mac-set
 
 Update the `/usr/local/etc/sbtopts` by running the command below. This step is optional.
 
-    $echo '-J-XX:+CMSClassUnloadingEnabled\n-J-Xmx2G\n' >> /usr/local/etc/sbtopts
+    $ echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
+    $ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
 
 ### Scala Plugin for Eclipse
 
