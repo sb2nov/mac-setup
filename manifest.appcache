@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1472959486958
+# Revision 1473042003468
 
 CACHE:
 index.html
@@ -29,8 +29,8 @@ Ruby/RubyGems.html
 Scala/README.html
 Security/README.html
 SublimeText/Packages.html
-SublimeText/Preferences.html
 SublimeText/Plugins.html
+SublimeText/Preferences.html
 SublimeText/README.html
 SublimeText/SublimeLinter.html
 SystemPreferences/README.html
