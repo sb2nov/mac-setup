@@ -2,7 +2,7 @@
 
 OS X comes with Ruby installed (Mavericks even gets version 2.0.0, previously it was only 1.8.7), as we don't want to be messing with core files we're going to use the brilliant rbenv and ruby-build to manage and install our Ruby versions for our development environment.
 
-    $ brew install rbenv ruby-build rbenv-default-gems
+    $ brew install rbenv ruby-build rbenv-default-gems rbenv-gemset
     $ echo 'eval "$(rbenv init -)"' >> ~/Projects/config/env.sh
     $ sourcezsh
 
@@ -29,3 +29,9 @@ Install Rails. With Ruby installed and the minimum dependencies ready to go Rail
 
     $ gem install rails
     $ echo 'rails' >> "~/.rbenv/default-gems"
+
+When starting a ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.
+
+    $ echo '.gems' > <my_project_path>/.rbenv-gemsets
+
+Your gems will then get installed in `project/.gems`.
