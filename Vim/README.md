@@ -32,8 +32,16 @@ To install the complete version, run:
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
-To install the __basic__ version, run:
+To install the _basic_ version, run:
 
 ```bash
 sh ~/.vim_runtime/install_basic_vimrc.sh
+```
+
+### Update
+
+To update the vimrc scripts, run:
+
+```bash
+cd ~/.vim_runtime && git pull --rebase && cd -
 ```
