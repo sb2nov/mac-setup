@@ -9,6 +9,7 @@
     * [ZSH](iTerm/zsh.md)
 * [Git](Git/README.md)
     * [Git ignore](Git/gitignore.md)
+* [Vim](Vim/README.md)
 * [Sublime Text](SublimeText/README.md)
     * [Preferences](SublimeText/Preferences.md)
     * [Packages 1/2](SublimeText/Packages.md)
