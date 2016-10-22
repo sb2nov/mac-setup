@@ -45,3 +45,26 @@ To update the vimrc scripts, run:
 ```bash
 cd ~/.vim_runtime && git pull --rebase && cd -
 ```
+
+
+## Maximum Awesome
+
+[Maximum Awesome](https://github.com/square/maximum-awesome) it's a collection of vim configutation and plugins, like a configuration manager for the vim environment.
+`
+
+### Instalation
+
+To install it, just make a clone of the repository with the git client:
+
+```bash
+git clone https://github.com/square/maximum-awesome.git
+```
+
+Then install it:
+
+```bash
+cd maximum-awesome
+rake
+```
+
+> **NOTE:** the rake command will install all dependencies needed.
