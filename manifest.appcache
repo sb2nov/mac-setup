@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1477123519557
+# Revision 1477167376118
 
 CACHE:
 index.html
@@ -7,8 +7,8 @@ Cpp/README.html
 Docker/README.html
 Git/README.html
 Git/gitignore.html
-Homebrew/Cask.html
 Heroku/README.html
+Homebrew/Cask.html
 Homebrew/README.html
 Homebrew/Usage.html
 Java/README.html
@@ -35,6 +35,7 @@ SublimeText/README.html
 SublimeText/SublimeLinter.html
 SystemPreferences/README.html
 Vagrant/README.html
+Vim/README.html
 Xcode/README.html
 iTerm/README.html
 iTerm/zsh.html

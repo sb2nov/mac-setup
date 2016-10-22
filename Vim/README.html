@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Git | Mac OS X Setup Guide </title>
+        <title>Vim | Mac OS X Setup Guide </title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.6">
@@ -19,10 +19,10 @@
     <meta name="author" content="sb2nov">
     
     
-    <link rel="next" href="../Git/gitignore.html" />
+    <link rel="next" href="../SublimeText/README.html" />
     
     
-    <link rel="prev" href="../iTerm/zsh.html" />
+    <link rel="prev" href="../Git/gitignore.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="5" data-basepath=".." data-revision="1477167376117">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="6" data-basepath=".." data-revision="1477167376117">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/sb2nov/mac-setup/edit/master/Git/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/sb2nov/mac-setup/edit/master/Vim/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -776,7 +776,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 22.22222222222222%;min-width: 19.444444444444443%;"></div>
+        <div class="inner" style="width: 27.77777777777778%;min-width: 25%;"></div>
     </div>
     <div class="chapters">
     
@@ -798,9 +798,9 @@
     
         <a href="../Git/README.html" title="Git" class="chapter done new-chapter" data-progress="5" style="left: 22.22222222222222%;"></a>
     
-        <a href="../Git/gitignore.html" title="Git ignore" class="chapter  " data-progress="5.1" style="left: 25%;"></a>
+        <a href="../Git/gitignore.html" title="Git ignore" class="chapter done " data-progress="5.1" style="left: 25%;"></a>
     
-        <a href="../Vim/README.html" title="Vim" class="chapter  new-chapter" data-progress="6" style="left: 27.77777777777778%;"></a>
+        <a href="../Vim/README.html" title="Vim" class="chapter done new-chapter" data-progress="6" style="left: 27.77777777777778%;"></a>
     
         <a href="../SublimeText/README.html" title="Sublime Text" class="chapter  new-chapter" data-progress="7" style="left: 30.555555555555557%;"></a>
     
@@ -859,46 +859,47 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_37">
                     
-                        <h1 id="git-and-github">Git and Github</h1>
-<p>What&#39;s a developer without <a href="http://git-scm.com/" target="_blank">Git</a>? To install, simply run:</p>
-<pre><code>$ brew install git
-</code></pre><p>When done, to test that it installed fine you can run:</p>
-<pre><code>$ git --version
-</code></pre><p>And <code>$ which git</code> should output <code>/usr/local/bin/git</code>.</p>
-<p>Next, we&#39;ll define your Git user (should be the same name and email you use for <a href="https://github.com/" target="_blank">GitHub</a>):</p>
-<pre><code>$ git config --global user.name &quot;Your Name Here&quot;
-$ git config --global user.email &quot;your_email@youremail.com&quot;
-</code></pre><p>They will get added to your <code>.gitconfig</code> file.</p>
-<p>To push code to your GitHub repositories, we&#39;re going to use the recommended HTTPS method (versus SSH). So you don&#39;t have to type your username and password everytime, let&#39;s enable Git password caching as described <a href="https://help.github.com/articles/set-up-git" target="_blank">here</a>:</p>
-<pre><code>$ git config --global credential.helper osxkeychain
-</code></pre><hr>
-<h3 id="ssh-config-for-github">SSH Config for Github</h3>
-<p>This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.</p>
-<p>Setting up SSH is really simple as well. Most of the instructions below are referenced from <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">here</a>.</p>
-<p>First, we need to check for existing SSH keys on your computer. Open up your Terminal and type:</p>
-<pre><code>$ cd ~/.ssh
-$ ls -al
-# Lists the files in your .ssh directory
-</code></pre><p>Check the directory listing to see if you have files named either id_rsa.pub or id_dsa.pub. If you don&#39;t have either of those files go to step 2. Otherwise, you can skip to step 3.</p>
-<p>Second, To generate a new SSH key, copy and paste the text below, making sure to substitute in your email. The default settings are preferred, so when you&#39;re asked to &quot;enter a file in which to save the key,&quot;&quot; just press enter to continue.</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-# Creates a new ssh key, using the provided email as a label
-# Generating public/private rsa key pair.
-# Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
-</code></pre><p>Please use a strong passphrase for your keys.</p>
-<p>Third, Add your keys to Github by going into account settings.</p>
-<hr>
-<h3 id="ds_store">DS_Store</h3>
-<p>On a Mac, it is important to remember to add <code>.DS_Store</code> (a hidden OS X system file that&#39;s put in folders) to your <code>.gitignore</code> files.</p>
-<hr>
-<h3 id="setting-up-sublime-text-as-the-git-mergetool">Setting up Sublime Text as the Git Mergetool</h3>
-<pre><code>$ git config --global mergetool.sublime.cmd &quot;subl -w \$MERGED&quot;
-$ git config --global mergetool.sublime.trustExitCode false 
-$ git config --global merge.tool sublime
-$ git mergetool -y
+                        <h1 id="vim">Vim</h1>
+<p><a href="http://www.vim.org/" target="_blank">Vim</a> is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &quot;vi&quot; with most UNIX systems and with Apple OS X. </p>
+<h2 id="installation">Installation</h2>
+<p>To install the latest version, use homebrew:</p>
+<pre><code class="lang-bash">brew install vim
 </code></pre>
+<h2 id="the-ultimate-vimrc">The Ultimate vimrc</h2>
+<p><a href="https://github.com/amix/vimrc" target="_blank">The Ultimate vimrc</a> it&#39;s a collection of vimrc configurations to make easy the usage of vim.</p>
+<p>To download the The Ultimate vimrc, you need to install the git client. If you need install it, use home brew:</p>
+<pre><code class="lang-bash">brew install git
+</code></pre>
+<p>Now, download the vimrc files:</p>
+<pre><code class="lang-bash">git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+</code></pre>
+<p>To install the complete version, run:</p>
+<pre><code class="lang-bash">sh ~/.vim_runtime/install_awesome_vimrc.sh
+</code></pre>
+<p>To install the <em>basic</em> version, run:</p>
+<pre><code class="lang-bash">sh ~/.vim_runtime/install_basic_vimrc.sh
+</code></pre>
+<h3 id="update">Update</h3>
+<p>To update the vimrc scripts, run:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> ~/.vim_runtime &amp;&amp; git pull --rebase &amp;&amp; <span class="hljs-built_in">cd</span> -
+</code></pre>
+<h2 id="maximum-awesome">Maximum Awesome</h2>
+<p><a href="https://github.com/square/maximum-awesome" target="_blank">Maximum Awesome</a> it&#39;s a collection of vim configutation and plugins, like a configuration manager for the vim environment.
+`</p>
+<h3 id="instalation">Instalation</h3>
+<p>To install it, just make a clone of the repository with the git client:</p>
+<pre><code class="lang-bash">git clone https://github.com/square/maximum-awesome.git
+</code></pre>
+<p>Then install it:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> maximum-awesome
+rake
+</code></pre>
+<blockquote>
+<p><strong>NOTE:</strong> the rake command will install all dependencies needed.</p>
+</blockquote>
+
                     
                     </section>
                 
@@ -907,10 +908,10 @@ $ git mergetool -y
         </div>
 
         
-        <a href="../iTerm/zsh.html" class="navigation navigation-prev " aria-label="Previous page: ZSH"><i class="fa fa-angle-left"></i></a>
+        <a href="../Git/gitignore.html" class="navigation navigation-prev " aria-label="Previous page: Git ignore"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Git/gitignore.html" class="navigation navigation-next " aria-label="Next page: Git ignore"><i class="fa fa-angle-right"></i></a>
+        <a href="../SublimeText/README.html" class="navigation navigation-next " aria-label="Next page: Sublime Text"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
