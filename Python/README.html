@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="8" data-basepath=".." data-revision="1477167376117">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="8" data-basepath=".." data-revision="1477200319342">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -870,6 +870,17 @@
 <pre><code>$ pip install --upgrade setuptools
 $ pip install --upgrade pip
 </code></pre><p>Executable scripts from Python packages you install will be put in <code>/usr/local/share/python</code>, we already had this in the <code>Env.sh</code> file created before. Save the file and open a new terminal to take the new <code>$PATH</code> into account (everytime you open a terminal, <code>.bash_profile</code> gets loaded).</p>
+<h2 id="p-s-if-you-can-t-access-pip-">P.S if you can&#39;t access pip.</h2>
+<p>This Guide will help you install pip if it is not already installed with the python installation that OSX ships with.</p>
+<p><strong>Installation</strong></p>
+<p>Open your teminal window and enter the following command</p>
+<pre><code>    curl https://bootstrap.pypa.io/get-pip.py &gt; get-pip.py
+</code></pre><p>then enter</p>
+<pre><code>    sudo python get-pip.py
+</code></pre><p>Enter your password when prompted, Once the installation runs through you are done.</p>
+<p>to verify pip is installed properely enter</p>
+<pre><code>    pip --version
+</code></pre><p>If it tells you the version of pip you&#39;ve installed, you are all set to use <strong>pip</strong>.</p>
 
                     
                     </section>
