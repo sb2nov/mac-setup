@@ -5,57 +5,115 @@
     $ brew update
     $ brew install golang
 
-Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+When installed, try to run `go version` to see the installed version of Go. 
 
-    $ npm install -g coffee-script
-    $ npm install -g grunt-cli
+## Setup the workspace:
+### Add Environment variables:
 
+Go has a different approach of managing code, you'll need to create a single Workspace for all your Go projects. For more information consult : [How to write Go Code](https://golang.org/doc/code.html#Workspaces)
 
-## Install [Node.js](http://nodejs.org/) with [nvm](https://github.com/creationix/nvm) (Node Version Manager):
+First, you'll need to tell Go the location of your workspace.
 
-#### Install nvm
+We'll add some environment variables into shell config. One of does files located at your home directory `bash_profile`, `bashrc` or `.zshrc` (for Oh My Zsh Army)
+
+    $ vi .bashrc
+
+Then add those lines to export the required variables
+```
+# This is actually your .bashrc file
+
+export GOPATH=$HOME/go-workspace # don't forget to change your path correctly!
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+```
+
+### Create your workspace:
+ Create the workspace directories tree:
+ 
+    $ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
+
+```
+$GOPATH/src : Where your Go projects / programs are located
+$GOPATH/pkg : contains every package objects
+$GOPATH/bin : The compiled binaries home
+```
+
+### Hello world time!
+ Create a file in your `$GOPATH/src`, in my case `hello.go`
+ Hello world program :
+ ```
+package main
+import "fmt"
+
+func main() {
+    fmt.Printf("hello, world\n")
+}
+ ```
+ 
+ Run your first Go program by executing:
+ 
+    $ go run hello.go
     
-    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+ You'll see a sweet hello, world stdout
+ 
+ If you wish to compile it and move it to `$GOPATH/bin`, then run:
+ 
+     $ go install hello.go
 
-#### Install nodejs
+Since we have `$GOPATH/bin` added to our `$PATH`, you can run your program from placement :
 
-    $ source ~/.bashrc # sources your bashrc to add nvm to path
-    $ command -v nvm  # check the nvm use message
-    $ nvm install node  # install most recent nodejs stable version
-    $ nvm ls  # list installed node version
-    $ nvm use node  # use stable as current version
-    $ nvm ls-remote  # list all the node versions you can install
-    $ nvm alias default node  # set the installed stable version as the default node 
+    $ hello
+Prints : hello, world
 
-Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+## Some References and utilities:
+#### Import a Go package:
+You can create Go package, as well importing shared ones. To do so you'll need to use `go get` command
 
-    $ npm install -g coffee-script
-    $ npm install -g grunt-cli
+    $ go get -u github.com/gorilla/mux
+The command above should import `github.com/gorilla/mux` Go package into this directory `$GOPATH/src/github.com/gorilla/mux`
 
-## Npm usage
+You can then use this package in your Go programs by importing it. Example:
+```
+package main
 
-To install a package:
+import (
+    "net/http"
+    "log"
+    "github.com/gorilla/mux" #Imported Go Package
+)
 
-    $ npm install <package> # Install locally
-    $ npm install -g <package> # Install globally
+func YourHandler(w http.ResponseWriter, r *http.Request) {
+    w.Write([]byte("Gorilla!\n"))
+}
 
-To install a package and save it in your project's `package.json` file:
+func main() {
+    r := mux.NewRouter()
+    // Routes consist of a path and a handler function.
+    r.HandleFunc("/", YourHandler)
 
-    $ npm install <package> --save
+    // Bind to a port and pass our router in
+    log.Fatal(http.ListenAndServe(":8000", r))
+}
+```
 
-To see what's installed:
 
-    $ npm list # Local
-    $ npm list -g # Global
+#### Format your Go code
+ Go has a tool that automatically formats Go source code.
+    
+    $ gofmt -w yourcode.go
+OR
 
-To find outdated packages (locally or globally):
+    $ go fmt path/to/your/package
 
-    $ npm outdated [-g]
+#### Godoc : The documentation tool
+Using the `godoc` command, you can generate a program documentation.
 
-To upgrade all or a particular package:
+    $ godoc fmt                # documentation for package fmt
+    $ godoc fmt Printf         # documentation for fmt.Printf
+    $ godoc -src fmt           # fmt package interface in Go source form
 
-    $ npm update [<package>]
+You need to respect some spec in order to document using `godoc`. You can read more about : [godoc Documenting Go code](https://blog.golang.org/godoc-documenting-go-code)
 
-To uninstall a package:
-
-    $ npm uninstall <package>
+#### Discovering more the language:
+The following interactive tutorial will let you discover Golang world : [A tour of Go](https://tour.golang.org/)
