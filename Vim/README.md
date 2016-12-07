@@ -49,7 +49,7 @@ cd ~/.vim_runtime && git pull --rebase && cd -
 
 ## Maximum Awesome
 
-[Maximum Awesome](https://github.com/square/maximum-awesome) it's a collection of vim configutation and plugins, like a configuration manager for the vim environment.
+[Maximum Awesome](https://github.com/square/maximum-awesome) it's a collection of vim configuration and plugins, like a configuration manager for the vim environment.
 `
 
 ### Instalation
