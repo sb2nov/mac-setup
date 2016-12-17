@@ -15,11 +15,11 @@ To install virtualenv, simply run:
 Let's say you have a project in a directory called `myproject`. To set up virtualenv for that project:
 
     $ cd myproject/
-    $ virtualenv venv --distribute
+    $ virtualenv venv
 
 If you want your virtualenv to also inherit globally installed packages (like IPython or Numpy mentioned above), use:
 
-    $ virtualenv venv --distribute --system-site-packages
+    $ virtualenv venv --system-site-packages
 
 These commands create a `venv` subdirectory in your project where everything is installed. You need to **activate** it first though (in every terminal where you are working on your project):
 
