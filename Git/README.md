@@ -1,4 +1,4 @@
-# Git and Github
+# Git and GitHub
 
 What's a developer without [Git](http://git-scm.com/)? To install, simply run:
 
@@ -23,7 +23,7 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
 
 - - -
 
-### SSH Config for Github
+### SSH Config for GitHub
 This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.
 
 Setting up SSH is really simple as well. Most of the instructions below are referenced from [here](https://help.github.com/articles/generating-ssh-keys).
@@ -45,7 +45,7 @@ Second, To generate a new SSH key, copy and paste the text below, making sure to
 
 Please use a strong passphrase for your keys.
 
-Third, Add your keys to Github by going into account settings.
+Third, Add your keys to GitHub by going into account settings.
 
 - - -
 
