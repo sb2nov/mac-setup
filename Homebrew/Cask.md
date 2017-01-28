@@ -37,6 +37,7 @@ $ brew cask install flux
 $ brew cask install 1password
 $ brew cask install spectacle
 $ brew cask install sublime-text
+$ brew cask install diffmerge
 ```
 optional: 
 ```
