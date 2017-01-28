@@ -3,7 +3,7 @@
 - [Alignment](https://github.com/wbond/sublime_alignment/issues): Easy alignment of multiple selections and multi-line selections
 - [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete): Extend Sublime Text 2 autocompletion to find matches in all open files of the current window
 - [AutoFileName](https://github.com/BoundInCode/AutoFileName): Sublime Text plugin that autocompletes filenames
-- [Bootstrap 3 Snippets](https://github.com/JasonMortonNZ/bs3-sublime-plugin): Twitter Bootstrap 3 Snippets Plugin for Sublime Text 2/3
+- [Bootstrap 3 Snippets*](https://github.com/JasonMortonNZ/bs3-sublime-plugin): Twitter Bootstrap 3 Snippets Plugin for Sublime Text 2/3
 - [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter): Bracket and tag highlighter for Sublime Text
 - [Dictionaries](https://github.com/SublimeText/Dictionaries): Hunspell UTF8 dictionaries for Sublime Text.
 - [Dictionary​Auto​Complete](https://github.com/Zinggi/DictionaryAutoComplete): This adds dictionary entries to the completions inside comments.
