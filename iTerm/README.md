@@ -11,11 +11,9 @@ Let's just quickly change some preferences.
 ### Colors and Font Settings
 - Set hotkey to open and close the terminal to `command + option + i`
 - Go to profiles -> Default -> Terminal -> Check silence bell
-- Download [one of iTerm2 color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) from here. And then set these to your default profile colors.
+- Download [one of iTerm2 color schemes](http://iterm2colorschemes.com) from here or [here](http://iterm2colorschemes.com). And then set these to your default profile colors.
 - Change the cursor text and cursor color to yellow make it more visible
-- Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [here](https://github.com/adobe-fonts/source-code-pro/releases/latest).
-- If you're using BASH instead of ZSH you could add `export CLICOLOR=1` line to your `~/.bash_profile` file for nice coloring of listings.
-
+- Change the font to 13pt Inconsolata, can be downloaded from [here](http://levien.com/type/myfonts/Inconsolata.otf).
 
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
 
