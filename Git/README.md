@@ -43,7 +43,9 @@ Second, To generate a new SSH key, copy and paste the text below, making sure to
     # Generating public/private rsa key pair.
     # Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 
-Please use a strong passphrase for your keys.
+Please use a strong passphrase for your keys. Open the key with and copy the content: 
+
+    vim ~/.ssh/id_rsa.pub
 
 Third, Add your keys to GitHub by going into account settings.
 
