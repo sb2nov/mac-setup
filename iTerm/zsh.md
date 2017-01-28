@@ -20,7 +20,7 @@ if you're still in the default shell, change default shell to zsh manually
 
 edit the `.zshrc` by opening the file in a text editor: `$ open ~/.zshrc`
 
-        ZSH_THEME=pygmalion
+        ZSH_THEME=agnoster
 
         plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
