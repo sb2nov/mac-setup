@@ -15,5 +15,3 @@ Let's just quickly change some preferences.
 - Change the cursor text and cursor color to yellow make it more visible
 - Change the font to 13pt Inconsolata, can be downloaded from [here](http://levien.com/type/myfonts/Inconsolata.otf).
 
-[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
-
