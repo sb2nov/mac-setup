@@ -2,6 +2,8 @@
 
 This is an example of User Settings for a basic development but please feel free to modify or update as per your choice.
 
+Download and install [this font](https://github.com/adobe-fonts/source-code-pro/releases/latest) first.
+
 ~~~
 {
     "auto_complete_delay": 5,
