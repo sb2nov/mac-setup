@@ -11,7 +11,7 @@ Let's just quickly change some preferences.
 ### Colors and Font Settings
 - Set hotkey to open and close the terminal to `command + option + i`
 - Go to profiles -> Default -> Terminal -> Check silence bell
-- Download [one of iTerm2 color schemes](http://iterm2colorschemes.com) from here or [here](http://iterm2colorschemes.com). And then set these to your default profile colors.
+- Download [one of iTerm2 color schemes](http://iterm2colorschemes.com). And then set these to your default profile colors.
 - Change the cursor text and cursor color to yellow make it more visible
-- Change the font to 13pt Inconsolata, can be downloaded from [here](http://levien.com/type/myfonts/Inconsolata.otf).
+- Change the font to 13pt Inconsolata, can be downloaded from [here](https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf).
 
