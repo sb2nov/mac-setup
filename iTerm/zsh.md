@@ -8,43 +8,6 @@ Install zsh and zsh completions using homebrew
 
         brew install zsh zsh-completions
 
-Now you can customize your shell using two frameworks Prezto or Oh My Zsh. So follow one of the two sections below.
-
-#### Prezto
-Install prezto on top of zsh to get additional functionality
-
-        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
-Next create the `~/.zshrc` file by running
-
-        setopt EXTENDED_GLOB
-        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-          ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-        done
-
-edit the `~/.zpreztorc` file and add
-
-        zstyle ':prezto:load' pmodule \
-          'environment' \
-          'terminal' \
-          'editor' \
-          'history' \
-          'directory' \
-          'spectrum' \
-          'utility' \
-          'completion' \
-          'git' \
-          'syntax-highlighting' \
-          'history-substring-search' \
-          'prompt'
-
-        zstyle ':prezto:module:prompt' theme 'paradox'
-
-edit the `.zshrc` by opening the file in a text editor and adding the following below
-
-        # Add env.sh
-        source ~/Projects/config/env.sh
-
 
 #### Oh My Zsh
 Install oh-my-zsh on top of zsh to get additional functionality
