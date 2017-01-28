@@ -43,66 +43,72 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 * Uncheck everything but applications
 
 * Change the keyboard shortcut to alt-Space as we'll be replacing them with Alfred
+
 * Privacy &gt; Add all folders but applications
 
 ### Accounts
 
-*  Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
+* Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
 
-### Write to NTFS on OSX Yosemite and El Capitan
+### Safari
 
-#### Install Homebrew and Homebrew Cask
+* Search&gt; Change to DuckDuckGo
+* Privacy &gt; Cookies & Website data &gt; Allow from current website only
 
-* Instructions [here](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)!
+### ~~Write to NTFS on OSX Yosemite and El Capitan~~
 
-#### Update Homebrew formulae:
+#### ~~Install Homebrew and Homebrew Cask~~
+
+* ~~Instructions ~~[~~here~~](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)~~!~~
+
+#### ~~Update Homebrew formulae:~~
 
 ```
 $ brew update
 ```
 
-#### Install osxfuse
+#### ~~Install osxfuse~~
 
-* If you are on OSX 10.11 \(El Capitan\), install the \(3.x.x\) from [https://github.com/osxfuse/osxfuse/releases](https://github.com/osxfuse/osxfuse/releases).
+* ~~If you are on OSX 10.11 \(El Capitan\), install the \(3.x.x\) from ~~[~~https://github.com/osxfuse/osxfuse/releases~~](https://github.com/osxfuse/osxfuse/releases)~~.~~
 
 ```
 $ brew cask install osxfuse
 ```
 
-#### Install ntfs-3g
+#### ~~Install ntfs-3g~~
 
 ```
 $ brew install homebrew/fuse/ntfs-3g
 ```
 
-#### If you are on OSX 10.11 \(El Capitan\), temporary disable System Integrity Protection.
+#### ~~If you are on OSX 10.11 \(El Capitan\), temporary disable System Integrity Protection.~~
 
-* **reboot** and hold CMD+R to get in recovery mode
-* Open the terminal and type
+* ~~**reboot** and hold CMD+R to get in recovery mode~~
+* ~~Open the terminal and type~~
 
 ```
 $ csrutil disable
 ```
 
-* **reboot** normally
+* ~~**reboot** normally~~
 
-#### Create a symlink for mount\_ntfs
+#### ~~Create a symlink for mount\_ntfs~~
 
 ```
 $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 ```
 
-#### If you are on OSX 10.11 \(El Capitan\), re-enable System Integrity Protection.
+#### ~~If you are on OSX 10.11 \(El Capitan\), re-enable System Integrity Protection.~~
 
-* **reboot** and hold CMD+R to get in recovery mode
-* Open the terminal and type
+* ~~**reboot** and hold CMD+R to get in recovery mode~~
+* ~~Open the terminal and type~~
 
 ```
 $ csrutil enable
 ```
 
-* **reboot** normally
+* ~~**reboot** normally~~
 
 
 
