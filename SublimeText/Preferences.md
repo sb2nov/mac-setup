@@ -8,7 +8,6 @@ Download and install [this font](https://github.com/adobe-fonts/source-code-pro/
 {
     "auto_complete_delay": 5,
     "auto_complete_selector": "source, text",
-    "color_scheme": "Packages/User/Monokai (SL).tmTheme",
     "create_window_at_startup": false,
     "folder_exclude_patterns":
     [
