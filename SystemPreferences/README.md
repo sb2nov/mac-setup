@@ -59,7 +59,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 #### ~~Install Homebrew and Homebrew Cask~~
 
-* ~~Instructions ~~[~~here~~](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)~~!~~
+* ~~Instructions ~~\[~~here~~\]\(~~[http://sourabhbajaj.com/mac-setup/Homebrew/README.html](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)~~\)~~!~~
 
 #### ~~Update Homebrew formulae:~~
 
@@ -69,7 +69,7 @@ $ brew update
 
 #### ~~Install osxfuse~~
 
-* ~~If you are on OSX 10.11 \(El Capitan\), install the \(3.x.x\) from ~~[~~https://github.com/osxfuse/osxfuse/releases~~](https://github.com/osxfuse/osxfuse/releases)~~.~~
+* ~~If you are on OSX 10.11 \(El Capitan\), install the \(3.x.x\) from ~~\[~~[https://github.com/osxfuse/osxfuse/releases~~\]\(https://github.com/osxfuse/osxfuse/releases\)~~.~~](https://github.com/osxfuse/osxfuse/releases~~](https://github.com/osxfuse/osxfuse/releases)~~.~~)
 
 ```
 $ brew cask install osxfuse
