@@ -49,17 +49,13 @@ Please use a strong passphrase for your keys. Open the key with and copy the con
 
 Third, Add your keys to GitHub by going into account settings.
 
-- - -
+### Setting up Diffmerge as the Git Mergetool
+More details can be found [here](https://www.sourcegear.com/diffmerge/webhelp/sec__git__mac.html) 
 
-### DS_Store
-On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files.
-
-- - -
-
-### Setting up Sublime Text as the Git Mergetool
-
-    $ git config --global mergetool.sublime.cmd "subl -w \$MERGED"
-    $ git config --global mergetool.sublime.trustExitCode false 
-    $ git config --global merge.tool sublime
-    $ git mergetool -y
+    $ git config --global diff.tool diffmerge
+    $ git config --global difftool.diffmerge.cmd "/usr/local/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+    
+    $ git config --global merge.tool diffmerge
+    $ git config --global mergetool.diffmerge.trustExitCode true
+    $ git config --global mergetool.diffmerge.cmd "/usr/local/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
 
