@@ -32,6 +32,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
   * Add home and code directory
   * Remove shared and tags
   * New finder window to open in the home directory
+* Advanced: Search in the current folder
 
 ### Menubar
 

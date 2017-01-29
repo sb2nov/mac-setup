@@ -38,8 +38,22 @@ $ brew cask install 1password
 $ brew cask install spectacle
 $ brew cask install sublime-text
 $ brew cask install diffmerge
+$ brew cask install bartender
+$ brew cask install calibre
+$ brew cask install cleanmymac
+$ brew cask install cyberduck
+$ brew cask install fission
+$ brew cask install fluid
+$ brew cask install ipvanish-vpn
+$ brew cask install iterm2
+$ brew cask install mysqlworkbench
+$ brew cask install sketch
+$ brew cask install skitch
+$ brew cask install skype
+$ brew cask install spotify
+$ brew cask install dupeguru
 ```
-optional: 
+#### Optional:
 ```
 $ brew cask install latexian
 $ brew cask install superduper

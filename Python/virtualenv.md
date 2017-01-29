@@ -4,13 +4,38 @@
 
 The advantage is that different projects might require different versions of packages, and it would be hard to manage that if you install packages globally. It also allows you to keep your global `/usr/local/lib/python2.7/site-packages` folder clean, containing only critical or big packages that you always need (like IPython, Numpy).
 
-### Install
+### Install pyenv method
+There is a pyenv plugin named [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv) which comes with various features to help pyenv users to manage virtual environments created by virtualenv or Anaconda. Use this plugin if you are using pyenv.
 
+Install with homebrew other methods can be found [here](https://github.com/yyuu/pyenv-virtualenv#installation) :
+
+    $ brew install pyenv-virtualenv
+
+After installation, update the env.sh:
+
+    $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/Projects/config/env.sh
+
+#### Usage pyenv-virtualenv
+Let's say you have a project in a directory called `myproject`. To set up pyenv-virtualenv for that project:
+
+    $ cd myproject/
+    $ pyenv virtualenv 2.7.10 venv2.7.10
+
+This will create a virtualenv based on Python 2.7.10 under ~/.pyenv/versions in a folder called venv2.7.10
+
+Now activate your venv:
+
+    pyenv activate <name>
+    pyenv deactivate
+
+For more advanced configurations, [read on](https://github.com/yyuu/pyenv-virtualenv#installation)
+
+### Install (not pyenv method)
 To install virtualenv, simply run:
 
     $ pip install virtualenv
 
-### Usage
+#### Usage virtualenv
 
 Let's say you have a project in a directory called `myproject`. To set up virtualenv for that project:
 
@@ -41,4 +66,12 @@ It is preferable to install big packages (like Numpy), or packages you always us
 
 ### Virtualenvwrapper
 For easier management of different virtual environments for multiple packages. Installing Virtualenv Wrapper is possible. For installation instructions read the [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/index.html) documents here.
+
+Add this to `env.sh`:
+
+    # Virtual Environment
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/Projects
+    source /usr/local/bin/virtualenvwrapper.sh
+
 One thing to mention is that virtualenvwrapper keeps all the virtual environments in `~/.virtualenv` and does not add them to the project directory.

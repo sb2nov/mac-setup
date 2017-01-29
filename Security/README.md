@@ -8,7 +8,7 @@ A development machine should be secured against threads as well as any other mac
 
 ### Virus scanner
 
-Head over to [Avira](https://www.avira.com/), download and install their latest free package.
+Head over to [Sophos](https://www.sophos.com/en-us/lp/sophos-home.aspx), download and install their latest free package.
 
 ### Firewall
 

@@ -30,8 +30,6 @@ After installing, add `pyenv init` to your shell to enable shims and autocomplet
 
 Restart your shell so the path changes take effect. You can now begin using pyenv.
 
-    $ exec $SHELL
-
 To list the all available versions of Python, including Anaconda, Jython, pypy, and stackless, use:
 
     $ pyenv install --list

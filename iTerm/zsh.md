@@ -38,11 +38,6 @@ Open the file from Finder and add this:
     # export PYTHONPATH=$PYTHONPATH
     # export MANPATH="/usr/local/man:$MANPATH"
 
-    # Virtual Environment
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Projects
-    source /usr/local/bin/virtualenvwrapper.sh
-
     # Owner
     export USER_NAME="YOUR NAME"
     eval "$(rbenv init -)"

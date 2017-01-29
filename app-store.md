@@ -10,6 +10,12 @@ Install the following apps:
 * Skitch
 * Evernote
 * Pocket
+* DaisyDisk
+* Omnifocus
+* Readkit
 
+Manual:
+* Postman
+* Anylist
 
 
