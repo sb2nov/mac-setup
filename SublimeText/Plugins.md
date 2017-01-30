@@ -7,6 +7,7 @@
 - [Dictionary​Auto​Complete](https://github.com/Zinggi/DictionaryAutoComplete): This adds dictionary entries to the completions inside comments.
 - [Git](https://github.com/kemayo/sublime-text-git): Plugin for some git integration into sublime text
 - [GitGutter](http://www.jisaacks.com/gitgutter): A Sublime Text 2/3 plugin to see git diff in gutter
+- [Hyperion for gettext](https://github.com/thie1210/hyperion) Sublime helpers for gettext portable object (.po) translation files.
 - [Indent XML](https://github.com/alek-sys/sublimetext_indentxml): Plugin for Sublime Text editor for reindenting XML and JSON files
 - [Jedi - Python autocompletion](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0CD0QFjAC&url=https%3A%2F%2Fgithub.com%2Fsrusskih%2FSublimeJEDI&ei=OmQpU8jnGtDZoATL_YCACA&usg=AFQjCNH9VcKDU09VibnW2RNLyCjrt9SyDA&sig2=LOg29BW0rRy5BHkoObgdeQ&bvm=bv.62922401,d.cGU): Jedi is an autocompletion tool for Python that can be used in IDEs/editors.
 - [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing) Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes.
@@ -17,6 +18,8 @@
 - [SublimeCodeIntel](http://sublimecodeintel.github.io/SublimeCodeIntel/): Full-featured code intelligence and smart autocomplete engine
 - [SublimeLinter](http://sublimelinter.readthedocs.org/): Interactive code linting framework for Sublime Text 3
 - [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8): SublimeLinter plugin for python, using pep8.
+- [SublimeLinter-shellcheck](https://github.com/SublimeLinter/SublimeLinter-shellcheck): This linter plugin for SublimeLinter provides an interface to shellcheck.
+- [Sublimelinter-XMLlint]
 - [TrailingSpaces](https://github.com/SublimeText/TrailingSpaces): Highlight trailing spaces and delete them in a flash.
 
 #### Manual installations

@@ -52,6 +52,7 @@ $ brew cask install skitch
 $ brew cask install skype
 $ brew cask install spotify
 $ brew cask install dupeguru
+$ brew cask install shellcheck
 ```
 #### Optional:
 ```

@@ -9,19 +9,20 @@
 #### CheatSheet
 - System Preferences -> Security and Privacy -> Accessibility -> Check
 
-#### DoubleTwist
-- Add the music folder to the library
-
-#### Notebooks
-- Set the default directory to a folder inside Dropbox for CloudSync
-- Overwrite one of the themes in the app with [Github Mardown CSS](https://gist.github.com/andyferra/2554919)
-
 #### Spectacle
-- Update all major combinations to work with `Shift + Control + 1-9`
-- Remove the key combinations for the other sizes
-- System Preferences -> Security and Privacy -> Accessibility -> Check
-
-#### Timing
+- Remove the key combinations for all
+- Set these key combinations:
+    + Center: `Shift + Control + 5`
+    + Fullscreen: `Shift + Control + 6`
+    + Left Half: `Shift + Control + 1`
+    + Right Half: `Shift + Control + 2`
+    + Next Third: `Shift + Control + 3`
+    + Previous Third: `Shift + Control + 4`
+    + Upper Left: `Shift + Control + 0` (the idea is that you start at Upper Right with 7 and follow like a clock from there)
+    + Lower Left: `Shift + Control + 9`
+    + Upper Right: `Shift + Control + 7`
+    + Lower Right: `Shift + Control + 8`
+- Check Launch Spectacle at login
 - System Preferences -> Security and Privacy -> Accessibility -> Check
 
 #### Total Finder

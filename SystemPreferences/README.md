@@ -38,6 +38,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 * Remove the display and bluetooth icons
 * Change battery to show percentage symbols
+* Chang clock to show date and time, not day
 
 ### Spotlight
 
