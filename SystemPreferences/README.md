@@ -18,7 +18,15 @@ If this is a new computer, there are a couple tweaks you would like to make to t
     - Uncheck all apart from Zoom in and out
 
 ### Dock
-- Change position to left and make the size of Icons small
+- Visual settings
+    - Change position to left and make the size of Icons small
+- Other settings
+    - Remove workspace auto-switching
+    
+        ```
+        $ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+        $ killall Dock
+        ```
 
 ### Finder
 - Toolbar
