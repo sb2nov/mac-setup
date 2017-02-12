@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="7.2" data-basepath=".." data-revision="1481492488961">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="7.2" data-basepath=".." data-revision="1486874259535">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -882,8 +882,9 @@
                         <h1 id="packages">Packages</h1>
 <h3 id="install-package-control">Install Package Control</h3>
 <p>The simplest method of installation is through the Sublime Text console. The console is accessed via <code>View &gt; Show Console</code> menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.</p>
-<pre><code>import urllib.request,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;wb&#39; ).write(by)
-</code></pre>
+<p>This snippet changes each version and older versions will return an error.</p>
+<p>To get the current versions code, go to <a href="https://packagecontrol.io/installation" target="_blank">https://packagecontrol.io/installation</a> </p>
+
                     
                     </section>
                 

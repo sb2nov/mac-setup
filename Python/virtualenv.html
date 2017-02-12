@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="8.2" data-basepath=".." data-revision="1481492488961">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="8.2" data-basepath=".." data-revision="1486874259535">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -888,9 +888,9 @@
 </code></pre><h3 id="usage">Usage</h3>
 <p>Let&#39;s say you have a project in a directory called <code>myproject</code>. To set up virtualenv for that project:</p>
 <pre><code>$ cd myproject/
-$ virtualenv venv --distribute
+$ virtualenv venv
 </code></pre><p>If you want your virtualenv to also inherit globally installed packages (like IPython or Numpy mentioned above), use:</p>
-<pre><code>$ virtualenv venv --distribute --system-site-packages
+<pre><code>$ virtualenv venv --system-site-packages
 </code></pre><p>These commands create a <code>venv</code> subdirectory in your project where everything is installed. You need to <strong>activate</strong> it first though (in every terminal where you are working on your project):</p>
 <pre><code>$ source venv/bin/activate
 </code></pre><p>You should see a <code>(venv)</code> appear at the beginning of your terminal prompt indicating that you are working inside the virtualenv. Now when you install something:</p>
