@@ -1,13 +1,13 @@
 # System Preferences
 
 First thing you need to do, on any OS actually, is update the system! For that: **Apple Icon > Software Update.**
-Also upgrade your OS incase you want to work on the latest OS. Yosemite is a free upgrade so please check that.
+Also upgrade your OS in case you want to work on the latest OS. Sierra is a free upgrade so please check that.
 
 If this is a new computer, there are a couple tweaks you would like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
 
 ### Users and Groups
 - Login Options-> Change fast switching user menu to Icon
-- Set up Password, Apple id, Picture , etc.
+- Set up Password, Apple ID, Picture, etc.
 
 ### Trackpad
 - Point & Click
