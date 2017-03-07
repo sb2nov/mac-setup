@@ -1,25 +1,26 @@
 # System Preferences
 
-First thing you need to do, on any OS actually, is update the system! For that: **Apple Icon > Software Update.**
+First thing you need to do, on any OS actually, is update the system! For that: **Apple menu () > About This Mac > Software Update.**
+
 Also upgrade your OS in case you want to work on the latest OS. Sierra is a free upgrade so please check that.
 
 If this is a new computer, there are a couple tweaks you would like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.
 
-### Users and Groups
-- Login Options-> Change fast switching user menu to Icon
+### Users & Groups
+- Login Options -> Change fast switching user menu to Icon
 - Set up Password, Apple ID, Picture, etc.
 
 ### Trackpad
 - Point & Click
-    - Enable Tap to Click with one finger
-    - Change secondary click to right corner
+    - Enable Tap to click with one finger
+    - Change Secondary click to right corner
     - Uncheck three finger drag
-- Scroll and Zoom
+- Scroll & Zoom
     - Uncheck all apart from Zoom in and out
 
 ### Dock
 - Visual settings
-    - Change position to left and make the size of Icons small
+    - Change position to left and make the size ofiIcons small
 - Other settings
     - Remove workspace auto-switching
     
@@ -37,7 +38,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
     - New finder window to open in the home directory
 
 ### Menubar
-- Remove the display and bluetooth icons
+- Remove the display and Bluetooth icons
 - Change battery to show percentage symbols
 
 ### Spotlight
@@ -58,7 +59,6 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 #### Install osxfuse
 - If you are on OSX 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
-
 
     $ brew cask install osxfuse
     
