@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1486874259535">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="4.1" data-basepath=".." data-revision="1489949141910">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -883,78 +883,79 @@
 <p>We&#39;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intutive. The <code>env.sh</code> is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc.</p>
 <h3 id="zsh">Zsh</h3>
 <p>Install zsh and zsh completions using homebrew</p>
-<pre><code>    brew install zsh zsh-completions
-</code></pre><p>Now you can customize your shell using two frameworks Prezto or Oh My Zsh. So follow one of the two sections below.</p>
+<pre><code>brew install zsh zsh-completions
+</code></pre><p>Now you can customize your shell using two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. So you should follow one of the two sections below. I personally prefer <code>Prezto</code> as that seems to have slightly better performance.</p>
 <h4 id="prezto">Prezto</h4>
 <p>Install prezto on top of zsh to get additional functionality</p>
-<pre><code>    git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
+<pre><code>git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
 </code></pre><p>Next create the <code>~/.zshrc</code> file by running</p>
-<pre><code>    setopt EXTENDED_GLOB
-    for rcfile in &quot;${ZDOTDIR:-$HOME}&quot;/.zprezto/runcoms/^README.md(.N); do
-      ln -s &quot;$rcfile&quot; &quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&quot;
-    done
+<pre><code>setopt EXTENDED_GLOB
+for rcfile in &quot;${ZDOTDIR:-$HOME}&quot;/.zprezto/runcoms/^README.md(.N); do
+  ln -s &quot;$rcfile&quot; &quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&quot;
+done
 </code></pre><p>edit the <code>~/.zpreztorc</code> file and add</p>
-<pre><code>    zstyle &#39;:prezto:load&#39; pmodule \
-      &#39;environment&#39; \
-      &#39;terminal&#39; \
-      &#39;editor&#39; \
-      &#39;history&#39; \
-      &#39;directory&#39; \
-      &#39;spectrum&#39; \
-      &#39;utility&#39; \
-      &#39;completion&#39; \
-      &#39;git&#39; \
-      &#39;syntax-highlighting&#39; \
-      &#39;history-substring-search&#39; \
-      &#39;prompt&#39;
+<pre><code>zstyle &#39;:prezto:load&#39; pmodule \
+  &#39;environment&#39; \
+  &#39;terminal&#39; \
+  &#39;editor&#39; \
+  &#39;history&#39; \
+  &#39;directory&#39; \
+  &#39;spectrum&#39; \
+  &#39;utility&#39; \
+  &#39;completion&#39; \
+  &#39;git&#39; \
+  &#39;syntax-highlighting&#39; \
+  &#39;history-substring-search&#39; \
+  &#39;prompt&#39;
 
-    zstyle &#39;:prezto:module:prompt&#39; theme &#39;paradox&#39;
+zstyle &#39;:prezto:module:prompt&#39; theme &#39;paradox&#39;
 </code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor and adding the following below</p>
-<pre><code>    # Add env.sh
-    source ~/Projects/config/env.sh
+<pre><code># Add env.sh
+source ~/Projects/config/env.sh
 </code></pre><h4 id="oh-my-zsh">Oh My Zsh</h4>
+<p><strong>Note</strong>: You don&#39;t need this section if you installed <code>Prezto</code>.</p>
 <p>Install oh-my-zsh on top of zsh to get additional functionality</p>
-<pre><code>    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+<pre><code>curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 </code></pre><p>if you&#39;re still in the default shell, change default shell to zsh manually</p>
 <pre><code>chsh -s /usr/local/bin/zsh
 </code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor</p>
-<pre><code>    ZSH_THEME=pygmalion
+<pre><code>ZSH_THEME=pygmalion
 
-    plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
-    # Add env.sh
-    source ~/Projects/config/env.sh
+# Add env.sh
+source ~/Projects/config/env.sh
 </code></pre><h3 id="env-sh">env.sh</h3>
-<pre><code>    #!/bin/zsh
+<pre><code>#!/bin/zsh
 
-    # PATH
-    export PATH=&quot;/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
-    export EDITOR=&#39;subl -w&#39;
-    # export PYTHONPATH=$PYTHONPATH
-    # export MANPATH=&quot;/usr/local/man:$MANPATH&quot;
+# PATH
+export PATH=&quot;/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
+export EDITOR=&#39;subl -w&#39;
+# export PYTHONPATH=$PYTHONPATH
+# export MANPATH=&quot;/usr/local/man:$MANPATH&quot;
 
-    # Virtual Environment
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Projects
-    source /usr/local/bin/virtualenvwrapper.sh
+# Virtual Environment
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
 
-    # Owner
-    export USER_NAME=&quot;YOUR NAME&quot;
-    eval &quot;$(rbenv init -)&quot;
+# Owner
+export USER_NAME=&quot;YOUR NAME&quot;
+eval &quot;$(rbenv init -)&quot;
 
-    # FileSearch
-    function f() { find . -iname &quot;*$1*&quot; ${@:2} }
-    function r() { grep &quot;$1&quot; ${@:2} -R . }
+# FileSearch
+function f() { find . -iname &quot;*$1*&quot; ${@:2} }
+function r() { grep &quot;$1&quot; ${@:2} -R . }
 
-    #mkdir and cd
-    function mkcd() { mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$_&quot;; }
+#mkdir and cd
+function mkcd() { mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$_&quot;; }
 
-    # Aliases
-    alias cppcompile=&#39;c++ -std=c++11 -stdlib=libc++&#39;
+# Aliases
+alias cppcompile=&#39;c++ -std=c++11 -stdlib=libc++&#39;
 
-    # Use sublimetext for editing config files
-    alias zshconfig=&quot;subl ~/.zshrc&quot;
-    alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
+# Use sublimetext for editing config files
+alias zshconfig=&quot;subl ~/.zshrc&quot;
+alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
 </code></pre>
                     
                     </section>
