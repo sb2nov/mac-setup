@@ -52,6 +52,13 @@ Third, Add your keys to GitHub by going into account settings.
 ### DS_Store
 On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files.
 
+If you want to never include `.DS_Store` files in your Git repositories, you can configure your Git to globally exclude those files:
+
+    # specify a global exclusion list
+    $ git config --global core.excludesfile ~/.gitignore
+    # adding .DS_Store to that list
+    $ echo .DS_Store >> ~/.gitignore
+
 - - -
 
 ### Setting up Sublime Text as the Git Mergetool
