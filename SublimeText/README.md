@@ -8,8 +8,8 @@ Go ahead and [download](http://www.sublimetext.com/) it. Open the **.dmg** file,
 
 Sublime Text is not free, but it has an unlimited "evaluation period". Anyhow, we're going to be using it so much that even the seemingly expensive $60 price tag is worth every penny. If you can afford it, It is adviced that you [support](http://www.sublimetext.com/buy) this awesome tool. :)
 
-Let's create a shortcut so we can launch Sublime Text from the command-line:
+ZSH has a plugin to create shortcuts to launch Sublime Text from the command-line. Simply open your `~/.zshrc` file and make sure that the  `sublime` plugin is part of your plugins:
 
-    $ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+    plugins=(sublime)
 
-Now you can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool. We'll configure Sublime more in the next few sections.
+Now you can open a file with `$ st myfile.py` or open the current directory with `$ stt`. Pretty cool. We'll configure Sublime more in the next few sections.
