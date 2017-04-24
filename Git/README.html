@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="sb2nov/mac-setup" data-level="5" data-basepath=".." data-revision="1489949141910">
+    <div class="book" data-github="sb2nov/mac-setup" data-level="5" data-basepath=".." data-revision="1493014868888">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -910,7 +910,12 @@ $ ls -al
 <hr>
 <h3 id="ds_store">DS_Store</h3>
 <p>On a Mac, it is important to remember to add <code>.DS_Store</code> (a hidden OS X system file that&#39;s put in folders) to your <code>.gitignore</code> files.</p>
-<hr>
+<p>If you want to never include <code>.DS_Store</code> files in your Git repositories, you can configure your Git to globally exclude those files:</p>
+<pre><code># specify a global exclusion list
+$ git config --global core.excludesfile ~/.gitignore
+# adding .DS_Store to that list
+$ echo .DS_Store &gt;&gt; ~/.gitignore
+</code></pre><hr>
 <h3 id="setting-up-sublime-text-as-the-git-mergetool">Setting up Sublime Text as the Git Mergetool</h3>
 <pre><code>$ git config --global mergetool.sublime.cmd &quot;subl -w \$MERGED&quot;
 $ git config --global mergetool.sublime.trustExitCode false 

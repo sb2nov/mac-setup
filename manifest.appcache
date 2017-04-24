@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1489949141911
+# Revision 1493014868889
 
 CACHE:
 index.html
@@ -13,9 +13,9 @@ Homebrew/Cask.html
 Homebrew/README.html
 Homebrew/Usage.html
 Java/README.html
-LaTeX/README.html
 MySql/README.html
 Node.js/README.html
+LaTeX/README.html
 Python/README.html
 Python/ipython.html
 Python/numpy.html
@@ -31,8 +31,8 @@ Scala/README.html
 Security/README.html
 SublimeText/Packages.html
 SublimeText/Plugins.html
-SublimeText/README.html
 SublimeText/Preferences.html
+SublimeText/README.html
 SublimeText/SublimeLinter.html
 SystemPreferences/README.html
 Vagrant/README.html
