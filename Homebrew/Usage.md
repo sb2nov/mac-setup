@@ -10,7 +10,7 @@ To update Homebrew's directory of formulae, run:
 
 **Note**: I've seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):
 
-    $ cd /usr/local
+    $ cd /usr/local/Homebrew/
     $ git fetch origin
     $ git reset --hard origin/master
 
