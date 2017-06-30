@@ -26,6 +26,7 @@ LaTex Editor's:
   4. [TeXShop](http://pages.uoregon.edu/koch/texshop/)
   5. [LyX](http://www.lyx.org/)
   6. [TeXlipse](http://texlipse.sourceforge.net/)
+  7. [Sublime Text 3 - LaTeXTools](https://github.com/SublimeText/LaTeXTools)
 
 ### MacTeX vs BasicTeX
 
