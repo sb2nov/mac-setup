@@ -30,7 +30,6 @@ Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to enable dif
 
 I'll now cover installation of the apps that I have mentioned in the apps section using cask.
 
-    $ brew cask install airmail
     $ brew cask install alfred
     $ brew cask install android-file-transfer
     $ brew cask install asepsis
