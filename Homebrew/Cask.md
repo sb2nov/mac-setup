@@ -10,7 +10,7 @@ As of December 2015, cask comes installed with Homebrew directly.
 
 ### Search
 
-It is really simple to check if the app is supported by cask by going to the search page on [caskroom.io](http://caskroom.io/)
+It is really simple to check if the app is supported by cask by going to the search page on [Caskroom](https://caskroom.github.io/)
 
 ### Quick look plugins
 
