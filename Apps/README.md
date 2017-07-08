@@ -68,8 +68,8 @@ Both can't compare in terms of features and user interface with their commercial
 - [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
 - [Mou](http://25.io/mou/): Markdown editor for developers.
+- [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for OS X.
 - [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine incase of failure.
 - [TimeOut](http://www.dejal.com/timeout/): Scheduled work breaks to prevent stress injuries.
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. Enough said.
 - [Voila](http://www.globaldelight.com/voila/): Record your screen with audio, mouse highlight and other features.
-
