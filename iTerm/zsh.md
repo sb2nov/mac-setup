@@ -32,6 +32,7 @@ edit the `.zshrc` by opening the file in a text editor: `$ open .zshrc`
     plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
     # Add env.sh
+    alias envconfig=subl ~/Projects/config/env.sh
     source ~/Projects/config/env.sh
 ```
 
