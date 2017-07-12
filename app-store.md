@@ -2,8 +2,6 @@
 
 Manual:
 
-* 1Password \(and setup
-* Alfred \(Activate powerpack, set synced folder\)
 * Postman
 * Anylist
 * Omnifocus
