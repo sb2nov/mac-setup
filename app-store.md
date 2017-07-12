@@ -7,7 +7,7 @@ Install the following apps:
 * Mindnode
 * iA Writer
 * Airmail
-* Alfred
+* Alfred > 
 * Slack
 * Readkit
 * Skitch
