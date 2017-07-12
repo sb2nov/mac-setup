@@ -38,7 +38,7 @@ edit the `.zshrc` by opening the file in a text editor: `$ open .zshrc`
 
 ### env.sh
 
-Open the file from Finder and add this:
+Create & open the file from Finder and add this:
 
 ```
     #!/bin/zsh
