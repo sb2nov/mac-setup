@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [System Preferences](SystemPreferences/README.md)
-* [App Store](app-store.md)
+* [Apps \(Store\)](app-store.md)
 * [Xcode](Xcode/README.md)
 * [Homebrew](Homebrew/README.md)
   * [Usage](Homebrew/Usage.md)

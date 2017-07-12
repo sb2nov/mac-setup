@@ -12,7 +12,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Accessibility
 
-* Mouse & Trackpad > Trackpad options > Enable dragging > Three finger drag
+* Mouse & Trackpad &gt; Trackpad options &gt; Enable dragging &gt; Three finger drag
 
 ### Trackpad
 
@@ -54,5 +54,9 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Safari
 
+* Autofill: Uncheck Passwords & Creditcards
 * Search&gt; Change to DuckDuckGo
 * Privacy &gt; Cookies & Website data &gt; Allow from current website only
+
+
+
