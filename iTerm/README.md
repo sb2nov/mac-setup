@@ -1,6 +1,6 @@
 ## iTerm2
 
-Since we're going to be spending a lot of time in the command-line, let's install a better terminal than the default one. Download and install [iTerm2](http://www.iterm2.com/).
+Since we're going to be spending a lot of time in the command-line, let's install a better terminal than the default one. If not already installed through `cask`. Download and install [iTerm2](http://www.iterm2.com/).
 
 In **Finder**, drag and drop the **iTerm** Application file into the **Applications** folder.
 

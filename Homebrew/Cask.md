@@ -27,7 +27,7 @@ $ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatc
 I'll now cover installation of the apps that I have mentioned in the apps section using cask.
 
 ```
-$ brew cask install alfred cleanmymac caffeine flux 1password spectacle sublime-text diffmerge bartender calibre cyberduck ipvanish-vpn iterm2 mysqlworkbench sketch skitch spotify dupegur
+$ brew cask install alfred cleanmymac caffeine flux 1password spectacle sublime-text diffmerge bartender calibre cyberduck ipvanish-vpn iterm2 mysqlworkbench sketch spotify dupegur
 ```
 
 #### Optional:
