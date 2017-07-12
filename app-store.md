@@ -9,7 +9,6 @@ Manual:
 Install the following Apps from the App Store:
 
 * 1Blocker
-* 1Password \(and setup\)
 * Mindnode
 * iA Writer
 * Airmail
