@@ -1,9 +1,17 @@
-# App Store
+# Apps \(Store\)
 
-Install the following apps:
+Manual:
+
+* 1Password \(and setup
+* Alfred \(Activate powerpack, set synced folder\)
+* Postman
+* Anylist
+* Omnifocus
+
+Install the following Apps from the App Store:
 
 * 1Blocker
-* 1Password (and setup)
+* 1Password \(and setup\)
 * Mindnode
 * iA Writer
 * Airmail
@@ -15,9 +23,5 @@ Install the following apps:
 * DaisyDisk
 * Readkit
 
-Manual:
-* Alfred (Activate powerpack, set synced folder)
-* Postman
-* Anylist
-* Omnifocus
+
 
