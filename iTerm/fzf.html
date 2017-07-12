@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>RubyGems · Mac OS X Setup Guide </title>
+        <title>fzf · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Node.js/" />
+    <link rel="next" href="../Git/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="tree.html" />
     
 
     </head>
@@ -173,9 +173,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../iTerm/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../iTerm/">
+                <a href="./">
             
                     
                     iTerm2
@@ -187,9 +187,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../iTerm/zsh.html">
+        <li class="chapter " data-level="1.5.1" data-path="zsh.html">
             
-                <a href="../iTerm/zsh.html">
+                <a href="zsh.html">
             
                     
                     ZSH
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../iTerm/tree.html">
+        <li class="chapter " data-level="1.5.2" data-path="tree.html">
             
-                <a href="../iTerm/tree.html">
+                <a href="tree.html">
             
                     
                     Tree
@@ -213,9 +213,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../iTerm/fzf.html">
+        <li class="chapter active" data-level="1.5.3" data-path="fzf.html">
             
-                <a href="../iTerm/fzf.html">
+                <a href="fzf.html">
             
                     
                     fzf
@@ -470,9 +470,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="./">
+        <li class="chapter " data-level="1.14" data-path="../Ruby/">
             
-                <a href="./">
+                <a href="../Ruby/">
             
                     
                     Ruby
@@ -484,9 +484,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.14.1" data-path="RubyGems.html">
+        <li class="chapter " data-level="1.14.1" data-path="../Ruby/RubyGems.html">
             
-                <a href="RubyGems.html">
+                <a href="../Ruby/RubyGems.html">
             
                     
                     RubyGems
@@ -681,7 +681,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >RubyGems</a>
+        <a href=".." >fzf</a>
     </h1>
 </div>
 
@@ -696,26 +696,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="rubygems">RubyGems</h1>
-<p><a href="http://rubygems.org/" target="_blank">RubyGems</a>, the Ruby package manager, was also installed:</p>
-<pre><code>$ which gem
-</code></pre><p>Update to its latest version with:</p>
-<pre><code>$ gem update --system
-</code></pre><p>To install a &quot;gem&quot; (Ruby package), run:</p>
-<pre><code>$ gem install &lt;gemname&gt;
-</code></pre><p>To install without generating the documentation for each gem (faster):</p>
-<pre><code>$ gem install &lt;gemname&gt; --no-document
-</code></pre><p>To see what gems you have installed:</p>
-<pre><code>$ gem list
-</code></pre><p>To check if any installed gems are outdated:</p>
-<pre><code>$ gem outdated
-</code></pre><p>To update all gems or a particular gem:</p>
-<pre><code>$ gem update [&lt;gemname&gt;]
-</code></pre><p>RubyGems keeps old versions of gems, so feel free to do come cleaning after updating:</p>
-<pre><code>$ gem cleanup
-</code></pre><p>We mainly use Ruby for the CSS pre-processor <a href="http://compass-style.org/" target="_blank">Compass</a>, which is built on top of <a href="http://sass-lang.com/" target="_blank">Sass</a>:</p>
-<pre><code>$ gem install compass --no-document
-</code></pre>
+                                <h1 id="fzf-cli-fuzzy-finder">fzf (CLI fuzzy finder)</h1>
+<blockquote>
+<p>fzf is a general-purpose command-line fuzzy finder</p>
+</blockquote>
+<h2 id="why-use-fzf">Why use fzf</h2>
+<ul>
+<li>speed</li>
+<li>rich feature set</li>
+<li>highly customizable</li>
+<li>its really fast</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">homebrew</a> to install <strong>fzf</strong>:</p>
+<pre><code>brew install fzf
+</code></pre><p>If you want to use shell extensions:</p>
+<pre><code>/usr/local/opt/fzf/install
+</code></pre><p>which are:</p>
+<ul>
+<li>Key bindings (<code>CTRL-T</code>, <code>CTRL-R</code>, and <code>ALT-C</code>) (bash, zsh, fish)</li>
+<li>Fuzzy auto-completion (bash, zsh)</li>
+</ul>
+<h2 id="actual-usage">Actual usage</h2>
+<h3 id="fuzzy-completion">Fuzzy completion</h3>
+<blockquote>
+<p>hit tab (&#x21B9;) after:</p>
+</blockquote>
+<h4 id="file-search">file search</h4>
+<pre><code>vim **
+</code></pre><p>or</p>
+<pre><code>subl **
+</code></pre><h4 id="host-name-searh">host name searh</h4>
+<pre><code>ssh **
+</code></pre><blockquote>
+<p><strong>Note</strong>: for more fuzzy search things head over <a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh" target="_blank">official repo</a></p>
+</blockquote>
+<h3 id="chrome-history-from-cli">Chrome history from CLI</h3>
+<blockquote>
+<p><strong>Note</strong>: original <a href="https://junegunn.kr/2015/04/browsing-chrome-history-with-fzf/" target="_blank">blog post</a></p>
+</blockquote>
+<p>Open up shell config (most likely <code>~/.zshrc</code> or command <code>zshconfig</code>) and add following function:</p>
+<pre><code># ch - browse chrome history
+ch() {
+  local cols sep
+  cols=$(( COLUMNS / 3 ))
+  sep=&apos;{::}&apos;
+
+  cp -f ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History /tmp/h
+
+  sqlite3 -separator $sep /tmp/h \
+    &quot;select substr(title, 1, $cols), url
+     from urls order by last_visit_time desc&quot; |
+  awk -F $sep &apos;{printf &quot;%-&apos;$cols&apos;s  \x1b[36m%s\x1b[m\n&quot;, $1, $2}&apos; |
+  fzf --ansi --multi | sed &apos;s#.*\(https*://\)#\1#&apos; | xargs open
+}
+</code></pre><blockquote>
+<p><strong>Note</strong>: Ensure that path to <code>History</code> file is correct; read more information on <a href="https://stackoverflow.com/a/16742333/1564365" target="_blank">StackOverflow</a></p>
+</blockquote>
+<h3 id="thanks-to">Thanks to</h3>
+<ul>
+<li><a href="https://github.com/junegunn" target="_blank">junegunn</a> for writing <a href="https://github.com/junegunn/fzf" target="_blank">this awesome tool</a></li>
+</ul>
+<p>Most of the text is taken from <a href="https://github.com/junegunn" target="_blank">fzf repository</a>.</p>
+
                                 
                                 </section>
                             
@@ -742,12 +785,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Ruby">
+                <a href="tree.html" class="navigation navigation-prev " aria-label="Previous page: Tree">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Node.js/" class="navigation navigation-next " aria-label="Next page: Node.js">
+                <a href="../Git/" class="navigation navigation-next " aria-label="Next page: Git">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -758,7 +801,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"RubyGems","level":"1.14.1","depth":2,"next":{"title":"Node.js","level":"1.15","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"previous":{"title":"Ruby","level":"1.14","depth":1,"path":"Ruby/README.md","ref":"Ruby/README.md","articles":[{"title":"RubyGems","level":"1.14.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Ruby/RubyGems.md","mtime":"2017-07-01T16:06:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T07:38:26.844Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"Git","level":"1.6","depth":1,"path":"Git/README.md","ref":"Git/README.md","articles":[{"title":"Git ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]}]},"previous":{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/fzf.md","mtime":"2017-07-12T07:37:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-12T07:38:26.844Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
