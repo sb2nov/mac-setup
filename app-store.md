@@ -8,6 +8,7 @@ Manual:
 
 Install the following Apps from the App Store:
 
+* WhatsApp
 * 1Blocker
 * Mindnode
 * iA Writer
