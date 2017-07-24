@@ -4,7 +4,7 @@ This is an example of User Settings for a basic development but please feel free
 
 Download and install [this font](https://github.com/adobe-fonts/source-code-pro/releases/latest) first.
 
-~~~
+```
 {
     "auto_complete_delay": 5,
     "auto_complete_selector": "source, text",
@@ -47,4 +47,15 @@ Download and install [this font](https://github.com/adobe-fonts/source-code-pro/
     "translate_tabs_to_spaces": true,
     "word_wrap": true
 }
-~~~
+```
+
+Add this to Settings &gt; Key Bindings:
+
+```
+[
+    { "keys": ["super+ctrl+b"], "command": "toggle_side_bar" },
+]
+```
+
+
+
