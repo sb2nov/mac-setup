@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>fzf · Mac OS X Setup Guide </title>
+        <title>ack · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ack.html" />
+    <link rel="next" href="../Git/" />
     
     
-    <link rel="prev" href="tree.html" />
+    <link rel="prev" href="fzf.html" />
     
 
     </head>
@@ -213,7 +213,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.3" data-path="fzf.html">
+        <li class="chapter " data-level="1.5.3" data-path="fzf.html">
             
                 <a href="fzf.html">
             
@@ -226,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="ack.html">
+        <li class="chapter active" data-level="1.5.4" data-path="ack.html">
             
                 <a href="ack.html">
             
@@ -694,7 +694,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >fzf</a>
+        <a href=".." >ack</a>
     </h1>
 </div>
 
@@ -709,68 +709,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="fzf-cli-fuzzy-finder">fzf (CLI fuzzy finder)</h1>
-<blockquote>
-<p>fzf is a general-purpose command-line fuzzy finder</p>
-</blockquote>
-<h2 id="why-use-fzf">Why use fzf</h2>
+                                <h1 id="ack"><code>ack</code></h1>
+<p><code>ack</code> is a search tool designed for code. It&apos;s built to be a replacement for <code>grep</code> with higher speed and more options.</p>
+<h2 id="why-use-ack-over-grep">Why use <code>ack</code> over <code>grep</code></h2>
 <ul>
-<li>speed</li>
-<li>rich feature set</li>
-<li>highly customizable</li>
-<li>its really fast</li>
+<li>Faster</li>
+<li>Skips unimportant files by default</li>
+<li>It searches recursively by default</li>
+<li>Customizable</li>
 </ul>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-bash">ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
+</code></pre>
+<p>Let&apos;s say you want to find all JavaScript files that are using the module <code>pancakes</code> in your project, with <code>ack</code> it&apos;s as easy as</p>
+<pre><code class="lang-sh">ack --js pancakes
+</code></pre>
+<p>Or you may want to find all files that <em>does not</em> contain the word <em>brew</em></p>
+<pre><code class="lang-bash">ack -L brew
+</code></pre>
 <h2 id="installation">Installation</h2>
-<p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">homebrew</a> to install <strong>fzf</strong>:</p>
-<pre><code>brew install fzf
-</code></pre><p>If you want to use shell extensions:</p>
-<pre><code>/usr/local/opt/fzf/install
-</code></pre><p>which are:</p>
-<ul>
-<li>Key bindings (<code>CTRL-T</code>, <code>CTRL-R</code>, and <code>ALT-C</code>) (bash, zsh, fish)</li>
-<li>Fuzzy auto-completion (bash, zsh)</li>
-</ul>
-<h2 id="actual-usage">Actual usage</h2>
-<h3 id="fuzzy-completion">Fuzzy completion</h3>
+<p>To install the latest version, use homebrew.</p>
+<pre><code class="lang-bash">brew install ack
+</code></pre>
+<h2 id="customization">Customization</h2>
+<p>You can customize <code>ack</code> to behave the way you want it to, this configuration is stored in <code>/.ackrc</code>.</p>
+<p>For example, you can add a custom type to use as a flag when searching. The following configuration will allow you to only search in <code>.md</code>, <code>.mkd</code> and <code>.markdown</code> files using the <code>--markdown</code> flag.</p>
+<pre><code class="lang-bash">--type-set=markdown=.md,.mkd,.markdown
+</code></pre>
+<p>You can also tell ack to always sort and use colors in the result.</p>
+<pre><code class="lang-bash">--sort-files
+--color
+</code></pre>
+<p>To see what configuration <code>ack</code> uses you can use the <code>dump</code> flag.</p>
+<pre><code class="lang-bash">ack --dump
+</code></pre>
+<h2 id="alternatives-to-ack">Alternatives to <code>ack</code></h2>
+<p>There&apos;s <a href="The%20Silver%20Searcher">The Silver Surfer</a> which describes itself as a </p>
 <blockquote>
-<p>hit tab (&#x21B9;) after:</p>
+<p>A code searching tool similar to <code>ack</code>, with a focus on speed.</p>
 </blockquote>
-<h4 id="file-search">file search</h4>
-<pre><code>vim **
-</code></pre><p>or</p>
-<pre><code>subl **
-</code></pre><h4 id="host-name-searh">host name searh</h4>
-<pre><code>ssh **
-</code></pre><blockquote>
-<p><strong>Note</strong>: for more fuzzy search things head over <a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh" target="_blank">official repo</a></p>
-</blockquote>
-<h3 id="chrome-history-from-cli">Chrome history from CLI</h3>
-<blockquote>
-<p><strong>Note</strong>: original <a href="https://junegunn.kr/2015/04/browsing-chrome-history-with-fzf/" target="_blank">blog post</a></p>
-</blockquote>
-<p>Open up shell config (most likely <code>~/.zshrc</code> or command <code>zshconfig</code>) and add following function:</p>
-<pre><code># ch - browse chrome history
-ch() {
-  local cols sep
-  cols=$(( COLUMNS / 3 ))
-  sep=&apos;{::}&apos;
-
-  cp -f ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History /tmp/h
-
-  sqlite3 -separator $sep /tmp/h \
-    &quot;select substr(title, 1, $cols), url
-     from urls order by last_visit_time desc&quot; |
-  awk -F $sep &apos;{printf &quot;%-&apos;$cols&apos;s  \x1b[36m%s\x1b[m\n&quot;, $1, $2}&apos; |
-  fzf --ansi --multi | sed &apos;s#.*\(https*://\)#\1#&apos; | xargs open
-}
-</code></pre><blockquote>
-<p><strong>Note</strong>: Ensure that path to <code>History</code> file is correct; read more information on <a href="https://stackoverflow.com/a/16742333/1564365" target="_blank">StackOverflow</a></p>
-</blockquote>
-<h3 id="thanks-to">Thanks to</h3>
-<ul>
-<li><a href="https://github.com/junegunn" target="_blank">junegunn</a> for writing <a href="https://github.com/junegunn/fzf" target="_blank">this awesome tool</a></li>
-</ul>
-<p>Most of the text is taken from <a href="https://github.com/junegunn" target="_blank">fzf repository</a>.</p>
 
                                 
                                 </section>
@@ -798,12 +775,12 @@ ch() {
 
             
                 
-                <a href="tree.html" class="navigation navigation-prev " aria-label="Previous page: Tree">
+                <a href="fzf.html" class="navigation navigation-prev " aria-label="Previous page: fzf">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ack.html" class="navigation navigation-next " aria-label="Next page: ack">
+                <a href="../Git/" class="navigation navigation-next " aria-label="Next page: Git">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -814,7 +791,7 @@ ch() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"previous":{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/fzf.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ack","level":"1.5.4","depth":2,"next":{"title":"Git","level":"1.6","depth":1,"path":"Git/README.md","ref":"Git/README.md","articles":[{"title":"Git ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]}]},"previous":{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/ack.md","mtime":"2017-08-02T15:56:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
