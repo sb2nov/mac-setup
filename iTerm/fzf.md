@@ -4,17 +4,15 @@
 
 ## Why use fzf
 
- - speed
- - rich feature set
- - highly customizable
- - its really fast
+ - Speed
+ - Rich feature set
+ - Highly customizable
 
 ## Installation
 
 Use [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/README.html) to install **fzf**:
 
     brew install fzf
-    
 
 If you want to use shell extensions:
 
