@@ -1,11 +1,11 @@
 # Apps
 
-Here is a quick list of apps that are generally good to use and can come in handy in day to day tasks. The apps are seperated into 4 broad categories Developer Tools, Productivity Tools, Office Apps and Others.
+Here is a quick list of apps that are generally good to use and can come in handy in day to day tasks. The apps are separated into 4 broad categories Developer Tools, Productivity Tools, Office Apps and Others.
 
 ### Developer Tools
 - [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Installs Chrome which is one of the best browsers currently. All chrome browsers and extensions are saved by Google so can be synced easily.
-- [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview):  Valentina Studio is a gui to create, administer and query MySQL, Postgres and SQLite databases.
-- [Atom](https://atom.io/): Open source editor by Github and is very similar to Sublime Text in most aspects.
+- [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview): Valentina Studio is a GUI to create, administer and query MySQL, Postgres and SQLite databases.
+- [Atom](https://atom.io/): Open source editor by GitHub and is very similar to Sublime Text in most aspects.
 
 ### Diff and Merge Tools
 
@@ -59,7 +59,7 @@ Both can't compare in terms of features and user interface with their commercial
 
 ### Office Apps
 - [Keynote](http://www.apple.com/mac/keynote/): Create presentations on mac, this is supposed to be an alternate to PowerPoint.
-- [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, Powerpoint and Outlook.
+- [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, PowerPoint and Outlook.
 - [Numbers](http://www.apple.com/mac/numbers/): Create spreadsheets on mac, this is supposed to be an alternate to Excel.
 - [Pages](http://www.apple.com/mac/pages/): Create text files on mac, this is supposed to be an alternate to Word.
 
@@ -69,7 +69,7 @@ Both can't compare in terms of features and user interface with their commercial
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
 - [Mou](http://25.io/mou/): Markdown editor for developers.
 - [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for OS X.
-- [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine incase of failure.
+- [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine in case of failure.
 - [TimeOut](http://www.dejal.com/timeout/): Scheduled work breaks to prevent stress injuries.
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. Enough said.
 - [Voila](http://www.globaldelight.com/voila/): Record your screen with audio, mouse highlight and other features.
