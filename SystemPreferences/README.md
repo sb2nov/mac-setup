@@ -61,7 +61,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 - If you are on OSX 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
 
     $ brew cask install osxfuse
-    
+
 #### Install ntfs-3g
 
     $ brew install homebrew/fuse/ntfs-3g
@@ -73,7 +73,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 
     $ csrutil disable
-    
+
  - **reboot** normally
 
 #### Create a symlink for mount_ntfs
@@ -87,5 +87,5 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 
     $ csrutil enable
-    
+
  - **reboot** normally
