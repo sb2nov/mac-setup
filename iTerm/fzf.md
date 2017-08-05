@@ -22,30 +22,26 @@ which are:
 
  - Key bindings (`CTRL-T`, `CTRL-R`, and `ALT-C`) (bash, zsh, fish)
  - Fuzzy auto-completion (bash, zsh)
- 
 
-## Actual usage
+## Usage
 
 ### Fuzzy completion
 
 >hit tab (↹) after:
 
-#### file search
+#### File search
 
     vim **
-    
+
 or
 
     subl **
-    
-#### host name searh
+
+#### Host name search
 
     ssh **
-    
 
 >**Note**: for more fuzzy search things head over [official repo](https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh)
-
-    
 
 ### Chrome history from CLI
 
@@ -53,7 +49,7 @@ or
 
 Open up shell config (most likely `~/.zshrc` or command `zshconfig`) and add following function:
 
-```
+```sh
 # ch - browse chrome history
 ch() {
   local cols sep
@@ -72,9 +68,8 @@ ch() {
 
 >**Note**: Ensure that path to `History` file is correct; read more information on [StackOverflow](https://stackoverflow.com/a/16742333/1564365)
 
-
 ### Thanks to
 
  - [junegunn](https://github.com/junegunn) for writing [this awesome tool](https://github.com/junegunn/fzf)
 
-Most of the text is taken from [fzf repository](https://github.com/junegunn).
+Most of the text is taken from the [fzf repository](https://github.com/junegunn).
