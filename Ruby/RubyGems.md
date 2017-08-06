@@ -1,14 +1,15 @@
 # RubyGems
-
-[RubyGems](http://rubygems.org/), the Ruby package manager, was also installed:
+[RubyGems](http://rubygems.org/), the Ruby package manager, should be installed on your machine if you previously have installed Ruby. Verify this by running:
 
     $ which gem
 
-Update to its latest version with:
+## Update RubyGems
+To update to its latest version with:
 
     $ gem update --system
 
-To install a "gem" (Ruby package), run:
+## Install gems
+To install a _gem_ (Ruby package), run:
 
     $ gem install <gemname>
 
@@ -16,7 +17,7 @@ To install without generating the documentation for each gem (faster):
 
     $ gem install <gemname> --no-document
 
-To see what gems you have installed:
+## List installed gems
 
     $ gem list
 
@@ -24,14 +25,12 @@ To check if any installed gems are outdated:
 
     $ gem outdated
 
+## Update installed gems
 To update all gems or a particular gem:
 
     $ gem update [<gemname>]
 
-RubyGems keeps old versions of gems, so feel free to do come cleaning after updating:
+## Remove old gem versions
+RubyGems keeps old versions of gems, so feel free to do some cleaning after updating:
 
     $ gem cleanup
-
-We mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/), which is built on top of [Sass](http://sass-lang.com/):
-
-    $ gem install compass --no-document
