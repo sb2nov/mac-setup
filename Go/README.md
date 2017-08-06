@@ -1,86 +1,73 @@
-# Go (golang programming language)
+# Go
+[Go](https://github.com/golang/go) (also known as Golang) is an open source programming language maintained by Google.
 
-## Install [Golang](https://golang.org/) with Homebrew:
+## Installation
 
-    $ brew update
     $ brew install golang
 
-When installed, try to run `go version` to see the installed version of Go. 
+When installed, try to run `go version` to see the installed version of Go.
 
-## Setup the workspace:
-### Add Environment variables:
+## Setup your workspace
+### Add environment variables
+Go has a unique approach of managing code where you have a single workspace for all your Go projects. For more information see the [documentation](https://golang.org/doc/code.html#Workspaces).
 
-Go has a different approach of managing code, you'll need to create a single Workspace for all your Go projects. For more information consult : [How to write Go Code](https://golang.org/doc/code.html#Workspaces)
+First, you'll need to tell Go the location of your workspace. We'll do this by adding some environment variables in your shell config file (usually `.bash_profile`, `.bashrc` or `.zshrc`).
 
-First, you'll need to tell Go the location of your workspace.
-
-We'll add some environment variables into shell config. One of does files located at your home directory `bash_profile`, `bashrc` or `.zshrc` (for Oh My Zsh Army)
-
-    $ vi .bashrc
-
-Then add those lines to export the required variables
-```
-# This is actually your .bashrc file
-
-export GOPATH=$HOME/go # don't forget to change your path correctly!
+```sh
+export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 ```
 
-### Create your workspace:
- Create the workspace directories tree:
- 
+### Create your workspace
+Create the workspace directories tree:
+
     $ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
 
-```
-$GOPATH/src : Where your Go projects / programs are located
-$GOPATH/pkg : contains every package objects
-$GOPATH/bin : The compiled binaries home
-```
+`$GOPATH/src` This is where your Go projects are located
+`$GOPATH/pkg` A folder that contains every package objects
+`$GOPATH/bin` The compiled binaries home
 
-### Hello world time!
- Create a file in your `$GOPATH/src`, in my case `hello.go`
- Hello world program :
- ```
+## Write your first program
+Create a file in your `$GOPATH/src`, for example `hello.go`, and input the following code
+
+```go
 package main
 import "fmt"
 
 func main() {
     fmt.Printf("hello, world\n")
 }
- ```
- 
- Run your first Go program by executing:
- 
-    $ go run hello.go
-    
- You'll see a sweet hello, world stdout
- 
- If you wish to compile it and move it to `$GOPATH/bin`, then run:
- 
-     $ go install hello.go
+```
 
-Since we have `$GOPATH/bin` added to our `$PATH`, you can run your program from placement :
+Run the program by running:
+
+    $ go run hello.go
+
+If you wish to compile it and move it to `$GOPATH/bin`, then run:
+
+    $ go install hello.go
+
+Since we have `$GOPATH/bin` added to our `$PATH`, you can run your program from anywhere:
 
     $ hello
-Prints : hello, world
 
-## Some References and utilities:
-#### Import a Go package:
-You can create Go package, as well importing shared ones. To do so you'll need to use `go get` command
+## Import a Go package
+Besides creating your own packages you can import and use other packages in your Go code. To do so you'll use the `go get` command:
 
     $ go get -u github.com/gorilla/mux
-The command above should import `github.com/gorilla/mux` Go package into this directory `$GOPATH/src/github.com/gorilla/mux`
 
-You can then use this package in your Go programs by importing it. Example:
-```
+The command above will import the package `mux` into this directory `$GOPATH/src/github.com/gorilla/mux`.
+
+You can then use this package in your Go programs like this:
+```go
 package main
 
 import (
     "net/http"
     "log"
-    "github.com/gorilla/mux" #Imported Go Package
+    "github.com/gorilla/mux" // Your imported package
 )
 
 func YourHandler(w http.ResponseWriter, r *http.Request) {
@@ -97,23 +84,25 @@ func main() {
 }
 ```
 
+## Format your code
+Go has a built-in tool that automatically formats Go source code.
 
-#### Format your Go code
- Go has a tool that automatically formats Go source code.
-    
+To format a single file run:
+
     $ gofmt -w yourcode.go
-OR
+
+You can also format an entire package (**Note that the command is different from formatting a single file**):
 
     $ go fmt path/to/your/package
 
-#### Godoc : The documentation tool
-Using the `godoc` command, you can generate a program documentation.
+## Generate documentation
+With the `godoc` command you can generate documentation from your code and read documentation from other packages.
 
     $ godoc fmt                # documentation for package fmt
     $ godoc fmt Printf         # documentation for fmt.Printf
     $ godoc -src fmt           # fmt package interface in Go source form
 
-You need to respect some spec in order to document using `godoc`. You can read more about : [godoc Documenting Go code](https://blog.golang.org/godoc-documenting-go-code)
+You need to respect some spec in order to document using `godoc`. More information in the [Godoc documentation](https://blog.golang.org/godoc-documenting-go-code).
 
-#### Discovering more the language:
-The following interactive tutorial will let you discover Golang world : [A tour of Go](https://tour.golang.org/)
+## Learn more
+This [interactive tutorial](https://tour.golang.org/) will let you learn more about Go.

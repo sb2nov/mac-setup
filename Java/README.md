@@ -1,10 +1,11 @@
 # Java
 
-Check if Java is already installed
+## Installation
+First you should check if Java is already installed
 
     $ java -version
 
-If you see an output like below then Java is already installed on your machine so skip the next step.
+If you see an output like below then Java is already installed on your machine so skip to _Add Java to PATH_.
 
     java version "1.8.0_45"
     Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
@@ -14,8 +15,10 @@ If you don't see the output like above then you need to install Java on your sys
 
 Check if Java is correctly installed by running the `java -version` command again.
 
-Add `JAVA_HOME` to your environment variables by adding the line below to your `env.sh`.
+## Add Java to PATH
+
+Add `JAVA_HOME` to your environment variables by adding the line below to your `env.sh` (see [iTerm2](/mac-setup/iTerm/README.html) section if you don't have a `env.sh` file).
 
     export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
 
-You should have JAVA working now. You can use [Eclipse](https://www.eclipse.org/downloads/) or [IntelliJ](https://www.jetbrains.com/idea/download/) as your Java IDE.
+You should have Java working now. Two popular IDE alternatives for writing Java are [Eclipse](https://www.eclipse.org/downloads/) or [IntelliJ](https://www.jetbrains.com/idea/download/).

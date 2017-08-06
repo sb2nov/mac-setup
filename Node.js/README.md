@@ -1,39 +1,29 @@
 # Node.js
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-## Install [Node.js](http://nodejs.org/) with Homebrew:
+## Installation
+### Using Homebrew
 
-    $ brew update
     $ brew install node
 
-Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+### Using Node Version Manager (nvm)
+Download and install [nvm](https://github.com/creationix/nvm) by running:
 
-    $ npm install -g coffee-script
-    $ npm install -g grunt-cli
-
-
-## Install [Node.js](http://nodejs.org/) with [nvm](https://github.com/creationix/nvm) (Node Version Manager):
-
-#### Install nvm
-    
     $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 
-#### Install nodejs
+Then download Node and select your version by running:
 
-    $ source ~/.bashrc # sources your bashrc to add nvm to path
-    $ command -v nvm  # check the nvm use message
-    $ nvm install node  # install most recent nodejs stable version
-    $ nvm ls  # list installed node version
-    $ nvm use node  # use stable as current version
-    $ nvm ls-remote  # list all the node versions you can install
-    $ nvm alias default node  # set the installed stable version as the default node 
+    $ source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
+    $ command -v nvm          # check the nvm use message
+    $ nvm install node        # install most recent Node stable version
+    $ nvm ls                  # list installed Node version
+    $ nvm use node            # use stable as current version
+    $ nvm ls-remote           # list all the Node versions you can install
+    $ nvm alias default node  # set the installed stable version as the default Node
 
-Node modules are installed locally in the `node_modules` folder of each project by default, but there are at least two that are worth installing globally. Those are [CoffeeScript](http://coffeescript.org/) and [Grunt](http://gruntjs.com/):
+See the [documentation](https://github.com/creationix/nvm#installation) for information.
 
-    $ npm install -g coffee-script
-    $ npm install -g grunt-cli
-
-## Npm usage
-
+## npm usage
 To install a package:
 
     $ npm install <package> # Install locally
@@ -45,17 +35,16 @@ To install a package and save it in your project's `package.json` file:
 
 To see what's installed:
 
-    $ npm list # Local
-    $ npm list -g # Global
+    $ npm list [-g]
 
-To find outdated packages (locally or globally):
+To find outdated packages:
 
     $ npm outdated [-g]
 
 To upgrade all or a particular package:
 
-    $ npm update [<package>]
+    $ npm update [-g] [<package>]
 
 To uninstall a package:
 
-    $ npm uninstall <package>
+    $ npm uninstall [-g] <package>

@@ -14,7 +14,7 @@ It is really simple to check if the app is supported by cask by going to the sea
 
 ### Quick look plugins
 
-Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to enable different files to work with Mac Quicklook. Includes features like syntax highlighting, markdown rendering, preview of jsons, patch files, csv, zip files etc.
+Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to enable different files to work with Mac Quicklook. Includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files etc.
 
     $ brew cask install qlcolorcode
     $ brew cask install qlstephen

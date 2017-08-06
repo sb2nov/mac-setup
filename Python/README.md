@@ -10,7 +10,7 @@ The following command will install Python 2.7 and any dependencies required (it 
 
 When finished, you should get a summary in the terminal. Running `$ which python` should output `/usr/local/bin/python`.
 
-It also installed [Pip](https://pypi.python.org/pypi/pip) (and its dependency [Setuptools](https://pypi.python.org/pypi/setuptools)), which is the package manager for Python. Let's upgrade them both:
+It also installed [pip](https://pypi.python.org/pypi/pip) (and its dependency [Setuptools](https://pypi.python.org/pypi/setuptools)), which is the package manager for Python. Let's upgrade them both:
 
     $ pip install --upgrade setuptools
     $ pip install --upgrade pip
@@ -69,25 +69,3 @@ The `local` command will set local application-specific Python version(s) by wri
       2.7.12
       3.5.2
     * anaconda3-4.1.1 (set by /Users/your_account/path/to/directory/.python-version)
-
-### P.S if you can't access pip.
-
-This Guide will help you install pip if it is not already installed with the python installation that OSX ships with.
-
-**Installation**
-
-Open your teminal window and enter the following command
-
-        curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-
-then enter
-
-        sudo python get-pip.py
-
-Enter your password when prompted, Once the installation runs through you are done.
-
-to verify pip is installed properely enter
-
-        pip --version
-
-If it tells you the version of pip you've installed, you are all set to use **pip**.
