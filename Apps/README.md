@@ -1,46 +1,44 @@
 # Apps
+Here is a list of apps that are generally good to use and can come in handy in day to day tasks. The apps are separated into 4 broad categories _Developer Tools_, _Productivity Tools_, _Office Apps_ and _Other_.
 
-Here is a quick list of apps that are generally good to use and can come in handy in day to day tasks. The apps are separated into 4 broad categories Developer Tools, Productivity Tools, Office Apps and Others.
-
-### Developer Tools
-- [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Installs Chrome which is one of the best browsers currently. All chrome browsers and extensions are saved by Google so can be synced easily.
+## Development Tools
+- [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Chrome is a developer friendly browser with powerful development tools built in to it.
 - [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview): Valentina Studio is a GUI to create, administer and query MySQL, Postgres and SQLite databases.
-- [Atom](https://atom.io/): Open source editor by GitHub and is very similar to Sublime Text in most aspects.
+- [Atom](https://atom.io/): An open source editor built and maintained by GitHub, is very similar to Sublime Text in most aspects.
 
-### Diff and Merge Tools
-
-[FileMerge](): Being part of its developer toolset, Apple's own merge tool comes at no additional costs. It might not be the most elegant tool, but it's definitely a solid one that does the job of comparing & merging text.
+## Diff and Merge Tools
+[FileMerge](): A free tool which is already installed on your machine. It might not be the most elegant tool, but it's definitely a solid one that does the job of comparing & merging text.
 
 ![filemerge](filemerge.png)
 
-[Kaleidoscope](http://www.kaleidoscopeapp.com/): Originally developed by "Sofa", Kaleidoscope was later acquired by "BlackPixel" - who did a great job in making it one of the best diff & merge tools for the Mac. Its beautiful user interface and great image diffing capabilities are what set it apart.
+[Kaleidoscope](http://www.kaleidoscopeapp.com/): Another tool for reviewing and merging text, images and folders. Its beautiful user interface and great image diffing capabilities are what sets it apart from other tools. Available for a trial period of 15 days and then it requires payment.
 
 ![Kaleidoscope](kaleidoscope.png)
 
-[Beyond Compare](http://www.scootersoftware.com/): Originally a product for Microsoft Windows, the Beyond Compare team has contributed a fine diff tool to the Mac platform. Like Araxis Merge and DeltaWalker, it goes beyond (pun intended) comparing simple text and also allows diffing Word and PDF contents. In its "Pro Version", it also supports merging.
+[Beyond Compare](http://www.scootersoftware.com/): Not only can you compare text with this tool but it also supports diffing Word and PDF contents. In the Pro Version it also supports merging.
 
 ![Beyond Compare](beyond-compare.png)
 
-[Araxis Merge](http://www.araxis.com/merge/): One of the few diff tools that works with more than just text and image files, Araxis Merge lets you also compare office documents (like MS Word, Excel, Powerpoint, or ODF). For people working on both Windows and Mac, it's great to know that a single license is valid for both platforms.
+[Araxis Merge](http://www.araxis.com/merge/): One of the few diff tools that works with more than just text and image files, this one lets you also compare office documents (like MS Word, Excel, Powerpoint, or ODF). A single license is valid for both Windows and Mac.
 
 ![Araxis Merge](araxis-merge.jpg)
 
-
-[DeltaWalker](http://www.deltawalker.com/): Just like Araxis, the DeltaWalker app also lets you compare office files. However, it goes one step further by letting you compare file archives like ZIP, JAR, and TAR files. Also, if you're regularly performing comparisons on a folder basis, DeltaWalker shines with a great performance in this area.
+[DeltaWalker](http://www.deltawalker.com/): Just like Araxis, this app also lets you compare office files. However, it goes one step further by letting you compare file archives like ZIP, JAR, and TAR files. It also has great performance for comparing folders.
 
 ![DeltaWalker](delta-walker.jpg)
 
-**Free Alternatives**:
-In case you're looking for a free alternative to the standard FileMerge app, you should also have a look at **[P4Merge](http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools)** and **[DiffMerge](http://www.sourcegear.com/diffmerge/)**.
-Both can't compare in terms of features and user interface with their commercial competitors - but make for a valid alternative on Mac, Windows, and Linux.
+### Free alternatives
+- [P4Merge](http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools)
+- [DiffMerge](http://www.sourcegear.com/diffmerge/)
+Both of these tools can't compare in terms of features and user interface with their commercial competitors - but make for a valid alternative on Mac, Windows and Linux.
 
 *Thanks to Tower team*: [source](https://www.git-tower.com/blog/diff-tools-mac/)
 
-### Productivity
+## Productivity
 - [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
 - [Airmail](http://airmailapp.com/): Lightweight fast email client.
 - [Alfred](http://www.alfredapp.com/): Replacement for spotlight. I'll mostly be upgrading to power pack.
-- [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall Apps.
+- [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall apps.
 - [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from going into sleep mode.
 - [DoubleTwist](https://www.doubletwist.com/desktop/): Import your playlists, ratings, music and videos. Create new playlists to your heart's content. Rate your songs and videos. Play your music and videos and view all of your photos.
 - [Dropbox](https://www.dropbox.com/): File syncing to the cloud. It syncs files across all devices (laptop, mobile, tablet), and serves as a backup as well!
@@ -57,13 +55,13 @@ Both can't compare in terms of features and user interface with their commercial
 - [Transmission](http://www.transmissionbt.com/): A fast, easy and free BitTorrent client.
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.
 
-### Office Apps
+## Office Apps
 - [Keynote](http://www.apple.com/mac/keynote/): Create presentations on mac, this is supposed to be an alternate to PowerPoint.
 - [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, PowerPoint and Outlook.
 - [Numbers](http://www.apple.com/mac/numbers/): Create spreadsheets on mac, this is supposed to be an alternate to Excel.
 - [Pages](http://www.apple.com/mac/pages/): Create text files on mac, this is supposed to be an alternate to Word.
 
-### Others
+## Other
 - [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system.
 - [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
