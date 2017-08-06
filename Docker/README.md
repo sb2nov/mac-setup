@@ -21,7 +21,7 @@ In order to simplify the installation process you should install homebrew-cask w
 
 ### Install Docker Toolbox
 
-Use can use cask to install Docker Toolbox which is a collection of useful docker tools such as compose, machine and Kitematic.
+You can use cask to install Docker Toolbox which is a collection of useful docker tools such as compose, machine and Kitematic.
 
     $ brew cask install docker-toolbox
 
@@ -30,5 +30,19 @@ Use can use cask to install Docker Toolbox which is a collection of useful docke
 For quick start find the Docker Quickstart Terminal and double click to launch it. Then you start the hello world container using:
 
     $ docker run hello-world
+
+### Quick Help
+
+If you got something wrong when tried the Quick Start, you might want to check if there is a docker-machine running by performing:
+
+    $ docker-machine ls
+
+If no docker-machine is running you will need to create one:
+
+    $ docker-machine create -d virtualbox default
+
+And finally run the following command to connect your shell to the new machine:
+
+    $ eval "$(docker-machine env default)"
 
 You can find more about docker follow the [documentation here](https://docs.docker.com/).
