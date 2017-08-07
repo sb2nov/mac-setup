@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -710,41 +710,36 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="nodejs">Node.js</h1>
-<h2 id="install-nodejs-with-homebrew">Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with Homebrew:</h2>
-<pre><code>$ brew update
-$ brew install node
-</code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
-<pre><code>$ npm install -g coffee-script
-$ npm install -g grunt-cli
-</code></pre><h2 id="install-nodejs-with-nvm-node-version-manager">Install <a href="http://nodejs.org/" target="_blank">Node.js</a> with <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> (Node Version Manager):</h2>
-<h4 id="install-nvm">Install nvm</h4>
+<p>Node.js is a JavaScript runtime built on Chrome&apos;s V8 JavaScript engine.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="using-homebrew">Using Homebrew</h3>
+<pre><code>$ brew install node
+</code></pre><h3 id="using-node-version-manager-nvm">Using Node Version Manager (nvm)</h3>
+<p>Download and install <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> by running:</p>
 <pre><code>$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
-</code></pre><h4 id="install-nodejs">Install nodejs</h4>
-<pre><code>$ source ~/.bashrc # sources your bashrc to add nvm to path
-$ command -v nvm  # check the nvm use message
-$ nvm install node  # install most recent nodejs stable version
-$ nvm ls  # list installed node version
-$ nvm use node  # use stable as current version
-$ nvm ls-remote  # list all the node versions you can install
-$ nvm alias default node  # set the installed stable version as the default node 
-</code></pre><p>Node modules are installed locally in the <code>node_modules</code> folder of each project by default, but there are at least two that are worth installing globally. Those are <a href="http://coffeescript.org/" target="_blank">CoffeeScript</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>:</p>
-<pre><code>$ npm install -g coffee-script
-$ npm install -g grunt-cli
-</code></pre><h2 id="npm-usage">Npm usage</h2>
+</code></pre><p>Then download Node and select your version by running:</p>
+<pre><code>$ source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
+$ command -v nvm          # check the nvm use message
+$ nvm install node        # install most recent Node stable version
+$ nvm ls                  # list installed Node version
+$ nvm use node            # use stable as current version
+$ nvm ls-remote           # list all the Node versions you can install
+$ nvm alias default node  # set the installed stable version as the default Node
+</code></pre><p>See the <a href="https://github.com/creationix/nvm#installation" target="_blank">documentation</a> for information.</p>
+<h2 id="npm-usage">npm usage</h2>
 <p>To install a package:</p>
 <pre><code>$ npm install &lt;package&gt; # Install locally
 $ npm install -g &lt;package&gt; # Install globally
 </code></pre><p>To install a package and save it in your project&apos;s <code>package.json</code> file:</p>
 <pre><code>$ npm install &lt;package&gt; --save
 </code></pre><p>To see what&apos;s installed:</p>
-<pre><code>$ npm list # Local
-$ npm list -g # Global
-</code></pre><p>To find outdated packages (locally or globally):</p>
+<pre><code>$ npm list [-g]
+</code></pre><p>To find outdated packages:</p>
 <pre><code>$ npm outdated [-g]
 </code></pre><p>To upgrade all or a particular package:</p>
-<pre><code>$ npm update [&lt;package&gt;]
+<pre><code>$ npm update [-g] [&lt;package&gt;]
 </code></pre><p>To uninstall a package:</p>
-<pre><code>$ npm uninstall &lt;package&gt;
+<pre><code>$ npm uninstall [-g] &lt;package&gt;
 </code></pre>
                                 
                                 </section>
@@ -788,7 +783,7 @@ $ npm list -g # Global
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.15","depth":1,"next":{"title":"Go","level":"1.16","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"previous":{"title":"RubyGems","level":"1.14.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Node.js/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.15","depth":1,"next":{"title":"Go","level":"1.16","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"previous":{"title":"RubyGems","level":"1.14.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Node.js/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

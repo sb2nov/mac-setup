@@ -418,7 +418,7 @@
                 <a href="ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -715,7 +715,7 @@
 <p>The following command will install Python 2.7 and any dependencies required (it can take a few minutes to build everything):</p>
 <pre><code>$ brew install python
 </code></pre><p>When finished, you should get a summary in the terminal. Running <code>$ which python</code> should output <code>/usr/local/bin/python</code>.</p>
-<p>It also installed <a href="https://pypi.python.org/pypi/pip" target="_blank">Pip</a> (and its dependency <a href="https://pypi.python.org/pypi/setuptools" target="_blank">Setuptools</a>), which is the package manager for Python. Let&apos;s upgrade them both:</p>
+<p>It also installed <a href="https://pypi.python.org/pypi/pip" target="_blank">pip</a> (and its dependency <a href="https://pypi.python.org/pypi/setuptools" target="_blank">Setuptools</a>), which is the package manager for Python. Let&apos;s upgrade them both:</p>
 <pre><code>$ pip install --upgrade setuptools
 $ pip install --upgrade pip
 </code></pre><p>Executable scripts from Python packages you install will be put in <code>/usr/local/share/python</code>, we already had this in the <code>Env.sh</code> file created before. Save the file and open a new terminal to take the new <code>$PATH</code> into account (everytime you open a terminal, <code>.bash_profile</code> gets loaded).</p>
@@ -753,18 +753,7 @@ $ pyenv versions
   2.7.12
   3.5.2
 * anaconda3-4.1.1 (set by /Users/your_account/path/to/directory/.python-version)
-</code></pre><h3 id="ps-if-you-cant-access-pip">P.S if you can&apos;t access pip.</h3>
-<p>This Guide will help you install pip if it is not already installed with the python installation that OSX ships with.</p>
-<p><strong>Installation</strong></p>
-<p>Open your teminal window and enter the following command</p>
-<pre><code>    curl https://bootstrap.pypa.io/get-pip.py &gt; get-pip.py
-</code></pre><p>then enter</p>
-<pre><code>    sudo python get-pip.py
-</code></pre><p>Enter your password when prompted, Once the installation runs through you are done.</p>
-<p>to verify pip is installed properely enter</p>
-<pre><code>    pip --version
-</code></pre><p>If it tells you the version of pip you&apos;ve installed, you are all set to use <strong>pip</strong>.</p>
-
+</code></pre>
                                 
                                 </section>
                             
@@ -807,7 +796,7 @@ $ pyenv versions
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.9","depth":1,"next":{"title":"Pip","level":"1.9.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"previous":{"title":"Sublime Linter","level":"1.8.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.9","depth":1,"next":{"title":"Pip","level":"1.9.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"previous":{"title":"Sublime Linter","level":"1.8.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

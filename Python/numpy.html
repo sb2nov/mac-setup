@@ -418,7 +418,7 @@
                 <a href="ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -709,23 +709,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="numpy-scipy-and-matplotlib">Numpy, Scipy and Matplotlib</h2>
+                                <h1 id="numpy-scipy-and-matplotlib">Numpy, Scipy and Matplotlib</h1>
 <p>The <a href="http://numpy.scipy.org/" target="_blank">Numpy</a>, <a href="http://www.scipy.org/SciPy" target="_blank">Scipy</a> and <a href="http://matplotlib.org/" target="_blank">Matplotlib</a> scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly. Luckily for us, <a href="http://www.samueljohn.de/" target="_blank">Samuel John</a> has put together some <a href="https://github.com/samueljohn/homebrew-python" target="_blank">Homebrew formulae</a> to make it easier to install these Python libraries.</p>
 <p>First, grab the special formulae (which are not part of Homebrew core):</p>
 <pre><code>$ brew tap samueljohn/python
 $ brew tap homebrew/science
 </code></pre><p>Then, install the <code>gfortran</code> dependency which we will need to build the libraries along with gcc:</p>
 <pre><code>$ brew install gcc
-</code></pre><p>Then, install <code>Nose</code>, <code>pyparsing</code> and <code>python-dateutil</code> dependency which we will need to build the libraries:</p>
-<pre><code>$ pip install nose
-$ pip install pyparsing
-$ pip install python-dateutil
-$ pip install pep8
+</code></pre><p>Then, install <code>nose</code>, <code>pyparsing</code> and <code>python-dateutil</code> dependency which we will need to build the libraries:</p>
+<pre><code>$ pip install nose pyparsing python-dateutil pep8
 </code></pre><p>Finally, you can install Numpy and Scipy with:</p>
-<pre><code>$ brew install numpy
-$ brew install scipy
-$ brew install matplotlib
-</code></pre><p>(It may take a few minutes to build.)</p>
+<pre><code>$ brew install numpy scipy matplotlib
+</code></pre><p>(It may take a few minutes to build)</p>
 
                                 
                                 </section>
@@ -758,7 +753,7 @@ $ brew install matplotlib
                 </a>
                 
                 
-                <a href="ipython.html" class="navigation navigation-next " aria-label="Next page: Ipython">
+                <a href="ipython.html" class="navigation navigation-next " aria-label="Next page: IPython">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -769,7 +764,7 @@ $ brew install matplotlib
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Numpy-Scipy","level":"1.9.3","depth":2,"next":{"title":"Ipython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"previous":{"title":"Virtualenv","level":"1.9.2","depth":2,"path":"Python/virtualenv.md","ref":"Python/virtualenv.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/numpy.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Numpy-Scipy","level":"1.9.3","depth":2,"next":{"title":"IPython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"previous":{"title":"Virtualenv","level":"1.9.2","depth":2,"path":"Python/virtualenv.md","ref":"Python/virtualenv.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/numpy.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

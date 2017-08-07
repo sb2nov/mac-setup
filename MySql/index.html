@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MySql · Mac OS X Setup Guide </title>
+        <title>MySQL · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -436,7 +436,7 @@
                 <a href="./">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -694,7 +694,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MySql</a>
+        <a href=".." >MySQL</a>
     </h1>
 </div>
 
@@ -710,12 +710,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="mysql">MySQL</h1>
-<h3 id="install">Install</h3>
+<h2 id="installation">Installation</h2>
 <p>We will install <a href="http://www.mysql.com/" target="_blank">MySQL</a> using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).</p>
-<p>To install, run:</p>
-<pre><code>$ brew update # Always good to do
-$ brew install mysql
-</code></pre><h3 id="usage">Usage</h3>
+<pre><code>$ brew install mysql
+</code></pre><h2 id="usage">Usage</h2>
 <p>To have launchd start MySQL now and restart at login:</p>
 <pre><code>$ brew services start mysql
 </code></pre><p>Or, if you don&apos;t want/need a background service you can just use the <code>mysql.server</code> tool:</p>
@@ -726,10 +724,10 @@ $ brew install mysql
 <pre><code>$ mysql.server --help
 </code></pre><p>To connect with the command-line client, run:</p>
 <pre><code>$ mysql -uroot
-</code></pre><p>(Use <code>exit</code> to quit the MySQL shell.)</p>
+</code></pre><p>(Use <code>exit</code> to quit the MySQL shell)</p>
 <p><strong>Note</strong>: By default, the MySQL user <code>root</code> has no password. It doesn&apos;t really matter for a local development database. If you wish to change it though, you can use <code>$ mysqladmin -u root password &apos;new-password&apos;</code>.</p>
-<h3 id="gui-tool">GUI Tool</h3>
-<p>It is always nice to have a GUI tool for managing databases. For mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote mysql databases. It is a free tool, you can donate to support the development. </p>
+<h2 id="gui-tool">GUI Tool</h2>
+<p>It is always nice to have a GUI tool for managing databases. For Mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development. </p>
 
                                 
                                 </section>
@@ -757,7 +755,7 @@ $ brew install mysql
 
             
                 
-                <a href="../Python/ipython.html" class="navigation navigation-prev " aria-label="Previous page: Ipython">
+                <a href="../Python/ipython.html" class="navigation navigation-prev " aria-label="Previous page: IPython">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -773,7 +771,7 @@ $ brew install mysql
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MySql","level":"1.10","depth":1,"next":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"previous":{"title":"Ipython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"MySql/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.10","depth":1,"next":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"previous":{"title":"IPython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"MySQL/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

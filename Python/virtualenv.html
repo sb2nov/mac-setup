@@ -418,7 +418,7 @@
                 <a href="ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -712,25 +712,25 @@
                                 <h1 id="virtualenv">Virtualenv</h1>
 <p><a href="http://www.virtualenv.org/" target="_blank">Virtualenv</a> is a tool that creates an isolated Python environment for each of your projects. For a particular project, instead of installing required packages globally, it is best to install them in an isolated folder in the project (say a folder named <code>venv</code>), that will be managed by virtualenv.</p>
 <p>The advantage is that different projects might require different versions of packages, and it would be hard to manage that if you install packages globally. It also allows you to keep your global <code>/usr/local/lib/python2.7/site-packages</code> folder clean, containing only critical or big packages that you always need (like IPython, Numpy).</p>
-<h3 id="install">Install</h3>
+<h2 id="installation">Installation</h2>
 <p>To install virtualenv, simply run:</p>
 <pre><code>$ pip install virtualenv
-</code></pre><h3 id="usage">Usage</h3>
+</code></pre><h2 id="usage">Usage</h2>
 <p>Let&apos;s say you have a project in a directory called <code>myproject</code>. To set up virtualenv for that project:</p>
 <pre><code>$ cd myproject/
 $ virtualenv venv
-</code></pre><p>If you want your virtualenv to also inherit globally installed packages (like IPython or Numpy mentioned above), use:</p>
+</code></pre><p>If you want your virtualenv to also inherit globally installed packages (like IPython or Numpy mentioned above), run:</p>
 <pre><code>$ virtualenv venv --system-site-packages
 </code></pre><p>These commands create a <code>venv</code> subdirectory in your project where everything is installed. You need to <strong>activate</strong> it first though (in every terminal where you are working on your project):</p>
 <pre><code>$ source venv/bin/activate
 </code></pre><p>You should see a <code>(venv)</code> appear at the beginning of your terminal prompt indicating that you are working inside the virtualenv. Now when you install something:</p>
 <pre><code>$ pip install &lt;package&gt;
 </code></pre><p>It will get installed in the <code>venv</code> folder, and not conflict with other projects.</p>
-<p>To leave the virtual environment use.</p>
+<p>To leave the virtual environment run:</p>
 <pre><code>$ deactivate
 </code></pre><p><strong>Important</strong>: Remember to add <code>venv</code> to your project&apos;s <code>.gitignore</code> file so you don&apos;t include all of that in your source code!</p>
 <p>It is preferable to install big packages (like Numpy), or packages you always use (like IPython) globally. All the rest can be installed in a virtualenv.</p>
-<h3 id="virtualenvwrapper">Virtualenvwrapper</h3>
+<h2 id="virtualenvwrapper">Virtualenvwrapper</h2>
 <p>For easier management of different virtual environments for multiple packages. Installing Virtualenv Wrapper is possible. For installation instructions read the <a href="http://virtualenvwrapper.readthedocs.org/en/latest/index.html" target="_blank">virtualenvwrapper</a> documents here.
 One thing to mention is that virtualenvwrapper keeps all the virtual environments in <code>~/.virtualenv</code> and does not add them to the project directory.</p>
 
@@ -776,7 +776,7 @@ One thing to mention is that virtualenvwrapper keeps all the virtual environment
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Virtualenv","level":"1.9.2","depth":2,"next":{"title":"Numpy-Scipy","level":"1.9.3","depth":2,"path":"Python/numpy.md","ref":"Python/numpy.md","articles":[]},"previous":{"title":"Pip","level":"1.9.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/virtualenv.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Virtualenv","level":"1.9.2","depth":2,"next":{"title":"Numpy-Scipy","level":"1.9.3","depth":2,"path":"Python/numpy.md","ref":"Python/numpy.md","articles":[]},"previous":{"title":"Pip","level":"1.9.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Python/virtualenv.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

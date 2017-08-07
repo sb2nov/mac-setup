@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -711,26 +711,25 @@
                                 
                                 <h1 id="docker">Docker</h1>
 <p><a href="https://docs.docker.com" target="_blank">Docker</a> is a platform for developers and sysadmins to develop, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you get your code tested and deployed into production as fast as possible.</p>
-<h3 id="docker-for-mac">Docker for Mac</h3>
-<p>Docker for Mac is the current release of Docker for OSX. Requirements:</p>
+<h2 id="docker-for-mac">Docker for Mac</h2>
+<p>Docker for Mac is the current release of Docker for OS X. Requirements:</p>
 <ul>
-<li>Mac must be 2010 or new model with Intel&apos;s hardare support for memory management unit (MMU, virtualization, and Unrestricted mode.</li>
-<li>OSX El Capital 10.11 and newer releases are supported. </li>
-<li>Virtualbox prior to version 4.3.30 must NOT be installed. It is incompatiable. Use a newer version.</li>
+<li>Mac must be 2010 or new model with Intel&apos;s hardware support for memory management unit (MMU, virtualization, and Unrestricted mode)</li>
+<li>OS X El Capitan 10.11 and newer releases are supported</li>
+<li>Virtualbox prior to version 4.3.30 are incompatible and CANNOT be installed on your system, use a newer version</li>
 </ul>
-<h3 id="install-docker-for-mac">Install Docker for Mac</h3>
+<h3 id="installation">Installation</h3>
 <p>Docker for Mac can be downloaded  <a href="httpsL/https:/docs.docker.com/docker-for-mac/install">here</a>.</p>
-<h3 id="docker-toolbox">Docker Toolbox</h3>
+<h2 id="docker-toolbox">Docker Toolbox</h2>
 <p>Docker Toolbox is a legacy desktop solution for older Mac and Windows systems that do not meet the requirements of <a href="https://docs.docker.com/docker-for-mac/" target="_blank">Docker for Mac</a> and Docker for Windows.</p>
-<h3 id="before-you-install-docker-toolbox">Before you install Docker Toolbox</h3>
-<p>In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to <a href="../Homebrew/Cask.html">this</a> article in order to install homebrew-cask.</p>
-<h3 id="install-docker-toolbox">Install Docker Toolbox</h3>
-<p>Use can use cask to install Docker Toolbox which is a collection of useful docker tools such as compose, machine and Kitematic.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<p>You&apos;ll need <code>homebrew-cask</code> to install Docker Toolbox, if you don&apos;t have it refer to <a href="../mac-setup/Homebrew/Cask.html">this section</a>.</p>
+<h3 id="installation">Installation</h3>
 <pre><code>$ brew cask install docker-toolbox
-</code></pre><h3 id="docker-toolbox-quick-start">Docker Toolbox Quick Start</h3>
-<p>For quick start find the Docker Quickstart Terminal and double click to launch it. Then you start the hello world container using:</p>
+</code></pre><h3 id="quick-start">Quick Start</h3>
+<p>For quick start find the newly installed <em>Docker Quickstart Terminal</em> and double-click to launch it. Then you can start the <em>Hello World container</em> using:</p>
 <pre><code>$ docker run hello-world
-</code></pre><p>You can find more about docker follow the <a href="https://docs.docker.com/" target="_blank">documentation here</a>.</p>
+</code></pre><p>You can find more about Docker in the <a href="https://docs.docker.com/" target="_blank">documentation</a>.</p>
 
                                 
                                 </section>
@@ -774,7 +773,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.19","depth":1,"next":{"title":"LaTeX","level":"1.20","depth":1,"path":"LaTeX/README.md","ref":"LaTeX/README.md","articles":[]},"previous":{"title":"Vagrant","level":"1.18","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Docker/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.19","depth":1,"next":{"title":"LaTeX","level":"1.20","depth":1,"path":"LaTeX/README.md","ref":"LaTeX/README.md","articles":[]},"previous":{"title":"Vagrant","level":"1.18","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Docker/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

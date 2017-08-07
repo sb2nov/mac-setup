@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -710,21 +710,21 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="vagrant">Vagrant</h1>
-<p>Create and configure lightweight, reproducible, and portable development environments. <a href="http://www.vagrantup.com/" target="_blank">Vagrant</a> is an amazing tool for managing virtual machines via a simple to use command line interface.</p>
-<h3 id="before-you-start">Before you start</h3>
-<p>In order to simplify the installation process you should install homebrew-cask which provides a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries. Refer to <a href="../Homebrew/Cask.html">this</a> article in order to install homebrew-cask.</p>
-<h3 id="install">Install</h3>
-<p>Vagrant uses <a href="https://www.virtualbox.org/" target="_blank">Virtualbox</a> to manage the virtual dependencies. You can <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">directly download virtualbox</a> and install or use homebrew for it.</p>
+<p>Create and configure lightweight, reproducible, and portable development environments. <a href="http://www.vagrantup.com/" target="_blank">Vagrant</a> is a tool for managing virtual machines via a simple to use command line interface.</p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>You&apos;ll need <code>homebrew-cask</code>, if you don&apos;t have it refer to <a href="../mac-setup/Homebrew/Cask.html">this section</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>Vagrant uses <a href="https://www.virtualbox.org/" target="_blank">Virtualbox</a> to manage the virtual dependencies. You can <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">directly download virtualbox</a> and install or use Homebrew for it.</p>
 <pre><code>$ brew cask install virtualbox
-</code></pre><p>Now install Vagrant either <a href="http://www.vagrantup.com/downloads.html" target="_blank">from the website</a> or use homebrew for installing it.</p>
+</code></pre><p>Now install Vagrant either <a href="http://www.vagrantup.com/downloads.html" target="_blank">from the website</a> or use Homebrew for installing it.</p>
 <pre><code>$ brew cask install vagrant
-</code></pre><p><a href="http://vagrantmanager.com/" target="_blank">Vagrant-Manager</a> helps you manage all your virtual machines in one place directly from the menubar.</p>
+</code></pre><p><a href="http://vagrantmanager.com/" target="_blank">Vagrant-Manager</a> helps you manage all your virtual machines in one place directly from the menu bar.</p>
 <pre><code>$ brew cask install vagrant-manager
-</code></pre><h3 id="usage">Usage</h3>
+</code></pre><h2 id="usage">Usage</h2>
 <p>Add the Vagrant box you want to use. We&apos;ll use Ubuntu 12.04 for the following example.</p>
 <pre><code>$ vagrant box add precise64 http://files.vagrantup.com/precise64.box
-</code></pre><p>You can find more boxes at <a href="https://vagrantcloud.com" target="_blank">Vagrant Cloud</a></p>
-<p>Now create a test directory and cd into the test directory. Then we&apos;ll initialize the vagrant machine.</p>
+</code></pre><p>You can find more boxes at <a href="https://vagrantcloud.com" target="_blank">Vagrant Cloud</a>.</p>
+<p>Now create a test directory and <code>cd</code> into the test directory. Then we&apos;ll initialize the vagrant machine.</p>
 <pre><code>$ vagrant init precise64
 </code></pre><p>Now lets start the machine using the following command.</p>
 <pre><code>$ vagrant up
@@ -732,7 +732,7 @@
 <pre><code>$ vagrant ssh
 </code></pre><p>Halt the vagrant machine now.</p>
 <pre><code>$ vagrant halt
-</code></pre><p>Other useful commands are <code>suspend</code>, <code>destroy</code> etc.</p>
+</code></pre><p>Other useful commands are <code>suspend</code> and <code>destroy</code>.</p>
 
                                 
                                 </section>
@@ -776,7 +776,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vagrant","level":"1.18","depth":1,"next":{"title":"Docker","level":"1.19","depth":1,"path":"Docker/README.md","ref":"Docker/README.md","articles":[]},"previous":{"title":"Heroku","level":"1.17","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Vagrant/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vagrant","level":"1.18","depth":1,"next":{"title":"Docker","level":"1.19","depth":1,"path":"Docker/README.md","ref":"Docker/README.md","articles":[]},"previous":{"title":"Heroku","level":"1.17","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Vagrant/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

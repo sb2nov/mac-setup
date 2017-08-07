@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -710,17 +710,19 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="java">Java</h1>
-<p>Check if Java is already installed</p>
+<h2 id="installation">Installation</h2>
+<p>First you should check if Java is already installed</p>
 <pre><code>$ java -version
-</code></pre><p>If you see an output like below then Java is already installed on your machine so skip the next step.</p>
+</code></pre><p>If you see an output like below then Java is already installed on your machine so skip to <em>Add Java to PATH</em>.</p>
 <pre><code>java version &quot;1.8.0_45&quot;
 Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
 </code></pre><p>If you don&apos;t see the output like above then you need to install Java on your system. Please download the OS X version from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Oracle website</a>.</p>
 <p>Check if Java is correctly installed by running the <code>java -version</code> command again.</p>
-<p>Add <code>JAVA_HOME</code> to your environment variables by adding the line below to your <code>env.sh</code>.</p>
+<h2 id="add-java-to-path">Add Java to PATH</h2>
+<p>Add <code>JAVA_HOME</code> to your environment variables by adding the line below to your <code>env.sh</code> (see <a href="../mac-setup/iTerm/README.html">iTerm2</a> section if you don&apos;t have a <code>env.sh</code> file).</p>
 <pre><code>export JAVA_HOME=&quot;`/usr/libexec/java_home -v 1.8`&quot;
-</code></pre><p>You should have JAVA working now. You can use <a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse</a> or <a href="https://www.jetbrains.com/idea/download/" target="_blank">IntelliJ</a> as your Java IDE.</p>
+</code></pre><p>You should have Java working now. Two popular IDE alternatives for writing Java are <a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse</a> or <a href="https://www.jetbrains.com/idea/download/" target="_blank">IntelliJ</a>.</p>
 
                                 
                                 </section>
@@ -764,7 +766,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.12","depth":1,"next":{"title":"Scala","level":"1.13","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Java/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.12","depth":1,"next":{"title":"Scala","level":"1.13","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Java/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

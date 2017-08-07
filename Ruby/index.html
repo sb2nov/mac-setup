@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -710,28 +710,27 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="ruby">Ruby</h1>
-<p>OS X comes with Ruby installed (Mavericks even gets version 2.0.0, previously it was only 1.8.7), as we don&apos;t want to be messing with core files we&apos;re going to use the brilliant rbenv and ruby-build to manage and install our Ruby versions for our development environment.</p>
+<p>OS X comes with Ruby installed, but as we don&apos;t want to be messing with operating system core files we&apos;re going to use the tools <code>rbenv</code> and <code>ruby-build</code> to manage and install our Ruby versions for our development environment.</p>
+<h2 id="installation">Installation</h2>
 <pre><code>$ brew install rbenv ruby-build rbenv-default-gems rbenv-gemset
 $ echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/Projects/config/env.sh
-$ sourcezsh
-</code></pre><p>The package we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.</p>
+$ source ~/.zshrc # Apply changes
+</code></pre><p>The packages we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.</p>
+<h2 id="switching-versions">Switching versions</h2>
+<p>We can install version 2.1.1 and use it as our global version by running:</p>
 <pre><code>$ rbenv install 2.1.1
 $ rbenv global 2.1.1
-</code></pre><p>Install bundler. Bundler manages an application&apos;s dependencies, kind of like a shopping list of other libraries the application needs to work.</p>
+</code></pre><h2 id="managing-gems-in-application">Managing gems in application</h2>
+<p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p>
 <pre><code>$ gem install bundler
 $ echo &apos;bundler&apos; &gt;&gt; &quot;$(brew --prefix rbenv)/default-gems&quot;
-</code></pre><p>Skip r-doc generation. If you use Google for finding your Gem documentation like I do you might consider saving a bit of time when installing gems by skipping the documentation.</p>
-<pre><code>$ echo &apos;gem: --no-document&apos; &gt;&gt; ~/.gemrc
-</code></pre><p>Install Jekyll and Kramdown.</p>
-<pre><code>$ gem install jekyll
-$ gem install kramdown
-</code></pre><p>Install Rails. With Ruby installed and the minimum dependencies ready to go Rails can be installed as a Ruby Gem.</p>
-<pre><code>$ gem install rails
-$ echo &apos;rails&apos; &gt;&gt; &quot;~/.rbenv/default-gems&quot;
-</code></pre><p>When starting a ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.</p>
+</code></pre><p>When starting a Ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.</p>
 <pre><code>$ echo &apos;.gems&apos; &gt; &lt;my_project_path&gt;/.rbenv-gemsets
 </code></pre><p>Your gems will then get installed in <code>project/.gems</code>.</p>
-
+<h2 id="configuration">Configuration</h2>
+<p>If you use Google for finding your Gem documentation then you might want to consider saving a bit of time when installing gems by not including the documentation.</p>
+<pre><code>$ echo &apos;gem: --no-document&apos; &gt;&gt; ~/.gemrc
+</code></pre>
                                 
                                 </section>
                             
@@ -774,7 +773,7 @@ $ echo &apos;rails&apos; &gt;&gt; &quot;~/.rbenv/default-gems&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ruby","level":"1.14","depth":1,"next":{"title":"RubyGems","level":"1.14.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"previous":{"title":"Scala","level":"1.13","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Ruby/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ruby","level":"1.14","depth":1,"next":{"title":"RubyGems","level":"1.14.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"previous":{"title":"Scala","level":"1.13","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Ruby/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

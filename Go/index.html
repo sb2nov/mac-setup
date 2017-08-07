@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -709,86 +709,81 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="go-golang-programming-language">Go (golang programming language)</h1>
-<h2 id="install-golang-with-homebrew">Install <a href="https://golang.org/" target="_blank">Golang</a> with Homebrew:</h2>
-<pre><code>$ brew update
-$ brew install golang
-</code></pre><p>When installed, try to run <code>go version</code> to see the installed version of Go. </p>
-<h2 id="setup-the-workspace">Setup the workspace:</h2>
-<h3 id="add-environment-variables">Add Environment variables:</h3>
-<p>Go has a different approach of managing code, you&apos;ll need to create a single Workspace for all your Go projects. For more information consult : <a href="https://golang.org/doc/code.html#Workspaces" target="_blank">How to write Go Code</a></p>
-<p>First, you&apos;ll need to tell Go the location of your workspace.</p>
-<p>We&apos;ll add some environment variables into shell config. One of does files located at your home directory <code>bash_profile</code>, <code>bashrc</code> or <code>.zshrc</code> (for Oh My Zsh Army)</p>
-<pre><code>$ vi .bashrc
-</code></pre><p>Then add those lines to export the required variables</p>
-<pre><code># This is actually your .bashrc file
-
-export GOPATH=$HOME/go # don&apos;t forget to change your path correctly!
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-</code></pre><h3 id="create-your-workspace">Create your workspace:</h3>
-<p> Create the workspace directories tree:</p>
+                                <h1 id="go">Go</h1>
+<p><a href="https://github.com/golang/go" target="_blank">Go</a> (also known as Golang) is an open source programming language maintained by Google.</p>
+<h2 id="installation">Installation</h2>
+<pre><code>$ brew install golang
+</code></pre><p>When installed, try to run <code>go version</code> to see the installed version of Go.</p>
+<h2 id="setup-your-workspace">Setup your workspace</h2>
+<h3 id="add-environment-variables">Add environment variables</h3>
+<p>Go has a unique approach of managing code where you have a single workspace for all your Go projects. For more information see the <a href="https://golang.org/doc/code.html#Workspaces" target="_blank">documentation</a>.</p>
+<p>First, you&apos;ll need to tell Go the location of your workspace. We&apos;ll do this by adding some environment variables in your shell config file (usually <code>.bash_profile</code>, <code>.bashrc</code> or <code>.zshrc</code>).</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">export</span> GOPATH=<span class="hljs-variable">$HOME</span>/go
+<span class="hljs-built_in">export</span> GOROOT=/usr/<span class="hljs-built_in">local</span>/opt/go/libexec
+<span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$PATH</span>:<span class="hljs-variable">$GOPATH</span>/bin
+<span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$PATH</span>:<span class="hljs-variable">$GOROOT</span>/bin
+</code></pre>
+<h3 id="create-your-workspace">Create your workspace</h3>
+<p>Create the workspace directories tree:</p>
 <pre><code>$ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
-</code></pre><pre><code>$GOPATH/src : Where your Go projects / programs are located
-$GOPATH/pkg : contains every package objects
-$GOPATH/bin : The compiled binaries home
-</code></pre><h3 id="hello-world-time">Hello world time!</h3>
-<p> Create a file in your <code>$GOPATH/src</code>, in my case <code>hello.go</code>
- Hello world program :</p>
-<pre><code>package main
-import &quot;fmt&quot;
+</code></pre><p><code>$GOPATH/src</code> This is where your Go projects are located
+<code>$GOPATH/pkg</code> A folder that contains every package objects
+<code>$GOPATH/bin</code> The compiled binaries home</p>
+<h2 id="write-your-first-program">Write your first program</h2>
+<p>Create a file in your <code>$GOPATH/src</code>, for example <code>hello.go</code>, and input the following code</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span>
 
-func main() {
-    fmt.Printf(&quot;hello, world\n&quot;)
+<span class="hljs-keyword">func</span> main() {
+    fmt.Printf(<span class="hljs-string">&quot;hello, world\n&quot;</span>)
 }
-</code></pre><p> Run your first Go program by executing:</p>
+</code></pre>
+<p>Run the program by running:</p>
 <pre><code>$ go run hello.go
-</code></pre><p> You&apos;ll see a sweet hello, world stdout</p>
-<p> If you wish to compile it and move it to <code>$GOPATH/bin</code>, then run:</p>
-<pre><code> $ go install hello.go
-</code></pre><p>Since we have <code>$GOPATH/bin</code> added to our <code>$PATH</code>, you can run your program from placement :</p>
+</code></pre><p>If you wish to compile it and move it to <code>$GOPATH/bin</code>, then run:</p>
+<pre><code>$ go install hello.go
+</code></pre><p>Since we have <code>$GOPATH/bin</code> added to our <code>$PATH</code>, you can run your program from anywhere:</p>
 <pre><code>$ hello
-</code></pre><p>Prints : hello, world</p>
-<h2 id="some-references-and-utilities">Some References and utilities:</h2>
-<h4 id="import-a-go-package">Import a Go package:</h4>
-<p>You can create Go package, as well importing shared ones. To do so you&apos;ll need to use <code>go get</code> command</p>
+</code></pre><h2 id="import-a-go-package">Import a Go package</h2>
+<p>Besides creating your own packages you can import and use other packages in your Go code. To do so you&apos;ll use the <code>go get</code> command:</p>
 <pre><code>$ go get -u github.com/gorilla/mux
-</code></pre><p>The command above should import <code>github.com/gorilla/mux</code> Go package into this directory <code>$GOPATH/src/github.com/gorilla/mux</code></p>
-<p>You can then use this package in your Go programs by importing it. Example:</p>
-<pre><code>package main
+</code></pre><p>The command above will import the package <code>mux</code> into this directory <code>$GOPATH/src/github.com/gorilla/mux</code>.</p>
+<p>You can then use this package in your Go programs like this:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
 
-import (
-    &quot;net/http&quot;
-    &quot;log&quot;
-    &quot;github.com/gorilla/mux&quot; #Imported Go Package
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;net/http&quot;</span>
+    <span class="hljs-string">&quot;log&quot;</span>
+    <span class="hljs-string">&quot;github.com/gorilla/mux&quot;</span> <span class="hljs-comment">// Your imported package</span>
 )
 
-func YourHandler(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte(&quot;Gorilla!\n&quot;))
+<span class="hljs-keyword">func</span> YourHandler(w http.ResponseWriter, r *http.Request) {
+    w.Write([]<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;Gorilla!\n&quot;</span>))
 }
 
-func main() {
+<span class="hljs-keyword">func</span> main() {
     r := mux.NewRouter()
-    // Routes consist of a path and a handler function.
-    r.HandleFunc(&quot;/&quot;, YourHandler)
+    <span class="hljs-comment">// Routes consist of a path and a handler function.</span>
+    r.HandleFunc(<span class="hljs-string">&quot;/&quot;</span>, YourHandler)
 
-    // Bind to a port and pass our router in
-    log.Fatal(http.ListenAndServe(&quot;:8000&quot;, r))
+    <span class="hljs-comment">// Bind to a port and pass our router in</span>
+    log.Fatal(http.ListenAndServe(<span class="hljs-string">&quot;:8000&quot;</span>, r))
 }
-</code></pre><h4 id="format-your-go-code">Format your Go code</h4>
-<p> Go has a tool that automatically formats Go source code.</p>
+</code></pre>
+<h2 id="format-your-code">Format your code</h2>
+<p>Go has a built-in tool that automatically formats Go source code.</p>
+<p>To format a single file run:</p>
 <pre><code>$ gofmt -w yourcode.go
-</code></pre><p>OR</p>
+</code></pre><p>You can also format an entire package (<strong>Note that the command is different from formatting a single file</strong>):</p>
 <pre><code>$ go fmt path/to/your/package
-</code></pre><h4 id="godoc--the-documentation-tool">Godoc : The documentation tool</h4>
-<p>Using the <code>godoc</code> command, you can generate a program documentation.</p>
+</code></pre><h2 id="generate-documentation">Generate documentation</h2>
+<p>With the <code>godoc</code> command you can generate documentation from your code and read documentation from other packages.</p>
 <pre><code>$ godoc fmt                # documentation for package fmt
 $ godoc fmt Printf         # documentation for fmt.Printf
 $ godoc -src fmt           # fmt package interface in Go source form
-</code></pre><p>You need to respect some spec in order to document using <code>godoc</code>. You can read more about : <a href="https://blog.golang.org/godoc-documenting-go-code" target="_blank">godoc Documenting Go code</a></p>
-<h4 id="discovering-more-the-language">Discovering more the language:</h4>
-<p>The following interactive tutorial will let you discover Golang world : <a href="https://tour.golang.org/" target="_blank">A tour of Go</a></p>
+</code></pre><p>You need to respect some spec in order to document using <code>godoc</code>. More information in the <a href="https://blog.golang.org/godoc-documenting-go-code" target="_blank">Godoc documentation</a>.</p>
+<h2 id="learn-more">Learn more</h2>
+<p>This <a href="https://tour.golang.org/" target="_blank">interactive tutorial</a> will let you learn more about Go.</p>
 
                                 
                                 </section>
@@ -832,7 +827,7 @@ $ godoc -src fmt           # fmt package interface in Go source form
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Go","level":"1.16","depth":1,"next":{"title":"Heroku","level":"1.17","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"previous":{"title":"Node.js","level":"1.15","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Go/README.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Go","level":"1.16","depth":1,"next":{"title":"Heroku","level":"1.17","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"previous":{"title":"Node.js","level":"1.15","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Go/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

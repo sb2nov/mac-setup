@@ -418,7 +418,7 @@
                 <a href="../Python/ipython.html">
             
                     
-                    Ipython
+                    IPython
             
                 </a>
             
@@ -431,12 +431,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MySql/">
+        <li class="chapter " data-level="1.10" data-path="../MySQL/">
             
-                <a href="../MySql/">
+                <a href="../MySQL/">
             
                     
-                    MySql
+                    MySQL
             
                 </a>
             
@@ -598,7 +598,7 @@
                 <a href="../Apps/">
             
                     
-                    Apps
+                    Other Apps
             
                 </a>
             
@@ -625,7 +625,7 @@
                 <a href="../Apps/Settings.html">
             
                     
-                    Settings
+                    App Settings
             
                 </a>
             
@@ -715,10 +715,9 @@
 </blockquote>
 <h2 id="why-use-fzf">Why use fzf</h2>
 <ul>
-<li>speed</li>
-<li>rich feature set</li>
-<li>highly customizable</li>
-<li>its really fast</li>
+<li>Speed</li>
+<li>Rich feature set</li>
+<li>Highly customizable</li>
 </ul>
 <h2 id="installation">Installation</h2>
 <p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">homebrew</a> to install <strong>fzf</strong>:</p>
@@ -730,16 +729,16 @@
 <li>Key bindings (<code>CTRL-T</code>, <code>CTRL-R</code>, and <code>ALT-C</code>) (bash, zsh, fish)</li>
 <li>Fuzzy auto-completion (bash, zsh)</li>
 </ul>
-<h2 id="actual-usage">Actual usage</h2>
+<h2 id="usage">Usage</h2>
 <h3 id="fuzzy-completion">Fuzzy completion</h3>
 <blockquote>
 <p>hit tab (&#x21B9;) after:</p>
 </blockquote>
-<h4 id="file-search">file search</h4>
+<h4 id="file-search">File search</h4>
 <pre><code>vim **
 </code></pre><p>or</p>
 <pre><code>subl **
-</code></pre><h4 id="host-name-searh">host name searh</h4>
+</code></pre><h4 id="host-name-search">Host name search</h4>
 <pre><code>ssh **
 </code></pre><blockquote>
 <p><strong>Note</strong>: for more fuzzy search things head over <a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh" target="_blank">official repo</a></p>
@@ -749,28 +748,29 @@
 <p><strong>Note</strong>: original <a href="https://junegunn.kr/2015/04/browsing-chrome-history-with-fzf/" target="_blank">blog post</a></p>
 </blockquote>
 <p>Open up shell config (most likely <code>~/.zshrc</code> or command <code>zshconfig</code>) and add following function:</p>
-<pre><code># ch - browse chrome history
-ch() {
-  local cols sep
+<pre><code class="lang-sh"><span class="hljs-comment"># ch - browse chrome history</span>
+<span class="hljs-function"><span class="hljs-title">ch</span></span>() {
+  <span class="hljs-built_in">local</span> cols sep
   cols=$(( COLUMNS / 3 ))
-  sep=&apos;{::}&apos;
+  sep=<span class="hljs-string">&apos;{::}&apos;</span>
 
-  cp -f ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History /tmp/h
+  cp <span class="hljs-_">-f</span> ~/Library/Application\ Support/Google/Chrome/Profile\ 1/History /tmp/h
 
-  sqlite3 -separator $sep /tmp/h \
-    &quot;select substr(title, 1, $cols), url
-     from urls order by last_visit_time desc&quot; |
-  awk -F $sep &apos;{printf &quot;%-&apos;$cols&apos;s  \x1b[36m%s\x1b[m\n&quot;, $1, $2}&apos; |
-  fzf --ansi --multi | sed &apos;s#.*\(https*://\)#\1#&apos; | xargs open
+  sqlite3 -separator <span class="hljs-variable">$sep</span> /tmp/h \
+    <span class="hljs-string">&quot;select substr(title, 1, <span class="hljs-variable">$cols</span>), url
+     from urls order by last_visit_time desc&quot;</span> |
+  awk -F <span class="hljs-variable">$sep</span> <span class="hljs-string">&apos;{printf &quot;%-&apos;</span><span class="hljs-variable">$cols</span><span class="hljs-string">&apos;s  \x1b[36m%s\x1b[m\n&quot;, $1, $2}&apos;</span> |
+  fzf --ansi --multi | sed <span class="hljs-string">&apos;s#.*\(https*://\)#\1#&apos;</span> | xargs open
 }
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
 <p><strong>Note</strong>: Ensure that path to <code>History</code> file is correct; read more information on <a href="https://stackoverflow.com/a/16742333/1564365" target="_blank">StackOverflow</a></p>
 </blockquote>
 <h3 id="thanks-to">Thanks to</h3>
 <ul>
 <li><a href="https://github.com/junegunn" target="_blank">junegunn</a> for writing <a href="https://github.com/junegunn/fzf" target="_blank">this awesome tool</a></li>
 </ul>
-<p>Most of the text is taken from <a href="https://github.com/junegunn" target="_blank">fzf repository</a>.</p>
+<p>Most of the text is taken from the <a href="https://github.com/junegunn" target="_blank">fzf repository</a>.</p>
 
                                 
                                 </section>
@@ -814,7 +814,7 @@ ch() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"previous":{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/fzf.md","mtime":"2017-07-27T08:44:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-02T15:57:21.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"previous":{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/fzf.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
