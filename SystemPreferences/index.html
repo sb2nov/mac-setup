@@ -192,7 +192,7 @@
                 <a href="../iTerm/zsh.html">
             
                     
-                    ZSH
+                    Zsh
             
                 </a>
             
@@ -205,7 +205,7 @@
                 <a href="../iTerm/tree.html">
             
                     
-                    Tree
+                    tree
             
                 </a>
             
@@ -263,7 +263,7 @@
                 <a href="../Git/gitignore.html">
             
                     
-                    Git ignore
+                    Git Ignore
             
                 </a>
             
@@ -710,15 +710,15 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="system-preferences">System Preferences</h1>
-<p>First thing you need to do, on any OS actually, is update the system! For that: <strong>Apple menu (&#xF8FF;) &gt; About This Mac &gt; Software Update.</strong></p>
-<p>Also upgrade your OS in case you want to work on the latest OS. Sierra is a free upgrade so please check that.</p>
-<p>If this is a new computer, there are a couple tweaks you would like to make to the System Preferences. Feel free to follow these, or to ignore them, depending on your personal preferences.</p>
-<h3 id="users--groups">Users &amp; Groups</h3>
+<p>First thing you should do is update the system. To do that go: <strong>Apple menu (&#xF8FF;) &gt; About This Mac &gt; Software Update.</strong></p>
+<p>Also upgrade your OS in case you want to work on the latest OS. OS X upgrades are usually free so you might as well keep your machine up to date.</p>
+<p>If this is a new computer, there are a couple tweaks you could make to the System Preferences. <strong>These settings are all optional, consider them suggestions.</strong></p>
+<h2 id="users--groups">Users &amp; Groups</h2>
 <ul>
 <li>Login Options -&gt; Change fast switching user menu to Icon</li>
 <li>Set up Password, Apple ID, Picture, etc.</li>
 </ul>
-<h3 id="trackpad">Trackpad</h3>
+<h2 id="trackpad">Trackpad</h2>
 <ul>
 <li>Point &amp; Click<ul>
 <li>Enable Tap to click with one finger</li>
@@ -731,22 +731,20 @@
 </ul>
 </li>
 </ul>
-<h3 id="dock">Dock</h3>
+<h2 id="dock">Dock</h2>
 <ul>
 <li>Visual settings<ul>
 <li>Change position to left and make the size of Icons small</li>
 </ul>
 </li>
-<li><p>Other settings</p>
-<ul>
-<li><p>Remove workspace auto-switching</p>
-<pre><code>  $ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-  $ killall Dock
-</code></pre></li>
+<li>Other settings<ul>
+<li>Remove workspace auto-switching by running the following command:</li>
 </ul>
 </li>
 </ul>
-<h3 id="finder">Finder</h3>
+<pre><code>$ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+$ killall Dock
+</code></pre><h2 id="finder">Finder</h2>
 <ul>
 <li>Toolbar<ul>
 <li>Update to add path, new folder and delete</li>
@@ -759,55 +757,56 @@
 </ul>
 </li>
 </ul>
-<h3 id="menubar">Menubar</h3>
+<h2 id="menubar">Menubar</h2>
 <ul>
 <li>Remove the display and Bluetooth icons</li>
 <li>Change battery to show percentage symbols</li>
 </ul>
-<h3 id="spotlight">Spotlight</h3>
+<h2 id="spotlight">Spotlight</h2>
 <ul>
 <li>Uncheck fonts, images, files etc.</li>
-<li>Uncheck the keyboard shortcuts as we&apos;ll be replacing them with Alfred.</li>
+<li>Uncheck the keyboard shortcuts as we&apos;ll be replacing them with Alfred</li>
 </ul>
-<h3 id="accounts">Accounts</h3>
+<h2 id="accounts">Accounts</h2>
 <ul>
 <li>Add an iCloud account and sync Calendar, Find my mac, Contacts etc.</li>
 </ul>
-<h3 id="write-to-ntfs-on-osx-yosemite-and-el-capitan">Write to NTFS on OSX Yosemite and El Capitan</h3>
-<h4 id="install-homebrew-and-homebrew-cask">Install Homebrew and Homebrew Cask</h4>
+<h2 id="how-to-write-to-ntfs-on-os-x-yosemite-and-el-capitan">How to write to NTFS on OS X Yosemite and El Capitan</h2>
+<h3 id="install-homebrew-and-homebrew-cask">Install Homebrew and Homebrew Cask</h3>
 <ul>
-<li>Instructions <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">here</a>!</li>
+<li>Instructions <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">here</a></li>
 </ul>
-<h4 id="update-homebrew-formulae">Update Homebrew formulae:</h4>
+<h3 id="update-homebrew-formulae">Update Homebrew formulae:</h3>
 <pre><code>$ brew update
-</code></pre><h4 id="install-osxfuse">Install osxfuse</h4>
+</code></pre><h3 id="install-osxfuse">Install osxfuse</h3>
 <ul>
-<li><p>If you are on OSX 10.11 (El Capitan), install the (3.x.x) from <a href="https://github.com/osxfuse/osxfuse/releases" target="_blank">https://github.com/osxfuse/osxfuse/releases</a>.</p>
+<li><p>If you are on OS X 10.11 (El Capitan), install the (3.x.x) from <a href="https://github.com/osxfuse/osxfuse/releases" target="_blank">https://github.com/osxfuse/osxfuse/releases</a>.</p>
 <p>  $ brew cask install osxfuse</p>
 </li>
 </ul>
-<h4 id="install-ntfs-3g">Install ntfs-3g</h4>
+<h3 id="install-ntfs-3g">Install ntfs-3g</h3>
 <pre><code>$ brew install homebrew/fuse/ntfs-3g
-</code></pre><h4 id="if-you-are-on-osx-1011-el-capitan-temporary-disable-system-integrity-protection">If you are on OSX 10.11 (El Capitan), temporary disable System Integrity Protection.</h4>
+</code></pre><h3 id="if-you-are-on-os-x-1011-el-capitan-temporary-disable-system-integrity-protection">If you are on OS X 10.11 (El Capitan), temporary disable System Integrity Protection</h3>
 <ul>
-<li><strong>reboot</strong> and hold CMD+R to get in recovery mode</li>
-<li>Open the terminal and type</li>
+<li><strong>Reboot</strong> and hold CMD+R to get in recovery mode</li>
+<li><p>Open the terminal and type:</p>
+<p> $ csrutil disable</p>
+</li>
+<li><p><strong>Reboot</strong> normally</p>
+</li>
 </ul>
-<pre><code>$ csrutil disable
-</code></pre><ul>
-<li><strong>reboot</strong> normally</li>
-</ul>
-<h4 id="create-a-symlink-for-mountntfs">Create a symlink for mount_ntfs</h4>
+<h3 id="create-a-symlink-for-mountntfs">Create a symlink for mount_ntfs</h3>
 <pre><code>$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-</code></pre><h4 id="if-you-are-on-osx-1011-el-capitan-re-enable-system-integrity-protection">If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection.</h4>
+</code></pre><h3 id="if-you-are-on-osx-1011-el-capitan-re-enable-system-integrity-protection">If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection</h3>
 <ul>
-<li><strong>reboot</strong> and hold CMD+R to get in recovery mode</li>
-<li>Open the terminal and type</li>
-</ul>
-<pre><code>$ csrutil enable
-</code></pre><ul>
-<li><strong>reboot</strong> normally</li>
+<li><strong>Reboot</strong> and hold CMD+R to get in recovery mode</li>
+<li><p>Open the terminal and type</p>
+<p> $ csrutil enable</p>
+</li>
+<li><p><strong>Reboot</strong> normally</p>
+</li>
+<li>Done</li>
 </ul>
 
                                 
@@ -852,7 +851,7 @@ $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"SystemPreferences/README.md","mtime":"2017-08-07T01:16:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"SystemPreferences/README.md","mtime":"2017-08-08T07:09:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-08T07:10:07.604Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ZSH · Mac OS X Setup Guide </title>
+        <title>Zsh · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -192,7 +192,7 @@
                 <a href="zsh.html">
             
                     
-                    ZSH
+                    Zsh
             
                 </a>
             
@@ -205,7 +205,7 @@
                 <a href="tree.html">
             
                     
-                    Tree
+                    tree
             
                 </a>
             
@@ -263,7 +263,7 @@
                 <a href="../Git/gitignore.html">
             
                     
-                    Git ignore
+                    Git Ignore
             
                 </a>
             
@@ -694,7 +694,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >ZSH</a>
+        <a href=".." >Zsh</a>
     </h1>
 </div>
 
@@ -710,52 +710,51 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="zsh">Zsh</h1>
-<p>We&apos;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intutive. The <code>env.sh</code> is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc.</p>
-<h3 id="zsh">Zsh</h3>
-<p>Install zsh and zsh completions using homebrew</p>
-<pre><code>brew install zsh zsh-completions
-</code></pre><p>Now you can customize your shell using two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. So you should follow one of the two sections below. I personally prefer <code>Prezto</code> as that seems to have slightly better performance.</p>
-<h4 id="prezto">Prezto</h4>
-<p>Install prezto on top of zsh to get additional functionality</p>
-<pre><code>git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
-</code></pre><p>Next create the <code>~/.zshrc</code> file by running</p>
-<pre><code>setopt EXTENDED_GLOB
-for rcfile in &quot;${ZDOTDIR:-$HOME}&quot;/.zprezto/runcoms/^README.md(.N); do
-  ln -s &quot;$rcfile&quot; &quot;${ZDOTDIR:-$HOME}/.${rcfile:t}&quot;
-done
-</code></pre><p>edit the <code>~/.zpreztorc</code> file and add</p>
-<pre><code>zstyle &apos;:prezto:load&apos; pmodule \
-  &apos;environment&apos; \
-  &apos;terminal&apos; \
-  &apos;editor&apos; \
-  &apos;history&apos; \
-  &apos;directory&apos; \
-  &apos;spectrum&apos; \
-  &apos;utility&apos; \
-  &apos;completion&apos; \
-  &apos;git&apos; \
-  &apos;syntax-highlighting&apos; \
-  &apos;history-substring-search&apos; \
-  &apos;prompt&apos;
+<p>We&apos;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intuitive. We will also create the file <code>env.sh</code>, it is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc. and you can find it at the bottom of this page.</p>
+<h2 id="zsh">Zsh</h2>
+<p>Install zsh and zsh-completions using Homebrew:</p>
+<pre><code>$ brew install zsh zsh-completions
+</code></pre><p>At this point you can customize your shell by using one of two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. You should follow one of the two sections below.</p>
+<h3 id="install-prezto">Install Prezto</h3>
+<p>Install prezto on top of zsh to get additional functionality:</p>
+<pre><code>$ git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
+</code></pre><p>Next create <code>~/.zshrc</code> file by running:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">setopt</span> EXTENDED_GLOB
+<span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>&quot;</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
+  ln <span class="hljs-_">-s</span> <span class="hljs-string">&quot;<span class="hljs-variable">$rcfile</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>&quot;</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Add modules to Prezto by editing <code>~/.zpreztorc</code> and adding:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:load&apos;</span> pmodule \
+  <span class="hljs-string">&apos;environment&apos;</span> \
+  <span class="hljs-string">&apos;terminal&apos;</span> \
+  <span class="hljs-string">&apos;editor&apos;</span> \
+  <span class="hljs-string">&apos;history&apos;</span> \
+  <span class="hljs-string">&apos;directory&apos;</span> \
+  <span class="hljs-string">&apos;spectrum&apos;</span> \
+  <span class="hljs-string">&apos;utility&apos;</span> \
+  <span class="hljs-string">&apos;completion&apos;</span> \
+  <span class="hljs-string">&apos;git&apos;</span> \
+  <span class="hljs-string">&apos;syntax-highlighting&apos;</span> \
+  <span class="hljs-string">&apos;history-substring-search&apos;</span> \
+  <span class="hljs-string">&apos;prompt&apos;</span>
 
-zstyle &apos;:prezto:module:prompt&apos; theme &apos;paradox&apos;
-</code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor and adding the following below</p>
-<pre><code># Add env.sh
-source ~/Projects/config/env.sh
-</code></pre><h4 id="oh-my-zsh">Oh My Zsh</h4>
+<span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:module:prompt&apos;</span> theme <span class="hljs-string">&apos;paradox&apos;</span>
+</code></pre>
+<h3 id="install-oh-my-zsh">Install Oh My Zsh</h3>
 <p><strong>Note</strong>: You don&apos;t need this section if you installed <code>Prezto</code>.</p>
-<p>Install oh-my-zsh on top of zsh to get additional functionality</p>
-<pre><code>curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-</code></pre><p>if you&apos;re still in the default shell, change default shell to zsh manually</p>
-<pre><code>chsh -s /usr/local/bin/zsh
-</code></pre><p>edit the <code>.zshrc</code> by opening the file in a text editor</p>
+<p>Install Oh My Zsh on top of zsh to get additional functionality:</p>
+<pre><code>$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code></pre><p>If you&apos;re still in the default shell, change default shell to zsh manually:</p>
+<pre><code>$ chsh -s /usr/local/bin/zsh
+</code></pre><p>Add plugins (they are all optional but recommended) to Oh My Zsh and use theme by editing <code>~/.zshrc</code> and adding:</p>
 <pre><code>ZSH_THEME=pygmalion
-
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-
-# Add env.sh
-source ~/Projects/config/env.sh
-</code></pre><h3 id="envsh">env.sh</h3>
+</code></pre><h2 id="envsh">env.sh</h2>
+<p>To include <code>env.sh</code>, open <code>~/.zshrc</code> and add the following:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/&lt;path to file&gt;/env.sh
+</code></pre>
+<p>This file comes with some pre-defined settings, <strong>they are all optional</strong>. Please review them before you use them as your configuration.</p>
 <pre><code>#!/bin/zsh
 
 # PATH
@@ -766,7 +765,7 @@ export EDITOR=&apos;subl -w&apos;
 
 # Virtual Environment
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
+export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Owner
@@ -785,7 +784,7 @@ alias cppcompile=&apos;c++ -std=c++11 -stdlib=libc++&apos;
 
 # Use sublimetext for editing config files
 alias zshconfig=&quot;subl ~/.zshrc&quot;
-alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
+alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
 </code></pre>
                                 
                                 </section>
@@ -818,7 +817,7 @@ alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
                 </a>
                 
                 
-                <a href="tree.html" class="navigation navigation-next " aria-label="Next page: Tree">
+                <a href="tree.html" class="navigation navigation-next " aria-label="Next page: tree">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -829,7 +828,7 @@ alias envconfig=&quot;subl ~/Projects/config/env.sh&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ZSH","level":"1.5.1","depth":2,"next":{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"ZSH","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"Tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/zsh.md","mtime":"2017-08-02T15:57:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-07T01:19:46.605Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/zsh.md","mtime":"2017-08-08T07:09:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-08T07:10:07.604Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
