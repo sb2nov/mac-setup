@@ -1,54 +1,56 @@
 # Homebrew Cask
+[Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.
 
-Let's see if we can get the elegance, simplicity, and speed of Homebrew for the installation and management of GUI Mac applications such as Google Chrome and Adium.
+## Installation
+As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the [Homebrew section](/mac-setup/Homebrew/README.html).
 
-### Install
+## Search
+To see if an app is available on Cask you can search on the [official Cask website](https://caskroom.github.io/search). You can also search using the following command:
 
-As of December 2015, cask comes installed with Homebrew directly.
+    $ brew cask search <package>
 
-    $ brew cask install google-chrome
+## Quick Look plugins
+These plugins adds support for the corresponding file type to Mac Quick Look (In Finder, mark a file and press Space to start Quick Look). The plugins includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files and more.
 
-### Search
+```sh
+$ brew cask install \
+    qlcolorcode \
+    qlstephen \
+    qlmarkdown \
+    quicklook-json \
+    qlprettypatch \
+    quicklook-csv \
+    betterzipql \
+    webpquicklook \
+    suspicious-package
+```
 
-It is really simple to check if the app is supported by cask by going to the search page on [Caskroom](https://caskroom.github.io/)
+## App Suggestions
+Here are some useful apps that are available on Cask.
 
-### Quick look plugins
-
-Some [plugins](https://github.com/sindresorhus/quick-look-plugins) to enable different files to work with Mac Quicklook. Includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files etc.
-
-    $ brew cask install qlcolorcode
-    $ brew cask install qlstephen
-    $ brew cask install qlmarkdown
-    $ brew cask install quicklook-json
-    $ brew cask install qlprettypatch
-    $ brew cask install quicklook-csv
-    $ brew cask install betterzipql
-    $ brew cask install webpquicklook
-    $ brew cask install suspicious-package
-
-### App Installation
-
-I'll now cover installation of the apps that I have mentioned in the apps section using cask.
-
-    $ brew cask install alfred
-    $ brew cask install android-file-transfer
-    $ brew cask install asepsis
-    $ brew cask install appcleaner
-    $ brew cask install caffeine
-    $ brew cask install cheatsheet
-    $ brew cask install doubletwist
-    $ brew cask install dropbox
-    $ brew cask install google-chrome
-    $ brew cask install google-drive
-    $ brew cask install google-hangouts
-    $ brew cask install flux
-    $ brew cask install latexian
-    $ brew cask install 1password
-    $ brew cask install pdftk
-    $ brew cask install spectacle
-    $ brew cask install sublime-text
-    $ brew cask install superduper
-    $ brew cask install totalfinder
-    $ brew cask install transmission
-    $ brew cask install valentina-studio
-    $ brew cask install vlc
+```sh
+$ brew cask install
+    alfred \
+    android-file-transfer \
+    asepsis \
+    appcleaner \
+    caffeine \
+    cheatsheet \
+    docker \
+    doubletwist \
+    dropbox \
+    google-chrome \
+    google-drive \
+    google-hangouts \
+    flux \
+    latexian \
+    1password \
+    pdftk \
+    spectacle \
+    sublime-text \
+    superduper \
+    totalfinder \
+    transmission \
+    valentina-studio \
+    vlc
+```

@@ -2,7 +2,16 @@
 
 `ack` is a search tool designed for code. It's built to be a replacement for `grep` with higher speed and more options.
 
+## Installation
+
+To install the latest version, use homebrew.
+
+```bash
+brew install ack
+```
+
 ## Why use `ack` over `grep`
+
 - Faster
 - Skips unimportant files by default
 - It searches recursively by default
@@ -22,14 +31,6 @@ ack --js pancakes
 Or you may want to find all files that _does not_ contain the word _brew_
 ```bash
 ack -L brew
-```
-
-## Installation
-
-To install the latest version, use homebrew.
-
-```bash
-brew install ack
 ```
 
 ## Customization
@@ -55,5 +56,5 @@ ack --dump
 
 ## Alternatives to `ack`
 
-There's [The Silver Surfer](The Silver Searcher) which describes itself as a 
+There's [The Silver Surfer](The Silver Searcher) which describes itself as a
 > A code searching tool similar to `ack`, with a focus on speed.

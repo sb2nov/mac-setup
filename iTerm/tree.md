@@ -1,8 +1,17 @@
-# Tree
+# `tree`
 
-Tree is a recursive directory listing command that produces a depth indented listing of files.
+`tree` is a recursive directory listing command that produces a depth indented listing of files.
+
+## Installation
+
+To install the latest version, use homebrew:
+
+```bash
+brew install tree
+```
 
 ## Usage
+
 Running `tree` will produce output like this:
 
 ```bash
@@ -47,12 +56,4 @@ will output:
 └── Go
 
 5 directories, 1 files
-```
-
-## Installation
-
-To install the latest version, use homebrew:
-
-```bash
-brew install tree
 ```

@@ -1,11 +1,11 @@
 [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup)
 ====================
 
-This book covers the basics of setting up a development environment on a new MacBook for most major languages. All instructions covered have been tested on Mountain Lion and Mavericks, but they might be more inclined towards Mavericks. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some languages/libraries.
+This book covers the basics of setting up a development environment on a new Mac for most major languages. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some languages/libraries.
 
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)
 
-We will set up [Node](http://nodejs.org) (JavaScript), [Python](http://www.python.org), [CPlusPlus](http://www.cplusplus.com), and [Ruby](http://www.ruby-lang.org) environments. Even if you don't program in all four, it is good to have them, as many command-line tools use one of them. We also install a few daily use applications and LaTeX. As you read and follow these steps, feel free to send me any feedback or comments you may have.
+Some of the environments we will set up are [Node](http://nodejs.org) (JavaScript), [Python](http://www.python.org), [CPlusPlus](http://www.cplusplus.com) and [Ruby](http://www.ruby-lang.org). Even if you don't program in all of them, they are useful to have as many command-line tools rely on them. We'll also show you some useful daily use applications. As you read and follow these steps, feel free to post any feedback or comments you may have.
 
 All contributions to the book are welcome. Please help add support for other libraries and languages.
 
