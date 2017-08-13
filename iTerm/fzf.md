@@ -1,8 +1,8 @@
-# fzf (CLI fuzzy finder)
+# `fzf`
 
->fzf is a general-purpose command-line fuzzy finder
+[`fzf`](https://github.com/junegunn/fzf) is a general-purpose command-line fuzzy finder.
 
-## Why use fzf
+## Why use `fzf`
 
  - Speed
  - Rich feature set
@@ -10,7 +10,7 @@
 
 ## Installation
 
-Use [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/README.html) to install **fzf**:
+Use [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/README.html) to install `fzf`:
 
     brew install fzf
 
@@ -20,8 +20,8 @@ If you want to use shell extensions:
 
 which are:
 
- - Key bindings (`CTRL-T`, `CTRL-R`, and `ALT-C`) (bash, zsh, fish)
- - Fuzzy auto-completion (bash, zsh)
+ - Key bindings (`CTRL-T`, `CTRL-R`, and `ALT-C`) (available for bash, zsh and fish)
+ - Fuzzy auto-completion (available for bash and zsh)
 
 ## Usage
 
@@ -67,9 +67,3 @@ ch() {
 ```
 
 >**Note**: Ensure that path to `History` file is correct; read more information on [StackOverflow](https://stackoverflow.com/a/16742333/1564365)
-
-### Thanks to
-
- - [junegunn](https://github.com/junegunn) for writing [this awesome tool](https://github.com/junegunn/fzf)
-
-Most of the text is taken from the [fzf repository](https://github.com/junegunn).
