@@ -1,7 +1,7 @@
 [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup)
 ====================
 
-This book covers the basics of setting up a development environment on a new Mac for most major languages. Whether you are an experienced programmer or not, this book is intended for everyone to use as a reference when installing some languages/libraries.
+This guide covers the basics of setting up a development environment on a new Mac. Whether you are an experienced programmer or not, this guide is intended for everyone to use as a reference for setting up your environment or installing a languages/libraries.
 
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/intro.jpeg)
 
