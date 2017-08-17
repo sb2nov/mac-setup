@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Sublime Text · Mac OS X Setup Guide </title>
+        <title>MySQL · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Preferences.html" />
+    <link rel="next" href="../Cpp/" />
     
     
-    <link rel="prev" href="../Vim/" />
+    <link rel="prev" href="../Python/ipython.html" />
     
 
     </head>
@@ -289,9 +289,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="../SublimeText/">
             
-                <a href="./">
+                <a href="../SublimeText/">
             
                     
                     Sublime Text
@@ -303,9 +303,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="Preferences.html">
+        <li class="chapter " data-level="1.8.1" data-path="../SublimeText/Preferences.html">
             
-                <a href="Preferences.html">
+                <a href="../SublimeText/Preferences.html">
             
                     
                     Preferences
@@ -316,9 +316,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="Packages.html">
+        <li class="chapter " data-level="1.8.2" data-path="../SublimeText/Packages.html">
             
-                <a href="Packages.html">
+                <a href="../SublimeText/Packages.html">
             
                     
                     Packages 1/2
@@ -329,9 +329,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="Plugins.html">
+        <li class="chapter " data-level="1.8.3" data-path="../SublimeText/Plugins.html">
             
-                <a href="Plugins.html">
+                <a href="../SublimeText/Plugins.html">
             
                     
                     Packages 2/2
@@ -342,9 +342,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="SublimeLinter.html">
+        <li class="chapter " data-level="1.8.4" data-path="../SublimeText/SublimeLinter.html">
             
-                <a href="SublimeLinter.html">
+                <a href="../SublimeText/SublimeLinter.html">
             
                     
                     Sublime Linter
@@ -431,9 +431,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../MyySQL/">
+        <li class="chapter active" data-level="1.10" data-path="./">
             
-                <a href="../MyySQL/">
+                <a href="./">
             
                     
                     MySQL
@@ -694,7 +694,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Sublime Text</a>
+        <a href=".." >MySQL</a>
     </h1>
 </div>
 
@@ -709,16 +709,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="sublime-text">Sublime Text</h1>
-<p><a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> is a widely used editor that describes it self as <em>a sophisticated text editor for code, markup and prose</em>.</p>
+                                <h1 id="mysql">MySQL</h1>
 <h2 id="installation">Installation</h2>
-<p><a href="http://www.sublimetext.com/" target="_blank">Download</a> the <strong>.dmg</strong> file and drag-and-drop it to the <strong>Applications</strong> folder.</p>
-<h2 id="use-cli-to-open-file">Use CLI to open file</h2>
-<p>Let&apos;s create a shortcut so we can launch Sublime Text from the command-line</p>
-<pre><code>$ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-</code></pre><p>Now you can open a file with <code>$ subl myfile.py</code> or start a new project in the current directory with <code>$ subl .</code>.</p>
-<h2 id="pricing">Pricing</h2>
-<p>Sublime Text is not free but it has an unlimited evaluation period that comes with notification pop-ups asking you to buy it, if you wish to remove the pop-ups you can purchase the tool <a href="http://www.sublimetext.com/buy" target="_blank">here</a>.</p>
+<p>We will install <a href="http://www.mysql.com/" target="_blank">MySQL</a> using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).</p>
+<pre><code>$ brew install mysql
+</code></pre><h2 id="usage">Usage</h2>
+<p>To have launchd start MySQL now and restart at login:</p>
+<pre><code>$ brew services start mysql
+</code></pre><p>Or, if you don&apos;t want/need a background service you can just use the <code>mysql.server</code> tool:</p>
+<pre><code>$ mysql.server start
+</code></pre><p>To stop it when you are done, run:</p>
+<pre><code>$ mysql.server stop
+</code></pre><p>You can see the different commands available for <code>mysql.server</code> with:</p>
+<pre><code>$ mysql.server --help
+</code></pre><p>To connect with the command-line client, run:</p>
+<pre><code>$ mysql -uroot
+</code></pre><p>(Use <code>exit</code> to quit the MySQL shell)</p>
+<p><strong>Note</strong>: By default, the MySQL user <code>root</code> has no password. It doesn&apos;t really matter for a local development database. If you wish to change it though, you can use <code>$ mysqladmin -u root password &apos;new-password&apos;</code>.</p>
+<h2 id="gui-tool">GUI Tool</h2>
+<p>It is always nice to have a GUI tool for managing databases. For Mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development. </p>
 
                                 
                                 </section>
@@ -746,12 +755,12 @@
 
             
                 
-                <a href="../Vim/" class="navigation navigation-prev " aria-label="Previous page: Vim">
+                <a href="../Python/ipython.html" class="navigation navigation-prev " aria-label="Previous page: IPython">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Preferences.html" class="navigation navigation-next " aria-label="Next page: Preferences">
+                <a href="../Cpp/" class="navigation navigation-next " aria-label="Next page: CPlusPlus">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -762,7 +771,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sublime Text","level":"1.8","depth":1,"next":{"title":"Preferences","level":"1.8.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},"previous":{"title":"Vim","level":"1.7","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"SublimeText/README.md","mtime":"2017-08-17T08:20:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T08:22:22.261Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.10","depth":1,"next":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"previous":{"title":"IPython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"MyySQL/README.md","mtime":"2017-08-17T08:21:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T08:22:22.261Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
