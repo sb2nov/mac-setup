@@ -24,7 +24,7 @@
    * [Virtualenv](Python/virtualenv.md)
    * [Numpy-Scipy](Python/numpy.md)
    * [IPython](Python/ipython.md)
-* [MySQL](MySQL/README.md)
+* [MySQL](m/README.md)
 * [CPlusPlus](Cpp/README.md)
 * [Java](Java/README.md)
 * [Scala](Scala/README.md)
