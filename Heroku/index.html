@@ -1,0 +1,817 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Heroku · Mac OS X Setup Guide </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Vagrant/" />
+    
+    
+    <link rel="prev" href="../Go/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SystemPreferences/">
+            
+                <a href="../SystemPreferences/">
+            
+                    
+                    System Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Xcode/">
+            
+                <a href="../Xcode/">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
+            
+                <a href="../Homebrew/">
+            
+                    
+                    Homebrew
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
+            
+                <a href="../Homebrew/Usage.html">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
+            
+                <a href="../Homebrew/Cask.html">
+            
+                    
+                    Cask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../iTerm/">
+            
+                <a href="../iTerm/">
+            
+                    
+                    iTerm2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../iTerm/zsh.html">
+            
+                <a href="../iTerm/zsh.html">
+            
+                    
+                    Zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../iTerm/tree.html">
+            
+                <a href="../iTerm/tree.html">
+            
+                    
+                    tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../iTerm/fzf.html">
+            
+                <a href="../iTerm/fzf.html">
+            
+                    
+                    fzf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../iTerm/ack.html">
+            
+                <a href="../iTerm/ack.html">
+            
+                    
+                    ack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Git/gitignore.html">
+            
+                <a href="../Git/gitignore.html">
+            
+                    
+                    Git Ignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Vim/">
+            
+                <a href="../Vim/">
+            
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../SublimeText/">
+            
+                <a href="../SublimeText/">
+            
+                    
+                    Sublime Text
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../SublimeText/Preferences.html">
+            
+                <a href="../SublimeText/Preferences.html">
+            
+                    
+                    Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../SublimeText/Packages.html">
+            
+                <a href="../SublimeText/Packages.html">
+            
+                    
+                    Packages 1/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../SublimeText/Plugins.html">
+            
+                <a href="../SublimeText/Plugins.html">
+            
+                    
+                    Packages 2/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../SublimeText/SublimeLinter.html">
+            
+                <a href="../SublimeText/SublimeLinter.html">
+            
+                    
+                    Sublime Linter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Python/">
+            
+                <a href="../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Python/pip.html">
+            
+                <a href="../Python/pip.html">
+            
+                    
+                    Pip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Python/virtualenv.html">
+            
+                <a href="../Python/virtualenv.html">
+            
+                    
+                    Virtualenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Python/numpy.html">
+            
+                <a href="../Python/numpy.html">
+            
+                    
+                    Numpy-Scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Python/ipython.html">
+            
+                <a href="../Python/ipython.html">
+            
+                    
+                    IPython
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Cpp/">
+            
+                <a href="../Cpp/">
+            
+                    
+                    CPlusPlus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Java/">
+            
+                <a href="../Java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Scala/">
+            
+                <a href="../Scala/">
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Ruby/">
+            
+                <a href="../Ruby/">
+            
+                    
+                    Ruby
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Ruby/RubyGems.html">
+            
+                <a href="../Ruby/RubyGems.html">
+            
+                    
+                    RubyGems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Node.js/">
+            
+                <a href="../Node.js/">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Go/">
+            
+                <a href="../Go/">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Vagrant/">
+            
+                <a href="../Vagrant/">
+            
+                    
+                    Vagrant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Docker/">
+            
+                <a href="../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../LaTeX/">
+            
+                <a href="../LaTeX/">
+            
+                    
+                    LaTeX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../Apps/">
+            
+                <a href="../Apps/">
+            
+                    
+                    Other Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../Apps/Octave.html">
+            
+                <a href="../Apps/Octave.html">
+            
+                    
+                    Octave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../Apps/Settings.html">
+            
+                <a href="../Apps/Settings.html">
+            
+                    
+                    App Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../Security/">
+            
+                <a href="../Security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../References/">
+            
+                <a href="../References/">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Heroku</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="heroku">Heroku</h1>
+<p><a href="http://www.heroku.com/" target="_blank">Heroku</a> is a <a href="http://en.wikipedia.org/wiki/Platform_as_a_service" target="_blank">Platform-as-a-Service</a> (PaaS) that simplifies deploying your apps online.</p>
+<h2 id="installation">Installation</h2>
+<p>Assuming that you have an Heroku account (<a href="https://signup.heroku.com" target="_blank">sign up</a> if you don&apos;t), let&apos;s install the <a href="https://devcenter.heroku.com/articles/using-the-cli" target="_blank">Heroku Client</a> for the command-line using Homebrew.</p>
+<pre><code>$ brew install heroku-toolbelt
+</code></pre><p>The formula might not have the latest version of the Heroku Client, which is updated pretty often. Let&apos;s update it now:</p>
+<pre><code>$ heroku update
+</code></pre><p>Don&apos;t be afraid to run <code>heroku update</code> every now and then to always have the most recent version.</p>
+<h2 id="setup">Setup</h2>
+<p>Login to your Heroku account using your email and password:</p>
+<pre><code>$ heroku login
+</code></pre><p>If this is a new account, and since you don&apos;t already have a public <strong>SSH key</strong> in your <code>~/.ssh</code> directory, it will offer to create one for you. It will also upload the key to your Heroku account, which will allow you to deploy apps from this computer.</p>
+<p>If it didn&apos;t offer create the SSH key for you (i.e. your Heroku account already has SSH keys associated with it), you can do so manually by running:</p>
+<pre><code> $ mkdir ~/.ssh
+ $ ssh-keygen -t rsa
+</code></pre><p>Keep the default file name and skip the passphrase by just hitting Enter both times. Then, add the key to your Heroku account:</p>
+<pre><code>$ heroku keys:add
+</code></pre><h2 id="usage">Usage</h2>
+<p>Once your keys are in place and you are authorized, you&apos;re ready to deploy apps. Heroku has a <a href="https://devcenter.heroku.com/articles/python" target="_blank">getting started guide</a>, which has all the information you need (the one linked here is for Python, but there is one for every popular language). Heroku uses Git to push code for deployment, so make sure your app is under Git version control.</p>
+<p>A cheat sheet for deployment:</p>
+<pre><code>$ cd myapp/
+$ heroku create myapp
+$ git push heroku master
+$ heroku ps
+$ heroku logs -t
+</code></pre><p>The <a href="https://devcenter.heroku.com/" target="_blank">Heroku Dev Center</a> is where you will find more information.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Go/" class="navigation navigation-prev " aria-label="Previous page: Go">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Vagrant/" class="navigation navigation-next " aria-label="Next page: Vagrant">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Heroku","level":"1.17","depth":1,"next":{"title":"Vagrant","level":"1.18","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"previous":{"title":"Go","level":"1.16","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Heroku/README.md","mtime":"2017-08-17T07:13:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T07:17:36.726Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,867 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Zsh · Mac OS X Setup Guide </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tree.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SystemPreferences/">
+            
+                <a href="../SystemPreferences/">
+            
+                    
+                    System Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Xcode/">
+            
+                <a href="../Xcode/">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
+            
+                <a href="../Homebrew/">
+            
+                    
+                    Homebrew
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
+            
+                <a href="../Homebrew/Usage.html">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
+            
+                <a href="../Homebrew/Cask.html">
+            
+                    
+                    Cask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    iTerm2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="zsh.html">
+            
+                <a href="zsh.html">
+            
+                    
+                    Zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="fzf.html">
+            
+                <a href="fzf.html">
+            
+                    
+                    fzf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="ack.html">
+            
+                <a href="ack.html">
+            
+                    
+                    ack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Git/gitignore.html">
+            
+                <a href="../Git/gitignore.html">
+            
+                    
+                    Git Ignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Vim/">
+            
+                <a href="../Vim/">
+            
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../SublimeText/">
+            
+                <a href="../SublimeText/">
+            
+                    
+                    Sublime Text
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../SublimeText/Preferences.html">
+            
+                <a href="../SublimeText/Preferences.html">
+            
+                    
+                    Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../SublimeText/Packages.html">
+            
+                <a href="../SublimeText/Packages.html">
+            
+                    
+                    Packages 1/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../SublimeText/Plugins.html">
+            
+                <a href="../SublimeText/Plugins.html">
+            
+                    
+                    Packages 2/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../SublimeText/SublimeLinter.html">
+            
+                <a href="../SublimeText/SublimeLinter.html">
+            
+                    
+                    Sublime Linter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Python/">
+            
+                <a href="../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Python/pip.html">
+            
+                <a href="../Python/pip.html">
+            
+                    
+                    Pip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Python/virtualenv.html">
+            
+                <a href="../Python/virtualenv.html">
+            
+                    
+                    Virtualenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Python/numpy.html">
+            
+                <a href="../Python/numpy.html">
+            
+                    
+                    Numpy-Scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Python/ipython.html">
+            
+                <a href="../Python/ipython.html">
+            
+                    
+                    IPython
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Cpp/">
+            
+                <a href="../Cpp/">
+            
+                    
+                    CPlusPlus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Java/">
+            
+                <a href="../Java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Scala/">
+            
+                <a href="../Scala/">
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Ruby/">
+            
+                <a href="../Ruby/">
+            
+                    
+                    Ruby
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Ruby/RubyGems.html">
+            
+                <a href="../Ruby/RubyGems.html">
+            
+                    
+                    RubyGems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Node.js/">
+            
+                <a href="../Node.js/">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Go/">
+            
+                <a href="../Go/">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Heroku/">
+            
+                <a href="../Heroku/">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Vagrant/">
+            
+                <a href="../Vagrant/">
+            
+                    
+                    Vagrant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Docker/">
+            
+                <a href="../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../LaTeX/">
+            
+                <a href="../LaTeX/">
+            
+                    
+                    LaTeX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../Apps/">
+            
+                <a href="../Apps/">
+            
+                    
+                    Other Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../Apps/Octave.html">
+            
+                <a href="../Apps/Octave.html">
+            
+                    
+                    Octave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../Apps/Settings.html">
+            
+                <a href="../Apps/Settings.html">
+            
+                    
+                    App Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../Security/">
+            
+                <a href="../Security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../References/">
+            
+                <a href="../References/">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Zsh</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="zsh">Zsh</h1>
+<p>We&apos;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intuitive. We will also create the file <code>env.sh</code>, it is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc. and you can find it at the bottom of this page.</p>
+<h2 id="zsh">Zsh</h2>
+<p>Install zsh and zsh-completions using Homebrew:</p>
+<pre><code>$ brew install zsh zsh-completions
+</code></pre><p>At this point you can customize your shell by using one of two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. You should follow one of the two sections below.</p>
+<h3 id="install-prezto">Install Prezto</h3>
+<p>Install prezto on top of zsh to get additional functionality:</p>
+<pre><code>$ git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
+</code></pre><p>Next create <code>~/.zshrc</code> file by running:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">setopt</span> EXTENDED_GLOB
+<span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>&quot;</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
+  ln <span class="hljs-_">-s</span> <span class="hljs-string">&quot;<span class="hljs-variable">$rcfile</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>&quot;</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Add modules to Prezto by editing <code>~/.zpreztorc</code> and adding:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:load&apos;</span> pmodule \
+  <span class="hljs-string">&apos;environment&apos;</span> \
+  <span class="hljs-string">&apos;terminal&apos;</span> \
+  <span class="hljs-string">&apos;editor&apos;</span> \
+  <span class="hljs-string">&apos;history&apos;</span> \
+  <span class="hljs-string">&apos;directory&apos;</span> \
+  <span class="hljs-string">&apos;spectrum&apos;</span> \
+  <span class="hljs-string">&apos;utility&apos;</span> \
+  <span class="hljs-string">&apos;completion&apos;</span> \
+  <span class="hljs-string">&apos;git&apos;</span> \
+  <span class="hljs-string">&apos;syntax-highlighting&apos;</span> \
+  <span class="hljs-string">&apos;history-substring-search&apos;</span> \
+  <span class="hljs-string">&apos;prompt&apos;</span>
+
+<span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:module:prompt&apos;</span> theme <span class="hljs-string">&apos;paradox&apos;</span>
+</code></pre>
+<h3 id="install-oh-my-zsh">Install Oh My Zsh</h3>
+<p><strong>Note</strong>: You don&apos;t need this section if you installed <code>Prezto</code>.</p>
+<p>Install Oh My Zsh on top of zsh to get additional functionality:</p>
+<pre><code>$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code></pre><p>If you&apos;re still in the default shell, change default shell to zsh manually:</p>
+<pre><code>$ chsh -s /usr/local/bin/zsh
+</code></pre><p>Add plugins (they are all optional but recommended) to Oh My Zsh and use theme by editing <code>~/.zshrc</code> and adding:</p>
+<pre><code>ZSH_THEME=pygmalion
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+</code></pre><h2 id="envsh">env.sh</h2>
+<p>To include <code>env.sh</code>, open <code>~/.zshrc</code> and add the following:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/&lt;path to file&gt;/env.sh
+</code></pre>
+<p>This file comes with some pre-defined settings, <strong>they are all optional</strong>. Please review them before you use them as your configuration.</p>
+<pre><code>#!/bin/zsh
+
+# PATH
+export PATH=&quot;/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
+export EDITOR=&apos;subl -w&apos;
+# export PYTHONPATH=$PYTHONPATH
+# export MANPATH=&quot;/usr/local/man:$MANPATH&quot;
+
+# Virtual Environment
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Owner
+export USER_NAME=&quot;YOUR NAME&quot;
+eval &quot;$(rbenv init -)&quot;
+
+# FileSearch
+function f() { find . -iname &quot;*$1*&quot; ${@:2} }
+function r() { grep &quot;$1&quot; ${@:2} -R . }
+
+#mkdir and cd
+function mkcd() { mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$_&quot;; }
+
+# Aliases
+alias cppcompile=&apos;c++ -std=c++11 -stdlib=libc++&apos;
+
+# Use sublimetext for editing config files
+alias zshconfig=&quot;subl ~/.zshrc&quot;
+alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: iTerm2">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tree.html" class="navigation navigation-next " aria-label="Next page: tree">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"iTerm/zsh.md","mtime":"2017-08-17T07:13:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T07:17:36.726Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
