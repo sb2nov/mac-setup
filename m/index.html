@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Usage · Mac OS X Setup Guide </title>
+        <title>MySQL · Mac OS X Setup Guide </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Cask.html" />
+    <link rel="next" href="../Cpp/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="../Python/ipython.html" />
     
 
     </head>
@@ -128,9 +128,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
             
-                <a href="./">
+                <a href="../Homebrew/">
             
                     
                     Homebrew
@@ -142,9 +142,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="Usage.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
             
-                <a href="Usage.html">
+                <a href="../Homebrew/Usage.html">
             
                     
                     Usage
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="Cask.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
             
-                <a href="Cask.html">
+                <a href="../Homebrew/Cask.html">
             
                     
                     Cask
@@ -431,9 +431,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../m/">
+        <li class="chapter active" data-level="1.10" data-path="./">
             
-                <a href="../m/">
+                <a href="./">
             
                     
                     MySQL
@@ -694,7 +694,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Usage</a>
+        <a href=".." >MySQL</a>
     </h1>
 </div>
 
@@ -709,24 +709,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="using-homebrew">Using Homebrew</h1>
-<p>To install a package (or <strong>Formula</strong> in Homebrew vocabulary) simply type:</p>
-<pre><code>$ brew install &lt;formula&gt;
-</code></pre><p>To update Homebrew&apos;s directory of formulae, run:</p>
-<pre><code>$ brew update
-</code></pre><p><strong>Note</strong>: I&apos;ve seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):</p>
-<pre><code>$ cd /usr/local/Homebrew/
-$ git fetch origin
-$ git reset --hard origin/master
-</code></pre><p>To see if any of your packages need to be updated:</p>
-<pre><code>$ brew outdated
-</code></pre><p>To update a package:</p>
-<pre><code>$ brew upgrade &lt;formula&gt;
-</code></pre><p>Homebrew keeps older versions of packages installed, in case you want to roll back. That rarely is necessary, so you can do some cleanup to get rid of those old versions:</p>
-<pre><code>$ brew cleanup
-</code></pre><p>To see what you have installed (with their version numbers):</p>
-<pre><code>$ brew list --versions
-</code></pre>
+                                <h1 id="mysql">MySQL</h1>
+<h2 id="installation">Installation</h2>
+<p>We will install <a href="http://www.mysql.com/" target="_blank">MySQL</a> using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).</p>
+<pre><code>$ brew install mysql
+</code></pre><h2 id="usage">Usage</h2>
+<p>To have launchd start MySQL now and restart at login:</p>
+<pre><code>$ brew services start mysql
+</code></pre><p>Or, if you don&apos;t want/need a background service you can just use the <code>mysql.server</code> tool:</p>
+<pre><code>$ mysql.server start
+</code></pre><p>To stop it when you are done, run:</p>
+<pre><code>$ mysql.server stop
+</code></pre><p>You can see the different commands available for <code>mysql.server</code> with:</p>
+<pre><code>$ mysql.server --help
+</code></pre><p>To connect with the command-line client, run:</p>
+<pre><code>$ mysql -uroot
+</code></pre><p>(Use <code>exit</code> to quit the MySQL shell)</p>
+<p><strong>Note</strong>: By default, the MySQL user <code>root</code> has no password. It doesn&apos;t really matter for a local development database. If you wish to change it though, you can use <code>$ mysqladmin -u root password &apos;new-password&apos;</code>.</p>
+<h2 id="gui-tool">GUI Tool</h2>
+<p>It is always nice to have a GUI tool for managing databases. For Mac, you can use <a href="http://www.sequelpro.com/" target="_blank">SequelPro</a> to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development. </p>
+
                                 
                                 </section>
                             
@@ -753,12 +755,12 @@ $ git reset --hard origin/master
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Homebrew">
+                <a href="../Python/ipython.html" class="navigation navigation-prev " aria-label="Previous page: IPython">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Cask.html" class="navigation navigation-next " aria-label="Next page: Cask">
+                <a href="../Cpp/" class="navigation navigation-next " aria-label="Next page: CPlusPlus">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -769,7 +771,7 @@ $ git reset --hard origin/master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Usage","level":"1.4.1","depth":2,"next":{"title":"Cask","level":"1.4.2","depth":2,"path":"Homebrew/Cask.md","ref":"Homebrew/Cask.md","articles":[]},"previous":{"title":"Homebrew","level":"1.4","depth":1,"path":"Homebrew/README.md","ref":"Homebrew/README.md","articles":[{"title":"Usage","level":"1.4.1","depth":2,"path":"Homebrew/Usage.md","ref":"Homebrew/Usage.md","articles":[]},{"title":"Cask","level":"1.4.2","depth":2,"path":"Homebrew/Cask.md","ref":"Homebrew/Cask.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"Homebrew/Usage.md","mtime":"2017-08-17T07:18:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T07:31:38.513Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MySQL","level":"1.10","depth":1,"next":{"title":"CPlusPlus","level":"1.11","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"previous":{"title":"IPython","level":"1.9.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Mac OS X Setup Guide ","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"*"},"file":{"path":"m/README.md","mtime":"2017-08-17T07:07:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T07:31:38.513Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
