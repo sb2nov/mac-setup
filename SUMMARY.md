@@ -41,4 +41,5 @@
    * [App Settings](Apps/Settings.md)
 * [Security](Security/README.md)
 * [References](References/README.md)
+   * [Contributors](References/Contributors.md)
 
