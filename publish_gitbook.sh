@@ -1,3 +1,8 @@
+# Update contributors list
+python contributors.py
+git commit -a -m "Update contributors"
+git push origin master
+
 # install the plugins and build the static site
 gitbook install && gitbook build
 
