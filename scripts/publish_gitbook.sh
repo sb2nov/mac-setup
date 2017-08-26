@@ -36,8 +36,8 @@ git clean -fx _book
 # add all files
 git add .
 
-# commit
-git commit -a -m "Update docs"
+readonly HASH=$(git rev-parse --short HEAD)
+git commit -a -m "Deploy version with hash $HASH"
 
 # push to the origin
 git push origin gh-pages
