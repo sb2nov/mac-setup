@@ -32,5 +32,5 @@ while True:
 # Output to a text file
 file_output = HEADER + '\n'.join(contributors_list)
 
-with open("References/Contributors.md", "w") as text_file:
+with open("Contributors.md", "w") as text_file:
     text_file.write(file_output)
