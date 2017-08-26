@@ -1,3 +1,17 @@
+#!/bin/bash -e
+
+readonly commands=(python git gitbook cp)
+
+function is_available {
+  command -v $1 >/dev/null 2>&1 ||
+    { echo >&2 "I require $1 but it's not installed. Aborting."; exit 1; }
+}
+
+# Make sure all executables are available on $PATH
+for cmd in ${commands[@]}; do is_available "$cmd"; done
+
+echo "All required packages are available, will initialise publishing process"
+
 # Update contributors list
 python contributors.py
 git commit -a -m "Update contributors"
