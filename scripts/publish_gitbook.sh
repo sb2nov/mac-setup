@@ -10,37 +10,32 @@ function is_available {
 # Make sure all executables are available on $PATH
 for cmd in ${commands[@]}; do is_available "$cmd"; done
 
-echo "All required packages are available, will initialise publishing process"
+echo "All required packages are available, will continue"
 
-# Update contributors list
+echo "Updating list of contributors"
 python contributors.py
-git commit -a -m "Update contributors"
+git commit -a -m "Update list of contributors"
 git push origin master
+echo "Finished updating list of contributors"
 
-# install the plugins and build the static site
+echo "Building the guide using gitbook"
 gitbook install && gitbook build
 
-# checkout to the gh-pages branch
 git checkout gh-pages
-
-# pull the latest updates
 git pull origin gh-pages --rebase
 
-# copy the static site files into the current directory.
 cp -R _book/* .
 
-# remove 'node_modules' and '_book' directory
 git clean -fx node_modules
 git clean -fx _book
+echo "Finished building guide"
 
-# add all files
 git add .
 
 readonly HASH=$(git rev-parse --short HEAD)
 git commit -a -m "Deploy version with hash $HASH"
 
-# push to the origin
 git push origin gh-pages
-
-# checkout to the master branch
 git checkout master
+
+echo "Finished building and deploying new version of guide"
