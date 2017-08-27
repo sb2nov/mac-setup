@@ -13,7 +13,7 @@ for cmd in ${commands[@]}; do is_available "$cmd"; done
 echo "All required packages are available, will continue"
 
 echo "Updating list of contributors"
-python contributors.py
+python ./scripts/contributors.py
 git commit -a -m "Update list of contributors"
 git push origin master
 echo "Finished updating list of contributors"
