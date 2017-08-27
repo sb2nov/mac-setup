@@ -10,8 +10,7 @@
         "grunt-gh-pages": "0.9.1",
         "grunt-cli": "0.1.11",
         "gitbook": "0.6.0",
-        "grunt-http-server": "0.0.5",
-        "gitbook-plugin-autocover": "1.0.1"
+        "grunt-http-server": "0.0.5"
     },
     "devDependencies": {
         "grunt": "~0.4.2",
