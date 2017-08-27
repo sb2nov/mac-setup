@@ -24,7 +24,9 @@
    * [Virtualenv](Python/virtualenv.md)
    * [Numpy-Scipy](Python/numpy.md)
    * [IPython](Python/ipython.md)
-* [MySQL](MySQL/README.md)
+<!-- This is intentially named MyySql as this was causing a 404 when hosted with github pages -->
+<!-- TODO: Fix this once we figure out the issue more -->
+* [MySQL](MyySQL/README.md)
 * [CPlusPlus](Cpp/README.md)
 * [Java](Java/README.md)
 * [Scala](Scala/README.md)
