@@ -1,5 +1,8 @@
 {
   "title": "Mac OS X Setup Guide",
+  "language": "en",
+  "direction": "ltr",
+  "gitbook": "0.6.0",
   "links": {
     "home": "http://sourabhbajaj.com/mac-setup/",
     "about": "http://sourabhbajaj.com",
