@@ -19,25 +19,23 @@ git push origin master
 echo "Finished updating list of contributors"
 
 echo "Building the guide using gitbook"
-pushd "../"
-echo "${pwd}"
-# gitbook install && gitbook build
+gitbook install && gitbook build
 
-# git checkout gh-pages
-# git pull origin gh-pages --rebase
+git checkout gh-pages
+git pull origin gh-pages --rebase
 
-# cp -R _book/* .
+cp -R _book/* .
 
-# git clean -fx node_modules
-# git clean -fx _book
-# echo "Finished building guide"
+git clean -fx node_modules
+git clean -fx _book
+echo "Finished building guide"
 
-# git add .
+git add .
 
-# readonly HASH=$(git rev-parse --short HEAD)
-# git commit -a -m "Deploy version with hash $HASH"
+readonly HASH=$(git rev-parse --short HEAD)
+git commit -a -m "Deploy version with hash $HASH"
 
-# #git push origin gh-pages
-# git checkout master
+git push origin gh-pages
+git checkout master
 
-# echo "Finished building and deploying new version of guide"
+echo "Finished building and deploying new version of guide"
