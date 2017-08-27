@@ -4,4 +4,4 @@ deploy:
 	sh ./scripts/publish_gitbook.sh
 
 serve:
-	gitbook serve
+	./node_modules/.bin/gitbook serve
