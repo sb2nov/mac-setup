@@ -32,8 +32,8 @@ To connect with the command-line client, run:
 **Note**: By default, the MySQL user `root` has no password. It doesn't really matter for a local development database. If you wish to change it though, you can use `$ mysqladmin -u root password 'new-password'`.
 
 ## GUI Tool
-It is always nice to have a GUI tool for managing databases. For Mac, you can use [SequelPro](http://www.sequelpro.com/) to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development.
+It is always nice to have a GUI tool for managing databases. For Mac, you can use [Sequel Pro](http://www.sequelpro.com/) to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development.
 
-You may install SequelPro using [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
+You may install Sequel Pro using [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
 
     $ brew cask install sequel-pro
