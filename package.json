@@ -4,11 +4,11 @@
     "homepage": "https://www.sourabhbajaj.com/",
     "description": "Installing Development environment on Mac OS X",
     "devDependencies": {
+        "gitbook": "0.6.0",
         "grunt": "~0.4.2",
+        "grunt-cli": "0.1.11",
         "grunt-contrib-clean": "~0.5.0",
         "grunt-gh-pages": "0.9.1",
-        "grunt-cli": "0.1.11",
-        "gitbook": "0.6.0",
         "grunt-http-server": "0.0.5"
     },
     "bin": {
