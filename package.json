@@ -11,9 +11,6 @@
         "gitbook": "0.6.0",
         "grunt-http-server": "0.0.5"
     },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "bin": {
         "gitbook": "./bin/gitbook.js"
     },
