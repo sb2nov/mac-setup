@@ -32,11 +32,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sb2nov/mac-setup/issues"
-  },
-  "contributors": [
-    {
-      "name": "Sourabh Bajaj",
-      "email": "sourabh@sourabhbajaj.com"
-    }
-  ]
+  }
 }
