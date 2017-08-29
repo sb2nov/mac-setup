@@ -1,5 +1,5 @@
 # CPlusPlus
-Make sure you have installed XCode command line tools. Check the C++ version to make sure it is Clang 4.0+.
+Make sure you have installed [Xcode command line tools](http://sourabhbajaj.com/mac-setup/Xcode/). Check the C++ version to make sure it is Clang 4.0+.
 
     $ c++ --version
     Apple LLVM version 5.1 (clang-503.0.38) (based on LLVM 3.4svn)
