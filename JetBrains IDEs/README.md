@@ -19,7 +19,7 @@ Rename a method used all over your project with a few clicks, or change a method
 ## Useful Shortcuts
 * Search for a file -- `CMD + SHIFT + O`
 * Search for a string -- `CMD + SHIFT + F`
-* Search everything, press `SHIFT` three (3) times
+* Search everything, press `SHIFT` two (2) times
 * Context based action -- `ALT + ENTER` (this one is very contextual, you have to just try it out having your cursor in different places)
 * Refactor this -- `CTRL + T` (place your cursor on what you want to refactor)
 
