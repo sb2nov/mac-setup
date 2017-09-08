@@ -11,7 +11,7 @@ MacTeX includes additional programs such as an editor and a BibTeX reference man
 
 ### Option 1
 Download [MacTex](http://www.tug.org/mactex/).
-For more details about MaxTex [click Here](https://www.tug.org/mactex/What_Is_Installed.pdf).
+For more details about MacTex [click here](https://www.tug.org/mactex/What_Is_Installed.pdf).
 
 Since MaxTex installs an LaTex editor ([TexMaker](http://www.xm1math.net/texmaker/download.html)) already, installing another LaTeX editor is unnecessary.
 
