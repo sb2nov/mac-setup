@@ -20,5 +20,13 @@
       "top": 36,
       "bottom": 36
     }
+  },
+  "plugins": [
+    "analytics"
+  ],
+  "pluginsConfig": {
+    "analytics": {
+      "google": "UA-40495390-3"
+    }
   }
 }
