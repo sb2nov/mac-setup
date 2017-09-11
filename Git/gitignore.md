@@ -27,9 +27,10 @@ node_modules
 .sass-cache
 ```
 
-Or simply download [macOS specific .gitignore](https://github.com/github/gitignore/blob/master/Global/macOS.gitignore) maintained by GitHub itself and put contents of it to `~/.gitignore`.
+Or simply download the [OS X specific .gitignore](https://github.com/github/gitignore/blob/master/Global/macOS.gitignore) maintained by GitHub itself and put contents of it to `~/.gitignore`.
 
->**Note**: You can also download it using curl
->```
->curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
->```
+**Note**: You can also download it using curl and put it in the right place
+with this command:
+```sh
+curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
+```
