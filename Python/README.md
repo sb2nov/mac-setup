@@ -1,6 +1,6 @@
 # Python
 
-OS X, like Linux, ships with [Python](http://python.org/) already installed. But you don't want to mess with the system Python (some system tools rely on it, etc.), so we'll install our own version(s). There are two ways to install Python, (1) Homebrew and (2) Pyenv. If you plan to use multiple versions of Python (e.g. 2, 3, and anaconda) then you should use pyenv. 
+macOS, like Linux, ships with [Python](http://python.org/) already installed. But you don't want to mess with the system Python (some system tools rely on it, etc.), so we'll install our own version(s). There are two ways to install Python, (1) Homebrew and (2) Pyenv. If you plan to use multiple versions of Python (e.g. 2, 3, and anaconda) then you should use pyenv.
 
 ### Homebrew method
 
@@ -64,7 +64,7 @@ The `local` command will set local application-specific Python version(s) by wri
     $ cd path/to/directory
     $ pyenv local anaconda3-4.1.1
     $ pyenv rehash
-    $ pyenv versions 
+    $ pyenv versions
       system
       2.7.12
       3.5.2

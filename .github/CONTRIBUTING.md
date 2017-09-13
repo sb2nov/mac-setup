@@ -1,13 +1,13 @@
-# Contributing to Mac OS X Setup Guide
+# Contributing to macOS Setup Guide
 
-Contributions to Mac OS X Setup Guide are more than welcome.
+Contributions to macOS Setup Guide are more than welcome.
 
 ## License
 
-By contributing code to Mac OS X Setup Guide, you agree to license your
+By contributing code to macOS Setup Guide, you agree to license your
 contribution under the [MIT License](../LICENSE).
 
-## How to contribute to Mac OS X Setup Guide
+## How to contribute to macOS Setup Guide
 
 If you would like to submit a pull request, please base it on our
 [template](CONTRIBUTION_TEMPLATE.md). Not only does this make things easier for

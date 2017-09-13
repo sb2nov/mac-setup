@@ -2,7 +2,7 @@
 [Docker](https://docs.docker.com) is a platform for developers and sysadmins to develop, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you get your code tested and deployed into production as fast as possible.
 
 ## Docker for Mac
-Docker for Mac is the current release of Docker for OS X. Requirements:
+Docker for Mac is the current release of Docker for macOS. Requirements:
 - Mac must be 2010 or new model with Intel's hardware support for memory management unit (MMU, virtualization, and Unrestricted mode)
 - OS X El Capitan 10.11 and newer releases are supported
 - Virtualbox prior to version 4.3.30 are incompatible and CANNOT be installed on your system, use a newer version

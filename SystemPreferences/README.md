@@ -1,7 +1,7 @@
 # System Preferences
 First thing you should do is update the system. To do that go: **Apple menu () > About This Mac > Software Update.**
 
-Also upgrade your OS in case you want to work on the latest OS. OS X upgrades are usually free so you might as well keep your machine up to date.
+Also upgrade your OS in case you want to work on the latest OS. macOS upgrades are usually free so you might as well keep your machine up to date.
 
 If this is a new computer, there are a couple tweaks you could make to the System Preferences. **These settings are all optional, consider them suggestions.**
 

@@ -1,4 +1,4 @@
-[Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup) [![Build Status](https://travis-ci.org/sb2nov/mac-setup.svg?branch=master)](https://travis-ci.org/sb2nov/mac-setup)
+[macOS Setup Guide](http://sourabhbajaj.com/mac-setup) [![Build Status](https://travis-ci.org/sb2nov/mac-setup.svg?branch=master)](https://travis-ci.org/sb2nov/mac-setup)
 ====================
 
 This guide covers the basics of setting up a development environment on a new Mac. Whether you are an experienced programmer or not, this guide is intended for everyone to use as a reference for setting up your environment or installing a languages/libraries.
