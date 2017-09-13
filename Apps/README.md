@@ -42,7 +42,7 @@ Both of these tools can't compare in terms of features and user interface with t
 - [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from going into sleep mode.
 - [DoubleTwist](https://www.doubletwist.com/desktop/): Import your playlists, ratings, music and videos. Create new playlists to your heart's content. Rate your songs and videos. Play your music and videos and view all of your photos.
 - [Dropbox](https://www.dropbox.com/): File syncing to the cloud. It syncs files across all devices (laptop, mobile, tablet), and serves as a backup as well!
-- [F.lux](https://justgetflux.com/): f.lux makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day (If you are running OS X 10.12.4 or later there's native functionality called 'Night Shift' that does the same thing as f.lux, see System Preferences -> Displays -> Night Shift).
+- [F.lux](https://justgetflux.com/): f.lux makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day (If you are running macOS 10.12.4 or later there's native functionality called 'Night Shift' that does the same thing as f.lux, see System Preferences -> Displays -> Night Shift).
 - [Google Drive](https://drive.google.com/): File syncing to the cloud too! Google Docs is a popular tool to collaborate with others.
 - [Notebooks](http://www.notebooksapp.com/mac/): Notebooks for Mac allows you to share files with the mobile versions of Notebooks on the iPad and iPhone. And you can write notes in markdown.
 - [PDF Toolkit+](https://itunes.apple.com/us/app/pdf-toolkit-+/id545164971?mt=12): App to cut/split/merge pdfs easily. Really easy to use and works well.
@@ -56,17 +56,17 @@ Both of these tools can't compare in terms of features and user interface with t
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.
 
 ## Office Apps
-- [Keynote](http://www.apple.com/mac/keynote/): Create presentations on mac, this is supposed to be an alternate to PowerPoint.
+- [Keynote](http://www.apple.com/mac/keynote/): Create presentations on Mac, this is supposed to be an alternate to PowerPoint.
 - [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, PowerPoint and Outlook.
-- [Numbers](http://www.apple.com/mac/numbers/): Create spreadsheets on mac, this is supposed to be an alternate to Excel.
-- [Pages](http://www.apple.com/mac/pages/): Create text files on mac, this is supposed to be an alternate to Word.
+- [Numbers](http://www.apple.com/mac/numbers/): Create spreadsheets on Mac, this is supposed to be an alternate to Excel.
+- [Pages](http://www.apple.com/mac/pages/): Create text files on Mac, this is supposed to be an alternate to Word.
 
 ## Other
 - [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system.
 - [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
 - [Mou](http://25.io/mou/): Markdown editor for developers.
-- [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for OS X.
+- [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for macOS.
 - [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine in case of failure.
 - [TimeOut](http://www.dejal.com/timeout/): Scheduled work breaks to prevent stress injuries.
 - [VLC](http://www.videolan.org/vlc/index.html): VLC Media Player. Enough said.

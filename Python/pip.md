@@ -1,5 +1,5 @@
 # pip
-OS X comes with Python so there's a chance `pip` is already installed on your machine.
+macOS comes with Python so there's a chance `pip` is already installed on your machine.
 
 ## Installation
     $ curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
