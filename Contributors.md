@@ -11,7 +11,6 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [RabbitMC](https://github.com/RabbitMC)
 - [sebastianwebber](https://github.com/sebastianwebber)
 - [viniciusbig](https://github.com/viniciusbig)
-- [yiliangt5](https://github.com/yiliangt5)
 - [snood1205](https://github.com/snood1205)
 - [sdavara](https://github.com/sdavara)
 - [tychobrailleur](https://github.com/tychobrailleur)
