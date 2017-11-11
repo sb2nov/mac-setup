@@ -8,7 +8,7 @@ Docker for Mac is the current release of Docker for macOS. Requirements:
 - Virtualbox prior to version 4.3.30 are incompatible and CANNOT be installed on your system, use a newer version
 
 ### Installation
-Docker for Mac can be downloaded  [here](httpsL//https://docs.docker.com/docker-for-mac/install/).
+Docker for Mac can be downloaded  [here](https://docs.docker.com/docker-for-mac/install/).
 
 ## Docker Toolbox
 Docker Toolbox is a legacy desktop solution for older Mac and Windows systems that do not meet the requirements of [Docker for Mac](https://docs.docker.com/docker-for-mac/) and Docker for Windows.
