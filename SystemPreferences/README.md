@@ -60,7 +60,7 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Advanced commands in the terminal
 
-* Disable creation of .DS_Store files on network volumes by running: `$ defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
+* Disable [creation of .DS_Store files](https://support.apple.com/en-us/HT1629) on network volumes by running: `$ defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
 
 
 
