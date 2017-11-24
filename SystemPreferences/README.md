@@ -58,5 +58,9 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 * Search&gt; Change to DuckDuckGo
 * Privacy &gt; Cookies & Website data &gt; Allow from current website only
 
+### Advanced commands in the terminal
+
+* Disable creation of .DS_Store files on network volumes by running: `$ defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
+
 
 
