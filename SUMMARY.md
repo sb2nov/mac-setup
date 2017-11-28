@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [System Preferences](SystemPreferences/README.md)
+* [Security](Security/README.md)
 * [Apps](Apps/README.md)
   * [Octave](Apps/Octave.md)
   * [Settings](Apps/Settings.md)
@@ -33,12 +34,7 @@
   * [RubyGems](Ruby/RubyGems.md)
 * [Node.js](Node.js/README.md)
 * [Go](Go/README.md)
-* [Apps](Apps/README.md)
-  * [Octave](Apps/Octave.md)
-  * [Settings](Apps/Settings.md)
 * [Vagrant](Vagrant/README.md)
 * [Docker](Docker/README.md)
-* [LaTeX](LaTeX/README.md)
-* [Security](Security/README.md)
 * [References](References/README.md)
 
