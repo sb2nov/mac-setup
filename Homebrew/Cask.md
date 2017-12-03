@@ -29,7 +29,7 @@ $ brew cask install \
 Here are some useful apps that are available on Cask.
 
 ```sh
-$ brew cask install
+$ brew cask install \
     alfred \
     android-file-transfer \
     asepsis \
