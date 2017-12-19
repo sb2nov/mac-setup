@@ -27,43 +27,21 @@ $ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatc
 I'll now cover installation of the apps that I have mentioned in the apps section using cask.
 
 ```
-$ brew cask install alfred
-$ brew cask install asepsis (not working at Mac OS 10.11 & 10.12)
-$ brew cask install cleanmymac
-$ brew cask install caffeine
-$ brew cask install cheatsheet
-$ brew cask install dropbox
-$ brew cask install flux
-$ brew cask install 1password
-$ brew cask install spectacle
-$ brew cask install sublime-text
-$ brew cask install diffmerge
-$ brew cask install bartender
-$ brew cask install calibre
-$ brew cask install cleanmymac
-$ brew cask install cyberduck
-$ brew cask install fission
-$ brew cask install fluid
-$ brew cask install ipvanish-vpn
-$ brew cask install iterm2
-$ brew cask install mysqlworkbench
-$ brew cask install sketch
-$ brew cask install skitch
-$ brew cask install skype
-$ brew cask install spotify
-$ brew cask install dupeguru
-$ brew cask install shellcheck
+$ brew cask install alfred cleanmymac caffeine flux 1password spectacle sublime-text diffmerge bartender calibre cyberduck ipvanish-vpn iterm2 mysqlworkbench sketch spotify dupeguru
 ```
 #### Optional:
+
 ```
+$ brew cask install asepsis (Control creation of .DS_Store files, not working at Mac OS 10.11 & 10.12)
+$ brew cask install fission
+$ brew cask install fluid
+$ brew cask install skype
 $ brew cask install latexian
 $ brew cask install superduper
 $ brew cask install totalfinder
 $ brew cask install valentina-studio
 $ brew cask install vlc
 ```
-
-
 
 
 

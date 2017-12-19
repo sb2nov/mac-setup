@@ -10,29 +10,30 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 * Login Options-&gt; Change fast switching user menu to Icon
 * Set up Password, Apple id, Picture , etc.
 
-### ~~Trackpad~~
+### Accessibility
 
-* ~~Point & Click~~
-  * ~~Enable Tap to Click with one finger~~
-  * ~~Change secondary click to right corner~~
-  * ~~Uncheck three finger drag~~
-* ~~Scroll and Zoom~~
-  * ~~Uncheck all apart from Zoom in and out~~
+* Mouse & Trackpad &gt; Trackpad options &gt; Enable dragging &gt; Three finger drag
+
+### Trackpad
+
+* Point & Click
+  * Enable Tap to Click with one finger
+  * Change secondary click to right corner
 
 ### Dock
 
-* Check Automatically hid and show the Dock
+* Check Automatically hide and show the Dock
 * Make the size of Icons smaller
 
 ### Finder
 
-* Toolbar
-  * Update to add path, new folder and delete
-* Sidebar
+* View: Customize Toolbar
+  * Update to add path and new folder
+* Preferences: Sidebar
   * Add home and code directory
   * Remove shared and tags
   * New finder window to open in the home directory
-* Advanced: Search in the current folder
+* Preferences Advanced Search in the current folder
 
 ### Menubar
 
@@ -54,63 +55,13 @@ If this is a new computer, there are a couple tweaks you would like to make to t
 
 ### Safari
 
+* Autofill: Uncheck Passwords & Creditcards
 * Search&gt; Change to DuckDuckGo
 * Privacy &gt; Cookies & Website data &gt; Allow from current website only
 
-### ~~Write to NTFS on OSX Yosemite and El Capitan~~
+### Advanced commands in the terminal
 
-#### ~~Install Homebrew and Homebrew Cask~~
-
-* ~~Instructions ~~\[~~here~~\]\(~~[http://sourabhbajaj.com/mac-setup/Homebrew/README.html](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)~~\)~~!~~
-
-#### ~~Update Homebrew formulae:~~
-
-```
-$ brew update
-```
-
-#### ~~Install osxfuse~~
-
-* ~~If you are on OSX 10.11 \(El Capitan\), install the \(3.x.x\) from ~~\[~~[https://github.com/osxfuse/osxfuse/releases~~\]\(https://github.com/osxfuse/osxfuse/releases\)~~.~~](https://github.com/osxfuse/osxfuse/releases~~](https://github.com/osxfuse/osxfuse/releases)~~.~~)
-
-```
-$ brew cask install osxfuse
-```
-
-#### ~~Install ntfs-3g~~
-
-```
-$ brew install homebrew/fuse/ntfs-3g
-```
-
-#### ~~If you are on OSX 10.11 \(El Capitan\), temporary disable System Integrity Protection.~~
-
-* ~~**reboot** and hold CMD+R to get in recovery mode~~
-* ~~Open the terminal and type~~
-
-```
-$ csrutil disable
-```
-
-* ~~**reboot** normally~~
-
-#### ~~Create a symlink for mount\_ntfs~~
-
-```
-$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-$ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-```
-
-#### ~~If you are on OSX 10.11 \(El Capitan\), re-enable System Integrity Protection.~~
-
-* ~~**reboot** and hold CMD+R to get in recovery mode~~
-* ~~Open the terminal and type~~
-
-```
-$ csrutil enable
-```
-
-* ~~**reboot** normally~~
+* Disable [creation of .DS_Store files](https://support.apple.com/en-us/HT1629) on network volumes by running: `$ defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
 
 
 

@@ -6,30 +6,41 @@ We'll install `zsh` for all the features offered by `oh-my-zsh`. The installatio
 
 Install zsh and zsh completions using homebrew
 
-        brew install zsh zsh-completions
-
+```
+    brew install zsh zsh-completions
+```
 
 #### Oh My Zsh
+
 Install oh-my-zsh on top of zsh to get additional functionality
 
-        curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+```
+    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+```
 
 if you're still in the default shell, change default shell to zsh manually
 
-    chsh -s /usr/local/bin/zsh
+```
+chsh -s /usr/local/bin/zsh
+```
 
-edit the `.zshrc` by opening the file in a text editor: `$ open ~/.zshrc`
+edit the `.zshrc` by opening the file in a text editor: `$ open .zshrc`
 
-        ZSH_THEME=agnoster
+```
+    ZSH_THEME="agnoster"
 
-        plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+    plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
-        # Add env.sh
-        source ~/Projects/config/env.sh
+    # Add env.sh
+    alias envconfig=subl ~/Projects/config/env.sh
+    source ~/Projects/config/env.sh
+```
 
 ### env.sh
-Open the file from Finder and add this:
-~~~
+
+Create & open the file from Finder and add this:
+
+```
     #!/bin/zsh
 
     # PATH
@@ -55,4 +66,7 @@ Open the file from Finder and add this:
     # Use sublimetext for editing config files
     alias zshconfig="subl ~/.zshrc"
     alias envconfig="subl ~/Projects/config/env.sh"
-~~~
+```
+
+
+

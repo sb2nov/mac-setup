@@ -1,21 +1,25 @@
-# App Store
+# Apps \(Store\)
 
-Install the following apps:
+Manual:
 
+* Postman
+* Anylist
+* Omnifocus
+
+Install the following Apps from the App Store:
+
+* WhatsApp
 * 1Blocker
 * Mindnode
 * iA Writer
 * Airmail
+* Slack
 * Readkit
 * Skitch
 * Evernote
 * Pocket
 * DaisyDisk
-* Omnifocus
 * Readkit
 
-Manual:
-* Postman
-* Anylist
 
 
