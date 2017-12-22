@@ -39,6 +39,7 @@
 * [Vagrant](Vagrant/README.md)
 * [Docker](Docker/README.md)
     * [Useful Commands](Docker/UsefulCommands.md)
+    * [Tips and Tricks](Docker/TipsAndTricks.md)
 * [LaTeX](LaTeX/README.md)
 * [Other Apps](Apps/README.md)
    * [Octave](Apps/Octave.md)
