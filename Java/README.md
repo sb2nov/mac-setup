@@ -21,4 +21,8 @@ Add `JAVA_HOME` to your environment variables by adding the line below to your `
 
     export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
 
+If you are using Java 9, use the following:
+
+    export JAVA_HOME="`/usr/libexec/java_home -v 9`"
+
 You should have Java working now. Two popular IDE alternatives for writing Java are [Eclipse](https://www.eclipse.org/downloads/) or [IntelliJ](https://www.jetbrains.com/idea/download/).
