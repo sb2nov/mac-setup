@@ -4,10 +4,7 @@
 With Docker, developers can build any app in any language using any toolchain. “Dockerized” apps are completely portable and can run anywhere - colleagues’ macOS and Windows laptops, QA servers running Ubuntu in the cloud, and production data center VMs running Red Hat.
 
 ## Docker for Mac
-Docker for Mac is the current release of Docker for macOS. Requirements:
-- Mac must be 2010 or new model with Intel's hardware support for memory management unit (MMU, virtualization, and Unrestricted mode)
-- OS X El Capitan 10.11 and newer releases are supported
-- Virtualbox prior to version 4.3.30 are incompatible and CANNOT be installed on your system, use a newer version
+Docker for Mac is the current release of Docker for macOS.
 
 ### Installation
 Docker for Mac can be downloaded [here](https://docs.docker.com/docker-for-mac/install/).
