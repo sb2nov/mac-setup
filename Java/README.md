@@ -21,7 +21,7 @@ Add `JAVA_HOME` to your environment variables by adding the line below to your `
 
     export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
 
-Are you Java9 user? Use below instead of above.
+If you are using Java 9, use the following:
 
     export JAVA_HOME="`/usr/libexec/java_home -v 9`"
 
