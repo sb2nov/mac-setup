@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vim · macOS Setup Guide</title>
+        <title>Tips and Tricks · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SublimeText/" />
+    <link rel="next" href="../LaTeX/" />
     
     
-    <link rel="prev" href="../Git/gitignore.html" />
+    <link rel="prev" href="UsefulCommands.html" />
     
 
     </head>
@@ -273,9 +273,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.7" data-path="../Vim/">
             
-                <a href="./">
+                <a href="../Vim/">
             
                     
                     Vim
@@ -577,9 +577,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20" data-path="../Docker/">
+        <li class="chapter " data-level="1.20" data-path="./">
             
-                <a href="../Docker/">
+                <a href="./">
             
                     
                     Docker
@@ -591,9 +591,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../Docker/UsefulCommands.html">
+        <li class="chapter " data-level="1.20.1" data-path="UsefulCommands.html">
             
-                <a href="../Docker/UsefulCommands.html">
+                <a href="UsefulCommands.html">
             
                     
                     Useful Commands
@@ -604,9 +604,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.2" data-path="../Docker/TipsAndTricks.html">
+        <li class="chapter active" data-level="1.20.2" data-path="TipsAndTricks.html">
             
-                <a href="../Docker/TipsAndTricks.html">
+                <a href="TipsAndTricks.html">
             
                     
                     Tips and Tricks
@@ -749,7 +749,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Vim</a>
+        <a href=".." >Tips and Tricks</a>
     </h1>
 </div>
 
@@ -764,43 +764,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vim">Vim</h1>
-<p><a href="http://www.vim.org/" target="_blank">Vim</a> is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &quot;vi&quot; with most UNIX systems and with Apple macOS.</p>
-<h2 id="installation">Installation</h2>
-<p>To install the latest version, use homebrew:</p>
-<pre><code class="lang-bash">brew install vim
+                                <h1 id="docker-tips-and-tricks">Docker Tips and Tricks</h1>
+<p>A collection of useful tips and tricks for Docker.</p>
+<h2 id="delete-all-containers">Delete all containers</h2>
+<p><strong>NOTE:</strong> This will remove ALL your containers.</p>
+<pre><code class="lang-sh">docker rm $(docker ps <span class="hljs-_">-a</span> -q)
 </code></pre>
-<h2 id="the-ultimate-vimrc">The Ultimate vimrc</h2>
-<p><a href="https://github.com/amix/vimrc" target="_blank">The Ultimate vimrc</a> it&apos;s a collection of vimrc configurations to make easy the usage of vim.</p>
-<p>To download the The Ultimate vimrc, you need to install the git client. If you need install it, use home brew:</p>
-<pre><code class="lang-bash">brew install git
+<h2 id="delete-all-untagged-containers">Delete all untagged containers</h2>
+<pre><code class="lang-sh">docker rmi $(docker images | grep <span class="hljs-string">&apos;^&lt;none&gt;&apos;</span> | awk <span class="hljs-string">&apos;{print $3}&apos;</span>)
 </code></pre>
-<p>Now, download the vimrc files:</p>
-<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/amix/vimrc.git ~/.vim_runtime
+<h2 id="see-all-space-docker-take-up">See all space Docker take up</h2>
+<pre><code class="lang-sh">docker system df
 </code></pre>
-<p>To install the complete version, run:</p>
-<pre><code class="lang-bash">sh ~/.vim_runtime/install_awesome_vimrc.sh
+<h2 id="get-ip-address-of-running-container">Get IP address of running container</h2>
+<pre><code class="lang-sh">docker inspect [CONTAINER ID] | grep -wm1 IPAddress | cut <span class="hljs-_">-d</span> <span class="hljs-string">&apos;&quot;&apos;</span> <span class="hljs-_">-f</span> 4
 </code></pre>
-<p>To install the <em>basic</em> version, run:</p>
-<pre><code class="lang-bash">sh ~/.vim_runtime/install_basic_vimrc.sh
+<h2 id="kill-all-running-containers">Kill all running containers</h2>
+<pre><code class="lang-sh">docker <span class="hljs-built_in">kill</span> $(docker ps -q)
 </code></pre>
-<h3 id="update">Update</h3>
-<p>To update the vimrc scripts, run:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> ~/.vim_runtime &amp;&amp; git pull --rebase &amp;&amp; <span class="hljs-built_in">cd</span> -
-</code></pre>
-<h2 id="maximum-awesome">Maximum Awesome</h2>
-<p><a href="https://github.com/square/maximum-awesome" target="_blank">Maximum Awesome</a> it&apos;s a collection of vim configuration and plugins, like a configuration manager for the vim environment.</p>
-<h3 id="installation">Installation</h3>
-<p>To install it, just make a clone of the repository with the git client:</p>
-<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/square/maximum-awesome.git
-</code></pre>
-<p>Then install it:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> maximum-awesome
-rake
-</code></pre>
-<blockquote>
-<p><strong>NOTE:</strong> the rake command will install all dependencies needed.</p>
-</blockquote>
+<p>Got more tips and tricks? Submit a PR!</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -828,12 +810,12 @@ rake
 
             
                 
-                <a href="../Git/gitignore.html" class="navigation navigation-prev " aria-label="Previous page: Git Ignore">
+                <a href="UsefulCommands.html" class="navigation navigation-prev " aria-label="Previous page: Useful Commands">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SublimeText/" class="navigation navigation-next " aria-label="Next page: Sublime Text">
+                <a href="../LaTeX/" class="navigation navigation-next " aria-label="Next page: LaTeX">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -844,7 +826,7 @@ rake
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vim","level":"1.7","depth":1,"next":{"title":"Sublime Text","level":"1.8","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.8.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.8.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.8.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.8.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Vim/README.md","mtime":"2017-11-05T14:26:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-26T16:53:17.038Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tips and Tricks","level":"1.20.2","depth":2,"next":{"title":"LaTeX","level":"1.21","depth":1,"path":"LaTeX/README.md","ref":"LaTeX/README.md","articles":[]},"previous":{"title":"Useful Commands","level":"1.20.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Docker/TipsAndTricks.md","mtime":"2017-12-22T20:17:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-26T16:53:17.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

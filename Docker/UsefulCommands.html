@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vim · macOS Setup Guide</title>
+        <title>Useful Commands · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../SublimeText/" />
+    <link rel="next" href="TipsAndTricks.html" />
     
     
-    <link rel="prev" href="../Git/gitignore.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -273,9 +273,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.7" data-path="../Vim/">
             
-                <a href="./">
+                <a href="../Vim/">
             
                     
                     Vim
@@ -577,9 +577,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20" data-path="../Docker/">
+        <li class="chapter " data-level="1.20" data-path="./">
             
-                <a href="../Docker/">
+                <a href="./">
             
                     
                     Docker
@@ -591,9 +591,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.20.1" data-path="../Docker/UsefulCommands.html">
+        <li class="chapter active" data-level="1.20.1" data-path="UsefulCommands.html">
             
-                <a href="../Docker/UsefulCommands.html">
+                <a href="UsefulCommands.html">
             
                     
                     Useful Commands
@@ -604,9 +604,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20.2" data-path="../Docker/TipsAndTricks.html">
+        <li class="chapter " data-level="1.20.2" data-path="TipsAndTricks.html">
             
-                <a href="../Docker/TipsAndTricks.html">
+                <a href="TipsAndTricks.html">
             
                     
                     Tips and Tricks
@@ -749,7 +749,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Vim</a>
+        <a href=".." >Useful Commands</a>
     </h1>
 </div>
 
@@ -764,43 +764,116 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vim">Vim</h1>
-<p><a href="http://www.vim.org/" target="_blank">Vim</a> is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as &quot;vi&quot; with most UNIX systems and with Apple macOS.</p>
-<h2 id="installation">Installation</h2>
-<p>To install the latest version, use homebrew:</p>
-<pre><code class="lang-bash">brew install vim
+                                <h1 id="useful-docker-commands">Useful Docker Commands</h1>
+<p>Here follows a list of useful Docker commands with useful flags for each
+command.</p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li><a href="#docker-build"><code>docker build</code></a></li>
+<li><a href="#docker-exec"><code>docker exec</code></a></li>
+<li><a href="#docker-images"><code>docker images</code></a></li>
+<li><a href="#docker-inspect"><code>docker inspect</code></a></li>
+<li><a href="#docker-logs"><code>docker logs</code></a></li>
+<li><a href="#docker-ps"><code>docker ps</code></a></li>
+<li><a href="#docker-rmi"><code>docker rmi</code></a></li>
+<li><a href="#docker-run"><code>docker run</code></a></li>
+<li><a href="#learn-more">Learn More</a></li>
+</ol>
+<h2 id="docker-build"><a href="https://docs.docker.com/engine/reference/commandline/build/" target="_blank"><code>docker build</code></a></h2>
+<p>Build an image from a Dockerfile.</p>
+<pre><code class="lang-sh">docker build [DOCKERFILE PATH]
 </code></pre>
-<h2 id="the-ultimate-vimrc">The Ultimate vimrc</h2>
-<p><a href="https://github.com/amix/vimrc" target="_blank">The Ultimate vimrc</a> it&apos;s a collection of vimrc configurations to make easy the usage of vim.</p>
-<p>To download the The Ultimate vimrc, you need to install the git client. If you need install it, use home brew:</p>
-<pre><code class="lang-bash">brew install git
+<h3 id="example">Example</h3>
+<p>Build an image tagged <code>my-org/my-image</code> where the Dockerfile can be found at
+<code>/tmp/Dockerfile</code>.</p>
+<pre><code class="lang-sh">docker build -t my-org:my-image <span class="hljs-_">-f</span> /tmp/Dockerfile
 </code></pre>
-<p>Now, download the vimrc files:</p>
-<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/amix/vimrc.git ~/.vim_runtime
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>--file -f</code> Path where to find the Dockerfile</li>
+<li><code>--force-rm</code> Always remove intermediate containers</li>
+<li><code>--no-cache</code> Do not use cache when building the image</li>
+<li><code>--rm</code> Remove intermediate containers after a successful build (this is
+<code>true</code>) by default</li>
+<li><code>--tag -t</code> Name and optionally a tag in the &#x2018;name:tag&#x2019; format</li>
+</ul>
+<h2 id="docker-exec"><a href="https://docs.docker.com/engine/reference/commandline/exec/" target="_blank"><code>docker exec</code></a></h2>
+<p>Execute a command inside a <strong>running</strong> container.</p>
+<pre><code class="lang-sh">docker <span class="hljs-built_in">exec</span> [CONTAINER ID]
 </code></pre>
-<p>To install the complete version, run:</p>
-<pre><code class="lang-bash">sh ~/.vim_runtime/install_awesome_vimrc.sh
+<h3 id="example">Example</h3>
+<pre><code class="lang-sh">docker <span class="hljs-built_in">exec</span> [CONTAINER ID] touch /tmp/<span class="hljs-built_in">exec</span>_works
 </code></pre>
-<p>To install the <em>basic</em> version, run:</p>
-<pre><code class="lang-bash">sh ~/.vim_runtime/install_basic_vimrc.sh
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>--detach -d</code> Detached mode: run command in the background</li>
+<li><code>-it</code> This will not make the container you started shut down immediately, as
+it will create a pseudo-TTY session (<code>-t</code>) and keep STDIN open (<code>-i</code>)</li>
+</ul>
+<h2 id="docker-images"><a href="https://docs.docker.com/engine/reference/commandline/images/" target="_blank"><code>docker images</code></a></h2>
+<p>List all downloaded/created images.</p>
+<pre><code class="lang-sh">docker images
 </code></pre>
-<h3 id="update">Update</h3>
-<p>To update the vimrc scripts, run:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> ~/.vim_runtime &amp;&amp; git pull --rebase &amp;&amp; <span class="hljs-built_in">cd</span> -
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>-q</code> Only show numeric IDs</li>
+</ul>
+<h2 id="docker-inspect"><a href="https://docs.docker.com/engine/reference/commandline/inspect" target="_blank"><code>docker inspect</code></a></h2>
+<p>Shows all the info of a container.</p>
+<pre><code class="lang-sh">docker inspect [CONTAINER ID]
 </code></pre>
-<h2 id="maximum-awesome">Maximum Awesome</h2>
-<p><a href="https://github.com/square/maximum-awesome" target="_blank">Maximum Awesome</a> it&apos;s a collection of vim configuration and plugins, like a configuration manager for the vim environment.</p>
-<h3 id="installation">Installation</h3>
-<p>To install it, just make a clone of the repository with the git client:</p>
-<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/square/maximum-awesome.git
+<h2 id="docker-logs"><a href="https://docs.docker.com/engine/reference/commandline/logs/" target="_blank"><code>docker logs</code></a></h2>
+<p>Gets logs from container.</p>
+<pre><code class="lang-sh">docker logs [CONTAINER ID]
 </code></pre>
-<p>Then install it:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> maximum-awesome
-rake
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>--details</code> Log extra details</li>
+<li><code>--follow -f</code> Follow log output. Do not stop when end of file is reached, but
+rather wait for additional data to be appended to the input.</li>
+<li><code>--timestamps -t</code> Show timestamps</li>
+</ul>
+<h2 id="docker-ps"><a href="https://docs.docker.com/engine/reference/commandline/ps/" target="_blank"><code>docker ps</code></a></h2>
+<p>Shows information about all running containers.</p>
+<pre><code class="lang-sh">docker ps
 </code></pre>
-<blockquote>
-<p><strong>NOTE:</strong> the rake command will install all dependencies needed.</p>
-</blockquote>
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>--all -a</code> Show all containers (default shows just running)</li>
+<li><code>--filter -f</code> Filter output based on conditions provided, <code>docker ps -f=&quot;name=&quot;example&quot;</code></li>
+<li><code>--quiet -q</code> Only display numeric IDs</li>
+</ul>
+<h2 id="docker-rmi"><a href="https://docs.docker.com/engine/reference/commandline/rmi/" target="_blank"><code>docker rmi</code></a></h2>
+<p>Remove one or more images.</p>
+<pre><code class="lang-sh">docker rmi [IMAGE ID]
+</code></pre>
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>--force -f</code> Force removal of the image</li>
+</ul>
+<h2 id="docker-run"><a href="https://docs.docker.com/engine/reference/commandline/run/" target="_blank"><code>docker run</code></a></h2>
+<p>Creates and starts a container in one operation. Could be used to execute a
+single command as well as start a long-running container.</p>
+<p>Example:</p>
+<pre><code class="lang-sh">docker run -it ubuntu:latest /bin/bash
+</code></pre>
+<p>This will start a ubuntu container with the entrypoint <code>/bin/bash</code>. Note that
+if you do not have the <code>ubuntu</code> image downloaded it will download it before
+running it.</p>
+<h3 id="useful-flags">Useful flags</h3>
+<ul>
+<li><code>-it</code> This will not make the container you started shut down immediately, as
+it will create a pseudo-TTY session (<code>-t</code>) and keep STDIN open (<code>-i</code>)</li>
+<li><code>--rm</code> Automatically remove the container when it exit. Otherwise it will be
+stored and visible running <code>docker ps -a</code>.</li>
+<li><code>--detach -d</code> Run container in background and print container ID</li>
+<li><code>--volume -v</code> Bind mount a volume. Useful for accessing folders on your local
+disk inside your docker container, like configuration files or storage that
+should be persisted (database, logs etc.).</li>
+</ul>
+<h2 id="learn-more">Learn More</h2>
+<p>A list of more useful Docker commands can be found in the
+<a href="https://github.com/wsargent/docker-cheat-sheet" target="_blank">docker-cheat-sheet</a>.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -828,12 +901,12 @@ rake
 
             
                 
-                <a href="../Git/gitignore.html" class="navigation navigation-prev " aria-label="Previous page: Git Ignore">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Docker">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../SublimeText/" class="navigation navigation-next " aria-label="Next page: Sublime Text">
+                <a href="TipsAndTricks.html" class="navigation navigation-next " aria-label="Next page: Tips and Tricks">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -844,7 +917,7 @@ rake
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vim","level":"1.7","depth":1,"next":{"title":"Sublime Text","level":"1.8","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.8.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.8.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.8.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.8.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Vim/README.md","mtime":"2017-11-05T14:26:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-26T16:53:17.038Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Useful Commands","level":"1.20.1","depth":2,"next":{"title":"Tips and Tricks","level":"1.20.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]},"previous":{"title":"Docker","level":"1.20","depth":1,"path":"Docker/README.md","ref":"Docker/README.md","articles":[{"title":"Useful Commands","level":"1.20.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},{"title":"Tips and Tricks","level":"1.20.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Docker/UsefulCommands.md","mtime":"2017-12-22T20:17:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-26T16:53:17.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
