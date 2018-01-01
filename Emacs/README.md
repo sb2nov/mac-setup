@@ -75,9 +75,9 @@ brew linkapps emacs-plus
 16. <code>--HEAD</code>: Install HEAD version<br>
 </details>
 
-> Note: You might want to install [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) if you are using Emacs plus. It takes care of your environment variables.
+> **Note**: You might want to install [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) if you are using Emacs plus. It takes care of your environment variables.
 
-> Note: to have the title bar match your theme background color, consider using instead:
+> **Note**: to have the title bar match your theme background color, consider using instead:
 > `brew install emacs-plus --HEAD --with-natural-title-bars`
 
 ## Spacemacs
@@ -133,7 +133,7 @@ Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix 
 
 ## Purcell's Emacs configuration
 
-This is [Purcell's](https://github.com/purcell/emacs.d) emacs configuration tree, continually used and tweaked since 2000, and it may be a good starting point for other Emacs users, especially those who are web developers. These days it's somewhat geared towards OS X, but it is known to also work on Linux and Windows.
+This is [Purcell's](https://github.com/purcell/emacs.d) emacs configuration tree, continually used and tweaked since 2000, and it may be a good starting point for other Emacs users, especially those who are web developers. These days it's somewhat geared towards macOS, but it is known to also work on Linux and Windows.
 
 ### Installation
 
@@ -147,7 +147,7 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ## Doom Emacs
 
-[Doom](https://github.com/hlissner/doom-emacs) is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn’t originally intended for public use, but can be considered a hacker’s starter kit.
+[Doom](https://github.com/hlissner/doom-emacs) is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn't originally intended for public use, but can be considered a hacker's starter kit.
 
 ### Installation
 
