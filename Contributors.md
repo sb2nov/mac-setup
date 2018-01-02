@@ -1,8 +1,8 @@
 # Contributors
 Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [Github Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
 
-- [sb2nov](https://github.com/sb2nov)
 - [simeg](https://github.com/simeg)
+- [sb2nov](https://github.com/sb2nov)
 - [nicolashery](https://github.com/nicolashery)
 - [Kyslik](https://github.com/Kyslik)
 - [hugovk](https://github.com/hugovk)
@@ -20,6 +20,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [yiliangt5](https://github.com/yiliangt5)
 - [adolgiy](https://github.com/adolgiy)
 - [at15](https://github.com/at15)
+- [hisabimbola](https://github.com/hisabimbola)
 - [Switchxa](https://github.com/Switchxa)
 - [neo1691](https://github.com/neo1691)
 - [GuGuss](https://github.com/GuGuss)
@@ -30,6 +31,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [deyton](https://github.com/deyton)
 - [einert](https://github.com/einert)
 - [Falkirks](https://github.com/Falkirks)
+- [fpinzn](https://github.com/fpinzn)
 - [Frederick-S](https://github.com/Frederick-S)
 - [pgilad](https://github.com/pgilad)
 - [sspkmnd](https://github.com/sspkmnd)
@@ -47,8 +49,10 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [rkday](https://github.com/rkday)
 - [sahildua2305](https://github.com/sahildua2305)
 - [sofyanhadia](https://github.com/sofyanhadia)
+- [ztlevi](https://github.com/ztlevi)
 - [ValentinTrinque](https://github.com/ValentinTrinque)
 - [OmgImAlexis](https://github.com/OmgImAlexis)
+- [Nkzn](https://github.com/Nkzn)
 - [anthuan44](https://github.com/anthuan44)
 - [jsingh-coursera](https://github.com/jsingh-coursera)
 - [marfarma](https://github.com/marfarma)
