@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Zsh · macOS Setup Guide</title>
+        <title>Emacs · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tree.html" />
+    <link rel="next" href="../SublimeText/" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="../Vim/" />
     
 
     </head>
@@ -170,9 +170,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../iTerm/">
             
-                <a href="./">
+                <a href="../iTerm/">
             
                     
                     iTerm2
@@ -184,9 +184,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="zsh.html">
+        <li class="chapter " data-level="1.5.1" data-path="../iTerm/zsh.html">
             
-                <a href="zsh.html">
+                <a href="../iTerm/zsh.html">
             
                     
                     Zsh
@@ -197,9 +197,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="tree.html">
+        <li class="chapter " data-level="1.5.2" data-path="../iTerm/tree.html">
             
-                <a href="tree.html">
+                <a href="../iTerm/tree.html">
             
                     
                     tree
@@ -210,9 +210,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="fzf.html">
+        <li class="chapter " data-level="1.5.3" data-path="../iTerm/fzf.html">
             
-                <a href="fzf.html">
+                <a href="../iTerm/fzf.html">
             
                     
                     fzf
@@ -223,9 +223,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="ack.html">
+        <li class="chapter " data-level="1.5.4" data-path="../iTerm/ack.html">
             
-                <a href="ack.html">
+                <a href="../iTerm/ack.html">
             
                     
                     ack
@@ -286,9 +286,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../Emacs/">
+        <li class="chapter active" data-level="1.8" data-path="./">
             
-                <a href="../Emacs/">
+                <a href="./">
             
                     
                     Emacs
@@ -762,7 +762,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Zsh</a>
+        <a href=".." >Emacs</a>
     </h1>
 </div>
 
@@ -777,83 +777,129 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="zsh">Zsh</h1>
-<p>We&apos;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intuitive. We will also create the file <code>env.sh</code>, it is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc. and you can find it at the bottom of this page.</p>
-<h2 id="zsh">Zsh</h2>
-<p>Install zsh and zsh-completions using Homebrew:</p>
-<pre><code>$ brew install zsh zsh-completions
-</code></pre><p>At this point you can customize your shell by using one of two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. You should follow one of the two sections below.</p>
-<h3 id="install-prezto">Install Prezto</h3>
-<p>Install prezto on top of zsh to get additional functionality:</p>
-<pre><code>$ git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
-</code></pre><p>Next create <code>~/.zshrc</code> file by running:</p>
-<pre><code class="lang-sh"><span class="hljs-built_in">setopt</span> EXTENDED_GLOB
-<span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>&quot;</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
-  ln <span class="hljs-_">-s</span> <span class="hljs-string">&quot;<span class="hljs-variable">$rcfile</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>&quot;</span>
-<span class="hljs-keyword">done</span>
+                                <h1 id="emacs">Emacs</h1>
+<p><a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> is a family of text editors that are characterized by their extensibility. The manual for the most widely used variant, GNU Emacs, describes it as the extensible, customizable, self-documenting, real-time display editor.</p>
+<p>Development of the first Emacs began in the mid-1970s, and work on its direct descendant, GNU Emacs, continues actively as of 2017.</p>
+<h2 id="installation">Installation</h2>
+<p>There are many Emacs clients on macOS. The recommended version on macOS is Emacs Mac Port, but others are good as well.</p>
+<h3 id="emacs-mac-port-recommended"><a href="https://bitbucket.org/mituharu/emacs-mac/overview" target="_blank">Emacs Mac port</a> (Recommended)</h3>
+<p>Many useful features are built with Emacs Mac Port, e.g. environment variables, full screen, visual enhancements and so on.</p>
+<p>Link the homebrew tap first.</p>
+<pre><code class="lang-shell">brew tap railwaycat/emacsmacport
 </code></pre>
-<p>Add modules to Prezto by editing <code>~/.zpreztorc</code> and adding:</p>
-<pre><code class="lang-sh"><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:load&apos;</span> pmodule \
-  <span class="hljs-string">&apos;environment&apos;</span> \
-  <span class="hljs-string">&apos;terminal&apos;</span> \
-  <span class="hljs-string">&apos;editor&apos;</span> \
-  <span class="hljs-string">&apos;history&apos;</span> \
-  <span class="hljs-string">&apos;directory&apos;</span> \
-  <span class="hljs-string">&apos;spectrum&apos;</span> \
-  <span class="hljs-string">&apos;utility&apos;</span> \
-  <span class="hljs-string">&apos;completion&apos;</span> \
-  <span class="hljs-string">&apos;git&apos;</span> \
-  <span class="hljs-string">&apos;syntax-highlighting&apos;</span> \
-  <span class="hljs-string">&apos;history-substring-search&apos;</span> \
-  <span class="hljs-string">&apos;prompt&apos;</span>
-
-<span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:module:prompt&apos;</span> theme <span class="hljs-string">&apos;paradox&apos;</span>
+<ul>
+<li><p>Method 1: Install with brew cask</p>
+<pre><code class="lang-shell">brew cask install emacs-mac
 </code></pre>
-<h3 id="install-oh-my-zsh">Install Oh My Zsh</h3>
-<p><strong>Note</strong>: You don&apos;t need this section if you installed <code>Prezto</code>.</p>
-<p>Install Oh My Zsh on top of zsh to get additional functionality:</p>
-<pre><code>$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-</code></pre><p>If you&apos;re still in the default shell, change default shell to zsh manually:</p>
-<pre><code>$ chsh -s /usr/local/bin/zsh
-</code></pre><p>Add plugins (they are all optional but recommended) to Oh My Zsh and use theme by editing <code>~/.zshrc</code> and adding:</p>
-<pre><code>ZSH_THEME=pygmalion
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-</code></pre><h2 id="envsh">env.sh</h2>
-<p>To include <code>env.sh</code>, open <code>~/.zshrc</code> and add the following:</p>
-<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/&lt;path to file&gt;/env.sh
+<p>There are three available versions, <code>emacs-mac</code>, <code>emacs-mac-official-icon</code>, <code>emacs-mac-spacemacs-icon</code>.</p>
+</li>
+<li><p>Method 2: Built from source with homebrew.</p>
+<pre><code class="lang-shell">brew install emacs-mac [options]
+brew linkapps emacs-mac
 </code></pre>
-<p>This file comes with some pre-defined settings, <strong>they are all optional</strong>. Please review them before you use them as your configuration.</p>
-<pre><code>#!/bin/zsh
+</li>
+</ul>
+<details>
+<summary>Click here to see available options: </summary>
+1. <code>--with-dbus</code>, Build with d-bus support<br>
+2. <code>--with-modules</code>, Build with dynamic modules support<br>
+3. <code>--with-xml2</code>, Build with libxml2 support<br>
+4. <code>--with-ctags</code>, Don&apos;t remove the ctags executable that emacs provides<br>
+5. <code>--with-no-title-bars</code>, Build with a patch for no title bars on frames (--HEAD is not supported)<br>
+6. <code>--with-natural-title-bar</code>, Build with a patch for title bar color inferred by your theme (--HEAD is not supported). More info is provided <a href="https://github.com/railwaycat/homebrew-emacsmacport/wiki/Natural-Title-Bar" target="_blank">here</a><br>
+7. <code>--with-official-icon</code>, Using offical Emacs icon<br>
+8. <code>--with-modern-icon</code>, Using a modern style Emacs icon by @tpanum<br>
+9. <code>--with-spacemacs-icon</code>, Using the spacemacs Emacs icon by Nasser Alshammari<br>
+10. <code>--with-icon-for-documents</code>, Using official icon for documents which default open with Emacs<br>
+</details>
 
-# PATH
-export PATH=&quot;/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
-export EDITOR=&apos;subl -w&apos;
-# export PYTHONPATH=$PYTHONPATH
-# export MANPATH=&quot;/usr/local/man:$MANPATH&quot;
+<h3 id="emacs-plus"><a href="https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus" target="_blank">Emacs plus</a></h3>
+<pre><code class="lang-shell">brew tap d12frosted/emacs-plus
+brew install emacs-plus [options]
+brew linkapps emacs-plus
+</code></pre>
+<details>
+<summary>Click here to see available options: </summary>
+1. <code>--with-24bit-color</code>: Experimental: build with 24 bit color support<br>
+2. <code>--with-ctags</code>: Don&apos;t remove the ctags executable that Emacs provides<br>
+3. <code>--with-dbus</code>: Build with dbus support<br>
+4. <code>--with-mailutils</code>: Build with mailutils support<br>
+5. <code>--with-natural-title-bar</code>: Experimental: use a title bar colour inferred by your theme<br>
+6. <code>--with-no-title-bars</code>: Experimental: build with a patch for no title bars on frames (--HEAD has this built-in via undecorated flag)<br>
+7. <code>--with-x11</code>: Experimental: build with x11 support<br>
+8. <code>--without-cocoa</code>: Build a non-Cocoa version of Emacs<br>
+9. <code>--without-gnutls</code>: Build without gnutls support<br>
+10. <code>--without-imagemagick@6</code>: Build without imagemagick@6 support<br>
+11. <code>--without-librsvg</code>: Build without librsvg support<br>
+12. <code>--without-libxml2</code>: Build without libxml2 support<br>
+13. <code>--without-modules</code>: Build without dynamic modules support<br>
+14. <code>--without-multicolor-fonts</code>: Build without a patch that enables multicolor font support<br>
+15. <code>--without-spacemacs-icon</code>: Build without Spacemacs icon by Nasser Alshammari<br>
+16. <code>--HEAD</code>: Install HEAD version<br>
+</details>
 
-# Virtual Environment
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
-
-# Owner
-export USER_NAME=&quot;YOUR NAME&quot;
-eval &quot;$(rbenv init -)&quot;
-
-# FileSearch
-function f() { find . -iname &quot;*$1*&quot; ${@:2} }
-function r() { grep &quot;$1&quot; ${@:2} -R . }
-
-#mkdir and cd
-function mkcd() { mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$_&quot;; }
-
-# Aliases
-alias cppcompile=&apos;c++ -std=c++11 -stdlib=libc++&apos;
-
-# Use sublimetext for editing config files
-alias zshconfig=&quot;subl ~/.zshrc&quot;
-alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+<blockquote>
+<p><strong>Note</strong>: You might want to install <a href="https://github.com/purcell/exec-path-from-shell" target="_blank">exec-path-from-shell</a> if you are using Emacs plus. It takes care of your environment variables.</p>
+<p><strong>Note</strong>: to have the title bar match your theme background color, consider using instead:
+<code>brew install emacs-plus --HEAD --with-natural-title-bars</code></p>
+</blockquote>
+<h2 id="spacemacs">Spacemacs</h2>
+<p><a href="https://github.com/syl20bnr/spacemacs/blob/master/README.md" target="_blank">Spacemacs</a> is a new way to experience Emacs -- a sophisticated and polished set-up focused on ergonomics, mnemonics and consistency.</p>
+<p>Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix the two editing styles. Switching easily between input styles makes Spacemacs a great tool for pair-programming.</p>
+<h3 id="installation">Installation</h3>
+<ol>
+<li><p>If you have an existing Emacs configuration, back it up first:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> ~
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak
+</code></pre>
+<p>Don&apos;t forget to backup and <em>remove</em> <code>~/.emacs</code> file otherwise Spacemacs
+<strong>WILL NOT</strong> load since that file prevents Emacs from loading the proper
+initialization file.</p>
+</li>
+<li><p>Clone the repository:</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/syl20bnr/spacemacs ~/.emacs.d
+</code></pre>
+<p><code>master</code> is the stable branch and it is <em>immutable</em>, <strong>DO NOT</strong> make any
+modification to it or you will break the update mechanism. If you want to
+fork Spacemacs safely use the <code>develop</code> branch where you handle the update
+manually.</p>
+</li>
+<li><p>(Optional) Install the [Source Code Pro][] font.</p>
+<p>If you are running in terminal you&apos;ll also need to change font settings of
+your terminal.</p>
+</li>
+<li><p>Launch Emacs. Spacemacs will automatically install the packages it requires.
+If you get an error regarding package downloads then you may try to disable
+the HTTPS protocol by starting Emacs with</p>
+<pre><code class="lang-sh">emacs --insecure
+</code></pre>
+<p>Or you can set the <code>dotspacemacs-elpa-https</code> to <code>nil</code> in your dotfile to
+remove the need to start Emacs with <code>--insecure</code> argument. You may wish to
+clear out your <code>.emacs.d/elpa</code> directory before doing this, so that any
+corrupted packages you may have downloaded will be re-installed.</p>
+</li>
+<li><p>Restart Emacs to complete the installation.</p>
+</li>
+</ol>
+<h2 id="purcells-emacs-configuration">Purcell&apos;s Emacs configuration</h2>
+<p>This is <a href="https://github.com/purcell/emacs.d" target="_blank">Purcell&apos;s</a> emacs configuration tree, continually used and tweaked since 2000, and it may be a good starting point for other Emacs users, especially those who are web developers. These days it&apos;s somewhat geared towards macOS, but it is known to also work on Linux and Windows.</p>
+<h3 id="installation">Installation</h3>
+<p>To install, clone this repo to <code>~/.emacs.d</code>, i.e. ensure that the <code>init.el</code> contained in this repo ends up at <code>~/.emacs.d/init.el</code>:</p>
+<pre><code class="lang-shell">git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+</code></pre>
+<p>Upon starting up Emacs for the first time, further third-party packages will be automatically downloaded and installed. If you encounter any errors at that stage, try restarting Emacs, and possibly running <code>M-x package-refresh-contents</code> before doing so.</p>
+<h2 id="doom-emacs">Doom Emacs</h2>
+<p><a href="https://github.com/hlissner/doom-emacs" target="_blank">Doom</a> is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn&apos;t originally intended for public use, but can be considered a hacker&apos;s starter kit.</p>
+<h3 id="installation">Installation</h3>
+<pre><code class="lang-shell">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+cd ~/.emacs.d
+cp init.example.el init.el  # maybe edit init.el
+make install
+</code></pre>
+<p>Don&apos;t forget to run <code>make</code> every time you modify <code>init.el</code>!</p>
+<p>Visit the wiki for <a href="https://github.com/hlissner/doom-emacs/wiki" target="_blank">a more detailed guide on installing, customizing and grokking Doom</a>.</p>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -880,12 +926,12 @@ alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: iTerm2">
+                <a href="../Vim/" class="navigation navigation-prev " aria-label="Previous page: Vim">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="tree.html" class="navigation navigation-next " aria-label="Next page: tree">
+                <a href="../SublimeText/" class="navigation navigation-next " aria-label="Next page: Sublime Text">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -896,7 +942,7 @@ alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/zsh.md","mtime":"2017-12-26T16:53:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-02T10:53:22.653Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.8","depth":1,"next":{"title":"Sublime Text","level":"1.9","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.9.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.9.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.9.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.9.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.7","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Emacs/README.md","mtime":"2018-01-02T10:52:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-02T10:53:22.653Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
