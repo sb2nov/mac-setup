@@ -12,13 +12,13 @@ There are many Emacs clients on macOS. The recommended version on macOS is Emacs
 
 Many useful features are built with Emacs Mac Port, e.g. environment variables, full screen, visual enhancements and so on.
 
-Link the homebrew tap first.
+Link the Homebrew tap first.
 
 ```shell
 brew tap railwaycat/emacsmacport
 ```
 
-* Method 1: Install with brew cask
+* Method 1: Install with `brew cask`.
 
   ```shell
   brew cask install emacs-mac
@@ -26,7 +26,7 @@ brew tap railwaycat/emacsmacport
 
   There are three available versions, `emacs-mac`, `emacs-mac-official-icon`, `emacs-mac-spacemacs-icon`.
 
-* Method 2: Built from source with homebrew.
+* Method 2: Build from source with Homebrew.
 
   ```shell
   brew install emacs-mac [options]
@@ -41,7 +41,7 @@ brew tap railwaycat/emacsmacport
 4. <code>--with-ctags</code>, Don't remove the ctags executable that emacs provides<br>
 5. <code>--with-no-title-bars</code>, Build with a patch for no title bars on frames (--HEAD is not supported)<br>
 6. <code>--with-natural-title-bar</code>, Build with a patch for title bar color inferred by your theme (--HEAD is not supported). More info is provided <a href="https://github.com/railwaycat/homebrew-emacsmacport/wiki/Natural-Title-Bar">here</a><br>
-7. <code>--with-official-icon</code>, Using offical Emacs icon<br>
+7. <code>--with-official-icon</code>, Using official Emacs icon<br>
 8. <code>--with-modern-icon</code>, Using a modern style Emacs icon by @tpanum<br>
 9. <code>--with-spacemacs-icon</code>, Using the spacemacs Emacs icon by Nasser Alshammari<br>
 10. <code>--with-icon-for-documents</code>, Using official icon for documents which default open with Emacs<br>
@@ -111,7 +111,7 @@ Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix 
    fork Spacemacs safely use the `develop` branch where you handle the update
    manually.
 
-3. (Optional) Install the [Source Code Pro][] font.
+3. (Optional) Install the [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) font.
 
    If you are running in terminal you'll also need to change font settings of
    your terminal.
