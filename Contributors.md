@@ -46,6 +46,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [jk2K](https://github.com/jk2K)
 - [naman](https://github.com/naman)
 - [nkapliev](https://github.com/nkapliev)
+- [phillipalexander](https://github.com/phillipalexander)
 - [rkday](https://github.com/rkday)
 - [sahildua2305](https://github.com/sahildua2305)
 - [sofyanhadia](https://github.com/sofyanhadia)
