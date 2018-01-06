@@ -29,6 +29,8 @@ $ killall Dock
 ```
 
 ## Finder
+- Preferences
+    - Change 'New Finder windows show:' to something other than 'All My Files' (which is a memory hog)
 - Toolbar
     - Update to add path, new folder and delete
 - Sidebar
@@ -46,6 +48,9 @@ $ killall Dock
 
 ## Accounts
 - Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
+
+## User Defaults
+- Enable repeating keys by pressing and holding down keys: `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app that you need to repeat keys in)
 
 ## How to write to NTFS on OS X Yosemite and El Capitan
 
