@@ -21,7 +21,8 @@ Here are some suggested settings you can change or set, **they are all optional*
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
 
 ### MacOS shortcuts ⌘←, ⌘→ and ⌥←, ⌥→
-You might be familiar with shortcuts to skip a word (⌥) or go to start/end of the line (⌘). Of course you can configure iTerm2 to support these shortcuts:
+
+You might be familiar with shortcuts to skip a word (⌥) or go to start/end of the line (⌘). iTerm is not set up to work with these shortcuts by default but here's how you set them up:
 
 open up iTerm2 preferences (⌘,) -> Profiles -> Keys -> Click on + icon (add new Keyboard shortcut).
 
