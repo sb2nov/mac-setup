@@ -11,12 +11,12 @@ You can get the app from [iTerm2 downloads page](http://www.iterm2.com/downloads
 ### Colors and Font Settings
 Here are some suggested settings you can change or set, **they are all optional**.
 
-- set hot-key to open and close the terminal to `command + option + i`
-- go to profiles -> Default -> Terminal -> Check silence bell to disable the terminal session from making any sound
-- download [one of iTerm2 color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) and then set these to your default profile colors
-- change the cursor text and cursor color to yellow make it more visible
-- change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [project's github repository](https://github.com/adobe-fonts/source-code-pro/releases/latest).
-- if you're using BASH instead of ZSH you can add `export CLICOLOR=1` line to your `~/.bash_profile` file for nice coloring of listings
+- Set hot-key to open and close the terminal to `command + option + i`
+- Go to profiles -> Default -> Terminal -> Check silence bell to disable the terminal session from making any sound
+- Download [one of iTerm2 color schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) and then set these to your default profile colors
+- Change the cursor text and cursor color to yellow make it more visible
+- Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from [project's github repository](https://github.com/adobe-fonts/source-code-pro/releases/latest).
+- If you're using BASH instead of ZSH you can add `export CLICOLOR=1` line to your `~/.bash_profile` file for nice coloring of listings
 
 [![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)](https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png)
 
