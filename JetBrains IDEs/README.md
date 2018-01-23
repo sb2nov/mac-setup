@@ -2,7 +2,7 @@
 JetBrains is a company creating tools for developers. Their mission is: _We make professional software development a more productive and enjoyable experience_. In this section a number of IDEs (integrated development environment) as well as a selection of features will be presented.
 
 ## Selection of Features
-**Note that all of these features apply to _all_ available IDEs.**
+**Note that these features apply to _all_ IDEs mentioned.**
 
 ### Shared Key Mappings
 If you use different programming languages you might also use different IDEs/editors. This forces you to learn different key mappings for each individual IDE/editor. With IDEs from JetBrains you only need to learn one key mapping because it's shared between all of their IDEs. If you customize your key mapping you can even export it from one IDE and import in the other one.
@@ -51,4 +51,4 @@ Go to [their website](https://www.jetbrains.com/products.html?fromMenu#type=ide)
 ## Pricing
 If you're a **student** or an **instructor** (teaching staff members) all IDEs from JetBrains are free to use. You can read more on [their website](https://www.jetbrains.com/student/). If you're not a student they still offer a few free Community Edition (CE) IDEs. Check out [IntelliJ](https://www.jetbrains.com/idea/) (Java) or [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/).
 
-If you as an individual want to have an [IntelliJ subscription](https://www.jetbrains.com/idea/buy/#edition=personal), for example, it's €14.90/$14.90 every month. Before buying a subscription you should [see if you apply for a free/discounted license](https://www.jetbrains.com/idea/buy/#edition=discounts) though.
+If you as an individual want to have an [IntelliJ subscription](https://www.jetbrains.com/idea/buy/#edition=personal), for example, it's €14.90/$14.90 every month. Before buying a subscription you should [see if you apply for a free/discounted license](https://www.jetbrains.com/idea/buy/#edition=discounts).
