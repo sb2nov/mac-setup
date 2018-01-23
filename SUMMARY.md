@@ -34,6 +34,7 @@
 * [Scala](Scala/README.md)
 * [Ruby](Ruby/README.md)
   * [RubyGems](Ruby/RubyGems.md)
+* [Rust](Rust/README.md)
 * [Node.js](Node.js/README.md)
 * [Go](Go/README.md)
 * [Heroku](Heroku/README.md)
