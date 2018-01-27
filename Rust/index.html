@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git · macOS Setup Guide</title>
+        <title>Rust · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="gitignore.html" />
+    <link rel="next" href="../Node.js/" />
     
     
-    <link rel="prev" href="../iTerm/ack.html" />
+    <link rel="prev" href="../Ruby/RubyGems.html" />
     
 
     </head>
@@ -241,9 +241,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="./">
+        <li class="chapter " data-level="1.6" data-path="../Git/">
             
-                <a href="./">
+                <a href="../Git/">
             
                     
                     Git
@@ -255,9 +255,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="gitignore.html">
+        <li class="chapter " data-level="1.6.1" data-path="../Git/gitignore.html">
             
-                <a href="gitignore.html">
+                <a href="../Git/gitignore.html">
             
                     
                     Git Ignore
@@ -538,9 +538,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="../Rust/">
+        <li class="chapter active" data-level="1.17" data-path="./">
             
-                <a href="../Rust/">
+                <a href="./">
             
                     
                     Rust
@@ -775,7 +775,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Git</a>
+        <a href=".." >Rust</a>
     </h1>
 </div>
 
@@ -790,49 +790,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git-and-github">Git and GitHub</h1>
-<p>What&apos;s a developer without <a href="http://git-scm.com/" target="_blank">Git</a>? To install, simply run:</p>
-<pre><code>$ brew install git
-</code></pre><p>When done, to test that it installed fine you can run:</p>
-<pre><code>$ git --version
-</code></pre><p>And <code>$ which git</code> should output <code>/usr/local/bin/git</code>.</p>
-<p>Next, we&apos;ll define your Git user (should be the same name and email you use for <a href="https://github.com/" target="_blank">GitHub</a>):</p>
-<pre><code>$ git config --global user.name &quot;Your Name Here&quot;
-$ git config --global user.email &quot;your_email@youremail.com&quot;
-</code></pre><p>They will get added to your <code>.gitconfig</code> file.</p>
-<p>To push code to your GitHub repositories, we&apos;re going to use the recommended HTTPS method (versus SSH). So you don&apos;t have to type your username and password everytime, let&apos;s enable Git password caching as described <a href="https://help.github.com/articles/set-up-git" target="_blank">here</a>:</p>
-<pre><code>$ git config --global credential.helper osxkeychain
-</code></pre><hr>
-<h3 id="ssh-config-for-github">SSH Config for GitHub</h3>
-<p>This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.</p>
-<p>Setting up SSH is really simple as well. Most of the instructions below are referenced from <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">here</a>.</p>
-<p>First, we need to check for existing SSH keys on your computer. Open up your Terminal and type:</p>
-<pre><code>$ cd ~/.ssh
-$ ls -al
-# Lists the files in your .ssh directory
-</code></pre><p>Check the directory listing to see if you have files named either id_rsa.pub or id_dsa.pub. If you don&apos;t have either of those files go to step 2. Otherwise, you can skip to step 3.</p>
-<p>Second, To generate a new SSH key, copy and paste the text below, making sure to substitute in your email. The default settings are preferred, so when you&apos;re asked to &quot;enter a file in which to save the key,&quot;&quot; just press enter to continue.</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-# Creates a new ssh key, using the provided email as a label
-# Generating public/private rsa key pair.
-# Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
-</code></pre><p>Please use a strong passphrase for your keys.</p>
-<p>Third, Add your keys to GitHub by going into account settings.</p>
-<hr>
-<h3 id="dsstore">DS_Store</h3>
-<p>On a Mac, it is important to remember to add <code>.DS_Store</code> (a hidden macOS system file that&apos;s put in folders) to your <code>.gitignore</code> files.</p>
-<p>If you want to never include <code>.DS_Store</code> files in your Git repositories, you can configure your Git to globally exclude those files:</p>
-<pre><code># specify a global exclusion list
-$ git config --global core.excludesfile ~/.gitignore
-# adding .DS_Store to that list
-$ echo .DS_Store &gt;&gt; ~/.gitignore
-</code></pre><hr>
-<h3 id="setting-up-sublime-text-as-the-git-mergetool">Setting up Sublime Text as the Git Mergetool</h3>
-<pre><code>$ git config --global mergetool.sublime.cmd &quot;subl -w \$MERGED&quot;
-$ git config --global mergetool.sublime.trustExitCode false
-$ git config --global merge.tool sublime
-$ git mergetool -y
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+                                <h1 id="rust">Rust</h1>
+<p><a href="https://www.rust-lang.org" target="_blank">Rust</a> is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</p>
+<h2 id="installation">Installation</h2>
+<p>For installation it&apos;s advised to use <code>rustup</code> as it will (among other things)
+allow you to switch between versions of Rust without having to download
+anything additional.</p>
+<pre><code class="lang-sh">$ brew install rustup
+</code></pre>
+<p>To verify you can run:</p>
+<pre><code class="lang-sh">$ rustc --version
+</code></pre>
+<p><a href="https://www.rust-lang.org/en-US/install.html" target="_blank">The official documentation on how to install Rust</a>.</p>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -859,12 +829,12 @@ $ git mergetool -y
 
             
                 
-                <a href="../iTerm/ack.html" class="navigation navigation-prev " aria-label="Previous page: ack">
+                <a href="../Ruby/RubyGems.html" class="navigation navigation-prev " aria-label="Previous page: RubyGems">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="gitignore.html" class="navigation navigation-next " aria-label="Next page: Git Ignore">
+                <a href="../Node.js/" class="navigation navigation-next " aria-label="Next page: Node.js">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -875,7 +845,7 @@ $ git mergetool -y
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.6","depth":1,"next":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"previous":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Git/README.md","mtime":"2017-11-13T06:39:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-27T08:36:01.616Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Rust","level":"1.17","depth":1,"next":{"title":"Node.js","level":"1.18","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"previous":{"title":"RubyGems","level":"1.16.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Rust/README.md","mtime":"2018-01-27T08:35:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-27T08:36:01.616Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
