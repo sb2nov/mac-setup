@@ -47,6 +47,22 @@ Please use a strong passphrase for your keys.
 
 Third, Add your keys to GitHub by going into account settings.
 
+Lastly, Add your keys to the `ssh-agent`:
+
+    $ eval "$(ssh-agent -s)"
+    $ ssh-add -K ~/.ssh/id_rsa
+
+Optionally, you can configure your ssh keys in ~/.ssh/config:
+
+```
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+```
+
+The configuration above will add your ssh key to the ssh-agent and store your passphrase in the keychain, so that you are not asked for it each time you use the key.
+
 - - -
 
 ### DS_Store
