@@ -22,6 +22,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [at15](https://github.com/at15)
 - [hisabimbola](https://github.com/hisabimbola)
 - [Switchxa](https://github.com/Switchxa)
+- [avietrov](https://github.com/avietrov)
 - [neo1691](https://github.com/neo1691)
 - [GuGuss](https://github.com/GuGuss)
 - [Potherca](https://github.com/Potherca)
