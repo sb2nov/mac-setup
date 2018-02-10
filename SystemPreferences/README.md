@@ -51,6 +51,9 @@ $ killall Dock
 
 ## User Defaults
 - Enable repeating keys by pressing and holding down keys: `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app that you need to repeat keys in)
+- Change the default folder for screenshots
+    - Open the terminal and make a new folder somewhere on your computer: `mkdir /path/`
+    - And run the following command: `defaults write com.apple.screencapture location /path/ && killall SystemUIServer`
 
 ## How to write to NTFS on OS X Yosemite and El Capitan
 
