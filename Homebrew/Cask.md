@@ -5,7 +5,7 @@
 As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the [Homebrew section](/mac-setup/Homebrew/README.html).
 
 ## Search
-To see if an app is available on Cask you can search on the [official Cask website](https://caskroom.github.io/search). You can also search using the following command:
+To see if an app is available on Cask you can search on the [official Cask website](https://caskroom.github.io/). You can also search using the following command:
 
     $ brew cask search <package>
 
