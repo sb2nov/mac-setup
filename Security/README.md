@@ -8,7 +8,7 @@ A development machine should be secured against threads as well as any other mac
 
 ## Secure System Settings
 
-Check out [stronghold](https://www.github.com/alichtman/stronghold) for the easiest wayt to configure MacOS security settings from the terminal.
+Check out [Stronghold](https://www.github.com/alichtman/stronghold) for the easiest way to configure macOS security settings from the terminal.
 
 ## Virus Scanner
 Head over to [Avira](https://www.avira.com/), download and install their latest free package.
