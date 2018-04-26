@@ -1,11 +1,16 @@
 # Security and Safety
 A development machine should be secured against threads as well as any other machine \(or even _especially_ a development machine\). Therefore we will setup
 
+* secure system settings
 * a virus scanner
 * a firewall
 * disk encryption
 
-## Virus scanner
+## Secure System Settings
+
+Check out [stronghold](https://www.github.com/alichtman/stronghold) for the easiest wayt to configure MacOS security settings from the terminal.
+
+## Virus Scanner
 Head over to [Avira](https://www.avira.com/), download and install their latest free package.
 
 ## Firewall
