@@ -11,4 +11,4 @@ All contributions to the guide are welcome. Please help add support for other li
 
 **Looking for contributors to maintain and extend the documentation.**
 
-**Note:** This guide has been generated using [GitBook](http://www.gitbook.io) and is open source, feel free to contribute or create new issues on [GitHub](https://github.com/sb2nov/mac-setup/issues).
+**Note:** This guide has been generated using [GitBook](https://www.gitbook.com/) and is open source, feel free to contribute or create new issues on [GitHub](https://github.com/sb2nov/mac-setup/issues).
