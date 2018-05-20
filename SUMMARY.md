@@ -20,7 +20,7 @@
   * [Packages 1/2](SublimeText/Packages.md)
   * [Packages 2/2](SublimeText/Plugins.md)
   * [Sublime Linter](SublimeText/SublimeLinter.md)
-* [JetBrains IDEs](JetBrains IDEs/README.md)
+* [JetBrains IDEs](JetBrainsIDEs/README.md)
 * [Python](Python/README.md)
   * [Pip](Python/pip.md)
   * [Virtualenv](Python/virtualenv.md)
