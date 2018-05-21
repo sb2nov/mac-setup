@@ -31,11 +31,18 @@
 #
 
 readonly PARALLEL_JOBS_COUNT=200
+readonly CURRENT_DIR=${TRAVIS_BUILD_DIR:=${PWD}}
 
 echo "🔎 Finding markdown files.."
-readonly MARKDOWN_FILES_STR=$(find "$(PWD)"/.. -type f -name "*.md")
+readonly MARKDOWN_FILES_STR=$(find "$CURRENT_DIR" -type f -name "*.md")
 readonly MARKDOWN_FILES_ARR=(${MARKDOWN_FILES_STR// / })
-echo "Found [" ${#MARKDOWN_FILES_ARR[@]} "] files"
+
+if [ ${#MARKDOWN_FILES_ARR[@]} -eq 0 ]; then
+  echo "🚨 ERROR: No files found, exiting"
+  exit 1
+else
+  echo "Found [" ${#MARKDOWN_FILES_ARR[@]} "] files"
+fi
 
 echo "🔬 Parsing URLs.."
 URL_ARR=()
@@ -49,7 +56,12 @@ for FILE in "${MARKDOWN_FILES_ARR[@]}"; do
   done
 done
 
-echo "Found [" ${#URL_ARR[@]} "] URLs"
+if [ ${#URL_ARR[@]} -eq 0 ]; then
+  echo "🚨 ERROR: No URLs found, exiting"
+  exit 1
+else
+  echo "Found [" ${#URL_ARR[@]} "] URLs"
+fi
 
 # Write URLs to file, parallel needs input from file
 readonly RAW_URLS_FILE=$(mktemp)
