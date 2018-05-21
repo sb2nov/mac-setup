@@ -7,7 +7,7 @@ deploy:
 	sh ./scripts/publish_gitbook.sh
 
 install:
-	npm install && $(GITBOOK) install
+	yarn && $(GITBOOK) install
 
 serve:
 ifndef GITBOOK
