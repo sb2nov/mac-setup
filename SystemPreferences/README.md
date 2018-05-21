@@ -65,7 +65,7 @@ $ killall Dock
     $ brew update
 
 ### Install osxfuse
-- If you are on OS X 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
+- If you are on OS X 10.11 (El Capitan), install the (3.x.x) from [the repo](https://github.com/osxfuse/osxfuse/releases).
 
     $ brew cask install osxfuse
 

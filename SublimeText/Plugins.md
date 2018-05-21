@@ -21,7 +21,7 @@
 - [Python PEP8 Autoformat](https://bitbucket.org/StephaneBunel/pythonpep8autoformat): Python PEP8 auto-format is a plugin to interactively reformat Python source code according to PEP-8
 - [PythonTraceback](https://github.com/kedder/sublime-python-traceback): Easy navigation in your python tracebacks
 - [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements): Enhancements to sidebar. Files and folders.
-- [SublimeCodeIntel](http://sublimecodeintel.github.io/SublimeCodeIntel/): Full-featured code intelligence and smart auto-complete engine
+- [SublimeCodeIntel](https://www.sublimecodeintel.com/): Full-featured code intelligence and smart auto-complete engine
 - [SublimeLinter](http://sublimelinter.readthedocs.org/): Interactive code linting framework for Sublime Text 3
 - [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8): Linter plugin for python using PEP8
 - [TrailingSpaces](https://github.com/SublimeText/TrailingSpaces): Highlight trailing spaces and delete them in a flash
