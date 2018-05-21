@@ -1,30 +1,96 @@
-# Zsh
+# zsh
 
-We'll install `zsh` for all the features offered by `oh-my-zsh`. The installation and usage is really intuitive. We will also create the file `env.sh`, it is a config file we maintain so as to not pollute the `~/.zshrc` too much. `env.sh` holds aliases, exports, path changes etc. and you can find it at the bottom of this page.
+The Z shell (also known as `zsh`) is a Unix shell that is built on top of `bash`
+(the default shell for macOS) with additional features. It's recommended to use
+`zsh` over `bash`. It's also highly recommended to install a framework with
+`zsh` as it makes dealing with configuration, plugins and themes a lot nicer.
 
-## Zsh
+We've also included an `env.sh` file where we store our aliases, exports, path
+changes etc. We put this in a separate file to not pollute our main
+configuration file too much. This file is found in the bottom of this page.
 
-Install zsh and zsh-completions using Homebrew:
+Install `zsh` using Homebrew:
 
-    $ brew install zsh zsh-completions
+    $ brew install zsh
 
-At this point you can customize your shell by using one of two frameworks `Prezto` or `Oh My Zsh`. You should follow one of the two sections below.
+Now you should install a framework, we recommend to use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+or [Prezto](https://github.com/sorin-ionescu/prezto). **Note that you should
+pick one of them, not use both.**
 
-### Install Prezto
-Install prezto on top of zsh to get additional functionality:
+The configuration file for `zsh` is called `.zshrc` and lives in your home
+folder (`~/.zshrc`).
+
+## Oh My Zsh
+
+[Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source,
+community-driven framework for managing your `zsh` configuration. It comes
+with a bunch of features out of the box and improves your terminal experience.
+
+Install Oh My Zsh:
+
+    $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+The installation script should set `zsh` to your default shell, but if it
+doesn't you can do it manually:
+
+    $ chsh -s $(which zsh)
+
+### Configuration
+
+The out-of-the-box configuration is usable but you probably want to customise
+it to suit your needs. The [Official Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki)
+contains a lot of useful information if you want to deep dive into what you
+can do with Oh My Zsh, but we'll cover the basics here.
+
+To apply the changes you make you need to either **start new shell instance**
+or run:
+
+    source ~/.zshrc
+
+#### Plugins
+
+Add plugins to your shell by adding the name of the plugin to the `plugin`
+array in your `.zshrc`.
+
+    plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
+
+You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins).
+Note that adding plugins can cause your shell startup time to increase.
+
+#### Themes
+
+Changing theme is as simple as changing a string in your configuration file.
+The default theme is `robbyrussell`. Just change that value to change theme,
+and don't forget to apply your changes.
+
+    ZSH_THEME=pygmalion
+
+You'll find a list of themes with screenshots on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
+
+## Prezto
+[Prezto](https://github.com/sorin-ionescu/prezto) is a configuration framework
+for `zsh`; it enriches the command line interface environment with sane
+defaults, aliases, functions, auto completion, and prompt themes.
+
+Install Prezto:
 
     $ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
-Next create `~/.zshrc` file by running:
+Next create your `~/.zshrc` by running:
 
 ```sh
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+$ setopt EXTENDED_GLOB
+$ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+  done
 ```
 
-Add modules to Prezto by editing `~/.zpreztorc` and adding:
+For more information on customisation visit the [GitHub repo for Prezto](https://github.com/sorin-ionescu/prezto).
+
+### Modules
+
+Add modules to Prezto by editing `~/.zpreztorc` and adding the modules as
+strings to the list:
 
 ```sh
 zstyle ':prezto:load' pmodule \
@@ -40,28 +106,23 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
-
-zstyle ':prezto:module:prompt' theme 'paradox'
 ```
 
-### Install Oh My Zsh
+And don't forget to apply your changes by **starting a new shell instance**.
 
-**Note**: You don't need this section if you installed `Prezto`.
 
-Install Oh My Zsh on top of zsh to get additional functionality:
+### Themes
 
-    $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+To list all available themes run:
 
-If you're still in the default shell, change default shell to zsh manually:
+    $ prompt -l
 
-    $ chsh -s /usr/local/bin/zsh
+Then open up your config file (`~/.zpreztorc`) and change to the theme you want:
 
-Add plugins (they are all optional but recommended) to Oh My Zsh and use theme by editing `~/.zshrc` and adding:
+    zstyle ':prezto:module:prompt' theme 'minimal'
 
-    ZSH_THEME=pygmalion
-    plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
-## env.sh
+## `env.sh`
 
 To include `env.sh`, open `~/.zshrc` and add the following:
 
@@ -69,36 +130,27 @@ To include `env.sh`, open `~/.zshrc` and add the following:
 source ~/<path to file>/env.sh
 ```
 
-This file comes with some pre-defined settings, **they are all optional**. Please review them before you use them as your configuration.
-~~~
+This file comes with some pre-defined settings, **they are all optional**.
+Please review them before you use them as your configuration. These are just
+examples to show you what you can customise in your shell.
+
+```sh
 #!/bin/zsh
 
-# PATH
-export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export EDITOR='subl -w'
-# export PYTHONPATH=$PYTHONPATH
-# export MANPATH="/usr/local/man:$MANPATH"
+# Add commonly used folders to $PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Virtual Environment
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
+# Specify default editor. Possible values: vim, nano, ed etc.
+export EDITOR=vim
 
-# Owner
-export USER_NAME="YOUR NAME"
-eval "$(rbenv init -)"
-
-# FileSearch
+# File search functions
 function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
 
-#mkdir and cd
+# Create a folder and move into it in one command
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
-# Aliases
+# Example aliases
 alias cppcompile='c++ -std=c++11 -stdlib=libc++'
-
-# Use sublimetext for editing config files
-alias zshconfig="subl ~/.zshrc"
-alias envconfig="subl ~/projects/config/env.sh"
-~~~
+alias git='g'
+```
