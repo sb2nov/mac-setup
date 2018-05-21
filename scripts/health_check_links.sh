@@ -48,7 +48,7 @@ echo "🔬 Parsing URLs.."
 URL_ARR=()
 for FILE in "${MARKDOWN_FILES_ARR[@]}"; do
   # Parse URL
-  URLS_STR=$(cat $FILE | ggrep -o -E 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)')
+  URLS_STR=$(cat $FILE | grep -o -E 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)')
   # Split string into array
   URLS_STR_SPLIT=(${URLS_STR// / })
   for i in "${URLS_STR_SPLIT[@]}"; do
