@@ -32,9 +32,12 @@
 
 readonly PARALLEL_JOBS_COUNT=200
 readonly CURRENT_DIR=${TRAVIS_BUILD_DIR:=${PWD}}
+readonly CLONE_DIR="$CURRENT_DIR/mac-setup-master"
+
+git clone --depth 1 https://github.com/sb2nov/mac-setup mac-setup-master
 
 echo "🔎 Finding markdown files.."
-readonly MARKDOWN_FILES_STR=$(find "$CURRENT_DIR" -type f -name "*.md")
+readonly MARKDOWN_FILES_STR=$(find "$CLONE_DIR" -type f -name "*.md")
 readonly MARKDOWN_FILES_ARR=(${MARKDOWN_FILES_STR// / })
 
 if [ ${#MARKDOWN_FILES_ARR[@]} -eq 0 ]; then
