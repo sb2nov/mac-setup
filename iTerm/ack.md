@@ -1,13 +1,14 @@
 # `ack`
 
-`ack` is a search tool designed for code. It's built to be a replacement for `grep` with higher speed and more options.
+`ack` is a search tool designed for code. It's built to be a replacement for
+`grep` with higher speed and more options.
 
 ## Installation
 
 To install the latest version, use homebrew.
 
 ```bash
-brew install ack
+$ brew install ack
 ```
 
 ## Why use `ack` over `grep`
@@ -20,24 +21,28 @@ brew install ack
 ## Usage
 
 ```bash
-ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
+$ ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
 ```
 
-Let's say you want to find all JavaScript files that are using the module `pancakes` in your project, with `ack` it's as easy as
+Let's say you want to find all JavaScript files that are using the module
+`pancakes` in your project, with `ack` it's as easy as
 ```sh
-ack --js pancakes
+$ ack --js pancakes
 ```
 
 Or you may want to find all files that _does not_ contain the word _brew_
 ```bash
-ack -L brew
+$ ack -L brew
 ```
 
 ## Customization
 
-You can customize `ack` to behave the way you want it to, this configuration is stored in `/.ackrc`.
+You can customize `ack` to behave the way you want it to, this configuration i
+s stored in `/.ackrc`.
 
-For example, you can add a custom type to use as a flag when searching. The following configuration will allow you to only search in `.md`, `.mkd` and `.markdown` files using the `--markdown` flag.
+For example, you can add a custom type to use as a flag when searching. The
+following configuration will allow you to only search in `.md`, `.mkd` and
+`.markdown` files using the `--markdown` flag.
 ```bash
 --type-set=markdown=.md,.mkd,.markdown
 ```
@@ -51,7 +56,7 @@ You can also tell ack to always sort and use colors in the result.
 To see what configuration `ack` uses you can use the `dump` flag.
 
 ```bash
-ack --dump
+$ ack --dump
 ```
 
 ## Alternatives to `ack`
