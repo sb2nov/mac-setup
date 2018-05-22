@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Cask · macOS Setup Guide</title>
+        <title>JetBrains IDEs · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../iTerm/" />
+    <link rel="next" href="../Python/" />
     
     
-    <link rel="prev" href="Usage.html" />
+    <link rel="prev" href="../SublimeText/SublimeLinter.html" />
     
 
     </head>
@@ -125,9 +125,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
             
-                <a href="./">
+                <a href="../Homebrew/">
             
                     
                     Homebrew
@@ -139,9 +139,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="Usage.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
             
-                <a href="Usage.html">
+                <a href="../Homebrew/Usage.html">
             
                     
                     Usage
@@ -152,9 +152,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="Cask.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
             
-                <a href="Cask.html">
+                <a href="../Homebrew/Cask.html">
             
                     
                     Cask
@@ -370,9 +370,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../JetBrainsIDEs/">
+        <li class="chapter active" data-level="1.10" data-path="./">
             
-                <a href="../JetBrainsIDEs/">
+                <a href="./">
             
                     
                     JetBrains IDEs
@@ -775,7 +775,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Cask</a>
+        <a href=".." >JetBrains IDEs</a>
     </h1>
 </div>
 
@@ -790,53 +790,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="homebrew-cask">Homebrew Cask</h1>
-<p><a href="https://caskroom.github.io/" target="_blank">Homebrew-Cask</a> extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.</p>
+                                <h1 id="jetbrains-ides">JetBrains IDEs</h1>
+<p>JetBrains is a company creating tools for developers. Their mission is: <em>We make professional software development a more productive and enjoyable experience</em>. In this section a number of IDEs (integrated development environment) as well as a selection of features will be presented.</p>
+<h2 id="selection-of-features">Selection of Features</h2>
+<p><strong>Note that these features apply to <em>all</em> IDEs mentioned.</strong></p>
+<h3 id="shared-key-mappings">Shared Key Mappings</h3>
+<p>If you use different programming languages you might also use different IDEs/editors. This forces you to learn different key mappings for each individual IDE/editor. With IDEs from JetBrains you only need to learn one key mapping because it&apos;s shared between all of their IDEs. If you customize your key mapping you can even export it from one IDE and import in the other one.</p>
+<h3 id="highly-customizable">Highly Customizable</h3>
+<p>Not only can you do lots of customization when it comes to appearance, key mapping and a lot more, you also have plugins. These plugins cover everything from dealing with different file types to using external tools such as Git, Docker, databases, linters and time tracking. JetBrains offer a bunch of their own plugins but you can also develop and publish your own plugins.</p>
+<h3 id="integrated-tools">Integrated Tools</h3>
+<p>Their IDEs offer so many tools that you never have to leave it if you don&apos;t want to. It supports a number of different VCSs (Git, Subversion, Perforce etc.), a terminal window, database browser, debuggers, SSH sessions and more.</p>
+<h3 id="powerful-refactoring">Powerful Refactoring</h3>
+<p>Rename a method used all over your project with a few clicks, or change a method signature in the same way. With statically typed languages like Java and C the refactoring becomes even more powerful.</p>
+<h2 id="useful-shortcuts">Useful Shortcuts</h2>
+<ul>
+<li>Search for a file -- <code>CMD + SHIFT + O</code></li>
+<li>Search for a string -- <code>CMD + SHIFT + F</code></li>
+<li>Search everything, press <code>SHIFT</code> two (2) times</li>
+<li>Context based action -- <code>ALT + ENTER</code> (this one is very contextual, you have to just try it out having your cursor in different places)</li>
+<li>Refactor this -- <code>CTRL + T</code> (place your cursor on what you want to refactor)</li>
+</ul>
+<h2 id="supported-languages">Supported Languages</h2>
+<p>Their IDEs support a number of languages, here&apos;s a list covering all of the listed ones sorted alphabetically.</p>
+<ul>
+<li>C, C#, C++</li>
+<li>CSS, Less, Sass, Stylus</li>
+<li>F#</li>
+<li>Go</li>
+<li>Groovy</li>
+<li>Java</li>
+<li>JavaScript, TypeScript</li>
+<li>Kotlin</li>
+<li>Objective-C</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>SQL</li>
+<li>Swift</li>
+<li>VB.NET</li>
+</ul>
+<p>They offer support for more languages using plugins such as Rust, Dart, Haxe, Markdown, Pug/Jade, Slim, Twig and more.</p>
 <h2 id="installation">Installation</h2>
-<p>As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the <a href="../mac-setup/Homebrew/README.html">Homebrew section</a>.</p>
-<h2 id="search">Search</h2>
-<p>To see if an app is available on Cask you can search on the <a href="https://caskroom.github.io/" target="_blank">official Cask website</a>. You can also search using the following command:</p>
-<pre><code>$ brew cask search &lt;package&gt;
-</code></pre><h2 id="quick-look-plugins">Quick Look plugins</h2>
-<p>These plugins adds support for the corresponding file type to Mac Quick Look (In Finder, mark a file and press Space to start Quick Look). The plugins includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files and more.</p>
-<pre><code class="lang-sh">$ brew cask install \
-    qlcolorcode \
-    qlstephen \
-    qlmarkdown \
-    quicklook-json \
-    qlprettypatch \
-    quicklook-csv \
-    betterzipql \
-    webpquicklook \
-    suspicious-package
-</code></pre>
-<h2 id="app-suggestions">App Suggestions</h2>
-<p>Here are some useful apps that are available on Cask.</p>
-<pre><code class="lang-sh">$ brew cask install \
-    alfred \
-    android-file-transfer \
-    asepsis \
-    appcleaner \
-    caffeine \
-    cheatsheet \
-    docker \
-    doubletwist \
-    dropbox \
-    google-chrome \
-    google-drive \
-    google-hangouts \
-    flux \
-    latexian \
-    1password \
-    pdftk \
-    spectacle \
-    sublime-text \
-    superduper \
-    totalfinder \
-    transmission \
-    valentina-studio \
-    vlc
-</code></pre>
+<p>Go to <a href="https://www.jetbrains.com/products.html?fromMenu#type=ide" target="_blank">their website</a> and select what product you&apos;d like to download.</p>
+<h2 id="pricing">Pricing</h2>
+<p>If you&apos;re a <strong>student</strong> or an <strong>instructor</strong> (teaching staff members) all IDEs from JetBrains are free to use. You can read more on <a href="https://www.jetbrains.com/student/" target="_blank">their website</a>. If you&apos;re not a student they still offer a few free Community Edition (CE) IDEs. Check out <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ</a> (Java) or <a href="https://www.jetbrains.com/pycharm-edu/" target="_blank">PyCharm Edu</a>.</p>
+<p>If you as an individual want to have an <a href="https://www.jetbrains.com/idea/buy/#edition=personal" target="_blank">IntelliJ subscription</a>, for example, it&apos;s &#x20AC;14.90/$14.90 every month. Before buying a subscription you should <a href="https://www.jetbrains.com/idea/buy/#edition=discounts" target="_blank">see if you apply for a free/discounted license</a>.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -864,12 +863,12 @@
 
             
                 
-                <a href="Usage.html" class="navigation navigation-prev " aria-label="Previous page: Usage">
+                <a href="../SublimeText/SublimeLinter.html" class="navigation navigation-prev " aria-label="Previous page: Sublime Linter">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../iTerm/" class="navigation navigation-next " aria-label="Next page: iTerm2">
+                <a href="../Python/" class="navigation navigation-next " aria-label="Next page: Python">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -880,7 +879,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cask","level":"1.4.2","depth":2,"next":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"previous":{"title":"Usage","level":"1.4.1","depth":2,"path":"Homebrew/Usage.md","ref":"Homebrew/Usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Homebrew/Cask.md","mtime":"2018-05-14T09:18:01.003Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-22T18:30:58.713Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JetBrains IDEs","level":"1.10","depth":1,"next":{"title":"Python","level":"1.11","depth":1,"path":"Python/README.md","ref":"Python/README.md","articles":[{"title":"Pip","level":"1.11.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},{"title":"Virtualenv","level":"1.11.2","depth":2,"path":"Python/virtualenv.md","ref":"Python/virtualenv.md","articles":[]},{"title":"Numpy-Scipy","level":"1.11.3","depth":2,"path":"Python/numpy.md","ref":"Python/numpy.md","articles":[]},{"title":"IPython","level":"1.11.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]}]},"previous":{"title":"Sublime Linter","level":"1.9.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"JetBrainsIDEs/README.md","mtime":"2018-05-21T19:11:46.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-22T18:30:58.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

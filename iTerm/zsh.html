@@ -370,9 +370,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../JetBrains IDEs/">
+        <li class="chapter " data-level="1.10" data-path="../JetBrainsIDEs/">
             
-                <a href="../JetBrains IDEs/">
+                <a href="../JetBrainsIDEs/">
             
                     
                     JetBrains IDEs
@@ -790,22 +790,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="zsh">Zsh</h1>
-<p>We&apos;ll install <code>zsh</code> for all the features offered by <code>oh-my-zsh</code>. The installation and usage is really intuitive. We will also create the file <code>env.sh</code>, it is a config file we maintain so as to not pollute the <code>~/.zshrc</code> too much. <code>env.sh</code> holds aliases, exports, path changes etc. and you can find it at the bottom of this page.</p>
-<h2 id="zsh">Zsh</h2>
-<p>Install zsh and zsh-completions using Homebrew:</p>
-<pre><code>$ brew install zsh zsh-completions
-</code></pre><p>At this point you can customize your shell by using one of two frameworks <code>Prezto</code> or <code>Oh My Zsh</code>. You should follow one of the two sections below.</p>
-<h3 id="install-prezto">Install Prezto</h3>
-<p>Install prezto on top of zsh to get additional functionality:</p>
-<pre><code>$ git clone --recursive https://github.com/sorin-ionescu/prezto.git &quot;${ZDOTDIR:-$HOME}/.zprezto&quot;
-</code></pre><p>Next create <code>~/.zshrc</code> file by running:</p>
-<pre><code class="lang-sh"><span class="hljs-built_in">setopt</span> EXTENDED_GLOB
-<span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>&quot;</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
-  ln <span class="hljs-_">-s</span> <span class="hljs-string">&quot;<span class="hljs-variable">$rcfile</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>&quot;</span>
-<span class="hljs-keyword">done</span>
+                                <h1 id="zsh">zsh</h1>
+<p>The Z shell (also known as <code>zsh</code>) is a Unix shell that is built on top of <code>bash</code>
+(the default shell for macOS) with additional features. It&apos;s recommended to use
+<code>zsh</code> over <code>bash</code>. It&apos;s also highly recommended to install a framework with
+<code>zsh</code> as it makes dealing with configuration, plugins and themes a lot nicer.</p>
+<p>We&apos;ve also included an <code>env.sh</code> file where we store our aliases, exports, path
+changes etc. We put this in a separate file to not pollute our main
+configuration file too much. This file is found in the bottom of this page.</p>
+<p>Install <code>zsh</code> using Homebrew:</p>
+<pre><code class="lang-sh">$ brew install zsh
 </code></pre>
-<p>Add modules to Prezto by editing <code>~/.zpreztorc</code> and adding:</p>
+<p>Now you should install a framework, we recommend to use <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank">Oh My Zsh</a>
+or <a href="https://github.com/sorin-ionescu/prezto" target="_blank">Prezto</a>. <strong>Note that you should
+pick one of them, not use both.</strong></p>
+<p>The configuration file for <code>zsh</code> is called <code>.zshrc</code> and lives in your home
+folder (<code>~/.zshrc</code>).</p>
+<h2 id="oh-my-zsh">Oh My Zsh</h2>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank">Oh My Zsh</a> is an open source,
+community-driven framework for managing your <code>zsh</code> configuration. It comes
+with a bunch of features out of the box and improves your terminal experience.</p>
+<p>Install Oh My Zsh:</p>
+<pre><code class="lang-sh">$ sh -c <span class="hljs-string">&quot;<span class="hljs-variable">$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>&quot;</span>
+</code></pre>
+<p>The installation script should set <code>zsh</code> to your default shell, but if it
+doesn&apos;t you can do it manually:</p>
+<pre><code class="lang-sh">$ chsh <span class="hljs-_">-s</span> $(<span class="hljs-built_in">which</span> zsh)
+</code></pre>
+<h3 id="configuration">Configuration</h3>
+<p>The out-of-the-box configuration is usable but you probably want to customise
+it to suit your needs. The <a href="https://github.com/robbyrussell/oh-my-zsh/wiki" target="_blank">Official Wiki</a>
+contains a lot of useful information if you want to deep dive into what you
+can do with Oh My Zsh, but we&apos;ll cover the basics here.</p>
+<p>To apply the changes you make you need to either <strong>start new shell instance</strong>
+or run:</p>
+<pre><code class="lang-sh">$ <span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
+<h4 id="plugins">Plugins</h4>
+<p>Add plugins to your shell by adding the name of the plugin to the <code>plugin</code>
+array in your <code>.zshrc</code>.</p>
+<pre><code class="lang-sh">plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
+</code></pre>
+<p>You&apos;ll find a list of all plugins on the <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank">Oh My Zsh Wiki</a>.
+Note that adding plugins can cause your shell startup time to increase.</p>
+<h4 id="themes">Themes</h4>
+<p>Changing theme is as simple as changing a string in your configuration file.
+The default theme is <code>robbyrussell</code>. Just change that value to change theme,
+and don&apos;t forget to apply your changes.</p>
+<pre><code class="lang-sh">ZSH_THEME=pygmalion
+</code></pre>
+<p>You&apos;ll find a list of themes with screenshots on the
+<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank">Oh My Zsh Wiki</a>.</p>
+<h2 id="prezto">Prezto</h2>
+<p><a href="https://github.com/sorin-ionescu/prezto" target="_blank">Prezto</a> is a configuration framework
+for <code>zsh</code>; it enriches the command line interface environment with sane
+defaults, aliases, functions, auto completion, and prompt themes.</p>
+<p>Install Prezto:</p>
+<pre><code class="lang-sh">$ git <span class="hljs-built_in">clone</span> --recursive https://github.com/sorin-ionescu/prezto.git <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.zprezto&quot;</span>
+</code></pre>
+<p>Next create your <code>~/.zshrc</code> by running:</p>
+<pre><code class="lang-sh">$ <span class="hljs-built_in">setopt</span> EXTENDED_GLOB
+$ <span class="hljs-keyword">for</span> rcfile <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>&quot;</span>/.zprezto/runcoms/^README.md(.N); <span class="hljs-keyword">do</span>
+    ln <span class="hljs-_">-s</span> <span class="hljs-string">&quot;<span class="hljs-variable">$rcfile</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">${ZDOTDIR:-$HOME}</span>/.<span class="hljs-variable">${rcfile:t}</span>&quot;</span>
+  <span class="hljs-keyword">done</span>
+</code></pre>
+<p>For more information on customisation visit the <a href="https://github.com/sorin-ionescu/prezto" target="_blank">GitHub repo for Prezto</a>.</p>
+<h3 id="modules">Modules</h3>
+<p>Add modules to Prezto by editing <code>~/.zpreztorc</code> and adding the modules as
+strings to the list:</p>
 <pre><code class="lang-sh"><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:load&apos;</span> pmodule \
   <span class="hljs-string">&apos;environment&apos;</span> \
   <span class="hljs-string">&apos;terminal&apos;</span> \
@@ -819,54 +871,42 @@
   <span class="hljs-string">&apos;syntax-highlighting&apos;</span> \
   <span class="hljs-string">&apos;history-substring-search&apos;</span> \
   <span class="hljs-string">&apos;prompt&apos;</span>
-
-<span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:module:prompt&apos;</span> theme <span class="hljs-string">&apos;paradox&apos;</span>
 </code></pre>
-<h3 id="install-oh-my-zsh">Install Oh My Zsh</h3>
-<p><strong>Note</strong>: You don&apos;t need this section if you installed <code>Prezto</code>.</p>
-<p>Install Oh My Zsh on top of zsh to get additional functionality:</p>
-<pre><code>$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-</code></pre><p>If you&apos;re still in the default shell, change default shell to zsh manually:</p>
-<pre><code>$ chsh -s /usr/local/bin/zsh
-</code></pre><p>Add plugins (they are all optional but recommended) to Oh My Zsh and use theme by editing <code>~/.zshrc</code> and adding:</p>
-<pre><code>ZSH_THEME=pygmalion
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-</code></pre><h2 id="envsh">env.sh</h2>
+<p>And don&apos;t forget to apply your changes by <strong>starting a new shell instance</strong>.</p>
+<h3 id="themes">Themes</h3>
+<p>To list all available themes run:</p>
+<pre><code class="lang-sh">$ prompt <span class="hljs-_">-l</span>
+</code></pre>
+<p>Then open up your config file (<code>~/.zpreztorc</code>) and change to the theme you want:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:prezto:module:prompt&apos;</span> theme <span class="hljs-string">&apos;minimal&apos;</span>
+</code></pre>
+<h2 id="envsh"><code>env.sh</code></h2>
 <p>To include <code>env.sh</code>, open <code>~/.zshrc</code> and add the following:</p>
 <pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/&lt;path to file&gt;/env.sh
 </code></pre>
-<p>This file comes with some pre-defined settings, <strong>they are all optional</strong>. Please review them before you use them as your configuration.</p>
-<pre><code>#!/bin/zsh
+<p>This file comes with some pre-defined settings, <strong>they are all optional</strong>.
+Please review them before you use them as your configuration. These are just
+examples to show you what you can customise in your shell.</p>
+<pre><code class="lang-sh"><span class="hljs-meta">#!/bin/zsh
+</span>
+<span class="hljs-comment"># Add commonly used folders to $PATH</span>
+<span class="hljs-built_in">export</span> PATH=<span class="hljs-string">&quot;/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;</span>
 
-# PATH
-export PATH=&quot;/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin&quot;
-export EDITOR=&apos;subl -w&apos;
-# export PYTHONPATH=$PYTHONPATH
-# export MANPATH=&quot;/usr/local/man:$MANPATH&quot;
+<span class="hljs-comment"># Specify default editor. Possible values: vim, nano, ed etc.</span>
+<span class="hljs-built_in">export</span> EDITOR=vim
 
-# Virtual Environment
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
+<span class="hljs-comment"># File search functions</span>
+<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">f</span></span>() { find . -iname <span class="hljs-string">&quot;*<span class="hljs-variable">$1</span>*&quot;</span> <span class="hljs-variable">${@:2}</span> }
+<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">r</span></span>() { grep <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span> <span class="hljs-variable">${@:2}</span> -R . }
 
-# Owner
-export USER_NAME=&quot;YOUR NAME&quot;
-eval &quot;$(rbenv init -)&quot;
+<span class="hljs-comment"># Create a folder and move into it in one command</span>
+<span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">mkcd</span></span>() { mkdir -p <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span> &amp;&amp; <span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-variable">$_</span>&quot;</span>; }
 
-# FileSearch
-function f() { find . -iname &quot;*$1*&quot; ${@:2} }
-function r() { grep &quot;$1&quot; ${@:2} -R . }
-
-#mkdir and cd
-function mkcd() { mkdir -p &quot;$@&quot; &amp;&amp; cd &quot;$_&quot;; }
-
-# Aliases
-alias cppcompile=&apos;c++ -std=c++11 -stdlib=libc++&apos;
-
-# Use sublimetext for editing config files
-alias zshconfig=&quot;subl ~/.zshrc&quot;
-alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+<span class="hljs-comment"># Example aliases</span>
+<span class="hljs-built_in">alias</span> cppcompile=<span class="hljs-string">&apos;c++ -std=c++11 -stdlib=libc++&apos;</span>
+<span class="hljs-built_in">alias</span> git=<span class="hljs-string">&apos;g&apos;</span>
+</code></pre>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -909,7 +949,7 @@ alias envconfig=&quot;subl ~/projects/config/env.sh&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/zsh.md","mtime":"2018-02-04T09:37:33.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-14T09:17:50.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/zsh.md","mtime":"2018-05-22T18:22:09.804Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-22T18:30:58.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

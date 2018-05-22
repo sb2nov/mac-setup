@@ -370,9 +370,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="../JetBrains IDEs/">
+        <li class="chapter " data-level="1.10" data-path="../JetBrainsIDEs/">
             
-                <a href="../JetBrains IDEs/">
+                <a href="../JetBrainsIDEs/">
             
                     
                     JetBrains IDEs
@@ -791,42 +791,43 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="fzf"><code>fzf</code></h1>
-<p><a href="https://github.com/junegunn/fzf" target="_blank"><code>fzf</code></a> is a general-purpose command-line fuzzy finder.</p>
-<h2 id="why-use-fzf">Why use <code>fzf</code></h2>
-<ul>
-<li>Speed</li>
-<li>Rich feature set</li>
-<li>Highly customizable</li>
-</ul>
+<p><a href="https://github.com/junegunn/fzf" target="_blank"><code>fzf</code></a> is a general-purpose command-line
+fuzzy finder. On it&apos;s own it&apos;s not very useful but when combined with other
+tools it becomes super powerful.</p>
 <h2 id="installation">Installation</h2>
-<p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">homebrew</a> to install <code>fzf</code>:</p>
-<pre><code>brew install fzf
-</code></pre><p>If you want to use shell extensions:</p>
-<pre><code>/usr/local/opt/fzf/install
-</code></pre><p>which are:</p>
+<p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">homebrew</a> to
+install <code>fzf</code>:</p>
+<pre><code>$ brew install fzf
+</code></pre><p>If you want to use shell extensions (better shell integration):</p>
+<pre><code>$ /usr/local/opt/fzf/install
+</code></pre><p>which gives you:</p>
 <ul>
-<li>Key bindings (<code>CTRL-T</code>, <code>CTRL-R</code>, and <code>ALT-C</code>) (available for bash, zsh and fish)</li>
-<li>Fuzzy auto-completion (available for bash and zsh)</li>
+<li>Key bindings (<code>CTRL-T</code>, <code>CTRL-R</code>, and <code>ALT-C</code>) (available for <em>bash</em>, <em>zsh</em>
+and <em>fish</em>)</li>
+<li>Fuzzy auto-completion (available for <em>bash</em> and <em>zsh</em>)</li>
 </ul>
-<h2 id="usage">Usage</h2>
-<h3 id="fuzzy-completion">Fuzzy completion</h3>
-<blockquote>
-<p>hit tab (&#x21B9;) after:</p>
-</blockquote>
-<h4 id="file-search">File search</h4>
-<pre><code>vim **
-</code></pre><p>or</p>
-<pre><code>subl **
-</code></pre><h4 id="host-name-search">Host name search</h4>
-<pre><code>ssh **
-</code></pre><blockquote>
-<p><strong>Note</strong>: for more fuzzy search things head over <a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh" target="_blank">official repo</a></p>
-</blockquote>
-<h3 id="chrome-history-from-cli">Chrome history from CLI</h3>
-<blockquote>
+<h2 id="example-usages">Example Usages</h2>
+<p>Add any of these functions to your shell configuration file and apply the
+changes to try them out. Or just paste the function in your terminal if you
+just want to try it out without saving it.</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># fd - cd to selected directory</span>
+<span class="hljs-function"><span class="hljs-title">fd</span></span>() {
+  <span class="hljs-built_in">local</span> dir
+  dir=$(find <span class="hljs-variable">${1:-.}</span> -path <span class="hljs-string">&apos;*/\.*&apos;</span> -prune \
+                  -o -type d -print 2&gt; /dev/null | fzf +m) &amp;&amp;
+  <span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-variable">$dir</span>&quot;</span>
+}
+</code></pre>
+<pre><code class="lang-sh"><span class="hljs-comment"># fh - search in your command history and execute selected command</span>
+<span class="hljs-function"><span class="hljs-title">fh</span></span>() {
+  <span class="hljs-built_in">eval</span> $( ([ -n <span class="hljs-string">&quot;<span class="hljs-variable">$ZSH_NAME</span>&quot;</span> ] &amp;&amp; <span class="hljs-built_in">fc</span> <span class="hljs-_">-l</span> 1 || <span class="hljs-built_in">history</span>) | fzf +s --tac | sed <span class="hljs-string">&apos;s/ *[0-9]* *//&apos;</span>)
+}
+</code></pre>
+<p><strong>For more fuzzy search examples see the
+<a href="https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh" target="_blank">official repo</a>.</strong></p>
+<h3 id="chrome-history-from-your-terminal">Chrome history from your terminal</h3>
 <p><strong>Note</strong>: original <a href="https://junegunn.kr/2015/04/browsing-chrome-history-with-fzf/" target="_blank">blog post</a></p>
-</blockquote>
-<p>Open up shell config (most likely <code>~/.zshrc</code> or command <code>zshconfig</code>) and add following function:</p>
+<p>Open up your shell config and add following function:</p>
 <pre><code class="lang-sh"><span class="hljs-comment"># ch - browse chrome history</span>
 <span class="hljs-function"><span class="hljs-title">ch</span></span>() {
   <span class="hljs-built_in">local</span> cols sep
@@ -842,9 +843,8 @@
   fzf --ansi --multi | sed <span class="hljs-string">&apos;s#.*\(https*://\)#\1#&apos;</span> | xargs open
 }
 </code></pre>
-<blockquote>
-<p><strong>Note</strong>: Ensure that path to <code>History</code> file is correct; read more information on <a href="https://stackoverflow.com/a/16742333/1564365" target="_blank">StackOverflow</a></p>
-</blockquote>
+<p><strong>Note</strong>: Ensure that path to <code>History</code> file is correct; read more information
+on <a href="https://stackoverflow.com/a/16742333/1564365" target="_blank">StackOverflow</a>.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -888,7 +888,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"previous":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/fzf.md","mtime":"2018-02-04T09:37:33.580Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-14T09:17:50.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"fzf","level":"1.5.3","depth":2,"next":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"previous":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/fzf.md","mtime":"2018-05-22T18:14:54.576Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-22T18:30:58.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
