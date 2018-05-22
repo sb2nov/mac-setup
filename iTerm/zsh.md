@@ -11,7 +11,9 @@ configuration file too much. This file is found in the bottom of this page.
 
 Install `zsh` using Homebrew:
 
-    $ brew install zsh
+```sh
+$ brew install zsh
+```
 
 Now you should install a framework, we recommend to use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 or [Prezto](https://github.com/sorin-ionescu/prezto). **Note that you should
@@ -28,12 +30,16 @@ with a bunch of features out of the box and improves your terminal experience.
 
 Install Oh My Zsh:
 
-    $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```sh
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 The installation script should set `zsh` to your default shell, but if it
 doesn't you can do it manually:
 
-    $ chsh -s $(which zsh)
+```sh
+$ chsh -s $(which zsh)
+```
 
 ### Configuration
 
@@ -45,14 +51,18 @@ can do with Oh My Zsh, but we'll cover the basics here.
 To apply the changes you make you need to either **start new shell instance**
 or run:
 
-    source ~/.zshrc
+```sh
+$ source ~/.zshrc
+```
 
 #### Plugins
 
 Add plugins to your shell by adding the name of the plugin to the `plugin`
 array in your `.zshrc`.
 
-    plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
+```sh
+plugins=(git colored-man colorize pip python brew osx zsh-syntax-highlighting)
+```
 
 You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins).
 Note that adding plugins can cause your shell startup time to increase.
@@ -63,9 +73,12 @@ Changing theme is as simple as changing a string in your configuration file.
 The default theme is `robbyrussell`. Just change that value to change theme,
 and don't forget to apply your changes.
 
-    ZSH_THEME=pygmalion
+```sh
+ZSH_THEME=pygmalion
+```
 
-You'll find a list of themes with screenshots on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
+You'll find a list of themes with screenshots on the
+[Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
 
 ## Prezto
 [Prezto](https://github.com/sorin-ionescu/prezto) is a configuration framework
@@ -74,7 +87,9 @@ defaults, aliases, functions, auto completion, and prompt themes.
 
 Install Prezto:
 
-    $ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```sh
+$ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
 
 Next create your `~/.zshrc` by running:
 
@@ -110,17 +125,19 @@ zstyle ':prezto:load' pmodule \
 
 And don't forget to apply your changes by **starting a new shell instance**.
 
-
 ### Themes
 
 To list all available themes run:
 
-    $ prompt -l
+```sh
+$ prompt -l
+```
 
 Then open up your config file (`~/.zpreztorc`) and change to the theme you want:
 
-    zstyle ':prezto:module:prompt' theme 'minimal'
-
+```sh
+zstyle ':prezto:module:prompt' theme 'minimal'
+```
 
 ## `env.sh`
 
