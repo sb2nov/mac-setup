@@ -1,97 +1,117 @@
 # System Preferences
-First thing you should do is update the system. To do that go: **Apple menu () > About This Mac > Software Update.**
 
-Also upgrade your OS in case you want to work on the latest OS. macOS upgrades are usually free so you might as well keep your machine up to date.
+## First Time Setup
 
-If this is a new computer, there are a couple tweaks you could make to the System Preferences. **These settings are all optional, consider them suggestions.**
+The first thing you should do is update your system. To do that go:
+**Apple menu () > About This Mac > Software Update.**
+
+Also upgrade your OS to the latest version to have a more secure OS. macOS
+upgrades are usually free so you might as well keep your machine up to date.
+
+If this is a new computer there are a couple tweaks you could make to the
+System Preferences. **These settings are all optional, consider them
+suggestions. Always choose the setting that makes the most sense to you.**
 
 ## Users & Groups
-- Login Options -> Change fast switching user menu to Icon
-- Set up Password, Apple ID, Picture, etc.
+- _Login Options_ -> _Change fast user switching menu as Icon_
+- Set up _Password_, _Apple ID_, _Picture_, etc.
 
 ## Trackpad
-- Point & Click
-    - Enable Tap to click with one finger
-    - Change Secondary click to right corner
-    - Uncheck three finger drag
-- Scroll & Zoom
-    - Uncheck all apart from Zoom in and out
+- _Point & Click_
+    - Enable _Tap to click with one finger_
+    - Change _Secondary click_ to _Right corner_
+    - Uncheck _Three Finger Drag_
+- _Scroll & Zoom_
+    - Uncheck _all_ apart from _Zoom in and out_
 
 ## Dock
-- Visual settings
-    - Change position to left and make the size of Icons small
-- Other settings
-    - Remove workspace auto-switching by running the following command:
+- _Visual Settings_
+    - _Change position_ to _Left_ and _make the size_ of icons _Small_
+- _Other settings_
+    - Remove _workspace auto-switching_ by running the following command:
 
-```
+```shell
 $ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-$ killall Dock
+$ killall Dock # Restart the Dock process
 ```
 
 ## Finder
-- Preferences
-    - Change 'New Finder windows show:' to something other than 'All My Files' (which is a memory hog)
-- Toolbar
-    - Update to add path, new folder and delete
+- General
+    - Change _New finder window show_ to open in your _Home Directory_
 - Sidebar
-    - Add home and code directory
-    - Remove shared and tags
-    - New finder window to open in the home directory
+    - Add _Home_ and your _Code Directory_
+    - Uncheck all _Shared_ boxes
 
 ## Menubar
-- Remove the display and Bluetooth icons
-- Change battery to show percentage symbols
+- Remove the _Display_ and _Bluetooth_ icons
+- Change _battery_ to _Show percentage symbols_
 
 ## Spotlight
-- Uncheck fonts, images, files etc.
-- Uncheck the keyboard shortcuts as we'll be replacing them with Alfred
+- Uncheck _fonts_, _images_, _files_ etc.
+- Uncheck the _keyboard shortcuts_ as we'll be replacing them with
+  [_Alfred_](https://www.alfredapp.com/)
 
 ## Accounts
-- Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
+- Add an _iCloud account_ and sync _Calendar_, _Find my Mac_, _Contacts_ etc.
 
 ## User Defaults
-- Enable repeating keys by pressing and holding down keys: `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app that you need to repeat keys in)
-- Change the default folder for screenshots
-    - Open the terminal and create the folder where you would like to store your screenshots: `mkdir /path/to/screenshots/`
-    - Then run the following command: `defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer`
+- Enable _repeating keys by pressing and holding down keys_: `defaults write
+  NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app
+  that you need to repeat keys in)
+- Change the _default folder for screenshots_
+    - Open the terminal and create the folder where you would like to store
+      your screenshots: `mkdir -p /path/to/screenshots/`
+    - Then run the following command: `defaults write com.apple.screencapture
+      location /path/to/screenshots/ && killall SystemUIServer`
 
-## How to write to NTFS on OS X Yosemite and El Capitan
+## How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)
 
-### Install Homebrew and Homebrew Cask
-- Instructions [here](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)
+**1) Install Homebrew and Homebrew Cask**
 
-### Update Homebrew formulae:
+Instructions [here](https://sourabhbajaj.com/mac-setup/Homebrew/README.html).
+
+**2) Update Homebrew formulae**
 
     $ brew update
 
-### Install osxfuse
-- If you are on OS X 10.11 (El Capitan), install the (3.x.x) from [the repo](https://github.com/osxfuse/osxfuse/releases).
+**3) Install osxfuse**
+
+If you are on macOS El Capitan (10.11), install the (3.x.x) from [the
+repo](https://github.com/osxfuse/osxfuse/releases).
 
     $ brew cask install osxfuse
 
-### Install ntfs-3g
+**4) Install ntfs-3g**
 
     $ brew install homebrew/fuse/ntfs-3g
 
-### If you are on OS X 10.11 (El Capitan), temporary disable System Integrity Protection
+**5) If you are on macOS El Capitan (10.11), temporarily disable System
+Integrity Protection**
 
- - **Reboot** and hold CMD+R to get in recovery mode
+ - **Reboot** and hold `CMD + R` to get in recovery mode
  - Open the terminal and type:
 
-    $ csrutil disable
+```shell
+$ csrutil disable
+```
 
  - **Reboot** normally
 
-### Create a symlink for mount_ntfs
+**6) Create a symlink for mount_ntfs**
 
-    $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-    $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+```shell
+$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+$ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+```
 
-### If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection
- - **Reboot** and hold CMD+R to get in recovery mode
- - Open the terminal and type
+**7) If you are on macOS El Capitan (10.11), re-enable System Integrity
+Protection**
 
-    $ csrutil enable
+ - **Reboot** and hold `CMD + R` to get in recovery mode
+ - Open the terminal and type:
+
+```shell
+$ csrutil disable
+```
 
  - **Reboot** normally
- - Done
