@@ -137,7 +137,7 @@ This is [Purcell's](https://github.com/purcell/emacs.d) emacs configuration tree
 
 ### Installation
 
-To install, clone this repo to `~/.emacs.d`, i.e. ensure that the `init.el` contained in this repo ends up at `~/.emacs.d/init.el`:
+To install, clone this repository to `~/.emacs.d`, i.e. ensure that the `init.el` contained in this repository ends up at `~/.emacs.d/init.el`:
 
 ```shell
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d

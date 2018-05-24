@@ -100,7 +100,8 @@ $ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   done
 ```
 
-For more information on customisation visit the [GitHub repo for Prezto](https://github.com/sorin-ionescu/prezto).
+For more information on customisation visit the [GitHub repository for
+Prezto](https://github.com/sorin-ionescu/prezto).
 
 ### Modules
 
