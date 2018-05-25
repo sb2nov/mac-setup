@@ -1,16 +1,17 @@
 # Git and GitHub
 
-What's a developer without [Git](http://git-scm.com/)? To install, simply run:
+What's a developer without [Git](http://git-scm.com/)? To install, run:
 
     $ brew install git
 
-When done, to test that it installed fine you can run:
+When done, to test that it installed properly you can run:
 
     $ git --version
 
-And `$ which git` should output `/usr/local/bin/git`.
+And `which git` should output `/usr/local/bin/git`.
 
-Next, we'll define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
+Next, we'll define your Git user (should be the same name and email you use for
+[GitHub](https://github.com/)):
 
 ```sh
 $ git config --global user.name "Your Name Here"
@@ -19,48 +20,56 @@ $ git config --global user.email "your_email@youremail.com"
 
 They will get added to your `.gitconfig` file.
 
-To push code to your GitHub repositories, we're going to use the recommended HTTPS method (versus SSH). So you don't have to type your username and password everytime, let's enable Git password caching as described [here](https://help.github.com/articles/set-up-git):
+To push code to your GitHub repositories, we're going to use the recommended
+HTTPS method (versus SSH). To prevent `git` from asking for your username and
+password every time you push a commit you can cache your credentials by running
+the following command, as described in the
+[instructions](https://help.github.com/articles/caching-your-github-password-in-git/).
 
     $ git config --global credential.helper osxkeychain
 
-- - -
+## SSH Config for GitHub
 
-### SSH Config for GitHub
-This might be difficult to configure in case you have two factor authentication enabled. Please use the SSH config in that case.
+The instructions below are referenced from [the official
+documentation](https://help.github.com/articles/generating-ssh-keys).
 
-Setting up SSH is really simple as well. Most of the instructions below are referenced from [here](https://help.github.com/articles/generating-ssh-keys).
+### Check for existing SSH keys
 
-First, we need to check for existing SSH keys on your computer. Open up your Terminal and type:
+First, we need to check for existing SSH keys on your computer. We do this by
+running:
 
 ```sh
-$ cd ~/.ssh
-$ ls -al
-# Lists the files in your .ssh directory
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
 ```
 
-Check the directory listing to see if you have files named either id_rsa.pub or id_dsa.pub. If you don't have either of those files go to step 2. Otherwise, you can skip to step 3.
+Check the directory listing to see if you have files named either `id_rsa.pub`
+or `id_dsa.pub`. If you don't have either of those files then read on,
+otherwise skip the next section.
 
-Second, To generate a new SSH key, copy and paste the text below, making sure to substitute in your email. The default settings are preferred, so when you're asked to "enter a file in which to save the key,"" just press enter to continue.
+### Generate a new SSH key
+
+If you don't have an SSH key you need to generate one. To do that you need to
+run the commands below, and make sure to substitute the placeholder with your
+email. The default settings are preferred, so when you're asked to "enter a
+file in which to save the key,"" just press Enter to continue.
 
 ```sh
 $ ssh-keygen -t rsa -C "your_email@example.com"
 # Creates a new ssh key, using the provided email as a label
-# Generating public/private rsa key pair.
-# Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 ```
 
-Please use a strong passphrase for your keys.
+### Add your SSH key to the ssh-agent
 
-Third, Add your keys to GitHub by going into account settings.
-
-Lastly, Add your keys to the `ssh-agent`:
+Run the following commands to add your SSH key to the `ssh-agent`.
 
 ```sh
 $ eval "$(ssh-agent -s)"
-$ ssh-add -K ~/.ssh/id_rsa
 ```
 
-Optionally, you can configure your ssh keys in ~/.ssh/config:
+If you're running macOS Sierra 10.12.2 or later, you will need to modify your
+`~/.ssh/config` file to automatically load keys into the ssh-agent and store
+passphrases in your keychain:
 
 ```
 Host *
@@ -69,29 +78,21 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 ```
 
-The configuration above will add your ssh key to the ssh-agent and store your passphrase in the keychain, so that you are not asked for it each time you use the key.
-
-- - -
-
-### DS_Store
-On a Mac, it is important to remember to add `.DS_Store` (a hidden macOS system file that's put in folders) to your `.gitignore` files.
-
-If you want to never include `.DS_Store` files in your Git repositories, you can configure your Git to globally exclude those files:
+No matter what operating system version you run you need to run this command to
+complete this step:
 
 ```sh
-# specify a global exclusion list
-$ git config --global core.excludesfile ~/.gitignore
-# adding .DS_Store to that list
-$ echo .DS_Store >> ~/.gitignore
+$ ssh-add -K ~/.ssh/id_rsa
 ```
 
-- - -
+### Adding a new SSH key to your GitHub account
 
-### Setting up Sublime Text as the Git Mergetool
+The last step is to let GitHub know about your SSH key. Run this command to copy your key to your clipboard:
 
 ```sh
-$ git config --global mergetool.sublime.cmd "subl -w \$MERGED"
-$ git config --global mergetool.sublime.trustExitCode false
-$ git config --global merge.tool sublime
-$ git mergetool -y
+$ pbcopy < ~/.ssh/id_rsa.pub
 ```
+
+Then go to GitHub and [input your new SSH
+key](https://github.com/settings/ssh/new). Paste your key in the "Key" textbox
+and pick a name that represents the computer you're currently using.
