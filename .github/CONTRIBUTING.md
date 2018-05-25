@@ -11,6 +11,5 @@ contribution under the [MIT License](../LICENSE).
 
 If you would like to submit a pull request, please base it on our
 [template](CONTRIBUTION_TEMPLATE.md). Not only does this make things easier for
-_you_ to know what to include in your contribution, it makes the guide
-more consistent which results in a better experience for the user.
-Thank you.
+_you_ to know what to include in your contribution, it makes the guide more
+consistent which results in a better experience for the user. Thank you.

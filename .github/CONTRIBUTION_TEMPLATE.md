@@ -9,7 +9,7 @@
   How to install it. If it's available on homebrew, just include the following
 
   ```bash
-  brew install <tool>
+  $ brew install <tool>
   ```
 -->
 
@@ -20,7 +20,7 @@
   descriptions for extra features. If it's a command-line tool you are writing
   about you could for example write about some useful flags. See iTerm/tree
   as an example.
-  -->
+-->
 
 ## Customization
 <!-- If the tool has any useful customization it can be added here -->
