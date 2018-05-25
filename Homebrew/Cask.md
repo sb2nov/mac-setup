@@ -1,16 +1,32 @@
-# Homebrew Cask
-[Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.
+# Homebrew-Cask
+
+[Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to
+install large binary files via a command-line tool. You can for example install
+applications like Google Chrome, Dropbox, VLC and Spectacle. No more
+downloading `.dmg` files and dragging them to your Applications folder!
 
 ## Installation
-As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the [Homebrew section](/mac-setup/Homebrew/README.html).
+
+You need Homebrew on your system to use Cask, and you make Cask available by
+adding it as a tap:
+
+    $ brew tap caskroom/cask
 
 ## Search
-To see if an app is available on Cask you can search on the [official Cask website](https://caskroom.github.io/). You can also search using the following command:
+
+To see if an app is available on Cask you can search on the [official Cask
+website](https://caskroom.github.io/). You can also search in your terminal:
 
     $ brew cask search <package>
 
-## Quick Look plugins
-These plugins adds support for the corresponding file type to Mac Quick Look (In Finder, mark a file and press Space to start Quick Look). The plugins includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files and more.
+## Example Applications
+
+### Quick Look plugins
+
+These plugins add support for the corresponding file type to Mac Quick Look
+(In Finder, mark a file and press Space to start Quick Look). The plugins
+includes features like syntax highlighting, Markdown rendering, preview of
+JSON, patch files, CSV, ZIP files and more.
 
 ```sh
 $ brew cask install \
@@ -25,7 +41,8 @@ $ brew cask install \
     suspicious-package
 ```
 
-## App Suggestions
+### App Suggestions
+
 Here are some useful apps that are available on Cask.
 
 ```sh
