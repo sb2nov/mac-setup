@@ -791,40 +791,59 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="python">Python</h1>
-<p>macOS, like Linux, ships with <a href="http://python.org/" target="_blank">Python</a> already installed. But you don&apos;t want to mess with the system Python (some system tools rely on it, etc.), so we&apos;ll install our own version(s). There are two ways to install Python, (1) Homebrew and (2) Pyenv. If you plan to use multiple versions of Python (e.g. 2, 3, and anaconda) then you should use pyenv.</p>
+<p>macOS, like Linux, ships with <a href="https://python.org/" target="_blank">Python</a> already installed.
+But you don&apos;t want to mess with the system Python (some system tools rely on
+it, etc.), so we&apos;ll install our own version(s). There are two ways to install
+Python, (1) Homebrew and (2) Pyenv. If you plan to use multiple versions of
+Python (e.g. 2, 3, and anaconda) then you should use pyenv.</p>
+<h2 id="installation">Installation</h2>
 <h3 id="homebrew-method">Homebrew method</h3>
-<p>The following command will install Python 2.7 and any dependencies required (it can take a few minutes to build everything):</p>
+<p>Python 3 is the default version when installing with Homebrew, so if you want
+to install Python 2.7 you&apos;ll have to be explicit about it.</p>
+<p><strong>Python 3</strong></p>
 <pre><code>$ brew install python
-</code></pre><p>When finished, you should get a summary in the terminal. Running <code>$ which python</code> should output <code>/usr/local/bin/python</code>.</p>
-<p>It also installed <a href="https://pypi.python.org/pypi/pip" target="_blank">pip</a> (and its dependency <a href="https://pypi.python.org/pypi/setuptools" target="_blank">Setuptools</a>), which is the package manager for Python. Let&apos;s upgrade them both:</p>
+</code></pre><p><strong>Python 2.7</strong></p>
+<pre><code>$ brew install python@2
+</code></pre><p>Installing Python also installs <a href="https://pypi.org/project/setuptools/" target="_blank">pip</a>
+(and its dependency <a href="https://pypi.python.org/pypi/setuptools" target="_blank">Setuptools</a>),
+which is the package manager for Python. Let&apos;s upgrade them both:</p>
 <pre><code>$ pip install --upgrade setuptools
 $ pip install --upgrade pip
-</code></pre><p>Executable scripts from Python packages you install will be put in <code>/usr/local/share/python</code>, we already had this in the <code>Env.sh</code> file created before. Save the file and open a new terminal to take the new <code>$PATH</code> into account (everytime you open a terminal, <code>.bash_profile</code> gets loaded).</p>
+</code></pre><p>Executable scripts from Python packages you install will be put in
+<code>/usr/local/share/python</code>, make sure it&apos;s on your <code>PATH</code>.</p>
 <h3 id="pyenv-method">Pyenv method</h3>
-<p><a href="https://github.com/yyuu/pyenv" target="_blank">Pyenv</a> is a simple Python version manager that can manage and install different versions of Python. Works very much like rbenv for Ruby. First, we must install pyenv using homebrew:</p>
+<p><a href="https://github.com/yyuu/pyenv" target="_blank"><code>pyenv</code></a> is a Python version manager that can
+manage and install different versions of Python. Works very much like <code>rbenv</code>
+for Ruby. First, we must install <code>pyenv</code> using Homebrew:</p>
 <pre><code>$ brew install pyenv
-</code></pre><p>To upgrade pyenv in the future, use <code>upgrade</code> instead of <code>install</code>.
-After installing, add <code>pyenv init</code> to your shell to enable shims and autocompletion.</p>
-<pre><code>$ echo &apos;eval &quot;$(pyenv init -)&quot;&apos; &gt;&gt; ~/Projects/config/env.sh
-</code></pre><p>Restart your shell so the path changes take effect. You can now begin using pyenv.</p>
+</code></pre><p>To upgrade <code>pyenv</code> in the future, use <code>upgrade</code> instead of <code>install</code>. After
+installing, add <code>pyenv init</code> to your shell to enable shims and autocompletion
+(use <code>.zshrc</code> if you&apos;re using <code>zsh</code>).</p>
+<pre><code>$ echo &apos;eval &quot;$(pyenv init -)&quot;&apos; &gt;&gt; ~/.bash_profile
+</code></pre><p>Restart your shell so the path changes take effect.</p>
 <pre><code>$ exec $SHELL
-</code></pre><p>To list the all available versions of Python, including Anaconda, Jython, pypy, and stackless, use:</p>
+</code></pre><p>You can now begin using <code>pyenv</code>. To list the all available versions of Python,
+including Anaconda, Jython, PyPy and Stackless, use:</p>
 <pre><code>$ pyenv install --list
 </code></pre><p>Then install the desired versions:</p>
 <pre><code>$ pyenv install 2.7.12
 $ pyenv install 3.5.2
-</code></pre><p>Use the <code>global</code> command to set global version(s) of Python to be used in all shells. For example, if you prefer 2.7.12 over 3.5.2:</p>
+</code></pre><p>Use the <code>global</code> command to set global version(s) of Python to be used in all
+shells. For example, if you prefer 2.7.12 over 3.5.2:</p>
 <pre><code>$ pyenv global 2.7.12 3.5.2
 $ pyenv rehash
-</code></pre><p>The leading version takes priority.
-All installed Python versions can be located in <code>~/.pyenv/versions</code>. Alternatively, you can run:</p>
+</code></pre><p>The leading version takes priority. All installed Python versions can be
+located in <code>~/.pyenv/versions</code>. Alternatively, you can run:</p>
 <pre><code>$ pyenv versions
   system (set by /Users/your_account/.pyenv/version)
 * 2.7.12
 * 3.5.2
 </code></pre><p>This shows an asterisk <code>*</code> next to the currently active version.</p>
-<p><strong>Local application-specific Python version</strong></p>
-<p>The <code>local</code> command will set local application-specific Python version(s) by writing the version name to a <code>.python-version</code> file in the current directory. This version overrides the global version. For example, to install anaconda3-4.1.1 in <code>path/to/directory</code>:</p>
+<h3 id="application-specific-python-version">Application-specific Python version</h3>
+<p>The <code>local</code> command will set local application-specific Python version(s) by
+writing the version name to a <code>.python-version</code> file in the current directory.
+This version overrides the global version. For example, to install
+anaconda3-4.1.1 in <code>path/to/directory</code>:</p>
 <pre><code>$ pyenv install anaconda3-4.1.1
 $ cd path/to/directory
 $ pyenv local anaconda3-4.1.1
@@ -877,7 +896,7 @@ $ pyenv versions
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.11","depth":1,"next":{"title":"Pip","level":"1.11.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"previous":{"title":"JetBrains IDEs","level":"1.10","depth":1,"path":"JetBrainsIDEs/README.md","ref":"JetBrainsIDEs/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/README.md","mtime":"2018-05-14T09:18:01.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-22T18:30:58.713Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python","level":"1.11","depth":1,"next":{"title":"Pip","level":"1.11.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"previous":{"title":"JetBrains IDEs","level":"1.10","depth":1,"path":"JetBrainsIDEs/README.md","ref":"JetBrainsIDEs/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/README.md","mtime":"2018-05-27T15:30:01.868Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-27T15:30:17.109Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
