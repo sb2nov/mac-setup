@@ -83,7 +83,7 @@ repo](https://github.com/osxfuse/osxfuse/releases).
 
 **4) Install ntfs-3g**
 
-    $ brew install homebrew/fuse/ntfs-3g
+    $ brew install ntfs-3g
 
 **5) If you are on macOS El Capitan (10.11), temporarily disable System
 Integrity Protection**
