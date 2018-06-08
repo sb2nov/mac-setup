@@ -111,7 +111,7 @@ Protection**
  - Open the terminal and type:
 
 ```shell
-$ csrutil disable
+$ csrutil enable
 ```
 
  - **Reboot** normally
