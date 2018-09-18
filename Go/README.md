@@ -20,6 +20,12 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 ```
 
+Once you save and close that file, make sure you run `source <filename>` to restart your bash session so that you have those changes. For example:
+
+```sh
+source ~/.bash_profile
+```
+
 ### Create your workspace
 Create the workspace directories tree:
 
