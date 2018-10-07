@@ -26,7 +26,7 @@ Contributing to the guide
 
 All contributions to the guide are welcome. Please help add support for other
 libraries and languages. To make a contribution please use our [contribution
-template](.github/CONTRIBUTION_TEMPLATE.md).
+template](https://github.com/sb2nov/mac-setup/blob/master/.github/CONTRIBUTION_TEMPLATE.md).
 
 **We're looking for more contributors to maintain and extend the
 documentation.**
