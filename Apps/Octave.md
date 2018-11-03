@@ -5,7 +5,19 @@
 You might need `homebrew-cask`, if you don't have it refer to [this section](/mac-setup/Homebrew/Cask.html).
 
 ## Installation
-Octave can be installed with `brew cask install octave` or using the method below.
+
+### Homebrew Octave.app
+[Octave.app](http://octave-app.org) is a project to distribute GNU Octave as a native Mac GUI application, to make it easier to install and use Octave on macOS. Note this is not an official GNU or GNU Octave project.
+As this distibutes a compiled version of Octave, installation will be much faster.
+
+To [install using homebrew-cask](http://octave-app.org/#installing-with-homebrew-cask) run:
+
+    $ brew tap octave-app/octave-app
+    $ brew cask install octave-app
+
+
+### Homebrew official
+You can also install Octave from the offical homebrew source using the method below.
 
 Import the scientific computing packages and install necessary packages:
 
