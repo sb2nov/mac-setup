@@ -13,6 +13,7 @@
   * [ack](iTerm/ack.md)
 * [Git](Git/README.md)
   * [Git Ignore](Git/gitignore.md)
+* [Bash Completion](BashCompletion/README.md)
 * [Vim](Vim/README.md)
 * [Emacs](Emacs/README.md)
 * [Sublime Text](SublimeText/README.md)
