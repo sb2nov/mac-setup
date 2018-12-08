@@ -39,7 +39,7 @@ You can check list additional completion packages are available by typing:
 
     $ brew search completion
 
-And you can install them using `brew install` command, example:
+And you can install them using `brew install` commands, for example:
 
     $ brew install docker-completion
 
