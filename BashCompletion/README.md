@@ -4,7 +4,7 @@
 
     $ brew install bash-completion
 
-Bash completion will installed on `/usr/local/etc/bash_completion.d`
+Bash completion will be installed in `/usr/local/etc/bash_completion.d`
 
 So that this works, Add the following line to your ~/.bash_profile:
 
