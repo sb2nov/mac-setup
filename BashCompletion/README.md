@@ -6,7 +6,7 @@
 
 Bash completion will be installed in `/usr/local/etc/bash_completion.d`
 
-So that this works, Add the following line to your ~/.bash_profile:
+For it to work, add this to your `~/.bash_profile`:
 
 ```bash
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
