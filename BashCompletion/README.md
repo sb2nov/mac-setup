@@ -35,7 +35,7 @@ bisect         cherry         commit         fetch          grep           log  
 
 ## More
 
-You can check list additional completion packages are available by typing:
+You can list additional completion packages are available by typing:
 
     $ brew search completion
 
