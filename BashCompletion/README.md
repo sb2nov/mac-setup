@@ -22,7 +22,7 @@ Restart your bash session:
 
 ## Usage
 
-Once you've done this. you can use bash completion by hit `TAB` twice after a command. example:
+Once you've done this, you can use bash completion by pressing the tab key twice after a command. For example:
 
 ```bash
 $ git [tab] [tab]
