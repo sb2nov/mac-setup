@@ -1,5 +1,7 @@
 # Bash Completion
 
+Bash completion is a bash function that allows you to auto complete commands or arguments by typing partially commands or arguments, then pressing the [Tab] key. This will really help you when writing the bash command in terminal.
+
 ## Installation
 
     $ brew install bash-completion
