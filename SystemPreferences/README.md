@@ -64,6 +64,28 @@ $ killall Dock # Restart the Dock process
     - Then run the following command: `defaults write com.apple.screencapture
       location /path/to/screenshots/ && killall SystemUIServer`
 
+## Sudoers Permission
+
+While invoking sudo commands instead of typing password for every 15 mins, we can change the settings to ask sudo password once per session
+
+```shell
+$ sudo visudo # to open the sudoers file
+# Change the line "Defaults        env_reset" to
+Defaults        env_reset,timestamp_timeout=-1
+```
+You can also set `timestamp_timeout` to a different value which is in minutes.
+
+Alternatively, you can allow certain users to run sudo command without any permission. This is not the recommended though, as it might open doors for security vulnerability. But documenting this to know about the other ways to give sudo access to the user.
+
+To do this edit and add the below line to the sudoers file,
+
+```shell
+$ sudo visudo # to open the sudoers file
+<user>        ALL = (ALL) NOPASSWD:ALL # add this line to sudoers file
+```
+
+Going forward this user will not be asked to enter the password to use sudo commands.
+
 ## How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)
 
 **1) Install Homebrew and Homebrew Cask**
