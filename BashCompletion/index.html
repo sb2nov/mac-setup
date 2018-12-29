@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Homebrew · macOS Setup Guide</title>
+        <title>Bash Completion · macOS Setup Guide</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Usage.html" />
+    <link rel="next" href="../Vim/" />
     
     
-    <link rel="prev" href="../Xcode/" />
+    <link rel="prev" href="../Git/gitignore.html" />
     
 
     </head>
@@ -125,9 +125,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
             
-                <a href="./">
+                <a href="../Homebrew/">
             
                     
                     Homebrew
@@ -139,9 +139,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="Usage.html">
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
             
-                <a href="Usage.html">
+                <a href="../Homebrew/Usage.html">
             
                     
                     Usage
@@ -152,9 +152,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="Cask.html">
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
             
-                <a href="Cask.html">
+                <a href="../Homebrew/Cask.html">
             
                     
                     Cask
@@ -273,9 +273,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../BashCompletion/">
+        <li class="chapter active" data-level="1.7" data-path="./">
             
-                <a href="../BashCompletion/">
+                <a href="./">
             
                     
                     Bash Completion
@@ -788,7 +788,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Homebrew</a>
+        <a href=".." >Bash Completion</a>
     </h1>
 </div>
 
@@ -803,29 +803,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="homebrew">Homebrew</h1>
-<p><a href="https://brew.sh/" target="_blank">Homebrew</a> calls itself <em>The missing package manager for
-macOS</em> and is an essential tool for any developer.</p>
+                                <h1 id="bash-completion">Bash Completion</h1>
+<p>Bash completion is a bash function that allows you to auto complete commands or
+arguments by typing partially commands or arguments, then pressing the [Tab]
+key. This will help you when writing the bash command in terminal.</p>
 <h2 id="installation">Installation</h2>
-<p>Before you can run Homebrew you need to have the <strong>Command Line Tools</strong> for
-<strong>Xcode</strong> installed. It include compilers that will allow you to build things
-from source, and if you are missing this it&apos;s available through the App Store &gt;
-Updates.</p>
-<p>To install Homebrew run the following:
-terminal, hit <strong>Enter</strong>, and follow the steps on the screen:</p>
-<pre><code>$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre><p>One thing you need to do is tell the system to use programs installed by Hombrew
-(in <code>/usr/local/bin</code>) rather than the OS default if it exists. You do this by
-adding <code>/usr/local/bin</code> to your <code>PATH</code> environment variable (if you&apos;re using
-<code>zsh</code> you should use <code>.zshrc</code> instead of <code>.bash_profile</code>):</p>
-<pre><code>$ echo &apos;export PATH=&quot;/usr/local/bin:$PATH&quot;&apos; &gt;&gt; ~/.bash_profile
-</code></pre><p>Alternatively, you can also insert <code>/usr/local/bin</code> to the first line of
-<code>/private/etc/paths</code> and reboot the Mac to change global paths loading order.
-Admin password may be required if you modify the file.</p>
-<p>To be able to use <code>brew</code> you need to start a new terminal session. After that
-you should make sure everything is working by running:</p>
-<pre><code>$ brew doctor
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+<pre><code class="lang-bash">$ brew install bash-completion
+</code></pre>
+<p>Bash completion will be installed in <code>/usr/local/etc/bash_completion.d</code>.</p>
+<p>For it to work, add this to your <code>~/.bash_profile</code>:</p>
+<pre><code class="lang-bash">[ <span class="hljs-_">-f</span> /usr/<span class="hljs-built_in">local</span>/etc/bash_completion ] &amp;&amp; . /usr/<span class="hljs-built_in">local</span>/etc/bash_completion
+</code></pre>
+<p>Or simply type:</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[ -f /usr/local/etc/bash_completion ] &amp;&amp; . /usr/local/etc/bash_completion&quot;</span> &gt;&gt; ~/.bash_profile
+</code></pre>
+<p>Restart your bash session:</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">source</span> ~/.bash_profile
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Once you&apos;ve done this, you can use bash completion by pressing the tab key
+twice after a command. For example:</p>
+<pre><code class="lang-bash">$ git [tab] [tab]
+add            blame          cherry-pick    config         format-patch   gui            merge          push           repack         rm             stage          whatchanged
+am             branch         citool         describe       fsck           <span class="hljs-built_in">help</span>           mergetool      range-diff     replace        send-email     stash          worktree
+apply          bundle         clean          diff           gc             init           mv             rebase         request-pull   shortlog       status
+archive        checkout       <span class="hljs-built_in">clone</span>          difftool       gitk           instaweb       notes          reflog         reset          show           submodule
+bisect         cherry         commit         fetch          grep           <span class="hljs-built_in">log</span>            pull           remote         revert         show-branch    tag
+</code></pre>
+<h2 id="more">More</h2>
+<p>You can list additional completion packages are available by typing:</p>
+<pre><code class="lang-bash">$ brew search completion
+</code></pre>
+<p>And you can install them using <code>brew install</code> commands, for example:</p>
+<pre><code class="lang-bash">$ brew install docker-completion
+</code></pre>
+<p><em>You can also manually add a bash completion file into
+<code>/usr/local/etc/bash_completion.d</code></em></p>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -852,12 +866,12 @@ you should make sure everything is working by running:</p>
 
             
                 
-                <a href="../Xcode/" class="navigation navigation-prev " aria-label="Previous page: Xcode">
+                <a href="../Git/gitignore.html" class="navigation navigation-prev " aria-label="Previous page: Git Ignore">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Usage.html" class="navigation navigation-next " aria-label="Next page: Usage">
+                <a href="../Vim/" class="navigation navigation-next " aria-label="Next page: Vim">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -868,7 +882,7 @@ you should make sure everything is working by running:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Homebrew","level":"1.4","depth":1,"next":{"title":"Usage","level":"1.4.1","depth":2,"path":"Homebrew/Usage.md","ref":"Homebrew/Usage.md","articles":[]},"previous":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Homebrew/README.md","mtime":"2018-12-11T21:14:15.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bash Completion","level":"1.7","depth":1,"next":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"previous":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"BashCompletion/README.md","mtime":"2018-12-29T12:36:05.465Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
