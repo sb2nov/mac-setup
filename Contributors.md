@@ -54,6 +54,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [naman](https://github.com/naman)
 - [nkapliev](https://github.com/nkapliev)
 - [phillipalexander](https://github.com/phillipalexander)
+- [barmanrajdeep](https://github.com/barmanrajdeep)
 - [rkday](https://github.com/rkday)
 - [robindboer](https://github.com/robindboer)
 - [sahildua2305](https://github.com/sahildua2305)
