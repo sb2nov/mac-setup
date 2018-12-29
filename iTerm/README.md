@@ -4,9 +4,9 @@
 
 ## Installation
 
-You can get the app from [iTerm2 downloads page](http://www.iterm2.com/downloads.html). Once downloaded, drag and drop the **iTerm** application file into your **Applications** folder.
+Use [Homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/) to download and install:
 
->**Note**: Instead of downloading and installing iTerm2 manually, you can use [Homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/) `brew cask install iterm2`
+    brew cask install iterm2
 
 ## Customization
 
@@ -27,7 +27,7 @@ Here are some suggested settings you can change or set, **they are all optional*
 
 You might be familiar with shortcuts to skip a word (⌥) or go to start/end of the line (⌘). iTerm is not set up to work with these shortcuts by default but here's how you set them up:
 
-open up iTerm2 preferences (⌘,) -> Profiles -> Keys -> Click on + icon (add new Keyboard shortcut).
+Open up iTerm2 preferences (⌘ + ,) -> Profiles -> Keys -> Click on `+` icon (add new Keyboard shortcut).
 
 | shortcut |    action    | send |
 |:--------:|:------------:|:----:|
