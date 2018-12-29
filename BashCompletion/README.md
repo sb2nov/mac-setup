@@ -1,12 +1,16 @@
 # Bash Completion
 
-Bash completion is a bash function that allows you to auto complete commands or arguments by typing partially commands or arguments, then pressing the [Tab] key. This will really help you when writing the bash command in terminal.
+Bash completion is a bash function that allows you to auto complete commands or
+arguments by typing partially commands or arguments, then pressing the [Tab]
+key. This will help you when writing the bash command in terminal.
 
 ## Installation
 
-    $ brew install bash-completion
+```bash
+$ brew install bash-completion
+```
 
-Bash completion will be installed in `/usr/local/etc/bash_completion.d`
+Bash completion will be installed in `/usr/local/etc/bash_completion.d`.
 
 For it to work, add this to your `~/.bash_profile`:
 
@@ -16,15 +20,20 @@ For it to work, add this to your `~/.bash_profile`:
 
 Or simply type:
 
-    $ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+```bash
+$ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+```
 
 Restart your bash session:
 
-    $ source ~/.bash_profile
+```bash
+$ source ~/.bash_profile
+```
 
 ## Usage
 
-Once you've done this, you can use bash completion by pressing the tab key twice after a command. For example:
+Once you've done this, you can use bash completion by pressing the tab key
+twice after a command. For example:
 
 ```bash
 $ git [tab] [tab]
@@ -39,10 +48,16 @@ bisect         cherry         commit         fetch          grep           log  
 
 You can list additional completion packages are available by typing:
 
-    $ brew search completion
+```bash
+$ brew search completion
+```
 
 And you can install them using `brew install` commands, for example:
 
-    $ brew install docker-completion
+```bash
+$ brew install docker-completion
+```
 
-*You can also add bash completion file into `/usr/local/etc/bash_completion.d` manually*
+*You can also manually add a bash completion file into
+`/usr/local/etc/bash_completion.d`*
+
