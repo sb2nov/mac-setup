@@ -2,7 +2,7 @@
 
 This is an example of User Settings for a basic development but please feel free to modify or update as per your choice.
 
-~~~
+~~~json
 {
     "auto_complete_delay": 5,
     "auto_complete_selector": "source, text",
