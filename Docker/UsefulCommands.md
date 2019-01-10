@@ -15,7 +15,6 @@ command.
 0. [`docker run`](#docker-run)
 0. [Learn More](#learn-more)
 
-
 ## [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
 
 Build an image from a Dockerfile.

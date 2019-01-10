@@ -34,4 +34,3 @@ docker kill $(docker ps -q)
 ```
 
 Got more tips and tricks? Submit a PR!
-

@@ -31,4 +31,3 @@ For quick start find the newly installed _Docker Quickstart Terminal_ and double
     $ docker run hello-world
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).
-

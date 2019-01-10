@@ -47,4 +47,3 @@ Halt the vagrant machine now.
     $ vagrant halt
 
 Other useful commands are `suspend` and `destroy`.
-

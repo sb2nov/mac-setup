@@ -60,4 +60,3 @@ $ brew install docker-completion
 
 *You can also manually add a bash completion file into
 `/usr/local/etc/bash_completion.d`*
-

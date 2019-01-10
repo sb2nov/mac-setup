@@ -35,4 +35,3 @@ Your gems will then get installed in `project/.gems`.
 If you use Google for finding your Gem documentation then you might want to consider saving a bit of time when installing gems by not including the documentation.
 
     $ echo 'gem: --no-document' >> ~/.gemrc
-
