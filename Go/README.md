@@ -73,6 +73,7 @@ Besides creating your own packages you can import and use other packages in your
 The command above will import the package `mux` into this directory `$GOPATH/src/github.com/gorilla/mux`.
 
 You can then use this package in your Go programs like this:
+
 ```go
 package main
 

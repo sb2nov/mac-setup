@@ -26,6 +26,7 @@ venv
 node_modules
 .sass-cache
 ```
+
 followed by running the command below, in terminal:
 
     $ git config --global core.excludesfile ~/.gitignore

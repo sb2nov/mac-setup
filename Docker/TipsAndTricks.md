@@ -5,6 +5,7 @@ A collection of useful tips and tricks for Docker.
 ## Delete all containers
 
 **NOTE:** This will remove ALL your containers.
+
 ```sh
 docker rm $(docker ps -a -q)
 ```
