@@ -6,24 +6,27 @@
 
 When installing LaTex, two following options are given to users:
 
-  1. Install MacTeX with builtin editor (TexLive) - (2GB)
+  1. Install MacTeX with builtin editor (TexLive) - (3.2GB)
   2. Install BasicTeX only (100MB) + your personal LaTeX editor
 
 ### MacTeX vs BasicTeX
 
 MacTeX includes additional programs such as an editor and a BibTeX reference manager that help users to work with TeX outside of the command line. BasicTeX does not include these GUI programs. The trade-off that comes with using BasicTeX is that you will have to download and install additional packages and programs as the need arises- and BasicTeX is so basic that the need will arise. So, after installing BasicTeX you will be faced with the tasks of installing additional programs and installing missing packages.
 
-### Option 1
+#### MacTex
 
-Download [MacTex](http://www.tug.org/mactex/).
-For more details about MacTex [click here](https://www.tug.org/mactex/What_Is_Installed.pdf).
+Download [MacTex](http://www.tug.org/mactex/), or use `brew cask install mactex`.
+You can read more about MacTex in [What is installed (pdf)](https://www.tug.org/mactex/What_Is_Installed.pdf).
 
-Since MaxTex installs an LaTex editor ([TexMaker](http://www.xm1math.net/texmaker/download.html)) already, installing another LaTeX editor is unnecessary.
+Since MaxTex installs a LaTex editor ([TexMaker](http://www.xm1math.net/texmaker/download.html)) already, installing another LaTeX editor is unnecessary.
 
-### Option 2
+#### BasicTeX
 
-Download [BasicTeX](http://tug.org/mactex/morepackages.html).
-For more details about BasicTex [click Here](http://pages.uoregon.edu/koch/BasicTeX.pdf).
+Download [BasicTeX](http://tug.org/mactex/morepackages.html), or use `brew cask install basictex`. You can read more about BasicTex in [BasicTeX (pdf)](http://pages.uoregon.edu/koch/BasicTeX.pdf).
+
+You may use `tlmgr` to install tools/packages that you need.
+
+> **Note**: You may find CLI tool `tlmgr` cumbersome to use, in that case install GUI for `tlmgr` - [*TeX Live Utility*](https://amaxwell.github.io/tlutility/) - `brew cask install tex-live-utility`.
 
 Now you should pick a LaTeX editor, here are some to choose from:
 
@@ -34,3 +37,6 @@ Now you should pick a LaTeX editor, here are some to choose from:
   5. [LyX](http://www.lyx.org/)
   6. [TeXlipse](http://texlipse.sourceforge.net/)
   7. [Sublime Text 3 - LaTeXTools](https://github.com/SublimeText/LaTeXTools)
+  8. [Visual Studio Code - LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
+
+> **Note**: You may find useful a PDF reader that watches your PDF files, like Skim `brew cask install skim` (Preferences -> Sync).
