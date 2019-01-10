@@ -1,12 +1,10 @@
 language: node_js
-cache:
-  - npm
-  - yarn
+cache:  yarn
 node_js:
 - "8"
 install:
   - yarn install
-  - npm install -g markdownlint-cli
+  - yarn global add markdownlint-cli
 script:
   - gitbook install && gitbook build
   - markdownlint . --ignore node_modules
