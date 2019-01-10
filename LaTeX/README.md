@@ -39,4 +39,4 @@ Now you should pick a LaTeX editor, here are some to choose from:
   7. [Sublime Text 3 - LaTeXTools](https://github.com/SublimeText/LaTeXTools)
   8. [Visual Studio Code - LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
 
-> **Note**: You may find useful a PDF reader that watches your PDF files, like Skim `brew cask install skim` (Preferences -> Sync).
+> **Note**: You may want to use a PDF reader that watches your PDF files, like Skim (can be installed by `brew cask install skim` and *Sync* feature can be enabled in Preferences -> Sync).
