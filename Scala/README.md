@@ -34,4 +34,4 @@ Copy the URL as location and hit OK to validate.
 
 Select Scala IDE for Eclipse/IntelliJ from the list of available features.
 
-Finish the installation, restart Eclipse and Scala IDE is now installed. 
+Finish the installation, restart Eclipse and Scala IDE is now installed.

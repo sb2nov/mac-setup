@@ -8,9 +8,9 @@ You'll need `homebrew-cask`, if you don't have it refer to [this section](/mac-s
 
 ## Installation
 
-Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can [directly download virtualbox](https://www.virtualbox.org/wiki/Downloads) and install or use Homebrew for it. 
+Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can [directly download virtualbox](https://www.virtualbox.org/wiki/Downloads) and install or use Homebrew for it.
 Notice that macOS High Sierra 10.13 introduces a new feature that requires user approval before loading new third-party kernel extensions.
-In case of failure follow the instructions [here](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) 
+In case of failure follow the instructions [here](https://developer.apple.com/library/archive/technotes/tn2459/_index.html).
 
     $ brew cask install virtualbox
 
