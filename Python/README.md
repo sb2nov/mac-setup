@@ -13,11 +13,11 @@ Python (e.g. 2, 3, and anaconda) then you should use pyenv.
 Python 3 is the default version when installing with Homebrew, so if you want
 to install Python 2.7 you'll have to be explicit about it.
 
-**Python 3**
+#### Python 3
 
     $ brew install python
 
-**Python 2.7**
+#### Python 2.7
 
     $ brew install python@2
 

@@ -74,27 +74,26 @@ $ killall Dock # Restart the Dock process
 
 ## How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)
 
-**1) Install Homebrew and Homebrew Cask**
+### 1) Install Homebrew and Homebrew Cask
 
 Instructions [here](https://sourabhbajaj.com/mac-setup/Homebrew/README.html).
 
-**2) Update Homebrew formulae**
+### 2) Update Homebrew formulae
 
     $ brew update
 
-**3) Install osxfuse**
+### 3) Install osxfuse
 
 If you are on macOS El Capitan (10.11), install the (3.x.x) from [the
 repo](https://github.com/osxfuse/osxfuse/releases).
 
     $ brew cask install osxfuse
 
-**4) Install ntfs-3g**
+### 4) Install ntfs-3g
 
     $ brew install ntfs-3g
 
-**5) If you are on macOS El Capitan (10.11), temporarily disable System
-Integrity Protection**
+### 5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection
 
  - **Reboot** and hold `CMD + R` to get in recovery mode
  - Open the terminal and type:
@@ -105,15 +104,14 @@ $ csrutil disable
 
  - **Reboot** normally
 
-**6) Create a symlink for mount_ntfs**
+### 6) Create a symlink for mount_ntfs
 
 ```shell
 $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 ```
 
-**7) If you are on macOS El Capitan (10.11), re-enable System Integrity
-Protection**
+### 7) If you are on macOS El Capitan (10.11), re-enable System Integrity Protection
 
  - **Reboot** and hold `CMD + R` to get in recovery mode
  - Open the terminal and type:
