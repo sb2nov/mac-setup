@@ -3,7 +3,7 @@
 Here follows a list of useful Docker commands with useful flags for each
 command.
 
-# Table of Contents
+## Table of Contents
 
 0. [`docker build`](#docker-build)
 0. [`docker exec`](#docker-exec)
