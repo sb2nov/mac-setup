@@ -6,5 +6,5 @@ install:
   - yarn install
   - yarn global add markdownlint-cli
 script:
-  - gitbook install && gitbook build
   - markdownlint . --ignore node_modules
+  - gitbook install && gitbook build
