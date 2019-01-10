@@ -1,4 +1,5 @@
 # Scala
+
 Make sure you have Java installed, the instructions are provided [here](/mac-setup/Java/README.html).
 
     $ brew update
@@ -10,6 +11,7 @@ Make sure you have Java installed, the instructions are provided [here](/mac-set
     $ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
 
 ## Scala Plugin for Eclipse
+
 Scala IDE for Eclipse is best installed (and updated) directly from within Eclipse.
 
 This is done by using `Help → Install New Software...`, add the `Add...` button in the dialog.
@@ -17,6 +19,7 @@ This is done by using `Help → Install New Software...`, add the `Add...` butto
 Choose a name for the update site (`Scala IDE` is a suggestion). Then read the next section to select which version you will install.
 
 ### What version to install
+
 The list of URLs of the different update sites are available in the download area. The release ones are in the current section. Scala IDE is linked to specific version of Scala, so you have to decide which one you are going to use:
 
 - Version `2.10`: provides support for projects using Scala 2.10 (any minor version). This is the current version of Scala. Pick this one if you are unsure.
@@ -26,6 +29,7 @@ The list of URLs of the different update sites are available in the download are
 The version of Scala used inside of Scala IDE cannot be chosen per project. So, if you want to work with a project using different version of Scala (like 2.9.3 and 2.10.1), you need different installation of Scala IDE.
 
 ### Finish installation
+
 Copy the URL as location and hit OK to validate.
 
 Select Scala IDE for Eclipse/IntelliJ from the list of available features.

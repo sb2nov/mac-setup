@@ -81,6 +81,7 @@ You'll find a list of themes with screenshots on the
 [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
 
 ## Prezto
+
 [Prezto](https://github.com/sorin-ionescu/prezto) is a configuration framework
 for `zsh`; it enriches the command line interface environment with sane
 defaults, aliases, functions, auto completion, and prompt themes.

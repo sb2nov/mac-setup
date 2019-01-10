@@ -1,12 +1,15 @@
 # Node.js
+
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ## Installation
+
 ### Using Homebrew
 
     $ brew install node
 
 ### Using Node Version Manager (nvm)
+
 Download and install [nvm](https://github.com/creationix/nvm) by running:
 
     $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
@@ -24,6 +27,7 @@ Then download Node and select your version by running:
 See the [documentation](https://github.com/creationix/nvm#installation) for information.
 
 ## npm usage
+
 To install a package:
 
     $ npm install <package> # Install locally

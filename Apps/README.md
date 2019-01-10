@@ -1,12 +1,15 @@
 # Apps
+
 Here is a list of apps that are generally good to use and can come in handy in day to day tasks. The apps are separated into 4 broad categories _Developer Tools_, _Productivity Tools_, _Office Apps_ and _Other_.
 
 ## Development Tools
+
 - [Google Chrome](https://www.google.com/intl/en/chrome/browser/): Chrome is a developer friendly browser with powerful development tools built in to it.
 - [Valentina Studio](http://www.valentina-db.com/en/valentina-studio-overview): Valentina Studio is a GUI to create, administer and query MySQL, Postgres and SQLite databases.
 - [Atom](https://atom.io/): An open source editor built and maintained by GitHub, is very similar to Sublime Text in most aspects.
 
 ## Diff and Merge Tools
+
 [FileMerge](): A free tool which is already installed on your machine. It might not be the most elegant tool, but it's definitely a solid one that does the job of comparing & merging text.
 
 ![filemerge](filemerge.png)
@@ -28,6 +31,7 @@ Here is a list of apps that are generally good to use and can come in handy in d
 ![DeltaWalker](delta-walker.jpg)
 
 ### Free alternatives
+
 - [P4Merge](http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools)
 - [DiffMerge](http://www.sourcegear.com/diffmerge/)
 Both of these tools can't compare in terms of features and user interface with their commercial competitors - but make for a valid alternative on Mac, Windows and Linux.
@@ -35,6 +39,7 @@ Both of these tools can't compare in terms of features and user interface with t
 *Thanks to Tower team*: [source](https://www.git-tower.com/blog/diff-tools-mac/)
 
 ## Productivity
+
 - [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
 - [Airmail](http://airmailapp.com/): Lightweight fast email client.
 - [Alfred](http://www.alfredapp.com/): Replacement for spotlight. I'll mostly be upgrading to power pack.
@@ -56,12 +61,14 @@ Both of these tools can't compare in terms of features and user interface with t
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.
 
 ## Office Apps
+
 - [Keynote](http://www.apple.com/mac/keynote/): Create presentations on Mac, this is supposed to be an alternate to PowerPoint.
 - [Microsoft Office](http://www.microsoft.com/mac/buy): Microsoft Office for Mac. Includes Microsoft Word, Excel, PowerPoint and Outlook.
 - [Numbers](http://www.apple.com/mac/numbers/): Create spreadsheets on Mac, this is supposed to be an alternate to Excel.
 - [Pages](http://www.apple.com/mac/pages/): Create text files on Mac, this is supposed to be an alternate to Word.
 
 ## Other
+
 - [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system.
 - [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
 - [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
