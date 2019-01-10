@@ -9,4 +9,4 @@ install:
   - npm install -g markdownlint-cli
 script:
   - gitbook install && gitbook build
-  - markdownlint .
+  - markdownlint . --ignore node_modules
