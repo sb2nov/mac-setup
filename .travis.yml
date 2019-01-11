@@ -4,7 +4,6 @@ node_js:
 - "8"
 install:
   - yarn install
-  - yarn global add markdownlint-cli
 script:
   - markdownlint . --ignore node_modules
   - gitbook install && gitbook build
