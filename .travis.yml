@@ -5,5 +5,4 @@ node_js:
 install:
   - yarn install
 script:
-  - markdownlint . --ignore node_modules
-  - gitbook install && gitbook build
+  - markdownlint . --ignore node_modules && gitbook install && gitbook build
