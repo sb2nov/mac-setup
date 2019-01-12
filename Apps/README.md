@@ -10,7 +10,7 @@ Here is a list of apps that are generally good to use and can come in handy in d
 
 ## Diff and Merge Tools
 
-[FileMerge](): A free tool which is already installed on your machine. It might not be the most elegant tool, but it's definitely a solid one that does the job of comparing & merging text.
+[FileMerge](https://developer.apple.com/xcode/features/): A free tool which is already installed on your machine. It might not be the most elegant tool, but it's definitely a solid one that does the job of comparing & merging text.
 
 ![filemerge](filemerge.png)
 
