@@ -44,6 +44,7 @@ To limit the recursion you can pass an `-L` flag and specify the maximum depth `
 ```bash
 $ tree -L 1
 ```
+
 will output:
 
 ```bash

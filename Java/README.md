@@ -1,6 +1,7 @@
 # Java
 
 ## Installation
+
 First you should check if Java is already installed
 
     $ java -version

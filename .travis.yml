@@ -1,7 +1,8 @@
 language: node_js
-cache: yarn
+cache:  yarn
 node_js:
 - "8"
 install:
-- yarn install
-script: gitbook install && gitbook build
+  - yarn install
+script:
+  - markdownlint . --ignore node_modules && gitbook install && gitbook build

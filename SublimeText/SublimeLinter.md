@@ -1,6 +1,6 @@
 # SublimeLinter Settings
 
-~~~
+~~~json
 {
     "user": {
         "debug": false,

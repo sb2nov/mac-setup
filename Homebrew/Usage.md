@@ -49,4 +49,3 @@ To get more information about a formula you run:
 To uninstall a formula you can run:
 
     $ brew uninstall <formula>
-

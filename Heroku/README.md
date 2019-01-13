@@ -1,7 +1,9 @@
 # Heroku
+
 [Heroku](http://www.heroku.com/) is a [Platform-as-a-Service](http://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) that simplifies deploying your apps online.
 
 ## Installation
+
 Assuming that you have an Heroku account ([sign up](https://signup.heroku.com) if you don't), let's install the [Heroku Client](https://devcenter.heroku.com/articles/using-the-cli) for the command-line using Homebrew.
 
     $ brew install heroku-toolbelt
@@ -13,6 +15,7 @@ The formula might not have the latest version of the Heroku Client, which is upd
 Don't be afraid to run `heroku update` every now and then to always have the most recent version.
 
 ## Setup
+
 Login to your Heroku account using your email and password:
 
     $ heroku login
@@ -29,6 +32,7 @@ Keep the default file name and skip the passphrase by just hitting Enter both ti
     $ heroku keys:add
 
 ## Usage
+
 Once your keys are in place and you are authorized, you're ready to deploy apps. Heroku has a [getting started guide](https://devcenter.heroku.com/articles/python), which has all the information you need (the one linked here is for Python, but there is one for every popular language). Heroku uses Git to push code for deployment, so make sure your app is under Git version control.
 
 A cheat sheet for deployment:

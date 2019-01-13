@@ -1,0 +1,15 @@
+{
+    "_comment1": "Ignore these",
+    "line-length": false,
+    "no-duplicate-heading": false,
+    "no-inline-html": false,
+
+    "_comment2": "Temporarily ignore these, they can be checked in the future",
+    "blanks-around-lists": false,
+    "commands-show-output": false,
+    "no-bare-urls": false,
+    "no-blanks-blockquote": false,
+    "ol-prefix": false,
+    "ul-indent": false,
+    "ul-start-left": false
+}

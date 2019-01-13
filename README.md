@@ -1,5 +1,4 @@
-[macOS Setup Guide](https://sourabhbajaj.com/mac-setup)
-====================
+# [macOS Setup Guide](https://sourabhbajaj.com/mac-setup)
 
 | branch | status |
 | ------ | ------ |
@@ -21,8 +20,7 @@ command-line tools rely on them. We'll also show you some useful daily use
 applications. As you read and follow these steps, feel free to post any
 feedback or comments you may have.
 
-Contributing to the guide
-====================
+## Contributing to the guide
 
 All contributions to the guide are welcome. Please help add support for other
 libraries and languages. To make a contribution please use our [contribution

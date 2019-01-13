@@ -1,4 +1,5 @@
 # Go
+
 [Go](https://github.com/golang/go) (also known as Golang) is an open source programming language maintained by Google.
 
 ## Installation
@@ -8,7 +9,9 @@
 When installed, try to run `go version` to see the installed version of Go.
 
 ## Setup your workspace
+
 ### Add environment variables
+
 Go has a unique approach of managing code where you have a single workspace for all your Go projects. For more information see the [documentation](https://golang.org/doc/code.html#Workspaces).
 
 First, you'll need to tell Go the location of your workspace. We'll do this by adding some environment variables in your shell config file (usually `.bash_profile`, `.bashrc` or `.zshrc`).
@@ -27,6 +30,7 @@ source ~/.bash_profile
 ```
 
 ### Create your workspace
+
 Create the workspace directories tree:
 
     $ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
@@ -36,6 +40,7 @@ Create the workspace directories tree:
 `$GOPATH/bin` The compiled binaries home
 
 ## Write your first program
+
 Create a file in your `$GOPATH/src`, for example `hello.go`, and input the following code
 
 ```go
@@ -60,6 +65,7 @@ Since we have `$GOPATH/bin` added to our `$PATH`, you can run your program from 
     $ hello
 
 ## Import a Go package
+
 Besides creating your own packages you can import and use other packages in your Go code. To do so you'll use the `go get` command:
 
     $ go get -u github.com/gorilla/mux
@@ -67,6 +73,7 @@ Besides creating your own packages you can import and use other packages in your
 The command above will import the package `mux` into this directory `$GOPATH/src/github.com/gorilla/mux`.
 
 You can then use this package in your Go programs like this:
+
 ```go
 package main
 
@@ -91,6 +98,7 @@ func main() {
 ```
 
 ## Format your code
+
 Go has a built-in tool that automatically formats Go source code.
 
 To format a single file run:
@@ -102,6 +110,7 @@ You can also format an entire package (**Note that the command is different from
     $ go fmt path/to/your/package
 
 ## Generate documentation
+
 With the `godoc` command you can generate documentation from your code and read documentation from other packages.
 
     $ godoc fmt                # documentation for package fmt
@@ -111,4 +120,5 @@ With the `godoc` command you can generate documentation from your code and read 
 You need to respect some spec in order to document using `godoc`. More information in the [Godoc documentation](https://blog.golang.org/godoc-documenting-go-code).
 
 ## Learn more
+
 This [interactive tutorial](https://tour.golang.org/) will let you learn more about Go.
