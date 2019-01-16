@@ -122,4 +122,4 @@ You need to respect some spec in order to document using `godoc`. More informati
 
 ### Learn more
 
-The [interactive tutorial](https://tour.golang.org/) will let you learn more about Go. You can also install it localy by `go get golang.org/x/tour` and running it anywhere by `tour` (given that you added `GOPATH/bin` to your `PATH`).
+The [interactive tutorial](https://tour.golang.org/) will let you learn more about Go. You can also install it locally by `go get golang.org/x/tour` and running it anywhere by `tour` (given that you added `GOPATH/bin` to your `PATH`).
