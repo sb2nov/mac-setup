@@ -17,7 +17,7 @@ go version go1.11.4 darwin/amd64
 
 ## Setup your workspace
 
-### The GOPATH and PATH environment variable
+### The GOPATH and PATH environment variables
 
 The GOPATH environment variable specifies the location of your workspace. It defaults to a directory named `go` inside your home directory (`$HOME/go`).
 
@@ -27,7 +27,7 @@ If you really want to change your GOPATH to something else add GOPATH to your sh
 export GOPATH=/something-else
 ```
 
-Add `GOPATH/bin` directory to your `PATH` environment variable so you can run go programms anywhere.
+Add `GOPATH/bin` directory to your `PATH` environment variable so you can run Go programs anywhere.
 
 ```sh
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -122,4 +122,4 @@ You need to respect some spec in order to document using `godoc`. More informati
 
 ### Learn more
 
-The [interactive tutorial](https://tour.golang.org/) will let you learn more about Go. You can also install it localy by `go get golang.org/x/tour` and running it anywhere by `tour` (given that you added GOPATH/bin to your PATH).
+The [interactive tutorial](https://tour.golang.org/) will let you learn more about Go. You can also install it localy by `go get golang.org/x/tour` and running it anywhere by `tour` (given that you added `GOPATH/bin` to your `PATH`).
