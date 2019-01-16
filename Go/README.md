@@ -19,7 +19,7 @@ go version go1.11.4 darwin/amd64
 
 ### The GOPATH and PATH environment variables
 
-The GOPATH environment variable specifies the location of your workspace. It defaults to a directory named `go` inside your home directory (`$HOME/go`).
+The `GOPATH` environment variable specifies the location of your workspace. It defaults to a directory named `go` inside your home directory (`$HOME/go`).
 
 If you really want to change your GOPATH to something else add GOPATH to your shell/bash/zsh initialization file `.bash_profile`, `.bashrc` or `.zshrc`.
 
