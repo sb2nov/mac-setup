@@ -4,7 +4,7 @@
 
 ## Installation
 
-You can follow the [official instructions on how to install Go](https://golang.org/doc/install), or you can use homebrew instead:
+You can follow the [official instructions on how to install Go](https://golang.org/doc/install), or you can use Homebrew instead:
 
     brew install go
 
