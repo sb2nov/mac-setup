@@ -8,7 +8,7 @@ You can follow the [official instructions on how to install Go](https://golang.o
 
     brew install go
 
-When installed, try to run `go version` to see the installed version of Go.
+When installed, run `go version` to see the installed version of Go.
 
 ```sh
 $ go version
