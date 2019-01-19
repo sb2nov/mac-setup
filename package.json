@@ -6,7 +6,7 @@
   "devDependencies": {
     "gitbook": "3.2.3",
     "gitbook-cli": "2.3.2",
-    "markdownlint-cli": "^0.13.0"
+    "markdownlint-cli": "0.13.0"
   },
   "bin": {
     "gitbook": "./bin/gitbook.js"
