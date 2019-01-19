@@ -8,9 +8,6 @@
     "gitbook-cli": "2.3.2",
     "markdownlint-cli": "0.13.0"
   },
-  "bin": {
-    "gitbook": "./bin/gitbook.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sb2nov/mac-setup.git"
