@@ -1,13 +1,16 @@
-.PHONY: deploy install serve
+.PHONY: deploy deps install serve
 
-GITBOOK := $(shell command -v ./node_modules/.bin/gitbook 2> /dev/null)
+GITBOOK = $(shell command -v ./node_modules/.bin/gitbook 2> /dev/null)
 
 
 deploy:
 	sh ./scripts/publish_gitbook.sh
 
-install:
-	yarn && $(GITBOOK) install
+deps:
+	yarn
+
+install: deps
+	$(GITBOOK) install
 
 serve:
 ifndef GITBOOK
