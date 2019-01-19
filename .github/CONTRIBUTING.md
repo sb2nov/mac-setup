@@ -7,6 +7,11 @@ Contributions to macOS Setup Guide are more than welcome.
 By contributing code to macOS Setup Guide, you agree to license your
 contribution under the [MIT License](../LICENSE).
 
+## Linting
+
+Run `make lint` before submitting your PR to make sure your changes comply
+with our styling.
+
 ## How to contribute to macOS Setup Guide
 
 If you would like to submit a pull request, please base it on our
