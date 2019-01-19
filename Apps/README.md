@@ -42,7 +42,7 @@ Both of these tools can't compare in terms of features and user interface with t
 
 - [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
 - [Airmail](http://airmailapp.com/): Lightweight fast email client.
-- [Alfred](http://www.alfredapp.com/): Replacement for spotlight. I'll mostly be upgrading to power pack.
+- [Alfred](http://www.alfredapp.com/): Spotlight on steroids.
 - [AppCleaner](http://www.freemacsoft.net/appcleaner/): Uninstall apps.
 - [Caffeine](http://lightheadsw.com/caffeine/): Stops the machine from going into sleep mode.
 - [DoubleTwist](https://www.doubletwist.com/desktop/): Import your playlists, ratings, music and videos. Create new playlists to your heart's content. Rate your songs and videos. Play your music and videos and view all of your photos.
@@ -69,9 +69,7 @@ Both of these tools can't compare in terms of features and user interface with t
 
 ## Other
 
-- [Asepsis](http://asepsis.binaryage.com/): Get rid of the annoying DS_Store files. It stops them from being created anywhere on the system.
 - [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
-- [Google Voice and Video](http://www.google.com/+/learnmore/hangouts/): A voice and video chat plugin. Not sure if this is required after the release of hangouts.
 - [Mou](http://25.io/mou/): Markdown editor for developers.
 - [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for macOS.
 - [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine in case of failure.
