@@ -26,7 +26,7 @@ Now install Vagrant either [from the website](http://www.vagrantup.com/downloads
 
 Add the Vagrant box you want to use. We'll use Ubuntu 12.04 for the following example.
 
-    $ vagrant box add precise64 http://files.vagrantup.com/precise64.box
+    $ vagrant box add precise64 https://vagrantcloud.com/hashicorp/boxes/precise64/versions/1.1.0/providers/virtualbox.box
 
 You can find more boxes at [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
 
