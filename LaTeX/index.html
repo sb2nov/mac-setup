@@ -806,20 +806,23 @@
                                 <h1 id="latex">LaTeX</h1>
 <p><a href="https://www.latex-project.org/about/" target="_blank">LaTeX</a>, which is pronounced &#xAB;Lah-tech&#xBB; or &#xAB;Lay-tech&#xBB;, is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.</p>
 <h2 id="installation">Installation</h2>
-<p>When installing LaTex, two following options are given to users.</p>
+<p>When installing LaTex, two following options are given to users:</p>
 <ol>
-<li>Install MacTeX with builtin editor (TexLive) - (2GB)</li>
+<li>Install MacTeX with builtin editor (TexLive) - (3.2GB)</li>
 <li>Install BasicTeX only (100MB) + your personal LaTeX editor</li>
 </ol>
 <h3 id="mactex-vs-basictex">MacTeX vs BasicTeX</h3>
 <p>MacTeX includes additional programs such as an editor and a BibTeX reference manager that help users to work with TeX outside of the command line. BasicTeX does not include these GUI programs. The trade-off that comes with using BasicTeX is that you will have to download and install additional packages and programs as the need arises- and BasicTeX is so basic that the need will arise. So, after installing BasicTeX you will be faced with the tasks of installing additional programs and installing missing packages.</p>
-<h3 id="option-1">Option 1</h3>
-<p>Download <a href="http://www.tug.org/mactex/" target="_blank">MacTex</a>.
-For more details about MacTex <a href="https://www.tug.org/mactex/What_Is_Installed.pdf" target="_blank">click here</a>.</p>
-<p>Since MaxTex installs an LaTex editor (<a href="http://www.xm1math.net/texmaker/download.html" target="_blank">TexMaker</a>) already, installing another LaTeX editor is unnecessary.</p>
-<h3 id="option-2">Option 2</h3>
-<p>Download <a href="http://tug.org/mactex/morepackages.html" target="_blank">BasicTeX</a>.
-For more details about BasicTex <a href="http://pages.uoregon.edu/koch/BasicTeX.pdf" target="_blank">click Here</a>.</p>
+<h4 id="mactex">MacTex</h4>
+<p>Download <a href="http://www.tug.org/mactex/" target="_blank">MacTex</a>, or use <code>brew cask install mactex</code>.
+You can read more about MacTex in <a href="https://www.tug.org/mactex/What_Is_Installed.pdf" target="_blank">What is installed (pdf)</a>.</p>
+<p>Since MaxTex installs a LaTex editor (<a href="http://www.xm1math.net/texmaker/download.html" target="_blank">TexMaker</a>) already, installing another LaTeX editor is unnecessary.</p>
+<h4 id="basictex">BasicTeX</h4>
+<p>Download <a href="http://tug.org/mactex/morepackages.html" target="_blank">BasicTeX</a>, or use <code>brew cask install basictex</code>. You can read more about BasicTex in <a href="http://pages.uoregon.edu/koch/BasicTeX.pdf" target="_blank">BasicTeX (pdf)</a>.</p>
+<p>You may use <code>tlmgr</code> to install tools/packages that you need.</p>
+<blockquote>
+<p><strong>Note</strong>: You may find CLI tool <code>tlmgr</code> cumbersome to use, in that case install GUI for <code>tlmgr</code> - <a href="https://amaxwell.github.io/tlutility/" target="_blank"><em>TeX Live Utility</em></a> - <code>brew cask install tex-live-utility</code>.</p>
+</blockquote>
 <p>Now you should pick a LaTeX editor, here are some to choose from:</p>
 <ol>
 <li><a href="http://www.xm1math.net/texmaker/" target="_blank">TexMaker</a></li>
@@ -829,7 +832,11 @@ For more details about BasicTex <a href="http://pages.uoregon.edu/koch/BasicTeX.
 <li><a href="http://www.lyx.org/" target="_blank">LyX</a></li>
 <li><a href="http://texlipse.sourceforge.net/" target="_blank">TeXlipse</a></li>
 <li><a href="https://github.com/SublimeText/LaTeXTools" target="_blank">Sublime Text 3 - LaTeXTools</a></li>
+<li><a href="https://github.com/James-Yu/LaTeX-Workshop" target="_blank">Visual Studio Code - LaTeX-Workshop</a></li>
 </ol>
+<blockquote>
+<p><strong>Note</strong>: You may want to use a PDF reader that watches your PDF files, like Skim (can be installed by <code>brew cask install skim</code> and <em>Sync</em> feature can be enabled in Preferences -&gt; Sync).</p>
+</blockquote>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -873,7 +880,7 @@ For more details about BasicTex <a href="http://pages.uoregon.edu/koch/BasicTeX.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"LaTeX","level":"1.24","depth":1,"next":{"title":"Other Apps","level":"1.25","depth":1,"path":"Apps/README.md","ref":"Apps/README.md","articles":[{"title":"Octave","level":"1.25.1","depth":2,"path":"Apps/Octave.md","ref":"Apps/Octave.md","articles":[]},{"title":"App Settings","level":"1.25.2","depth":2,"path":"Apps/Settings.md","ref":"Apps/Settings.md","articles":[]}]},"previous":{"title":"Tips and Tricks","level":"1.23.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"LaTeX/README.md","mtime":"2018-12-11T21:14:15.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LaTeX","level":"1.24","depth":1,"next":{"title":"Other Apps","level":"1.25","depth":1,"path":"Apps/README.md","ref":"Apps/README.md","articles":[{"title":"Octave","level":"1.25.1","depth":2,"path":"Apps/Octave.md","ref":"Apps/Octave.md","articles":[]},{"title":"App Settings","level":"1.25.2","depth":2,"path":"Apps/Settings.md","ref":"Apps/Settings.md","articles":[]}]},"previous":{"title":"Tips and Tricks","level":"1.23.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"LaTeX/README.md","mtime":"2019-01-26T23:51:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-26T23:54:39.554Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

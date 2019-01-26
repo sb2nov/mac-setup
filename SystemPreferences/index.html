@@ -885,18 +885,17 @@ location /path/to/screenshots/ &amp;&amp; killall SystemUIServer</code></li>
 </li>
 </ul>
 <h2 id="how-to-write-to-ntfs-on-macos-yosemite-1010-and-el-capitan-1011">How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)</h2>
-<p><strong>1) Install Homebrew and Homebrew Cask</strong></p>
+<h3 id="1-install-homebrew-and-homebrew-cask">1) Install Homebrew and Homebrew Cask</h3>
 <p>Instructions <a href="https://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">here</a>.</p>
-<p><strong>2) Update Homebrew formulae</strong></p>
+<h3 id="2-update-homebrew-formulae">2) Update Homebrew formulae</h3>
 <pre><code>$ brew update
-</code></pre><p><strong>3) Install osxfuse</strong></p>
+</code></pre><h3 id="3-install-osxfuse">3) Install osxfuse</h3>
 <p>If you are on macOS El Capitan (10.11), install the (3.x.x) from <a href="https://github.com/osxfuse/osxfuse/releases" target="_blank">the
 repo</a>.</p>
 <pre><code>$ brew cask install osxfuse
-</code></pre><p><strong>4) Install ntfs-3g</strong></p>
+</code></pre><h3 id="4-install-ntfs-3g">4) Install ntfs-3g</h3>
 <pre><code>$ brew install ntfs-3g
-</code></pre><p><strong>5) If you are on macOS El Capitan (10.11), temporarily disable System
-Integrity Protection</strong></p>
+</code></pre><h3 id="5-if-you-are-on-macos-el-capitan-1011-temporarily-disable-system-integrity-protection">5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection</h3>
 <ul>
 <li><strong>Reboot</strong> and hold <code>CMD + R</code> to get in recovery mode</li>
 <li>Open the terminal and type:</li>
@@ -906,12 +905,11 @@ Integrity Protection</strong></p>
 <ul>
 <li><strong>Reboot</strong> normally</li>
 </ul>
-<p><strong>6) Create a symlink for mount_ntfs</strong></p>
+<h3 id="6-create-a-symlink-for-mountntfs">6) Create a symlink for mount_ntfs</h3>
 <pre><code class="lang-shell">$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 </code></pre>
-<p><strong>7) If you are on macOS El Capitan (10.11), re-enable System Integrity
-Protection</strong></p>
+<h3 id="7-if-you-are-on-macos-el-capitan-1011-re-enable-system-integrity-protection">7) If you are on macOS El Capitan (10.11), re-enable System Integrity Protection</h3>
 <ul>
 <li><strong>Reboot</strong> and hold <code>CMD + R</code> to get in recovery mode</li>
 <li>Open the terminal and type:</li>
@@ -964,7 +962,7 @@ Protection</strong></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SystemPreferences/README.md","mtime":"2018-12-11T21:14:15.801Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SystemPreferences/README.md","mtime":"2019-01-26T23:51:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-26T23:54:39.554Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

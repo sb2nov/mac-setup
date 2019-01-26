@@ -5,10 +5,8 @@
   "description": "Installing Development environment on macOS",
   "devDependencies": {
     "gitbook": "3.2.3",
-    "gitbook-cli": "2.3.2"
-  },
-  "bin": {
-    "gitbook": "./bin/gitbook.js"
+    "gitbook-cli": "2.3.2",
+    "markdownlint-cli": "0.13.0"
   },
   "repository": {
     "type": "git",

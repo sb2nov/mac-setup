@@ -804,59 +804,60 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="sublimelinter-settings">SublimeLinter Settings</h1>
-<pre><code>{
-    &quot;user&quot;: {
-        &quot;debug&quot;: false,
-        &quot;delay&quot;: 0.25,
-        &quot;error_color&quot;: &quot;D02000&quot;,
-        &quot;gutter_theme&quot;: &quot;none&quot;,
-        &quot;gutter_theme_excludes&quot;: [],
-        &quot;lint_mode&quot;: &quot;background&quot;,
-        &quot;linters&quot;: {
-            &quot;pep8&quot;: {
-                &quot;@disable&quot;: false,
-                &quot;args&quot;: [],
-                &quot;disable&quot;: &quot;&quot;,
-                &quot;enable&quot;: &quot;&quot;,
-                &quot;excludes&quot;: [],
-                &quot;ignore&quot;: &quot;&quot;,
-                &quot;max-line-length&quot;: null,
-                &quot;rcfile&quot;: &quot;&quot;,
-                &quot;select&quot;: &quot;&quot;
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;user&quot;</span>: {
+        <span class="hljs-string">&quot;debug&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;delay&quot;</span>: <span class="hljs-number">0.25</span>,
+        <span class="hljs-string">&quot;error_color&quot;</span>: <span class="hljs-string">&quot;D02000&quot;</span>,
+        <span class="hljs-string">&quot;gutter_theme&quot;</span>: <span class="hljs-string">&quot;none&quot;</span>,
+        <span class="hljs-string">&quot;gutter_theme_excludes&quot;</span>: [],
+        <span class="hljs-string">&quot;lint_mode&quot;</span>: <span class="hljs-string">&quot;background&quot;</span>,
+        <span class="hljs-string">&quot;linters&quot;</span>: {
+            <span class="hljs-string">&quot;pep8&quot;</span>: {
+                <span class="hljs-string">&quot;@disable&quot;</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">&quot;args&quot;</span>: [],
+                <span class="hljs-string">&quot;disable&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;enable&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;excludes&quot;</span>: [],
+                <span class="hljs-string">&quot;ignore&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;max-line-length&quot;</span>: <span class="hljs-literal">null</span>,
+                <span class="hljs-string">&quot;rcfile&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                <span class="hljs-string">&quot;select&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
             }
         },
-        &quot;mark_style&quot;: &quot;outline&quot;,
-        &quot;no_column_highlights_line&quot;: false,
-        &quot;paths&quot;: {
-            &quot;linux&quot;: [],
-            &quot;osx&quot;: [
-                &quot;/usr/local/bin/&quot;
+        <span class="hljs-string">&quot;mark_style&quot;</span>: <span class="hljs-string">&quot;outline&quot;</span>,
+        <span class="hljs-string">&quot;no_column_highlights_line&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;paths&quot;</span>: {
+            <span class="hljs-string">&quot;linux&quot;</span>: [],
+            <span class="hljs-string">&quot;osx&quot;</span>: [
+                <span class="hljs-string">&quot;/usr/local/bin/&quot;</span>
             ],
-            &quot;windows&quot;: []
+            <span class="hljs-string">&quot;windows&quot;</span>: []
         },
-        &quot;python_paths&quot;: {
-            &quot;linux&quot;: [],
-            &quot;osx&quot;: [
-                &quot;/usr/local/bin/&quot;
+        <span class="hljs-string">&quot;python_paths&quot;</span>: {
+            <span class="hljs-string">&quot;linux&quot;</span>: [],
+            <span class="hljs-string">&quot;osx&quot;</span>: [
+                <span class="hljs-string">&quot;/usr/local/bin/&quot;</span>
             ],
-            &quot;windows&quot;: []
+            <span class="hljs-string">&quot;windows&quot;</span>: []
         },
-        &quot;rc_search_limit&quot;: 3,
-        &quot;shell_timeout&quot;: 10,
-        &quot;show_errors_on_save&quot;: false,
-        &quot;show_marks_in_minimap&quot;: true,
-        &quot;syntax_map&quot;: {
-            &quot;html (django)&quot;: &quot;html&quot;,
-            &quot;html (rails)&quot;: &quot;html&quot;,
-            &quot;html 5&quot;: &quot;html&quot;,
-            &quot;php&quot;: &quot;html&quot;,
-            &quot;python django&quot;: &quot;python&quot;
+        <span class="hljs-string">&quot;rc_search_limit&quot;</span>: <span class="hljs-number">3</span>,
+        <span class="hljs-string">&quot;shell_timeout&quot;</span>: <span class="hljs-number">10</span>,
+        <span class="hljs-string">&quot;show_errors_on_save&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;show_marks_in_minimap&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;syntax_map&quot;</span>: {
+            <span class="hljs-string">&quot;html (django)&quot;</span>: <span class="hljs-string">&quot;html&quot;</span>,
+            <span class="hljs-string">&quot;html (rails)&quot;</span>: <span class="hljs-string">&quot;html&quot;</span>,
+            <span class="hljs-string">&quot;html 5&quot;</span>: <span class="hljs-string">&quot;html&quot;</span>,
+            <span class="hljs-string">&quot;php&quot;</span>: <span class="hljs-string">&quot;html&quot;</span>,
+            <span class="hljs-string">&quot;python django&quot;</span>: <span class="hljs-string">&quot;python&quot;</span>
         },
-        &quot;warning_color&quot;: &quot;DDB700&quot;,
-        &quot;wrap_find&quot;: true
+        <span class="hljs-string">&quot;warning_color&quot;</span>: <span class="hljs-string">&quot;DDB700&quot;</span>,
+        <span class="hljs-string">&quot;wrap_find&quot;</span>: <span class="hljs-literal">true</span>
     }
 }
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+</code></pre>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -899,7 +900,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sublime Linter","level":"1.10.4","depth":2,"next":{"title":"JetBrains IDEs","level":"1.11","depth":1,"path":"JetBrainsIDEs/README.md","ref":"JetBrainsIDEs/README.md","articles":[]},"previous":{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SublimeText/SublimeLinter.md","mtime":"2018-12-11T21:14:15.801Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sublime Linter","level":"1.10.4","depth":2,"next":{"title":"JetBrains IDEs","level":"1.11","depth":1,"path":"JetBrainsIDEs/README.md","ref":"JetBrainsIDEs/README.md","articles":[]},"previous":{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SublimeText/SublimeLinter.md","mtime":"2019-01-26T23:51:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-26T23:54:39.554Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

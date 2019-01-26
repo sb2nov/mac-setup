@@ -806,11 +806,9 @@
                                 <h1 id="iterm2">iTerm2</h1>
 <p><a href="http://www.iterm2.com/" target="_blank">iTerm2</a> is an open source replacement for Apple&apos;s Terminal. It&apos;s highly customizable and comes with a lot of useful features.</p>
 <h2 id="installation">Installation</h2>
-<p>You can get the app from <a href="http://www.iterm2.com/downloads.html" target="_blank">iTerm2 downloads page</a>. Once downloaded, drag and drop the <strong>iTerm</strong> application file into your <strong>Applications</strong> folder.</p>
-<blockquote>
-<p><strong>Note</strong>: Instead of downloading and installing iTerm2 manually, you can use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/" target="_blank">Homebrew</a> <code>brew cask install iterm2</code></p>
-</blockquote>
-<h2 id="customization">Customization</h2>
+<p>Use <a href="http://sourabhbajaj.com/mac-setup/Homebrew/" target="_blank">Homebrew</a> to download and install:</p>
+<pre><code>brew cask install iterm2
+</code></pre><h2 id="customization">Customization</h2>
 <h3 id="colors-and-font-settings">Colors and Font Settings</h3>
 <p>Here are some suggested settings you can change or set, <strong>they are all optional</strong>.</p>
 <ul>
@@ -818,16 +816,13 @@
 <li>Go to profiles -&gt; Default -&gt; Terminal -&gt; Check silence bell to disable the terminal session from making any sound</li>
 <li>Download <a href="https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes" target="_blank">one of iTerm2 color schemes</a> and then set these to your default profile colors</li>
 <li>Change the cursor text and cursor color to yellow make it more visible</li>
-<li>Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded from <a href="https://github.com/adobe-fonts/source-code-pro/releases/latest" target="_blank">project&apos;s github repository</a>.<blockquote>
-<p><strong>Note</strong>: Instead of downloading and installing Source Code Pro manually, you can use <a href="https://sourabhbajaj.com/mac-setup/Homebrew/" target="_blank">Homebrew</a> <code>brew tap caskroom/fonts &amp;&amp; brew cask install font-source-code-pro</code></p>
-</blockquote>
-</li>
+<li>Change the font to 14pt Source Code Pro Lite. Source Code Pro can be downloaded using <a href="https://sourabhbajaj.com/mac-setup/Homebrew/" target="_blank">Homebrew</a> <code>brew tap caskroom/fonts &amp;&amp; brew cask install font-source-code-pro</code></li>
 <li>If you&apos;re using BASH instead of ZSH you can add <code>export CLICOLOR=1</code> line to your <code>~/.bash_profile</code> file for nice coloring of listings</li>
 </ul>
 <p><a href="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" target="_blank"><img src="https://raw.githubusercontent.com/sb2nov/mac-setup/master/assets/Iterm.png" alt="Screen"></a></p>
 <h3 id="macos-shortcuts-&#x2318;&#x2190;-&#x2318;&#x2192;-and-&#x2325;&#x2190;-&#x2325;&#x2192;">MacOS shortcuts &#x2318;&#x2190;, &#x2318;&#x2192; and &#x2325;&#x2190;, &#x2325;&#x2192;</h3>
 <p>You might be familiar with shortcuts to skip a word (&#x2325;) or go to start/end of the line (&#x2318;). iTerm is not set up to work with these shortcuts by default but here&apos;s how you set them up:</p>
-<p>open up iTerm2 preferences (&#x2318;,) -&gt; Profiles -&gt; Keys -&gt; Click on + icon (add new Keyboard shortcut).</p>
+<p>Open up iTerm2 preferences (&#x2318; + ,) -&gt; Profiles -&gt; Keys -&gt; Click on <code>+</code> icon (add new Keyboard shortcut).</p>
 <table>
 <thead>
 <tr>
@@ -902,7 +897,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"iTerm2","level":"1.5","depth":1,"next":{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},"previous":{"title":"Cask","level":"1.4.2","depth":2,"path":"Homebrew/Cask.md","ref":"Homebrew/Cask.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/README.md","mtime":"2018-12-11T21:14:15.803Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-29T12:36:57.359Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"iTerm2","level":"1.5","depth":1,"next":{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},"previous":{"title":"Cask","level":"1.4.2","depth":2,"path":"Homebrew/Cask.md","ref":"Homebrew/Cask.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/README.md","mtime":"2019-01-26T23:51:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-26T23:54:39.554Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
