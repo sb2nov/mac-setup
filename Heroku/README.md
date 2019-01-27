@@ -6,7 +6,7 @@
 
 Assuming that you have an Heroku account ([sign up](https://signup.heroku.com) if you don't), let's install the [Heroku Client](https://devcenter.heroku.com/articles/using-the-cli) for the command-line using Homebrew.
 
-    $ brew install heroku-toolbelt
+    $ brew install heroku/brew/heroku
 
 The formula might not have the latest version of the Heroku Client, which is updated pretty often. Let's update it now:
 
