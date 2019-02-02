@@ -1,5 +1,4 @@
 # Contributors
-
 Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [Github Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
 
 - [sb2nov](https://github.com/sb2nov)
@@ -71,6 +70,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [Nkzn](https://github.com/Nkzn)
 - [anthuan44](https://github.com/anthuan44)
 - [derekprice](https://github.com/derekprice)
+- [dlionz](https://github.com/dlionz)
 - [jsingh-coursera](https://github.com/jsingh-coursera)
 - [marfarma](https://github.com/marfarma)
 - [yagudin](https://github.com/yagudin)
