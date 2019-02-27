@@ -7,6 +7,10 @@ Homebrew depend on the version of Perl it installs, but for complete
 control of what version you're running and what packages are
 installed, there's also [Perlbrew](https://perlbrew.pl).
 
+There are several methods of installing modules from the Comprehensive
+Perl Archive Network ([CPAN](https://www.cpan.org)), but the easiest
+is [cpanminus](https://metacpan.org/pod/App::cpanminus) (`cpanm`).
+
 ## Installation
 
 ### Homebrew
@@ -52,16 +56,6 @@ To install additional modules from [CPAN](https://www.cpan.org):
 
 ```bash
 $ cpanm Modern::Perl
-```
-
-To use Perlbrew in a shell script:
-
-```bash
-#!/bin/bash
-export PERLBREW_ROOT=/home/gugod/perl5/perlbrew
-export PERLBREW_HOME=/home/gugod/.perlbrew
-source ${PERLBREW_ROOT}/etc/bashrc
-perlbrew use perl-5.28.0
 ```
 
 ## Customization
