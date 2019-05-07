@@ -20,7 +20,7 @@ To [install using homebrew-cask](https://octave-app.org/#installing-with-homebre
 
 ### Homebrew official
 
-You can also install Octave from the offical Homebrew source using the method below.
+You can also install Octave from the official Homebrew source using the method below.
 
 Install `octave` from core Homebrew (which is available by default):
 
