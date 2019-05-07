@@ -4,7 +4,7 @@
 
 ## Prerequisite
 
-You might need `homebrew-cask`, if you don't have it refer to [this section](/mac-setup/Homebrew/Cask.html).
+You might need `homebrew-cask`, if you don't have it refer to [this section](/Homebrew/Cask.html).
 
 ## Installation
 
