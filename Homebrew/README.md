@@ -5,28 +5,42 @@ macOS_ and is an essential tool for any developer.
 
 ## Installation
 
-Before you can run Homebrew you need to have the **Command Line Tools** for
-**Xcode** installed. It include compilers that will allow you to build things
-from source, and if you are missing this it's available through the App Store >
-Updates.
+Before you can run Homebrew you need to have the **Command Line Tools for
+Xcode** installed. It include compilers and other tools that will allow you
+to build things from source, and if you are missing this it's available
+through the App Store > Updates. You can also install it from the terminal
+by running the following:
 
-To install Homebrew run the following:
-terminal, hit **Enter**, and follow the steps on the screen:
+    $ sudo xcode-select --install
+
+To install Homebrew run the following in a terminal, hit **Enter**, and follow
+the steps on the screen:
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-One thing you need to do is tell the system to use programs installed by Hombrew
-(in `/usr/local/bin`) rather than the OS default if it exists. You do this by
-adding `/usr/local/bin` to your `PATH` environment variable (if you're using
-`zsh` you should use `.zshrc` instead of `.bash_profile`):
+### Setting up your `PATH`
 
-    $ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+To make the Homebrew-installed programs available in your shell, you need to add
+your Homebrew installation location to your `$PATH`. This is done for you already on
+macOS 10.14 Mojave and newer. For older versions of macOS, do the following:
 
-Alternatively, you can also insert `/usr/local/bin` to the first line of
-`/private/etc/paths` and reboot the Mac to change global paths loading order.
-Admin password may be required if you modify the file.
+You change your path by adding `/usr/local/bin` to your `PATH` environment variable.
+This can be done on a per-user basis by adjusting `PATH` in your `~/.bash_profile`.
+To do this, run:
 
-To be able to use `brew` you need to start a new terminal session. After that
+    $ echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+
+(If you're using `zsh`, you should do this for `~/.zshrc` in addition to
+`~/.bash_profile`.)
+
+Alternatively, you can also insert `/usr/local/bin` before the first line of
+`/etc/paths` to change the global default paths order, for all users and all
+major shells. An admin password will be required if you modify the file.
+
+Then, to be able to use `brew` you need to start a new terminal session. After that
 you should make sure everything is working by running:
 
     $ brew doctor
+
+If everything is good, you should see no warnings, and a message that you are
+"ready to brew!".
