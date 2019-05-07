@@ -20,7 +20,7 @@ lint:
 
 serve:
 ifndef GITBOOK
-	$(error "Gitbook is not available, please run 'make install' first")
+	$(error "GitBook is not available, please run 'make install' first")
 else
 	$(GITBOOK) serve
 endif

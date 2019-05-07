@@ -20,7 +20,7 @@ These settings are optional. Some of them are highly subjective and should not b
 ## Notebooks
 
 - Set the default directory to a folder inside Dropbox for CloudSync
-- Overwrite one of the themes in the app with [Github Mardown CSS](https://gist.github.com/andyferra/2554919)
+- Overwrite one of the themes in the app with [GitHub Mardown CSS](https://gist.github.com/andyferra/2554919)
 
 ## Spectacle
 
