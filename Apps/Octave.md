@@ -4,7 +4,7 @@
 
 ## Prerequisite
 
-You might need `homebrew-cask`, if you don't have it refer to [this section](/Homebrew/Cask.html).
+You might need `homebrew-cask`; if you don't have it, refer to [this section](/Homebrew/Cask.html).
 
 ## Installation
 
@@ -20,13 +20,13 @@ To [install using homebrew-cask](https://octave-app.org/#installing-with-homebre
 
 ### Homebrew official
 
-You can also install Octave from the offical homebrew source using the method below.
+You can also install Octave from the offical Homebrew source using the method below.
 
 Install `octave` from core Homebrew (which is available by default):
 
     $ brew install octave
 
-**Note**: If brew complains about not having a formula for Octave, the following command should fix it:
+**Note**: If `brew` complains about not having a formula for Octave, the following command should fix it:
 
     $ brew tap --repair
 
@@ -36,7 +36,7 @@ The command below upgrades Octave and its dependencies to the latest Homebrew-su
 
 Octave has many dependencies which will be downloaded and installed prior to Octave. **The entire installation process can take a few hours if you are compiling from source.**
 
-**Note:** On Snow Leopard, Octave requires an X server. You can download one from the [XQuartz project](https://www.xquartz.org/).
+**Note:** On Snow Leopard or earlier, Octave requires an X server. You can download one from the [XQuartz project](https://www.xquartz.org/).
 
 You might find that you need to add:
 
