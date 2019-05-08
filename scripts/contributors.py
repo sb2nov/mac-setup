@@ -8,7 +8,7 @@ import urllib2
 
 HEADER = """# Contributors
 
-Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [Github Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
+Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [GitHub Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
 
 """
 

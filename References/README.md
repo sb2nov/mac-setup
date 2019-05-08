@@ -3,8 +3,8 @@
 Thank you for all the awesome pages and documentation below that helped set this up.
 
 - [Nicolashery](https://github.com/nicolashery/mac-dev-setup)
-- [Github](https://help.github.com/articles)
-- [Gitbook](https://github.com/GitbookIO/gitbook)
+- [GitHub](https://help.github.com/articles)
+- [GitBook](https://github.com/GitbookIO/gitbook)
 - [Sublime Plugins](https://sublime.wbond.net/)
 - [Scala IDE Documentation](http://scala-ide.org/docs/user/gettingstarted.html)
 
