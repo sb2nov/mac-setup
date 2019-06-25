@@ -22,11 +22,16 @@
     }
   },
   "plugins": [
-    "analytics"
+    "analytics",
+    "page-treeview"
   ],
   "pluginsConfig": {
     "analytics": {
       "google": "UA-40495390-3"
+    },
+    "page-treeview": {
+      "style": "markdown",
+      "copyright": "Copyright © sb2nov"
     }
   }
 }
