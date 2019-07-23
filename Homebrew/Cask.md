@@ -17,7 +17,7 @@ adding it as a tap:
 To see if an app is available on Cask you can search on the [official Cask
 website](https://caskroom.github.io/). You can also search in your terminal:
 
-    $ brew cask search <package>
+    $ brew search <package>
 
 ## Example Applications
 
