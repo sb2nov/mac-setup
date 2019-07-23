@@ -29,9 +29,9 @@ You might be familiar with shortcuts to skip a word (⌥) or go to start/end of 
 
 Open up iTerm2 preferences (⌘ + ,) -> Profiles -> Keys -> Click on `+` icon (add new Keyboard shortcut).
 
-| shortcut |    action    | send |
-|:--------:|:------------:|:----:|
-|    ⌘←    | SEND ESC SEQ |  OH  |
-|    ⌘→    | SEND ESC SEQ |  OF  |
-|    ⌥←    | SEND ESC SEQ |   b  |
-|    ⌥→    | SEND ESC SEQ |   f  |
+| shortcut |         action       | Esc+ |
+|:--------:|:--------------------:|:----:|
+|    ⌘←    | Send Escape Sequence |  OH  |
+|    ⌘→    | Send Escape Sequence |  OF  |
+|    ⌥←    | Send Escape Sequence |   b  |
+|    ⌥→    | Send Escape Sequence |   f  |
