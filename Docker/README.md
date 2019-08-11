@@ -18,7 +18,7 @@ Docker Toolbox is a legacy desktop solution for older Mac and Windows systems th
 
 ### Prerequisite
 
-You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refer to [this section](/mac-setup/Homebrew/Cask.html).
+You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refer to [this section](../Homebrew/Cask.md).
 
 ### Installation
 
