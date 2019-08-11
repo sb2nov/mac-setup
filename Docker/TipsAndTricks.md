@@ -8,12 +8,14 @@ A collection of useful tips and tricks for Docker.
 
 ```sh
 docker rm $(docker ps -a -q)
+docker container prune
 ```
 
 ## Delete all untagged containers
 
 ```sh
 docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+docker image prune
 ```
 
 ## See all space Docker take up
