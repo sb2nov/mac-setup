@@ -4,17 +4,17 @@
 
 ## Installation
 
-To install the latest version, use homebrew:
+To install the latest version, use Homebrew:
 
 ```bash
 brew cask install visual-studio-code
 ```
 
-## MacOS integration
+## macOS integration
 
-Launch VSCode from [command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+Launch VS Code from the [command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
 
-After that, you can launch VSCode from your terminal :
+After that, you can launch VS Code from your terminal:
 
-* `code .` will open VSCode in the current directory
-* `code myfile.txt` will open `myfile.txt` in VSCode
+* `code .` will open VS Code in the current directory
+* `code myfile.txt` will open `myfile.txt` in VS Code
