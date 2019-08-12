@@ -21,6 +21,7 @@
   * [Packages 1/2](SublimeText/Packages.md)
   * [Packages 2/2](SublimeText/Plugins.md)
   * [Sublime Linter](SublimeText/SublimeLinter.md)
+* [Visual Studio Code](VisualStudioCode/README.md)
 * [JetBrains IDEs](JetBrainsIDEs/README.md)
 * [Python](Python/README.md)
   * [Pip](Python/pip.md)
