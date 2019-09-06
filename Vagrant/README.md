@@ -4,7 +4,7 @@ Create and configure lightweight, reproducible, and portable development environ
 
 ## Prerequisite
 
-You'll need `homebrew-cask`, if you don't have it refer to [this section](/mac-setup/Homebrew/Cask.html).
+You'll need `homebrew-cask`, if you don't have it refer to [this section](../Homebrew/Cask.md).
 
 ## Installation
 
