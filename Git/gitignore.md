@@ -43,4 +43,4 @@ Or simply download [macOS specific .gitignore](https://github.com/github/gitigno
 
 ## Generate gitignore
 
-Visit [gitignore.io](https://www.gitignore.io/?templates=macos) and fill it with your needs
+Visit [gitignore.io](https://www.gitignore.io/?templates=macos) and fill it with your needs.
