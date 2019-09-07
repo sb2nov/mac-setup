@@ -65,5 +65,5 @@ $ ack --dump
 
 ## Alternatives to `ack`
 
-There's [The Silver Surfer](The Silver Searcher) which describes itself as a
+There's [The Silver Surfer](https://github.com/ggreer/the_silver_searcher) which describes itself as a
 > A code searching tool similar to `ack`, with a focus on speed.
