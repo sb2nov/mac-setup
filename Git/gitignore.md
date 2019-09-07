@@ -40,3 +40,7 @@ Or simply download [macOS specific .gitignore](https://github.com/github/gitigno
 >```bash
 >curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
 >```
+
+## Generate gitignore
+
+Visit [gitignore.io](https://www.gitignore.io/?templates=macos) and fill it with your needs.
