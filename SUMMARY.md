@@ -23,6 +23,7 @@
   * [Sublime Linter](SublimeText/SublimeLinter.md)
 * [Visual Studio Code](VisualStudioCode/README.md)
 * [JetBrains IDEs](JetBrainsIDEs/README.md)
+* [PostgreSQL](PostgreSQL/README.md)
 * [Python](Python/README.md)
   * [Pip](Python/pip.md)
   * [Virtualenv](Python/virtualenv.md)
