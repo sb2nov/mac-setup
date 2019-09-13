@@ -7,15 +7,25 @@ A collection of useful tips and tricks for Docker.
 **NOTE:** This will remove ALL your containers.
 
 ```sh
-docker rm $(docker ps -a -q)
 docker container prune
+```
+
+OR, if you're using an older docker client:
+
+```sh
+docker rm $(docker ps -a -q)
 ```
 
 ## Delete all untagged containers
 
 ```sh
-docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
 docker image prune
+```
+
+OR, if you're using an older docker client:
+
+```sh
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
 ```
 
 ## See all space Docker take up
