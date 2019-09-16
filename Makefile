@@ -16,7 +16,7 @@ install: deps
 	$(GITBOOK) install
 
 lint:
-	$(LINTER) . --ignore node_modules
+	@$(LINTER) . --ignore node_modules && echo 'All good 👌'
 
 serve:
 ifndef GITBOOK
