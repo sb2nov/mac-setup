@@ -17,6 +17,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [snood1205](https://github.com/snood1205)
 - [sdavara](https://github.com/sdavara)
 - [ShayMe21](https://github.com/ShayMe21)
+- [shreyasbharath](https://github.com/shreyasbharath)
 - [tychobrailleur](https://github.com/tychobrailleur)
 - [vmalyi](https://github.com/vmalyi)
 - [pomverte](https://github.com/pomverte)
