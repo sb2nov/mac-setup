@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-[Visual Studio Code](https://code.visualstudio.com/) is a lightweight code editor with support for many programming langagues through [extensions](https://code.visualstudio.com/docs/editor/extension-gallery)
+[Visual Studio Code](https://code.visualstudio.com/) is a lightweight code editor with support for many programming languages through [extensions](https://code.visualstudio.com/docs/editor/extension-gallery)
 
 ## Installation
 
