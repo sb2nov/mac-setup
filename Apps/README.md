@@ -22,7 +22,7 @@ Here is a list of apps that are generally good to use and can come in handy in d
 
 ![Beyond Compare](beyond-compare.png)
 
-[Araxis Merge](http://www.araxis.com/merge/): One of the few diff tools that works with more than just text and image files, this one lets you also compare office documents (like MS Word, Excel, Powerpoint, or ODF). A single license is valid for both Windows and Mac.
+[Araxis Merge](http://www.araxis.com/merge/): One of the few diff tools that works with more than just text and image files, this one lets you also compare office documents (like MS Word, Excel, PowerPoint, or ODF). A single license is valid for both Windows and Mac.
 
 ![Araxis Merge](araxis-merge.jpg)
 
