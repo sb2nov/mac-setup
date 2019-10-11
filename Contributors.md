@@ -2,8 +2,8 @@
 
 Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [GitHub Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
 
-- [sb2nov](https://github.com/sb2nov)
 - [simeg](https://github.com/simeg)
+- [sb2nov](https://github.com/sb2nov)
 - [hugovk](https://github.com/hugovk)
 - [nicolashery](https://github.com/nicolashery)
 - [Kyslik](https://github.com/Kyslik)
@@ -20,6 +20,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [shreyasbharath](https://github.com/shreyasbharath)
 - [tychobrailleur](https://github.com/tychobrailleur)
 - [vmalyi](https://github.com/vmalyi)
+- [williambelle](https://github.com/williambelle)
 - [pomverte](https://github.com/pomverte)
 - [jgreely](https://github.com/jgreely)
 - [mateuszroth](https://github.com/mateuszroth)
@@ -29,7 +30,6 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [alichtman](https://github.com/alichtman)
 - [hisabimbola](https://github.com/hisabimbola)
 - [Switchxa](https://github.com/Switchxa)
-- [avietrov](https://github.com/avietrov)
 - [neo1691](https://github.com/neo1691)
 - [GuGuss](https://github.com/GuGuss)
 - [Potherca](https://github.com/Potherca)
@@ -56,7 +56,6 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [LeonardAukea](https://github.com/LeonardAukea)
 - [imMMX](https://github.com/imMMX)
 - [jk2K](https://github.com/jk2K)
-- [mike-u](https://github.com/mike-u)
 - [naman](https://github.com/naman)
 - [nkapliev](https://github.com/nkapliev)
 - [phillipalexander](https://github.com/phillipalexander)
@@ -69,7 +68,6 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [TamarIS](https://github.com/TamarIS)
 - [ztlevi](https://github.com/ztlevi)
 - [ValentinTrinque](https://github.com/ValentinTrinque)
-- [williambelle](https://github.com/williambelle)
 - [OmgImAlexis](https://github.com/OmgImAlexis)
 - [yawaramin](https://github.com/yawaramin)
 - [Nkzn](https://github.com/Nkzn)
