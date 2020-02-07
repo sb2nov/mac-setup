@@ -45,6 +45,7 @@ brew cask install \
     appcleaner \
     caffeine \
     cheatsheet \
+    colloquy \
     docker \
     doubletwist \
     dropbox \
