@@ -34,7 +34,7 @@ Configure the two things below
 
 ### Markdown rendering extension
 
-This extension allows you to see mardown files easily in Visual Studio itself so that we can read documentation directly from VS Code
+This extension allows you to see Markdown files easily in Visual Studio itself so that we can read documentation directly from VS Code
 https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
 
 ### Javascript extensions
