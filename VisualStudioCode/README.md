@@ -64,4 +64,4 @@ Instructions can be found here: https://code.visualstudio.com/docs/containers/ov
 
 ### Paste JSON as Code
 
-https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype 
+https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
