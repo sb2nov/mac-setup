@@ -37,7 +37,7 @@ Configure the two things below
 This extension allows you to see Markdown files easily in Visual Studio itself so that we can read documentation directly from VS Code
 https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
 
-### Javascript extensions
+### JavaScript extensions
 
 ESLint = Useful to check Javascript errors
 
