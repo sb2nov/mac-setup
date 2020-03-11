@@ -50,7 +50,7 @@ https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 Format all SQL files with this formatter
 https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter
 
-## Optional extentions to consider:
+## Optional extentions to consider
 
 ### GitLens
 
@@ -61,6 +61,7 @@ https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
 Instructions can be found here: https://code.visualstudio.com/docs/containers/overview, Extension: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
 
-### Paste JSON as Code:
+### Paste JSON as Code
+
 Infers types from sample JSON data, then outputs strongly typed models and serializers for working with that data in your desired programming language. To use this extension, just copy some JSON and use "Edit/Paste JSON as Code".
 https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
