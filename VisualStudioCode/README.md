@@ -43,7 +43,7 @@ ESLint - Useful to check JavaScript errors
 
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
-Prettier - Javascript code formatter
+Prettier - JavaScript code formatter
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 ### SQL Extensions
