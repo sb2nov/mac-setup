@@ -30,7 +30,7 @@ Configure the two things below
 
 2. Enable Format on Save Setting: "Editor: Format On Save" setting on Code -> Preferences -> Settings
 
-3. Open a python file and check if you write code that it automatically formats on saving the file.
+3. Open a Python file and check if you write code that it automatically formats on saving the file.
 
 ### Markdown rendering extension
 
