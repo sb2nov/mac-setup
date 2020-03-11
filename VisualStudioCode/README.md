@@ -48,7 +48,7 @@ https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 ### SQL Extensions
 
-Format all sql files with this formatter
+Format all SQL files with this formatter
 
 https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter
 
