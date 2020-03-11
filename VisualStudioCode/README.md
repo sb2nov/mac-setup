@@ -39,7 +39,7 @@ https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-e
 
 ### JavaScript extensions
 
-ESLint = Useful to check Javascript errors
+ESLint - Useful to check JavaScript errors
 
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
