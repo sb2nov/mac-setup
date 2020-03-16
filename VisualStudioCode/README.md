@@ -19,49 +19,42 @@ After that, you can launch VS Code from your terminal:
 * `code .` will open VS Code in the current directory
 * `code myfile.txt` will open `myfile.txt` in VS Code
 
-### Python Extension
+## Useful Extensions
 
-Install this extension for Python code highlighting
-https://marketplace.visualstudio.com/items?itemName=ms-python.python
+### Python
 
-Configure the two things below, in order to enable auto-formatting on "Save", i.e. `⌘ + S`
+* [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - Python code highlighting
 
-1. Change the default formatter to "`Black`" instead of "`Autopep8`". Very critical to avoid large diffs. Go to "Preferences" -> User Settings and update the setting "`python.formatter.provider`" to "Black" https://code.visualstudio.com/docs/python/editing
+  To enable auto-formatting on "Save", i.e. `⌘ + S`, configure the following:
 
-2. Enable `Format on Save` Setting: "Editor: Format On Save" setting on Code -> Preferences -> Settings
+  1. Change the default formatter to `Black` instead of `Autopep8`. Critical to avoid large diffs. Go to _Preferences_ -> _User Settings_ and update the setting `python.formatter.provider` to `Black`
 
-3. To test, Open a Python file and check if you write code that it automatically formats on saving the file.
+  2. Enable `Format on Save` Setting: _Editor: Format On Save_ setting on _Code_ -> _Preferences_ -> _Settings_
 
-### Markdown rendering extension
+### JavaScript
 
-This extension allows you to see Markdown files easily in Visual Studio itself so that we can read documentation directly from VS Code
-https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+) - Useful to check JavaScript errors and helps in auto-formatting the code
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+) - JavaScript code formatter
 
-### JavaScript extensions
+### SQL
 
-ESLint - Useful to check JavaScript errors and helps in auto-formatting the code
-https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+* [PostgreSQL formatter](https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter)
 
-Prettier - JavaScript code formatter
-https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+### Markdown
 
-### SQL Extensions
-
-Format all SQL files with this formatter
-https://marketplace.visualstudio.com/items?itemName=bradymholt.pgformatter
-
-## Optional extentions to consider
+* [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) - Read Markdown files in VSCode
 
 ### GitLens
 
-Used to visually represent the Git commit history and enables quick git actions in addition to those already provided by VS Code
-https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+) - Supercharge the Git capabilities built into VSCode
 
-### Docker: to control Docker images right from VS Code
+### Docker
 
-Instructions can be found here: https://code.visualstudio.com/docs/containers/overview, Extension: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
+* [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) - Create, manage, and debug images from within VSCode
 
-### Paste JSON as Code
+### JSON
 
-Infers types from sample JSON data, then outputs strongly typed models and serializers for working with that data in your desired programming language. To use this extension, just copy some JSON and use "Edit/Paste JSON as Code".
-https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
+* [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) - Infers types from sample JSON data, then outputs strongly typed models and serializers for working with that data in your desired programming language
