@@ -36,8 +36,6 @@ Here is a list of apps that are generally good to use and can come in handy in d
 - [DiffMerge](http://www.sourcegear.com/diffmerge/)
 Both of these tools can't compare in terms of features and user interface with their commercial competitors - but make for a valid alternative on Mac, Windows and Linux.
 
-*Thanks to Tower team*: [source](https://www.git-tower.com/blog/diff-tools-mac/)
-
 ## Productivity
 
 - [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
