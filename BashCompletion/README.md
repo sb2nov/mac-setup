@@ -7,7 +7,7 @@ key. This will help you when writing the bash command in terminal.
 ## Installation
 
 ```bash
-$ brew install bash-completion
+brew install bash-completion
 ```
 
 Bash completion will be installed in `/usr/local/etc/bash_completion.d`.
@@ -21,13 +21,13 @@ For it to work, add this to your `~/.bash_profile`:
 Or simply type:
 
 ```bash
-$ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
 ```
 
 Restart your bash session:
 
 ```bash
-$ source ~/.bash_profile
+source ~/.bash_profile
 ```
 
 ## Usage
@@ -49,13 +49,13 @@ bisect         cherry         commit         fetch          grep           log  
 You can list additional completion packages are available by typing:
 
 ```bash
-$ brew search completion
+brew search completion
 ```
 
 And you can install them using `brew install` commands, for example:
 
 ```bash
-$ brew install docker-completion
+brew install docker-completion
 ```
 
 *You can also manually add a bash completion file into

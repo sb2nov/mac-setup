@@ -4,7 +4,7 @@
 
 First you should check if Java is already installed
 
-    $ java -version
+    java -version
 
 If you see an output like below then Java is already installed on your machine so skip to _Add Java to PATH_.
 

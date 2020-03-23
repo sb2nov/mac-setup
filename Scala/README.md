@@ -2,13 +2,13 @@
 
 Make sure you have Java installed, the instructions are provided [here](/mac-setup/Java/README.html).
 
-    $ brew update
-    $ brew install scala sbt
+    brew update
+    brew install scala sbt
 
 (This step is optional) Update the `/usr/local/etc/sbtopts` by running the command below.
 
-    $ echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
-    $ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
+    echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
+    echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
 
 ## Scala Plugin for Eclipse
 

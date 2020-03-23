@@ -12,7 +12,7 @@ configuration file too much. This file is found in the bottom of this page.
 Install `zsh` using Homebrew:
 
 ```sh
-$ brew install zsh
+brew install zsh
 ```
 
 Now you should install a framework, we recommend to use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -31,14 +31,14 @@ with a bunch of features out of the box and improves your terminal experience.
 Install Oh My Zsh:
 
 ```sh
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 The installation script should set `zsh` to your default shell, but if it
 doesn't you can do it manually:
 
 ```sh
-$ chsh -s $(which zsh)
+chsh -s $(which zsh)
 ```
 
 ### Configuration
@@ -52,7 +52,7 @@ To apply the changes you make you need to either **start new shell instance**
 or run:
 
 ```sh
-$ source ~/.zshrc
+source ~/.zshrc
 ```
 
 #### Plugins
@@ -89,14 +89,14 @@ defaults, aliases, functions, auto completion, and prompt themes.
 Install Prezto:
 
 ```sh
-$ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
 
 Next create your `~/.zshrc` by running:
 
 ```sh
-$ setopt EXTENDED_GLOB
-$ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
     ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
   done
 ```
@@ -132,7 +132,7 @@ And don't forget to apply your changes by **starting a new shell instance**.
 To list all available themes run:
 
 ```sh
-$ prompt -l
+prompt -l
 ```
 
 Then open up your config file (`~/.zpreztorc`) and change to the theme you want:

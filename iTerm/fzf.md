@@ -9,11 +9,11 @@ tools it becomes super powerful.
 Use [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/README.html) to
 install `fzf`:
 
-    $ brew install fzf
+    brew install fzf
 
 If you want to use shell extensions (better shell integration):
 
-    $ /usr/local/opt/fzf/install
+    /usr/local/opt/fzf/install
 
 which gives you:
 

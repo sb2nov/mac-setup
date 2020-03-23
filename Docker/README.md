@@ -22,12 +22,12 @@ You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refe
 
 ### Installation
 
-    $ brew cask install docker-toolbox
+    brew cask install docker-toolbox
 
 ### Quick Start
 
 For quick start find the newly installed _Docker Quickstart Terminal_ and double-click to launch it. Then you can start the _Hello World container_ using:
 
-    $ docker run hello-world
+    docker run hello-world
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).

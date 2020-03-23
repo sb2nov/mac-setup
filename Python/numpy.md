@@ -4,19 +4,19 @@ The [Numpy](http://numpy.scipy.org/), [Scipy](https://www.scipy.org/scipylib/ind
 
 First, grab the special formulae (which are not part of Homebrew core):
 
-    $ brew tap samueljohn/python
-    $ brew tap brewsci/bio
+    brew tap samueljohn/python
+    brew tap brewsci/bio
 
 Then, install the `gfortran` dependency which we will need to build the libraries along with gcc:
 
-    $ brew install gcc
+    brew install gcc
 
 Then, install `nose`, `pyparsing` and `python-dateutil` dependency which we will need to build the libraries:
 
-    $ pip install nose pyparsing python-dateutil pep8
+    pip install nose pyparsing python-dateutil pep8
 
 Finally, you can install Numpy and Scipy with:
 
-    $ brew install numpy scipy matplotlib
+    brew install numpy scipy matplotlib
 
 (It may take a few minutes to build)

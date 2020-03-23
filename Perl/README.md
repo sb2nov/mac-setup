@@ -16,38 +16,38 @@ is [cpanminus](https://metacpan.org/pod/App::cpanminus) (`cpanm`).
 ### Homebrew
 
 ```bash
-$ brew install perl cpanminus
+brew install perl cpanminus
 ```
 
 ### Perlbrew
 
 ```bash
-$ curl -L https://install.perlbrew.pl | bash
+curl -L https://install.perlbrew.pl | bash
 
-$ source ~/perl5/perlbrew/etc/bashrc
-$ perlbrew install-cpanm
-$ perlbrew install --switch stable
+source ~/perl5/perlbrew/etc/bashrc
+perlbrew install-cpanm
+perlbrew install --switch stable
 
-$ echo source ~/perl5/perlbrew/etc/bashrc >> ~/.bash_profile
+echo source ~/perl5/perlbrew/etc/bashrc >> ~/.bash_profile
 ```
 
 Other useful commands:
 
 ```bash
 # full documentation
-$ perlbrew help
+perlbrew help
 
 # override version in current shell
-$ perlbrew use $version
+perlbrew use $version
 
 # execute a script with a specific version
-$ perlbrew exec $version $script
+perlbrew exec $version $script
 
 # revert to vendor/Homebrew Perl in current shell
-$ perlbrew off
+perlbrew off
 
 # reinstall all modules in a different version
-$ perlbrew clone-modules $from $to
+perlbrew clone-modules $from $to
 ```
 
 ## Usage
@@ -55,7 +55,7 @@ $ perlbrew clone-modules $from $to
 To install additional modules from [CPAN](https://www.cpan.org):
 
 ```bash
-$ cpanm Modern::Perl
+cpanm Modern::Perl
 ```
 
 ## Customization

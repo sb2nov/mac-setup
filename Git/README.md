@@ -2,11 +2,11 @@
 
 What's a developer without [Git](http://git-scm.com/)? To install, run:
 
-    $ brew install git
+    brew install git
 
 When done, to test that it installed properly you can run:
 
-    $ git --version
+    git --version
 
 And `which git` should output `/usr/local/bin/git`.
 
@@ -14,8 +14,8 @@ Next, we'll define your Git user (should be the same name and email you use for
 [GitHub](https://github.com/)):
 
 ```sh
-$ git config --global user.name "Your Name Here"
-$ git config --global user.email "your_email@youremail.com"
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@youremail.com"
 ```
 
 They will get added to your `.gitconfig` file.
@@ -26,7 +26,7 @@ password every time you push a commit you can cache your credentials by running
 the following command, as described in the
 [instructions](https://help.github.com/articles/caching-your-github-password-in-git/).
 
-    $ git config --global credential.helper osxkeychain
+    git config --global credential.helper osxkeychain
 
 ## SSH Config for GitHub
 
@@ -39,7 +39,7 @@ First, we need to check for existing SSH keys on your computer. We do this by
 running:
 
 ```sh
-$ ls -al ~/.ssh
+ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
 ```
 
@@ -55,7 +55,7 @@ email. The default settings are preferred, so when you're asked to "enter a
 file in which to save the key,"" just press Enter to continue.
 
 ```sh
-$ ssh-keygen -t rsa -C "your_email@example.com"
+ssh-keygen -t rsa -C "your_email@example.com"
 # Creates a new ssh key, using the provided email as a label
 ```
 
@@ -64,7 +64,7 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 Run the following commands to add your SSH key to the `ssh-agent`.
 
 ```sh
-$ eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
 ```
 
 If you're running macOS Sierra 10.12.2 or later, you will need to modify your
@@ -82,7 +82,7 @@ No matter what operating system version you run you need to run this command to
 complete this step:
 
 ```sh
-$ ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/id_rsa
 ```
 
 ### Adding a new SSH key to your GitHub account
@@ -90,7 +90,7 @@ $ ssh-add -K ~/.ssh/id_rsa
 The last step is to let GitHub know about your SSH key. Run this command to copy your key to your clipboard:
 
 ```sh
-$ pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 Then go to GitHub and [input your new SSH
