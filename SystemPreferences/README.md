@@ -34,8 +34,8 @@ suggestions. Always choose the setting that makes the most sense to you.**
     - Remove _workspace auto-switching_ by running the following command:
 
 ```shell
-$ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-$ killall Dock # Restart the Dock process
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+killall Dock # Restart the Dock process
 ```
 
 ## Finder
@@ -80,18 +80,18 @@ Instructions [here](https://sourabhbajaj.com/mac-setup/Homebrew/README.html).
 
 ### 2) Update Homebrew formulae
 
-    $ brew update
+    brew update
 
 ### 3) Install osxfuse
 
 If you are on macOS El Capitan (10.11), install the (3.x.x) from [the
 repo](https://github.com/osxfuse/osxfuse/releases).
 
-    $ brew cask install osxfuse
+    brew cask install osxfuse
 
 ### 4) Install ntfs-3g
 
-    $ brew install ntfs-3g
+    brew install ntfs-3g
 
 ### 5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection
 
@@ -99,7 +99,7 @@ repo](https://github.com/osxfuse/osxfuse/releases).
  - Open the terminal and type:
 
 ```shell
-$ csrutil disable
+csrutil disable
 ```
 
  - **Reboot** normally
@@ -107,8 +107,8 @@ $ csrutil disable
 ### 6) Create a symlink for mount_ntfs
 
 ```shell
-$ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-$ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 ```
 
 ### 7) If you are on macOS El Capitan (10.11), re-enable System Integrity Protection
@@ -117,7 +117,7 @@ $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
  - Open the terminal and type:
 
 ```shell
-$ csrutil enable
+csrutil enable
 ```
 
  - **Reboot** normally

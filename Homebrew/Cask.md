@@ -10,14 +10,14 @@ downloading `.dmg` files and dragging them to your Applications folder!
 You need Homebrew on your system to use Cask, and you make Cask available by
 adding it as a tap:
 
-    $ brew tap caskroom/cask
+    brew tap caskroom/cask
 
 ## Search
 
 To see if an app is available on Cask you can search on the [official Cask
 website](https://caskroom.github.io/). You can also search in your terminal:
 
-    $ brew search <package>
+    brew search <package>
 
 ## Example Applications
 
@@ -29,7 +29,7 @@ includes features like syntax highlighting, Markdown rendering, preview of
 JSON, patch files, CSV, ZIP files and more.
 
 ```sh
-$ brew cask install \
+brew cask install \
     qlcolorcode \
     qlstephen \
     qlmarkdown \
@@ -46,7 +46,7 @@ $ brew cask install \
 Here are some useful apps that are available on Cask.
 
 ```sh
-$ brew cask install \
+brew cask install \
     alfred \
     android-file-transfer \
     appcleaner \

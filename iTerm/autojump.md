@@ -7,7 +7,7 @@
 To install the latest version, use homebrew:
 
 ```bash
-$ brew install autojump
+brew install autojump
 ```
 
 ## Usage

@@ -11,12 +11,12 @@ to build things from source, and if you are missing this it's available
 through the App Store > Updates. You can also install it from the terminal
 by running the following:
 
-    $ sudo xcode-select --install
+    sudo xcode-select --install
 
 To install Homebrew run the following in a terminal, hit **Enter**, and follow
 the steps on the screen:
 
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ### Setting up your `PATH`
 
@@ -28,7 +28,7 @@ You change your path by adding `/usr/local/bin` to your `PATH` environment varia
 This can be done on a per-user basis by adjusting `PATH` in your `~/.bash_profile`.
 To do this, run:
 
-    $ echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+    echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 
 (If you're using `zsh`, you should do this for `~/.zshrc` in addition to
 `~/.bash_profile`.)
@@ -40,7 +40,7 @@ major shells. An admin password will be required if you modify the file.
 Then, to be able to use `brew` you need to start a new terminal session. After that
 you should make sure everything is working by running:
 
-    $ brew doctor
+    brew doctor
 
 If everything is good, you should see no warnings, and a message that you are
 "ready to brew!".
