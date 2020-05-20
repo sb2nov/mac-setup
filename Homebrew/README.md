@@ -16,7 +16,7 @@ by running the following:
 To install Homebrew run the following in a terminal, hit **Enter**, and follow
 the steps on the screen:
 
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 ### Setting up your `PATH`
 
