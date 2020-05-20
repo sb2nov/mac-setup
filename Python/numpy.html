@@ -832,14 +832,14 @@
                                 <h1 id="numpy-scipy-and-matplotlib">Numpy, Scipy and Matplotlib</h1>
 <p>The <a href="http://numpy.scipy.org/" target="_blank">Numpy</a>, <a href="https://www.scipy.org/scipylib/index.html" target="_blank">Scipy</a> and <a href="http://matplotlib.org/" target="_blank">Matplotlib</a> scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly. Luckily for us, <a href="http://www.samueljohn.de/" target="_blank">Samuel John</a> has put together some <a href="https://github.com/samueljohn/homebrew-python" target="_blank">Homebrew formulae</a> to make it easier to install these Python libraries.</p>
 <p>First, grab the special formulae (which are not part of Homebrew core):</p>
-<pre><code>$ brew tap samueljohn/python
-$ brew tap brewsci/bio
+<pre><code>brew tap samueljohn/python
+brew tap brewsci/bio
 </code></pre><p>Then, install the <code>gfortran</code> dependency which we will need to build the libraries along with gcc:</p>
-<pre><code>$ brew install gcc
+<pre><code>brew install gcc
 </code></pre><p>Then, install <code>nose</code>, <code>pyparsing</code> and <code>python-dateutil</code> dependency which we will need to build the libraries:</p>
-<pre><code>$ pip install nose pyparsing python-dateutil pep8
+<pre><code>pip install nose pyparsing python-dateutil pep8
 </code></pre><p>Finally, you can install Numpy and Scipy with:</p>
-<pre><code>$ brew install numpy scipy matplotlib
+<pre><code>brew install numpy scipy matplotlib
 </code></pre><p>(It may take a few minutes to build)</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
@@ -884,7 +884,7 @@ $ brew tap brewsci/bio
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Numpy-Scipy","level":"1.14.3","depth":2,"next":{"title":"IPython","level":"1.14.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"previous":{"title":"Virtualenv","level":"1.14.2","depth":2,"path":"Python/virtualenv.md","ref":"Python/virtualenv.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/numpy.md","mtime":"2020-03-02T20:05:24.862Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T19:37:16.027Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Numpy-Scipy","level":"1.14.3","depth":2,"next":{"title":"IPython","level":"1.14.4","depth":2,"path":"Python/ipython.md","ref":"Python/ipython.md","articles":[]},"previous":{"title":"Virtualenv","level":"1.14.2","depth":2,"path":"Python/virtualenv.md","ref":"Python/virtualenv.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/numpy.md","mtime":"2020-05-20T18:30:18.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T18:30:31.495Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

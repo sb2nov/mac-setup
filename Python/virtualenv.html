@@ -839,26 +839,26 @@ you want to use for each individual environment. It&apos;s very much recommended
 use <code>virtualenv</code> when dealing with Python applications.</p>
 <h2 id="installation">Installation</h2>
 <p>To install <code>virtualenv</code> run:</p>
-<pre><code>$ pip install virtualenv
+<pre><code>pip install virtualenv
 </code></pre><h2 id="usage">Usage</h2>
 <p>If you have a project in a directory called <code>my-project</code> you can set up
 <code>virtualenv</code> for that project by running:</p>
-<pre><code>$ cd my-project/
-$ virtualenv venv
+<pre><code>cd my-project/
+virtualenv venv
 </code></pre><p>If you want your <code>virtualenv</code> to also inherit globally installed packages run:</p>
-<pre><code>$ virtualenv venv --system-site-packages
+<pre><code>virtualenv venv --system-site-packages
 </code></pre><p>These commands create a <code>venv/</code> directory in your project where all
 dependencies are installed. You need to <strong>activate</strong> it first though (in every
 terminal instance where you are working on your project):</p>
-<pre><code>$ source venv/bin/activate
+<pre><code>source venv/bin/activate
 </code></pre><p>You should see a <code>(venv)</code> appear at the beginning of your terminal prompt
 indicating that you are working inside the <code>virtualenv</code>. Now when you install
 something like this:</p>
-<pre><code>$ pip install &lt;package&gt;
+<pre><code>pip install &lt;package&gt;
 </code></pre><p>It will get installed in the <code>venv/</code> folder, and not conflict with other
 projects.</p>
 <p>To leave the virtual environment run:</p>
-<pre><code>$ deactivate
+<pre><code>deactivate
 </code></pre><p><strong>Important</strong>: Remember to add <code>venv</code> to your project&apos;s <code>.gitignore</code> file so
 you don&apos;t include all of that in your source code.</p>
 <p>It is preferable to install big packages (like Numpy), or packages you always
@@ -869,7 +869,7 @@ you can install <code>virtualenvwrapper</code>. It&apos;s an extension to <code>
 makes it easier to create and delete virtual environments without creating
 dependency conflicts.</p>
 <p>To install <code>virtualenvwrapper</code> run:</p>
-<pre><code>$ pip install virtualenvwrapper
+<pre><code>pip install virtualenvwrapper
 </code></pre><p>Depending on your setup you might need to install it using <code>sudo</code>. Read the
 <a href="https://virtualenvwrapper.readthedocs.io/en/latest/install.html" target="_blank">installation
 documentation</a>
@@ -919,7 +919,7 @@ for more information.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Virtualenv","level":"1.14.2","depth":2,"next":{"title":"Numpy-Scipy","level":"1.14.3","depth":2,"path":"Python/numpy.md","ref":"Python/numpy.md","articles":[]},"previous":{"title":"Pip","level":"1.14.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/virtualenv.md","mtime":"2020-03-02T20:05:24.863Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T19:37:16.027Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Virtualenv","level":"1.14.2","depth":2,"next":{"title":"Numpy-Scipy","level":"1.14.3","depth":2,"path":"Python/numpy.md","ref":"Python/numpy.md","articles":[]},"previous":{"title":"Pip","level":"1.14.1","depth":2,"path":"Python/pip.md","ref":"Python/pip.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Python/virtualenv.md","mtime":"2020-05-20T18:30:18.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T18:30:31.495Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

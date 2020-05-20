@@ -834,7 +834,7 @@
 <code>grep</code> with higher speed and more options.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the latest version, use homebrew.</p>
-<pre><code class="lang-bash">$ brew install ack
+<pre><code class="lang-bash">brew install ack
 </code></pre>
 <h2 id="why-use-ack-over-grep">Why use <code>ack</code> over <code>grep</code></h2>
 <ul>
@@ -844,14 +844,14 @@
 <li>Customizable</li>
 </ul>
 <h2 id="usage">Usage</h2>
-<pre><code class="lang-bash">$ ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
+<pre><code class="lang-bash">ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
 </code></pre>
 <p>Let&apos;s say you want to find all JavaScript files that are using the module
 <code>pancakes</code> in your project, with <code>ack</code> it&apos;s as easy as</p>
-<pre><code class="lang-sh">$ ack --js pancakes
+<pre><code class="lang-sh">ack --js pancakes
 </code></pre>
 <p>Or you may want to find all files that <em>does not</em> contain the word <em>brew</em></p>
-<pre><code class="lang-bash">$ ack -L brew
+<pre><code class="lang-bash">ack -L brew
 </code></pre>
 <h2 id="customization">Customization</h2>
 <p>You can customize <code>ack</code> to behave the way you want it to, this configuration i
@@ -866,7 +866,7 @@ following configuration will allow you to only search in <code>.md</code>, <code
 --color
 </code></pre>
 <p>To see what configuration <code>ack</code> uses you can use the <code>dump</code> flag.</p>
-<pre><code class="lang-bash">$ ack --dump
+<pre><code class="lang-bash">ack --dump
 </code></pre>
 <h2 id="alternatives-to-ack">Alternatives to <code>ack</code></h2>
 <p>There&apos;s <a href="https://github.com/ggreer/the_silver_searcher" target="_blank">The Silver Surfer</a> which describes itself as a</p>
@@ -916,7 +916,7 @@ following configuration will allow you to only search in <code>.md</code>, <code
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ack","level":"1.5.4","depth":2,"next":{"title":"Git","level":"1.6","depth":1,"path":"Git/README.md","ref":"Git/README.md","articles":[{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]}]},"previous":{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/ack.md","mtime":"2020-03-02T20:05:24.874Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T19:37:16.027Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ack","level":"1.5.4","depth":2,"next":{"title":"Git","level":"1.6","depth":1,"path":"Git/README.md","ref":"Git/README.md","articles":[{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]}]},"previous":{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/ack.md","mtime":"2020-05-20T18:30:18.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T18:30:31.495Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
