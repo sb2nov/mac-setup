@@ -14,33 +14,33 @@ If you see an output like below then Java is already installed on your machine s
 
 If you don't see the output like above then you need to install Java on your system.
 
-### Using the Oracle installer
-
-Please download the macOS version from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-
 ### Using Homebrew
 
     brew update
-    brew tap caskroom/versions
+    brew tap AdoptOpenJDK/openjdk
 
-Then, install latest version of Java 9 via:
+You can list the available JDK versions via:
 
-    brew cask install java
+    brew search jdk
 
-or install Java 8 using:
+The current LTS release of Java is JDK 11, which you can install via:
 
-    brew cask install java8
+    brew cask install adoptopenjdk11
+
+If you wish to install Java 8, you can do so with:
+
+    brew cask install adoptopenjdk8
 
 Check if Java is correctly installed by running the `java -version` command again.
 
-## Add Java to PATH
+### Using the Oracle installer
+
+Please [download the macOS version](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) as per the instructions on the [Oracle website](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-macos.html#GUID-F575EB4A-70D3-4AB4-A20E-DBE95171AB5F). Do note that this method requires you to login/create a new account with Oracle.
+
+#### Add Java to PATH
 
 Add `JAVA_HOME` to your environment variables by adding the line below to your `env.sh` (see [iTerm2](/mac-setup/iTerm/README.html) section if you don't have a `env.sh` file).
 
-    export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
+    export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
-If you are using Java 9, use the following:
-
-    export JAVA_HOME="`/usr/libexec/java_home -v 9`"
-
-You should have Java working now. Two popular IDE alternatives for writing Java are [Eclipse](https://www.eclipse.org/downloads/) or [IntelliJ](https://www.jetbrains.com/idea/download/).
+You should have Java working now. Two popular IDE alternatives for writing Java are [IntelliJ](https://www.jetbrains.com/idea/download/) or [Eclipse](https://www.eclipse.org/downloads/).
