@@ -1,6 +1,6 @@
 # Homebrew-Cask
 
-[Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to
+[Homebrew-Cask](https://github.com/Homebrew/homebrew-cask) extends Homebrew and allows you to
 install large binary files via a command-line tool. You can for example install
 applications like Google Chrome, Dropbox, VLC and Spectacle. No more
 downloading `.dmg` files and dragging them to your Applications folder!
