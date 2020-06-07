@@ -8,7 +8,7 @@ downloading `.dmg` files and dragging them to your Applications folder!
 ## Search
 
 To see if an app is available on Cask you can search on the [official Cask
-website](https://caskroom.github.io/). You can also search in your terminal:
+website](https://formulae.brew.sh/cask/). You can also search in your terminal:
 
     brew search <package>
 
@@ -52,7 +52,7 @@ brew cask install \
     google-hangouts \
     flux \
     1password \
-    spectacle \
+    rectangle \
     sublime-text \
     superduper \
     transmission \
