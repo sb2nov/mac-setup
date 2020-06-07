@@ -9,6 +9,7 @@ Thank you everyone that have contributed to creating this awesome guide. Here ar
 - [Kyslik](https://github.com/Kyslik)
 - [AidHamza](https://github.com/AidHamza)
 - [ahmadnurus](https://github.com/ahmadnurus)
+- [llune](https://github.com/llune)
 - [RabbitMC](https://github.com/RabbitMC)
 - [sebastianwebber](https://github.com/sebastianwebber)
 - [viniciusbig](https://github.com/viniciusbig)
