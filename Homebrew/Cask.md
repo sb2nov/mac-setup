@@ -5,13 +5,6 @@ install large binary files via a command-line tool. You can for example install
 applications like Google Chrome, Dropbox, VLC and Spectacle. No more
 downloading `.dmg` files and dragging them to your Applications folder!
 
-## Installation
-
-You need Homebrew on your system to use Cask, and you make Cask available by
-adding it as a tap:
-
-    brew tap caskroom/cask
-
 ## Search
 
 To see if an app is available on Cask you can search on the [official Cask
