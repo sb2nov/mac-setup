@@ -1,21 +1,14 @@
 # Homebrew-Cask
 
-[Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to
+[Homebrew-Cask](https://github.com/Homebrew/homebrew-cask) extends Homebrew and allows you to
 install large binary files via a command-line tool. You can for example install
 applications like Google Chrome, Dropbox, VLC and Spectacle. No more
 downloading `.dmg` files and dragging them to your Applications folder!
 
-## Installation
-
-You need Homebrew on your system to use Cask, and you make Cask available by
-adding it as a tap:
-
-    brew tap caskroom/cask
-
 ## Search
 
 To see if an app is available on Cask you can search on the [official Cask
-website](https://caskroom.github.io/). You can also search in your terminal:
+website](https://formulae.brew.sh/cask/). You can also search in your terminal:
 
     brew search <package>
 
@@ -59,7 +52,7 @@ brew cask install \
     google-hangouts \
     flux \
     1password \
-    spectacle \
+    rectangle \
     sublime-text \
     superduper \
     transmission \
