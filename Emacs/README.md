@@ -49,6 +49,7 @@ brew tap railwaycat/emacsmacport
 ### [Emacs plus](https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus)
 
 Start off by tapping the official emacs-plus cask.
+
 ```shell
 brew tap d12frosted/emacs-plus
 ```
@@ -56,15 +57,20 @@ brew tap d12frosted/emacs-plus
 Emacs Plus contains separate formulas for different Emacs versions:
 
 * emacs-plus - installs Emacs 26, current release version.
-```
+
+```shell
 brew install emacs-plus [options]
 ```
+
 * emacs-plus@27 - installs Emacs 27, next release version.
-```
+
+```shell
 brew install emacs-plus@27 [options]
 ```
+
 * emacs-plus@28 - installs Emacs 28, development version.
-```
+
+```shell
 brew install emacs-plus@28 [options]
 ```
 
