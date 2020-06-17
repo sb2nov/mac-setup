@@ -37,7 +37,7 @@ brew cask install virtualbox
 ```shell script
 The install failed (The installer encountered an error that caused the installation to fail.
 Contact the software manufacturer for assistance.)
-``` 
+```
 
 >Use the following When you do fail, turn on System Preference and see if ‘System software from developer “Oracle America, inc” was blocked from loading.’ If you see that message, click Allow button and try to install again.
 
@@ -62,6 +62,5 @@ Finally, to verify all the installations:
 ```shell script
 docker run hello-world
 ```
-
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).
