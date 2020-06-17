@@ -12,22 +12,56 @@ Docker for Mac is the current release of Docker for macOS.
 
 Docker for Mac can be downloaded [here](https://docs.docker.com/docker-for-mac/install/).
 
-## Docker Toolbox
-
-Docker Toolbox is a legacy desktop solution for older Mac and Windows systems that do not meet the requirements of [Docker for Mac](https://docs.docker.com/docker-for-mac/) and Docker for Windows.
-
 ### Prerequisite
 
 You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refer to [this section](../Homebrew/Cask.md).
 
 ### Installation
 
-    brew cask install docker-toolbox
+These are the steps to install docker using brew
 
-### Quick Start
+* Install the docker and docker machine from brew
 
-For quick start find the newly installed _Docker Quickstart Terminal_ and double-click to launch it. Then you can start the _Hello World container_ using:
+```shell script
+brew install docker docker-machine
+```
 
-    docker run hello-world
+* Install VirtualBox to let Docker create the images.
+
+```shell script
+brew cask install virtualbox
+```
+
+>If you encounter an issue with the installer with an error message like
+
+```shell script
+The install failed (The installer encountered an error that caused the installation to fail.
+Contact the software manufacturer for assistance.)
+``` 
+
+>Use the following When you do fail, turn on System Preference and see if ‘System software from developer “Oracle America, inc” was blocked from loading.’ If you see that message, click Allow button and try to install again.
+
+This should complete the installation
+
+---
+
+Now to create a Machine, follow the following steps:
+
+```shell script
+docker-machine create --driver virtualbox default
+```
+
+Run the following to tell Docker which machine to execute Docker on
+
+```shell script
+docker-machine env default
+```
+
+Finally, to verify all the installations:
+
+```shell script
+docker run hello-world
+```
+
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).
