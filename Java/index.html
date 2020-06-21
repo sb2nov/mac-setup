@@ -830,30 +830,35 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="java">Java</h1>
+<p>Using Java requires you to install a JDK (&quot;Java Development Kit&quot;) or JRE (&quot;Java Runtime Environment&quot;).
+We&apos;ll use a JDK since it can do everything a JRE can, plus more.</p>
+<h2 id="choosing-a-jdk">Choosing a JDK</h2>
+<p>As of 2019, there are two major JDKs: OpenJDK (also known as AdoptOpenJDK) and the Oracle JDK.
+OpenJDK and Oracle JDK provide the same functionality, and are even built from the same code base.
+They differ only in their packaging and licensing.</p>
+<p>OpenJDK is free for use in all situations.
+Oracle JDK requires a paid-for commercial license when used in a production setting.</p>
+<p>Most personal users will probably want to use OpenJDK, since it&apos;s easier to acquire and install
+and that&apos;s what we&apos;ll be covering here.</p>
 <h2 id="installation">Installation</h2>
 <p>First you should check if Java is already installed</p>
 <pre><code>java -version
-</code></pre><p>If you see an output like below then Java is already installed on your machine so skip to <em>Add Java to PATH</em>.</p>
-<pre><code>java version &quot;1.8.0_45&quot;
-Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
-Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
-</code></pre><p>If you don&apos;t see the output like above then you need to install Java on your system.</p>
-<h3 id="using-the-oracle-installer">Using the Oracle installer</h3>
-<p>Please download the macOS version from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Oracle website</a>.</p>
-<h3 id="using-homebrew">Using Homebrew</h3>
-<pre><code>brew update
-brew tap caskroom/versions
-</code></pre><p>Then, install latest version of Java 9 via:</p>
-<pre><code>brew cask install java
-</code></pre><p>or install Java 8 using:</p>
-<pre><code>brew cask install java8
-</code></pre><p>Check if Java is correctly installed by running the <code>java -version</code> command again.</p>
-<h2 id="add-java-to-path">Add Java to PATH</h2>
-<p>Add <code>JAVA_HOME</code> to your environment variables by adding the line below to your <code>env.sh</code> (see <a href="../mac-setup/iTerm/README.html">iTerm2</a> section if you don&apos;t have a <code>env.sh</code> file).</p>
-<pre><code>export JAVA_HOME=&quot;`/usr/libexec/java_home -v 1.8`&quot;
-</code></pre><p>If you are using Java 9, use the following:</p>
-<pre><code>export JAVA_HOME=&quot;`/usr/libexec/java_home -v 9`&quot;
-</code></pre><p>You should have Java working now. Two popular IDE alternatives for writing Java are <a href="https://www.eclipse.org/downloads/" target="_blank">Eclipse</a> or <a href="https://www.jetbrains.com/idea/download/" target="_blank">IntelliJ</a>.</p>
+</code></pre><p>If you see a non-empty output like below then Java is already installed on your machine and you are good to go</p>
+<pre><code>openjdk version &quot;13.0.2&quot; 2020-01-14
+OpenJDK Runtime Environment AdoptOpenJDK (build 13.0.2+8)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 13.0.2+8, mixed mode, sharing)
+</code></pre><p>If you don&apos;t see the output like above then you need to install Java on your system</p>
+<h3 id="installing-openjdk">Installing OpenJDK</h3>
+<h4 id="installing-openjdk-using-homebrew">Installing OpenJDK using Homebrew</h4>
+<pre><code>brew install openjdk
+</code></pre><p>If you&apos;re curious, you can list all the available JDK versions via:</p>
+<pre><code>brew search jdk
+</code></pre><p>There will be a lot of options here! If you are not a serious Java developer, don&apos;t worry about them, and just use the default <code>openjdk</code>.</p>
+<p>Once you&apos;ve done that, check if Java is correctly installed by running the <code>java -version</code> command again.</p>
+<h4 id="downloading-and-installing-openjdk-manually">Downloading and installing OpenJDK manually</h4>
+<p>Open a web browser and go to <a href="https://adoptopenjdk.net/" target="_blank">https://adoptopenjdk.net/</a>. Select &quot;OpenJDK 11 (LTS)&quot; and &quot;HotSpot&quot;.
+Click the big &quot;Latest release&quot; button and run the installer file that gets downloaded.</p>
+<p>Once you&apos;ve done that, check if Java is correctly installed by opening a new Terminal session and running the <code>java -version</code> command again.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -897,7 +902,7 @@ brew tap caskroom/versions
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.17","depth":1,"next":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"CPlusPlus","level":"1.16","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Java/README.md","mtime":"2020-05-20T18:30:18.745Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T18:30:31.495Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Java","level":"1.17","depth":1,"next":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"CPlusPlus","level":"1.16","depth":1,"path":"Cpp/README.md","ref":"Cpp/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Java/README.md","mtime":"2020-06-21T20:00:05.323Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T20:00:20.171Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
