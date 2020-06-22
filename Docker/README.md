@@ -18,7 +18,9 @@ You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refe
 
 ### Installation
 
-These are the steps to install docker using brew
+There are two ways to install Docker
+
+Option 1: These are the steps to install docker using brew
 
 * Install the docker and docker machine from brew
 
@@ -64,3 +66,13 @@ docker run hello-world
 ```
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).
+
+Option 2: Install using the Docker App
+
+* Navigate to 
+
+```shell script
+https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+```
+
+This installation should provide you all the necessary GUI tools
