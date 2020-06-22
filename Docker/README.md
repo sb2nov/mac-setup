@@ -69,7 +69,7 @@ You can find more about Docker in the [documentation](https://docs.docker.com/).
 
 Option 2: Install using the Docker App
 
-* Navigate to 
+* Navigate to the following link
 
 ```shell script
 https://hub.docker.com/editions/community/docker-ce-desktop-mac/
