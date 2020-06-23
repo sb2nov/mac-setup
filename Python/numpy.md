@@ -1,22 +1,21 @@
 # Numpy, Scipy and Matplotlib
 
-The [Numpy](http://numpy.scipy.org/), [Scipy](https://www.scipy.org/scipylib/index.html) and [Matplotlib](http://matplotlib.org/) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly. Luckily for us, [Samuel John](http://www.samueljohn.de/) has put together some [Homebrew formulae](https://github.com/samueljohn/homebrew-python) to make it easier to install these Python libraries.
+The [Numpy](http://numpy.scipy.org/), [Scipy](https://www.scipy.org/scipylib/index.html) and [Matplotlib](http://matplotlib.org/) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly.
 
-First, grab the special formulae (which are not part of Homebrew core):
+There are two ways to install these libraries:
 
-    brew tap samueljohn/python
-    brew tap brewsci/bio
+* Using `pip`
 
-Then, install the `gfortran` dependency which we will need to build the libraries along with gcc:
+Python provides an inbuilt package management system `pip` which can be used to install these libraries
 
-    brew install gcc
+```shell script
+python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+```
 
-Then, install `nose`, `pyparsing` and `python-dateutil` dependency which we will need to build the libraries:
+* Using [Macports](https://www.macports.org/) and Python 3.5
 
-    pip install nose pyparsing python-dateutil pep8
+```shell script
+sudo port install py35-numpy py35-scipy py35-matplotlib py35-ipython +notebook py35-pandas py35-sympy py35-nose
+```
 
-Finally, you can install Numpy and Scipy with:
 
-    brew install numpy scipy matplotlib
-
-(It may take a few minutes to build)
