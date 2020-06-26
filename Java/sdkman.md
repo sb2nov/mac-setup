@@ -33,7 +33,7 @@ sdkman 5.0.0+51
 
 ### Installing an SDK
 
-#### Latest Stable
+#### Latest stable
 
 Install the latest stable version of your SDK of choice (say, Java JDK) by running the following command:
 
