@@ -65,7 +65,7 @@ Setting java 8u111 as default.
 ## More commands
 
 * To install a specific version
-simply qualify the version you require
+qualify the version you require:
 
 ```bash
 sdk install scala 2.12.1
