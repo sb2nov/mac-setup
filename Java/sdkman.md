@@ -4,7 +4,7 @@ SDKMAN! is a tool for managing parallel versions of multiple software developmen
 
 ## Installation
 
-Simply open a new terminal and enter:
+Open a new terminal and enter:
 
 ```bash
  curl -s "https://get.sdkman.io" | bash
