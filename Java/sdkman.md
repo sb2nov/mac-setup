@@ -79,7 +79,7 @@ sdk uninstall scala 2.11.6
 
 Note that removing a local version will not remove the local installation.
 
-* List Candidates
+* To list candidates
 
 ```bash
 sdk list
