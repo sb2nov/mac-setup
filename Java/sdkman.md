@@ -85,6 +85,4 @@ Note that removing a local version will not remove the local installation.
 sdk list
 ```
 
-More useful commands and usages can be found at
-
-[SDKMAN Usage](https://sdkman.io/usage)
+More useful commands and usages can be found at [SDKMAN Usage](https://sdkman.io/usage).
