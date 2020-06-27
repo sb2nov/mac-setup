@@ -26,11 +26,10 @@ brew tap railwaycat/emacsmacport
 
   There are three available versions, `emacs-mac`, `emacs-mac-official-icon`, `emacs-mac-spacemacs-icon`.
 
-* Method 2: Build from source with Homebrew.
+* Method 2: Install using `brew`.
 
   ```shell
   brew install emacs-mac [options]
-  brew linkapps emacs-mac
   ```
 
 <details>
@@ -49,10 +48,30 @@ brew tap railwaycat/emacsmacport
 
 ### [Emacs plus](https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus)
 
+Start off by tapping the official emacs-plus cask.
+
 ```shell
 brew tap d12frosted/emacs-plus
+```
+
+Emacs Plus contains separate formulas for different Emacs versions:
+
+* emacs-plus - installs Emacs 26, current release version.
+
+```shell
 brew install emacs-plus [options]
-brew linkapps emacs-plus
+```
+
+* emacs-plus@27 - installs Emacs 27, next release version.
+
+```shell
+brew install emacs-plus@27 [options]
+```
+
+* emacs-plus@28 - installs Emacs 28, development version.
+
+```shell
+brew install emacs-plus@28 [options]
 ```
 
 <details>
