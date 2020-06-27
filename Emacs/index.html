@@ -845,9 +845,8 @@
 </code></pre>
 <p>There are three available versions, <code>emacs-mac</code>, <code>emacs-mac-official-icon</code>, <code>emacs-mac-spacemacs-icon</code>.</p>
 </li>
-<li><p>Method 2: Build from source with Homebrew.</p>
+<li><p>Method 2: Install using <code>brew</code>.</p>
 <pre><code class="lang-shell">brew install emacs-mac [options]
-brew linkapps emacs-mac
 </code></pre>
 </li>
 </ul>
@@ -866,9 +865,24 @@ brew linkapps emacs-mac
 </details>
 
 <h3 id="emacs-plus"><a href="https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus" target="_blank">Emacs plus</a></h3>
+<p>Start off by tapping the official emacs-plus cask.</p>
 <pre><code class="lang-shell">brew tap d12frosted/emacs-plus
-brew install emacs-plus [options]
-brew linkapps emacs-plus
+</code></pre>
+<p>Emacs Plus contains separate formulas for different Emacs versions:</p>
+<ul>
+<li>emacs-plus - installs Emacs 26, current release version.</li>
+</ul>
+<pre><code class="lang-shell">brew install emacs-plus [options]
+</code></pre>
+<ul>
+<li>emacs-plus@27 - installs Emacs 27, next release version.</li>
+</ul>
+<pre><code class="lang-shell">brew install emacs-plus@27 [options]
+</code></pre>
+<ul>
+<li>emacs-plus@28 - installs Emacs 28, development version.</li>
+</ul>
+<pre><code class="lang-shell">brew install emacs-plus@28 [options]
 </code></pre>
 <details>
 <summary>Click here to see available options: </summary>
@@ -994,7 +1008,7 @@ make install
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.9","depth":1,"next":{"title":"Sublime Text","level":"1.10","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.10.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.10.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.10.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Emacs/README.md","mtime":"2020-05-29T14:55:06.514Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T20:00:20.171Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.9","depth":1,"next":{"title":"Sublime Text","level":"1.10","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.10.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.10.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.10.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Emacs/README.md","mtime":"2020-06-27T06:15:04.805Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-27T06:15:20.651Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
