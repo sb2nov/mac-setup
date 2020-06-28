@@ -34,7 +34,7 @@
 * [MySQL](MyySQL/README.md)
 * [CPlusPlus](Cpp/README.md)
 * [Java](Java/README.md)
-  * [sdkman](Java/sdkman.md)
+  * [SDKMAN!](Java/sdkman.md)
 * [Scala](Scala/README.md)
 * [Ruby](Ruby/README.md)
   * [RubyGems](Ruby/RubyGems.md)
