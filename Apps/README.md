@@ -26,7 +26,7 @@ Here is a list of apps that are generally good to use and can come in handy in d
 
 ![Araxis Merge](araxis-merge.jpg)
 
-[DeltaWalker](http://www.deltawalker.com/): Just like Araxis, this app also lets you compare office files. However, it goes one step further by letting you compare file archives like ZIP, JAR, and TAR files. It also has great performance for comparing folders.
+[DeltaWalker](https://www.deltawalker.com/): Just like Araxis, this app also lets you compare office files. However, it goes one step further by letting you compare file archives like ZIP, JAR, and TAR files. It also has great performance for comparing folders.
 
 ![DeltaWalker](delta-walker.jpg)
 

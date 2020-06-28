@@ -24,19 +24,19 @@ Option 1: These are the steps to install docker using brew
 
 * Install the docker and docker machine from brew
 
-```shell script
+```sh
 brew install docker docker-machine
 ```
 
 * Install VirtualBox to let Docker create the images.
 
-```shell script
+```sh
 brew cask install virtualbox
 ```
 
 >If you encounter an issue with the installer with an error message like
 
-```shell script
+```sh
 The install failed (The installer encountered an error that caused the installation to fail.
 Contact the software manufacturer for assistance.)
 ```
@@ -49,19 +49,19 @@ This should complete the installation
 
 Now to create a Machine, follow the following steps:
 
-```shell script
+```sh
 docker-machine create --driver virtualbox default
 ```
 
 Run the following to tell Docker which machine to execute Docker on
 
-```shell script
+```sh
 docker-machine env default
 ```
 
 Finally, to verify all the installations:
 
-```shell script
+```sh
 docker run hello-world
 ```
 
@@ -71,7 +71,7 @@ Option 2: Install using the Docker App
 
 * Navigate to the following link
 
-```shell script
+```sh
 https://hub.docker.com/editions/community/docker-ce-desktop-mac/
 ```
 
