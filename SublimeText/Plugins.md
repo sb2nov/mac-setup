@@ -10,7 +10,7 @@
 - [EncodingHelper](https://github.com/SublimeText/EncodingHelper): Guess encoding of files, show in status bar, convert to UTF-8 from a variety of encodings
 - [FileDiffs](https://github.com/colinta/SublimeFileDiffs): Shows diffs between the current file, or selection(s) in the current file, and clipboard, another file, or unsaved changes
 - [Git](https://github.com/kemayo/sublime-text-git): Plugin for some Git integration
-- [GitGutter](http://www.jisaacks.com/gitgutter): A Sublime Text 2 and 3 plugin to see git diff in gutter
+- [GitGutter](https://github.com/jisaacks/GitGutter): A Sublime Text 2 and 3 plugin to see git diff in gutter
 - [IndentXML](https://github.com/alek-sys/sublimetext_indentxml): Plugin for re-indenting XML and JSON files
 - [Jade](https://github.com/davidrios/jade-tmbundle): A comprehensive bundle for the Jade template language
 - [Jedi - Python autocompletion](https://github.com/srusskih/SublimeJEDI): Jedi is an autocompletion tool for Python
