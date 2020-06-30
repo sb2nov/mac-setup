@@ -530,6 +530,25 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../Java/sdkman.html">
+            
+                <a href="../Java/sdkman.html">
+            
+                    
+                    SDKMAN!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.18" data-path="../Scala/">
@@ -835,35 +854,37 @@
 </code></pre><p>When done, to test that it installed properly you can run:</p>
 <pre><code>git --version
 </code></pre><p>And <code>which git</code> should output <code>/usr/local/bin/git</code>.</p>
-<p>Next, we&apos;ll define your Git user (should be the same name and email you use for
-<a href="https://github.com/" target="_blank">GitHub</a>):</p>
+<p>Next, we&apos;ll define your Git user (should be the same name and email you use for <a href="https://github.com/" target="_blank">GitHub</a>):</p>
 <pre><code class="lang-sh">git config --global user.name <span class="hljs-string">&quot;Your Name Here&quot;</span>
 git config --global user.email <span class="hljs-string">&quot;your_email@youremail.com&quot;</span>
 </code></pre>
 <p>They will get added to your <code>.gitconfig</code> file.</p>
-<p>To push code to your GitHub repositories, we&apos;re going to use the recommended
-HTTPS method (versus SSH). To prevent <code>git</code> from asking for your username and
-password every time you push a commit you can cache your credentials by running
-the following command, as described in the
-<a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank">instructions</a>.</p>
-<pre><code>git config --global credential.helper osxkeychain
-</code></pre><h2 id="ssh-config-for-github">SSH Config for GitHub</h2>
-<p>The instructions below are referenced from <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">the official
-documentation</a>.</p>
+<p>To push code to your GitHub repositories, we will use the recommended HTTPS method. There are also instructions for using SSH. To prevent <code>git</code> from asking for your username and password every time you push a commit you can cache your credentials by running the following command, as described in the <a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank">instructions</a>.</p>
+<pre><code class="lang-sh">git config --global credential.helper osxkeychain
+</code></pre>
+<h2 id="using-https-for-github-recommended">Using HTTPS for GitHub (recommended)</h2>
+<p>These instructions are from <a href="https://help.github.com/en/github/using-git/which-remote-url-should-i-use#cloning-with-https-urls-recommended" target="_blank">the official documentation</a>.</p>
+<h3 id="clone-repositories-using-https">Clone repositories using HTTPS</h3>
+<p>After creating a new repo on GitHub, clone it using:</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/&lt;username&gt;/&lt;repo-name&gt;.git
+</code></pre>
+<p>- if you had initialized with a README.</p>
+<p>If you did not, follow the instructions in the section below.</p>
+<h3 id="set-up-a-new-or-existing-repo-with-https-for-github">Set up a new or existing repo with HTTPS for GitHub</h3>
+<p>If you are setting up a new repo, add at least one file and commit first. Then, configure the remote and push to GitHub by running:</p>
+<pre><code class="lang-sh">git remote add origin https://github.com/&lt;username&gt;/&lt;repo-name&gt;.git
+git push -u origin master
+</code></pre>
+<h2 id="ssh-config-for-github">SSH Config for GitHub</h2>
+<p>These instructions are for those who wish to use SSH and not HTTPS, and are from <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">the official documentation</a>.</p>
 <h3 id="check-for-existing-ssh-keys">Check for existing SSH keys</h3>
-<p>First, we need to check for existing SSH keys on your computer. We do this by
-running:</p>
+<p>First check for existing SSH keys on your computer by running:</p>
 <pre><code class="lang-sh">ls -al ~/.ssh
 <span class="hljs-comment"># Lists the files in your .ssh directory, if they exist</span>
 </code></pre>
-<p>Check the directory listing to see if you have files named either <code>id_rsa.pub</code>
-or <code>id_dsa.pub</code>. If you don&apos;t have either of those files then read on,
-otherwise skip the next section.</p>
+<p>Check the directory listing to see if you have files named either <code>id_rsa.pub</code> or <code>id_dsa.pub</code>. If you don&apos;t have either of those files then read on, otherwise skip the next section.</p>
 <h3 id="generate-a-new-ssh-key">Generate a new SSH key</h3>
-<p>If you don&apos;t have an SSH key you need to generate one. To do that you need to
-run the commands below, and make sure to substitute the placeholder with your
-email. The default settings are preferred, so when you&apos;re asked to &quot;enter a
-file in which to save the key,&quot;&quot; just press Enter to continue.</p>
+<p>If you don&apos;t have an SSH key you need to generate one. To do that you need to run the commands below, and make sure to substitute the placeholder with your email. The default settings are preferred, so when you&apos;re asked to enter a file in which to save the key, just press Enter to continue.</p>
 <pre><code class="lang-sh">ssh-keygen -t rsa -C <span class="hljs-string">&quot;your_email@example.com&quot;</span>
 <span class="hljs-comment"># Creates a new ssh key, using the provided email as a label</span>
 </code></pre>
@@ -871,25 +892,32 @@ file in which to save the key,&quot;&quot; just press Enter to continue.</p>
 <p>Run the following commands to add your SSH key to the <code>ssh-agent</code>.</p>
 <pre><code class="lang-sh"><span class="hljs-built_in">eval</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(ssh-agent -s)</span>&quot;</span>
 </code></pre>
-<p>If you&apos;re running macOS Sierra 10.12.2 or later, you will need to modify your
-<code>~/.ssh/config</code> file to automatically load keys into the ssh-agent and store
-passphrases in your keychain:</p>
+<p>If you&apos;re running macOS Sierra 10.12.2 or later, you will need to modify your <code>~/.ssh/config</code> file to automatically load keys into the ssh-agent and store passphrases in your keychain:</p>
 <pre><code class="lang-keychain">Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 </code></pre>
-<p>No matter what operating system version you run you need to run this command to
-complete this step:</p>
+<p>No matter what operating system version you run you need to run this command to complete this step:</p>
 <pre><code class="lang-sh">ssh-add -K ~/.ssh/id_rsa
 </code></pre>
 <h3 id="adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub account</h3>
-<p>The last step is to let GitHub know about your SSH key. Run this command to copy your key to your clipboard:</p>
+<p>The last step is to let GitHub know about your SSH key so GitHub can recognize you. Run this command to copy your key to your clipboard:</p>
 <pre><code class="lang-sh">pbcopy &lt; ~/.ssh/id_rsa.pub
 </code></pre>
-<p>Then go to GitHub and <a href="https://github.com/settings/ssh/new" target="_blank">input your new SSH
-key</a>. Paste your key in the &quot;Key&quot; textbox
-and pick a name that represents the computer you&apos;re currently using.</p>
+<p>Then go to GitHub and <a href="https://github.com/settings/ssh/new" target="_blank">input your new SSH key</a>. Paste your key in the &quot;Key&quot; text-box and pick a name that represents the computer you&apos;re currently using.</p>
+<p>We are now ready to use SSH with GitHub!</p>
+<h3 id="clone-repositories-using-ssh">Clone repositories using SSH</h3>
+<p>After creating a new repo on GitHub, clone it using</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
+</code></pre>
+<p>- if you had initialized with a README.</p>
+<p>If you did not, follow the instructions in the section below.</p>
+<h3 id="set-up-a-new-or-existing-repo-with-ssh-for-github">Set up a new or existing repo with SSH for GitHub</h3>
+<p>If you are setting up a new repo, add at least one file and commit first. Then, configure the remote and push to GitHub by running:</p>
+<pre><code class="lang-sh">git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
+git push -u origin master
+</code></pre>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -933,7 +961,7 @@ and pick a name that represents the computer you&apos;re currently using.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.6","depth":1,"next":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"previous":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Git/README.md","mtime":"2020-06-21T20:00:30.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-27T06:15:20.651Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.6","depth":1,"next":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"previous":{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Git/README.md","mtime":"2020-06-30T19:10:06.103Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

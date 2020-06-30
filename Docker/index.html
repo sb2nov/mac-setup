@@ -530,6 +530,25 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../Java/sdkman.html">
+            
+                <a href="../Java/sdkman.html">
+            
+                    
+                    SDKMAN!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.18" data-path="../Scala/">
@@ -844,45 +863,40 @@
 <ul>
 <li>Install the docker and docker machine from brew</li>
 </ul>
-<p>```shell script
-brew install docker docker-machine</p>
-<pre><code>
-* Install VirtualBox to let Docker create the images.
-
-```shell script
-brew cask install virtualbox
-</code></pre><blockquote>
+<pre><code class="lang-sh">brew install docker docker-machine
+</code></pre>
+<ul>
+<li>Install VirtualBox to let Docker create the images.</li>
+</ul>
+<pre><code class="lang-sh">brew cask install virtualbox
+</code></pre>
+<blockquote>
 <p>If you encounter an issue with the installer with an error message like</p>
 </blockquote>
-<p>```shell script
-The install failed (The installer encountered an error that caused the installation to fail.
-Contact the software manufacturer for assistance.)</p>
-<pre><code>
-&gt;Use the following When you do fail, turn on System Preference and see if &#x2018;System software from developer &#x201C;Oracle America, inc&#x201D; was blocked from loading.&#x2019; If you see that message, click Allow button and try to install again.
-
-This should complete the installation
-
----
-
-Now to create a Machine, follow the following steps:
-
-```shell script
-docker-machine create --driver virtualbox default
-</code></pre><p>Run the following to tell Docker which machine to execute Docker on</p>
-<p>```shell script
-docker-machine env default</p>
-<pre><code>
-Finally, to verify all the installations:
-
-```shell script
-docker run hello-world
-</code></pre><p>You can find more about Docker in the <a href="https://docs.docker.com/" target="_blank">documentation</a>.</p>
+<pre><code class="lang-sh">The install failed (The installer encountered an error that caused the installation to fail.
+Contact the software manufacturer <span class="hljs-keyword">for</span> assistance.)
+</code></pre>
+<blockquote>
+<p>Use the following When you do fail, turn on System Preference and see if &#x2018;System software from developer &#x201C;Oracle America, inc&#x201D; was blocked from loading.&#x2019; If you see that message, click Allow button and try to install again.</p>
+</blockquote>
+<p>This should complete the installation</p>
+<hr>
+<p>Now to create a Machine, follow the following steps:</p>
+<pre><code class="lang-sh">docker-machine create --driver virtualbox default
+</code></pre>
+<p>Run the following to tell Docker which machine to execute Docker on</p>
+<pre><code class="lang-sh">docker-machine env default
+</code></pre>
+<p>Finally, to verify all the installations:</p>
+<pre><code class="lang-sh">docker run hello-world
+</code></pre>
+<p>You can find more about Docker in the <a href="https://docs.docker.com/" target="_blank">documentation</a>.</p>
 <p>Option 2: Install using the Docker App</p>
 <ul>
 <li>Navigate to the following link</li>
 </ul>
-<p><code>shell script
-https://hub.docker.com/editions/community/docker-ce-desktop-mac/</code></p>
+<pre><code class="lang-sh">https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+</code></pre>
 <p>This installation should provide you all the necessary GUI tools</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
@@ -927,7 +941,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac/</code></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.25","depth":1,"next":{"title":"Useful Commands","level":"1.25.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},"previous":{"title":"Vagrant","level":"1.24","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Docker/README.md","mtime":"2020-06-27T06:15:04.805Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-27T06:15:20.651Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.25","depth":1,"next":{"title":"Useful Commands","level":"1.25.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},"previous":{"title":"Vagrant","level":"1.24","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Docker/README.md","mtime":"2020-06-30T19:10:06.103Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
