@@ -18,7 +18,7 @@ for cmd in ${commands[@]}; do is_available "$cmd"; done
 echo "✅ All required packages are available, will continue"
 
 echo "👥 Updating list of contributors.."
-python ./scripts/contributors.py
+node ./scripts/generate_contributors.js
 git commit -a -m "Update list of contributors"
 git push origin master
 echo "👥 Completed updating list of contributors"
