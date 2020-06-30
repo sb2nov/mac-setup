@@ -29,7 +29,9 @@ node_modules
 
 followed by running the command below, in terminal:
 
-    git config --global core.excludesfile ~/.gitignore
+```bash
+git config --global core.excludesfile ~/.gitignore
+```
 
 to not track files that are almost always ignored in all Git repositories.
 

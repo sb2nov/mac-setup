@@ -2,11 +2,15 @@
 
 What's a developer without [Git](http://git-scm.com/)? To install, run:
 
-    brew install git
+```sh
+brew install git
+```
 
 When done, to test that it installed properly you can run:
 
-    git --version
+```sh
+git --version
+```
 
 And `which git` should output `/usr/local/bin/git`.
 

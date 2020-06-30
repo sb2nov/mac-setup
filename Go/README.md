@@ -6,7 +6,9 @@
 
 You can follow the [official instructions on how to install Go](https://golang.org/doc/install), or you can use Homebrew instead:
 
-    brew install go
+```sh
+brew install go
+```
 
 When installed, run `go version` to see the installed version of Go.
 
@@ -49,23 +51,31 @@ func main() {
 
 Run the program by running:
 
-    $ go run hello.go
-    Hello World!
+```sh
+$ go run hello.go
+Hello World!
+```
 
 If you wish to compile it and move it to `$GOPATH/bin`, then run:
 
-    go install .
+```sh
+go install .
+```
 
 Since you have `$GOPATH/bin` added to your `$PATH`, you can run your program from anywhere:
 
-    $ hello
-    Hello World!
+```sh
+$ hello
+Hello World!
+```
 
 ## Import a Go package
 
 Besides creating your own packages you can import and use other packages in your Go code. To do so you'll use the `go get` command:
 
-    go get -u github.com/gorilla/mux
+```sh
+go get -u github.com/gorilla/mux
+```
 
 The command above will import the package `mux` into this directory `$GOPATH/src/github.com/gorilla/mux`.
 
@@ -101,11 +111,15 @@ Go has a built-in tool that automatically formats Go source code.
 
 To format a single file run:
 
-    gofmt -w yourcode.go
+```sh
+gofmt -w yourcode.go
+```
 
 You can also format an entire package:
 
-    go fmt path/to/your/package
+```sh
+go fmt path/to/your/package
+```
 
 > **Note**: that the command is different from formatting a single file
 
@@ -113,10 +127,12 @@ You can also format an entire package:
 
 With the `godoc` command you can generate documentation from your code and read documentation from other packages.
 
-    godoc fmt                # documentation for package fmt
-    godoc fmt Printf         # documentation for fmt.Printf
-    godoc -src fmt           # fmt package interface in Go source form
-    godoc -all -http :1234   # documentation for all packages on your machine served through http http://localhost:1234
+```sh
+godoc fmt                # documentation for package fmt
+godoc fmt Printf         # documentation for fmt.Printf
+godoc -src fmt           # fmt package interface in Go source form
+godoc -all -http :1234   # documentation for all packages on your machine served through http http://localhost:1234
+```
 
 You need to respect some spec in order to document using `godoc`. More information in the [Godoc documentation](https://blog.golang.org/godoc-documenting-go-code).
 

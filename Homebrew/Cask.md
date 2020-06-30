@@ -10,7 +10,9 @@ downloading `.dmg` files and dragging them to your Applications folder!
 To see if an app is available on Cask you can search on the [official Cask
 website](https://formulae.brew.sh/cask/). You can also search in your terminal:
 
-    brew search <package>
+```sh
+brew search <package>
+```
 
 ## Example Applications
 
