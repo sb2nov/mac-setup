@@ -31,7 +31,7 @@ while True:
     contributors_list.append(string)
 
 # Output to a text file
-file_output = HEADER + '\n'.join(contributors_list)
+file_output = '{}{}\n'.format(HEADER, '\n'.join(contributors_list))
 
 with open("Contributors.md", "w") as text_file:
     text_file.write(file_output)

@@ -80,18 +80,24 @@ Instructions [here](https://sourabhbajaj.com/mac-setup/Homebrew/README.html).
 
 ### 2) Update Homebrew formulae
 
-    brew update
+```shell
+brew update
+```
 
 ### 3) Install osxfuse
 
 If you are on macOS El Capitan (10.11), install the (3.x.x) from [the
 repo](https://github.com/osxfuse/osxfuse/releases).
 
-    brew cask install osxfuse
+```shell
+brew cask install osxfuse
+```
 
 ### 4) Install ntfs-3g
 
-    brew install ntfs-3g
+```shell
+brew install ntfs-3g
+```
 
 ### 5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection
 
