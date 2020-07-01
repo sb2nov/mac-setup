@@ -15,7 +15,7 @@ const FILE_NAME = "Contributors.md";
 const BASE_URL = "https://api.github.com/repos/sb2nov/mac-setup/contributors?page=";
 const HEADER = `# Contributors
 
-Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [GitHub Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
+Thank you everyone that have contributed to creating this awesome guide!
 
 `;
 
