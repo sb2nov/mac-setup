@@ -1,7 +1,7 @@
-language: generic
-addons:
-  apt:
-    packages:
-      - parallel
-      - grep # Untested. Used with `ggrep` command in script, might need change
-script: /bin/bash ./scripts/health_check_links.sh
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker run -ti --rm -v $PWD:/mnt:ro simeg/urlsup `find . -name "*.md"` --threads 10 --allow 429 --white-list http://localhost
