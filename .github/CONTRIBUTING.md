@@ -9,7 +9,7 @@ contribution under the [MIT License](../LICENSE).
 
 ## Installing dependencies and linting
 
-Run `make intall` first to make sure all the dependencies are installed in the workspace. Then run `make lint` before submitting your PR to make sure your changes comply
+Run `make deps` first to make sure all the dependencies are installed in the workspace. Then run `make lint` before submitting your PR to make sure your changes comply
 with our styling.
 
 ## How to contribute to macOS Setup Guide
