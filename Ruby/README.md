@@ -10,7 +10,7 @@ echo 'eval "$(rbenv init -)"' >> ~/Projects/config/env.sh
 source ~/.zshrc # Apply changes
 ```
 
-wThe packages we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.
+The packages we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.
 
 ## Switching versions
 
