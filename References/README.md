@@ -1,6 +1,6 @@
 # Credits & References
 
-Thank you for all the awesome pages and documentation below that helped set this up.
+Thank you for all the awesome pages and documentation below which helped set this up.
 
 - [Nicolashery](https://github.com/nicolashery/mac-dev-setup)
 - [GitHub](https://help.github.com/articles)

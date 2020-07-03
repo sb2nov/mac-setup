@@ -45,5 +45,3 @@ docker inspect [CONTAINER ID] | grep -wm1 IPAddress | cut -d '"' -f 4
 ```sh
 docker kill $(docker ps -q)
 ```
-
-Got more tips and tricks? Submit a PR!

@@ -33,9 +33,9 @@ suggestions. Always choose the setting that makes the most sense to you.**
 - _Other settings_
     - Remove _workspace auto-switching_ by running the following command:
 
-```shell
-defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-killall Dock # Restart the Dock process
+```console
+$ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+$ killall Dock # Restart the Dock process
 ```
 
 ## Finder
@@ -80,7 +80,7 @@ Instructions [here](https://sourabhbajaj.com/mac-setup/Homebrew/README.html).
 
 ### 2) Update Homebrew formulae
 
-```shell
+```sh
 brew update
 ```
 
@@ -89,13 +89,13 @@ brew update
 If you are on macOS El Capitan (10.11), install the (3.x.x) from [the
 repo](https://github.com/osxfuse/osxfuse/releases).
 
-```shell
+```sh
 brew cask install osxfuse
 ```
 
 ### 4) Install ntfs-3g
 
-```shell
+```sh
 brew install ntfs-3g
 ```
 
@@ -104,7 +104,7 @@ brew install ntfs-3g
  - **Reboot** and hold `CMD + R` to get in recovery mode
  - Open the terminal and type:
 
-```shell
+```sh
 csrutil disable
 ```
 
@@ -112,7 +112,7 @@ csrutil disable
 
 ### 6) Create a symlink for mount_ntfs
 
-```shell
+```sh
 sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 ```
@@ -122,7 +122,7 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
  - **Reboot** and hold `CMD + R` to get in recovery mode
  - Open the terminal and type:
 
-```shell
+```sh
 csrutil enable
 ```
 

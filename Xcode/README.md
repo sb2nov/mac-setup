@@ -6,7 +6,9 @@ Download and install it from the App Store or from [Apple's website](https://dev
 
 For installing Xcode command line tools run:
 
-    xcode-select --install
+```sh
+xcode-select --install
+```
 
 It'll prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
 

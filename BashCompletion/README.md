@@ -6,7 +6,7 @@ key. This will help you when writing the bash command in terminal.
 
 ## Installation
 
-```bash
+```sh
 brew install bash-completion
 ```
 
@@ -14,19 +14,19 @@ Bash completion will be installed in `/usr/local/etc/bash_completion.d`.
 
 For it to work, add this to your `~/.bash_profile`:
 
-```bash
+```sh
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 ```
 
 Or simply type:
 
-```bash
+```sh
 echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
 ```
 
 Restart your bash session:
 
-```bash
+```sh
 source ~/.bash_profile
 ```
 
@@ -35,7 +35,7 @@ source ~/.bash_profile
 Once you've done this, you can use bash completion by pressing the tab key
 twice after a command. For example:
 
-```bash
+```sh
 $ git [tab] [tab]
 add            blame          cherry-pick    config         format-patch   gui            merge          push           repack         rm             stage          whatchanged
 am             branch         citool         describe       fsck           help           mergetool      range-diff     replace        send-email     stash          worktree
@@ -48,13 +48,13 @@ bisect         cherry         commit         fetch          grep           log  
 
 You can list additional completion packages are available by typing:
 
-```bash
+```sh
 brew search completion
 ```
 
 And you can install them using `brew install` commands, for example:
 
-```bash
+```sh
 brew install docker-completion
 ```
 

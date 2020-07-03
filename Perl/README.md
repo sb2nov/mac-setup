@@ -15,13 +15,13 @@ is [cpanminus](https://metacpan.org/pod/App::cpanminus) (`cpanm`).
 
 ### Homebrew
 
-```bash
+```sh
 brew install perl cpanminus
 ```
 
 ### Perlbrew
 
-```bash
+```sh
 curl -L https://install.perlbrew.pl | bash
 
 source ~/perl5/perlbrew/etc/bashrc
@@ -33,7 +33,7 @@ echo source ~/perl5/perlbrew/etc/bashrc >> ~/.bash_profile
 
 Other useful commands:
 
-```bash
+```sh
 # full documentation
 perlbrew help
 
@@ -54,7 +54,7 @@ perlbrew clone-modules $from $to
 
 To install additional modules from [CPAN](https://www.cpan.org):
 
-```bash
+```sh
 cpanm Modern::Perl
 ```
 

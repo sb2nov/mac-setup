@@ -5,10 +5,20 @@ IPython is a kernel for Jupyter Notebook. If you are confused IPython with Jupyt
 
 ## Installation
 
-    pip install ipython
+```sh
+pip install ipython
+```
 
-If you want a more fine grained command you can try the following:
+If you want a more fine-grained command you can try the following:
 
-For zsh -> `pip install 'ipython[zmq,qtconsole,notebook,test]'`
+For zsh ->
 
-For bash -> `pip install ipython[zmq,qtconsole,notebook,test]`
+```sh
+pip install 'ipython[zmq,qtconsole,notebook,test]'
+```
+
+For bash ->
+
+```sh
+pip install ipython[zmq,qtconsole,notebook,test]
+```

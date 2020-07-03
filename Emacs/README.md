@@ -14,26 +14,27 @@ Many useful features are built with Emacs Mac Port, e.g. environment variables, 
 
 Link the Homebrew tap first.
 
-```shell
+```sh
 brew tap railwaycat/emacsmacport
 ```
 
 * Method 1: Install with `brew cask`.
 
-  ```shell
-  brew cask install emacs-mac
-  ```
+```sh
+brew cask install emacs-mac
+```
 
   There are three available versions, `emacs-mac`, `emacs-mac-official-icon`, `emacs-mac-spacemacs-icon`.
 
 * Method 2: Install using `brew`.
 
-  ```shell
-  brew install emacs-mac [options]
-  ```
+```sh
+brew install emacs-mac [options]
+```
 
 <details>
-<summary>Click here to see available options: </summary>
+<summary>Click here to see available options: </summary>  
+
 1. <code>--with-dbus</code>, Build with d-bus support<br>
 2. <code>--with-modules</code>, Build with dynamic modules support<br>
 3. <code>--with-xml2</code>, Build with libxml2 support<br>
@@ -50,7 +51,7 @@ brew tap railwaycat/emacsmacport
 
 Start off by tapping the official emacs-plus cask.
 
-```shell
+```sh
 brew tap d12frosted/emacs-plus
 ```
 
@@ -58,19 +59,19 @@ Emacs Plus contains separate formulas for different Emacs versions:
 
 * emacs-plus - installs Emacs 26, current release version.
 
-```shell
+```sh
 brew install emacs-plus [options]
 ```
 
 * emacs-plus@27 - installs Emacs 27, next release version.
 
-```shell
+```sh
 brew install emacs-plus@27 [options]
 ```
 
 * emacs-plus@28 - installs Emacs 28, development version.
 
-```shell
+```sh
 brew install emacs-plus@28 [options]
 ```
 
@@ -109,7 +110,7 @@ Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix 
 
 1. If you have an existing Emacs configuration, back it up first:
 
-   ```sh
+   ```console
    cd ~
    mv .emacs.d .emacs.d.bak
    mv .emacs .emacs.bak
@@ -158,7 +159,7 @@ This is [Purcell's](https://github.com/purcell/emacs.d) emacs configuration tree
 
 To install, clone this repository to `~/.emacs.d`, i.e. ensure that the `init.el` contained in this repository ends up at `~/.emacs.d/init.el`:
 
-```shell
+```sh
 git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
 ```
 
@@ -170,7 +171,7 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ### Installation
 
-```shell
+```console
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 cd ~/.emacs.d
 cp init.example.el init.el  # maybe edit init.el

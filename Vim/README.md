@@ -6,7 +6,7 @@
 
 To install the latest version, use homebrew:
 
-```bash
+```sh
 brew install vim
 ```
 
@@ -16,34 +16,34 @@ brew install vim
 
 To download the The Ultimate vimrc, you need to install the git client. If you need install it, use home brew:
 
-```bash
+```sh
 brew install git
 ```
 
 Now, download the vimrc files:
 
-```bash
+```sh
 git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 ```
 
 To install the complete version, run:
 
-```bash
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+```console
+$ sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
 To install the _basic_ version, run:
 
-```bash
-sh ~/.vim_runtime/install_basic_vimrc.sh
+```console
+$ sh ~/.vim_runtime/install_basic_vimrc.sh
 ```
 
 ### Update
 
 To update the vimrc scripts, run:
 
-```bash
-cd ~/.vim_runtime && git pull --rebase && cd -
+```console
+$ cd ~/.vim_runtime && git pull --rebase && cd -
 ```
 
 ## Maximum Awesome
@@ -54,15 +54,15 @@ cd ~/.vim_runtime && git pull --rebase && cd -
 
 To install it, just make a clone of the repository with the git client:
 
-```bash
+```sh
 git clone https://github.com/square/maximum-awesome.git
 ```
 
 Then install it:
 
-```bash
-cd maximum-awesome
-rake
+```console
+$ cd maximum-awesome
+$ rake
 ```
 
 > **NOTE:** the rake command will install all dependencies needed.

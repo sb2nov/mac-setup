@@ -2,7 +2,7 @@
 
 This is an example of User Settings for a basic development but please feel free to modify or update as per your choice.
 
-~~~json
+```json
 {
     "auto_complete_delay": 5,
     "auto_complete_selector": "source, text",
@@ -46,4 +46,4 @@ This is an example of User Settings for a basic development but please feel free
     "translate_tabs_to_spaces": true,
     "word_wrap": true
 }
-~~~
+```

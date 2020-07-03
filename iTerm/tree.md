@@ -6,7 +6,7 @@
 
 To install the latest version, use homebrew:
 
-```bash
+```sh
 brew install tree
 ```
 
@@ -14,7 +14,7 @@ brew install tree
 
 Running `tree` will produce output like this:
 
-```bash
+```sh
 .
 ├── Apps
 │   ├── Octave.md
@@ -41,13 +41,13 @@ Running `tree` will produce output like this:
 
 To limit the recursion you can pass an `-L` flag and specify the maximum depth `tree` will use when searching.
 
-```bash
+```sh
 tree -L 1
 ```
 
 will output:
 
-```bash
+```sh
 .
 ├── Apps
 ├── CONTRIBUTING.md

@@ -7,9 +7,9 @@ Contributions to macOS Setup Guide are more than welcome.
 By contributing code to macOS Setup Guide, you agree to license your
 contribution under the [MIT License](../LICENSE).
 
-## Linting
+## Installing dependencies and linting
 
-Run `make lint` before submitting your PR to make sure your changes comply
+Run `make intall` first to make sure all the dependencies are installed in the workspace. Then run `make lint` before submitting your PR to make sure your changes comply
 with our styling.
 
 ## How to contribute to macOS Setup Guide

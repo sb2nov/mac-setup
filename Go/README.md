@@ -51,7 +51,7 @@ func main() {
 
 Run the program by running:
 
-```sh
+```console
 $ go run hello.go
 Hello World!
 ```
@@ -64,7 +64,7 @@ go install .
 
 Since you have `$GOPATH/bin` added to your `$PATH`, you can run your program from anywhere:
 
-```sh
+```console
 $ hello
 Hello World!
 ```

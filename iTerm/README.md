@@ -6,7 +6,9 @@
 
 Use [Homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/) to download and install:
 
-    brew cask install iterm2
+```sh
+brew cask install iterm2
+```
 
 ## Customization
 

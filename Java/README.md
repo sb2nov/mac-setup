@@ -19,13 +19,17 @@ and that's what we'll be covering here.
 
 First you should check if Java is already installed
 
-    java -version
+```sh
+java -version
+```
 
 If you see a non-empty output like below then Java is already installed on your machine and you are good to go
 
-    openjdk version "13.0.2" 2020-01-14
-    OpenJDK Runtime Environment AdoptOpenJDK (build 13.0.2+8)
-    OpenJDK 64-Bit Server VM AdoptOpenJDK (build 13.0.2+8, mixed mode, sharing)
+```sh
+openjdk version "13.0.2" 2020-01-14
+OpenJDK Runtime Environment AdoptOpenJDK (build 13.0.2+8)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 13.0.2+8, mixed mode, sharing)
+```
 
 If you don't see the output like above then you need to install Java on your system
 
@@ -33,11 +37,15 @@ If you don't see the output like above then you need to install Java on your sys
 
 #### Installing OpenJDK using Homebrew
 
-    brew install openjdk
+```sh
+brew install openjdk
+```
 
 If you're curious, you can list all the available JDK versions via:
 
-    brew search jdk
+```sh
+brew search jdk
+```
 
 There will be a lot of options here! If you are not a serious Java developer, don't worry about them, and just use the default `openjdk`.
 
