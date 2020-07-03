@@ -2,7 +2,7 @@
 
 Create the file `~/.gitignore` as shown below
 
-```gitignore
+```sh
 # Folder view configuration files
 .DS_Store
 Desktop.ini
@@ -29,7 +29,7 @@ node_modules
 
 followed by running the command below, in terminal:
 
-```bash
+```sh
 git config --global core.excludesfile ~/.gitignore
 ```
 
@@ -39,7 +39,7 @@ Or simply download [macOS specific .gitignore](https://github.com/github/gitigno
 
 >**Note**: You can also download it using curl
 
->```bash
+>```sh
 >curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
 >```
 

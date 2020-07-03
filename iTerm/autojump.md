@@ -6,7 +6,7 @@
 
 To install the latest version, use homebrew:
 
-```bash
+```sh
 brew install autojump
 ```
 
@@ -14,12 +14,12 @@ brew install autojump
 
 Navigate to your most-visited directories as usual using `cd`, for example if you had a directory called `work/github/mac-setup`
 
-```bash
+```sh
 cd work/github/mac-setup
 ```
 
 The next time you want to navigate to the same directory, use autojump like so -
 
-```bash
+```sh
 j mac-setup
 ```

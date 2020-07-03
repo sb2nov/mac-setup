@@ -8,12 +8,12 @@ There are two ways to install these libraries:
 
 Python provides an inbuilt package management system `pip` which can be used to install these libraries
 
-```bash
+```sh
 python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 ```
 
 * Using [MacPorts](https://www.macports.org/) and Python 3.5
 
-```bash
+```sh
 sudo port install py35-numpy py35-scipy py35-matplotlib py35-ipython +notebook py35-pandas py35-sympy py35-nose
 ```

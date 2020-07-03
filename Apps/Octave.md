@@ -15,8 +15,10 @@ As this distributes a compiled version of Octave, installation will be much fast
 
 To [install using homebrew-cask](https://octave-app.org/#installing-with-homebrew-cask) run:
 
-    brew tap octave-app/octave-app
-    brew cask install octave-app
+```sh
+brew tap octave-app/octave-app
+brew cask install octave-app
+```
 
 ### Homebrew official
 
@@ -24,15 +26,21 @@ You can also install Octave from the official Homebrew source using the method b
 
 Install `octave` from core Homebrew (which is available by default):
 
-    brew install octave
+```sh
+brew install octave
+```
 
 **Note**: If `brew` complains about not having a formula for Octave, the following command should fix it:
 
-    brew tap --repair
+```sh
+brew tap --repair
+```
 
 The command below upgrades Octave and its dependencies to the latest Homebrew-supported versions:
 
-    brew update && brew upgrade
+```sh
+brew update && brew upgrade
+```
 
 Octave has many dependencies which will be downloaded and installed prior to Octave. **The entire installation process can take a few hours if you are compiling from source.**
 
@@ -40,6 +48,8 @@ Octave has many dependencies which will be downloaded and installed prior to Oct
 
 You might find that you need to add:
 
-    setenv ("GNUTERM", "X11")
+```sh
+setenv ("GNUTERM", "X11")
+```
 
 to your octaverc file, normally located at `/usr/local/share/octave/site/m/startup`.

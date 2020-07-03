@@ -1,6 +1,6 @@
 # SublimeLinter Settings
 
-~~~json
+```json
 {
     "user": {
         "debug": false,
@@ -53,4 +53,4 @@
         "wrap_find": true
     }
 }
-~~~
+```

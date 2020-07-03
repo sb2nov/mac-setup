@@ -8,9 +8,11 @@
 
 ## Use CLI to open file
 
-Let's create a shortcut so we can launch Sublime Text from the command-line
+Let's create a shortcut through which we can launch Sublime Text from the command-line
 
-    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```console
+$ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```
 
 Now you can open a file with `subl myfile.py` or start a new project in the current directory with `subl .`.
 

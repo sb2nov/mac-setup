@@ -6,7 +6,7 @@
 
 To install the latest version, use Homebrew:
 
-```bash
+```sh
 brew cask install visual-studio-code
 ```
 

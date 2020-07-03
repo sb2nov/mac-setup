@@ -4,12 +4,16 @@ macOS comes with Python so there's a chance `pip` is already installed on your m
 
 ## Installation
 
-    curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-    sudo python get-pip.py
+```console
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+sudo python get-pip.py
+```
 
 To verify `pip` is installed properly run
 
-    pip --version
+```console
+$ pip --version
+```
 
 If it returns a version `pip` was successfully installed.
 
@@ -19,16 +23,24 @@ Here are a few `pip` commands to get you started.
 
 Install a Python package
 
-    pip install <package>
+```sh
+pip install <package>
+```
 
 Upgrade a package
 
-    pip install --upgrade <package>
+```sh
+pip install --upgrade <package>
+```
 
 See what's installed
 
-    pip freeze
+```sh
+pip freeze
+```
 
 Uninstall a package
 
-    pip uninstall <package>
+```sh
+pip uninstall <package>
+```

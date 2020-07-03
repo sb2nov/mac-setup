@@ -4,41 +4,59 @@ PostgreSQL is an open source relational database management system (RDBMS). It i
 
 ## Installation
 
-    brew install postgres
+```sh
+brew install postgres
+```
 
   After this, we can test the installation status by checking the version of installed PostgreSQL
 
-    postgres -V
+```sh
+postgres -V
+```
 
 ## Usage
 
 ### Start PostgreSQL server
 
-    pg_ctl -D /usr/local/var/postgres start
+```sh
+pg_ctl -D /usr/local/var/postgres start
+```
 
   Or you can start the PostgreSQL server and have it start up at login automatically
 
-    brew services start postgresql
+```sh
+brew services start postgresql
+```
 
 ### Stop PostgreSQL server
 
-    pg_ctl -D /usr/local/var/postgres stop
+```sh
+pg_ctl -D /usr/local/var/postgres stop
+```
 
   To make it stop starting up automatically at login
 
-    brew services stop postgresql
+```sh
+brew services stop postgresql
+```
 
 ### Restart PostgreSQL server
 
-    pg_ctl -D /usr/local/var/postgres restart
+```sh
+pg_ctl -D /usr/local/var/postgres restart
+```
 
   Or if you're using `homebrew`
 
-    brew services restart postgresql
+```sh
+brew services restart postgresql
+```
 
 ### Start PostgreSQL console
 
-    psql
+```console
+$ psql
+```
 
 ### GUI tool
 
@@ -46,4 +64,6 @@ PostgreSQL is an open source relational database management system (RDBMS). It i
 
   Install `psequel` using `homebrew` and `cask`
 
-    brew cask install psequel
+```sh
+brew cask install psequel
+```

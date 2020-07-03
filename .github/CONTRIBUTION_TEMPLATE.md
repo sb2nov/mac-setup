@@ -13,7 +13,7 @@
 <!--
   How to install it. If it's available on Homebrew, just include the following:
 
-  ```bash
+  ```sh
   $ brew install <tool>
   ```
 -->

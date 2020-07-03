@@ -6,29 +6,41 @@ We will install [MySQL](http://www.mysql.com/) using Homebrew, which will also i
 
 > **Note**: Sequel Pro does not support latest MySQL (version 8), because of that you may want to install MySQL 5.7 instead - `brew install mysql@5.7`.
 
-    brew install mysql
+```sh
+brew install mysql
+```
 
 ## Usage
 
 To have launchd start MySQL now and restart at login:
 
-    brew services start mysql
+```sh
+brew services start mysql
+```
 
 Or, if you don't want/need a background service you can just use the `mysql.server` tool:
 
-    mysql.server start
+```sh
+mysql.server start
+```
 
 To stop it when you are done, run:
 
-    mysql.server stop
+```sh
+mysql.server stop
+```
 
 You can see the different commands available for `mysql.server` with:
 
-    mysql.server --help
+```sh
+mysql.server --help
+```
 
 To connect with the command-line client, run:
 
-    mysql -uroot
+```sh
+mysql -uroot
+```
 
 (Use `exit` to quit the MySQL shell)
 
@@ -40,4 +52,6 @@ It is always nice to have a GUI tool for managing databases. For Mac, you can us
 
 You may install Sequel Pro using [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
 
-    brew cask install sequel-pro
+```sh
+brew cask install sequel-pro
+```

@@ -7,7 +7,7 @@
 
 To install the latest version, use homebrew.
 
-```bash
+```sh
 brew install ack
 ```
 
@@ -20,7 +20,7 @@ brew install ack
 
 ## Usage
 
-```bash
+```sh
 ack [OPTION]... PATTERN [FILES OR DIRECTORIES]
 ```
 
@@ -33,7 +33,7 @@ ack --js pancakes
 
 Or you may want to find all files that _does not_ contain the word _brew_
 
-```bash
+```sh
 ack -L brew
 ```
 
@@ -46,20 +46,20 @@ For example, you can add a custom type to use as a flag when searching. The
 following configuration will allow you to only search in `.md`, `.mkd` and
 `.markdown` files using the `--markdown` flag.
 
-```bash
+```sh
 --type-set=markdown=.md,.mkd,.markdown
 ```
 
 You can also tell ack to always sort and use colors in the result.
 
-```bash
+```sh
 --sort-files
 --color
 ```
 
 To see what configuration `ack` uses you can use the `dump` flag.
 
-```bash
+```sh
 ack --dump
 ```
 
