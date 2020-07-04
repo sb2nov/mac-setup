@@ -2,7 +2,7 @@
 
 Create the file `~/.gitignore` as shown below
 
-```sh
+```gitignore
 # Folder view configuration files
 .DS_Store
 Desktop.ini

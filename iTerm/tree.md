@@ -14,7 +14,9 @@ brew install tree
 
 Running `tree` will produce output like this:
 
-```sh
+```console
+$ tree
+
 .
 ├── Apps
 │   ├── Octave.md

@@ -171,7 +171,7 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ### Installation
 
-```console
+```sh
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 cd ~/.emacs.d
 cp init.example.el init.el  # maybe edit init.el
