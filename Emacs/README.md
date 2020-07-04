@@ -110,7 +110,7 @@ Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix 
 
 1. If you have an existing Emacs configuration, back it up first:
 
-   ```console
+   ```sh
    cd ~
    mv .emacs.d .emacs.d.bak
    mv .emacs .emacs.bak
