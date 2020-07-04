@@ -14,7 +14,7 @@
   How to install it. If it's available on Homebrew, just include the following:
 
   ```sh
-  $ brew install <tool>
+  brew install <tool>
   ```
 -->
 

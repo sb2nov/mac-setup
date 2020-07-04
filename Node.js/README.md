@@ -20,14 +20,14 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | b
 
 Then download Node and select your version by running:
 
-```console
-$ source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
-$ command -v nvm          # check the nvm use message
-$ nvm install node        # install most recent Node stable version
-$ nvm ls                  # list installed Node version
-$ nvm use node            # use stable as current version
-$ nvm ls-remote           # list all the Node versions you can install
-$ nvm alias default node  # set the installed stable version as the default Node
+```sh
+source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
+command -v nvm          # check the nvm use message
+nvm install node        # install most recent Node stable version
+nvm ls                  # list installed Node version
+nvm use node            # use stable as current version
+nvm ls-remote           # list all the Node versions you can install
+nvm alias default node  # set the installed stable version as the default Node
 ```
 
 See the [documentation](https://github.com/creationix/nvm#installation) for information.

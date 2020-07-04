@@ -21,9 +21,9 @@ pip install virtualenv
 If you have a project in a directory called `my-project` you can set up
 `virtualenv` for that project by running:
 
-```console
-$ cd my-project/
-$ virtualenv venv
+```sh
+cd my-project/
+virtualenv venv
 ```
 
 If you want your `virtualenv` to also inherit globally installed packages run:
@@ -36,8 +36,8 @@ These commands create a `venv/` directory in your project where all
 dependencies are installed. You need to **activate** it first though (in every
 terminal instance where you are working on your project):
 
-```console
-$ source venv/bin/activate
+```sh
+source venv/bin/activate
 ```
 
 You should see a `(venv)` appear at the beginning of your terminal prompt
@@ -53,8 +53,8 @@ projects.
 
 To leave the virtual environment run:
 
-```console
-$ deactivate
+```sh
+deactivate
 ```
 
 **Important**: Remember to add `venv` to your project's `.gitignore` file so

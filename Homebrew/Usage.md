@@ -15,10 +15,10 @@ brew update
 **Note**: If that command fails you can manually download the directory of
 formulas like this:
 
-```console
-$ cd /usr/local/Homebrew/
-$ git fetch origin
-$ git reset --hard origin/master
+```sh
+cd /usr/local/Homebrew/
+git fetch origin
+git reset --hard origin/master
 ```
 
 To see if any of your formulas need to be updated:

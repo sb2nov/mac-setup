@@ -55,9 +55,9 @@ installing, add `pyenv init` to your shell to enable shims and autocompletion
 echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 ```
 
-Restart your shell so the path changes take effect.
+Restart your shell to make sure the path changes take effect.
 
-```console
+```sh
 exec $SHELL
 ```
 

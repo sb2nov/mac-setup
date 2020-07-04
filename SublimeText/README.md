@@ -10,8 +10,8 @@
 
 Let's create a shortcut through which we can launch Sublime Text from the command-line
 
-```console
-$ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```sh
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
 Now you can open a file with `subl myfile.py` or start a new project in the current directory with `subl .`.

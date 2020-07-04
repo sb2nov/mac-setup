@@ -28,22 +28,22 @@ git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 
 To install the complete version, run:
 
-```console
-$ sh ~/.vim_runtime/install_awesome_vimrc.sh
+```sh
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
 To install the _basic_ version, run:
 
-```console
-$ sh ~/.vim_runtime/install_basic_vimrc.sh
+```sh
+sh ~/.vim_runtime/install_basic_vimrc.sh
 ```
 
 ### Update
 
 To update the vimrc scripts, run:
 
-```console
-$ cd ~/.vim_runtime && git pull --rebase && cd -
+```sh
+cd ~/.vim_runtime && git pull --rebase && cd -
 ```
 
 ## Maximum Awesome
@@ -60,9 +60,9 @@ git clone https://github.com/square/maximum-awesome.git
 
 Then install it:
 
-```console
-$ cd maximum-awesome
-$ rake
+```sh
+cd maximum-awesome
+rake
 ```
 
 > **NOTE:** the rake command will install all dependencies needed.
