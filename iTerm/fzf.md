@@ -31,7 +31,7 @@ Add any of these functions to your shell configuration file and apply the
 changes to try them out. Or just paste the function in your terminal if you
 just want to try it out without saving it.
 
-```console
+```sh
 # fd - cd to selected directory
 fd() {
   local dir
@@ -41,7 +41,7 @@ fd() {
 }
 ```
 
-```console
+```sh
 # fh - search in your command history and execute selected command
 fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
@@ -57,7 +57,7 @@ fh() {
 
 Open up your shell config and add following function:
 
-```console
+```sh
 # ch - browse chrome history
 ch() {
   local cols sep

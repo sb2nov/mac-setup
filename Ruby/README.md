@@ -32,8 +32,8 @@ echo 'bundler' >> "$(brew --prefix rbenv)/default-gems"
 
 When starting a Ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.
 
-```console
-$ echo '.gems' > <my_project_path>/.rbenv-gemsets
+```sh
+echo '.gems' > <my_project_path>/.rbenv-gemsets
 ```
 
 Your gems will then get installed in `project/.gems`.
@@ -42,6 +42,6 @@ Your gems will then get installed in `project/.gems`.
 
 If you use Google for finding your Gem documentation then you might want to consider saving a bit of time when installing gems by not including the documentation.
 
-```console
-$ echo 'gem: --no-document' >> ~/.gemrc
+```sh
+echo 'gem: --no-document' >> ~/.gemrc
 ```

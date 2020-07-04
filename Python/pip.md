@@ -11,8 +11,8 @@ sudo python get-pip.py
 
 To verify `pip` is installed properly run
 
-```console
-$ pip --version
+```sh
+pip --version
 ```
 
 If it returns a version `pip` was successfully installed.

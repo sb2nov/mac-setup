@@ -9,9 +9,9 @@ brew install scala sbt
 
 (This step is optional) Update the `/usr/local/etc/sbtopts` by running the command below.
 
-```console
-$ echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
-$ echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
+```sh
+echo '-J-XX:+CMSClassUnloadingEnabled' >> /usr/local/etc/sbtopts
+echo '-J-Xmx2G' >> /usr/local/etc/sbtopts
 ```
 
 ## Scala Plugin for Eclipse

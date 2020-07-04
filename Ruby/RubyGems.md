@@ -2,8 +2,8 @@
 
 [RubyGems](http://rubygems.org/), the Ruby package manager, should be installed on your machine if you previously have installed Ruby. Verify this by running:
 
-```console
-$ which gem
+```sh
+which gem
 ```
 
 ## Update RubyGems

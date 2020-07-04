@@ -37,11 +37,11 @@ to not track files that are almost always ignored in all Git repositories.
 
 Or simply download [macOS specific .gitignore](https://github.com/github/gitignore/blob/master/Global/macOS.gitignore) maintained by GitHub itself and put contents of it to `~/.gitignore`.
 
->**Note**: You can also download it using curl
+* You can also use a default gitignore using Curl
 
->```sh
->curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
->```
+```sh
+curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
+```
 
 ## Generate gitignore
 

@@ -35,7 +35,7 @@ source ~/.bash_profile
 Once you've done this, you can use bash completion by pressing the tab key
 twice after a command. For example:
 
-```sh
+```console
 $ git [tab] [tab]
 add            blame          cherry-pick    config         format-patch   gui            merge          push           repack         rm             stage          whatchanged
 am             branch         citool         describe       fsck           help           mergetool      range-diff     replace        send-email     stash          worktree

@@ -32,34 +32,34 @@ brew cask install vagrant-manager
 
 Add the Vagrant box you want to use. We'll use Ubuntu 12.04 for the following example.
 
-```console
-$ vagrant box add precise64 https://vagrantcloud.com/hashicorp/boxes/precise64/versions/1.1.0/providers/virtualbox.box
+```sh
+vagrant box add precise64 https://vagrantcloud.com/hashicorp/boxes/precise64/versions/1.1.0/providers/virtualbox.box
 ```
 
 You can find more boxes at [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
 
 Now create a test directory and `cd` into the test directory. Then we'll initialize the vagrant machine.
 
-```console
-$ vagrant init precise64
+```sh
+vagrant init precise64
 ```
 
 Now lets start the machine using the following command.
 
-```console
-$ vagrant up
+```sh
+vagrant up
 ```
 
 You can ssh into the machine now.
 
-```console
-$ vagrant ssh
+```sh
+vagrant ssh
 ```
 
 Halt the vagrant machine now.
 
-```console
-$ vagrant halt
+```sh
+vagrant halt
 ```
 
 Other useful commands are `suspend` and `destroy`.

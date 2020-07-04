@@ -33,9 +33,9 @@ suggestions. Always choose the setting that makes the most sense to you.**
 - _Other settings_
     - Remove _workspace auto-switching_ by running the following command:
 
-```console
-$ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-$ killall Dock # Restart the Dock process
+```sh
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+killall Dock # Restart the Dock process
 ```
 
 ## Finder

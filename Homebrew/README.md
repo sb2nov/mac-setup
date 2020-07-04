@@ -33,8 +33,8 @@ You change your path by adding `/usr/local/bin` to your `PATH` environment varia
 This can be done on a per-user basis by adjusting `PATH` in your `~/.bash_profile`.
 To do this, run:
 
-```console
-$ echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```sh
+echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 ```
 
 (If you're using `zsh`, you should do this for `~/.zshrc` in addition to
