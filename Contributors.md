@@ -1,15 +1,15 @@
 # Contributors
 
-Thank you everyone that have contributed to creating this awesome guide. Here are the names of a few; for the full list please visit the [GitHub Contributor page](https://github.com/sb2nov/mac-setup/graphs/contributors).
+Thank you everyone that have contributed to creating this awesome guide!
 
 - [simeg](https://github.com/simeg)
 - [sb2nov](https://github.com/sb2nov)
 - [hugovk](https://github.com/hugovk)
 - [nicolashery](https://github.com/nicolashery)
 - [Kyslik](https://github.com/Kyslik)
+- [kamleshkc2002](https://github.com/kamleshkc2002)
 - [AidHamza](https://github.com/AidHamza)
 - [michaelbeil](https://github.com/michaelbeil)
-- [kamleshkc2002](https://github.com/kamleshkc2002)
 - [llune](https://github.com/llune)
 - [apjanke](https://github.com/apjanke)
 - [ahmadnurus](https://github.com/ahmadnurus)
