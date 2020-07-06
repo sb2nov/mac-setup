@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-readonly commands=(python git gitbook cp)
+readonly commands=(git gitbook cp)
 
 # Make sure we don't push unrelated changes
 if [[ $(git status -s | wc -l) -gt 0 ]]; then
