@@ -20,18 +20,18 @@ suggestions. Always choose the setting that makes the most sense to you.**
 ## Trackpad
 
 - _Point & Click_
-    - Enable _Tap to click with one finger_
-    - Change _Secondary click_ to _Right corner_
-    - Uncheck _Three Finger Drag_
+  - Enable _Tap to click with one finger_
+  - Change _Secondary click_ to _Right corner_
+  - Uncheck _Three Finger Drag_
 - _Scroll & Zoom_
-    - Uncheck _all_ apart from _Zoom in and out_
+  - Uncheck _all_ apart from _Zoom in and out_
 
 ## Dock
 
 - _Visual Settings_
-    - _Change position_ to _Left_ and _make the size_ of icons _Small_
+  - _Change position_ to _Left_ and _make the size_ of icons _Small_
 - _Other settings_
-    - Remove _workspace auto-switching_ by running the following command:
+  - Remove _workspace auto-switching_ by running the following command:
 
 ```sh
 defaults write com.apple.dock workspaces-auto-swoosh -bool NO
@@ -41,10 +41,10 @@ killall Dock # Restart the Dock process
 ## Finder
 
 - General
-    - Change _New finder window show_ to open in your _Home Directory_
+  - Change _New finder window show_ to open in your _Home Directory_
 - Sidebar
-    - Add _Home_ and your _Code Directory_
-    - Uncheck all _Shared_ boxes
+  - Add _Home_ and your _Code Directory_
+  - Uncheck all _Shared_ boxes
 
 ## Menubar
 
@@ -67,10 +67,10 @@ killall Dock # Restart the Dock process
   NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app
   that you need to repeat keys in)
 - Change the _default folder for screenshots_
-    - Open the terminal and create the folder where you would like to store
-      your screenshots: `mkdir -p /path/to/screenshots/`
-    - Then run the following command: `defaults write com.apple.screencapture
-      location /path/to/screenshots/ && killall SystemUIServer`
+  - Open the terminal and create the folder where you would like to store
+    your screenshots: `mkdir -p /path/to/screenshots/`
+  - Then run the following command: `defaults write com.apple.screencapture
+    location /path/to/screenshots/ && killall SystemUIServer`
 
 ## How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)
 
@@ -101,14 +101,14 @@ brew install ntfs-3g
 
 ### 5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection
 
- - **Reboot** and hold `CMD + R` to get in recovery mode
- - Open the terminal and type:
+- **Reboot** and hold `CMD + R` to get in recovery mode
+- Open the terminal and type:
 
 ```sh
 csrutil disable
 ```
 
- - **Reboot** normally
+- **Reboot** normally
 
 ### 6) Create a symlink for mount_ntfs
 
@@ -119,11 +119,11 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 
 ### 7) If you are on macOS El Capitan (10.11), re-enable System Integrity Protection
 
- - **Reboot** and hold `CMD + R` to get in recovery mode
- - Open the terminal and type:
+- **Reboot** and hold `CMD + R` to get in recovery mode
+- Open the terminal and type:
 
 ```sh
 csrutil enable
 ```
 
- - **Reboot** normally
+- **Reboot** normally

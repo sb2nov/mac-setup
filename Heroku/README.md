@@ -49,9 +49,17 @@ A cheat sheet for deployment:
 
 ```console
 $ cd myapp/
+
+# Create the app on Heroku
 $ heroku create myapp
+
+# Deploy it
 $ git push heroku master
+
+# Check its status
 $ heroku ps
+
+# Check the logs
 $ heroku logs -t
 ```
 

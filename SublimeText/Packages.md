@@ -6,4 +6,4 @@ The simplest method of installation is through the Sublime Text console. The con
 
 This snippet changes each version and older versions will return an error.
 
-To get the current versions code, go to https://packagecontrol.io/installation
+To get the current versions code, go to [packagecontrol.io](https://packagecontrol.io/installation)

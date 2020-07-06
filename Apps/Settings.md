@@ -38,7 +38,7 @@ These settings are optional. Some of them are highly subjective and should not b
 - Sidebar -> Remove shared devices and All my files
 - Advanced -> Search in the current directory
 - TotalFinder
-    - Show progress bar
-    - Menus -> Show cut-copy-paste, All path copying, hide menu bar icon
-    - Uncheck visor
-    - Folder on top
+  - Show progress bar
+  - Menus -> Show cut-copy-paste, All path copying, hide menu bar icon
+  - Uncheck visor
+  - Folder on top
