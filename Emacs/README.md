@@ -33,7 +33,7 @@ brew install emacs-mac [options]
 ```
 
 <details>
-<summary>Click here to see available options: </summary>  
+<summary>Click here to see available options: </summary>
 
 1. <code>--with-dbus</code>, Build with d-bus support<br>
 2. <code>--with-modules</code>, Build with dynamic modules support<br>
@@ -45,6 +45,7 @@ brew install emacs-mac [options]
 8. <code>--with-modern-icon</code>, Using a modern style Emacs icon by @tpanum<br>
 9. <code>--with-spacemacs-icon</code>, Using the spacemacs Emacs icon by Nasser Alshammari<br>
 10. <code>--with-icon-for-documents</code>, Using official icon for documents which default open with Emacs<br>
+
 </details>
 
 ### [Emacs plus](https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus)
@@ -95,9 +96,8 @@ brew install emacs-plus@28 [options]
 16. <code>--HEAD</code>: Install HEAD version<br>
 </details>
 
-> **Note**: You might want to install [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) if you are using Emacs plus. It takes care of your environment variables.
-
-> **Note**: to have the title bar match your theme background color, consider using instead:
+> **Note**: 1) You might want to install [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell) if you are using Emacs plus. It takes care of your environment variables.
+> 2) To have the title bar match your theme background color, consider using instead:
 > `brew install emacs-plus --HEAD --with-natural-title-bars`
 
 ## Spacemacs

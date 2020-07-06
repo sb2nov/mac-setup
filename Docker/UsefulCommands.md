@@ -5,15 +5,15 @@ command.
 
 ## Table of Contents
 
-0. [`docker build`](#docker-build)
-0. [`docker exec`](#docker-exec)
-0. [`docker images`](#docker-images)
-0. [`docker inspect`](#docker-inspect)
-0. [`docker logs`](#docker-logs)
-0. [`docker ps`](#docker-ps)
-0. [`docker rmi`](#docker-rmi)
-0. [`docker run`](#docker-run)
-0. [Learn More](#learn-more)
+1. [`docker build`](#docker-build)
+2. [`docker exec`](#docker-exec)
+3. [`docker images`](#docker-images)
+4. [`docker inspect`](#docker-inspect)
+5. [`docker logs`](#docker-logs)
+6. [`docker ps`](#docker-ps)
+7. [`docker rmi`](#docker-rmi)
+8. [`docker run`](#docker-run)
+9. [Learn More](#learn-more)
 
 ## [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
 

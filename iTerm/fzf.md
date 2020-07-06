@@ -21,9 +21,9 @@ If you want to use shell extensions (better shell integration):
 
 which gives you:
 
- - Key bindings (`CTRL-T`, `CTRL-R`, and `ALT-C`) (available for _bash_, _zsh_
+- Key bindings (`CTRL-T`, `CTRL-R`, and `ALT-C`) (available for _bash_, _zsh_
  and _fish_)
- - Fuzzy auto-completion (available for _bash_ and _zsh_)
+- Fuzzy auto-completion (available for _bash_ and _zsh_)
 
 ## Example Usages
 
