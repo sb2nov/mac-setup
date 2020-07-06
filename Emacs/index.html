@@ -856,21 +856,22 @@
 <h3 id="emacs-mac-port-recommended"><a href="https://bitbucket.org/mituharu/emacs-mac/overview" target="_blank">Emacs Mac port</a> (Recommended)</h3>
 <p>Many useful features are built with Emacs Mac Port, e.g. environment variables, full screen, visual enhancements and so on.</p>
 <p>Link the Homebrew tap first.</p>
-<pre><code class="lang-shell">brew tap railwaycat/emacsmacport
+<pre><code class="lang-sh">brew tap railwaycat/emacsmacport
 </code></pre>
 <ul>
-<li><p>Method 1: Install with <code>brew cask</code>.</p>
-<pre><code class="lang-shell">brew cask install emacs-mac
-</code></pre>
-<p>There are three available versions, <code>emacs-mac</code>, <code>emacs-mac-official-icon</code>, <code>emacs-mac-spacemacs-icon</code>.</p>
-</li>
-<li><p>Method 2: Install using <code>brew</code>.</p>
-<pre><code class="lang-shell">brew install emacs-mac [options]
-</code></pre>
-</li>
+<li>Method 1: Install with <code>brew cask</code>.</li>
 </ul>
+<pre><code class="lang-sh">brew cask install emacs-mac
+</code></pre>
+<p>  There are three available versions, <code>emacs-mac</code>, <code>emacs-mac-official-icon</code>, <code>emacs-mac-spacemacs-icon</code>.</p>
+<ul>
+<li>Method 2: Install using <code>brew</code>.</li>
+</ul>
+<pre><code class="lang-sh">brew install emacs-mac [options]
+</code></pre>
 <details>
-<summary>Click here to see available options: </summary>
+<summary>Click here to see available options: </summary>  
+
 1. <code>--with-dbus</code>, Build with d-bus support<br>
 2. <code>--with-modules</code>, Build with dynamic modules support<br>
 3. <code>--with-xml2</code>, Build with libxml2 support<br>
@@ -885,23 +886,23 @@
 
 <h3 id="emacs-plus"><a href="https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus" target="_blank">Emacs plus</a></h3>
 <p>Start off by tapping the official emacs-plus cask.</p>
-<pre><code class="lang-shell">brew tap d12frosted/emacs-plus
+<pre><code class="lang-sh">brew tap d12frosted/emacs-plus
 </code></pre>
 <p>Emacs Plus contains separate formulas for different Emacs versions:</p>
 <ul>
 <li>emacs-plus - installs Emacs 26, current release version.</li>
 </ul>
-<pre><code class="lang-shell">brew install emacs-plus [options]
+<pre><code class="lang-sh">brew install emacs-plus [options]
 </code></pre>
 <ul>
 <li>emacs-plus@27 - installs Emacs 27, next release version.</li>
 </ul>
-<pre><code class="lang-shell">brew install emacs-plus@27 [options]
+<pre><code class="lang-sh">brew install emacs-plus@27 [options]
 </code></pre>
 <ul>
 <li>emacs-plus@28 - installs Emacs 28, development version.</li>
 </ul>
-<pre><code class="lang-shell">brew install emacs-plus@28 [options]
+<pre><code class="lang-sh">brew install emacs-plus@28 [options]
 </code></pre>
 <details>
 <summary>Click here to see available options: </summary>
@@ -971,15 +972,15 @@ corrupted packages you may have downloaded will be re-installed.</p>
 <p>This is <a href="https://github.com/purcell/emacs.d" target="_blank">Purcell&apos;s</a> emacs configuration tree, continually used and tweaked since 2000, and it may be a good starting point for other Emacs users, especially those who are web developers. These days it&apos;s somewhat geared towards macOS, but it is known to also work on Linux and Windows.</p>
 <h3 id="installation">Installation</h3>
 <p>To install, clone this repository to <code>~/.emacs.d</code>, i.e. ensure that the <code>init.el</code> contained in this repository ends up at <code>~/.emacs.d/init.el</code>:</p>
-<pre><code class="lang-shell">git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/purcell/emacs.d.git ~/.emacs.d
 </code></pre>
 <p>Upon starting up Emacs for the first time, further third-party packages will be automatically downloaded and installed. If you encounter any errors at that stage, try restarting Emacs, and possibly running <code>M-x package-refresh-contents</code> before doing so.</p>
 <h2 id="doom-emacs">Doom Emacs</h2>
 <p><a href="https://github.com/hlissner/doom-emacs" target="_blank">Doom</a> is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn&apos;t originally intended for public use, but can be considered a hacker&apos;s starter kit.</p>
 <h3 id="installation">Installation</h3>
-<pre><code class="lang-shell">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-cd ~/.emacs.d
-cp init.example.el init.el  # maybe edit init.el
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/hlissner/doom-emacs ~/.emacs.d
+<span class="hljs-built_in">cd</span> ~/.emacs.d
+cp init.example.el init.el  <span class="hljs-comment"># maybe edit init.el</span>
 make install
 </code></pre>
 <p>Don&apos;t forget to run <code>make</code> every time you modify <code>init.el</code>!</p>
@@ -1027,7 +1028,7 @@ make install
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.9","depth":1,"next":{"title":"Sublime Text","level":"1.10","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.10.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.10.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.10.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Emacs/README.md","mtime":"2020-06-27T06:15:31.016Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.9","depth":1,"next":{"title":"Sublime Text","level":"1.10","depth":1,"path":"SublimeText/README.md","ref":"SublimeText/README.md","articles":[{"title":"Preferences","level":"1.10.1","depth":2,"path":"SublimeText/Preferences.md","ref":"SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.10.2","depth":2,"path":"SublimeText/Packages.md","ref":"SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.10.3","depth":2,"path":"SublimeText/Plugins.md","ref":"SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.10.4","depth":2,"path":"SublimeText/SublimeLinter.md","ref":"SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Emacs/README.md","mtime":"2020-07-06T10:07:43.328Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -850,12 +850,14 @@
                                 
                                 <h1 id="scala">Scala</h1>
 <p>Make sure you have Java installed, the instructions are provided <a href="../mac-setup/Java/README.html">here</a>.</p>
-<pre><code>brew update
+<pre><code class="lang-sh">brew update
 brew install scala sbt
-</code></pre><p>(This step is optional) Update the <code>/usr/local/etc/sbtopts</code> by running the command below.</p>
-<pre><code>echo &apos;-J-XX:+CMSClassUnloadingEnabled&apos; &gt;&gt; /usr/local/etc/sbtopts
-echo &apos;-J-Xmx2G&apos; &gt;&gt; /usr/local/etc/sbtopts
-</code></pre><h2 id="scala-plugin-for-eclipse">Scala Plugin for Eclipse</h2>
+</code></pre>
+<p>(This step is optional) Update the <code>/usr/local/etc/sbtopts</code> by running the command below.</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;-J-XX:+CMSClassUnloadingEnabled&apos;</span> &gt;&gt; /usr/<span class="hljs-built_in">local</span>/etc/sbtopts
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;-J-Xmx2G&apos;</span> &gt;&gt; /usr/<span class="hljs-built_in">local</span>/etc/sbtopts
+</code></pre>
+<h2 id="scala-plugin-for-eclipse">Scala Plugin for Eclipse</h2>
 <p>Scala IDE for Eclipse is best installed (and updated) directly from within Eclipse.</p>
 <p>This is done by using <code>Help &#x2192; Install New Software...</code>, add the <code>Add...</code> button in the dialog.</p>
 <p>Choose a name for the update site (<code>Scala IDE</code> is a suggestion). Then read the next section to select which version you will install.</p>
@@ -915,7 +917,7 @@ echo &apos;-J-Xmx2G&apos; &gt;&gt; /usr/local/etc/sbtopts
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Scala","level":"1.18","depth":1,"next":{"title":"Ruby","level":"1.19","depth":1,"path":"Ruby/README.md","ref":"Ruby/README.md","articles":[{"title":"RubyGems","level":"1.19.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]}]},"previous":{"title":"SDKMAN!","level":"1.17.1","depth":2,"path":"Java/sdkman.md","ref":"Java/sdkman.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Scala/README.md","mtime":"2020-06-27T06:15:31.026Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Scala","level":"1.18","depth":1,"next":{"title":"Ruby","level":"1.19","depth":1,"path":"Ruby/README.md","ref":"Ruby/README.md","articles":[{"title":"RubyGems","level":"1.19.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]}]},"previous":{"title":"SDKMAN!","level":"1.17.1","depth":2,"path":"Java/sdkman.md","ref":"Java/sdkman.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Scala/README.md","mtime":"2020-07-06T10:07:43.337Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

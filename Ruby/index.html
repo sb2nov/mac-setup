@@ -851,25 +851,30 @@
                                 <h1 id="ruby">Ruby</h1>
 <p>macOS comes with Ruby installed, but as we don&apos;t want to be messing with operating system core files we&apos;re going to use the tools <code>rbenv</code> and <code>ruby-build</code> to manage and install our Ruby versions for our development environment.</p>
 <h2 id="installation">Installation</h2>
-<pre><code>brew install rbenv ruby-build rbenv-default-gems rbenv-gemset
-echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/Projects/config/env.sh
-source ~/.zshrc # Apply changes
-</code></pre><p>The packages we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.</p>
+<pre><code class="lang-sh">brew install rbenv ruby-build rbenv-default-gems rbenv-gemset
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;eval &quot;$(rbenv init -)&quot;&apos;</span> &gt;&gt; ~/Projects/config/env.sh
+<span class="hljs-built_in">source</span> ~/.zshrc <span class="hljs-comment"># Apply changes</span>
+</code></pre>
+<p>The packages we just installed allow us to install different versions of Ruby and specify which version to use on a per project basis and globally. This is very useful to keep a consistent development environment if you need to work in a particular Ruby version.</p>
 <h2 id="switching-versions">Switching versions</h2>
 <p>We can install version 2.1.1 and use it as our global version by running:</p>
-<pre><code>rbenv install 2.1.1
+<pre><code class="lang-sh">rbenv install 2.1.1
 rbenv global 2.1.1
-</code></pre><h2 id="managing-gems-in-application">Managing gems in application</h2>
+</code></pre>
+<h2 id="managing-gems-in-application">Managing gems in application</h2>
 <p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p>
-<pre><code>gem install bundler
-echo &apos;bundler&apos; &gt;&gt; &quot;$(brew --prefix rbenv)/default-gems&quot;
-</code></pre><p>When starting a Ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.</p>
-<pre><code>echo &apos;.gems&apos; &gt; &lt;my_project_path&gt;/.rbenv-gemsets
-</code></pre><p>Your gems will then get installed in <code>project/.gems</code>.</p>
+<pre><code class="lang-sh">gem install bundler
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;bundler&apos;</span> &gt;&gt; <span class="hljs-string">&quot;<span class="hljs-variable">$(brew --prefix rbenv)</span>/default-gems&quot;</span>
+</code></pre>
+<p>When starting a Ruby project, you can have sandboxed collections of gems. This lets you have multiple collections of gems installed in different sandboxes, and specify (on a per-application basis) which sets of gems should be used. To have gems install into a sub-folder in your project directory for easy later removal / editing / testing, you can use a project gemset.</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;.gems&apos;</span> &gt; &lt;my_project_path&gt;/.rbenv-gemsets
+</code></pre>
+<p>Your gems will then get installed in <code>project/.gems</code>.</p>
 <h2 id="configuration">Configuration</h2>
 <p>If you use Google for finding your Gem documentation then you might want to consider saving a bit of time when installing gems by not including the documentation.</p>
-<pre><code>echo &apos;gem: --no-document&apos; &gt;&gt; ~/.gemrc
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;gem: --no-document&apos;</span> &gt;&gt; ~/.gemrc
+</code></pre>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -912,7 +917,7 @@ echo &apos;bundler&apos; &gt;&gt; &quot;$(brew --prefix rbenv)/default-gems&quot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ruby","level":"1.19","depth":1,"next":{"title":"RubyGems","level":"1.19.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"previous":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Ruby/README.md","mtime":"2020-06-27T06:15:31.025Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ruby","level":"1.19","depth":1,"next":{"title":"RubyGems","level":"1.19.1","depth":2,"path":"Ruby/RubyGems.md","ref":"Ruby/RubyGems.md","articles":[]},"previous":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Ruby/README.md","mtime":"2020-07-06T10:07:43.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

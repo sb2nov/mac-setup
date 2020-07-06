@@ -30,7 +30,11 @@ install: deps
 
 # Lint markdown files
 lint:
+ifeq ($(LINTER),)
+	$(error "Linter is not installed, run make deps to install it")
+else
 	@$(LINTER) . --ignore node_modules && echo 'All good 👌'
+endif
 
 
 # Start a server that serves the guide locally

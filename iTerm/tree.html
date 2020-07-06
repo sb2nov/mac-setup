@@ -852,11 +852,13 @@
 <p><code>tree</code> is a recursive directory listing command that produces a depth indented listing of files.</p>
 <h2 id="installation">Installation</h2>
 <p>To install the latest version, use homebrew:</p>
-<pre><code class="lang-bash">brew install tree
+<pre><code class="lang-sh">brew install tree
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>Running <code>tree</code> will produce output like this:</p>
-<pre><code class="lang-bash">.
+<pre><code class="lang-console">$ tree
+
+.
 &#x251C;&#x2500;&#x2500; Apps
 &#x2502;   &#x251C;&#x2500;&#x2500; Octave.md
 &#x2502;   &#x251C;&#x2500;&#x2500; README.md
@@ -880,10 +882,10 @@
 5 directories, 14 files
 </code></pre>
 <p>To limit the recursion you can pass an <code>-L</code> flag and specify the maximum depth <code>tree</code> will use when searching.</p>
-<pre><code class="lang-bash">tree -L 1
+<pre><code class="lang-sh">tree -L 1
 </code></pre>
 <p>will output:</p>
-<pre><code class="lang-bash">.
+<pre><code class="lang-sh">.
 &#x251C;&#x2500;&#x2500; Apps
 &#x251C;&#x2500;&#x2500; CONTRIBUTING.md
 &#x251C;&#x2500;&#x2500; Cpp
@@ -936,7 +938,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"tree","level":"1.5.2","depth":2,"next":{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},"previous":{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/tree.md","mtime":"2020-06-27T06:15:31.033Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"tree","level":"1.5.2","depth":2,"next":{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},"previous":{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/tree.md","mtime":"2020-07-06T10:07:43.341Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

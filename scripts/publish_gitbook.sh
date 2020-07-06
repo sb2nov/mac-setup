@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-readonly commands=(python git gitbook cp)
+readonly commands=(git gitbook cp)
 
 # Make sure we don't push unrelated changes
 if [[ $(git status -s | wc -l) -gt 0 ]]; then
@@ -18,13 +18,16 @@ for cmd in ${commands[@]}; do is_available "$cmd"; done
 echo "✅ All required packages are available, will continue"
 
 echo "👥 Updating list of contributors.."
-python ./scripts/contributors.py
+node ./scripts/generate_contributors.js
 git commit -a -m "Update list of contributors"
 git push origin master
 echo "👥 Completed updating list of contributors"
 
 echo "📖 Building the guide using gitbook.."
-gitbook install && gitbook build
+if ! gitbook install && gitbook build; then
+  echo "Could not build gitbook"
+  exit 1
+fi
 echo "📖 Done building guide"
 
 git checkout gh-pages

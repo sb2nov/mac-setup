@@ -852,8 +852,9 @@
 <p><a href="https://golang.org" target="_blank">Go</a> is an open source programming language that makes it easy to build simple, reliable, and efficient software.</p>
 <h2 id="installation">Installation</h2>
 <p>You can follow the <a href="https://golang.org/doc/install" target="_blank">official instructions on how to install Go</a>, or you can use Homebrew instead:</p>
-<pre><code>brew install go
-</code></pre><p>When installed, run <code>go version</code> to see the installed version of Go.</p>
+<pre><code class="lang-sh">brew install go
+</code></pre>
+<p>When installed, run <code>go version</code> to see the installed version of Go.</p>
 <pre><code class="lang-sh">$ go version
 go version go1.11.4 darwin/amd64
 </code></pre>
@@ -876,17 +877,21 @@ go version go1.11.4 darwin/amd64
 }
 </code></pre>
 <p>Run the program by running:</p>
-<pre><code>$ go run hello.go
+<pre><code class="lang-console">$ go run hello.go
 Hello World!
-</code></pre><p>If you wish to compile it and move it to <code>$GOPATH/bin</code>, then run:</p>
-<pre><code>go install .
-</code></pre><p>Since you have <code>$GOPATH/bin</code> added to your <code>$PATH</code>, you can run your program from anywhere:</p>
-<pre><code>$ hello
+</code></pre>
+<p>If you wish to compile it and move it to <code>$GOPATH/bin</code>, then run:</p>
+<pre><code class="lang-sh">go install .
+</code></pre>
+<p>Since you have <code>$GOPATH/bin</code> added to your <code>$PATH</code>, you can run your program from anywhere:</p>
+<pre><code class="lang-console">$ hello
 Hello World!
-</code></pre><h2 id="import-a-go-package">Import a Go package</h2>
+</code></pre>
+<h2 id="import-a-go-package">Import a Go package</h2>
 <p>Besides creating your own packages you can import and use other packages in your Go code. To do so you&apos;ll use the <code>go get</code> command:</p>
-<pre><code>go get -u github.com/gorilla/mux
-</code></pre><p>The command above will import the package <code>mux</code> into this directory <code>$GOPATH/src/github.com/gorilla/mux</code>.</p>
+<pre><code class="lang-sh">go get -u github.com/gorilla/mux
+</code></pre>
+<p>The command above will import the package <code>mux</code> into this directory <code>$GOPATH/src/github.com/gorilla/mux</code>.</p>
 <p>You can then use this package in your Go programs like this:</p>
 <pre><code class="lang-go"><span class="hljs-keyword">package</span> main
 
@@ -912,19 +917,22 @@ Hello World!
 <h3 id="format-your-code">Format your code</h3>
 <p>Go has a built-in tool that automatically formats Go source code.</p>
 <p>To format a single file run:</p>
-<pre><code>gofmt -w yourcode.go
-</code></pre><p>You can also format an entire package:</p>
-<pre><code>go fmt path/to/your/package
-</code></pre><blockquote>
+<pre><code class="lang-sh">gofmt -w yourcode.go
+</code></pre>
+<p>You can also format an entire package:</p>
+<pre><code class="lang-sh">go fmt path/to/your/package
+</code></pre>
+<blockquote>
 <p><strong>Note</strong>: that the command is different from formatting a single file</p>
 </blockquote>
 <h3 id="generate-documentation">Generate documentation</h3>
 <p>With the <code>godoc</code> command you can generate documentation from your code and read documentation from other packages.</p>
-<pre><code>godoc fmt                # documentation for package fmt
-godoc fmt Printf         # documentation for fmt.Printf
-godoc -src fmt           # fmt package interface in Go source form
-godoc -all -http :1234   # documentation for all packages on your machine served through http http://localhost:1234
-</code></pre><p>You need to respect some spec in order to document using <code>godoc</code>. More information in the <a href="https://blog.golang.org/godoc-documenting-go-code" target="_blank">Godoc documentation</a>.</p>
+<pre><code class="lang-sh">godoc fmt                <span class="hljs-comment"># documentation for package fmt</span>
+godoc fmt Printf         <span class="hljs-comment"># documentation for fmt.Printf</span>
+godoc -src fmt           <span class="hljs-comment"># fmt package interface in Go source form</span>
+godoc -all -http :1234   <span class="hljs-comment"># documentation for all packages on your machine served through http http://localhost:1234</span>
+</code></pre>
+<p>You need to respect some spec in order to document using <code>godoc</code>. More information in the <a href="https://blog.golang.org/godoc-documenting-go-code" target="_blank">Godoc documentation</a>.</p>
 <h3 id="learn-more">Learn more</h3>
 <p>The <a href="https://tour.golang.org/" target="_blank">interactive tutorial</a> will let you learn more about Go. You can also install it locally by <code>go get golang.org/x/tour</code> and running it anywhere by <code>tour</code> (given that you added <code>GOPATH/bin</code> to your <code>PATH</code>).</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
@@ -970,7 +978,7 @@ godoc -all -http :1234   # documentation for all packages on your machine served
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Go","level":"1.22","depth":1,"next":{"title":"Heroku","level":"1.23","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"previous":{"title":"Node.js","level":"1.21","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Go/README.md","mtime":"2020-06-27T06:15:31.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Go","level":"1.22","depth":1,"next":{"title":"Heroku","level":"1.23","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"previous":{"title":"Node.js","level":"1.21","depth":1,"path":"Node.js/README.md","ref":"Node.js/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Go/README.md","mtime":"2020-07-06T10:07:43.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

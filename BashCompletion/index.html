@@ -853,34 +853,34 @@
 arguments by typing partially commands or arguments, then pressing the [Tab]
 key. This will help you when writing the bash command in terminal.</p>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-bash">brew install bash-completion
+<pre><code class="lang-sh">brew install bash-completion
 </code></pre>
 <p>Bash completion will be installed in <code>/usr/local/etc/bash_completion.d</code>.</p>
 <p>For it to work, add this to your <code>~/.bash_profile</code>:</p>
-<pre><code class="lang-bash">[ <span class="hljs-_">-f</span> /usr/<span class="hljs-built_in">local</span>/etc/bash_completion ] &amp;&amp; . /usr/<span class="hljs-built_in">local</span>/etc/bash_completion
+<pre><code class="lang-sh">[ <span class="hljs-_">-f</span> /usr/<span class="hljs-built_in">local</span>/etc/bash_completion ] &amp;&amp; . /usr/<span class="hljs-built_in">local</span>/etc/bash_completion
 </code></pre>
 <p>Or simply type:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[ -f /usr/local/etc/bash_completion ] &amp;&amp; . /usr/local/etc/bash_completion&quot;</span> &gt;&gt; ~/.bash_profile
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;[ -f /usr/local/etc/bash_completion ] &amp;&amp; . /usr/local/etc/bash_completion&quot;</span> &gt;&gt; ~/.bash_profile
 </code></pre>
 <p>Restart your bash session:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">source</span> ~/.bash_profile
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/.bash_profile
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>Once you&apos;ve done this, you can use bash completion by pressing the tab key
 twice after a command. For example:</p>
-<pre><code class="lang-bash">$ git [tab] [tab]
+<pre><code class="lang-console">$ git [tab] [tab]
 add            blame          cherry-pick    config         format-patch   gui            merge          push           repack         rm             stage          whatchanged
-am             branch         citool         describe       fsck           <span class="hljs-built_in">help</span>           mergetool      range-diff     replace        send-email     stash          worktree
+am             branch         citool         describe       fsck           help           mergetool      range-diff     replace        send-email     stash          worktree
 apply          bundle         clean          diff           gc             init           mv             rebase         request-pull   shortlog       status
-archive        checkout       <span class="hljs-built_in">clone</span>          difftool       gitk           instaweb       notes          reflog         reset          show           submodule
-bisect         cherry         commit         fetch          grep           <span class="hljs-built_in">log</span>            pull           remote         revert         show-branch    tag
+archive        checkout       clone          difftool       gitk           instaweb       notes          reflog         reset          show           submodule
+bisect         cherry         commit         fetch          grep           log            pull           remote         revert         show-branch    tag
 </code></pre>
 <h2 id="more">More</h2>
 <p>You can list additional completion packages are available by typing:</p>
-<pre><code class="lang-bash">brew search completion
+<pre><code class="lang-sh">brew search completion
 </code></pre>
 <p>And you can install them using <code>brew install</code> commands, for example:</p>
-<pre><code class="lang-bash">brew install docker-completion
+<pre><code class="lang-sh">brew install docker-completion
 </code></pre>
 <p><em>You can also manually add a bash completion file into
 <code>/usr/local/etc/bash_completion.d</code></em></p>
@@ -927,7 +927,7 @@ bisect         cherry         commit         fetch          grep           <span
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bash Completion","level":"1.7","depth":1,"next":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"previous":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"BashCompletion/README.md","mtime":"2020-06-27T06:15:31.013Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bash Completion","level":"1.7","depth":1,"next":{"title":"Vim","level":"1.8","depth":1,"path":"Vim/README.md","ref":"Vim/README.md","articles":[]},"previous":{"title":"Git Ignore","level":"1.6.1","depth":2,"path":"Git/gitignore.md","ref":"Git/gitignore.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"BashCompletion/README.md","mtime":"2020-07-06T10:07:43.325Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

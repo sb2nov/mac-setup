@@ -852,26 +852,26 @@
 <p>SDKMAN! is a tool for managing parallel versions of multiple software development kits on most Unix-based systems. It provides a convenient command line interface (CLI) and API for installing, switching, removing and listing candidates.</p>
 <h2 id="installation">Installation</h2>
 <p>Open a new terminal and enter:</p>
-<pre><code class="lang-bash"> curl <span class="hljs-_">-s</span> <span class="hljs-string">&quot;https://get.sdkman.io&quot;</span> | bash
+<pre><code class="lang-sh"> curl <span class="hljs-_">-s</span> <span class="hljs-string">&quot;https://get.sdkman.io&quot;</span> | bash
 </code></pre>
 <p>Follow the instructions on-screen to complete installation.
 Next, open a new terminal or enter:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.sdkman/bin/sdkman-init.sh&quot;</span>
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.sdkman/bin/sdkman-init.sh&quot;</span>
 </code></pre>
 <p>Lastly, run the following code snippet to ensure that installation succeeded:</p>
-<pre><code class="lang-bash">sdk version
+<pre><code class="lang-sh">sdk version
 </code></pre>
 <p>If all went well, the version should be displayed. Something like:</p>
-<pre><code class="lang-bash">sdkman 5.0.0+51
+<pre><code class="lang-sh">sdkman 5.0.0+51
 </code></pre>
 <h2 id="usage">Usage</h2>
 <h3 id="installing-an-sdk">Installing an SDK</h3>
 <h4 id="latest-stable">Latest stable</h4>
 <p>Install the latest stable version of your SDK of choice (say, Java JDK) by running the following command:</p>
-<pre><code class="lang-bash">sdk install java
+<pre><code class="lang-sh">sdk install java
 </code></pre>
 <p>You will see something like the following output:</p>
-<pre><code class="lang-bash">Downloading: java 8u111
+<pre><code class="lang-sh">Downloading: java 8u111
 
 In progress...
 
@@ -881,7 +881,7 @@ Installing: java 8u111
 Done installing!
 </code></pre>
 <p>Now you will be prompted if you want this version to be set as default.</p>
-<pre><code class="lang-bash">Do you want java 8u111 to be <span class="hljs-built_in">set</span> as default? (Y/n):
+<pre><code class="lang-sh">Do you want java 8u111 to be <span class="hljs-built_in">set</span> as default? (Y/n):
 Answering yes (or hitting enter) will ensure that all subsequent shells opened will have this version of the SDK <span class="hljs-keyword">in</span> use by default.
 Setting java 8u111 as default.
 </code></pre>
@@ -890,18 +890,18 @@ Setting java 8u111 as default.
 <li>To install a specific version
 qualify the version you require:</li>
 </ul>
-<pre><code class="lang-bash">sdk install scala 2.12.1
+<pre><code class="lang-sh">sdk install scala 2.12.1
 </code></pre>
 <ul>
 <li>To remove a version</li>
 </ul>
-<pre><code class="lang-bash">sdk uninstall scala 2.11.6
+<pre><code class="lang-sh">sdk uninstall scala 2.11.6
 </code></pre>
 <p>Note that removing a local version will not remove the local installation.</p>
 <ul>
 <li>To list candidates</li>
 </ul>
-<pre><code class="lang-bash">sdk list
+<pre><code class="lang-sh">sdk list
 </code></pre>
 <p>More useful commands and usages can be found at <a href="https://sdkman.io/usage" target="_blank">SDKMAN Usage</a>.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
@@ -947,7 +947,7 @@ qualify the version you require:</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SDKMAN!","level":"1.17.1","depth":2,"next":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"Java","level":"1.17","depth":1,"path":"Java/README.md","ref":"Java/README.md","articles":[{"title":"SDKMAN!","level":"1.17.1","depth":2,"path":"Java/sdkman.md","ref":"Java/sdkman.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Java/sdkman.md","mtime":"2020-06-27T06:15:26.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SDKMAN!","level":"1.17.1","depth":2,"next":{"title":"Scala","level":"1.18","depth":1,"path":"Scala/README.md","ref":"Scala/README.md","articles":[]},"previous":{"title":"Java","level":"1.17","depth":1,"path":"Java/README.md","ref":"Java/README.md","articles":[{"title":"SDKMAN!","level":"1.17.1","depth":2,"path":"Java/sdkman.md","ref":"Java/sdkman.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Java/sdkman.md","mtime":"2020-07-06T10:07:43.331Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

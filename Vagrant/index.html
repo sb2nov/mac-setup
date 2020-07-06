@@ -856,24 +856,32 @@
 <p>Vagrant uses <a href="https://www.virtualbox.org/" target="_blank">Virtualbox</a> to manage the virtual dependencies. You can <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">directly download virtualbox</a> and install or use Homebrew for it.
 Notice that macOS High Sierra 10.13 introduces a new feature that requires user approval before loading new third-party kernel extensions.
 In case of failure follow the instructions <a href="https://developer.apple.com/library/archive/technotes/tn2459/_index.html" target="_blank">here</a>.</p>
-<pre><code>brew cask install virtualbox
-</code></pre><p>Now install Vagrant either <a href="http://www.vagrantup.com/downloads.html" target="_blank">from the website</a> or use Homebrew for installing it.</p>
-<pre><code>brew cask install vagrant
-</code></pre><p><a href="http://vagrantmanager.com/" target="_blank">Vagrant-Manager</a> helps you manage all your virtual machines in one place directly from the menu bar.</p>
-<pre><code>brew cask install vagrant-manager
-</code></pre><h2 id="usage">Usage</h2>
+<pre><code class="lang-sh">brew cask install virtualbox
+</code></pre>
+<p>Now install Vagrant either <a href="http://www.vagrantup.com/downloads.html" target="_blank">from the website</a> or use Homebrew for installing it.</p>
+<pre><code class="lang-sh">brew cask install vagrant
+</code></pre>
+<p><a href="http://vagrantmanager.com/" target="_blank">Vagrant-Manager</a> helps you manage all your virtual machines in one place directly from the menu bar.</p>
+<pre><code class="lang-sh">brew cask install vagrant-manager
+</code></pre>
+<h2 id="usage">Usage</h2>
 <p>Add the Vagrant box you want to use. We&apos;ll use Ubuntu 12.04 for the following example.</p>
-<pre><code>vagrant box add precise64 https://vagrantcloud.com/hashicorp/boxes/precise64/versions/1.1.0/providers/virtualbox.box
-</code></pre><p>You can find more boxes at <a href="https://app.vagrantup.com/boxes/search" target="_blank">Vagrant Cloud</a>.</p>
+<pre><code class="lang-sh">vagrant box add precise64 https://vagrantcloud.com/hashicorp/boxes/precise64/versions/1.1.0/providers/virtualbox.box
+</code></pre>
+<p>You can find more boxes at <a href="https://app.vagrantup.com/boxes/search" target="_blank">Vagrant Cloud</a>.</p>
 <p>Now create a test directory and <code>cd</code> into the test directory. Then we&apos;ll initialize the vagrant machine.</p>
-<pre><code>vagrant init precise64
-</code></pre><p>Now lets start the machine using the following command.</p>
-<pre><code>vagrant up
-</code></pre><p>You can ssh into the machine now.</p>
-<pre><code>vagrant ssh
-</code></pre><p>Halt the vagrant machine now.</p>
-<pre><code>vagrant halt
-</code></pre><p>Other useful commands are <code>suspend</code> and <code>destroy</code>.</p>
+<pre><code class="lang-sh">vagrant init precise64
+</code></pre>
+<p>Now lets start the machine using the following command.</p>
+<pre><code class="lang-sh">vagrant up
+</code></pre>
+<p>You can ssh into the machine now.</p>
+<pre><code class="lang-sh">vagrant ssh
+</code></pre>
+<p>Halt the vagrant machine now.</p>
+<pre><code class="lang-sh">vagrant halt
+</code></pre>
+<p>Other useful commands are <code>suspend</code> and <code>destroy</code>.</p>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -917,7 +925,7 @@ In case of failure follow the instructions <a href="https://developer.apple.com/
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vagrant","level":"1.24","depth":1,"next":{"title":"Docker","level":"1.25","depth":1,"path":"Docker/README.md","ref":"Docker/README.md","articles":[{"title":"Useful Commands","level":"1.25.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},{"title":"Tips and Tricks","level":"1.25.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]}]},"previous":{"title":"Heroku","level":"1.23","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Vagrant/README.md","mtime":"2020-06-27T06:15:31.029Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vagrant","level":"1.24","depth":1,"next":{"title":"Docker","level":"1.25","depth":1,"path":"Docker/README.md","ref":"Docker/README.md","articles":[{"title":"Useful Commands","level":"1.25.1","depth":2,"path":"Docker/UsefulCommands.md","ref":"Docker/UsefulCommands.md","articles":[]},{"title":"Tips and Tricks","level":"1.25.2","depth":2,"path":"Docker/TipsAndTricks.md","ref":"Docker/TipsAndTricks.md","articles":[]}]},"previous":{"title":"Heroku","level":"1.23","depth":1,"path":"Heroku/README.md","ref":"Heroku/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Vagrant/README.md","mtime":"2020-07-06T10:07:43.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

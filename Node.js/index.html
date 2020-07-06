@@ -852,34 +852,43 @@
 <p>Node.js is a JavaScript runtime built on Chrome&apos;s V8 JavaScript engine.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="using-homebrew">Using Homebrew</h3>
-<pre><code>brew install node
-</code></pre><h3 id="using-node-version-manager-nvm">Using Node Version Manager (nvm)</h3>
+<pre><code class="lang-sh">brew install node
+</code></pre>
+<h3 id="using-node-version-manager-nvm">Using Node Version Manager (nvm)</h3>
 <p>Download and install <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> by running:</p>
-<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
-</code></pre><p>Then download Node and select your version by running:</p>
-<pre><code>source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
-command -v nvm          # check the nvm use message
-nvm install node        # install most recent Node stable version
-nvm ls                  # list installed Node version
-nvm use node            # use stable as current version
-nvm ls-remote           # list all the Node versions you can install
-nvm alias default node  # set the installed stable version as the default Node
-</code></pre><p>See the <a href="https://github.com/creationix/nvm#installation" target="_blank">documentation</a> for information.</p>
+<pre><code class="lang-sh">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+</code></pre>
+<p>Then download Node and select your version by running:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/.bashrc        <span class="hljs-comment"># source your bashrc/zshrc to add nvm to PATH</span>
+<span class="hljs-built_in">command</span> -v nvm          <span class="hljs-comment"># check the nvm use message</span>
+nvm install node        <span class="hljs-comment"># install most recent Node stable version</span>
+nvm ls                  <span class="hljs-comment"># list installed Node version</span>
+nvm use node            <span class="hljs-comment"># use stable as current version</span>
+nvm ls-remote           <span class="hljs-comment"># list all the Node versions you can install</span>
+nvm <span class="hljs-built_in">alias</span> default node  <span class="hljs-comment"># set the installed stable version as the default Node</span>
+</code></pre>
+<p>See the <a href="https://github.com/creationix/nvm#installation" target="_blank">documentation</a> for information.</p>
 <h2 id="npm-usage">npm usage</h2>
 <p>To install a package:</p>
-<pre><code>npm install &lt;package&gt; # Install locally
-npm install -g &lt;package&gt; # Install globally
-</code></pre><p>To install a package and save it in your project&apos;s <code>package.json</code> file:</p>
-<pre><code>npm install &lt;package&gt; --save
-</code></pre><p>To see what&apos;s installed:</p>
-<pre><code>npm list [-g]
-</code></pre><p>To find outdated packages:</p>
-<pre><code>npm outdated [-g]
-</code></pre><p>To upgrade all or a particular package:</p>
-<pre><code>npm update [-g] [&lt;package&gt;]
-</code></pre><p>To uninstall a package:</p>
-<pre><code>npm uninstall [-g] &lt;package&gt;
-</code></pre><script src="../_gitbook_plugin_analytics.js"></script>
+<pre><code class="lang-sh">npm install &lt;package&gt; <span class="hljs-comment"># Install locally</span>
+npm install -g &lt;package&gt; <span class="hljs-comment"># Install globally</span>
+</code></pre>
+<p>To install a package and save it in your project&apos;s <code>package.json</code> file:</p>
+<pre><code class="lang-sh">npm install &lt;package&gt; --save
+</code></pre>
+<p>To see what&apos;s installed:</p>
+<pre><code class="lang-sh">npm list [-g]
+</code></pre>
+<p>To find outdated packages:</p>
+<pre><code class="lang-sh">npm outdated [-g]
+</code></pre>
+<p>To upgrade all or a particular package:</p>
+<pre><code class="lang-sh">npm update [-g] [&lt;package&gt;]
+</code></pre>
+<p>To uninstall a package:</p>
+<pre><code class="lang-sh">npm uninstall [-g] &lt;package&gt;
+</code></pre>
+<script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
                             
@@ -922,7 +931,7 @@ npm install -g &lt;package&gt; # Install globally
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.21","depth":1,"next":{"title":"Go","level":"1.22","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"previous":{"title":"Rust","level":"1.20","depth":1,"path":"Rust/README.md","ref":"Rust/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Node.js/README.md","mtime":"2020-06-27T06:15:31.021Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-30T19:10:20.536Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Node.js","level":"1.21","depth":1,"next":{"title":"Go","level":"1.22","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"previous":{"title":"Rust","level":"1.20","depth":1,"path":"Rust/README.md","ref":"Rust/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Node.js/README.md","mtime":"2020-07-06T10:07:43.333Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
