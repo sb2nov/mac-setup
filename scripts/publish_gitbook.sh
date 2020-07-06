@@ -24,7 +24,10 @@ git push origin master
 echo "👥 Completed updating list of contributors"
 
 echo "📖 Building the guide using gitbook.."
-gitbook install && gitbook build
+if ! gitbook install && gitbook build; then
+  echo "Could not build gitbook"
+  exit 1
+fi
 echo "📖 Done building guide"
 
 git checkout gh-pages
