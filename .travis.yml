@@ -2,6 +2,6 @@ services:
   - docker
 
 script:
-  - git clone --depth 1 https://github.com/sb2nov/mac-setup mac-setup-master
-  - cd mac-setup-master
+  - git clone --depth 1 https://github.com/sb2nov/mac-setup mac-setup-main
+  - cd mac-setup-main
   - docker run -ti --rm -v $PWD:/mnt:ro simeg/urlsup `find . -name "*.md"` --threads 10 --allow 429 --white-list http://localhost
