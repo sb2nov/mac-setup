@@ -20,14 +20,12 @@ echo "✅ All required packages are available, will continue"
 echo "👥 Updating list of contributors.."
 node ./scripts/generate_contributors.js
 git commit -a -m "Update list of contributors"
-git push origin master
+git push origin main
 echo "👥 Completed updating list of contributors"
 
 echo "📖 Building the guide using gitbook.."
-if ! gitbook install && gitbook build; then
-  echo "Could not build gitbook"
-  exit 1
-fi
+gitbook install
+gitbook build
 echo "📖 Done building guide"
 
 git checkout gh-pages
@@ -46,6 +44,6 @@ readonly HASH=$(git rev-parse --short HEAD)
 git commit -a -m "Deploy version with hash $HASH"
 
 git push origin gh-pages
-git checkout master
+git checkout main
 
 echo "😎 Finished building and deploying new version of guide"

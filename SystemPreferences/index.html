@@ -929,44 +929,6 @@ location /path/to/screenshots/ &amp;&amp; killall SystemUIServer</code></li>
 </ul>
 </li>
 </ul>
-<h2 id="how-to-write-to-ntfs-on-macos-yosemite-1010-and-el-capitan-1011">How to write to NTFS on macOS Yosemite (10.10) and El Capitan (10.11)</h2>
-<h3 id="1-install-homebrew-and-homebrew-cask">1) Install Homebrew and Homebrew Cask</h3>
-<p>Instructions <a href="https://sourabhbajaj.com/mac-setup/Homebrew/README.html" target="_blank">here</a>.</p>
-<h3 id="2-update-homebrew-formulae">2) Update Homebrew formulae</h3>
-<pre><code class="lang-sh">brew update
-</code></pre>
-<h3 id="3-install-osxfuse">3) Install osxfuse</h3>
-<p>If you are on macOS El Capitan (10.11), install the (3.x.x) from <a href="https://github.com/osxfuse/osxfuse/releases" target="_blank">the
-repo</a>.</p>
-<pre><code class="lang-sh">brew cask install osxfuse
-</code></pre>
-<h3 id="4-install-ntfs-3g">4) Install ntfs-3g</h3>
-<pre><code class="lang-sh">brew install ntfs-3g
-</code></pre>
-<h3 id="5-if-you-are-on-macos-el-capitan-1011-temporarily-disable-system-integrity-protection">5) If you are on macOS El Capitan (10.11), temporarily disable System Integrity Protection</h3>
-<ul>
-<li><strong>Reboot</strong> and hold <code>CMD + R</code> to get in recovery mode</li>
-<li>Open the terminal and type:</li>
-</ul>
-<pre><code class="lang-sh">csrutil <span class="hljs-built_in">disable</span>
-</code></pre>
-<ul>
-<li><strong>Reboot</strong> normally</li>
-</ul>
-<h3 id="6-create-a-symlink-for-mountntfs">6) Create a symlink for mount_ntfs</h3>
-<pre><code class="lang-sh">sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-sudo ln <span class="hljs-_">-s</span> /usr/<span class="hljs-built_in">local</span>/sbin/mount_ntfs /sbin/mount_ntfs
-</code></pre>
-<h3 id="7-if-you-are-on-macos-el-capitan-1011-re-enable-system-integrity-protection">7) If you are on macOS El Capitan (10.11), re-enable System Integrity Protection</h3>
-<ul>
-<li><strong>Reboot</strong> and hold <code>CMD + R</code> to get in recovery mode</li>
-<li>Open the terminal and type:</li>
-</ul>
-<pre><code class="lang-sh">csrutil <span class="hljs-built_in">enable</span>
-</code></pre>
-<ul>
-<li><strong>Reboot</strong> normally</li>
-</ul>
 <script src="../_gitbook_plugin_analytics.js"></script>
                                 
                                 </section>
@@ -1010,7 +972,7 @@ sudo ln <span class="hljs-_">-s</span> /usr/<span class="hljs-built_in">local</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SystemPreferences/README.md","mtime":"2020-07-06T10:07:43.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"System Preferences","level":"1.2","depth":1,"next":{"title":"Xcode","level":"1.3","depth":1,"path":"Xcode/README.md","ref":"Xcode/README.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"SystemPreferences/README.md","mtime":"2020-07-07T20:31:42.798Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-08T05:18:13.218Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

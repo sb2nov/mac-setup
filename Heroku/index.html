@@ -874,9 +874,17 @@ ssh-keygen -t rsa
 <p>Once your keys are in place and you are authorized, you&apos;re ready to deploy apps. Heroku has a <a href="https://devcenter.heroku.com/articles/python" target="_blank">getting started guide</a>, which has all the information you need (the one linked here is for Python, but there is one for every popular language). Heroku uses Git to push code for deployment, so make sure your app is under Git version control.</p>
 <p>A cheat sheet for deployment:</p>
 <pre><code class="lang-console">$ cd myapp/
+
+# Create the app on Heroku
 $ heroku create myapp
+
+# Deploy it
 $ git push heroku master
+
+# Check its status
 $ heroku ps
+
+# Check the logs
 $ heroku logs -t
 </code></pre>
 <p>The <a href="https://devcenter.heroku.com/" target="_blank">Heroku Dev Center</a> is where you will find more information.</p>
@@ -923,7 +931,7 @@ $ heroku logs -t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Heroku","level":"1.23","depth":1,"next":{"title":"Vagrant","level":"1.24","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"previous":{"title":"Go","level":"1.22","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Heroku/README.md","mtime":"2020-07-06T10:07:43.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-06T10:09:28.794Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Heroku","level":"1.23","depth":1,"next":{"title":"Vagrant","level":"1.24","depth":1,"path":"Vagrant/README.md","ref":"Vagrant/README.md","articles":[]},"previous":{"title":"Go","level":"1.22","depth":1,"path":"Go/README.md","ref":"Go/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"http://sourabhbajaj.com/mac-setup/","about":"http://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Heroku/README.md","mtime":"2020-07-08T05:16:38.961Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-08T05:18:13.218Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
