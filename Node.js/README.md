@@ -12,10 +12,10 @@ brew install node
 
 ### Using Node Version Manager (nvm)
 
-Download and install [nvm](https://github.com/creationix/nvm) by running:
+Download and install [nvm](https://github.com/nvm-sh/nvm) by running:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 Then download Node and select your version by running:
@@ -30,7 +30,7 @@ nvm ls-remote           # list all the Node versions you can install
 nvm alias default node  # set the installed stable version as the default Node
 ```
 
-See the [documentation](https://github.com/creationix/nvm#installation) for information.
+See the [documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for information.
 
 ## npm usage
 
