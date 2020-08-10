@@ -67,7 +67,7 @@ Both of these tools can't compare in terms of features and user interface with t
 
 ## Other
 
-- [CheatSheet](http://www.grandtotal.biz/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
+- [CheatSheet](https://mediaatelier.com/CheatSheet/): Tap the command key for long to see all the keyboard shortcuts of the current app.
 - [Mou](http://25.io/mou/): Markdown editor for developers.
 - [Skim](https://sourceforge.net/projects/skim-app/): Skim is a PDF reader and note-taker for macOS.
 - [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html): Take backups of your disk and use the backup disk to restore the machine in case of failure.
