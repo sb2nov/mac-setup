@@ -58,3 +58,6 @@ After that, you can launch VS Code from your terminal:
 ### JSON
 
 * [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) - Infers types from sample JSON data, then outputs strongly typed models and serializers for working with that data in your desired programming language
+
+### Live Server
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launches a local development server with live reloading for both static and dynampic. Quick and hassle-free.
