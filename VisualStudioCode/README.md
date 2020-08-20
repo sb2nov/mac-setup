@@ -61,7 +61,7 @@ After that, you can launch VS Code from your terminal:
 
 ### Live Server
 
-* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launches a local development server with live reloading for both static and dynampic. Quick and hassle-free.
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launches a local development server with live reloading for both static and dynamic
 
 ### VS Code Icons
 
