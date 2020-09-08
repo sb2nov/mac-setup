@@ -50,7 +50,7 @@ mysql -uroot
 
 It is always nice to have a GUI tool for managing databases. For Mac, you can use [Sequel Pro](http://www.sequelpro.com/) to manage local and remote MySQL databases. It is a free tool, you can choose to donate to support the development.
 
-You may install Sequel Pro using [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
+You may install Sequel Pro using [Homebrew](https://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
 
 ```sh
 brew cask install sequel-pro

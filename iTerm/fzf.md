@@ -6,7 +6,7 @@ tools it becomes super powerful.
 
 ## Installation
 
-Use [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/README.html) to
+Use [Homebrew](https://sourabhbajaj.com/mac-setup/Homebrew/README.html) to
 install `fzf`:
 
 ```sh
