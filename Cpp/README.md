@@ -1,6 +1,6 @@
 # CPlusPlus
 
-Make sure you have installed [Xcode command line tools](http://sourabhbajaj.com/mac-setup/Xcode/). Check the C++ version to make sure it is Clang 4.0+.
+Make sure you have installed [Xcode Command Line Tools](https://sourabhbajaj.com/mac-setup/Xcode/). Check the C++ version to make sure it is Clang 4.0+.
 
 ```console
 $ c++ --version
