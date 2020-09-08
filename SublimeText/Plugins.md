@@ -18,7 +18,6 @@
 - [LaTeXTools](https://github.com/SublimeText/LaTeXTools): A LaTeX Plugin for Sublime Text 2 and 3
 - [Python Auto-Complete](https://github.com/eliquious/Python-Auto-Complete): Sublime Text 2 plugin which adds additional auto-completion capability to Python scripts
 - [Python Imports Sorter](https://github.com/vi4m/sublime_python_imports): Sublime Text 2 plugin to organize your imports easily
-- [Python PEP8 Autoformat](https://bitbucket.org/StephaneBunel/pythonpep8autoformat): Python PEP8 auto-format is a plugin to interactively reformat Python source code according to PEP-8
 - [PythonTraceback](https://github.com/kedder/sublime-python-traceback): Easy navigation in your python tracebacks
 - [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements): Enhancements to sidebar. Files and folders.
 - [SublimeCodeIntel](https://www.sublimecodeintel.com/): Full-featured code intelligence and smart auto-complete engine
