@@ -57,6 +57,8 @@ They offer support for more languages using plugins such as Rust, Dart, Haxe, Ma
 
 Go to [their website](https://www.jetbrains.com/products.html?fromMenu#type=ide) and select what product you'd like to download.
 
+Alternatively, use the [Jetbrains Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage product installations.
+
 ## Pricing
 
 If you're a **student** or an **instructor** (teaching staff members) all IDEs from JetBrains are free to use. You can read more on [their website](https://www.jetbrains.com/student/). If you're not a student they still offer a few free Community Edition (CE) IDEs. Check out [IntelliJ](https://www.jetbrains.com/idea/) (Java) or [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/).
