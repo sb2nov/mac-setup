@@ -62,8 +62,8 @@ psql
 
 We can use `psequel` a free GUI tool for managing the local and remote PostgreSQL databases
 
-Install `psequel` using `homebrew` and `cask`
+Install `psequel` using `homebrew`
 
 ```sh
-brew cask install psequel
+brew install psequel
 ```
