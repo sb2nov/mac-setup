@@ -5,7 +5,7 @@ MARKDOWNLINT	= $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
 YARN		= $(shell command -v yarn 2> /dev/null)
 
 
-# This is run on Travis to verify linting is OK and that the guide builds
+# This is run on CI to verify linting is OK and that the guide builds
 ci: lint
 	$(GITBOOK) install && $(GITBOOK) build
 

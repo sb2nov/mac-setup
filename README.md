@@ -2,7 +2,7 @@
 
 | branch | status |
 | ------ | ------ |
-| `main` | [![main branch](https://travis-ci.org/sb2nov/mac-setup.svg?branch=main)](https://travis-ci.org/sb2nov/mac-setup) |
+| `main` | [![main branch](https://github.com/sb2nov/mac-setup/workflows/Test/badge.svg)](https://github.com/sb2nov/mac-setup/actions) |
 | `health-check` | [![health-check branch](https://img.shields.io/travis/sb2nov/mac-setup/health-check.svg?label=links)](https://travis-ci.org/sb2nov/mac-setup) |
 
 This guide covers the basics of setting up a development environment on a new
