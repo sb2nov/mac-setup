@@ -31,7 +31,7 @@ brew install docker docker-machine
 * Install VirtualBox to let Docker create the images.
 
 ```sh
-brew cask install virtualbox
+brew install --cask virtualbox
 ```
 
 >If you encounter an issue with the installer with an error message like

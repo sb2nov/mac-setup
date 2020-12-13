@@ -24,7 +24,7 @@ includes features like syntax highlighting, Markdown rendering, preview of
 JSON, patch files, CSV, ZIP files and more.
 
 ```sh
-brew cask install \
+brew install --cask \
     qlcolorcode \
     qlstephen \
     qlmarkdown \
@@ -41,7 +41,7 @@ brew cask install \
 Here are some useful apps that are available on Cask.
 
 ```sh
-brew cask install \
+brew install --cask \
     alfred \
     android-file-transfer \
     appcleaner \

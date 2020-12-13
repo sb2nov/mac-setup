@@ -17,7 +17,7 @@ To [install using homebrew-cask](https://octave-app.org/#installing-with-homebre
 
 ```sh
 brew tap octave-app/octave-app
-brew cask install octave-app
+brew install --cask octave-app
 ```
 
 ### Homebrew official

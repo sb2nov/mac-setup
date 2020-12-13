@@ -21,7 +21,7 @@ brew tap railwaycat/emacsmacport
 * Method 1: Install with `brew cask`.
 
 ```sh
-brew cask install emacs-mac
+brew install --cask emacs-mac
 ```
 
   There are three available versions, `emacs-mac`, `emacs-mac-official-icon`, `emacs-mac-spacemacs-icon`.

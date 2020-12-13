@@ -53,5 +53,5 @@ It is always nice to have a GUI tool for managing databases. For Mac, you can us
 You may install Sequel Pro using [Homebrew](https://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
 
 ```sh
-brew cask install sequel-pro
+brew install --cask sequel-pro
 ```
