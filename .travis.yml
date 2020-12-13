@@ -1,6 +1,0 @@
-language: node_js
-cache: yarn
-node_js:
-- 13
-install: make deps
-script: make ci
