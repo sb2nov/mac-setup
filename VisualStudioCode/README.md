@@ -7,7 +7,7 @@
 To install the latest version, use Homebrew:
 
 ```sh
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 ## macOS integration

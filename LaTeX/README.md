@@ -15,18 +15,18 @@ MacTeX includes additional programs such as an editor and a BibTeX reference man
 
 #### MacTex
 
-Download [MacTex](http://www.tug.org/mactex/), or use `brew cask install mactex`.
+Download [MacTex](http://www.tug.org/mactex/), or use `brew install --cask mactex`.
 You can read more about MacTex in [What is installed (pdf)](https://www.tug.org/mactex/What_Is_Installed.pdf).
 
 Since MacTex installs a LaTex editor ([TexMaker](http://www.xm1math.net/texmaker/download.html)) already, installing another LaTeX editor is unnecessary.
 
 #### BasicTeX
 
-Download [BasicTeX](http://tug.org/mactex/morepackages.html), or use `brew cask install basictex`. You can read more about BasicTex in [BasicTeX (pdf)](http://pages.uoregon.edu/koch/BasicTeX.pdf).
+Download [BasicTeX](http://tug.org/mactex/morepackages.html), or use `brew install --cask basictex`. You can read more about BasicTex in [BasicTeX (pdf)](http://pages.uoregon.edu/koch/BasicTeX.pdf).
 
 You may use `tlmgr` to install tools/packages that you need.
 
-> **Note**: You may find CLI tool `tlmgr` cumbersome to use, in that case install GUI for `tlmgr` - [*TeX Live Utility*](https://amaxwell.github.io/tlutility/) - `brew cask install tex-live-utility`.
+> **Note**: You may find CLI tool `tlmgr` cumbersome to use, in that case install GUI for `tlmgr` - [*TeX Live Utility*](https://amaxwell.github.io/tlutility/) - `brew install --cask tex-live-utility`.
 
 Now you should pick a LaTeX editor, here are some to choose from:
 
@@ -39,4 +39,4 @@ Now you should pick a LaTeX editor, here are some to choose from:
   7. [Sublime Text 3 - LaTeXTools](https://github.com/SublimeText/LaTeXTools)
   8. [Visual Studio Code - LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
 
-> **Note**: You may want to use a PDF reader that watches your PDF files, like Skim (can be installed by `brew cask install skim` and *Sync* feature can be enabled in Preferences -> Sync).
+> **Note**: You may want to use a PDF reader that watches your PDF files, like Skim (can be installed by `brew install --cask skim` and *Sync* feature can be enabled in Preferences -> Sync).

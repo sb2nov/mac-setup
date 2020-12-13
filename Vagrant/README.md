@@ -13,19 +13,19 @@ Notice that macOS High Sierra 10.13 introduces a new feature that requires user 
 In case of failure follow the instructions [here](https://developer.apple.com/library/archive/technotes/tn2459/_index.html).
 
 ```sh
-brew cask install virtualbox
+brew install --cask virtualbox
 ```
 
 Now install Vagrant either [from the website](http://www.vagrantup.com/downloads.html) or use Homebrew for installing it.
 
 ```sh
-brew cask install vagrant
+brew install --cask vagrant
 ```
 
 [Vagrant-Manager](http://vagrantmanager.com/) helps you manage all your virtual machines in one place directly from the menu bar.
 
 ```sh
-brew cask install vagrant-manager
+brew install --cask vagrant-manager
 ```
 
 ## Usage
