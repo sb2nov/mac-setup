@@ -1,11 +1,6 @@
 name: Test
 
-on:
-  push:
-  pull_request:
-  schedule:
-    # Monthly, chosen randomly to avoid peak times
-    - cron:  '5 15 14 * *'
+on: [push, pull_request]
 
 env:
   FORCE_COLOR: 1
