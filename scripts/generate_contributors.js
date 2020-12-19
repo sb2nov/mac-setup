@@ -51,10 +51,19 @@ const validateUsername = contributor => {
   return !username.includes("<script");
 };
 
+// Ignore users that are not human, such as bots
+const ignoreNonHumanUsers = contributor => {
+  const username = contributor.login;
+  const nonHumanUsernames = ["dependabot[bot]"];
+
+  return !nonHumanUsernames.includes(username);
+};
+
 const parseContributors = contributors => {
   return contributors
     .flatMap(c => c)
     .filter(validateUsername)
+    .filter(ignoreNonHumanUsers)
     .map(c => `- [${c.login}](${c.html_url})`)
     .join('\n');
 };

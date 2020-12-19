@@ -1,11 +1,11 @@
 .PHONY: ci deploy deps install lint serve
 
-GITBOOK = $(shell command -v ./node_modules/.bin/gitbook 2> /dev/null)
-LINTER  = $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
-YARN    = $(shell command -v yarn 2> /dev/null)
+GITBOOK 	= $(shell command -v ./node_modules/.bin/gitbook 2> /dev/null)
+MARKDOWNLINT	= $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
+YARN		= $(shell command -v yarn 2> /dev/null)
 
 
-# This is run on Travis to verify linting is OK and that the guide builds
+# This is run on CI to verify linting is OK and that the guide builds
 ci: lint
 	$(GITBOOK) install && $(GITBOOK) build
 
@@ -30,10 +30,10 @@ install: deps
 
 # Lint markdown files
 lint:
-ifeq ($(LINTER),)
-	$(error "Linter is not installed, run make deps to install it")
+ifeq ($(MARKDOWNLINT),)
+	$(error "markdownlint is not installed, run 'make deps' to install it")
 else
-	@$(LINTER) . --ignore node_modules && echo 'All good 👌'
+	@$(MARKDOWNLINT) . --ignore node_modules && echo 'All good 👌'
 endif
 
 
