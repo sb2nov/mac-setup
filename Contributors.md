@@ -11,7 +11,6 @@ Thank you everyone that have contributed to creating this awesome guide!
 - [AidHamza](https://github.com/AidHamza)
 - [michaelbeil](https://github.com/michaelbeil)
 - [llune](https://github.com/llune)
-- [dependabot[bot]](https://github.com/apps/dependabot)
 - [apjanke](https://github.com/apjanke)
 - [prksu](https://github.com/prksu)
 - [Clifton893](https://github.com/Clifton893)
