@@ -1,9 +1,6 @@
 # [macOS Setup Guide](https://sourabhbajaj.com/mac-setup)
 
-| branch | status |
-| ------ | ------ |
-| `main` | [![main branch](https://github.com/sb2nov/mac-setup/workflows/Test/badge.svg)](https://github.com/sb2nov/mac-setup/actions) |
-| `health-check` | [![health-check branch](https://img.shields.io/travis/sb2nov/mac-setup/health-check.svg?label=links)](https://travis-ci.org/sb2nov/mac-setup) |
+[![Test](https://github.com/sb2nov/mac-setup/workflows/Test/badge.svg)](https://github.com/sb2nov/mac-setup/actions?query=workflow%3ATest) [![Links](https://github.com/sb2nov/mac-setup/workflows/Links/badge.svg)](https://github.com/sb2nov/mac-setup/actions?query=workflow%3ALinks)
 
 This guide covers the basics of setting up a development environment on a new
 Mac. Whether you are an experienced programmer or not, this guide is intended
