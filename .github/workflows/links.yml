@@ -1,6 +1,9 @@
 name: Links
 
-on: [push, pull_request]
+on:
+  schedule:
+    # Run at 00:00 UTC every Sunday
+    - cron: '0 0 * * */7'
 
 env:
   FORCE_COLOR: 1
