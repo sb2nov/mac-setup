@@ -4,7 +4,13 @@
 
 ## Installation
 
-[Download](http://www.sublimetext.com/) the **.dmg** file and drag-and-drop it to the **Applications** folder.
+Install using Homebrew:
+
+```sh
+brew install --cask sublime-text
+```
+
+Or [download](https://www.sublimetext.com/) the **.dmg** file and drag-and-drop it to the **Applications** folder.
 
 ## Use CLI to open file
 
