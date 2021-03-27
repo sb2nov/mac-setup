@@ -12,7 +12,7 @@ brew install vim
 
 ## The Ultimate vimrc
 
-[The Ultimate vimrc](https://github.com/amix/vimrc) it's a collection of vimrc configurations to make easy the usage of vim.
+[The Ultimate vimrc](https://github.com/amix/vimrc) is a collection of vimrc configurations to make easy the usage of vim.
 
 To download the The Ultimate vimrc, you need to install the git client. If you need install it, use home brew:
 
@@ -48,7 +48,7 @@ cd ~/.vim_runtime && git pull --rebase && cd -
 
 ## Maximum Awesome
 
-[Maximum Awesome](https://github.com/square/maximum-awesome) it's a collection of vim configuration and plugins, like a configuration manager for the vim environment.
+[Maximum Awesome](https://github.com/square/maximum-awesome) is a collection of vim configuration and plugins, like a configuration manager for the vim environment.
 
 ### Installation
 
