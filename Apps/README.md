@@ -50,10 +50,9 @@ Both of these tools can't compare in terms of features and user interface with t
 - [Notebooks](http://www.notebooksapp.com/mac/): Notebooks for Mac allows you to share files with the mobile versions of Notebooks on the iPad and iPhone. And you can write notes in markdown.
 - [PDF Toolkit+](https://itunes.apple.com/us/app/pdf-toolkit-+/id545164971?mt=12): App to cut/split/merge pdfs easily. Really easy to use and works well.
 - [Pocket](https://getpocket.com): Save For Later. Put articles, videos or pretty much anything into Pocket. Save directly from your browser or from apps like Twitter, Flipboard, Pulse and Zite.
-- [SleepPillow](https://itunes.apple.com/us/app/sleep-pillow/id597419160?mt=12): Sleep Pillow plays sounds that create an ambient atmosphere for sleep enhancement at home, or for drowning out noise at work.
 - [Rectangle](https://github.com/rxhanson/Rectangle): Don't waste time resizing and moving your windows. Rectangle makes this very easy and is open source.
 - [Timing](http://timingapp.com/): Keep track of the time you spend with your Mac.
-- [Tomighty](http://www.tomighty.org/): A free desktop timer for the Pomodoro Technique.
+- [Tomighty](https://tomighty.github.io/): A free desktop timer for the Pomodoro Technique.
 - [Total Finder](http://totalfinder.binaryage.com/): Adds tabs and improves the Finder to a great deal.
 - [Transmission](http://www.transmissionbt.com/): A fast, easy and free BitTorrent client.
 - [Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html): Compress/Uncompress app. Supported file formats include Zip, Tar-GZip, Tar-BZip2, RAR, 7-zip, LhA, StuffIt and many other old and obscure formats.

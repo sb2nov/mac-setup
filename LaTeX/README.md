@@ -22,7 +22,7 @@ Since MacTex installs a LaTex editor ([TexMaker](http://www.xm1math.net/texmaker
 
 #### BasicTeX
 
-Download [BasicTeX](http://tug.org/mactex/morepackages.html), or use `brew install --cask basictex`. You can read more about BasicTex in [BasicTeX (pdf)](http://pages.uoregon.edu/koch/BasicTeX.pdf).
+Download [BasicTeX](http://tug.org/mactex/morepackages.html), or use `brew install --cask basictex`. You can read more about BasicTex in [BasicTeX (pdf)](https://www.tug.org/mactex/BasicTeX.pdf).
 
 You may use `tlmgr` to install tools/packages that you need.
 
