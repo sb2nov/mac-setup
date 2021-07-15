@@ -67,8 +67,9 @@ plugins=(git colored-man-pages colorize pip python brew osx)
 You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins).
 Note that adding plugins can cause your shell startup time to increase.
 
-##### zsh-syntax-highlighting 
-The Syntax Highlighting plugin adds beautiful colors to the commands you are typing. 
+##### zsh-syntax-highlighting
+
+The Syntax Highlighting plugin adds beautiful colors to the commands you are typing.
 
 Clone the zsh-syntax-highlighting plugin’s repo and copy it to the “Oh My ZSH” plugins directory.
 
@@ -77,9 +78,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ##### zsh-autosuggestions
+
 This plugin auto suggests any of the previous commands. Pretty handy! To select the completion, simply press → key.
 
 Clone the zsh-autosuggestions plugin’s repo and copy it to the “Oh My ZSH” plugins directory.
+
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
