@@ -887,10 +887,25 @@ or run:</p>
 <h4 id="plugins">Plugins</h4>
 <p>Add plugins to your shell by adding the name of the plugin to the <code>plugin</code>
 array in your <code>.zshrc</code>.</p>
-<pre><code class="lang-sh">plugins=(git colored-man-pages colorize pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
+<pre><code class="lang-sh">plugins=(git colored-man-pages colorize pip python brew osx)
 </code></pre>
 <p>You&apos;ll find a list of all plugins on the <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank">Oh My Zsh Wiki</a>.
 Note that adding plugins can cause your shell startup time to increase.</p>
+<h5 id="zsh-syntax-highlighting">zsh-syntax-highlighting</h5>
+<p>The Syntax Highlighting plugin adds beautiful colors to the commands you are typing.</p>
+<p>Clone the zsh-syntax-highlighting plugin&#x2019;s repo and copy it to the &#x201C;Oh My ZSH&#x201D; plugins directory.</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="hljs-variable">${ZSH_CUSTOM:-~/.oh-my-zsh/custom}</span>/plugins/zsh-syntax-highlighting
+</code></pre>
+<h5 id="zsh-autosuggestions">zsh-autosuggestions</h5>
+<p>This plugin auto suggests any of the previous commands. Pretty handy! To select the completion, simply press &#x2192; key.</p>
+<p>Clone the zsh-autosuggestions plugin&#x2019;s repo and copy it to the &#x201C;Oh My ZSH&#x201D; plugins directory.</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions <span class="hljs-variable">$ZSH_CUSTOM</span>/plugins/zsh-autosuggestions
+</code></pre>
+<h5 id="enforce-changes">Enforce Changes</h5>
+<p>To apply the changes you make you need to either <strong>start new shell instance</strong>
+or run:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">source</span> ~/.zshrc
+</code></pre>
 <h4 id="themes">Themes</h4>
 <p>Changing theme is as simple as changing a string in your configuration file.
 The default theme is <code>robbyrussell</code>. Just change that value to change theme,
@@ -1008,7 +1023,7 @@ examples to show you what you can customise in your shell.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"https://sourabhbajaj.com/mac-setup/","about":"https://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/zsh.md","mtime":"2020-12-19T09:23:48.620Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-19T12:19:32.487Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Zsh","level":"1.5.1","depth":2,"next":{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},"previous":{"title":"iTerm2","level":"1.5","depth":1,"path":"iTerm/README.md","ref":"iTerm/README.md","articles":[{"title":"Zsh","level":"1.5.1","depth":2,"path":"iTerm/zsh.md","ref":"iTerm/zsh.md","articles":[]},{"title":"tree","level":"1.5.2","depth":2,"path":"iTerm/tree.md","ref":"iTerm/tree.md","articles":[]},{"title":"fzf","level":"1.5.3","depth":2,"path":"iTerm/fzf.md","ref":"iTerm/fzf.md","articles":[]},{"title":"ack","level":"1.5.4","depth":2,"path":"iTerm/ack.md","ref":"iTerm/ack.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-40495390-3"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":false,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"https://sourabhbajaj.com/mac-setup/","about":"https://sourabhbajaj.com","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"iTerm/zsh.md","mtime":"2021-07-15T15:21:40.776Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-07-15T15:23:39.914Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
