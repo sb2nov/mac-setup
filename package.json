@@ -6,8 +6,8 @@
   "devDependencies": {
     "gitbook": "3.2.3",
     "gitbook-cli": "2.3.2",
-    "markdownlint-cli": "0.23.2",
-    "node-fetch": "2.6.1"
+    "markdownlint-cli": "0.28.1",
+    "node-fetch": "3.0.0"
   },
   "repository": {
     "type": "git",
