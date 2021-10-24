@@ -76,3 +76,11 @@ To uninstall a package:
 ```sh
 npm uninstall [-g] <package>
 ```
+
+## yarn
+
+Yarn is package manager
+
+```
+brew install yarn
+```
