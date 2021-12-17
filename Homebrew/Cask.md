@@ -29,7 +29,7 @@ brew install --cask \
     betterzip \
     webpquicklook \
     suspicious-package \
-    syntax-highlight 
+    syntax-highlight
 ```
 
 ### App Suggestions
