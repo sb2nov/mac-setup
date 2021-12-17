@@ -1,8 +1,8 @@
 # zsh
 
 The Z shell (also known as `zsh`) is a Unix shell that is built on top of `bash`
-and that, since macOS 10.15 Catalina, is the **default** shell for macOS. 
-Since it has many with additional features, _if you have a version of macOS older than Catalina_,  
+and that, since macOS 10.15 Catalina, is the **default** shell for macOS.
+Since it has many with additional features, _if you have a version of macOS older than Catalina_,
 it's recommended to use `zsh` over `bash`. In this case it's also highly recommended to install a framework with
 `zsh` as it makes dealing with configuration, plugins and themes a lot nicer.
 
