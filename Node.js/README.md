@@ -81,6 +81,6 @@ npm uninstall [-g] <package>
 
 Yarn is package manager
 
-```
+```sh
 brew install yarn
 ```
