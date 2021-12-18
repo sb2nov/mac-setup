@@ -25,15 +25,11 @@ JSON, patch files, CSV, ZIP files and more.
 
 ```sh
 brew install --cask \
-    qlcolorcode \
-    qlstephen \
     qlmarkdown \
-    quicklook-json \
-    qlprettypatch \
-    quicklook-csv \
     betterzip \
     webpquicklook \
-    suspicious-package
+    suspicious-package \
+    syntax-highlight
 ```
 
 ### App Suggestions

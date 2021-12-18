@@ -71,3 +71,9 @@ killall Dock # Restart the Dock process
     your screenshots: `mkdir -p /path/to/screenshots/`
   - Then run the following command: `defaults write com.apple.screencapture
     location /path/to/screenshots/ && killall SystemUIServer`
+
+## Security & Privacy
+
+- Set `Require Password ... after sleep or screen saver begins` to `immediately`
+- Enable FileVault to encrypt your hard drive
+- Turn on Firewall
