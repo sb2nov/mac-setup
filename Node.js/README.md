@@ -79,8 +79,11 @@ npm uninstall [-g] <package>
 
 ## yarn
 
-Yarn is package manager
+Yarn is another package manager built by Facebook. Yarn stands for Yet Another
+Resource Negotiator. It provides similar functionalities as NPM. It is an
+alternative to NPM when installing, uninstalling, and managing package
+dependencies from the NPM registry or GitHub repositories.
 
-```
+```sh
 brew install yarn
 ```

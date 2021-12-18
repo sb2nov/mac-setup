@@ -1,6 +1,6 @@
 # Numpy, Scipy and Matplotlib
 
-The [NumPy](https://numpy.org/), [SciPy](https://www.scipy.org/) and [Matplotlib](https://matplotlib.org/) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly.
+The [NumPy](https://numpy.org/), [SciPy](https://scipy.org/) and [Matplotlib](https://matplotlib.org/) scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly.
 
 There are two ways to install these libraries:
 
