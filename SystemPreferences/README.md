@@ -73,6 +73,7 @@ killall Dock # Restart the Dock process
     location /path/to/screenshots/ && killall SystemUIServer`
 
 ## Security & Privacy
-- set `Require Password ... after sleep or screen saver begins` to `immediately`
+
+- Set `Require Password ... after sleep or screen saver begins` to `immediately`
 - Enable FileVault to encrypt your hard drive
 - Turn on Firewall
