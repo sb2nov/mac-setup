@@ -22,7 +22,7 @@ Then save and exit
 :wq!
 ```
 
-Or as a one-liner:
+### One-liner
 
 ```sh
 sudo sed -i '' '1a\'$'\n''auth       sufficient     pam_tid.so'$'\n' /etc/pam.d/sudo
