@@ -2,7 +2,7 @@
 
 Macs with TouchID have the option to authenticate for sudo using TouchID instead of the default password authentication.
 
-## Configuration
+## Customization
 
 This can be enabled manually by editing the relevant PAM file:
 
