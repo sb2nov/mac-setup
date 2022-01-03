@@ -37,3 +37,7 @@ Open up iTerm2 preferences (⌘ + ,) -> Profiles -> Keys -> Click on `+` icon (a
 |    ⌘→    | Send Escape Sequence |  OF  |
 |    ⌥←    | Send Escape Sequence |   b  |
 |    ⌥→    | Send Escape Sequence |   f  |
+
+### TouchID sudo workaround
+
+If you have enabled sudo authentication with TouchID you will also need to set `Preferences -> Advanced -> Allow sessions to survive logging out and back in` to `No` in iTerm2 preferences.
