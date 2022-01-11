@@ -1,6 +1,6 @@
 # Sudo
 
-Macs with TouchID have the option to authenticate for sudo using TouchID instead of the default password authentication.
+Macs with Touch ID have the option to authenticate for sudo using Touch ID instead of the default password authentication.
 
 ## Customization
 
