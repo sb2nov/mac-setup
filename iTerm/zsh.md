@@ -62,7 +62,7 @@ Add plugins to your shell by adding the name of the plugin to the `plugin`
 array in your `.zshrc`.
 
 ```sh
-plugins=(git colored-man-pages colorize pip python brew osx)
+plugins=(git colored-man-pages colorize pip python brew macos)
 ```
 
 You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins).
