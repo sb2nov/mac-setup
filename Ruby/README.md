@@ -22,6 +22,7 @@ rbenv global 3.1.0
 ```
 
 On M1 Macs to install older version of Ruby eg. `<2.7.3`, `<2.6.7` you first need to run:
+
 ```sh
 export optflags="-Wno-error=implicit-function-declaration"
 ```
