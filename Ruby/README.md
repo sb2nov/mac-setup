@@ -14,11 +14,11 @@ The packages we just installed allow us to install different versions of Ruby an
 
 ## Switching versions
 
-We can install version 3.1.0 and use it as our global version by running:
+We can install version `3.1.1` and use it as our global version by running:
 
 ```sh
-rbenv install 3.1.0
-rbenv global 3.1.0
+rbenv install 3.1.1
+rbenv global 3.1.1
 ```
 
 On M1 Macs to install older version of Ruby eg. `<2.7.3`, `<2.6.7` you first need to run:
