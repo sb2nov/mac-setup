@@ -15,7 +15,7 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v2-beta
         with:
-          node-version: '13'
+          node-version: '17'
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
