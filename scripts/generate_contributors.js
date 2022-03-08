@@ -5,8 +5,8 @@
  * to the Contributors.md file.
  */
 
-const fetch = require('node-fetch');
-const fs = require('fs');
+import fetch from 'node-fetch';
+import fs from 'fs';
 
 // Each call to the endpoint returns 30 contributors. In total we'll fetch
 // PAGE_COUNT * 30 contributors.
