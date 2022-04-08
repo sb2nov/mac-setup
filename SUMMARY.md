@@ -10,6 +10,7 @@
   * [Zsh](iTerm/zsh.md)
   * [tree](iTerm/tree.md)
   * [fzf](iTerm/fzf.md)
+  * [Fasd](iTerm/fasd.md)
   * [ack](iTerm/ack.md)
 * [Git](Git/README.md)
   * [Git Ignore](Git/gitignore.md)
