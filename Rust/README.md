@@ -9,7 +9,7 @@ allow you to switch between versions of Rust without having to download
 anything additional.
 
 ```sh
-brew install rustup
+brew install rustup-init
 ```
 
 Use rustup to install the Rust compiler (rustc) and the Rust package manager (cargo).
