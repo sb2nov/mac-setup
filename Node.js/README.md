@@ -38,6 +38,28 @@ nvm alias default node  # set the installed stable version as the default Node
 
 See the [documentation](https://github.com/nvm-sh/nvm#installing-and-updating) for information.
 
+### Using Volta (volta.sh)
+
+Download and install [Volta](https://volta.sh) by running:
+
+```sh
+curl https://get.volta.sh | bash
+```
+
+or via Homebrew:
+
+```sh
+brew install volta
+```
+
+Then run:
+
+```
+volta install node
+```
+
+See the [documentation](https://docs.volta.sh/guide/) for information.
+
 ## npm usage
 
 To install a package:
