@@ -54,7 +54,7 @@ brew install volta
 
 Then run:
 
-```
+```sh
 volta install node
 ```
 
