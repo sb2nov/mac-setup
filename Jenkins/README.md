@@ -30,9 +30,9 @@ The "lts" flag ensures that the long-term support version of Jenkins is installe
 
 * If you want to access your Jenkins server from anywhere,
 
-not just your local machine, you need to modify the Jenkins configuration file.
+  not just your local machine, you need to modify the Jenkins configuration file.
 
-Open the file using the following command:
+  Open the file using the following command:
 
 ```shell
 sudo vi /usr/local/opt/jenkins-lts/homebrew.mxcl.jenkins-lts.plist
@@ -62,7 +62,7 @@ Jenkins will now start running as a background service on your machine.
 
 * By default, Jenkins uses port 8080. If you want to change the port, open
 
-the Jenkins configuration file again:
+  the Jenkins configuration file again:
 
 ```shell
 sudo vi /usr/local/opt/jenkins-lts/homebrew.mxcl.jenkins-lts.plistg
@@ -87,7 +87,7 @@ new port number.
 
 * On the Jenkins setup wizard page, you need to unlock Jenkins. To obtain the
 
-initial admin password, navigate to the following path in your terminal:
+  initial admin password, navigate to the following path in your terminal:
 
 ```shell
 sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
@@ -97,7 +97,7 @@ Copy the password and paste it into the setup wizard.
 
 * Follow the on-screen instructions to complete the installation and set
 
-up your Jenkins instance.
+  up your Jenkins instance.
 
 Get ready to unleash the power of Jenkins on your macOS machine
 ---------------------------------------------------------------
