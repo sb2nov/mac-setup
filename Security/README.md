@@ -1,6 +1,6 @@
 # Security and Safety
 
-A development machine should be secured against threads as well as any other machine \(or even _especially_ a development machine\). Therefore we will setup
+A development machine should be secured against threats as well as any other machine \(or even _especially_ a development machine\). Therefore we will setup
 
 * a virus scanner
 * a firewall
