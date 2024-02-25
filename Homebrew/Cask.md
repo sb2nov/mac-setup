@@ -43,12 +43,10 @@ brew install --cask \
     appcleaner \
     caffeine \
     cheatsheet \
-    colloquy \
     docker \
     doubletwist \
     dropbox \
     google-chrome \
-    google-hangouts \
     flux \
     1password \
     rectangle \
