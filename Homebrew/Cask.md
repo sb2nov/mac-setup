@@ -48,7 +48,6 @@ brew install --cask \
     doubletwist \
     dropbox \
     google-chrome \
-    google-hangouts \
     flux \
     1password \
     rectangle \
