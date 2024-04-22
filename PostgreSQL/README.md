@@ -5,7 +5,7 @@ PostgreSQL is an open source relational database management system (RDBMS). It i
 ## Installation
 
 ```sh
-brew install postgres
+brew install postgresql
 ```
 
 After this, we can test the installation status by checking the version of installed PostgreSQL
