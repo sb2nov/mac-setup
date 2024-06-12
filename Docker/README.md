@@ -8,10 +8,6 @@ With Docker, developers can build any app in any language using any toolchain. â
 
 Docker for Mac is the current release of Docker for macOS.
 
-### Installation
-
-Docker for Mac can be downloaded [here](https://docs.docker.com/docker-for-mac/install/).
-
 ### Prerequisite
 
 You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refer to [this section](../Homebrew/Cask.md).
@@ -20,7 +16,7 @@ You'll need `homebrew-cask` to install Docker Toolbox, if you don't have it refe
 
 There are two ways to install Docker
 
-Option 1: These are the steps to install docker using brew
+#### Option 1: Install via Homebrew
 
 * Install the docker and docker machine from brew
 
@@ -67,12 +63,9 @@ docker run hello-world
 
 You can find more about Docker in the [documentation](https://docs.docker.com/).
 
-Option 2: Install using the Docker App
+#### Option 2: Install from Docker's site
 
-* Navigate to the following link
+Install Docker Desktop on Mac:
+https://docs.docker.com/desktop/install/mac-install/
 
-```sh
-https://hub.docker.com/editions/community/docker-ce-desktop-mac/
-```
-
-This installation should provide you all the necessary GUI tools
+This installation should provide you with all the necessary GUI tools.
