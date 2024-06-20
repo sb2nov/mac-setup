@@ -11,6 +11,7 @@
   * [tree](iTerm/tree.md)
   * [fzf](iTerm/fzf.md)
   * [ack](iTerm/ack.md)
+* [tmux](tmux/README.md)
 * [Git](Git/README.md)
   * [Git Ignore](Git/gitignore.md)
 * [Bash Completion](BashCompletion/README.md)
