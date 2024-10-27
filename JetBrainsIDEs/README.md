@@ -59,6 +59,16 @@ Go to [their website](https://www.jetbrains.com/products.html?fromMenu#type=ide)
 
 Alternatively, use the [Jetbrains Toolbox App](https://www.jetbrains.com/toolbox-app/) to manage product installations.
 
+## Command line usage setup
+
+setup `idea` command:
+
+```sh
+sudo mkdir -p /usr/local/bin && echo '#!/bin/sh\n\nopen -na "/Applications/IntelliJ IDEA.app" --args "$@"' | sudo tee /usr/local/bin/idea > /dev/null && sudo chmod +x /usr/local/bin/idea
+```
+
+Follows command line setup instructions from here: https://www.jetbrains.com/help/idea/working-with-the-ide-features-from-command-line.html
+
 ## Pricing
 
 If you're a **student** or an **instructor** (teaching staff members) all IDEs from JetBrains are free to use. You can read more on [their website](https://www.jetbrains.com/student/). If you're not a student they still offer a few free Community Edition (CE) IDEs. Check out [IntelliJ](https://www.jetbrains.com/idea/) (Java) or [PyCharm Edu](https://www.jetbrains.com/pycharm-edu/).
