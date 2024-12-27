@@ -88,6 +88,16 @@ Clone the zsh-autosuggestions plugin’s repo and copy it to the “Oh My ZSH”
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
+##### zsh-autocomplete
+
+This plugin adds real-time type-ahead autocompletion to your command line. The available completions are listed automatically and press Tab to insert the top completion or ↓ to select a different one. 
+
+Clone the zsh-autocomplete plugin’s repo and copy it to the “Oh My ZSH” plugins directory.
+
+```sh
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+```
+
 ##### Enforce Changes
 
 To apply the changes you make you need to either **start new shell instance**
