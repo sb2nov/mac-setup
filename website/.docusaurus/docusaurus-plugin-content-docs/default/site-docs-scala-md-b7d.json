@@ -1,0 +1,26 @@
+{
+  "id": "scala",
+  "title": "Scala",
+  "description": "Make sure you have Java installed, the instructions are provided here.",
+  "source": "@site/docs/scala.md",
+  "sourceDirName": ".",
+  "slug": "/scala",
+  "permalink": "/mac-setup/scala",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/scala.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Scala"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDKMAN!",
+    "permalink": "/mac-setup/java/sdkman"
+  },
+  "next": {
+    "title": "Ruby",
+    "permalink": "/mac-setup/ruby/"
+  }
+}

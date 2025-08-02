@@ -1,0 +1,26 @@
+{
+  "id": "system-preferences",
+  "title": "System Preferences",
+  "description": "First Time Setup",
+  "source": "@site/docs/system-preferences.md",
+  "sourceDirName": ".",
+  "slug": "/system-preferences",
+  "permalink": "/mac-setup/system-preferences",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/system-preferences.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "System Preferences"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "macOS Setup Guide",
+    "permalink": "/mac-setup/"
+  },
+  "next": {
+    "title": "Xcode",
+    "permalink": "/mac-setup/xcode"
+  }
+}

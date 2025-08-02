@@ -1,0 +1,26 @@
+{
+  "id": "java/index",
+  "title": "Java",
+  "description": "Using Java requires you to install a JDK (\"Java Development Kit\") or JRE (\"Java Runtime Environment\").",
+  "source": "@site/docs/java/index.md",
+  "sourceDirName": "java",
+  "slug": "/java/",
+  "permalink": "/mac-setup/java/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/java/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Java"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "C++",
+    "permalink": "/mac-setup/cpp"
+  },
+  "next": {
+    "title": "SDKMAN!",
+    "permalink": "/mac-setup/java/sdkman"
+  }
+}

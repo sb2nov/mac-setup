@@ -1,0 +1,26 @@
+{
+  "id": "vagrant",
+  "title": "Vagrant",
+  "description": "Create and configure lightweight, reproducible, and portable development environments. Vagrant is a tool for managing virtual machines via a simple to use command line interface.",
+  "source": "@site/docs/vagrant.md",
+  "sourceDirName": ".",
+  "slug": "/vagrant",
+  "permalink": "/mac-setup/vagrant",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/vagrant.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Vagrant"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Heroku",
+    "permalink": "/mac-setup/heroku"
+  },
+  "next": {
+    "title": "Docker",
+    "permalink": "/mac-setup/docker/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "rust",
+  "title": "Rust",
+  "description": "Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
+  "source": "@site/docs/rust.md",
+  "sourceDirName": ".",
+  "slug": "/rust",
+  "permalink": "/mac-setup/rust",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/rust.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Rust"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RubyGems",
+    "permalink": "/mac-setup/ruby/rubygems"
+  },
+  "next": {
+    "title": "Node.js",
+    "permalink": "/mac-setup/nodejs"
+  }
+}

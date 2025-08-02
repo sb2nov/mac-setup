@@ -1,0 +1,26 @@
+{
+  "id": "iterm/fzf",
+  "title": "fzf",
+  "description": "fzf is a general-purpose command-line",
+  "source": "@site/docs/iterm/fzf.md",
+  "sourceDirName": "iterm",
+  "slug": "/iterm/fzf",
+  "permalink": "/mac-setup/iterm/fzf",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/iterm/fzf.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "fzf"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "tree",
+    "permalink": "/mac-setup/iterm/tree"
+  },
+  "next": {
+    "title": "ack",
+    "permalink": "/mac-setup/iterm/ack"
+  }
+}

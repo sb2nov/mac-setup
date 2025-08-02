@@ -1,0 +1,26 @@
+{
+  "id": "nodejs",
+  "title": "Node.js",
+  "description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+  "source": "@site/docs/nodejs.md",
+  "sourceDirName": ".",
+  "slug": "/nodejs",
+  "permalink": "/mac-setup/nodejs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/nodejs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Node.js"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rust",
+    "permalink": "/mac-setup/rust"
+  },
+  "next": {
+    "title": "Go",
+    "permalink": "/mac-setup/go"
+  }
+}

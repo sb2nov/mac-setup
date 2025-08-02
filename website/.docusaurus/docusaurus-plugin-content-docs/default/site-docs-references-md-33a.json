@@ -1,0 +1,26 @@
+{
+  "id": "references",
+  "title": "References",
+  "description": "Thank you for all the awesome pages and documentation below which helped set this up.",
+  "source": "@site/docs/references.md",
+  "sourceDirName": ".",
+  "slug": "/references",
+  "permalink": "/mac-setup/references",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/references.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "References"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security",
+    "permalink": "/mac-setup/security"
+  },
+  "next": {
+    "title": "Contributors",
+    "permalink": "/mac-setup/contributors"
+  }
+}

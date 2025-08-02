@@ -1,0 +1,26 @@
+{
+  "id": "visual-studio-code",
+  "title": "Visual Studio Code",
+  "description": "Visual Studio Code is a lightweight code editor with support for many programming languages through extensions",
+  "source": "@site/docs/visual-studio-code.md",
+  "sourceDirName": ".",
+  "slug": "/visual-studio-code",
+  "permalink": "/mac-setup/visual-studio-code",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/visual-studio-code.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Visual Studio Code"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sublime Linter",
+    "permalink": "/mac-setup/sublime-text/sublime-linter"
+  },
+  "next": {
+    "title": "JetBrains IDEs",
+    "permalink": "/mac-setup/jetbrains-ides"
+  }
+}

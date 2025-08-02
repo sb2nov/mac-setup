@@ -1,0 +1,26 @@
+{
+  "id": "apps/index",
+  "title": "Other Apps",
+  "description": "Here is a list of apps that are generally good to use and can come in handy in day to day tasks. The apps are separated into 4 broad categories Developer Tools, Productivity Tools, Office Apps and Other.",
+  "source": "@site/docs/apps/index.md",
+  "sourceDirName": "apps",
+  "slug": "/apps/",
+  "permalink": "/mac-setup/apps/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/apps/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Other Apps"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LaTeX",
+    "permalink": "/mac-setup/latex"
+  },
+  "next": {
+    "title": "Octave",
+    "permalink": "/mac-setup/apps/octave"
+  }
+}

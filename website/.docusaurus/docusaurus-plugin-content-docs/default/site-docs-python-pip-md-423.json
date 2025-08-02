@@ -1,0 +1,26 @@
+{
+  "id": "python/pip",
+  "title": "Pip",
+  "description": "macOS comes with Python so there's a chance pip is already installed on your machine.",
+  "source": "@site/docs/python/pip.md",
+  "sourceDirName": "python",
+  "slug": "/python/pip",
+  "permalink": "/mac-setup/python/pip",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/python/pip.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Pip"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python",
+    "permalink": "/mac-setup/python/"
+  },
+  "next": {
+    "title": "Virtualenv",
+    "permalink": "/mac-setup/python/virtualenv"
+  }
+}

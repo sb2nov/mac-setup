@@ -1,0 +1,26 @@
+{
+  "id": "python/index",
+  "title": "Python",
+  "description": "macOS, like Linux, ships with Python already installed.",
+  "source": "@site/docs/python/index.md",
+  "sourceDirName": "python",
+  "slug": "/python/",
+  "permalink": "/mac-setup/python/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/python/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Python"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostgreSQL",
+    "permalink": "/mac-setup/postgresql"
+  },
+  "next": {
+    "title": "Pip",
+    "permalink": "/mac-setup/python/pip"
+  }
+}

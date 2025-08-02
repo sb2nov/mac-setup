@@ -1,0 +1,26 @@
+{
+  "id": "python/numpy",
+  "title": "Numpy",
+  "description": "The NumPy, SciPy and Matplotlib scientific libraries for Python are always a little tricky to install from source because they have all these dependencies they need to build correctly.",
+  "source": "@site/docs/python/numpy.md",
+  "sourceDirName": "python",
+  "slug": "/python/numpy",
+  "permalink": "/mac-setup/python/numpy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/python/numpy.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Numpy"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Virtualenv",
+    "permalink": "/mac-setup/python/virtualenv"
+  },
+  "next": {
+    "title": "IPython",
+    "permalink": "/mac-setup/python/ipython"
+  }
+}

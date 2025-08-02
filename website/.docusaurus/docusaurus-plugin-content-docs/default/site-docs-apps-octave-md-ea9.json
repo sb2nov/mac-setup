@@ -1,0 +1,26 @@
+{
+  "id": "apps/octave",
+  "title": "Octave",
+  "description": "Octave is a programming language for scientific computing.",
+  "source": "@site/docs/apps/octave.md",
+  "sourceDirName": "apps",
+  "slug": "/apps/octave",
+  "permalink": "/mac-setup/apps/octave",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/apps/octave.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Octave"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Other Apps",
+    "permalink": "/mac-setup/apps/"
+  },
+  "next": {
+    "title": "App Settings",
+    "permalink": "/mac-setup/apps/settings"
+  }
+}

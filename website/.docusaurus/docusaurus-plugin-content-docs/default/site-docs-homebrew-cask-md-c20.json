@@ -1,0 +1,26 @@
+{
+  "id": "homebrew/cask",
+  "title": "Cask",
+  "description": "Homebrew-Cask extends Homebrew and allows you to",
+  "source": "@site/docs/homebrew/cask.md",
+  "sourceDirName": "homebrew",
+  "slug": "/homebrew/cask",
+  "permalink": "/mac-setup/homebrew/cask",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/homebrew/cask.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Cask"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Usage",
+    "permalink": "/mac-setup/homebrew/usage"
+  },
+  "next": {
+    "title": "iTerm2",
+    "permalink": "/mac-setup/iterm/"
+  }
+}

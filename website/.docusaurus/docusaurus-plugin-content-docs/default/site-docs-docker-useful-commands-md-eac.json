@@ -1,0 +1,26 @@
+{
+  "id": "docker/useful-commands",
+  "title": "Useful Commands",
+  "description": "Here follows a list of useful Docker commands with useful flags for each",
+  "source": "@site/docs/docker/useful-commands.md",
+  "sourceDirName": "docker",
+  "slug": "/docker/useful-commands",
+  "permalink": "/mac-setup/docker/useful-commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/docker/useful-commands.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Useful Commands"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Docker",
+    "permalink": "/mac-setup/docker/"
+  },
+  "next": {
+    "title": "Tips and Tricks",
+    "permalink": "/mac-setup/docker/tips-and-tricks"
+  }
+}
