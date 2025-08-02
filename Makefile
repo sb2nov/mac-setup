@@ -1,6 +1,6 @@
 .PHONY: ci deploy deps install lint serve build
 
-NPM = $(shell command -v npm 2> /dev/null)
+YARN = $(shell command -v yarn 2> /dev/null)
 MARKDOWNLINT = $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
 
 # This is run on CI to verify linting is OK and that the guide builds
@@ -8,10 +8,10 @@ ci: lint build
 
 # Build the Docusaurus site
 build:
-ifeq ($(NPM),)
-	$(error "npm is not available, please install Node.js")
+ifeq ($(YARN),)
+	$(error "yarn is not available, please install Yarn")
 else
-	$(NPM) run build
+	$(YARN) run build
 endif
 
 # Deploy new version of the guide
@@ -20,10 +20,10 @@ deploy:
 
 # Install dependencies
 deps:
-ifeq ($(NPM),)
-	$(error "npm is not available, please install Node.js")
+ifeq ($(YARN),)
+	$(error "yarn is not available, please install Yarn")
 else
-	$(NPM) install
+	$(YARN) install
 endif
 
 # Install dependencies (alias for deps)
@@ -39,10 +39,10 @@ endif
 
 # Start a development server
 serve:
-ifeq ($(NPM),)
-	$(error "npm is not available, please install Node.js")
+ifeq ($(YARN),)
+	$(error "yarn is not available, please install Yarn")
 else
-	$(NPM) start
+	$(YARN) start
 endif
 
 # Start alias

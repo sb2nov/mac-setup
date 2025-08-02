@@ -29,7 +29,7 @@ else
 fi
 
 echo "📖 Building the guide using Docusaurus.."
-npm install
+yarn install
 npm run build
 echo "📖 Done building guide"
 

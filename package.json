@@ -8,11 +8,11 @@
     "website"
   ],
   "scripts": {
-    "start": "npm run start --workspace=website",
-    "build": "npm run build --workspace=website",
-    "serve": "npm run serve --workspace=website",
+    "start": "yarn workspace website start",
+    "build": "yarn workspace website build",
+    "serve": "yarn workspace website serve",
     "lint": "markdownlint . --ignore node_modules --ignore website/node_modules --ignore website/build",
-    "install-deps": "npm install"
+    "install-deps": "yarn install"
   },
   "devDependencies": {
     "markdownlint-cli": "0.34.0",
