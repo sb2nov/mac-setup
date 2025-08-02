@@ -31,6 +31,16 @@
       "type": "package",
       "name": "@docusaurus/theme-classic",
       "version": "3.8.1"
+    },
+    "@easyops-cn/docusaurus-search-local": {
+      "type": "package",
+      "name": "@easyops-cn/docusaurus-search-local",
+      "version": "0.52.1"
+    },
+    "docusaurus-plugin-google-gtag": {
+      "type": "package",
+      "name": "@docusaurus/plugin-google-gtag",
+      "version": "3.8.1"
     }
   }
 }

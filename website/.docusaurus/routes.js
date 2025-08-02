@@ -3,6 +3,11 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/mac-setup/search',
+    component: ComponentCreator('/mac-setup/search', '4c1'),
+    exact: true
+  },
+  {
     path: '/mac-setup/',
     component: ComponentCreator('/mac-setup/', '5d3'),
     routes: [

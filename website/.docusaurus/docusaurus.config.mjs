@@ -59,6 +59,26 @@ export default {
       }
     ]
   ],
+  "plugins": [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        "hashed": true,
+        "language": [
+          "en"
+        ],
+        "highlightSearchTermsOnTargetPage": true,
+        "explicitSearchResultPath": true
+      }
+    ],
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        "trackingID": "G-XXXXXXXXXX",
+        "anonymizeIP": true
+      }
+    ]
+  ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
@@ -364,7 +384,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
