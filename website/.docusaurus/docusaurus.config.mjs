@@ -68,7 +68,11 @@ export default {
           "en"
         ],
         "highlightSearchTermsOnTargetPage": true,
-        "explicitSearchResultPath": true
+        "explicitSearchResultPath": true,
+        "indexDocs": true,
+        "indexBlog": false,
+        "indexPages": false,
+        "docsRouteBasePath": "/"
       }
     ],
     [
