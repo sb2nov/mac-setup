@@ -30,5 +30,5 @@ documentation.**
 
 This guide is [MIT
 licensed](https://github.com/sb2nov/mac-setup/blob/main/LICENSE) and has been
-generated using [GitBook](https://www.gitbook.com/). Feel free to contribute or
+generated using [Docusaurus](https://docusaurus.io//). Feel free to contribute or
 create new issues on [GitHub](https://github.com/sb2nov/mac-setup/issues).

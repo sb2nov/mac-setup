@@ -5,15 +5,18 @@
  * to the Contributors.md file.
  */
 
-const fetch = require('node-fetch');
+// Use native fetch in Node.js 18+ or fallback to node-fetch
+const fetch = globalThis.fetch || require('node-fetch');
 const fs = require('fs');
 
 // Each call to the endpoint returns 30 contributors. In total we'll fetch
 // PAGE_COUNT * 30 contributors.
 const PAGE_COUNT = 4;
-const FILE_NAME = "Contributors.md";
+const FILE_NAME = "website/docs/contributors.md";
 const BASE_URL = "https://api.github.com/repos/sb2nov/mac-setup/contributors?page=";
-const HEADER = `# Contributors
+const HEADER = `---
+title: Contributors
+---
 
 Thank you everyone that have contributed to creating this awesome guide!
 

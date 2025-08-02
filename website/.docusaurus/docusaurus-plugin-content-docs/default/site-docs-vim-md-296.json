@@ -1,0 +1,26 @@
+{
+  "id": "vim",
+  "title": "Vim",
+  "description": "Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple macOS.",
+  "source": "@site/docs/vim.md",
+  "sourceDirName": ".",
+  "slug": "/vim",
+  "permalink": "/mac-setup/vim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/vim.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Vim"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bash Completion",
+    "permalink": "/mac-setup/bash-completion"
+  },
+  "next": {
+    "title": "Emacs",
+    "permalink": "/mac-setup/emacs"
+  }
+}

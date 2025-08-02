@@ -1,46 +1,49 @@
-.PHONY: ci deploy deps install lint serve
+.PHONY: ci deploy deps install lint serve build
 
-GITBOOK 	= $(shell command -v ./node_modules/.bin/gitbook 2> /dev/null)
-MARKDOWNLINT	= $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
-YARN		= $(shell command -v yarn 2> /dev/null)
-
+NPM = $(shell command -v npm 2> /dev/null)
+MARKDOWNLINT = $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
 
 # This is run on CI to verify linting is OK and that the guide builds
-ci: lint
-	$(GITBOOK) install && $(GITBOOK) build
+ci: lint build
 
+# Build the Docusaurus site
+build:
+ifeq ($(NPM),)
+	$(error "npm is not available, please install Node.js")
+else
+	$(NPM) run build
+endif
 
-# Deploy new version of the guide. Will update list of contributors
+# Deploy new version of the guide
 deploy:
-	sh ./scripts/publish_gitbook.sh
-
+	sh ./scripts/publish_docusaurus.sh
 
 # Install dependencies
 deps:
-ifeq ($(YARN),)
-	$(error "yarn is not available, please install it")
+ifeq ($(NPM),)
+	$(error "npm is not available, please install Node.js")
 else
-	$(YARN)
+	$(NPM) install
 endif
 
-# Install dependencies and gitbook
+# Install dependencies (alias for deps)
 install: deps
-	$(GITBOOK) install
-
 
 # Lint markdown files
 lint:
 ifeq ($(MARKDOWNLINT),)
 	$(error "markdownlint is not installed, run 'make deps' to install it")
 else
-	@$(MARKDOWNLINT) . --ignore node_modules && echo 'All good 👌'
+	@$(MARKDOWNLINT) . --ignore node_modules --ignore website/node_modules --ignore website/build && echo 'All good 👌'
 endif
 
-
-# Start a server that serves the guide locally
+# Start a development server
 serve:
-ifeq ($(GITBOOK),)
-	$(error "GitBook is not available, please run 'make install' first")
+ifeq ($(NPM),)
+	$(error "npm is not available, please install Node.js")
 else
-	$(GITBOOK) serve
+	$(NPM) start
 endif
+
+# Start alias
+start: serve

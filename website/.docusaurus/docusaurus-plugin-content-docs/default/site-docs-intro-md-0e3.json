@@ -1,0 +1,25 @@
+{
+  "id": "intro",
+  "title": "macOS Setup Guide",
+  "description": "Installing Development environment on macOS",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/mac-setup/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "slug": "/",
+    "title": "macOS Setup Guide",
+    "description": "Installing Development environment on macOS",
+    "id": "intro"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "System Preferences",
+    "permalink": "/mac-setup/system-preferences"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "python/virtualenv",
+  "title": "Virtualenv",
+  "description": "Virtualenv is a tool that lets you create an",
+  "source": "@site/docs/python/virtualenv.md",
+  "sourceDirName": "python",
+  "slug": "/python/virtualenv",
+  "permalink": "/mac-setup/python/virtualenv",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/python/virtualenv.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Virtualenv"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Pip",
+    "permalink": "/mac-setup/python/pip"
+  },
+  "next": {
+    "title": "Numpy",
+    "permalink": "/mac-setup/python/numpy"
+  }
+}

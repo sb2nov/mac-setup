@@ -1,0 +1,26 @@
+{
+  "id": "emacs",
+  "title": "Emacs",
+  "description": "Emacs is a family of text editors that are characterized by their extensibility. The manual for the most widely used variant, GNU Emacs, describes it as the extensible, customizable, self-documenting, real-time display editor.",
+  "source": "@site/docs/emacs.md",
+  "sourceDirName": ".",
+  "slug": "/emacs",
+  "permalink": "/mac-setup/emacs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/emacs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Emacs"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vim",
+    "permalink": "/mac-setup/vim"
+  },
+  "next": {
+    "title": "Sublime Text",
+    "permalink": "/mac-setup/sublime-text/"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "iterm/tree",
+  "title": "tree",
+  "description": "tree is a recursive directory listing command that produces a depth indented listing of files.",
+  "source": "@site/docs/iterm/tree.md",
+  "sourceDirName": "iterm",
+  "slug": "/iterm/tree",
+  "permalink": "/mac-setup/iterm/tree",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/iterm/tree.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "tree"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Zsh",
+    "permalink": "/mac-setup/iterm/zsh"
+  },
+  "next": {
+    "title": "fzf",
+    "permalink": "/mac-setup/iterm/fzf"
+  }
+}

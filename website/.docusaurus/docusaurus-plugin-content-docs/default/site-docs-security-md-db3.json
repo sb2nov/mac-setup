@@ -1,0 +1,26 @@
+{
+  "id": "security",
+  "title": "Security",
+  "description": "A development machine should be secured against threats as well as any other machine \\(or even especially a development machine\\). Therefore we will setup",
+  "source": "@site/docs/security.md",
+  "sourceDirName": ".",
+  "slug": "/security",
+  "permalink": "/mac-setup/security",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/security.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Security"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App Settings",
+    "permalink": "/mac-setup/apps/settings"
+  },
+  "next": {
+    "title": "References",
+    "permalink": "/mac-setup/references"
+  }
+}

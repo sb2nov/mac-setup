@@ -1,0 +1,22 @@
+{
+  "id": "contributors",
+  "title": "Contributors",
+  "description": "Thank you everyone that have contributed to creating this awesome guide!",
+  "source": "@site/docs/contributors.md",
+  "sourceDirName": ".",
+  "slug": "/contributors",
+  "permalink": "/mac-setup/contributors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/contributors.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Contributors"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "References",
+    "permalink": "/mac-setup/references"
+  }
+}
