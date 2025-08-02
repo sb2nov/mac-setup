@@ -15,9 +15,7 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'yarn'
-          cache-dependency-path: yarn.lock
+          node-version: '22'
 
       - name: Install dependencies
         run: |
