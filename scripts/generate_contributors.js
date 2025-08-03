@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * This script fetches contributors and writes their usernames, profile pictures, 
+ * This script fetches contributors and writes their usernames, profile pictures,
  * and URLs to the Contributors.md file.
  */
 
@@ -24,8 +24,6 @@ const HEADER = `---
 title: Contributors
 ---
 
-# Contributors
-
 Thank you to everyone who has contributed to creating this awesome guide! 🎉
 
 This project exists thanks to all the people who contribute:
@@ -33,7 +31,6 @@ This project exists thanks to all the people who contribute:
 `;
 
 const FOOTER = `
-
 ---
 
 *Want to contribute? Check out our [contribution guidelines](https://github.com/sb2nov/mac-setup/blob/main/.github/CONTRIBUTION_TEMPLATE.md) and help make this guide even better!*
@@ -44,7 +41,7 @@ const FOOTER = `
  */
 const validateWorkingDirectory = async () => {
   const cwd = process.cwd();
-  
+
   try {
     await fs.access(path.join(cwd, 'package.json'));
   } catch {
@@ -92,15 +89,15 @@ const fetchWithRetry = async (url, retries = 3) => {
 const fetchContributors = async () => {
   console.log('Fetching contributors...');
   const promises = [];
-  
+
   for (let page = 1; page <= CONFIG.PAGE_COUNT; page++) {
     const url = `${CONFIG.BASE_URL}${page}&per_page=100`;
     promises.push(fetchWithRetry(url));
   }
-  
+
   const results = await Promise.all(promises);
   const allContributors = results.flatMap(contributors => contributors || []);
-  
+
   console.log(`Fetched ${allContributors.length} contributors`);
   return allContributors;
 };
@@ -110,13 +107,13 @@ const fetchContributors = async () => {
  */
 const isValidContributor = (contributor) => {
   const { login, html_url, avatar_url, contributions } = contributor;
-  
+
   // Basic validation
   if (!login || !html_url || !avatar_url) return false;
-  
+
   // Security: prevent script injection
   if (login.includes('<script') || login.includes('javascript:')) return false;
-  
+
   // Filter out bots and non-human users
   const botPatterns = [
     'dependabot[bot]',
@@ -125,12 +122,12 @@ const isValidContributor = (contributor) => {
     'greenkeeper[bot]',
     'codecov[bot]'
   ];
-  
+
   if (botPatterns.some(pattern => login.includes(pattern))) return false;
-  
+
   // Filter by minimum contributions
   if (contributions < CONFIG.MIN_CONTRIBUTIONS) return false;
-  
+
   return true;
 };
 
@@ -148,24 +145,24 @@ const generateContributorGrid = (contributors) => {
 
   const COLUMNS = 6; // Number of contributors per row (reduced for better mobile experience)
   let markdown = '';
-  
+
   // Add CSS class for styling
   markdown += '<div class="contributors-table">\n\n';
-  
+
   // Create table header (empty headers that will be hidden by CSS)
   markdown += '|' + '   |'.repeat(COLUMNS) + '\n';
   markdown += '|' + '---|'.repeat(COLUMNS) + '\n';
-  
+
   // Group contributors into rows
   for (let i = 0; i < sortedContributors.length; i += COLUMNS) {
     const row = sortedContributors.slice(i, i + COLUMNS);
     const rowCells = [];
-    
+
     for (let j = 0; j < COLUMNS; j++) {
       if (j < row.length) {
         const { login, html_url, avatar_url, contributions } = row[j];
         const avatarUrl = `${avatar_url}&s=${CONFIG.AVATAR_SIZE}`;
-        
+
         // Create cell with avatar and username
         const cell = `[![${login}](${avatarUrl})](${html_url})<br/>[${login}](${html_url})`;
         rowCells.push(cell);
@@ -174,17 +171,17 @@ const generateContributorGrid = (contributors) => {
         rowCells.push(' ');
       }
     }
-    
+
     markdown += `| ${rowCells.join(' | ')} |\n`;
   }
-  
+
   // Close the div wrapper
   markdown += '\n</div>\n';
-  
+
   // Add summary statistics
   const totalContributions = sortedContributors.reduce((sum, c) => sum + c.contributions, 0);
   markdown += `\n**${sortedContributors.length} contributors** • **${totalContributions} total contributions**\n`;
-  
+
   return markdown;
 };
 
@@ -196,7 +193,7 @@ const writeToFile = async (content) => {
     // Ensure directory exists
     const dir = path.dirname(CONFIG.FILE_NAME);
     await fs.mkdir(dir, { recursive: true });
-    
+
     await fs.writeFile(CONFIG.FILE_NAME, content, 'utf8');
     console.log(`✅ Successfully wrote contributors to ${CONFIG.FILE_NAME}`);
   } catch (err) {
@@ -236,26 +233,26 @@ const checkGitHubToken = () => {
 const run = async () => {
   try {
     console.log('🚀 Starting contributors generation...');
-    
+
     checkGitHubToken();
-    
+
     await validateWorkingDirectory();
-    
+
     const contributors = await fetchContributors();
-    
+
     if (!contributors || contributors.length === 0) {
       throw new Error('No contributors data received');
     }
-    
+
     console.log('📝 Generating contributor grid...');
     const contributorGrid = generateContributorGrid(contributors);
-    
+
     const fileContent = HEADER + contributorGrid + FOOTER;
-    
+
     await writeToFile(fileContent);
-    
+
     console.log('✨ Contributors page generated successfully!');
-    
+
   } catch (error) {
     console.error('❌ Error:', error.message);
     process.exit(1);
