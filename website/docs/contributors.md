@@ -2,8 +2,6 @@
 title: Contributors
 ---
 
-# Contributors
-
 Thank you to everyone who has contributed to creating this awesome guide! 🎉
 
 This project exists thanks to all the people who contribute:
@@ -33,8 +31,7 @@ This project exists thanks to all the people who contribute:
 
 </div>
 
-**103 contributors** • **641 total contributions**
-
+**103 contributors** • **643 total contributions**
 
 ---
 
