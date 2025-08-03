@@ -2,108 +2,40 @@
 title: Contributors
 ---
 
-Thank you everyone that have contributed to creating this awesome guide!
+# Contributors
 
-- [simeg](https://github.com/simeg)
-- [sb2nov](https://github.com/sb2nov)
-- [hugovk](https://github.com/hugovk)
-- [nicolashery](https://github.com/nicolashery)
-- [Kyslik](https://github.com/Kyslik)
-- [kamleshkc2002](https://github.com/kamleshkc2002)
-- [otkd](https://github.com/otkd)
-- [AidHamza](https://github.com/AidHamza)
-- [michaelbeil](https://github.com/michaelbeil)
-- [pomverte](https://github.com/pomverte)
-- [apjanke](https://github.com/apjanke)
-- [luce-carevic](https://github.com/luce-carevic)
-- [prksu](https://github.com/prksu)
-- [Clifton893](https://github.com/Clifton893)
-- [echernyavskiy](https://github.com/echernyavskiy)
-- [rohitjmathew](https://github.com/rohitjmathew)
-- [sebastianwebber](https://github.com/sebastianwebber)
-- [viniciusbig](https://github.com/viniciusbig)
-- [at15](https://github.com/at15)
-- [adolgiy](https://github.com/adolgiy)
-- [ylt6](https://github.com/ylt6)
-- [raavanan](https://github.com/raavanan)
-- [mateuszroth](https://github.com/mateuszroth)
-- [jgreely](https://github.com/jgreely)
-- [snood1205](https://github.com/snood1205)
-- [sdavara](https://github.com/sdavara)
-- [ShayMe21](https://github.com/ShayMe21)
-- [tychobrailleur](https://github.com/tychobrailleur)
-- [vmalyi](https://github.com/vmalyi)
-- [williambelle](https://github.com/williambelle)
-- [paicha](https://github.com/paicha)
-- [OmgImAlexis](https://github.com/OmgImAlexis)
-- [vishrutkmr7](https://github.com/vishrutkmr7)
-- [ValentinTrinque](https://github.com/ValentinTrinque)
-- [ztlevi](https://github.com/ztlevi)
-- [tiwu](https://github.com/tiwu)
-- [TamarIS](https://github.com/TamarIS)
-- [sofyan-ahmad](https://github.com/sofyan-ahmad)
-- [shen-tian](https://github.com/shen-tian)
-- [sahildua2305](https://github.com/sahildua2305)
-- [robindboer](https://github.com/robindboer)
-- [rkday](https://github.com/rkday)
-- [barmanrajdeep](https://github.com/barmanrajdeep)
-- [phillipalexander](https://github.com/phillipalexander)
-- [pwallrich](https://github.com/pwallrich)
-- [pelmered](https://github.com/pelmered)
-- [cignoni](https://github.com/cignoni)
-- [nkapliev](https://github.com/nkapliev)
-- [ghostwriternr](https://github.com/ghostwriternr)
-- [woutercx](https://github.com/woutercx)
-- [sslees](https://github.com/sslees)
-- [srhrshr](https://github.com/srhrshr)
-- [shanmoon](https://github.com/shanmoon)
-- [rowmatrix](https://github.com/rowmatrix)
-- [pacahon](https://github.com/pacahon)
-- [yagudin](https://github.com/yagudin)
-- [marfarma](https://github.com/marfarma)
-- [wolfcode](https://github.com/wolfcode)
-- [jsingh-coursera](https://github.com/jsingh-coursera)
-- [garanaveen](https://github.com/garanaveen)
-- [ecmarsh](https://github.com/ecmarsh)
-- [dphansen](https://github.com/dphansen)
-- [dlionz](https://github.com/dlionz)
-- [derekprice](https://github.com/derekprice)
-- [anthuan44](https://github.com/anthuan44)
-- [yogeshg](https://github.com/yogeshg)
-- [yawaramin](https://github.com/yawaramin)
-- [fpinzn](https://github.com/fpinzn)
-- [falkirks](https://github.com/falkirks)
-- [einert](https://github.com/einert)
-- [deyton](https://github.com/deyton)
-- [deepakjadhav288](https://github.com/deepakjadhav288)
-- [cHemingway](https://github.com/cHemingway)
-- [chengweiv5](https://github.com/chengweiv5)
-- [bitdeli-chef](https://github.com/bitdeli-chef)
-- [bsheikh](https://github.com/bsheikh)
-- [Potherca](https://github.com/Potherca)
-- [GuGuss](https://github.com/GuGuss)
-- [apicgg](https://github.com/apicgg)
-- [antonioalmeida](https://github.com/antonioalmeida)
-- [Switchxa](https://github.com/Switchxa)
-- [AlanI-xx](https://github.com/AlanI-xx)
-- [WHFF521](https://github.com/WHFF521)
-- [hisabimbola](https://github.com/hisabimbola)
-- [alichtman](https://github.com/alichtman)
-- [naman](https://github.com/naman)
-- [jk2K](https://github.com/jk2K)
-- [LeonardAukea](https://github.com/LeonardAukea)
-- [adelowo](https://github.com/adelowo)
-- [kaveet](https://github.com/kaveet)
-- [krambertech](https://github.com/krambertech)
-- [kasperpeulen](https://github.com/kasperpeulen)
-- [jsingh41](https://github.com/jsingh41)
-- [rastalamm](https://github.com/rastalamm)
-- [jfloff](https://github.com/jfloff)
-- [josephfrazier](https://github.com/josephfrazier)
-- [thederputy](https://github.com/thederputy)
-- [quackduck](https://github.com/quackduck)
-- [sspkmnd](https://github.com/sspkmnd)
-- [veteranbv](https://github.com/veteranbv)
-- [pgilad](https://github.com/pgilad)
-- [gianpaj](https://github.com/gianpaj)
-- [Frederick-S](https://github.com/Frederick-S)
+Thank you to everyone who has contributed to creating this awesome guide! 🎉
+
+This project exists thanks to all the people who contribute:
+
+<div class="contributors-table">
+
+|   |   |   |   |   |   |
+|---|---|---|---|---|---|
+| [![simeg](https://avatars.githubusercontent.com/u/8566054?v=4&s=80)](https://github.com/simeg)<br/>[simeg](https://github.com/simeg) | [![sb2nov](https://avatars.githubusercontent.com/u/1517779?v=4&s=80)](https://github.com/sb2nov)<br/>[sb2nov](https://github.com/sb2nov) | [![hugovk](https://avatars.githubusercontent.com/u/1324225?v=4&s=80)](https://github.com/hugovk)<br/>[hugovk](https://github.com/hugovk) | [![nicolashery](https://avatars.githubusercontent.com/u/1306536?v=4&s=80)](https://github.com/nicolashery)<br/>[nicolashery](https://github.com/nicolashery) | [![Kyslik](https://avatars.githubusercontent.com/u/2067589?v=4&s=80)](https://github.com/Kyslik)<br/>[Kyslik](https://github.com/Kyslik) | [![kamleshkc2002](https://avatars.githubusercontent.com/u/5467279?v=4&s=80)](https://github.com/kamleshkc2002)<br/>[kamleshkc2002](https://github.com/kamleshkc2002) |
+| [![otkd](https://avatars.githubusercontent.com/u/7527203?v=4&s=80)](https://github.com/otkd)<br/>[otkd](https://github.com/otkd) | [![AidHamza](https://avatars.githubusercontent.com/u/986479?v=4&s=80)](https://github.com/AidHamza)<br/>[AidHamza](https://github.com/AidHamza) | [![michaelbeil](https://avatars.githubusercontent.com/u/4752949?v=4&s=80)](https://github.com/michaelbeil)<br/>[michaelbeil](https://github.com/michaelbeil) | [![pomverte](https://avatars.githubusercontent.com/u/695230?v=4&s=80)](https://github.com/pomverte)<br/>[pomverte](https://github.com/pomverte) | [![apjanke](https://avatars.githubusercontent.com/u/2618447?v=4&s=80)](https://github.com/apjanke)<br/>[apjanke](https://github.com/apjanke) | [![luce-carevic](https://avatars.githubusercontent.com/u/6073336?v=4&s=80)](https://github.com/luce-carevic)<br/>[luce-carevic](https://github.com/luce-carevic) |
+| [![prksu](https://avatars.githubusercontent.com/u/43454825?v=4&s=80)](https://github.com/prksu)<br/>[prksu](https://github.com/prksu) | [![Clifton893](https://avatars.githubusercontent.com/u/56210811?v=4&s=80)](https://github.com/Clifton893)<br/>[Clifton893](https://github.com/Clifton893) | [![echernyavskiy](https://avatars.githubusercontent.com/u/1200767?v=4&s=80)](https://github.com/echernyavskiy)<br/>[echernyavskiy](https://github.com/echernyavskiy) | [![rohitjmathew](https://avatars.githubusercontent.com/u/17832347?v=4&s=80)](https://github.com/rohitjmathew)<br/>[rohitjmathew](https://github.com/rohitjmathew) | [![sebastianwebber](https://avatars.githubusercontent.com/u/2515929?v=4&s=80)](https://github.com/sebastianwebber)<br/>[sebastianwebber](https://github.com/sebastianwebber) | [![viniciusbig](https://avatars.githubusercontent.com/u/191755?v=4&s=80)](https://github.com/viniciusbig)<br/>[viniciusbig](https://github.com/viniciusbig) |
+| [![at15](https://avatars.githubusercontent.com/u/5621298?v=4&s=80)](https://github.com/at15)<br/>[at15](https://github.com/at15) | [![adolgiy](https://avatars.githubusercontent.com/u/22356921?v=4&s=80)](https://github.com/adolgiy)<br/>[adolgiy](https://github.com/adolgiy) | [![ylt6](https://avatars.githubusercontent.com/u/1404615?v=4&s=80)](https://github.com/ylt6)<br/>[ylt6](https://github.com/ylt6) | [![raavanan](https://avatars.githubusercontent.com/u/5575660?v=4&s=80)](https://github.com/raavanan)<br/>[raavanan](https://github.com/raavanan) | [![mateuszroth](https://avatars.githubusercontent.com/u/7356201?v=4&s=80)](https://github.com/mateuszroth)<br/>[mateuszroth](https://github.com/mateuszroth) | [![jgreely](https://avatars.githubusercontent.com/u/5074445?v=4&s=80)](https://github.com/jgreely)<br/>[jgreely](https://github.com/jgreely) |
+| [![snood1205](https://avatars.githubusercontent.com/u/9064062?v=4&s=80)](https://github.com/snood1205)<br/>[snood1205](https://github.com/snood1205) | [![sdavara](https://avatars.githubusercontent.com/u/1996252?v=4&s=80)](https://github.com/sdavara)<br/>[sdavara](https://github.com/sdavara) | [![ShayMe21](https://avatars.githubusercontent.com/u/14830205?v=4&s=80)](https://github.com/ShayMe21)<br/>[ShayMe21](https://github.com/ShayMe21) | [![tychobrailleur](https://avatars.githubusercontent.com/u/114285?v=4&s=80)](https://github.com/tychobrailleur)<br/>[tychobrailleur](https://github.com/tychobrailleur) | [![vmalyi](https://avatars.githubusercontent.com/u/1609148?v=4&s=80)](https://github.com/vmalyi)<br/>[vmalyi](https://github.com/vmalyi) | [![williambelle](https://avatars.githubusercontent.com/u/2843501?v=4&s=80)](https://github.com/williambelle)<br/>[williambelle](https://github.com/williambelle) |
+| [![paicha](https://avatars.githubusercontent.com/u/5148245?v=4&s=80)](https://github.com/paicha)<br/>[paicha](https://github.com/paicha) | [![OmgImAlexis](https://avatars.githubusercontent.com/u/6525926?v=4&s=80)](https://github.com/OmgImAlexis)<br/>[OmgImAlexis](https://github.com/OmgImAlexis) | [![vishrutkmr7](https://avatars.githubusercontent.com/u/12652202?v=4&s=80)](https://github.com/vishrutkmr7)<br/>[vishrutkmr7](https://github.com/vishrutkmr7) | [![ValentinTrinque](https://avatars.githubusercontent.com/u/4662842?v=4&s=80)](https://github.com/ValentinTrinque)<br/>[ValentinTrinque](https://github.com/ValentinTrinque) | [![ztlevi](https://avatars.githubusercontent.com/u/16655096?v=4&s=80)](https://github.com/ztlevi)<br/>[ztlevi](https://github.com/ztlevi) | [![tiwu](https://avatars.githubusercontent.com/u/5226147?v=4&s=80)](https://github.com/tiwu)<br/>[tiwu](https://github.com/tiwu) |
+| [![TamarIS](https://avatars.githubusercontent.com/u/13098813?v=4&s=80)](https://github.com/TamarIS)<br/>[TamarIS](https://github.com/TamarIS) | [![sofyan-ahmad](https://avatars.githubusercontent.com/u/12381175?v=4&s=80)](https://github.com/sofyan-ahmad)<br/>[sofyan-ahmad](https://github.com/sofyan-ahmad) | [![shen-tian](https://avatars.githubusercontent.com/u/4621961?v=4&s=80)](https://github.com/shen-tian)<br/>[shen-tian](https://github.com/shen-tian) | [![sahildua2305](https://avatars.githubusercontent.com/u/5206277?v=4&s=80)](https://github.com/sahildua2305)<br/>[sahildua2305](https://github.com/sahildua2305) | [![robindboer](https://avatars.githubusercontent.com/u/3298842?v=4&s=80)](https://github.com/robindboer)<br/>[robindboer](https://github.com/robindboer) | [![rkday](https://avatars.githubusercontent.com/u/2199416?v=4&s=80)](https://github.com/rkday)<br/>[rkday](https://github.com/rkday) |
+| [![barmanrajdeep](https://avatars.githubusercontent.com/u/2649916?v=4&s=80)](https://github.com/barmanrajdeep)<br/>[barmanrajdeep](https://github.com/barmanrajdeep) | [![phillipalexander](https://avatars.githubusercontent.com/u/1577682?v=4&s=80)](https://github.com/phillipalexander)<br/>[phillipalexander](https://github.com/phillipalexander) | [![pwallrich](https://avatars.githubusercontent.com/u/13999931?v=4&s=80)](https://github.com/pwallrich)<br/>[pwallrich](https://github.com/pwallrich) | [![pelmered](https://avatars.githubusercontent.com/u/680058?v=4&s=80)](https://github.com/pelmered)<br/>[pelmered](https://github.com/pelmered) | [![cignoni](https://avatars.githubusercontent.com/u/8055819?v=4&s=80)](https://github.com/cignoni)<br/>[cignoni](https://github.com/cignoni) | [![nkapliev](https://avatars.githubusercontent.com/u/1843295?v=4&s=80)](https://github.com/nkapliev)<br/>[nkapliev](https://github.com/nkapliev) |
+| [![ghostwriternr](https://avatars.githubusercontent.com/u/10023615?v=4&s=80)](https://github.com/ghostwriternr)<br/>[ghostwriternr](https://github.com/ghostwriternr) | [![woutercx](https://avatars.githubusercontent.com/u/2229953?v=4&s=80)](https://github.com/woutercx)<br/>[woutercx](https://github.com/woutercx) | [![sslees](https://avatars.githubusercontent.com/u/12175940?v=4&s=80)](https://github.com/sslees)<br/>[sslees](https://github.com/sslees) | [![srhrshr](https://avatars.githubusercontent.com/u/2330069?v=4&s=80)](https://github.com/srhrshr)<br/>[srhrshr](https://github.com/srhrshr) | [![shanmoon](https://avatars.githubusercontent.com/u/611551?v=4&s=80)](https://github.com/shanmoon)<br/>[shanmoon](https://github.com/shanmoon) | [![rowmatrix](https://avatars.githubusercontent.com/u/12551294?v=4&s=80)](https://github.com/rowmatrix)<br/>[rowmatrix](https://github.com/rowmatrix) |
+| [![pacahon](https://avatars.githubusercontent.com/u/460489?v=4&s=80)](https://github.com/pacahon)<br/>[pacahon](https://github.com/pacahon) | [![yagudin](https://avatars.githubusercontent.com/u/24841153?v=4&s=80)](https://github.com/yagudin)<br/>[yagudin](https://github.com/yagudin) | [![marfarma](https://avatars.githubusercontent.com/u/27477?v=4&s=80)](https://github.com/marfarma)<br/>[marfarma](https://github.com/marfarma) | [![wolfcode](https://avatars.githubusercontent.com/u/2655300?v=4&s=80)](https://github.com/wolfcode)<br/>[wolfcode](https://github.com/wolfcode) | [![jsingh-coursera](https://avatars.githubusercontent.com/u/20446992?v=4&s=80)](https://github.com/jsingh-coursera)<br/>[jsingh-coursera](https://github.com/jsingh-coursera) | [![garanaveen](https://avatars.githubusercontent.com/u/1855742?v=4&s=80)](https://github.com/garanaveen)<br/>[garanaveen](https://github.com/garanaveen) |
+| [![ecmarsh](https://avatars.githubusercontent.com/u/17396261?v=4&s=80)](https://github.com/ecmarsh)<br/>[ecmarsh](https://github.com/ecmarsh) | [![dphansen](https://avatars.githubusercontent.com/u/682414?v=4&s=80)](https://github.com/dphansen)<br/>[dphansen](https://github.com/dphansen) | [![dlionz](https://avatars.githubusercontent.com/u/14165549?v=4&s=80)](https://github.com/dlionz)<br/>[dlionz](https://github.com/dlionz) | [![derekprice](https://avatars.githubusercontent.com/u/24576813?v=4&s=80)](https://github.com/derekprice)<br/>[derekprice](https://github.com/derekprice) | [![anthuan44](https://avatars.githubusercontent.com/u/19961120?v=4&s=80)](https://github.com/anthuan44)<br/>[anthuan44](https://github.com/anthuan44) | [![yogeshg](https://avatars.githubusercontent.com/u/1059168?v=4&s=80)](https://github.com/yogeshg)<br/>[yogeshg](https://github.com/yogeshg) |
+| [![yawaramin](https://avatars.githubusercontent.com/u/6997?v=4&s=80)](https://github.com/yawaramin)<br/>[yawaramin](https://github.com/yawaramin) | [![fpinzn](https://avatars.githubusercontent.com/u/345207?v=4&s=80)](https://github.com/fpinzn)<br/>[fpinzn](https://github.com/fpinzn) | [![falkirks](https://avatars.githubusercontent.com/u/5827558?v=4&s=80)](https://github.com/falkirks)<br/>[falkirks](https://github.com/falkirks) | [![einert](https://avatars.githubusercontent.com/u/4701832?v=4&s=80)](https://github.com/einert)<br/>[einert](https://github.com/einert) | [![deyton](https://avatars.githubusercontent.com/u/495258?v=4&s=80)](https://github.com/deyton)<br/>[deyton](https://github.com/deyton) | [![deepakjadhav288](https://avatars.githubusercontent.com/u/25546146?v=4&s=80)](https://github.com/deepakjadhav288)<br/>[deepakjadhav288](https://github.com/deepakjadhav288) |
+| [![cHemingway](https://avatars.githubusercontent.com/u/3956920?v=4&s=80)](https://github.com/cHemingway)<br/>[cHemingway](https://github.com/cHemingway) | [![chengweiv5](https://avatars.githubusercontent.com/u/689798?v=4&s=80)](https://github.com/chengweiv5)<br/>[chengweiv5](https://github.com/chengweiv5) | [![bitdeli-chef](https://avatars.githubusercontent.com/u/3092978?v=4&s=80)](https://github.com/bitdeli-chef)<br/>[bitdeli-chef](https://github.com/bitdeli-chef) | [![bsheikh](https://avatars.githubusercontent.com/u/7809061?v=4&s=80)](https://github.com/bsheikh)<br/>[bsheikh](https://github.com/bsheikh) | [![Potherca](https://avatars.githubusercontent.com/u/195757?v=4&s=80)](https://github.com/Potherca)<br/>[Potherca](https://github.com/Potherca) | [![GuGuss](https://avatars.githubusercontent.com/u/1927538?v=4&s=80)](https://github.com/GuGuss)<br/>[GuGuss](https://github.com/GuGuss) |
+| [![apicgg](https://avatars.githubusercontent.com/u/78271602?v=4&s=80)](https://github.com/apicgg)<br/>[apicgg](https://github.com/apicgg) | [![antonioalmeida](https://avatars.githubusercontent.com/u/4543448?v=4&s=80)](https://github.com/antonioalmeida)<br/>[antonioalmeida](https://github.com/antonioalmeida) | [![Switchxa](https://avatars.githubusercontent.com/u/1409106?v=4&s=80)](https://github.com/Switchxa)<br/>[Switchxa](https://github.com/Switchxa) | [![AlanI-xx](https://avatars.githubusercontent.com/u/416119?v=4&s=80)](https://github.com/AlanI-xx)<br/>[AlanI-xx](https://github.com/AlanI-xx) | [![WHFF521](https://avatars.githubusercontent.com/u/88715229?v=4&s=80)](https://github.com/WHFF521)<br/>[WHFF521](https://github.com/WHFF521) | [![hisabimbola](https://avatars.githubusercontent.com/u/9654923?v=4&s=80)](https://github.com/hisabimbola)<br/>[hisabimbola](https://github.com/hisabimbola) |
+| [![alichtman](https://avatars.githubusercontent.com/u/20600565?v=4&s=80)](https://github.com/alichtman)<br/>[alichtman](https://github.com/alichtman) | [![naman](https://avatars.githubusercontent.com/u/5255299?v=4&s=80)](https://github.com/naman)<br/>[naman](https://github.com/naman) | [![jk2K](https://avatars.githubusercontent.com/u/4025839?v=4&s=80)](https://github.com/jk2K)<br/>[jk2K](https://github.com/jk2K) | [![LeonardAukea](https://avatars.githubusercontent.com/u/7058308?v=4&s=80)](https://github.com/LeonardAukea)<br/>[LeonardAukea](https://github.com/LeonardAukea) | [![adelowo](https://avatars.githubusercontent.com/u/12677701?v=4&s=80)](https://github.com/adelowo)<br/>[adelowo](https://github.com/adelowo) | [![kaveet](https://avatars.githubusercontent.com/u/11801260?v=4&s=80)](https://github.com/kaveet)<br/>[kaveet](https://github.com/kaveet) |
+| [![krambertech](https://avatars.githubusercontent.com/u/10474869?v=4&s=80)](https://github.com/krambertech)<br/>[krambertech](https://github.com/krambertech) | [![kasperpeulen](https://avatars.githubusercontent.com/u/1035299?v=4&s=80)](https://github.com/kasperpeulen)<br/>[kasperpeulen](https://github.com/kasperpeulen) | [![jsingh41](https://avatars.githubusercontent.com/u/14501977?v=4&s=80)](https://github.com/jsingh41)<br/>[jsingh41](https://github.com/jsingh41) | [![rastalamm](https://avatars.githubusercontent.com/u/9030131?v=4&s=80)](https://github.com/rastalamm)<br/>[rastalamm](https://github.com/rastalamm) | [![jfloff](https://avatars.githubusercontent.com/u/1867656?v=4&s=80)](https://github.com/jfloff)<br/>[jfloff](https://github.com/jfloff) | [![josephfrazier](https://avatars.githubusercontent.com/u/6473925?v=4&s=80)](https://github.com/josephfrazier)<br/>[josephfrazier](https://github.com/josephfrazier) |
+| [![thederputy](https://avatars.githubusercontent.com/u/737073?v=4&s=80)](https://github.com/thederputy)<br/>[thederputy](https://github.com/thederputy) | [![quackduck](https://avatars.githubusercontent.com/u/38882631?v=4&s=80)](https://github.com/quackduck)<br/>[quackduck](https://github.com/quackduck) | [![sspkmnd](https://avatars.githubusercontent.com/u/5234267?v=4&s=80)](https://github.com/sspkmnd)<br/>[sspkmnd](https://github.com/sspkmnd) | [![veteranbv](https://avatars.githubusercontent.com/u/7597583?v=4&s=80)](https://github.com/veteranbv)<br/>[veteranbv](https://github.com/veteranbv) | [![pgilad](https://avatars.githubusercontent.com/u/4533329?v=4&s=80)](https://github.com/pgilad)<br/>[pgilad](https://github.com/pgilad) | [![gianpaj](https://avatars.githubusercontent.com/u/899175?v=4&s=80)](https://github.com/gianpaj)<br/>[gianpaj](https://github.com/gianpaj) |
+| [![Frederick-S](https://avatars.githubusercontent.com/u/1182395?v=4&s=80)](https://github.com/Frederick-S)<br/>[Frederick-S](https://github.com/Frederick-S) |   |   |   |   |   |
+
+</div>
+
+**103 contributors** • **641 total contributions**
+
+
+---
+
+*Want to contribute? Check out our [contribution guidelines](https://github.com/sb2nov/mac-setup/blob/main/.github/CONTRIBUTION_TEMPLATE.md) and help make this guide even better!*

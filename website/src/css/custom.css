@@ -28,3 +28,95 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Contributors page styling */
+.contributors-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.contributors-table table {
+  width: 100% !important;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.contributors-table img {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ifm-color-primary-light);
+  transition: transform 0.2s ease;
+}
+
+.contributors-table img:hover {
+  transform: scale(1.1);
+  border-color: var(--ifm-color-primary);
+}
+
+.contributors-table td {
+  text-align: center;
+  vertical-align: top;
+  padding: 16px 8px;
+  word-wrap: break-word;
+  min-width: 0;
+  width: 16.66%; /* 100% / 6 columns */
+}
+
+.contributors-table a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+  margin-top: 8px;
+  color: var(--ifm-color-primary);
+}
+
+.contributors-table a:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Remove table borders and header */
+.contributors-table table,
+.contributors-table th,
+.contributors-table td {
+  border: none !important;
+}
+
+.contributors-table thead {
+  display: none;
+}
+
+/* Responsive design for contributors table */
+@media (max-width: 768px) {
+  .contributors-table img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .contributors-table a {
+    font-size: 0.8rem;
+  }
+  
+  .contributors-table td {
+    padding: 12px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contributors-table img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .contributors-table a {
+    font-size: 0.7rem;
+  }
+  
+  .contributors-table td {
+    padding: 8px 2px;
+  }
+}
