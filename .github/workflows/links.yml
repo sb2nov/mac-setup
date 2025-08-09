@@ -1,42 +1,36 @@
-name: Links
+name: Validate URLs
 
 on:
   schedule:
     - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
-  pull_request:          # Run on pull requests
   workflow_dispatch:     # Allow manual trigger
-    inputs:
-      file_pattern:      # Allow specifying a file pattern to check in Github Actions UI
-        description: 'File pattern to check (default: *.md)'
-        required: false
-        default: '*.md'
-      extra_args:
-        description: 'Extra arguments for urlsup'
-        required: false
-        default: '--threads 10 --allow 429'
-
-permissions:
-  contents: read  # Only need read access to repository files
-
-concurrency:
-  group: link-check           # Prevent multiple link-check workflows from running simultaneously
-  cancel-in-progress: true    # Cancel older runs when new ones start
 
 jobs:
-  check-links:
+  validate-urls:
     runs-on: ubuntu-latest
+    name: Validate repository URLs
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Find files to check
-        id: find-files
-        run: |
-          # Use specified pattern (from manual trigger) or default to *.md for markdown files
-          pattern="${{ inputs.file_pattern || '*.md' }}"
-          # Find files matching pattern, exclude hidden directories, convert to space-separated list
-          echo "files=$(find . -name "$pattern" -not -path './.*' -type f | tr '\n' ' ')" >> $GITHUB_OUTPUT
-
-      - name: Validate that links are up
-        uses: simeg/urlsup-action@v1.0.0
+      - name: Validate URLs
+        id: validate-urls
+        uses: simeg/urlsup-action@v2.1
         with:
-          args: ${{ steps.find-files.outputs.files }} ${{ inputs.extra_args || '--threads 10 --allow 429' }} --white-list http://localhost
+          files: '.'                       # Check here
+          recursive: true                  # Include sub-dirs
+          include-extensions: 'md'         # File types to check
+
+          timeout-seconds: 5               # Request timeout in seconds
+          retry: 2                         # Number of retries
+          concurrency: 10                  # Concurrent requests
+
+          allow-status: '200,202,204,429'  # Allowed HTTP status codes
+          allowlist: 'http://localhost'    # Trusted domains
+
+          create-annotations: true         # Show broken URLs in files
+          fail-on-error: true              # Fail workflow on broken URLs
+
+          user-agent: 'mac-setup/1.0'
+
