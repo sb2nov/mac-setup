@@ -43,7 +43,7 @@ brew install emacs-mac [options]
 3. `--with-xml2`, Build with libxml2 support
 4. `--with-ctags`, Don't remove the ctags executable that emacs provides
 5. `--with-no-title-bars`, Build with a patch for no title bars on frames (--HEAD is not supported)
-6. `--with-natural-title-bar`, Build with a patch for title bar color inferred by your theme (--HEAD is not supported). More info is provided [here](https://github.com/railwaycat/homebrew-emacsmacport/wiki/Natural-Title-Bar)
+6. `--with-natural-title-bar`, Build with a patch for title bar color inferred by your theme (--HEAD is not supported). [More info is provided here](https://github.com/railwaycat/homebrew-emacsmacport/wiki/Natural-Title-Bar)
 7. `--with-official-icon`, Using official Emacs icon
 8. `--with-modern-icon`, Using a modern style Emacs icon by @tpanum
 9. `--with-spacemacs-icon`, Using the spacemacs Emacs icon by Nasser Alshammari

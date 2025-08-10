@@ -13,7 +13,7 @@ Docker for Mac is the current release of Docker for macOS.
 
 ### Installation
 
-Docker for Mac can be downloaded [here](https://docs.docker.com/docker-for-mac/install/).
+[Download Docker for Mac here](https://docs.docker.com/docker-for-mac/install/).
 
 ### Prerequisite
 

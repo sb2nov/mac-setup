@@ -17,10 +17,6 @@ Here is a list of apps that are generally good to use and can come in handy in d
 
 ![filemerge](/filemerge.png)
 
-[Kaleidoscope](https://apps.apple.com/us/app/kaleidoscope/id587512244): Another tool for reviewing and merging text, images and folders. Its beautiful user interface and great image diffing capabilities are what sets it apart from other tools. Available for a trial period of 15 days and then it requires payment.
-
-![Kaleidoscope](/kaleidoscope.png)
-
 [Beyond Compare](http://www.scootersoftware.com/): Not only can you compare text with this tool but it also supports diffing Word and PDF contents. In the Pro Version it also supports merging.
 
 ![Beyond Compare](/beyond-compare.png)
