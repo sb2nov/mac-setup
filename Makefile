@@ -1,4 +1,4 @@
-.PHONY: ci deploy deps install lint serve build
+.PHONY: ci build deploy deps lint serve
 
 YARN			= $(shell command -v yarn 2> /dev/null)
 MARKDOWNLINT	= $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
