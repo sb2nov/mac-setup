@@ -31,7 +31,7 @@ This project exists thanks to all the people who contribute:
 
 </div>
 
-**103 contributors** • **643 total contributions**
+**103 contributors** • **653 total contributions**
 
 ---
 
