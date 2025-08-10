@@ -7,7 +7,7 @@ Mac. Whether you are an experienced programmer or not, this guide is intended
 for everyone to use as a reference for setting up your environment or
 installing languages/libraries.
 
-[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/main/assets/intro.gif)](https://raw.githubusercontent.com/sb2nov/mac-setup/main/assets/intro.gif)
+[![Screen](https://raw.githubusercontent.com/sb2nov/mac-setup/refs/heads/main/static/assets/intro.gif)](https://raw.githubusercontent.com/sb2nov/mac-setup/refs/heads/main/static/assets/intro.gif)
 
 Some environments we will set up are [Node](https://nodejs.org)
 (JavaScript), [Python](https://www.python.org),

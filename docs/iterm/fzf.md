@@ -51,12 +51,7 @@ fh() {
 }
 ```
 
-**For more fuzzy search examples see the
-[official repo](https://github.com/junegunn/fzf#fuzzy-completion-for-bash-and-zsh).**
-
 ### Chrome history from your terminal
-
-**Note**: original [blog post](https://junegunn.kr/2015/04/browsing-chrome-history-with-fzf/)
 
 Open up your shell config and add following function:
 
