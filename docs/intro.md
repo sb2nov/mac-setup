@@ -5,7 +5,7 @@ description: Installing Development environment on macOS
 id: intro
 ---
 
-[![Test](https://github.com/sb2nov/mac-setup/workflows/Test/badge.svg)](https://github.com/sb2nov/mac-setup/actions?query=workflow%3ATest) [![Links](https://github.com/sb2nov/mac-setup/workflows/Links/badge.svg)](https://github.com/sb2nov/mac-setup/actions?query=workflow%3ALinks)
+[![Test](https://github.com/sb2nov/mac-setup/workflows/Test/badge.svg)](https://github.com/sb2nov/mac-setup/actions?query=workflow%3ATest) [![Validate URLs](https://github.com/sb2nov/mac-setup/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/sb2nov/mac-setup/actions/workflows/links.yml)
 
 This guide covers the basics of setting up a development environment on a new
 Mac. Whether you are an experienced programmer or not, this guide is intended
