@@ -27,4 +27,4 @@ Now you can open a file with `subl myfile.py` or start a new project in the curr
 
 ## Pricing
 
-Sublime Text is not free but it has an unlimited evaluation period that comes with notification pop-ups asking you to buy it, if you wish to remove the pop-ups you can purchase the tool [here](http://www.sublimetext.com/buy).
+Sublime Text is not free but it has an unlimited evaluation period that comes with notification pop-ups asking you to buy it, [if you wish to remove the pop-ups you can purchase the tool here](http://www.sublimetext.com/buy).

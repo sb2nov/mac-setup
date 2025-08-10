@@ -3,7 +3,7 @@ title: Scala
 ---
 
 
-Make sure you have Java installed, the instructions are provided [here](/java).
+Make sure you have Java installed, [the instructions are provided here](/java).
 
 ```sh
 brew update

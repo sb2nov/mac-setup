@@ -20,11 +20,6 @@ These settings are optional. Some of them are highly subjective and should not b
 
 - Add the music folder to the library
 
-## Notebooks
-
-- Set the default directory to a folder inside Dropbox for CloudSync
-- Overwrite one of the themes in the app with [GitHub Mardown CSS](https://gist.github.com/andyferra/2554919)
-
 ## Spectacle
 
 - Update all major combinations to work with `Shift + Control + 1-9`
