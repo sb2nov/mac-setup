@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-readonly commands=(git npm)
+readonly commands=(git yarn)
 
 # Make sure we don't push unrelated changes
 if [[ $(git status -s | wc -l) -gt 0 ]]; then
@@ -9,12 +9,12 @@ if [[ $(git status -s | wc -l) -gt 0 ]]; then
 fi
 
 function is_available {
-  command -v $1 >/dev/null 2>&1 ||
+  command -v "$1" >/dev/null 2>&1 ||
     { echo >&2 "🚨 I require $1 but it's not installed. Aborting."; exit 1; }
 }
 
 # Make sure all executables are available on $PATH
-for cmd in ${commands[@]}; do is_available "$cmd"; done
+for cmd in "${commands[@]}"; do is_available "$cmd"; done
 echo "✅ All required packages are available, will continue"
 
 echo "👥 Updating list of contributors.."
@@ -30,17 +30,19 @@ fi
 
 echo "📖 Building the guide using Docusaurus.."
 yarn install
-npm run build
+yarn run build
 echo "📖 Done building guide"
 
 # Get current commit hash before switching branches
-readonly MAIN_HASH=$(git rev-parse --short HEAD)
+declare MAIN_HASH
+MAIN_HASH=$(git rev-parse --short HEAD)
+readonly MAIN_HASH
 
 git checkout gh-pages
 git pull origin gh-pages --rebase
 
 # Clean old files and copy new build
-rm -rf *.html *.css *.js assets img docs static
+rm -rf ./*.html ./*.css ./*.js ./assets ./img ./docs ./static
 cp -R build/* .
 
 echo "🌲 Cleaning untracked files from working tree.."
