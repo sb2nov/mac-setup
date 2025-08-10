@@ -1,0 +1,292 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/mac-setup/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/mac-setup/",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "apps/index",
+              "path": "/mac-setup/apps/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "apps/octave",
+              "path": "/mac-setup/apps/octave",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "apps/settings",
+              "path": "/mac-setup/apps/settings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "bash-completion",
+              "path": "/mac-setup/bash-completion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "contributors",
+              "path": "/mac-setup/contributors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "cpp",
+              "path": "/mac-setup/cpp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docker/index",
+              "path": "/mac-setup/docker/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docker/tips-and-tricks",
+              "path": "/mac-setup/docker/tips-and-tricks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docker/useful-commands",
+              "path": "/mac-setup/docker/useful-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "emacs",
+              "path": "/mac-setup/emacs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "git/gitignore",
+              "path": "/mac-setup/git/gitignore",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "git/index",
+              "path": "/mac-setup/git/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "go",
+              "path": "/mac-setup/go",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "heroku",
+              "path": "/mac-setup/heroku",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "homebrew/cask",
+              "path": "/mac-setup/homebrew/cask",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "homebrew/index",
+              "path": "/mac-setup/homebrew/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "homebrew/usage",
+              "path": "/mac-setup/homebrew/usage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/mac-setup/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "iterm/ack",
+              "path": "/mac-setup/iterm/ack",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "iterm/fzf",
+              "path": "/mac-setup/iterm/fzf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "iterm/index",
+              "path": "/mac-setup/iterm/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "iterm/tree",
+              "path": "/mac-setup/iterm/tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "iterm/zsh",
+              "path": "/mac-setup/iterm/zsh",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "java/index",
+              "path": "/mac-setup/java/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "java/sdkman",
+              "path": "/mac-setup/java/sdkman",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "jetbrains-ides",
+              "path": "/mac-setup/jetbrains-ides",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "latex",
+              "path": "/mac-setup/latex",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mysql",
+              "path": "/mac-setup/mysql",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nodejs",
+              "path": "/mac-setup/nodejs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "postgresql",
+              "path": "/mac-setup/postgresql",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python/index",
+              "path": "/mac-setup/python/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python/ipython",
+              "path": "/mac-setup/python/ipython",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python/numpy",
+              "path": "/mac-setup/python/numpy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python/pip",
+              "path": "/mac-setup/python/pip",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "python/virtualenv",
+              "path": "/mac-setup/python/virtualenv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "references",
+              "path": "/mac-setup/references",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ruby/index",
+              "path": "/mac-setup/ruby/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ruby/rubygems",
+              "path": "/mac-setup/ruby/rubygems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "rust",
+              "path": "/mac-setup/rust",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "scala",
+              "path": "/mac-setup/scala",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security",
+              "path": "/mac-setup/security",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sublime-text/index",
+              "path": "/mac-setup/sublime-text/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sublime-text/packages",
+              "path": "/mac-setup/sublime-text/packages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sublime-text/plugins",
+              "path": "/mac-setup/sublime-text/plugins",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sublime-text/preferences",
+              "path": "/mac-setup/sublime-text/preferences",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sublime-text/sublime-linter",
+              "path": "/mac-setup/sublime-text/sublime-linter",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "system-preferences",
+              "path": "/mac-setup/system-preferences",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vagrant",
+              "path": "/mac-setup/vagrant",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vim",
+              "path": "/mac-setup/vim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "visual-studio-code",
+              "path": "/mac-setup/visual-studio-code",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "xcode",
+              "path": "/mac-setup/xcode",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/mac-setup/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-XXXXXXXXXX"
+      ],
+      "anonymizeIP": true,
+      "id": "default"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "latex",
+  "title": "LaTeX",
+  "description": "LaTeX, which is pronounced «Lah-tech» or «Lay-tech», is a document preparation system for high-quality typesetting. It is most often used for medium-to-large technical or scientific documents but it can be used for almost any form of publishing.",
+  "source": "@site/docs/latex.md",
+  "sourceDirName": ".",
+  "slug": "/latex",
+  "permalink": "/mac-setup/latex",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/latex.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "LaTeX"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tips and Tricks",
+    "permalink": "/mac-setup/docker/tips-and-tricks"
+  },
+  "next": {
+    "title": "Other Apps",
+    "permalink": "/mac-setup/apps/"
+  }
+}

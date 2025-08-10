@@ -1,0 +1,26 @@
+{
+  "id": "postgresql",
+  "title": "PostgreSQL",
+  "description": "PostgreSQL is an open source relational database management system (RDBMS). It is the default database for macOS server.",
+  "source": "@site/docs/postgresql.md",
+  "sourceDirName": ".",
+  "slug": "/postgresql",
+  "permalink": "/mac-setup/postgresql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/postgresql.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "PostgreSQL"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "JetBrains IDEs",
+    "permalink": "/mac-setup/jetbrains-ides"
+  },
+  "next": {
+    "title": "Python",
+    "permalink": "/mac-setup/python/"
+  }
+}

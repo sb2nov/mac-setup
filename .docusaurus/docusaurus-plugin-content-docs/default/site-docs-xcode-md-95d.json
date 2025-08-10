@@ -1,0 +1,26 @@
+{
+  "id": "xcode",
+  "title": "Xcode",
+  "description": "Xcode is an integrated development environment for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, watchOS and tvOS.",
+  "source": "@site/docs/xcode.md",
+  "sourceDirName": ".",
+  "slug": "/xcode",
+  "permalink": "/mac-setup/xcode",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/xcode.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Xcode"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "System Preferences",
+    "permalink": "/mac-setup/system-preferences"
+  },
+  "next": {
+    "title": "Homebrew",
+    "permalink": "/mac-setup/homebrew/"
+  }
+}

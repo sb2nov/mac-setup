@@ -1,0 +1,26 @@
+{
+  "id": "mysql",
+  "title": "MySQL",
+  "description": "Installation",
+  "source": "@site/docs/mysql.md",
+  "sourceDirName": ".",
+  "slug": "/mysql",
+  "permalink": "/mac-setup/mysql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sb2nov/mac-setup/tree/main/docs/mysql.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "MySQL"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "IPython",
+    "permalink": "/mac-setup/python/ipython"
+  },
+  "next": {
+    "title": "C++",
+    "permalink": "/mac-setup/cpp"
+  }
+}
