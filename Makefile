@@ -31,7 +31,7 @@ lint:
 ifeq ($(MARKDOWNLINT),)
 	$(error "markdownlint is not installed, run 'make deps' to install it")
 else
-	@$(MARKDOWNLINT) . --ignore node_modules --ignore website/node_modules --ignore website/build && echo 'All good 👌'
+	@$(MARKDOWNLINT) . --ignore node_modules --ignore build && echo 'All good 👌'
 endif
 
 # Start a development server

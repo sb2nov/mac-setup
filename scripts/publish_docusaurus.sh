@@ -19,10 +19,10 @@ echo "✅ All required packages are available, will continue"
 
 echo "👥 Updating list of contributors.."
 node ./scripts/generate_contributors.js
-if git diff --quiet website/docs/contributors.md; then
+if git diff --quiet docs/contributors.md; then
   echo "👥 No contributor changes to commit"
 else
-  git add website/docs/contributors.md
+  git add docs/contributors.md
   git commit -m "Update list of contributors"
   git push origin main
   echo "👥 Completed updating list of contributors"
@@ -41,12 +41,12 @@ git pull origin gh-pages --rebase
 
 # Clean old files and copy new build
 rm -rf *.html *.css *.js assets img docs static
-cp -R website/build/* .
+cp -R build/* .
 
 echo "🌲 Cleaning untracked files from working tree.."
 git clean -fx node_modules
-git clean -fx website/node_modules
-git clean -fx website/build
+git clean -fx node_modules
+git clean -fx build
 echo "🌲 Done cleaning untracked files"
 
 git add .

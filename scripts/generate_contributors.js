@@ -13,7 +13,7 @@ const path = require('path');
 // Configuration
 const CONFIG = {
   PAGE_COUNT: 6, // Increased to get more contributors
-  FILE_NAME: "website/docs/contributors.md",
+  FILE_NAME: "docs/contributors.md",
   BASE_URL: "https://api.github.com/repos/sb2nov/mac-setup/contributors?page=",
   MIN_CONTRIBUTIONS: 1, // Minimum contributions to be included
   AVATAR_SIZE: 80, // Size of GitHub avatar images (larger for better visibility)
