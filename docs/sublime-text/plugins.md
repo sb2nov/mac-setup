@@ -23,7 +23,7 @@ title: Plugins
 - [Python Imports Sorter](https://github.com/vi4m/sublime_python_imports): Sublime Text 2 plugin to organize your imports easily
 - [PythonTraceback](https://github.com/kedder/sublime-python-traceback): Easy navigation in your python tracebacks
 - [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements): Enhancements to sidebar. Files and folders.
-- [SublimeCodeIntel](https://www.sublimecodeintel.com/): Full-featured code intelligence and smart auto-complete engine
+- [SublimeCodeIntel](https://packagecontrol.io/packages/SublimeCodeIntel): Full-featured code intelligence and smart auto-complete engine
 - [SublimeLinter](http://sublimelinter.readthedocs.org/): Interactive code linting framework for Sublime Text 3
 - [SublimeLinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8): Linter plugin for python using PEP8
 - [TrailingSpaces](https://github.com/SublimeText/TrailingSpaces): Highlight trailing spaces and delete them in a flash
