@@ -3,7 +3,7 @@ title: Octave
 ---
 
 
-[Octave](https://www.gnu.org/software/octave/) is a programming language for scientific computing.
+[Octave](https://octave.org/) is a programming language for scientific computing.
 
 ## Prerequisite
 
