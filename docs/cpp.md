@@ -3,19 +3,19 @@ title: C++
 ---
 
 
-Make sure you have installed [Xcode Command Line Tools](/xcode). Check the C++ version to make sure it is Clang 4.0+.
+Make sure you have installed [Xcode Command Line Tools](/xcode). Verify the compiler is available:
 
 ```console
 $ c++ --version
-Apple LLVM version 5.1 (clang-503.0.38) (based on LLVM 3.4svn)
-Target: x86_64-apple-darwin13.1.0
+Apple clang version 16.0.0 (clang-1600.0.26.6)
+Target: arm64-apple-darwin24.3.0
 Thread model: posix
 ```
 
-To be able to compile files from your terminal you can add the following alias in your `env.sh` file.
+To be able to compile files from your terminal you can add the following alias in your shell configuration file (e.g. `~/.zshrc`).
 
 ```sh
-alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+alias cppcompile='c++ -std=c++17 -stdlib=libc++'
 ```
 
-Then you can run all cpp file directly using `cppcompile main.cpp` and it will use C++11 so no errors in the case of using vectors, auto, sets etc.
+Then you can run all cpp file directly using `cppcompile main.cpp` and it will use C++17.

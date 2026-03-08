@@ -7,24 +7,36 @@ Bash completion is a bash function that allows you to auto complete commands or
 arguments by typing partially commands or arguments, then pressing the [Tab]
 key. This will help you when writing the bash command in terminal.
 
-## Installation
+## Install Latest Bash
+
+macOS ships with an outdated version of Bash (3.2). You can install the latest
+version using Homebrew:
 
 ```sh
-brew install bash-completion
+brew install bash
 ```
 
-Bash completion will be installed in `/usr/local/etc/bash_completion.d`.
+To use the Homebrew-installed Bash as your default shell, add it to the list of
+allowed shells and set it:
+
+```sh
+sudo sh -c 'echo "$(brew --prefix)/bin/bash" >> /etc/shells'
+chsh -s "$(brew --prefix)/bin/bash"
+```
+
+## Installation
+
+Use `bash-completion@2`, which is designed for Bash 4.2+ (the version installed
+by Homebrew):
+
+```sh
+brew install bash-completion@2
+```
 
 For it to work, add this to your `~/.bash_profile`:
 
 ```sh
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-```
-
-Or simply type:
-
-```sh
-echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 ```
 
 Restart your bash session:
@@ -49,7 +61,7 @@ bisect         cherry         commit         fetch          grep           log  
 
 ## More
 
-You can list additional completion packages are available by typing:
+You can list additional completion packages available by typing:
 
 ```sh
 brew search completion
@@ -60,6 +72,3 @@ And you can install them using `brew install` commands, for example:
 ```sh
 brew install docker-completion
 ```
-
-*You can also manually add a bash completion file into
-`/usr/local/etc/bash_completion.d`*

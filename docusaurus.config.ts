@@ -102,7 +102,7 @@ const config: Config = {
           title: 'Guide',
           items: [
             {
-              label: 'System Preferences',
+              label: 'System Settings',
               to: '/system-preferences',
             },
             {

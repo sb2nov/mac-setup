@@ -3,19 +3,12 @@ title: Pip
 ---
 
 
-macOS comes with Python so there's a chance `pip` is already installed on your machine.
+[pip](https://pip.pypa.io/) is the package manager for Python. If you installed Python via Homebrew or pyenv, `pip` is already included.
 
-## Installation
-
-```console
-curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-sudo python get-pip.py
-```
-
-To verify `pip` is installed properly run
+## Verify Installation
 
 ```sh
-pip --version
+pip3 --version
 ```
 
 If it returns a version `pip` was successfully installed.
@@ -27,23 +20,23 @@ Here are a few `pip` commands to get you started.
 Install a Python package
 
 ```sh
-pip install <package>
+pip3 install <package>
 ```
 
 Upgrade a package
 
 ```sh
-pip install --upgrade <package>
+pip3 install --upgrade <package>
 ```
 
 See what's installed
 
 ```sh
-pip freeze
+pip3 freeze
 ```
 
 Uninstall a package
 
 ```sh
-pip uninstall <package>
+pip3 uninstall <package>
 ```

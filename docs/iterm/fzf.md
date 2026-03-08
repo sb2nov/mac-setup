@@ -19,7 +19,7 @@ brew install fzf
 If you want to use shell extensions (better shell integration):
 
 ```sh
-/usr/local/opt/fzf/install
+$(brew --prefix)/opt/fzf/install
 ```
 
 which gives you:

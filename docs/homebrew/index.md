@@ -10,42 +10,33 @@ macOS_ and is an essential tool for any developer.
 
 Before you can run Homebrew you need to have the **Command Line Tools for
 Xcode** installed. It include compilers and other tools that will allow you
-to build things from source, and if you are missing this it's available
-through the App Store > Updates. You can also install it from the terminal
+to build things from source. You can install it from the terminal
 by running the following:
 
 ```sh
-sudo xcode-select --install
+xcode-select --install
 ```
 
 To install Homebrew run the following in a terminal:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 hit **Enter**, and follow the steps on the screen.
 
 ### Setting up your `PATH`
 
-To make the Homebrew-installed programs available in your shell, you need to add
-your Homebrew installation location to your `$PATH`. This is done for you already on
-macOS 10.14 Mojave and newer. For older versions of macOS, do the following:
-
-You change your path by adding `/usr/local/bin` to your `PATH` environment variable.
-This can be done on a per-user basis by adjusting `PATH` in your `~/.bash_profile`.
-To do this, run:
+On Apple Silicon Macs (M1/M2/M3/M4), Homebrew installs to `/opt/homebrew`. The
+installer will print instructions to add Homebrew to your `PATH`. Typically you
+need to add this to your `~/.zprofile` (or `~/.bash_profile` if using Bash):
 
 ```sh
-echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-(If you're using `zsh`, you should do this for `~/.zshrc` in addition to
-`~/.bash_profile`.)
-
-Alternatively, you can also insert `/usr/local/bin` before the first line of
-`/etc/paths` to change the global default paths order, for all users and all
-major shells. An admin password will be required if you modify the file.
+On Intel Macs, Homebrew installs to `/usr/local` and is generally already on
+your `PATH`.
 
 Then, to be able to use `brew` you need to start a new terminal session. After that
 you should make sure everything is working by running:

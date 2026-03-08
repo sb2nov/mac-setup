@@ -7,8 +7,6 @@ title: MySQL
 
 We will install MySQL using Homebrew, which will also install some header files needed for MySQL bindings in different programming languages (MySQL-Python for one).
 
-> **Note**: Sequel Pro does not support latest MySQL (version 8), because of that you may want to install MySQL 5.7 instead - `brew install mysql@5.7`.
-
 ```sh
 brew install mysql
 ```
