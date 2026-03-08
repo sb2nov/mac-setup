@@ -37,7 +37,7 @@ Both of these tools can't compare in terms of features and user interface with t
 
 ## Productivity
 
-- [1Password](https://agilebits.com/onepassword): Cross platform password management tool.
+- [1Password](https://1password.com): Cross platform password management tool.
 - [Airmail](http://airmailapp.com/): Lightweight fast email client.
 - [Alfred](http://www.alfredapp.com/): Spotlight on steroids.
 - [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704): Stops the machine from going into sleep mode.
