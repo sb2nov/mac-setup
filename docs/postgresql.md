@@ -8,7 +8,7 @@ PostgreSQL is an open source relational database management system (RDBMS). It i
 ## Installation
 
 ```sh
-brew install postgres
+brew install postgresql
 ```
 
 After this, we can test the installation status by checking the version of installed PostgreSQL
@@ -21,23 +21,15 @@ postgres -V
 
 ### Start PostgreSQL server
 
-```sh
-pg_ctl -D /usr/local/var/postgres start
-```
-
-Or you can start the PostgreSQL server and have it start up at login automatically
+The recommended way to manage PostgreSQL is via Homebrew services:
 
 ```sh
 brew services start postgresql
 ```
 
+This starts the server now and also sets it to start automatically at login.
+
 ### Stop PostgreSQL server
-
-```sh
-pg_ctl -D /usr/local/var/postgres stop
-```
-
-To make it stop starting up automatically at login
 
 ```sh
 brew services stop postgresql
@@ -46,27 +38,15 @@ brew services stop postgresql
 ### Restart PostgreSQL server
 
 ```sh
-pg_ctl -D /usr/local/var/postgres restart
-```
-
-Or if you're using `homebrew`
-
-```sh
 brew services restart postgresql
 ```
 
 ### Start PostgreSQL console
 
 ```sh
-psql
+psql postgres
 ```
 
 ### GUI tool
 
-We can use `psequel` a free GUI tool for managing the local and remote PostgreSQL databases
-
-Install `psequel` using `homebrew`
-
-```sh
-brew install psequel
-```
+[Postico](https://eggerapps.at/postico2/) is a popular GUI client for PostgreSQL on macOS. Alternatively, [TablePlus](https://tableplus.com/) supports PostgreSQL and many other databases.

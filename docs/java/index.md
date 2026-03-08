@@ -8,7 +8,7 @@ We'll use a JDK since it can do everything a JRE can, plus more.
 
 ## Choosing a JDK
 
-As of 2019, there are two major JDKs: OpenJDK (also known as AdoptOpenJDK) and the Oracle JDK.
+There are two major JDKs: OpenJDK and the Oracle JDK.
 OpenJDK and Oracle JDK provide the same functionality, and are even built from the same code base.
 They differ only in their packaging and licensing.
 
@@ -29,9 +29,9 @@ java -version
 If you see a non-empty output like below then Java is already installed on your machine and you are good to go
 
 ```sh
-openjdk version "13.0.2" 2020-01-14
-OpenJDK Runtime Environment AdoptOpenJDK (build 13.0.2+8)
-OpenJDK 64-Bit Server VM AdoptOpenJDK (build 13.0.2+8, mixed mode, sharing)
+openjdk version "21.0.2" 2024-01-16
+OpenJDK Runtime Environment Homebrew (build 21.0.2)
+OpenJDK 64-Bit Server VM Homebrew (build 21.0.2, mixed mode, sharing)
 ```
 
 If you don't see the output like above then you need to install Java on your system
@@ -56,7 +56,6 @@ Once you've done that, check if Java is correctly installed by running the `java
 
 #### Downloading and installing OpenJDK manually
 
-Open a web browser and go to [https://adoptopenjdk.net/](https://adoptopenjdk.net/). Select "OpenJDK 11 (LTS)" and "HotSpot".
-Click the big "Latest release" button and run the installer file that gets downloaded.
+Open a web browser and go to [Adoptium](https://adoptium.net/). Select the latest LTS version and download the installer for macOS.
 
 Once you've done that, check if Java is correctly installed by opening a new Terminal session and running the `java -version` command again.

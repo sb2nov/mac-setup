@@ -27,4 +27,4 @@ To verify you can run:
 rustc --version
 ```
 
-[The official documentation on how to install Rust](https://rust-lang.org/tools/install/).
+[The official documentation on how to install Rust](https://www.rust-lang.org/tools/install).

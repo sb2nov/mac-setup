@@ -18,7 +18,7 @@ brew install node
 Download and install [nvm](https://github.com/nvm-sh/nvm) by running:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 
 or via Homebrew:
@@ -48,12 +48,6 @@ To install a package:
 ```sh
 npm install <package> # Install locally
 npm install -g <package> # Install globally
-```
-
-To install a package and save it in your project's `package.json` file:
-
-```sh
-npm install <package> --save
 ```
 
 To see what's installed:

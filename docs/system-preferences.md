@@ -1,18 +1,21 @@
 ---
-title: System Preferences
+title: System Settings
 ---
 
 ## First Time Setup
 
 The first thing you should do is update your system. To do that go:
-**Apple menu () > About This Mac > Software Update.**
+**Apple menu () > System Settings > General > Software Update.**
 
 Also upgrade your OS to the latest version to have a more secure OS. macOS
 upgrades are usually free so you might as well keep your machine up to date.
 
 If this is a new computer there are a couple tweaks you could make to the
-System Preferences. **These settings are all optional, consider them
+System Settings. **These settings are all optional, consider them
 suggestions. Always choose the setting that makes the most sense to you.**
+
+> **Note**: On macOS Ventura (13) and later, "System Preferences" has been
+> renamed to "System Settings" with a redesigned interface.
 
 ## Users & Groups
 
@@ -57,7 +60,7 @@ killall Dock # Restart the Dock process
 
 - Uncheck _fonts_, _images_, _files_ etc.
 - Uncheck the _keyboard shortcuts_ as we'll be replacing them with
-  [_Alfred_](https://www.alfredapp.com/)
+  [_Raycast_](https://www.raycast.com/)
 
 ## Accounts
 

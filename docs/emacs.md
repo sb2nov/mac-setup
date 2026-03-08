@@ -5,7 +5,7 @@ title: Emacs
 
 [Emacs](https://www.gnu.org/software/emacs/) is a family of text editors that are characterized by their extensibility. The manual for the most widely used variant, GNU Emacs, describes it as the extensible, customizable, self-documenting, real-time display editor.
 
-Development of the first Emacs began in the mid-1970s, and work on its direct descendant, GNU Emacs, continues actively as of 2017.
+Development of the first Emacs began in the mid-1970s, and work on its direct descendant, GNU Emacs, continues actively.
 
 ## Installation
 
@@ -59,25 +59,13 @@ Start off by tapping the official emacs-plus cask.
 brew tap d12frosted/emacs-plus
 ```
 
-Emacs Plus contains separate formulas for different Emacs versions:
-
-* emacs-plus - installs Emacs 26, current release version.
+Install the latest version of Emacs Plus:
 
 ```sh
 brew install emacs-plus [options]
 ```
 
-* emacs-plus@27 - installs Emacs 27, next release version.
-
-```sh
-brew install emacs-plus@27 [options]
-```
-
-* emacs-plus@28 - installs Emacs 28, development version.
-
-```sh
-brew install emacs-plus@28 [options]
-```
+You can also install specific versions (e.g. `emacs-plus@29`, `emacs-plus@30`).
 
 <details>
 <summary>Click here to see available options: </summary>
@@ -170,17 +158,13 @@ Upon starting up Emacs for the first time, further third-party packages will be 
 
 ## Doom Emacs
 
-[Doom](https://github.com/hlissner/doom-emacs) is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn't originally intended for public use, but can be considered a hacker's starter kit.
+[Doom Emacs](https://github.com/doomemacs/doomemacs) is a configuration framework for GNU Emacs. It can be considered a hacker's starter kit.
 
 ### Installation
 
 ```sh
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-cd ~/.emacs.d
-cp init.example.el init.el  # maybe edit init.el
-make install
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
 ```
 
-Don't forget to run `make` every time you modify `init.el`!
-
-Visit the wiki for [a more detailed guide on installing, customizing and grokking Doom](https://github.com/hlissner/doom-emacs/wiki).
+Visit the [documentation](https://github.com/doomemacs/doomemacs/blob/master/docs/getting_started.org) for a more detailed guide on installing and customizing Doom.
