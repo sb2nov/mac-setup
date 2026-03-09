@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
       items: ['git/index', 'git/gitignore'],
     },
     'bash-completion',
+    'x-cmd',
     'vim',
     'emacs',
     {
