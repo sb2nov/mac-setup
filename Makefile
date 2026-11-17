@@ -1,10 +1,10 @@
-.PHONY: ci build deploy deps lint serve
+.PHONY: ci build deploy deps lint serve typecheck
 
 YARN			= $(shell command -v yarn 2> /dev/null)
 MARKDOWNLINT	= $(shell command -v ./node_modules/.bin/markdownlint 2> /dev/null)
 
-# This is run on CI to verify linting is OK and that the guide builds
-ci: lint build
+# This is run on CI to verify linting/types are OK and that the guide builds
+ci: lint typecheck build
 
 # Build the Docusaurus site
 build:
@@ -24,6 +24,14 @@ ifeq ($(YARN),)
 	$(error "yarn is not available, please install Yarn")
 else
 	$(YARN) install
+endif
+
+# Type-check the Docusaurus config and React components
+typecheck:
+ifeq ($(YARN),)
+	$(error "yarn is not available, please install Yarn")
+else
+	$(YARN) run typecheck
 endif
 
 # Lint markdown files

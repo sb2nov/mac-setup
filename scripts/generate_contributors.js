@@ -5,8 +5,7 @@
  * and URLs to the Contributors.md file.
  */
 
-// Use native fetch in Node.js 18+ or fallback to node-fetch
-const fetch = globalThis.fetch || require('node-fetch');
+// Uses the global fetch built into Node.js 18+
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -150,8 +149,9 @@ const generateContributorGrid = (contributors) => {
   markdown += '<div class="contributors-table">\n\n';
 
   // Create table header (empty headers that will be hidden by CSS)
-  markdown += '|' + '   |'.repeat(COLUMNS) + '\n';
-  markdown += '|' + '---|'.repeat(COLUMNS) + '\n';
+  // Uses the "compact" table style expected by markdownlint (MD060)
+  markdown += '|' + ' |'.repeat(COLUMNS) + '\n';
+  markdown += '|' + ' --- |'.repeat(COLUMNS) + '\n';
 
   // Group contributors into rows
   for (let i = 0; i < sortedContributors.length; i += COLUMNS) {
@@ -168,11 +168,11 @@ const generateContributorGrid = (contributors) => {
         rowCells.push(cell);
       } else {
         // Empty cell for incomplete rows
-        rowCells.push(' ');
+        rowCells.push('');
       }
     }
 
-    markdown += `| ${rowCells.join(' | ')} |\n`;
+    markdown += '|' + rowCells.map(cell => (cell ? ` ${cell} |` : ' |')).join('') + '\n';
   }
 
   // Close the div wrapper
