@@ -40,7 +40,10 @@
   },
   "resolutions": {
     "serialize-javascript": "^7.0.5",
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "tinypool": "^2.2.0",
+    "katex": "^0.19.1",
+    "markdownlint-cli/minimatch": "^11.0.9"
   },
   "repository": {
     "type": "git",
