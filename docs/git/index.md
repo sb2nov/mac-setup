@@ -2,8 +2,7 @@
 title: Git
 ---
 
-
-What's a developer without [Git](http://git-scm.com/)? To install, run:
+What's a developer without [Git](https://git-scm.com/)? To install, run:
 
 ```sh
 brew install git
@@ -17,30 +16,9 @@ git --version
 
 And `which git` should output `/opt/homebrew/bin/git` (Apple Silicon) or `/usr/local/bin/git` (Intel).
 
-### Git LFS
+## Configure Git
 
-[Git Large File Storage](https://git-lfs.github.com/) replaces large files with text pointers inside Git while storing the file contents on a remote server.
-
-```sh
-brew install git-lfs
-git lfs install
-```
-
-### GitHub CLI
-
-The [GitHub CLI](https://cli.github.com/) (`gh`) brings GitHub to your terminal. You can create PRs, review code, manage issues, and more without leaving the command line.
-
-```sh
-brew install gh
-```
-
-Authenticate with your GitHub account:
-
-```sh
-gh auth login
-```
-
-Next, we'll define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
+Next, define your Git user (should be the same name and email you use for [GitHub](https://github.com/)):
 
 ```sh
 git config --global user.name "Your Name Here"
@@ -53,6 +31,29 @@ To push code to your GitHub repositories, we will use the recommended HTTPS meth
 
 ```sh
 git config --global credential.helper osxkeychain
+```
+
+## Git LFS
+
+[Git Large File Storage](https://git-lfs.com/) replaces large files with text pointers inside Git while storing the file contents on a remote server.
+
+```sh
+brew install git-lfs
+git lfs install
+```
+
+## GitHub CLI
+
+The [GitHub CLI](https://cli.github.com/) (`gh`) brings GitHub to your terminal. You can create PRs, review code, manage issues, and more without leaving the command line.
+
+```sh
+brew install gh
+```
+
+Authenticate with your GitHub account:
+
+```sh
+gh auth login
 ```
 
 ## Using HTTPS for GitHub (recommended)

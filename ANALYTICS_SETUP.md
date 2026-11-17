@@ -15,7 +15,7 @@ The site has been configured with Google Analytics 4 (GA4) integration using the
 
 2. **Update the Configuration**:
    - Edit `docusaurus.config.ts`
-   - Replace `G-XXXXXXXXXX` on line 70 with your actual Measurement ID
+   - Replace the `G-XXXXXXXXXX` `trackingID` in the `@docusaurus/plugin-google-gtag` plugin options with your actual Measurement ID
 
 3. **Verify Installation**:
    - Deploy the site with your tracking ID

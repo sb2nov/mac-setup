@@ -10,7 +10,6 @@
     "serve": "docusaurus serve",
     "lint": "markdownlint . --ignore node_modules --ignore build",
     "install-deps": "yarn install",
-
     "_below_here_is_from": "docusaurus_",
     "docusaurus": "docusaurus",
     "swizzle": "docusaurus swizzle",
@@ -21,24 +20,27 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.8.1",
-    "@docusaurus/plugin-google-gtag": "^3.8.1",
-    "@docusaurus/preset-classic": "3.8.1",
-    "@easyops-cn/docusaurus-search-local": "^0.52.1",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/plugin-google-gtag": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "markdownlint-cli": "0.45.0",
-    "node-fetch": "^3.3.1",
-
-    "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/tsconfig": "3.8.1",
-    "@docusaurus/types": "3.8.1",
-    "typescript": "~5.6.2"
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "markdownlint-cli": "0.50.0",
+    "typescript": "^7.0.2"
+  },
+  "resolutions": {
+    "serialize-javascript": "^7.0.5",
+    "uuid": "^11.1.1"
   },
   "repository": {
     "type": "git",
@@ -71,6 +73,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=26"
   }
 }
